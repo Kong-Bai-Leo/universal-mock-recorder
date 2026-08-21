@@ -152,9 +152,21 @@ export const MOCK_WORKFLOW_SCHEMA = {
         required: ["sourceEventIds", "reason", "confidence"]
       }
     },
+    nativeScript: {
+      type: "object",
+      additionalProperties: false,
+      properties: {
+        format: { type: "string", enum: ["autocad_scr", "none"] },
+        lines: stringArray,
+        confidence: confidenceSchema,
+        warnings: stringArray,
+        complete: { type: "boolean" }
+      },
+      required: ["format", "lines", "confidence", "warnings", "complete"]
+    },
     warnings: stringArray
   },
-  required: ["summary", "steps", "omitted", "warnings"]
+  required: ["summary", "steps", "omitted", "nativeScript", "warnings"]
 };
 
 export function validateWorkflow(workflow, options = {}) {
@@ -167,6 +179,18 @@ export function validateWorkflow(workflow, options = {}) {
   if (!Array.isArray(workflow.warnings)) throw new Error("工作流缺少 warnings 数组");
 
   const normalized = JSON.parse(JSON.stringify(workflow));
+  // 兼容升级前保存的 semantic-trace；新的 API 响应仍由严格 JSON Schema 强制提供此字段。
+  normalized.nativeScript ??= {
+    format: "none",
+    lines: [],
+    confidence: 0,
+    warnings: ["旧版分析结果不含原生 SCR 数据，请重新生成。"],
+    complete: false
+  };
+  // 兼容升级前已经保存的分析结果。新响应必须由严格 Schema 明确给出 complete。
+  // 旧版 autocad_scr 代表已生成可用脚本；旧版 none 无法区分“无新增命令”和
+  // “缺少关键参数”，因此保守地视为不完整。
+  normalized.nativeScript.complete ??= normalized.nativeScript.format === "autocad_scr";
   const lowConfidenceIds = [];
   normalized.steps.forEach((step, index) => {
     const label = `steps[${index}]`;
@@ -194,6 +218,7 @@ export function validateWorkflow(workflow, options = {}) {
     assertConfidence(item.confidence, `omitted[${index}].confidence`);
     assertStringArray(item.sourceEventIds, `omitted[${index}].sourceEventIds`);
   });
+  assertNativeScript(normalized.nativeScript);
   if (!normalized.warnings.every((item) => typeof item === "string"))
     throw new Error("warnings 必须全部是字符串");
 
@@ -212,9 +237,55 @@ export function mergeWorkflows(workflows, options = {}) {
     summary: workflows.map((workflow) => workflow.summary).filter(Boolean).join(" → "),
     steps: workflows.flatMap((workflow) => workflow.steps ?? []),
     omitted: workflows.flatMap((workflow) => workflow.omitted ?? []),
+    nativeScript: mergeNativeScripts(workflows.map((workflow) => workflow.nativeScript)),
     warnings: workflows.flatMap((workflow) => workflow.warnings ?? [])
   };
   return validateWorkflow(merged, options);
+}
+
+function mergeNativeScripts(scripts) {
+  if (scripts.some((script) => script?.complete !== true)) {
+    return {
+      format: "none",
+      lines: [],
+      confidence: Math.min(...scripts.map((script) => script?.confidence ?? 0)),
+      warnings: scripts.flatMap((script) => script?.warnings ?? []),
+      complete: false
+    };
+  }
+  const usable = scripts.filter((script) => script?.format === "autocad_scr");
+  if (usable.length === 0) {
+    return {
+      format: "none",
+      lines: [],
+      confidence: scripts.length > 0 ? Math.min(...scripts.map((script) => script?.confidence ?? 0)) : 0,
+      warnings: scripts.flatMap((script) => script?.warnings ?? []),
+      complete: false
+    };
+  }
+  return {
+    format: "autocad_scr",
+    lines: usable.flatMap((script) => script.lines ?? []),
+    confidence: Math.min(...usable.map((script) => script.confidence)),
+    warnings: scripts.flatMap((script) => script?.warnings ?? []),
+    complete: true
+  };
+}
+
+function assertNativeScript(script) {
+  if (!script || !["autocad_scr", "none"].includes(script.format))
+    throw new Error("nativeScript.format 无效");
+  assertStringArray(script.lines, "nativeScript.lines");
+  assertConfidence(script.confidence, "nativeScript.confidence");
+  assertStringArray(script.warnings, "nativeScript.warnings");
+  if (typeof script.complete !== "boolean")
+    throw new Error("nativeScript.complete 必须是布尔值");
+  if (script.format === "none" && script.lines.length > 0)
+    throw new Error("nativeScript.format 为 none 时 lines 必须为空");
+  if (script.complete && script.format !== "autocad_scr")
+    throw new Error("完整的 nativeScript 必须使用 autocad_scr 格式");
+  if (!script.complete && script.format !== "none")
+    throw new Error("不完整的 nativeScript 必须使用 none 格式");
 }
 
 function assertConfidence(value, label) {

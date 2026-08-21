@@ -44,6 +44,7 @@ namespace UniversalMockRecorder
     {
         private readonly Button _startButton;
         private readonly Button _stopButton;
+        private readonly Button _retryButton;
         private readonly CheckBox _generateAfterStopCheckBox;
         private readonly Label _statusLabel;
         private readonly Label _pathLabel;
@@ -51,6 +52,7 @@ namespace UniversalMockRecorder
         private RecorderEngine _engine;
         private string _currentRecordingDirectory;
         private bool _analysisRunning;
+        private long _lastEventCount;
 
         public RecorderForm()
         {
@@ -73,9 +75,10 @@ namespace UniversalMockRecorder
 
             _startButton = new Button { Text = "开始录制", Left = 24, Top = 66, Width = 130, Height = 38 };
             _stopButton = new Button { Text = "停止并生成", Left = 170, Top = 66, Width = 130, Height = 38, Enabled = false };
+            _retryButton = new Button { Text = "重新生成", Left = 316, Top = 66, Width = 130, Height = 38, Enabled = false };
             _generateAfterStopCheckBox = new CheckBox
             {
-                Text = "停止后自动调用 AI 生成 Mock 脚本（会上传录制事件和选取的关键截图）",
+                Text = "停止后自动调用 AI 生成可运行回放脚本（会上传录制事件和选取的关键截图）",
                 Left = 24,
                 Top = 112,
                 Width = 560,
@@ -88,12 +91,14 @@ namespace UniversalMockRecorder
             Controls.Add(title);
             Controls.Add(_startButton);
             Controls.Add(_stopButton);
+            Controls.Add(_retryButton);
             Controls.Add(_generateAfterStopCheckBox);
             Controls.Add(_statusLabel);
             Controls.Add(_pathLabel);
 
             _startButton.Click += StartRecording;
             _stopButton.Click += StopRecording;
+            _retryButton.Click += RetryAnalysis;
             FormClosing += OnFormClosing;
 
             _timer = new System.Windows.Forms.Timer { Interval = 500 };
@@ -105,6 +110,40 @@ namespace UniversalMockRecorder
                 }
             };
             _timer.Start();
+            LoadPendingRecording();
+        }
+
+        private void LoadPendingRecording()
+        {
+            try
+            {
+                var baseDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "recordings");
+                if (!Directory.Exists(baseDirectory)) return;
+                var directories = Directory.GetDirectories(baseDirectory);
+                Array.Sort(directories, StringComparer.OrdinalIgnoreCase);
+                Array.Reverse(directories);
+                foreach (var directory in directories)
+                {
+                    var eventsPath = Path.Combine(directory, "events.jsonl");
+                    var completedPath = Path.Combine(directory, "generated", "semantic-trace.json");
+                    if (!File.Exists(eventsPath) || File.Exists(completedPath)) continue;
+                    long count = 0;
+                    using (var reader = new StreamReader(eventsPath))
+                    {
+                        while (reader.ReadLine() != null) count++;
+                    }
+                    _currentRecordingDirectory = directory;
+                    _lastEventCount = count;
+                    _retryButton.Enabled = true;
+                    _statusLabel.Text = "检测到上次录制尚未生成脚本，可以点击“重新生成”。";
+                    _pathLabel.Text = "录制位置：" + directory;
+                    break;
+                }
+            }
+            catch
+            {
+                // 启动时的历史录制检查失败不应阻止新录制。
+            }
         }
 
         private void StartRecording(object sender, EventArgs e)
@@ -119,6 +158,7 @@ namespace UniversalMockRecorder
                 _engine.Start();
                 _startButton.Enabled = false;
                 _stopButton.Enabled = true;
+                _retryButton.Enabled = false;
                 _statusLabel.Text = "正在录制";
                 _pathLabel.Text = "保存位置：" + outputDirectory;
                 WindowState = FormWindowState.Minimized;
@@ -141,6 +181,7 @@ namespace UniversalMockRecorder
             Activate();
 
             var eventCount = _engine == null ? 0 : _engine.EventCount;
+            _lastEventCount = eventCount;
             if (_generateAfterStopCheckBox.Checked && !string.IsNullOrEmpty(_currentRecordingDirectory))
             {
                 StartAnalysis(_currentRecordingDirectory, eventCount);
@@ -152,13 +193,20 @@ namespace UniversalMockRecorder
             }
         }
 
+        private void RetryAnalysis(object sender, EventArgs e)
+        {
+            if (_analysisRunning || string.IsNullOrEmpty(_currentRecordingDirectory)) return;
+            StartAnalysis(_currentRecordingDirectory, _lastEventCount);
+        }
+
         private void StartAnalysis(string recordingDirectory, long eventCount)
         {
             _analysisRunning = true;
             _startButton.Enabled = false;
             _stopButton.Enabled = false;
+            _retryButton.Enabled = false;
             _generateAfterStopCheckBox.Enabled = false;
-            _statusLabel.Text = "录制完成（" + eventCount + " 条事件），正在调用 AI 生成 Mock 脚本……";
+            _statusLabel.Text = "录制完成（" + eventCount + " 条事件），正在调用 AI 生成可运行脚本……";
             _pathLabel.Text = "录制位置：" + recordingDirectory;
             Refresh();
 
@@ -185,17 +233,20 @@ namespace UniversalMockRecorder
                         if (errorMessage == null)
                         {
                             _statusLabel.Text = "生成完成，可以开始下一次录制。";
-                            _pathLabel.Text = "Mock 脚本：" + Path.Combine(generatedDirectory, "mock-script.ts");
+                            _retryButton.Enabled = false;
+                            _pathLabel.Text = "SCR 脚本：" + Path.Combine(generatedDirectory, "autocad-replay.scr");
                             MessageBox.Show(
                                 this,
-                                "Mock 脚本已生成：\r\n" + generatedDirectory,
+                                "AutoCAD SCR 脚本已生成：\r\n" + Path.Combine(generatedDirectory, "autocad-replay.scr") +
+                                "\r\n\r\n请在 AutoCAD 中输入 SCRIPT，然后选择这个 SCR 文件。",
                                 "生成完成",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
                         }
                         else
                         {
-                            _statusLabel.Text = "录制已保存，但 Mock 脚本生成失败。";
+                            _statusLabel.Text = "录制已保存，但可运行脚本生成失败。";
+                            _retryButton.Enabled = true;
                             _pathLabel.Text = "录制位置：" + recordingDirectory;
                             MessageBox.Show(
                                 this,
@@ -238,7 +289,9 @@ namespace UniversalMockRecorder
                 UseShellExecute = false,
                 CreateNoWindow = true,
                 RedirectStandardOutput = true,
-                RedirectStandardError = true
+                RedirectStandardError = true,
+                StandardOutputEncoding = Encoding.UTF8,
+                StandardErrorEncoding = Encoding.UTF8
             };
 
             using (var process = Process.Start(startInfo))
@@ -259,6 +312,9 @@ namespace UniversalMockRecorder
             var generatedScript = Path.Combine(recordingDirectory, "generated", "mock-script.ts");
             if (!File.Exists(generatedScript))
                 throw new InvalidOperationException("分析器已结束，但没有找到生成的 mock-script.ts。");
+            var replayScript = Path.Combine(recordingDirectory, "generated", "autocad-replay.scr");
+            if (!File.Exists(replayScript))
+                throw new InvalidOperationException("分析器已结束，但没有找到可运行的 AutoCAD SCR 脚本。");
         }
 
         private static string QuoteArgument(string value)

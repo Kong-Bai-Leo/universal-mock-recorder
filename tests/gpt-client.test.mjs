@@ -50,3 +50,36 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
     await fs.rm(tempDirectory, { recursive: true, force: true });
   }
 });
+
+test("上传连接被关闭时自动重试", async () => {
+  let attempts = 0;
+  const server = http.createServer(async (request, response) => {
+    attempts += 1;
+    for await (const _chunk of request) { /* consume request body */ }
+    if (attempts === 1) {
+      request.socket.destroy();
+      return;
+    }
+    response.writeHead(200, { "content-type": "application/json" });
+    response.end(JSON.stringify({
+      output_text: JSON.stringify({ summary: "retried", steps: [], omitted: [], warnings: [] })
+    }));
+  });
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  process.env.OPENAI_API_KEY = "secret";
+  try {
+    const client = new GptClient({
+      model: "test-model",
+      timeoutSeconds: 5,
+      maxRetries: 1,
+      retryBaseDelayMs: 1
+    });
+    client.baseUrl = `http://127.0.0.1:${server.address().port}/v1`;
+    const result = await client.analyze({ instructions: "test", payload: { value: 1 } });
+    assert.equal(result.summary, "retried");
+    assert.equal(attempts, 2);
+  } finally {
+    delete process.env.OPENAI_API_KEY;
+    await new Promise((resolve) => server.close(resolve));
+  }
+});

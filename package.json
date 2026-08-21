@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "analyze": "node src/analyzer/cli.mjs",
-    "build:recorder": "powershell -ExecutionPolicy Bypass -File scripts/build-recorder.ps1"
+    "build:recorder": "powershell -ExecutionPolicy Bypass -File scripts/build-recorder.ps1",
+    "build:validator": "powershell -ExecutionPolicy Bypass -File scripts/build-validator.ps1",
+    "test:validator": "powershell -ExecutionPolicy Bypass -File scripts/test-validator.ps1"
   }
 }
-

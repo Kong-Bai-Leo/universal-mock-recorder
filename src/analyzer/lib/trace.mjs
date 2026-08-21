@@ -157,10 +157,7 @@ export function buildCandidateActions(events, options = {}) {
 }
 
 export function makeAnalysisBundle(recordingDir, actions, maxScreenshots = 12) {
-  const screenshotCandidates = actions
-    .flatMap((action) => [action.screenshotBefore, action.screenshotAfter])
-    .filter(Boolean);
-  const screenshots = selectEvenly([...new Set(screenshotCandidates)], maxScreenshots);
+  const screenshots = selectAnalysisScreenshots(actions, maxScreenshots);
 
   return {
     recordingDir: path.resolve(recordingDir),
@@ -169,12 +166,65 @@ export function makeAnalysisBundle(recordingDir, actions, maxScreenshots = 12) {
   };
 }
 
-export function chunkActions(actions, maxActions = 150) {
+function selectAnalysisScreenshots(actions, maximum) {
+  if (maximum <= 0) return [];
+  const ordered = [...new Set(actions.flatMap((action) => [
+    action.screenshotBefore,
+    action.screenshotAfter
+  ]).filter(Boolean))];
+  if (ordered.length <= maximum) return ordered;
+
+  // 画布点击前的截图经常包含 AutoCAD 动态输入框中的业务坐标、半径或角度，
+  // 这些证据比普通流程截图更重要，不能被均匀抽样跳过。
+  const priority = [];
+  for (const action of actions) {
+    if (!isLikelyCanvasPointerAction(action)) continue;
+    if (action.screenshotBefore) priority.push(action.screenshotBefore);
+  }
+
+  // 每个取点只占一个名额：点击前的动态输入截图含坐标/距离/角度；
+  // 点击后的整体变化由剩余名额均匀覆盖，避免成对截图挤掉后半段取点证据。
+  const selected = [...new Set(priority)].slice(0, maximum);
+  if (selected.length < maximum) {
+    const remaining = ordered.filter((file) => !selected.includes(file));
+    selected.push(...selectEvenly(remaining, maximum - selected.length));
+  }
+  return selected.sort((left, right) => ordered.indexOf(left) - ordered.indexOf(right));
+}
+
+function isLikelyCanvasPointerAction(action) {
+  if (!["click", "double_click", "right_click", "middle_click", "drag"].includes(action.action))
+    return false;
+  const target = action.target;
+  const window = action.window;
+  if (!target?.width || !target?.height || !window?.width || !window?.height) return false;
+  const role = String(target.role ?? "");
+  const areaRatio = target.width * target.height / Math.max(1, window.width * window.height);
+  return /Pane|Document|Custom/i.test(role) && areaRatio >= 0.2;
+}
+
+export function chunkActions(actions, maxActions = 150, options = {}) {
   if (!Number.isInteger(maxActions) || maxActions < 1)
     throw new Error("maxActions 必须是大于 0 的整数");
+  const maxCanvasEvidence = options.maxCanvasEvidence ?? Number.POSITIVE_INFINITY;
+  if (!(maxCanvasEvidence > 0)) throw new Error("maxCanvasEvidence 必须大于 0");
   const chunks = [];
-  for (let index = 0; index < actions.length; index += maxActions)
-    chunks.push(actions.slice(index, index + maxActions));
+  let current = [];
+  let canvasEvidence = new Set();
+  for (const action of actions) {
+    const evidence = isLikelyCanvasPointerAction(action) ? action.screenshotBefore : null;
+    const addsEvidence = evidence && !canvasEvidence.has(evidence);
+    if (current.length > 0 && (
+      current.length >= maxActions || (addsEvidence && canvasEvidence.size >= maxCanvasEvidence)
+    )) {
+      chunks.push(current);
+      current = [];
+      canvasEvidence = new Set();
+    }
+    current.push(action);
+    if (evidence) canvasEvidence.add(evidence);
+  }
+  if (current.length > 0) chunks.push(current);
   return chunks.length > 0 ? chunks : [[]];
 }
 

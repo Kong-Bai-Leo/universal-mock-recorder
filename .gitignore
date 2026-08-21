@@ -3,3 +3,6 @@ config.json
 bin/recorder/recordings/
 generated/
 *.exe
+bin/validator/
+.cv-poc-deps/
+cv-poc-runtime/

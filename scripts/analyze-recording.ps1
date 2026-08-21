@@ -37,5 +37,5 @@ if ($Output) {
 
 & $nodeExecutable @arguments
 if ($LASTEXITCODE -ne 0) {
-    throw "Analysis failed with exit code: $LASTEXITCODE"
+    exit $LASTEXITCODE
 }
