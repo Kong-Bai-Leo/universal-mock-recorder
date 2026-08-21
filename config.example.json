@@ -1,0 +1,17 @@
+{
+  "provider": {
+    "model": "gpt-5.6",
+    "timeoutSeconds": 180
+  },
+  "analysis": {
+    "language": "zh-CN",
+    "includeScreenshots": true,
+    "maxScreenshotsPerRequest": 12,
+    "maxActionsPerRequest": 150,
+    "minimumConfidence": 0.65
+  },
+  "output": {
+    "scriptLanguage": "typescript",
+    "runtimeImport": "@mock/runtime"
+  }
+}

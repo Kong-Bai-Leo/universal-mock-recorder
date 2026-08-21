@@ -1,0 +1,5 @@
+.env
+config.json
+bin/recorder/recordings/
+generated/
+*.exe
