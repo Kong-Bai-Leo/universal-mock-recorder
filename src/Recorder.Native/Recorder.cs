@@ -307,6 +307,8 @@ namespace UniversalMockRecorder
         private long _eventCount;
         private long _lastMoveMs;
         private Point _lastMovePoint;
+        private Bitmap _pendingMouseBeforeSnapshot;
+        private string _pendingMouseBeforeScreenshot;
         private volatile bool _privacyPaused;
         private volatile bool _recording;
 
@@ -355,6 +357,9 @@ namespace UniversalMockRecorder
             _keyboardHook = IntPtr.Zero;
             if (!_queue.IsAddingCompleted) _queue.CompleteAdding();
             if (_worker != null && _worker.IsAlive) _worker.Join();
+            if (_pendingMouseBeforeSnapshot != null) _pendingMouseBeforeSnapshot.Dispose();
+            _pendingMouseBeforeSnapshot = null;
+            _pendingMouseBeforeScreenshot = null;
             if (_writer != null) _writer.Dispose();
             _writer = null;
             _worker = null;
@@ -429,16 +434,26 @@ namespace UniversalMockRecorder
                     UiTarget focusedTarget;
                     bool isPassword;
                     ReadFocusedContext(out focusedTarget, out isPassword);
-                    Enqueue(new RawInputEvent
+                    var rawInput = new RawInputEvent
                     {
                         Id = NextId(),
                         EventType = "key_down",
                         TimestampMs = UtcNowMs(),
-                        Key = isPassword ? "REDACTED" : ((Keys)input.VirtualKeyCode).ToString().ToUpperInvariant(),
+                        Key = isPassword ? "REDACTED" : NormalizeKeyName(((Keys)input.VirtualKeyCode).ToString().ToUpperInvariant()),
                         Text = isPassword ? null : TranslateKey(input.VirtualKeyCode, input.ScanCode),
                         Modifiers = modifiers.ToArray(),
                         Target = focusedTarget
-                    });
+                    };
+                    if (ShouldCaptureKeyTransition(rawInput))
+                    {
+                        try
+                        {
+                            rawInput.Snapshot = CaptureScreenBitmap();
+                            rawInput.SnapshotTimestampMs = UtcNowMs();
+                        }
+                        catch { }
+                    }
+                    Enqueue(rawInput);
                 }
             }
             return CallNextHookEx(_keyboardHook, code, message, data);
@@ -475,7 +490,21 @@ namespace UniversalMockRecorder
                             input.RelativeY = Math.Round((double)(input.Y - input.Window.Y) / input.Window.Height, 6);
                         }
                     }
-                    if (input.Snapshot != null)
+                    if (input.EventType == "key_down" && input.Snapshot != null)
+                    {
+                        input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
+                        input.ScreenshotBeforeTimestampMs = input.SnapshotTimestampMs;
+                        Thread.Sleep(160);
+                        using (var after = CaptureScreenBitmap())
+                        {
+                            input.ScreenshotAfter = SaveScreenshot(input.Id + "-after", after);
+                            input.ScreenshotAfterTimestampMs = UtcNowMs();
+                            input.VisualChange = MeasureVisualChange(input.Snapshot, after, input.Window);
+                        }
+                        input.Screenshot = input.ScreenshotAfter;
+                        input.ScreenshotTimestampMs = input.ScreenshotAfterTimestampMs;
+                    }
+                    else if (input.Snapshot != null)
                     {
                         input.Screenshot = SaveScreenshot(input.Id, input.Snapshot);
                         input.ScreenshotTimestampMs = input.SnapshotTimestampMs;
@@ -483,8 +512,42 @@ namespace UniversalMockRecorder
                     else if (ShouldCaptureScreenshot(input))
                     {
                         Thread.Sleep(120);
-                        input.Screenshot = CaptureScreenshot(input.Id);
-                        input.ScreenshotTimestampMs = UtcNowMs();
+                        using (var after = CaptureScreenBitmap())
+                        {
+                            input.Screenshot = SaveScreenshot(input.Id, after);
+                            input.ScreenshotTimestampMs = UtcNowMs();
+                            if (input.EventType == "mouse_up" && _pendingMouseBeforeSnapshot != null)
+                            {
+                                input.ScreenshotBefore = _pendingMouseBeforeScreenshot;
+                                input.ScreenshotAfter = input.Screenshot;
+                                input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
+                                input.VisualChange = MeasureVisualChange(_pendingMouseBeforeSnapshot, after, input.Window);
+                                _pendingMouseBeforeSnapshot.Dispose();
+                                _pendingMouseBeforeSnapshot = null;
+                                _pendingMouseBeforeScreenshot = null;
+                            }
+                        }
+                    }
+
+                    if (input.EventType == "mouse_down" && input.Snapshot != null)
+                    {
+                        if (_pendingMouseBeforeSnapshot != null) _pendingMouseBeforeSnapshot.Dispose();
+                        _pendingMouseBeforeSnapshot = (Bitmap)input.Snapshot.Clone();
+                        _pendingMouseBeforeScreenshot = input.Screenshot;
+                        input.ScreenshotBefore = input.Screenshot;
+                        input.ScreenshotBeforeTimestampMs = input.ScreenshotTimestampMs;
+                    }
+                    else if (input.EventType == "mouse_up")
+                    {
+                        input.ScreenshotAfter = input.Screenshot;
+                        input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
+                        if (_pendingMouseBeforeSnapshot != null)
+                        {
+                            input.ScreenshotBefore = _pendingMouseBeforeScreenshot;
+                            _pendingMouseBeforeSnapshot.Dispose();
+                            _pendingMouseBeforeSnapshot = null;
+                            _pendingMouseBeforeScreenshot = null;
+                        }
                     }
 
                     WriteEvent(input);
@@ -523,8 +586,9 @@ namespace UniversalMockRecorder
                 Path.Combine(_outputDirectory, "manifest.json"),
                 "{\n" +
                 "  \"format\": \"UniversalInteractionTrace\",\n" +
-                "  \"version\": \"0.1\",\n" +
+                "  \"version\": \"0.2\",\n" +
                 "  \"platform\": \"windows\",\n" +
+                "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"visual_change_diff\"],\n" +
                 "  \"createdAt\": \"" + DateTimeOffset.UtcNow.ToString("o") + "\"\n" +
                 "}\n",
                 new UTF8Encoding(false));
@@ -566,6 +630,87 @@ namespace UniversalMockRecorder
         {
             return input.EventType == "mouse_down" || input.EventType == "mouse_up" ||
                    (input.EventType == "key_down" && (input.Key == "ENTER" || input.Key == "ESCAPE"));
+        }
+
+        private static bool ShouldCaptureKeyTransition(RawInputEvent input)
+        {
+            if (input == null || input.EventType != "key_down") return false;
+            if (input.Key == "ENTER" || input.Key == "RETURN" || input.Key == "ESCAPE" || input.Key == "DELETE" ||
+                input.Key == "BACK" || input.Key == "BACKSPACE") return true;
+            return input.Modifiers != null && input.Modifiers.Length > 0;
+        }
+
+        private static VisualChangeInfo MeasureVisualChange(Bitmap before, Bitmap after, WindowInfo window)
+        {
+            if (before == null || after == null || before.Width != after.Width || before.Height != after.Height)
+                return null;
+
+            var screen = SystemInformation.VirtualScreen;
+            var left = window == null ? screen.Left : Math.Max(screen.Left, window.X);
+            var top = window == null ? screen.Top : Math.Max(screen.Top, window.Y);
+            var right = window == null ? screen.Right : Math.Min(screen.Right, window.X + window.Width);
+            var bottom = window == null ? screen.Bottom : Math.Min(screen.Bottom, window.Y + window.Height);
+            if (right <= left || bottom <= top) return null;
+
+            const int sampleStep = 4;
+            const int colorThreshold = 54;
+            var changed = 0;
+            var sampled = 0;
+            var minX = right;
+            var minY = bottom;
+            var maxX = left;
+            var maxY = top;
+
+            for (var screenY = top; screenY < bottom; screenY += sampleStep)
+            {
+                var bitmapY = screenY - screen.Top;
+                for (var screenX = left; screenX < right; screenX += sampleStep)
+                {
+                    var bitmapX = screenX - screen.Left;
+                    var first = before.GetPixel(bitmapX, bitmapY);
+                    var second = after.GetPixel(bitmapX, bitmapY);
+                    sampled++;
+                    var delta = Math.Abs(first.R - second.R) + Math.Abs(first.G - second.G) + Math.Abs(first.B - second.B);
+                    if (delta < colorThreshold) continue;
+                    changed++;
+                    if (screenX < minX) minX = screenX;
+                    if (screenY < minY) minY = screenY;
+                    if (screenX > maxX) maxX = screenX;
+                    if (screenY > maxY) maxY = screenY;
+                }
+            }
+
+            var ratio = sampled == 0 ? 0 : (double)changed / sampled;
+            var significant = changed >= 8 && ratio >= 0.00005;
+            var result = new VisualChangeInfo
+            {
+                Changed = significant,
+                ChangedPixelRatio = Math.Round(ratio, 8),
+                SampleStep = sampleStep
+            };
+            if (changed > 0)
+            {
+                result.X = minX;
+                result.Y = minY;
+                result.Width = Math.Max(sampleStep, maxX - minX + sampleStep);
+                result.Height = Math.Max(sampleStep, maxY - minY + sampleStep);
+                if (window != null && window.Width > 0 && window.Height > 0)
+                {
+                    result.RelativeBounds = new[]
+                    {
+                        Clamp01((double)(result.X - window.X) / window.Width),
+                        Clamp01((double)(result.Y - window.Y) / window.Height),
+                        Clamp01((double)result.Width / window.Width),
+                        Clamp01((double)result.Height / window.Height)
+                    };
+                }
+            }
+            return result;
+        }
+
+        private static double Clamp01(double value)
+        {
+            return Math.Round(Math.Max(0, Math.Min(1, value)), 6);
         }
 
         private static UiTarget ReadTargetAt(int x, int y)
@@ -673,6 +818,13 @@ namespace UniversalMockRecorder
                    key == Keys.LWin || key == Keys.RWin;
         }
 
+        private static string NormalizeKeyName(string key)
+        {
+            if (key == "RETURN") return "ENTER";
+            if (key == "BACK") return "BACKSPACE";
+            return key;
+        }
+
         private static string MouseEventType(int message)
         {
             if (message == WmMouseMove) return "mouse_move";
@@ -726,9 +878,27 @@ namespace UniversalMockRecorder
             [DataMember(Name = "target", EmitDefaultValue = false)] public UiTarget Target;
             [DataMember(Name = "screenshot", EmitDefaultValue = false)] public string Screenshot;
             [DataMember(Name = "screenshotTimestampMs", EmitDefaultValue = false)] public long ScreenshotTimestampMs;
+            [DataMember(Name = "screenshotBefore", EmitDefaultValue = false)] public string ScreenshotBefore;
+            [DataMember(Name = "screenshotBeforeTimestampMs", EmitDefaultValue = false)] public long ScreenshotBeforeTimestampMs;
+            [DataMember(Name = "screenshotAfter", EmitDefaultValue = false)] public string ScreenshotAfter;
+            [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
+            [DataMember(Name = "visualChange", EmitDefaultValue = false)] public VisualChangeInfo VisualChange;
             [DataMember(Name = "error", EmitDefaultValue = false)] public string Error;
             public Bitmap Snapshot;
             public long SnapshotTimestampMs;
+        }
+
+        [DataContract]
+        private sealed class VisualChangeInfo
+        {
+            [DataMember(Name = "changed")] public bool Changed;
+            [DataMember(Name = "changedPixelRatio")] public double ChangedPixelRatio;
+            [DataMember(Name = "sampleStep")] public int SampleStep;
+            [DataMember(Name = "x", EmitDefaultValue = false)] public int X;
+            [DataMember(Name = "y", EmitDefaultValue = false)] public int Y;
+            [DataMember(Name = "width", EmitDefaultValue = false)] public int Width;
+            [DataMember(Name = "height", EmitDefaultValue = false)] public int Height;
+            [DataMember(Name = "relativeBounds", EmitDefaultValue = false)] public double[] RelativeBounds;
         }
 
         [DataContract]

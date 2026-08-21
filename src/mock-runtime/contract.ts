@@ -13,6 +13,29 @@ export type ExpectedState = {
   stateChange?: string | null;
 };
 
+export type MockGesture = {
+  fromRelative: readonly [number, number] | null;
+  toRelative: readonly [number, number] | null;
+  pathRelative: readonly (readonly [number, number])[];
+};
+
+export type CanvasMeasurement = {
+  name: string;
+  value: number;
+  unit: string;
+  confidence: number;
+};
+
+export type CanvasChange = {
+  detected: boolean;
+  changeType: "create" | "delete" | "move" | "resize" | "rotate" | "modify" | "selection" | "view" | "none" | "unknown";
+  objectDescription: string | null;
+  beforeScreenshot: string | null;
+  afterScreenshot: string | null;
+  changedRegionRelative: readonly [number, number, number, number] | null;
+  measurements: readonly CanvasMeasurement[];
+};
+
 export type MockStep = {
   id: string;
   goal: string;
@@ -27,8 +50,10 @@ export type MockStep = {
     | "press_key"
     | "wait";
   target?: MockTarget | null;
+  gesture: MockGesture | null;
   value?: unknown;
   expectedState: ExpectedState;
+  canvasChange: CanvasChange;
   sourceEventIds: readonly string[];
   confidence: number;
 };

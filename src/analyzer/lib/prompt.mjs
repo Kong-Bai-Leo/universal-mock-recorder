@@ -11,6 +11,10 @@ export const ANALYSIS_INSTRUCTIONS = `你是通用软件操作轨迹编译器。
 8. 输入可能是长流程中的一个分段。保持分段内的原始顺序，使用 previousChunkContext 理解前置状态，但不要重复输出之前分段的步骤。
 9. 图片前面的文字会标明其录制文件名，必须按文件名关联到动作中的 screenshotBefore 或 screenshotAfter。
 10. 无状态贡献且低于 minimumConfidence 的动作放入 omitted；必要但不确定的步骤可以保留，并在 warnings 说明。
+11. 画布变化是主要证据：结合 screenshotBefore、screenshotAfter 和 visualChange，明确记录对象的创建、删除、移动、缩放、旋转、修改、选择或视图变化。
+12. canvasChange 中只能引用输入实际提供的截图文件名。changedRegionRelative 优先采用 visualChange.relativeBounds；无法确认时填 null。
+13. 对圆、线段、拖拽距离、角度等可由事件坐标直接计算的数值写入 measurements，并注明 px 或 window_ratio；无法从证据计算的 CAD/业务单位不得猜测。
+14. drag 必须输出 gesture.fromRelative、gesture.toRelative 和尽可能完整的 pathRelative；非拖拽步骤的 gesture 为 null。
 
 仅输出JSON对象，结构如下：
 {
@@ -28,11 +32,23 @@ export const ANALYSIS_INSTRUCTIONS = `你是通用软件操作轨迹编译器。
         "expectedRegion": "区域或null",
         "relativePositionFallback": [0.0, 0.0]
       },
+      "gesture": null,
       "value": null,
       "expectedState": {
         "visibleTextCandidates": [],
         "visualDescription": "可观察结果",
         "stateChange": "状态变化"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create|delete|move|resize|rotate|modify|selection|view|none|unknown",
+        "objectDescription": "发生变化的画布对象或null",
+        "beforeScreenshot": "输入中的截图文件名或null",
+        "afterScreenshot": "输入中的截图文件名或null",
+        "changedRegionRelative": [0.0, 0.0, 0.0, 0.0],
+        "measurements": [
+          { "name": "radius", "value": 0.0, "unit": "px|window_ratio|degree", "confidence": 0.0 }
+        ]
       },
       "sourceEventIds": [],
       "confidence": 0.0

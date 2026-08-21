@@ -37,7 +37,8 @@ export function buildCandidateActions(events, options = {}) {
     }
 
     if (event.eventType === "key_down") {
-      if (isModifierKey(event.key)) continue;
+      const normalizedKey = normalizeKeyName(event.key);
+      if (isModifierKey(normalizedKey)) continue;
       if (isTextKey(event)) {
         if (!textRun || event.timestampMs - textRun.endMs > 1200) {
           flushText();
@@ -58,12 +59,15 @@ export function buildCandidateActions(events, options = {}) {
         flushText();
         actions.push({
           action: "press_key",
-          key: event.key,
+          key: normalizedKey,
           modifiers: event.modifiers ?? [],
           target: event.target ?? null,
           window: event.window ?? null,
-          screenshotAfter: event.screenshot ?? null,
-          screenshotAfterTimestampMs: event.screenshotTimestampMs ?? null,
+          screenshotBefore: event.screenshotBefore ?? null,
+          screenshotBeforeTimestampMs: event.screenshotBeforeTimestampMs ?? null,
+          screenshotAfter: event.screenshotAfter ?? event.screenshot ?? null,
+          screenshotAfterTimestampMs: event.screenshotAfterTimestampMs ?? event.screenshotTimestampMs ?? null,
+          visualChange: event.visualChange ?? null,
           startMs: event.timestampMs,
           endMs: event.timestampMs,
           sourceEventIds: [event.id]
@@ -87,10 +91,11 @@ export function buildCandidateActions(events, options = {}) {
         endMs: event.timestampMs,
         target: pointerDown.target ?? null,
         window: pointerDown.window ?? null,
-        screenshotBefore: pointerDown.screenshot ?? null,
-        screenshotBeforeTimestampMs: pointerDown.screenshotTimestampMs ?? null,
-        screenshotAfter: event.screenshot ?? null,
-        screenshotAfterTimestampMs: event.screenshotTimestampMs ?? null,
+        screenshotBefore: pointerDown.screenshotBefore ?? pointerDown.screenshot ?? null,
+        screenshotBeforeTimestampMs: pointerDown.screenshotBeforeTimestampMs ?? pointerDown.screenshotTimestampMs ?? null,
+        screenshotAfter: event.screenshotAfter ?? event.screenshot ?? null,
+        screenshotAfterTimestampMs: event.screenshotAfterTimestampMs ?? event.screenshotTimestampMs ?? null,
+        visualChange: event.visualChange ?? null,
         sourceEventIds: [pointerDown.id, event.id]
       };
 
@@ -174,8 +179,18 @@ export function chunkActions(actions, maxActions = 150) {
 }
 
 function isTextKey(event) {
+  if (["ENTER", "RETURN", "ESCAPE", "BACK", "BACKSPACE", "DELETE", "TAB"].includes(
+    String(event.key ?? "").toUpperCase()
+  )) return false;
   return typeof event.text === "string" && event.text.length > 0 &&
     !(event.modifiers ?? []).some((key) => key === "CTRL" || key === "ALT" || key === "WIN");
+}
+
+function normalizeKeyName(key) {
+  const normalized = String(key ?? "").toUpperCase();
+  if (normalized === "RETURN") return "ENTER";
+  if (normalized === "BACK") return "BACKSPACE";
+  return normalized;
 }
 
 function isModifierKey(key) {

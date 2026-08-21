@@ -7,6 +7,7 @@ import { GptClient } from "./lib/gpt-client.mjs";
 import { loadLocalEnv } from "./lib/local-env.mjs";
 import { ANALYSIS_INSTRUCTIONS } from "./lib/prompt.mjs";
 import { renderTypeScript } from "./lib/script-renderer.mjs";
+import { renderComputerUseTask } from "./lib/computer-use-renderer.mjs";
 import { buildCandidateActions, chunkActions, makeAnalysisBundle, readJsonLines } from "./lib/trace.mjs";
 import { mergeWorkflows, validateWorkflow } from "./lib/workflow.mjs";
 
@@ -81,6 +82,11 @@ async function main(options) {
   await fs.writeFile(
     path.join(outputDir, "mock-script.ts"),
     renderTypeScript(plan, config.output?.runtimeImport),
+    "utf8"
+  );
+  await fs.writeFile(
+    path.join(outputDir, "computer-use-task.md"),
+    renderComputerUseTask(plan),
     "utf8"
   );
   console.log(`已生成: ${outputDir}`);

@@ -15,10 +15,13 @@
 - Windows UI Automation 控件名称、类型、ID和边界读取
 - 前台窗口及窗口相对坐标记录
 - 点击和关键按键截图
+- 每个画布操作的前后截图、变化像素比例和变化区域
 - 密码控件输入自动脱敏
 - `Ctrl+Shift+F12` 暂停或恢复隐私输入采集
 - 单击、双击、右键、拖拽、滚动和连续文本初步分段
 - GPT 清洗无效操作并生成目标导向的 Mock 脚本
+- 输出画布对象变化、几何测量提示和完整拖拽轨迹
+- 生成可直接交给 Computer Use Agent 的复现任务说明
 - 直接使用 OpenAI 官方 Responses API
 - 长流程自动分段，截图按整个分段均匀抽样并与事件文件名关联
 - 使用严格 JSON Schema 和本地校验约束 Mock 工作流
@@ -82,6 +85,7 @@ powershell -ExecutionPolicy Bypass -File scripts\analyze-recording.ps1 `
 ```text
 generated\semantic-trace.json
 generated\mock-script.ts
+generated\computer-use-task.md
 ```
 
 `mock-script.ts` 不复制真实软件的绝对坐标。它要求 Mock Runtime 按以下顺序寻找等价按钮：
@@ -91,6 +95,10 @@ generated\mock-script.ts
 ```
 
 每一步执行后都需要验证界面状态；选错按钮时应退出、撤销并尝试下一个候选。
+
+`computer-use-task.md` 可直接作为 Computer Use Agent 的任务说明。实际执行前仍需提供
+可启动且可重置的目标 Mock 软件；Agent 会按每步 `canvasChange`、参考截图、拖拽轨迹和
+几何 measurements 验证操作结果。
 
 ## Mock 尚未确定时的边界
 

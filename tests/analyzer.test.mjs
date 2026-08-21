@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { buildCandidateActions, chunkActions, makeAnalysisBundle } from "../src/analyzer/lib/trace.mjs";
 import { renderTypeScript } from "../src/analyzer/lib/script-renderer.mjs";
+import { renderComputerUseTask } from "../src/analyzer/lib/computer-use-renderer.mjs";
 
 test("组合单击并忽略纯鼠标移动", () => {
   const actions = buildCandidateActions([
@@ -15,13 +16,16 @@ test("组合单击并忽略纯鼠标移动", () => {
 
 test("识别拖拽", () => {
   const actions = buildCandidateActions([
-    { id: "1", eventType: "mouse_down", timestampMs: 10, x: 10, y: 20, button: "left" },
+    { id: "1", eventType: "mouse_down", timestampMs: 10, x: 10, y: 20, relativeX: 0.1, relativeY: 0.2, button: "left", screenshotBefore: "screenshots/before.jpg" },
     { id: "m", eventType: "mouse_move", timestampMs: 250, x: 50, y: 80 },
-    { id: "2", eventType: "mouse_up", timestampMs: 500, x: 100, y: 200, button: "left" }
+    { id: "2", eventType: "mouse_up", timestampMs: 500, x: 100, y: 200, relativeX: 0.8, relativeY: 0.9, button: "left", screenshotAfter: "screenshots/after.jpg", visualChange: { changed: true, relativeBounds: [0.1, 0.2, 0.7, 0.7] } }
   ]);
   assert.equal(actions[0].action, "drag");
-  assert.deepEqual(actions[0].to, { x: 100, y: 200, relativeX: undefined, relativeY: undefined });
+  assert.deepEqual(actions[0].to, { x: 100, y: 200, relativeX: 0.8, relativeY: 0.9 });
   assert.equal(actions[0].path.length, 3);
+  assert.equal(actions[0].screenshotBefore, "screenshots/before.jpg");
+  assert.equal(actions[0].screenshotAfter, "screenshots/after.jpg");
+  assert.equal(actions[0].visualChange.changed, true);
 });
 
 test("连续字符合并为文本输入", () => {
@@ -33,6 +37,16 @@ test("连续字符合并为文本输入", () => {
   assert.equal(actions[0].action, "type_text");
   assert.equal(actions[0].text, "ab");
   assert.equal(actions[1].action, "press_key");
+});
+
+test("Windows RETURN 被规范为独立 ENTER 动作", () => {
+  const actions = buildCandidateActions([
+    { id: "t", eventType: "key_down", timestampMs: 10, key: "A", text: "a", modifiers: [] },
+    { id: "r", eventType: "key_down", timestampMs: 20, key: "RETURN", text: "\r", modifiers: [], screenshotAfter: "screenshots/return-after.jpg" }
+  ]);
+  assert.deepEqual(actions.map((action) => action.action), ["type_text", "press_key"]);
+  assert.equal(actions[1].key, "ENTER");
+  assert.equal(actions[1].screenshotAfter, "screenshots/return-after.jpg");
 });
 
 test("双击保留为一个动作", () => {
@@ -87,4 +101,12 @@ test("生成脚本包含语义优先定位策略", () => {
   assert.match(script, /semantic/);
   assert.match(script, /verifyAfterEachStep: true/);
   assert.match(script, /@test\/mock/);
+  assert.match(script, /export const workflow/);
+});
+
+test("生成 Computer Use Agent 任务说明", () => {
+  const task = renderComputerUseTask({ summary: "画一个圆", steps: [] });
+  assert.match(task, /Computer Use Agent/);
+  assert.match(task, /canvasChange/);
+  assert.match(task, /画一个圆/);
 });

@@ -17,11 +17,21 @@ function workflow(stepOverrides = {}) {
         expectedRegion: null,
         relativePositionFallback: null
       },
+      gesture: null,
       value: null,
       expectedState: {
         visibleTextCandidates: [],
         visualDescription: null,
         stateChange: "对话框关闭"
+      },
+      canvasChange: {
+        detected: false,
+        changeType: "none",
+        objectDescription: null,
+        beforeScreenshot: null,
+        afterScreenshot: null,
+        changedRegionRelative: null,
+        measurements: []
       },
       sourceEventIds: ["evt-1"],
       confidence: 0.9,
