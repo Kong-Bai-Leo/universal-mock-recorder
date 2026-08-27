@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabinsert",
+  "generatedAt": "2026-08-25T21:52:18.0849772Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabInsert",
+    "tabName": "Insert",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabinsert",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabInsert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabInsert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": "ID_TabInsert",
+        "officialName": "Insert"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 7,
+    "panels": [
+      {
+        "name": "Reference",
+        "uid": "ID_PanelInsert_Reference",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+        "map": "reference/ui-map.json",
+        "nodes": 23,
+        "actionableControls": 10
+      },
+      {
+        "name": "Block",
+        "uid": "ID_PanelInsert_Block",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-block",
+        "map": "block/ui-map.json",
+        "nodes": 26,
+        "actionableControls": 11
+      },
+      {
+        "name": "Block Definition",
+        "uid": "ID_PanelAttributes",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+        "map": "block-definition/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 9
+      },
+      {
+        "name": "Import",
+        "uid": "ID_PanelInsert_Import",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-import",
+        "map": "import/ui-map.json",
+        "nodes": 23,
+        "actionableControls": 8
+      },
+      {
+        "name": "Data",
+        "uid": "ID_PanelInsert_Data",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+        "map": "data/ui-map.json",
+        "nodes": 15,
+        "actionableControls": 4
+      },
+      {
+        "name": "Linking & Extraction",
+        "uid": "ID_PanelInsert_DataLink",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+        "map": "linking-extraction/ui-map.json",
+        "nodes": 15,
+        "actionableControls": 4
+      },
+      {
+        "name": "Location",
+        "uid": "ID_Panel_Set_GeoLocation",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panel-set-geolocation",
+        "map": "location/ui-map.json",
+        "nodes": 13,
+        "actionableControls": 4
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 111,
+    "panels": 7,
+    "actionableControls": 50,
+    "splitButtons": 5,
+    "iconOnlyControls": 4
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:20:00Z",
+    "observedControlCount": 28,
+    "evidence": "live-observation.json"
+  }
+}

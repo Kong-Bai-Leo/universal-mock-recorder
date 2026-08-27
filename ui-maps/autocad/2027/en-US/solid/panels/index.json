@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_SolidModeling",
+  "tabName": "Solid",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Primitive",
+      "uid": "RBNU_2118",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2118",
+      "map": "primitive/ui-map.json",
+      "nodes": 26,
+      "actionableControls": 11
+    },
+    {
+      "name": "Solid",
+      "uid": "RBNU_2122",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2122",
+      "map": "solid/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    },
+    {
+      "name": "Boolean",
+      "uid": "RBNU_2126",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+      "map": "boolean/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "Solid Editing",
+      "uid": "RBNU_2130",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+      "map": "solid-editing/ui-map.json",
+      "nodes": 42,
+      "actionableControls": 21
+    },
+    {
+      "name": "Section",
+      "uid": "RBNU_2219",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "map": "section/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    },
+    {
+      "name": "Selection",
+      "uid": "ID_PanelSubObject",
+      "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+      "map": "selection/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    }
+  ]
+}

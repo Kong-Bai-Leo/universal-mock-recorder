@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_00737425",
+  "tabName": "Mesh Subobject",
+  "panelCount": 1,
+  "panels": [
+    {
+      "name": "Crease",
+      "uid": "RBN_00737251",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251",
+      "map": "crease/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    }
+  ]
+}

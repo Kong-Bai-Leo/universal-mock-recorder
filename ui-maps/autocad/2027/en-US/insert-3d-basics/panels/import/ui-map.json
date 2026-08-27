@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-insert-panel-import",
+  "generatedAt": "2026-08-25T21:52:19.4870637Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Insert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelInsert_Import",
+    "panelName": "Import",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Insert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Insert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": null,
+        "officialName": "Insert - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import",
+      "kind": "panel",
+      "name": "Import",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-rpanelbreak-insertimport"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelInsert_Import"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelInsert_Import",
+        "text": "Import",
+        "keyTip": null,
+        "alias": "ID_Insert_Import",
+        "officialName": "Insert - Import",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+      "kind": "layout_row",
+      "name": "ID_RibbonRow_InsertImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonseparator-insertimport",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRow_InsertImport"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRow_InsertImport",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "kind": "split_button",
+      "name": "Import File",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SplitButton_InsertImport"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SplitButton_InsertImport",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Import File",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "IF",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Import File variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.primary-action",
+      "kind": "primary_button",
+      "name": "Import File primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SplitButton_InsertImport.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Import File variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Import File menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SplitButton_InsertImport.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Import File menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Import File popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Import File menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertdgnimport",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertimport"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SplitButton_InsertImport.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Import File variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertpdfimport",
+      "kind": "command_button",
+      "name": "PDF\rImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertPdfImport"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "ui": {
+        "uid": "ID_CommandButton_InsertPdfImport",
+        "controlId": "AcRibbonCommandButton",
+        "text": "PDF\rImport",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_PDFIMPORT2",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "PDF\rImport",
+        "official": "Import PDF file",
+        "aliases": [
+          "PDFIMPORT",
+          "ID_INSERT_PDFIMPORT2"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_PDF",
+        "largeResource": "RCDATA_32_IMPORT_PDF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PDFIMPORT",
+        "macro": "^C^C_pdfimport _file;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imports data from a page of a PDF file into the current drawing as AutoCAD objects.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PDFIMPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertdgnimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertdgnimport",
+      "kind": "command_button",
+      "name": "DGN\rImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertDgnImport"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "ui": {
+        "uid": "ID_CommandButton_InsertDgnImport",
+        "controlId": "AcRibbonCommandButton",
+        "text": "DGN\rImport",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_DGNIMPORT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "DGN\rImport",
+        "official": "Import DGN file",
+        "aliases": [
+          "DGNIMPORT",
+          "ID_INSERT_DGNIMPORT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_DGN",
+        "largeResource": "RCDATA_32_IMPORT_DGN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DGNIMPORT",
+        "macro": "^C^C_dgnimport;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imports data from a DGN file into the current drawing as AutoCAD objects.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DGNIMPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu.id-commandbutton-insertimport",
+      "kind": "command_button",
+      "name": "Import",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertImport"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-splitbutton-insertimport",
+      "ui": {
+        "uid": "ID_CommandButton_InsertImport",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Import",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "OI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_OTHERIMPORT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Import",
+        "official": "Import other file formats",
+        "aliases": [
+          "IMPORT",
+          "ID_INSERT_OTHERIMPORT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_OTHER",
+        "largeResource": "RCDATA_32_IMPORT_OTHER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "IMPORT",
+        "macro": "^C^C_import;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imports files of different formats such as PDF and DGN into the current drawing.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 IMPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonseparator-insertimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonseparator-insertimport",
+      "kind": "separator",
+      "name": "ID_RibbonSeparator_InsertImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonSeparator_InsertImport"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonSeparator_InsertImport",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext",
+      "kind": "layout_group",
+      "name": "ID_RibbonRowPanel_InsertPdfShxText",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRowPanel_InsertPdfShxText"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRowPanel_InsertPdfShxText",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext",
+      "kind": "layout_row",
+      "name": "ID_RibbonRow__InsertPdfShxText",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext.id-commandbutton-insertpdfshxtext"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRow__InsertPdfShxText"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRow__InsertPdfShxText",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext.id-commandbutton-insertpdfshxtext": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext.id-commandbutton-insertpdfshxtext",
+      "kind": "command_button",
+      "name": "Recognize\rSHX Text",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertPdfShxText"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CommandButton_InsertPdfShxText",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Recognize\rSHX Text",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_PDFSHXTEXT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Recognize\rSHX Text",
+        "official": "PDF SHX Recognition",
+        "aliases": [
+          "PDFSHXTEXT",
+          "ID_INSERT_PDFSHXTEXT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_PDFSHXTEXT",
+        "largeResource": "RCDATA_32_IMPORT_PDFSHXTEXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PDFSHXTEXT",
+        "macro": "^C^C_pdfshxtext",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts imported SHX geometry from PDF files into text objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PDFSHXTEXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings",
+      "kind": "layout_row",
+      "name": "ID_RibbonRow__InsertPdfShxText_Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings.id-commandbutton-insertpdfshxtext-settings"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRow__InsertPdfShxText_Settings"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRow__InsertPdfShxText_Settings",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings.id-commandbutton-insertpdfshxtext-settings": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings.id-commandbutton-insertpdfshxtext-settings",
+      "kind": "command_button",
+      "name": "Recognition\rSettings",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-insertpdfshxtext.id-ribbonrow-insertpdfshxtext-settings",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertPdfShxText_Settings"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CommandButton_InsertPdfShxText_Settings",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Recognition\rSettings",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_PDFSHXTEXT_SETTINGS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Recognition\rSettings",
+        "official": "PDF SHX Recog Settings",
+        "aliases": [
+          "PDFSHXTEXT",
+          "ID_INSERT_PDFSHXTEXT_SETTINGS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_PDFSHXTEXT_SETTINGS",
+        "largeResource": "RCDATA_32_IMPORT_PDFSHXTEXT_SETTINGS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PDFSHXTEXT",
+        "macro": "^C^C_PDFSHXTEXTSETTINGS 1;_pdfshxtext _settings",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Specifies the SHX fonts to compare against when converting imported PDF text geometry to text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PDFSHXTEXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt",
+      "kind": "layout_group",
+      "name": "ID_RibbonRowPanel_InsertTxt2Mtxt",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRowPanel_InsertTxt2Mtxt"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRowPanel_InsertTxt2Mtxt",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt",
+      "kind": "layout_row",
+      "name": "ID_RibbonRow_InsertTxt2Mtxt",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt.id-commandbutton-inserttxt2mtxt"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RibbonRow_InsertTxt2Mtxt"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RibbonRow_InsertTxt2Mtxt",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt.id-commandbutton-inserttxt2mtxt": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt.id-commandbutton-inserttxt2mtxt",
+      "kind": "command_button",
+      "name": "Combine\rText",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-ribbonrow-insertimport.id-ribbonrowpanel-inserttxt2mtxt.id-ribbonrow-inserttxt2mtxt",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CommandButton_InsertTxt2Mtxt"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CommandButton_InsertTxt2Mtxt",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Combine\rText",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_INSERT_TXT2MTXT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Combine\rText",
+        "official": "Convert Text to Mtext",
+        "aliases": [
+          "TXT2MTXT",
+          "ID_INSERT_TXT2MTXT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_TXT2MTXT",
+        "largeResource": "RCDATA_32_IMPORT_TXT2MTXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TXT2MTXT",
+        "macro": "^C^C_txt2mtxt;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines multiple text objects into a single multiline text object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TXT2MTXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-rpanelbreak-insertimport": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import.id-rpanelbreak-insertimport",
+      "kind": "panel_break",
+      "name": "ID_RPanelBreak_InsertImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-import",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RPanelBreak_InsertImport"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RPanelBreak_InsertImport",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

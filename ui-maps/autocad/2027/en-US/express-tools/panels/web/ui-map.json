@@ -1,0 +1,601 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-web",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0113",
+    "panelName": "Web",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113",
+      "kind": "panel",
+      "name": "Web",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0116"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0113"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 117
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0113",
+        "text": "Web",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Express Tools - Web",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115",
+      "kind": "layout_row",
+      "name": "RBN_0115",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0115"
+      },
+      "placement": {
+        "region": "main",
+        "order": 118
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0115",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "kind": "split_button",
+      "name": "URL\rOptions",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0121"
+      },
+      "placement": {
+        "region": "main",
+        "order": 119
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0121",
+        "controlId": "AcRibbonSplitButton",
+        "text": "URL\rOptions",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UO",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_URLOPTIONS",
+        "largeImage": "RCDATA_32_URLOPTIONS",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available URL\rOptions variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0123"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open URL\rOptions menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0121.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 120
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the URL\rOptions menu without executing its primary action.",
+        "inputs": [],
+        "result": "The URL\rOptions popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "URL\rOptions menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0123",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0124",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0125"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0121.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 121
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable URL\rOptions variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0123": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0123",
+      "kind": "command_button",
+      "name": "Show URLs",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0123"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 122
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "ui": {
+        "uid": "RBN_0123",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETSHWURL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Show URLs",
+        "aliases": [
+          "SHOWURLS",
+          "ID_ACETSHWURL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHOWURLS",
+        "largeResource": "RCDATA_32_SHOWURLS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SHOWURLS",
+        "macro": "^C^Cshowurls",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Shows the location of embedded URL addresses",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SHOWURLS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0124": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0124",
+      "kind": "command_button",
+      "name": "Change URLs",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0124"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 123
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "ui": {
+        "uid": "RBN_0124",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETCHGURL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Change URLs",
+        "aliases": [
+          "CHURLS",
+          "ID_ACETCHGURL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHURLS",
+        "largeResource": "RCDATA_32_CHURLS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHURLS",
+        "macro": "^C^Cchurls",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Modifies URL addresses",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHURLS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0125": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu.rbn-0125",
+      "kind": "command_button",
+      "name": "Find and Replace URLs",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0125"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 124
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0115.rbn-0121",
+      "ui": {
+        "uid": "RBN_0125",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETREPURL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Find and Replace URLs",
+        "aliases": [
+          "REPURLS",
+          "ID_ACETREPURL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REPURLS",
+        "largeResource": "RCDATA_32_REPURLS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REPURLS",
+        "macro": "^C^Crepurls",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Replaces URL addresses with others",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REPURLS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0116": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113.rbn-0116",
+      "kind": "panel_break",
+      "name": "RBN_0116",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0116"
+      },
+      "placement": {
+        "region": "main",
+        "order": 125
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0116",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

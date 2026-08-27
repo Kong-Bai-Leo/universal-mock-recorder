@@ -1,0 +1,1330 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-home-panel-coordinates",
+  "generatedAt": "2026-08-25T21:52:16.2059243Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Home",
+    "tabName": "Home",
+    "panelUid": "ID_3dBasics_PanelCoordinates",
+    "panelName": "Coordinates",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Home"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Home",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_3dBasics_Home",
+        "officialName": "Home - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+      "kind": "panel",
+      "name": "Coordinates",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.rbn-sm-2458",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbnpnl-sm-0056"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_PanelCoordinates"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 164
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_PanelCoordinates",
+        "text": "Coordinates",
+        "keyTip": "UC",
+        "alias": "ID_3dBasics_Coords",
+        "officialName": "3D Basics - Coordinates",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.rbn-sm-2458": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.rbn-sm-2458",
+      "kind": "dialog_launcher",
+      "name": "UCS, UCS Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2458"
+      },
+      "placement": {
+        "region": "main",
+        "order": 165
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_2458",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "US",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UCSSettings",
+        "commandId": "ID_UCSSettings",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "UCS, UCS Settings",
+        "aliases": [
+          "UCSMAN",
+          "ID_UCSSettings"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCSMAN",
+        "macro": "^C^C_+UCSMAN 2",
+        "macroType": "Any",
+        "commandId": "ID_UCSSettings",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Manages defined user coordinate systems",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCSMAN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0276",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3237",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0276"
+      },
+      "placement": {
+        "region": "main",
+        "order": 166
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0276",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3237": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3237",
+      "kind": "command_button",
+      "name": "World\r ",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3237"
+      },
+      "placement": {
+        "region": "main",
+        "order": 167
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3237",
+        "controlId": "AcRibbonCommandButton",
+        "text": "World\r ",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsWorld",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "World\r ",
+        "official": "UCS, World",
+        "aliases": [
+          "UCS",
+          "ID_UcsWorld"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSW",
+        "largeResource": "RCDATA_32_UCSW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C_ucs _w",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Sets the current user coordinate system to the world coordinate system",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "kind": "split_button",
+      "name": "UCS Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2951"
+      },
+      "placement": {
+        "region": "main",
+        "order": 168
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_2951",
+        "controlId": "AcRibbonSplitButton",
+        "text": "UCS Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UX",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available UCS Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.primary-action",
+      "kind": "primary_button",
+      "name": "UCS Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2951.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 169
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default UCS Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open UCS Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2951.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 170
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the UCS Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The UCS Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "UCS Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsyaxrot-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucszaxrot-0003"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2951.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 171
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable UCS Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsxaxrot-0003",
+      "kind": "command_button",
+      "name": "X",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UCSXAXROT_0003"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 172
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UCSXAXROT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsXAxRot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "X",
+        "aliases": [
+          "UCS",
+          "ID_UcsXAxRot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSXAR",
+        "largeResource": "RCDATA_32_UCSXAR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C^R_ucs _x",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the user coordinate system about the X axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsyaxrot-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucsyaxrot-0003",
+      "kind": "command_button",
+      "name": "Y",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UCSYAXROT_0003"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 173
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UCSYAXROT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsYAxRot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Y",
+        "aliases": [
+          "UCS",
+          "ID_UcsYAxRot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSYAR",
+        "largeResource": "RCDATA_32_UCSYAR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C^R_ucs _y",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the user coordinate system about the Y axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucszaxrot-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu.id-rbn-cmdbtn-ucszaxrot-0003",
+      "kind": "command_button",
+      "name": "Z",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UCSZAXROT_0003"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 174
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-sm-2951",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UCSZAXROT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UZ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsZAxRot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Z",
+        "aliases": [
+          "UCS",
+          "ID_UcsZAxRot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSZAR",
+        "largeResource": "RCDATA_32_UCSZAR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C^R_ucs _z",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the user coordinate system about the Z axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "kind": "split_button",
+      "name": "UCS 3point dropdown",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3238"
+      },
+      "placement": {
+        "region": "main",
+        "order": 175
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3238",
+        "controlId": "AcRibbonSplitButton",
+        "text": "UCS 3point dropdown",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UP",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available UCS 3point dropdown variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.primary-action",
+      "kind": "primary_button",
+      "name": "UCS 3point dropdown primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3238.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 176
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default UCS 3point dropdown variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open UCS 3point dropdown menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3238.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 177
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the UCS 3point dropdown menu without executing its primary action.",
+        "inputs": [],
+        "result": "The UCS 3point dropdown popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "UCS 3point dropdown menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0153",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0154",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0155",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0156"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3238.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 178
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable UCS 3point dropdown variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0152",
+      "kind": "command_button",
+      "name": "3 Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0152"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 179
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "ui": {
+        "uid": "ID_RBN_0152",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "U3",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ucs3point",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "3 Point",
+        "aliases": [
+          "UCS",
+          "ID_Ucs3point"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCS3PT",
+        "largeResource": "RCDATA_32_UCS3PT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C_ucs _3",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Defines a new user coordinate system using three points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0153": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0153",
+      "kind": "command_button",
+      "name": "Previous",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0153"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 180
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "ui": {
+        "uid": "ID_RBN_0153",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Previous",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsPrevio",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Previous",
+        "official": "UCS, Previous",
+        "aliases": [
+          "UCS",
+          "ID_UcsPrevio"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSPRE",
+        "largeResource": "RCDATA_32_UCSPRE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C_ucs _p",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Restores the previous user coordinate system",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0154": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0154",
+      "kind": "command_button",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0154"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 181
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "ui": {
+        "uid": "ID_RBN_0154",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsView",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "View",
+        "aliases": [
+          "UCS",
+          "ID_UcsView"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSVIE",
+        "largeResource": "RCDATA_32_UCSVIE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C_ucs _v",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns the XY plane of the user coordinate system with the screen",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0155": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0155",
+      "kind": "command_button",
+      "name": "Face",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0155"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 182
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "ui": {
+        "uid": "ID_RBN_0155",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsFace",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Face",
+        "aliases": [
+          "UCS",
+          "ID_UcsFace"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSFACE",
+        "largeResource": "RCDATA_32_UCSFACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C^R_ucs _fa",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns the user coordinate system to a face on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0156": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu.id-rbn-0156",
+      "kind": "command_button",
+      "name": "Object",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0156"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 183
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbn-row-sm-0276.rbn-3238",
+      "ui": {
+        "uid": "ID_RBN_0156",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UcsObject",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Object",
+        "aliases": [
+          "UCS",
+          "ID_UcsObject"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UCSOBJ",
+        "largeResource": "RCDATA_32_UCSOBJ",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UCS",
+        "macro": "^C^C^R_ucs _ob",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns the user coordinate system to a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UCS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbnpnl-sm-0056": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates.id-rbnpnl-sm-0056",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_SM_0056",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_SM_0056"
+      },
+      "placement": {
+        "region": "main",
+        "order": 184
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_SM_0056",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:38:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Featured Apps", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 2,
+  "observedControlIds": ["AcFeaturedAppsExchangeButton", "AcFeaturedAppsGallery"],
+  "liveInteractionSamples": [
+    { "controlId": "RBN_190_37149", "action": "select_tab", "result": "Featured Apps opened; Connect to App Store and the runtime Featured Apps gallery were observed." }
+  ],
+  "notes": ["Individual gallery cards are dynamic online content and are represented as runtime children of the stable gallery control, not hard-coded commands."]
+}

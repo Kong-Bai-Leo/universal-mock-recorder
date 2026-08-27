@@ -1,0 +1,991 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-dimension",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0072",
+    "panelName": "Dimension",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072",
+      "kind": "panel",
+      "name": "Dimension",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0075"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0072"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0072",
+        "text": "Dimension",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Express Tools - Dimension",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074",
+      "kind": "layout_row",
+      "name": "RBN_0074",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0074"
+      },
+      "placement": {
+        "region": "main",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0074",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "kind": "split_button",
+      "name": "Annotation\rAttachment",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0076"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0076",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Annotation\rAttachment",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AA",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Annotation\rAttachment variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.primary-action",
+      "kind": "primary_button",
+      "name": "Annotation\rAttachment primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0076.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Annotation\rAttachment variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Annotation\rAttachment menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0076.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Annotation\rAttachment menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Annotation\rAttachment popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Annotation\rAttachment menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0079",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0080"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0076.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Annotation\rAttachment variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0078",
+      "kind": "command_button",
+      "name": "Attach Leader to Annotation",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0078"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "ui": {
+        "uid": "RBN_0078",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETQLATCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Attach Leader to Annotation",
+        "aliases": [
+          "QLATTACH",
+          "ID_ACETQLATCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QLATTACH",
+        "largeResource": "RCDATA_32_QLATTACH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "QLATTACH",
+        "macro": "^C^C_.qlattach",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Associates a leader to an annotation object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 QLATTACH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0079": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0079",
+      "kind": "command_button",
+      "name": "Global Attach Leader to Annotation",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0079"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "ui": {
+        "uid": "RBN_0079",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETQLATAL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Global Attach Leader to Annotation",
+        "aliases": [
+          "QLATTACHSET",
+          "ID_ACETQLATAL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QLATTACHSET",
+        "largeResource": "RCDATA_32_QLATTACHSET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "QLATTACHSET",
+        "macro": "^C^C_.qlattachset",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Associates selected leaders with a likely annotation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 QLATTACHSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0080": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu.rbn-0080",
+      "kind": "command_button",
+      "name": "Detach Leaders from Annotation",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0080"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0076",
+      "ui": {
+        "uid": "RBN_0080",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETQLDTCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Detach Leaders from Annotation",
+        "aliases": [
+          "QLDETACHSET",
+          "ID_ACETQLDTCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QLDETACHSET",
+        "largeResource": "RCDATA_32_QLDETACHSET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "QLDETACHSET",
+        "macro": "^C^C_.qldetachset",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Disassociates selected leaders from an annotation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 QLDETACHSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082",
+      "kind": "layout_group",
+      "name": "RBN_0082",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0082"
+      },
+      "placement": {
+        "region": "main",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0082",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083",
+      "kind": "layout_row",
+      "name": "RBN_0083",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083.rbn-0088"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0083"
+      },
+      "placement": {
+        "region": "main",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0083",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083.rbn-0088": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083.rbn-0088",
+      "kind": "command_button",
+      "name": "Reset Text",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0083",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0088"
+      },
+      "placement": {
+        "region": "main",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0088",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reset Text",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETDIMASSOC",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reset Text",
+        "official": "Reset Dim Text Value",
+        "aliases": [
+          "DIMREASSOC",
+          "ID_ACETDIMASSOC"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMREASSOC",
+        "largeResource": "RCDATA_32_DIMREASSOC",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMREASSOC",
+        "macro": "^C^Cdimreassoc",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Re-associates dimensions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMREASSOC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084",
+      "kind": "layout_row",
+      "name": "RBN_0084",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084.rbn-0087"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0084"
+      },
+      "placement": {
+        "region": "main",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0084",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084.rbn-0087": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084.rbn-0087",
+      "kind": "command_button",
+      "name": "Import Style",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0084",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0087"
+      },
+      "placement": {
+        "region": "main",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0087",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Import Style",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETDIMIM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Import Style",
+        "official": "Dimstyle Import...",
+        "aliases": [
+          "DIMIM",
+          "ID_ACETDIMIM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMIM",
+        "largeResource": "RCDATA_32_DIMIM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMIM",
+        "macro": "^C^C_.dimim",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imports dimension styles saved to a file using DIMEX",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085",
+      "kind": "layout_row",
+      "name": "RBN_0085",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085.rbn-0086"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0085"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0085",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085.rbn-0086": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085.rbn-0086",
+      "kind": "command_button",
+      "name": "Export Style",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0074.rbn-0082.rbn-0085",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0086"
+      },
+      "placement": {
+        "region": "main",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0086",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Export Style",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ES",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETDIMEX",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Export Style",
+        "official": "Dimstyle Export...",
+        "aliases": [
+          "DIMEX",
+          "ID_ACETDIMEX"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMEX",
+        "largeResource": "RCDATA_32_DIMEX",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMEX",
+        "macro": "^C^C_.dimex",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves dimension styles to a file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMEX command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0075": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072.rbn-0075",
+      "kind": "panel_break",
+      "name": "RBN_0075",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0075"
+      },
+      "placement": {
+        "region": "main",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0075",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_CTS-Mesh",
+  "tabName": "Mesh",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "Smooth",
+      "uid": "RBN_00737247",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247",
+      "map": "smooth/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 3
+    },
+    {
+      "name": "Convert Mesh",
+      "uid": "ID_PanelConvertMesh",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-mesh.id-panelconvertmesh",
+      "map": "convert-mesh/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 3
+    }
+  ]
+}

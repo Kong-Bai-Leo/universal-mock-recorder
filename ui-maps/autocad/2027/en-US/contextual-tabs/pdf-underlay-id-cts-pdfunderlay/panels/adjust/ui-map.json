@@ -1,0 +1,480 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-pdfunderlay-panel-adjust",
+  "generatedAt": "2026-08-25T21:53:02.1108100Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-PDFUnderlay",
+    "tabName": "PDF Underlay",
+    "panelUid": "RBN_00012168",
+    "panelName": "Adjust",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay",
+      "kind": "tab",
+      "name": "PDF Underlay",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-PDFUnderlay"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-PDFUnderlay",
+        "text": "PDF Underlay",
+        "keyTip": "PD",
+        "alias": null,
+        "officialName": "PDF Underlay Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168",
+      "kind": "panel",
+      "name": "Adjust",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322",
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-0076"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00012168"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00012168",
+        "text": "Adjust",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "PDF Underlay - Adjust",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0322",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455",
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.id-rbn-togglebtn-underlaydisplaymonochrome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0322"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0322",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455",
+      "kind": "layout_group",
+      "name": "RBN_00018455",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456",
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018455"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018455",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456",
+      "kind": "layout_row",
+      "name": "RBN_00018456",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456.id-rbn-control-underlay-contrast-slider-2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018456"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018456",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456.id-rbn-control-underlay-contrast-slider-2": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456.id-rbn-control-underlay-contrast-slider-2",
+      "kind": "ribbon_control",
+      "name": "Contrast",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018456",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_UNDERLAY_CONTRAST_SLIDER_2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_UNDERLAY_CONTRAST_SLIDER_2",
+        "controlId": "AcUnderlayContrastSlider",
+        "text": "Contrast",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Contrast.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457",
+      "kind": "layout_row",
+      "name": "RBN_00018457",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457.id-rbn-control-underlay-fade-slider-2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018457"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018457",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457.id-rbn-control-underlay-fade-slider-2": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457.id-rbn-control-underlay-fade-slider-2",
+      "kind": "ribbon_control",
+      "name": "Fade",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.rbn-00018455.rbn-00018457",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_UNDERLAY_FADE_SLIDER_2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_UNDERLAY_FADE_SLIDER_2",
+        "controlId": "AcUnderlayFadeSlider",
+        "text": "Fade",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Fade.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.id-rbn-togglebtn-underlaydisplaymonochrome": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322.id-rbn-togglebtn-underlaydisplaymonochrome",
+      "kind": "toggle_button",
+      "name": "Display in Monochrome",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-row-0322",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_UNDERLAYDISPLAYMONOCHROME"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_UNDERLAYDISPLAYMONOCHROME",
+        "controlId": "AcUnderlayDisplayMonochrome",
+        "text": "Display in Monochrome",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Display in Monochrome",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Display in Monochrome.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-0076": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168.id-rbn-0076",
+      "kind": "panel_break",
+      "name": "ID_RBN_0076",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0076"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0076",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

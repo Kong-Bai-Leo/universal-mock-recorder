@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabHome",
+  "tabName": "Home",
+  "panelCount": 10,
+  "panels": [
+    {
+      "name": "Draw",
+      "uid": "ID_PanelDraw",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "map": "draw/ui-map.json",
+      "nodes": 91,
+      "actionableControls": 54
+    },
+    {
+      "name": "Modify",
+      "uid": "ID_PanelModify",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelmodify",
+      "map": "modify/ui-map.json",
+      "nodes": 100,
+      "actionableControls": 48
+    },
+    {
+      "name": "Annotation",
+      "uid": "ID_PanelBasicAnnotation",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelbasicannotation",
+      "map": "annotation/ui-map.json",
+      "nodes": 63,
+      "actionableControls": 34
+    },
+    {
+      "name": "Layers",
+      "uid": "ID_PanelLayers",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panellayers",
+      "map": "layers/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 22
+    },
+    {
+      "name": "Block",
+      "uid": "ID_PanelHome_Blocks",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelhome-blocks",
+      "map": "block/ui-map.json",
+      "nodes": 34,
+      "actionableControls": 17
+    },
+    {
+      "name": "Properties",
+      "uid": "ID_PanelStandard_Properties",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "map": "properties/ui-map.json",
+      "nodes": 26,
+      "actionableControls": 9
+    },
+    {
+      "name": "Groups",
+      "uid": "ID_PanelGroup",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "map": "groups/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 6
+    },
+    {
+      "name": "Utilities",
+      "uid": "ID_PanelStandard_Clipboard",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "map": "utilities/ui-map.json",
+      "nodes": 28,
+      "actionableControls": 13
+    },
+    {
+      "name": "Clipboard",
+      "uid": "RBN_00011049",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049",
+      "map": "clipboard/ui-map.json",
+      "nodes": 29,
+      "actionableControls": 13
+    },
+    {
+      "name": "View",
+      "uid": "RBN_200_F691F",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "map": "view/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 8
+    }
+  ]
+}

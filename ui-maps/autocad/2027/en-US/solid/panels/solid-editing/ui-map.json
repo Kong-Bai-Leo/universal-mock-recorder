@@ -1,0 +1,2121 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-solidmodeling-panel-solid-editing",
+  "generatedAt": "2026-08-25T21:52:30.8724778Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SolidModeling",
+    "tabName": "Solid",
+    "panelUid": "RBNU_2130",
+    "panelName": "Solid Editing",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "kind": "tab",
+      "name": "Solid",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SolidModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SolidModeling",
+        "text": "Solid",
+        "keyTip": "SO",
+        "alias": null,
+        "officialName": "Solid Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+      "kind": "panel",
+      "name": "Solid Editing",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2133"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2130"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2130",
+        "text": "Solid Editing",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Solid Modeling - Solid Editing",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "kind": "layout_row",
+      "name": "RBNU_2132",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2132"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2132",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188",
+      "kind": "layout_group",
+      "name": "RBNU_2188",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2188"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2188",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189",
+      "kind": "layout_row",
+      "name": "RBNU_2189",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189.rbnu-2190"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2189"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2189",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189.rbnu-2190": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189.rbnu-2190",
+      "kind": "command_button",
+      "name": "Slice",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2189",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2190"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2190",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Slice",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Slice",
+        "aliases": [
+          "SLICE",
+          "ID_Slice"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SLICE",
+        "largeResource": "RCDATA_32_SLICE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SLICE",
+        "macro": "^C^C_slice",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates new 3D solids and surfaces by slicing, or dividing, existing objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SLICE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191",
+      "kind": "layout_row",
+      "name": "RBNU_2191",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191.rbnu-2192"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2191"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2191",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191.rbnu-2192": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191.rbnu-2192",
+      "kind": "command_button",
+      "name": "Thicken",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2191",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2192"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2192",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TK",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Thicken",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Thicken",
+        "aliases": [
+          "THICKEN",
+          "ID_Thicken"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_THICKEN",
+        "largeResource": "RCDATA_32_THICKEN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "THICKEN",
+        "macro": "^C^C_Thicken",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a surface into a 3D solid with a specified thickness",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 THICKEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193",
+      "kind": "layout_row",
+      "name": "RBNU_2193",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193.rbnu-2194"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2193"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2193",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193.rbnu-2194": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193.rbnu-2194",
+      "kind": "command_button",
+      "name": "Imprint",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2188.rbnu-2193",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2194"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2194",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Imprint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Imprint",
+        "aliases": [
+          "IMPRINT",
+          "ID_Imprint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPRINT",
+        "largeResource": "RCDATA_32_IMPRINT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "IMPRINT",
+        "macro": "^C^C_imprint",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imprints 2D geometry on a 3D solid, creating additional edges on planar faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 IMPRINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195",
+      "kind": "layout_group",
+      "name": "RBNU_2195",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2195"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2195",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196",
+      "kind": "layout_row",
+      "name": "RBNU_2196",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196.rbnu-2199"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2196"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2196",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196.rbnu-2199": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196.rbnu-2199",
+      "kind": "command_button",
+      "name": "Interfere",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2196",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2199"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2199",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Interfere",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Interfere",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Interfere",
+        "official": "Interference Checking",
+        "aliases": [
+          "INTERFERE",
+          "ID_Interfere"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERF",
+        "largeResource": "RCDATA_32_INTERF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERFERE",
+        "macro": "^C^C_interfere",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a temporary 3D solid from the interferences between two sets of selected 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERFERE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198",
+      "kind": "layout_row",
+      "name": "RBNU_2198",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198.rbnu-2197"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2198"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2198",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198.rbnu-2197": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198.rbnu-2197",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbnu-2198",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2197"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2197",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200",
+      "kind": "layout_row",
+      "name": "RBN_UIE_2200",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200.rbn-uie-3248"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_2200"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_2200",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200.rbn-uie-3248": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200.rbn-uie-3248",
+      "kind": "command_button",
+      "name": "Offset Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2195.rbn-uie-2200",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_3248"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_3248",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "OE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_OffsetEdge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Offset Edge",
+        "aliases": [
+          "OFFSETEDGE",
+          "ID_OffsetEdge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSETFACES",
+        "largeResource": "RCDATA_32_OFFSETFACES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OFFSETEDGE",
+        "macro": "^C^C_offsetedge",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes the AutoCAD OFFSETEDGE command.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OFFSETEDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "kind": "split_button",
+      "name": "RBNU_SM_2202",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.primary-action",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_SM_2202"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_SM_2202",
+        "controlId": "AcRibbonSplitButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FE",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available RBNU_SM_2202 variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.primary-action",
+      "kind": "primary_button",
+      "name": "RBNU_SM_2202 primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_SM_2202.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default RBNU_SM_2202 variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open RBNU_SM_2202 menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_SM_2202.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the RBNU_SM_2202 menu without executing its primary action.",
+        "inputs": [],
+        "result": "The RBNU_SM_2202 popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "RBNU_SM_2202 menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0144"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_SM_2202.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable RBNU_SM_2202 variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0145",
+      "kind": "command_button",
+      "name": "Fillet Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_0145"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "ui": {
+        "uid": "ID_RBN_SM_0145",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Fillet Edge",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ED",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FILLET_EDGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Fillet Edge",
+        "official": "Fillet Edge",
+        "aliases": [
+          "FILLETEDGE",
+          "ID_FILLET_EDGE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_FILLET_EDGE",
+        "largeResource": "RCDATA_32_SM_FILLET_EDGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FILLETEDGE",
+        "macro": "^C^C_FILLETEDGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rounds and fillets the edges of solid objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FILLETEDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0144": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu.id-rbn-sm-0144",
+      "kind": "command_button",
+      "name": "Chamfer Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_0144"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-sm-2202",
+      "ui": {
+        "uid": "ID_RBN_SM_0144",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Chamfer Edge",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CHAMFER_EDGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Chamfer Edge",
+        "official": "Chamfer Edge",
+        "aliases": [
+          "CHAMFEREDGE",
+          "ID_CHAMFER_EDGE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CHAMFER_EDGE",
+        "largeResource": "RCDATA_32_SM_CHAMFER_EDGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHAMFEREDGE",
+        "macro": "^C^C_CHAMFEREDGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Bevels the edges of solid objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHAMFEREDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "kind": "split_button",
+      "name": "Face Editing Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.primary-action",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2202"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2202",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Face Editing Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FA",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Face Editing Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.primary-action",
+      "kind": "primary_button",
+      "name": "Face Editing Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2202.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Face Editing Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Face Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2202.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Face Editing Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Face Editing Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Face Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0144",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0146"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2202.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Face Editing Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0145",
+      "kind": "command_button",
+      "name": "Taper Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0145"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "ui": {
+        "uid": "ID_RBN_0145",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Taper Faces",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceTaper",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Taper Faces",
+        "official": "Taper faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceTaper"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TAPER",
+        "largeResource": "RCDATA_32_TAPER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _taper",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Tapers a face on a 3D solid at a specified angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0144": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0144",
+      "kind": "command_button",
+      "name": "Extrude Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0144"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "ui": {
+        "uid": "ID_RBN_0144",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extrude Faces",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceExtru",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extrude Faces",
+        "official": "Extrude faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceExtru"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUDE_FACES",
+        "largeResource": "RCDATA_32_EXTRUDE_FACES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _extrude",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extrudes selected planar faces of a 3D solid by a specified distance or along a path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0146": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu.id-rbn-0146",
+      "kind": "command_button",
+      "name": "Offset Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0146"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2202",
+      "ui": {
+        "uid": "ID_RBN_0146",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset Faces",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceOffse",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset Faces",
+        "official": "Offset faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceOffse"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSETFACES",
+        "largeResource": "RCDATA_32_OFFSETFACES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _offset",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Offsets selected faces of a 3D solid by a specified distance, changing its shape",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "kind": "split_button",
+      "name": "Solid Editing Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.primary-action",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2201"
+      },
+      "placement": {
+        "region": "main",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2201",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Solid Editing Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SX",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Solid Editing Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.primary-action",
+      "kind": "primary_button",
+      "name": "Solid Editing Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2201.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Solid Editing Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Solid Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2201.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Solid Editing Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Solid Editing Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Solid Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0143",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0067",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0141"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2201.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Solid Editing Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0142",
+      "kind": "command_button",
+      "name": "Shell",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0142"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "ui": {
+        "uid": "ID_RBN_0142",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Shell",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Shell",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Shell",
+        "official": "Shell",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_Shell"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHELL",
+        "largeResource": "RCDATA_32_SHELL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _shell",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a 3D solid into a hollow shell with a wall of specified thickness",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0143": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0143",
+      "kind": "command_button",
+      "name": "Check",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0143"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "ui": {
+        "uid": "ID_RBN_0143",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Check",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BodyChk",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Check",
+        "official": "Check",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_BodyChk"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHECK",
+        "largeResource": "RCDATA_32_CHECK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _check",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Validates the geometric data in a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0067": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0067",
+      "kind": "command_button",
+      "name": "Separate",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0067"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "ui": {
+        "uid": "ID_RBN_0067",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Separate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Separate",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Separate",
+        "official": "Separate",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_Separate"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SEPARATE",
+        "largeResource": "RCDATA_32_SEPARATE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _separate",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Separates a 3D solid object with several non-continuous volumes into independent 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0141": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu.id-rbn-0141",
+      "kind": "command_button",
+      "name": "Clean",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0141"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2132.rbnu-2201",
+      "ui": {
+        "uid": "ID_RBN_0141",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Clean",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BodyCln",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Clean",
+        "official": "Clean",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_BodyCln"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLEAN",
+        "largeResource": "RCDATA_32_CLEAN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _clean",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes all redundant edges and vertices on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2133": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130.rbnu-2133",
+      "kind": "panel_break",
+      "name": "RBNU_2133",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2133"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2133",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

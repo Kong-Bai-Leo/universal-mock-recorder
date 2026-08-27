@@ -1,0 +1,1343 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-render-panel-materials",
+  "generatedAt": "2026-08-25T21:52:35.9883985Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Render",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelMaterials",
+    "panelName": "Materials",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Render"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Render",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": null,
+        "officialName": "Visualize - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "kind": "panel",
+      "name": "Materials",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-0109",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbnpnl-0017",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelMaterials"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 136
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelMaterials",
+        "text": "Materials",
+        "keyTip": "MT",
+        "alias": "ID_Materials",
+        "officialName": "Render - Materials",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-0109": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-0109",
+      "kind": "dialog_launcher",
+      "name": "Materials Editor",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0109"
+      },
+      "placement": {
+        "region": "main",
+        "order": 137
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0109",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "ME",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MaterialsEditor",
+        "commandId": "ID_MaterialsEditor",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Materials Editor",
+        "aliases": [
+          "MATEDITOROPEN",
+          "ID_MaterialsEditor"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MATERIALS_EDITOR",
+        "largeResource": "RCDATA_32_MATERIALS_EDITOR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATEDITOROPEN",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,mateditorstate),0)),^C^C_mateditorclose,^C^C_mateditoropen)",
+        "macroType": "Any",
+        "commandId": "ID_MaterialsEditor",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens and closes Materials Editor",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATEDITOROPEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800",
+      "kind": "layout_row",
+      "name": "RBN_01738800",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800.id-rbn-cmdbtn-materials-browser"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738800"
+      },
+      "placement": {
+        "region": "main",
+        "order": 138
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738800",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800.id-rbn-cmdbtn-materials-browser": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800.id-rbn-cmdbtn-materials-browser",
+      "kind": "toggle_button",
+      "name": "Materials Browser",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738800",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MATERIALS_BROWSER"
+      },
+      "placement": {
+        "region": "main",
+        "order": 139
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MATERIALS_BROWSER",
+        "controlId": "AcMaterialsBrowserCommandToggleButton",
+        "text": "Materials Browser",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Materials Browser",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Materials Browser.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0133",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133.xlsr-0897"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0133"
+      },
+      "placement": {
+        "region": "main",
+        "order": 140
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0133",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133.xlsr-0897": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133.xlsr-0897",
+      "kind": "data_bound_dropdown",
+      "name": "Material Display Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0133",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0897"
+      },
+      "placement": {
+        "region": "main",
+        "order": 141
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0897",
+        "controlId": "AcVSMATERIALMODEDataBoundDropDown",
+        "text": "Material Display Drop-down",
+        "keyTip": "MA"
+      },
+      "semantics": {
+        "description": "Opens or changes the Material Display Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Material Display Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801",
+      "kind": "layout_row",
+      "name": "RBN_01738801",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738801"
+      },
+      "placement": {
+        "region": "main",
+        "order": 142
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738801",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "kind": "split_button",
+      "name": "Material Mapping",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PLANARMAPPING"
+      },
+      "placement": {
+        "region": "main",
+        "order": 143
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_PLANARMAPPING",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Material Mapping",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MM",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_PLANAR_MAPPING",
+        "largeImage": "RCDATA_16_PLANAR_MAPPING",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Material Mapping variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.primary-action",
+      "kind": "primary_button",
+      "name": "Material Mapping primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PLANARMAPPING.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 144
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Material Mapping variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Material Mapping menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PLANARMAPPING.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 145
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Material Mapping menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Material Mapping popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Material Mapping menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-boxmapping",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-cylindricalmapping",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-sphericalmapping"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PLANARMAPPING.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 146
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Material Mapping variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-planarmapping",
+      "kind": "command_button",
+      "name": "Planar",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLANARMAPPING"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 147
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLANARMAPPING",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Planar",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PlanarMapping",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Planar",
+        "official": "Material Map, Planar Mapping",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_PlanarMapping"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLANAR_MAPPING",
+        "largeResource": "RCDATA_32_PLANAR_MAPPING",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _P)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Projects an image onto a flat surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-boxmapping": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-boxmapping",
+      "kind": "command_button",
+      "name": "Box",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BOXMAPPING"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 148
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BOXMAPPING",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Box",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BoxMapping",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Box",
+        "official": "Material Map, Box Mapping",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_BoxMapping"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BOX_MAPPING",
+        "largeResource": "RCDATA_32_BOX_MAPPING",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _B)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Projects an image onto the faces of a boxlike solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-cylindricalmapping": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-cylindricalmapping",
+      "kind": "command_button",
+      "name": "Cylindrical",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CYLINDRICALMAPPING"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 149
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CYLINDRICALMAPPING",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cylindrical",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CylindricalMapping",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cylindrical",
+        "official": "Material Map, Cylindrical Mapping",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_CylindricalMapping"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CYLINDRICAL_MAPPING",
+        "largeResource": "RCDATA_32_CYLINDRICAL_MAPPING",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _C)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Wraps an image onto a cylindrical object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-sphericalmapping": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu.id-rbn-cmdbtn-sphericalmapping",
+      "kind": "command_button",
+      "name": "Spherical",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SPHERICALMAPPING"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 150
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738801.id-rbn-splitbtn-planarmapping",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SPHERICALMAPPING",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spherical",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SphericalMapping",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spherical",
+        "official": "Material Map, Spherical Mapping",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_SphericalMapping"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SPHERICAL_MAPPING",
+        "largeResource": "RCDATA_32_SPHERICAL_MAPPING",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _S)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Wraps an image onto a spherical object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbnpnl-0017": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbnpnl-0017",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0017",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0017"
+      },
+      "placement": {
+        "region": "main",
+        "order": 151
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0017",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802",
+      "kind": "layout_row",
+      "name": "RBN_01738802",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802.id-rbn-control-removematerials"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738802"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 152
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738802",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802.id-rbn-control-removematerials": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802.id-rbn-control-removematerials",
+      "kind": "ribbon_control",
+      "name": "Remove Materials",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.rbn-01738802",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_REMOVEMATERIALS"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 153
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_REMOVEMATERIALS",
+        "controlId": "AcRemoveMaterialButton",
+        "text": "Remove Materials",
+        "keyTip": "CS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Remove Materials.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0137",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137.id-rbn-cmdbtn-abl"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0137"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 154
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0137",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137.id-rbn-cmdbtn-abl": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137.id-rbn-cmdbtn-abl",
+      "kind": "command_button",
+      "name": "Attach By Layer",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0137",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ABL"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 155
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ABL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Attach By Layer",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ML",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ABL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Attach By Layer",
+        "official": "Attach By Layer",
+        "aliases": [
+          "MATERIALATTACH",
+          "ID_ABL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MATERIAL_DIALOG",
+        "largeResource": "RCDATA_32_MATERIAL_DIALOG",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALATTACH",
+        "macro": "^C^C_MaterialAttach",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Associates materials with layers",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALATTACH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0138",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138.id-rbn-cmdbtn-copy-map"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0138"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 156
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0138",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138.id-rbn-cmdbtn-copy-map": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138.id-rbn-cmdbtn-copy-map",
+      "kind": "command_button",
+      "name": "Copy Mapping Coordinates",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0138",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_COPY_MAP"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 157
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_COPY_MAP",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy Mapping Coordinates",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Copy_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy Mapping Coordinates",
+        "official": "Copy Mapping Coordinates",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_Copy_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MATERIALS_PAINTER",
+        "largeResource": "RCDATA_32_MATERIALS_PAINTER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _Y)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Applies the mapping from the original object or face to the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0139",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139.id-rbn-cmdbtn-reset-map"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0139"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 158
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0139",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139.id-rbn-cmdbtn-reset-map": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139.id-rbn-cmdbtn-reset-map",
+      "kind": "command_button",
+      "name": "Reset Mapping Coordinates",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelmaterials.id-rbn-row-0139",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_RESET_MAP"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 159
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_RESET_MAP",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reset Mapping Coordinates",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Reset_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reset Mapping Coordinates",
+        "official": "Reset Mapping Coordinates",
+        "aliases": [
+          "MATERIALMAP",
+          "ID_Reset_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MAPPER_RSET",
+        "largeResource": "RCDATA_32_MAPPER_RSET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATERIALMAP",
+        "macro": "$M=$(if,$(eq,$(getvar,cvport),1),^C^C_MaterialMap,^C^C_MaterialMap _R)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Resets the UV coordinates to the default values for the map",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATERIALMAP command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

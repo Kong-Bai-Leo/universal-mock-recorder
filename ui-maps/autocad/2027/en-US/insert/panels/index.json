@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabInsert",
+  "tabName": "Insert",
+  "panelCount": 7,
+  "panels": [
+    {
+      "name": "Reference",
+      "uid": "ID_PanelInsert_Reference",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "map": "reference/ui-map.json",
+      "nodes": 23,
+      "actionableControls": 10
+    },
+    {
+      "name": "Block",
+      "uid": "ID_PanelInsert_Block",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-block",
+      "map": "block/ui-map.json",
+      "nodes": 26,
+      "actionableControls": 11
+    },
+    {
+      "name": "Block Definition",
+      "uid": "ID_PanelAttributes",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "map": "block-definition/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 9
+    },
+    {
+      "name": "Import",
+      "uid": "ID_PanelInsert_Import",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-import",
+      "map": "import/ui-map.json",
+      "nodes": 23,
+      "actionableControls": 8
+    },
+    {
+      "name": "Data",
+      "uid": "ID_PanelInsert_Data",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+      "map": "data/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Linking & Extraction",
+      "uid": "ID_PanelInsert_DataLink",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+      "map": "linking-extraction/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Location",
+      "uid": "ID_Panel_Set_GeoLocation",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panel-set-geolocation",
+      "map": "location/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 4
+    }
+  ]
+}

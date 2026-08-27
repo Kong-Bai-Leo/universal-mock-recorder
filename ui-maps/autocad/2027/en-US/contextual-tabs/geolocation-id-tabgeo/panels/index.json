@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabGeo",
+  "tabName": "Geolocation",
+  "panelCount": 3,
+  "panels": [
+    {
+      "name": "Location",
+      "uid": "RBN_200_71E34",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34",
+      "map": "location/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 6
+    },
+    {
+      "name": "Tools",
+      "uid": "RBN_200_71E35",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35",
+      "map": "tools/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 5
+    },
+    {
+      "name": "Online Map",
+      "uid": "Geolocation_OnlineMap_Panel",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabgeo.geolocation-onlinemap-panel",
+      "map": "online-map/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 2
+    }
+  ]
+}

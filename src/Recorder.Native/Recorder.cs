@@ -46,10 +46,13 @@ namespace UniversalMockRecorder
         private readonly Button _stopButton;
         private readonly Button _retryButton;
         private readonly CheckBox _generateAfterStopCheckBox;
+        private readonly CheckBox _autoCadActionRecorderCheckBox;
+        private readonly CheckBox _captureUiAutomationCheckBox;
         private readonly Label _statusLabel;
         private readonly Label _pathLabel;
         private readonly System.Windows.Forms.Timer _timer;
         private RecorderEngine _engine;
+        private AutoCadActionRecorderBridge _autoCadActionRecorder;
         private string _currentRecordingDirectory;
         private bool _analysisRunning;
         private long _lastEventCount;
@@ -58,7 +61,7 @@ namespace UniversalMockRecorder
         {
             Text = "通用操作录制器 - Windows 11 原型";
             Width = 620;
-            Height = 276;
+            Height = 342;
             StartPosition = FormStartPosition.CenterScreen;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -78,21 +81,41 @@ namespace UniversalMockRecorder
             _retryButton = new Button { Text = "重新生成", Left = 316, Top = 66, Width = 130, Height = 38, Enabled = false };
             _generateAfterStopCheckBox = new CheckBox
             {
-                Text = "停止后自动调用 AI 生成可运行回放脚本（会上传录制事件和选取的关键截图）",
+                Text = "停止后自动调用 AI 生成结构化操作和 Mock 脚本（会上传录制事件和选取的关键截图）",
                 Left = 24,
                 Top = 112,
                 Width = 560,
                 Height = 24,
                 Checked = true
             };
-            _statusLabel = new Label { Text = "尚未开始", Left = 24, Top = 144, Width = 550, Height = 22 };
-            _pathLabel = new Label { Text = "", Left = 24, Top = 172, Width = 550, Height = 42, AutoEllipsis = true };
+            _autoCadActionRecorderCheckBox = new CheckBox
+            {
+                Text = "同时启用 AutoCAD Action Recorder（ACTMX 会保存并用于 AI 分析，仅适用于 AutoCAD）",
+                Left = 24,
+                Top = 140,
+                Width = 560,
+                Height = 24,
+                Checked = false
+            };
+            _captureUiAutomationCheckBox = new CheckBox
+            {
+                Text = "记录 UI Automation 控件信息（关闭后仅使用鼠标、键盘和截图识别）",
+                Left = 24,
+                Top = 168,
+                Width = 560,
+                Height = 24,
+                Checked = true
+            };
+            _statusLabel = new Label { Text = "尚未开始", Left = 24, Top = 202, Width = 550, Height = 22 };
+            _pathLabel = new Label { Text = "", Left = 24, Top = 230, Width = 550, Height = 42, AutoEllipsis = true };
 
             Controls.Add(title);
             Controls.Add(_startButton);
             Controls.Add(_stopButton);
             Controls.Add(_retryButton);
             Controls.Add(_generateAfterStopCheckBox);
+            Controls.Add(_autoCadActionRecorderCheckBox);
+            Controls.Add(_captureUiAutomationCheckBox);
             Controls.Add(_statusLabel);
             Controls.Add(_pathLabel);
 
@@ -126,7 +149,8 @@ namespace UniversalMockRecorder
                 {
                     var eventsPath = Path.Combine(directory, "events.jsonl");
                     var completedPath = Path.Combine(directory, "generated", "semantic-trace.json");
-                    if (!File.Exists(eventsPath) || File.Exists(completedPath)) continue;
+                    var checkpointPath = Path.Combine(directory, "generated", "analysis-checkpoint.json");
+                    if (!File.Exists(eventsPath)) continue;
                     long count = 0;
                     using (var reader = new StreamReader(eventsPath))
                     {
@@ -135,7 +159,9 @@ namespace UniversalMockRecorder
                     _currentRecordingDirectory = directory;
                     _lastEventCount = count;
                     _retryButton.Enabled = true;
-                    _statusLabel.Text = "检测到上次录制尚未生成脚本，可以点击“重新生成”。";
+                    _statusLabel.Text = File.Exists(completedPath) && !File.Exists(checkpointPath)
+                        ? "已加载最近一次录制，可以点击“重新生成”使用最新分析逻辑。"
+                        : "检测到上次录制尚未生成脚本，可以点击“重新生成”。";
                     _pathLabel.Text = "录制位置：" + directory;
                     break;
                 }
@@ -154,19 +180,37 @@ namespace UniversalMockRecorder
             try
             {
                 _currentRecordingDirectory = outputDirectory;
-                _engine = new RecorderEngine(outputDirectory);
+                if (_autoCadActionRecorderCheckBox.Checked)
+                {
+                    WindowState = FormWindowState.Minimized;
+                    Application.DoEvents();
+                    _autoCadActionRecorder = new AutoCadActionRecorderBridge(outputDirectory);
+                    _autoCadActionRecorder.Start();
+                }
+                _engine = new RecorderEngine(outputDirectory, _captureUiAutomationCheckBox.Checked);
                 _engine.Start();
                 _startButton.Enabled = false;
                 _stopButton.Enabled = true;
                 _retryButton.Enabled = false;
-                _statusLabel.Text = "正在录制";
+                _autoCadActionRecorderCheckBox.Enabled = false;
+                _captureUiAutomationCheckBox.Enabled = false;
+                _statusLabel.Text = "正在录制" +
+                    (_captureUiAutomationCheckBox.Checked ? "" : "（基础输入＋截图模式）") +
+                    (_autoCadActionRecorder == null || string.IsNullOrEmpty(_autoCadActionRecorder.LastError)
+                        ? ""
+                        : "（Action Recorder 未启动，主录制继续）");
                 _pathLabel.Text = "保存位置：" + outputDirectory;
                 WindowState = FormWindowState.Minimized;
             }
             catch (Exception error)
             {
                 if (_engine != null) _engine.Stop();
+                if (_autoCadActionRecorder != null) _autoCadActionRecorder.StopAndCollect();
                 _engine = null;
+                _autoCadActionRecorder = null;
+                _autoCadActionRecorderCheckBox.Enabled = true;
+                _captureUiAutomationCheckBox.Enabled = true;
+                WindowState = FormWindowState.Normal;
                 MessageBox.Show(this, error.Message, "无法开始录制", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -177,6 +221,16 @@ namespace UniversalMockRecorder
             _stopButton.Enabled = false;
             Refresh();
             if (_engine != null) _engine.Stop();
+            if (_autoCadActionRecorder != null)
+            {
+                _statusLabel.Text = "正在停止 AutoCAD Action Recorder 并收集 ACTMX……";
+                Refresh();
+                _autoCadActionRecorder.StopAndCollect();
+            }
+            var actionRecorderWarning = _autoCadActionRecorder == null ? null : _autoCadActionRecorder.LastError;
+            _autoCadActionRecorder = null;
+            _autoCadActionRecorderCheckBox.Enabled = true;
+            _captureUiAutomationCheckBox.Enabled = true;
             WindowState = FormWindowState.Normal;
             Activate();
 
@@ -189,7 +243,8 @@ namespace UniversalMockRecorder
             else
             {
                 _startButton.Enabled = true;
-                _statusLabel.Text = "录制完成，共保存事件 " + eventCount + " 条。";
+                _statusLabel.Text = "录制完成，共保存事件 " + eventCount + " 条。" +
+                    (string.IsNullOrEmpty(actionRecorderWarning) ? "" : " Action Recorder 未完整保存，请查看 action-recorder.json。");
             }
         }
 
@@ -206,7 +261,9 @@ namespace UniversalMockRecorder
             _stopButton.Enabled = false;
             _retryButton.Enabled = false;
             _generateAfterStopCheckBox.Enabled = false;
-            _statusLabel.Text = "录制完成（" + eventCount + " 条事件），正在调用 AI 生成可运行脚本……";
+            _autoCadActionRecorderCheckBox.Enabled = false;
+            _captureUiAutomationCheckBox.Enabled = false;
+            _statusLabel.Text = "录制完成（" + eventCount + " 条事件），正在调用 AI 分析并生成结构化操作……";
             _pathLabel.Text = "录制位置：" + recordingDirectory;
             Refresh();
 
@@ -229,16 +286,22 @@ namespace UniversalMockRecorder
                         _analysisRunning = false;
                         _startButton.Enabled = true;
                         _generateAfterStopCheckBox.Enabled = true;
+                        _autoCadActionRecorderCheckBox.Enabled = true;
+                        _captureUiAutomationCheckBox.Enabled = true;
                         var generatedDirectory = Path.Combine(recordingDirectory, "generated");
                         if (errorMessage == null)
                         {
                             _statusLabel.Text = "生成完成，可以开始下一次录制。";
-                            _retryButton.Enabled = false;
-                            _pathLabel.Text = "SCR 脚本：" + Path.Combine(generatedDirectory, "autocad-replay.scr");
+                            _retryButton.Enabled = true;
+                            var cadProgramPath = Path.Combine(generatedDirectory, "cad-program.json");
+                            var replayPath = Path.Combine(generatedDirectory, "autocad-replay.scr");
+                            var replayMessage = File.Exists(replayPath)
+                                ? "\r\n\r\n可选的 AutoCAD 验证 SCR：\r\n" + replayPath
+                                : "\r\n\r\n本次没有生成 SCR；可查看 autocad-scr-validation.json。";
+                            _pathLabel.Text = "结构化操作：" + cadProgramPath;
                             MessageBox.Show(
                                 this,
-                                "AutoCAD SCR 脚本已生成：\r\n" + Path.Combine(generatedDirectory, "autocad-replay.scr") +
-                                "\r\n\r\n请在 AutoCAD 中输入 SCRIPT，然后选择这个 SCR 文件。",
+                                "AI 分析和 Mock 脚本已生成：\r\n" + cadProgramPath + replayMessage,
                                 "生成完成",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
@@ -298,9 +361,17 @@ namespace UniversalMockRecorder
             {
                 if (process == null)
                     throw new InvalidOperationException("无法启动分析器。");
-                var standardOutput = process.StandardOutput.ReadToEnd();
-                var standardError = process.StandardError.ReadToEnd();
+                string standardOutput = null;
+                string standardError = null;
+                var outputReader = new Thread(new ThreadStart(delegate { standardOutput = process.StandardOutput.ReadToEnd(); }));
+                var errorReader = new Thread(new ThreadStart(delegate { standardError = process.StandardError.ReadToEnd(); }));
+                outputReader.IsBackground = true;
+                errorReader.IsBackground = true;
+                outputReader.Start();
+                errorReader.Start();
                 process.WaitForExit();
+                outputReader.Join();
+                errorReader.Join();
                 if (process.ExitCode != 0)
                 {
                     var details = string.IsNullOrWhiteSpace(standardError) ? standardOutput : standardError;
@@ -312,9 +383,9 @@ namespace UniversalMockRecorder
             var generatedScript = Path.Combine(recordingDirectory, "generated", "mock-script.ts");
             if (!File.Exists(generatedScript))
                 throw new InvalidOperationException("分析器已结束，但没有找到生成的 mock-script.ts。");
-            var replayScript = Path.Combine(recordingDirectory, "generated", "autocad-replay.scr");
-            if (!File.Exists(replayScript))
-                throw new InvalidOperationException("分析器已结束，但没有找到可运行的 AutoCAD SCR 脚本。");
+            var cadProgram = Path.Combine(recordingDirectory, "generated", "cad-program.json");
+            if (!File.Exists(cadProgram))
+                throw new InvalidOperationException("分析器已结束，但没有找到生成的 cad-program.json。");
         }
 
         private static string QuoteArgument(string value)
@@ -332,6 +403,249 @@ namespace UniversalMockRecorder
         private void OnFormClosing(object sender, FormClosingEventArgs e)
         {
             if (_engine != null) _engine.Stop();
+            if (_autoCadActionRecorder != null) _autoCadActionRecorder.StopAndCollect();
+        }
+    }
+
+    internal sealed class AutoCadActionRecorderBridge
+    {
+        private readonly string _recordingDirectory;
+        private readonly string _evidenceDirectory;
+        private IntPtr _autoCadWindow;
+        private DateTime _startedAtUtc;
+        private string _macroName;
+        private bool _started;
+
+        public AutoCadActionRecorderBridge(string recordingDirectory)
+        {
+            _recordingDirectory = recordingDirectory;
+            _evidenceDirectory = Path.Combine(recordingDirectory, "action-recorder");
+        }
+
+        public string LastError { get; private set; }
+
+        public bool Start()
+        {
+            try
+            {
+                _autoCadWindow = FindAutoCadWindow();
+                if (_autoCadWindow == IntPtr.Zero)
+                    throw new InvalidOperationException("已启用 AutoCAD Action Recorder，但没有检测到正在运行的 AutoCAD 主窗口。");
+
+                Directory.CreateDirectory(_evidenceDirectory);
+                _startedAtUtc = DateTime.UtcNow;
+                _macroName = "UMR" + DateTime.Now.ToString("yyyyMMddHHmmss");
+                WriteManifest("starting", null, null, null);
+                ActivateAutoCad();
+                SendKeys.SendWait("{ESC}{ESC}");
+                SendKeys.SendWait("_.ACTRECORD");
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(500);
+                _started = true;
+                LastError = null;
+                WriteManifest("recording", null, null, null);
+                return true;
+            }
+            catch (Exception error)
+            {
+                _started = false;
+                LastError = error.GetType().Name + ": " + error.Message;
+                WriteManifest("failed", LastError, null, null);
+                return false;
+            }
+        }
+
+        public bool StopAndCollect()
+        {
+            if (!_started) return false;
+            try
+            {
+                ActivateAutoCad();
+                // 使用命令行版本可避免默认的保存对话框。停止时取消尚未完成的交互提示，
+                // 主 Recorder 已在此之前保存完用户的最终截图与事件。
+                SendKeys.SendWait("{ESC}{ESC}");
+                SendKeys.SendWait("_.-ACTSTOP");
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(250);
+                SendKeys.SendWait(_macroName);
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(250);
+                SendKeys.SendWait("{ENTER}");
+                Thread.Sleep(300);
+
+                var source = WaitForMacroFile(_macroName, _startedAtUtc, TimeSpan.FromSeconds(8));
+                if (source == null)
+                    throw new FileNotFoundException(
+                        "AutoCAD 已收到停止命令，但没有在 Autodesk 用户目录中找到 " + _macroName + ".actmx。" +
+                        "如果修改过 ACTRECPATH，请把生成的 ACTMX 手动复制到录制目录的 action-recorder 文件夹。"
+                    );
+
+                var destination = Path.Combine(_evidenceDirectory, Path.GetFileName(source));
+                File.Copy(source, destination, true);
+                if (new FileInfo(destination).Length <= 0)
+                    throw new IOException("AutoCAD Action Recorder 文件尚未写完，复制结果为空。");
+                WriteManifest(
+                    "saved",
+                    null,
+                    source,
+                    Path.Combine("action-recorder", Path.GetFileName(destination)).Replace('\\', '/'));
+                LastError = null;
+                return true;
+            }
+            catch (Exception error)
+            {
+                LastError = error.GetType().Name + ": " + error.Message;
+                WriteManifest("failed", LastError, null, null);
+                return false;
+            }
+            finally
+            {
+                _started = false;
+            }
+        }
+
+        private void ActivateAutoCad()
+        {
+            ShowWindow(_autoCadWindow, 9);
+            if (!SetForegroundWindow(_autoCadWindow))
+                throw new InvalidOperationException("无法激活 AutoCAD 窗口，Action Recorder 命令未发送。");
+            Thread.Sleep(300);
+        }
+
+        private static IntPtr FindAutoCadWindow()
+        {
+            var processes = Process.GetProcessesByName("acad");
+            foreach (var process in processes)
+            {
+                try
+                {
+                    if (process.MainWindowHandle != IntPtr.Zero && !string.IsNullOrWhiteSpace(process.MainWindowTitle))
+                        return process.MainWindowHandle;
+                }
+                catch { }
+                finally { process.Dispose(); }
+            }
+            return IntPtr.Zero;
+        }
+
+        private static string WaitForMacroFile(string macroName, DateTime startedAtUtc, TimeSpan timeout)
+        {
+            var deadline = DateTime.UtcNow + timeout;
+            string lastPath = null;
+            long lastLength = -1;
+            DateTime lastWriteTimeUtc = DateTime.MinValue;
+            var stablePolls = 0;
+            do
+            {
+                var found = FindMacroFile(macroName, startedAtUtc);
+                if (found != null)
+                {
+                    try
+                    {
+                        var info = new FileInfo(found);
+                        info.Refresh();
+                        if (info.Length > 0 && string.Equals(lastPath, found, StringComparison.OrdinalIgnoreCase) &&
+                            info.Length == lastLength && info.LastWriteTimeUtc == lastWriteTimeUtc)
+                            stablePolls++;
+                        else
+                            stablePolls = 0;
+                        lastPath = found;
+                        lastLength = info.Length;
+                        lastWriteTimeUtc = info.LastWriteTimeUtc;
+                        if (stablePolls >= 2) return found;
+                    }
+                    catch
+                    {
+                        stablePolls = 0;
+                    }
+                }
+                Thread.Sleep(300);
+            } while (DateTime.UtcNow < deadline);
+            return null;
+        }
+
+        private static string FindMacroFile(string macroName, DateTime startedAtUtc)
+        {
+            var roots = new[]
+            {
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Autodesk"),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Autodesk")
+            };
+            foreach (var root in roots)
+            {
+                var found = FindMacroFileBelow(root, macroName, startedAtUtc);
+                if (found != null) return found;
+            }
+            return null;
+        }
+
+        private static string FindMacroFileBelow(string root, string macroName, DateTime startedAtUtc)
+        {
+            if (!Directory.Exists(root)) return null;
+            var pending = new Stack<string>();
+            pending.Push(root);
+            while (pending.Count > 0)
+            {
+                var directory = pending.Pop();
+                try
+                {
+                    foreach (var file in Directory.GetFiles(directory, macroName + ".actm*"))
+                    {
+                        var info = new FileInfo(file);
+                        if (info.LastWriteTimeUtc >= startedAtUtc.AddSeconds(-2)) return file;
+                    }
+                    foreach (var child in Directory.GetDirectories(directory)) pending.Push(child);
+                }
+                catch
+                {
+                    // Autodesk 配置树中可能存在无权访问的缓存目录，继续搜索其他目录。
+                }
+            }
+            return null;
+        }
+
+        private void WriteManifest(string status, string error, string sourcePath, string copiedPath)
+        {
+            try
+            {
+                Directory.CreateDirectory(_evidenceDirectory);
+                var manifest = new ActionRecorderManifest
+                {
+                    Format = "AutoCadActionRecorderEvidence",
+                    Version = "0.1",
+                    Enabled = true,
+                    Status = status,
+                    MacroName = _macroName,
+                    StartedAtUtc = _startedAtUtc == default(DateTime) ? null : _startedAtUtc.ToString("o"),
+                    SourcePath = sourcePath,
+                    CopiedPath = copiedPath,
+                    Error = error
+                };
+                var serializer = new DataContractJsonSerializer(typeof(ActionRecorderManifest));
+                using (var stream = File.Create(Path.Combine(_recordingDirectory, "action-recorder.json")))
+                    serializer.WriteObject(stream, manifest);
+            }
+            catch
+            {
+                // 辅助清单写入失败不能破坏主录制。
+            }
+        }
+
+        [DllImport("user32.dll")] private static extern bool SetForegroundWindow(IntPtr window);
+        [DllImport("user32.dll")] private static extern bool ShowWindow(IntPtr window, int command);
+
+        [DataContract]
+        private sealed class ActionRecorderManifest
+        {
+            [DataMember(Name = "format")] public string Format;
+            [DataMember(Name = "version")] public string Version;
+            [DataMember(Name = "enabled")] public bool Enabled;
+            [DataMember(Name = "status")] public string Status;
+            [DataMember(Name = "macroName", EmitDefaultValue = false)] public string MacroName;
+            [DataMember(Name = "startedAtUtc", EmitDefaultValue = false)] public string StartedAtUtc;
+            [DataMember(Name = "sourcePath", EmitDefaultValue = false)] public string SourcePath;
+            [DataMember(Name = "copiedPath", EmitDefaultValue = false)] public string CopiedPath;
+            [DataMember(Name = "error", EmitDefaultValue = false)] public string Error;
         }
     }
 
@@ -352,6 +666,7 @@ namespace UniversalMockRecorder
 
         private readonly string _outputDirectory;
         private readonly string _screenshotDirectory;
+        private readonly bool _captureUiAutomationTargets;
         private readonly BlockingCollection<RawInputEvent> _queue = new BlockingCollection<RawInputEvent>();
         private readonly LowLevelMouseProc _mouseProc;
         private readonly LowLevelKeyboardProc _keyboardProc;
@@ -365,13 +680,19 @@ namespace UniversalMockRecorder
         private Point _lastMovePoint;
         private Bitmap _pendingMouseBeforeSnapshot;
         private string _pendingMouseBeforeScreenshot;
+        private long _pendingMouseBeforeTimestampMs;
+        private string _activeVisualCommand;
+        private int _activeVisualCommandRemainingActions;
+        private long _activeVisualCommandLastSeenMs;
+        private string _commandTextBuffer = "";
         private volatile bool _privacyPaused;
         private volatile bool _recording;
 
-        public RecorderEngine(string outputDirectory)
+        public RecorderEngine(string outputDirectory, bool captureUiAutomationTargets = true)
         {
             _outputDirectory = outputDirectory;
             _screenshotDirectory = Path.Combine(outputDirectory, "screenshots");
+            _captureUiAutomationTargets = captureUiAutomationTargets;
             _mouseProc = MouseHookCallback;
             _keyboardProc = KeyboardHookCallback;
         }
@@ -416,6 +737,7 @@ namespace UniversalMockRecorder
             if (_pendingMouseBeforeSnapshot != null) _pendingMouseBeforeSnapshot.Dispose();
             _pendingMouseBeforeSnapshot = null;
             _pendingMouseBeforeScreenshot = null;
+            _pendingMouseBeforeTimestampMs = 0;
             if (_writer != null) _writer.Dispose();
             _writer = null;
             _worker = null;
@@ -487,9 +809,12 @@ namespace UniversalMockRecorder
                     if (IsModifierKey(input.VirtualKeyCode))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 
-                    UiTarget focusedTarget;
+                    UiTarget focusedTarget = null;
                     bool isPassword;
-                    ReadFocusedContext(out focusedTarget, out isPassword);
+                    if (_captureUiAutomationTargets)
+                        ReadFocusedContext(out focusedTarget, out isPassword);
+                    else
+                        ReadFocusedPasswordState(out isPassword);
                     var rawInput = new RawInputEvent
                     {
                         Id = NextId(),
@@ -539,13 +864,14 @@ namespace UniversalMockRecorder
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
-                        input.Target = ReadTargetAt(input.X, input.Y);
+                        input.Target = _captureUiAutomationTargets ? ReadTargetAt(input.X, input.Y) : null;
                         if (input.Window != null && input.Window.Width > 0 && input.Window.Height > 0)
                         {
                             input.RelativeX = Math.Round((double)(input.X - input.Window.X) / input.Window.Width, 6);
                             input.RelativeY = Math.Round((double)(input.Y - input.Window.Y) / input.Window.Height, 6);
                         }
                     }
+                    UpdateVisualCommandContext(input);
                     if (input.EventType == "key_down" && input.Snapshot != null)
                     {
                         input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
@@ -575,12 +901,32 @@ namespace UniversalMockRecorder
                             if (input.EventType == "mouse_up" && _pendingMouseBeforeSnapshot != null)
                             {
                                 input.ScreenshotBefore = _pendingMouseBeforeScreenshot;
-                                input.ScreenshotAfter = input.Screenshot;
-                                input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
-                                input.VisualChange = MeasureVisualChange(_pendingMouseBeforeSnapshot, after, input.Window);
+                                input.ScreenshotBeforeTimestampMs = _pendingMouseBeforeTimestampMs;
+                                if (!string.IsNullOrEmpty(input.VisualCommandContext) &&
+                                    IsLikelyCanvasTarget(input.Target, input.Window, input.X, input.Y))
+                                {
+                                    // 修改命令的第一张 mouse-up 图经常仍显示被选对象、夹点或预览。
+                                    // 额外等待画布稳定后再抓一张，形成 before -> selection -> after 三态证据。
+                                    input.ScreenshotSelection = input.Screenshot;
+                                    input.ScreenshotSelectionTimestampMs = input.ScreenshotTimestampMs;
+                                    Thread.Sleep(360);
+                                    using (var settled = CaptureScreenBitmap())
+                                    {
+                                        input.ScreenshotAfter = SaveScreenshot(input.Id + "-after", settled);
+                                        input.ScreenshotAfterTimestampMs = UtcNowMs();
+                                        input.VisualChange = MeasureVisualChange(_pendingMouseBeforeSnapshot, settled, input.Window);
+                                    }
+                                }
+                                else
+                                {
+                                    input.ScreenshotAfter = input.Screenshot;
+                                    input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
+                                    input.VisualChange = MeasureVisualChange(_pendingMouseBeforeSnapshot, after, input.Window);
+                                }
                                 _pendingMouseBeforeSnapshot.Dispose();
                                 _pendingMouseBeforeSnapshot = null;
                                 _pendingMouseBeforeScreenshot = null;
+                                _pendingMouseBeforeTimestampMs = 0;
                             }
                         }
                     }
@@ -590,19 +936,24 @@ namespace UniversalMockRecorder
                         if (_pendingMouseBeforeSnapshot != null) _pendingMouseBeforeSnapshot.Dispose();
                         _pendingMouseBeforeSnapshot = (Bitmap)input.Snapshot.Clone();
                         _pendingMouseBeforeScreenshot = input.Screenshot;
+                        _pendingMouseBeforeTimestampMs = input.ScreenshotTimestampMs;
                         input.ScreenshotBefore = input.Screenshot;
                         input.ScreenshotBeforeTimestampMs = input.ScreenshotTimestampMs;
                     }
                     else if (input.EventType == "mouse_up")
                     {
-                        input.ScreenshotAfter = input.Screenshot;
-                        input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
+                        if (string.IsNullOrEmpty(input.ScreenshotAfter))
+                        {
+                            input.ScreenshotAfter = input.Screenshot;
+                            input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
+                        }
                         if (_pendingMouseBeforeSnapshot != null)
                         {
                             input.ScreenshotBefore = _pendingMouseBeforeScreenshot;
                             _pendingMouseBeforeSnapshot.Dispose();
                             _pendingMouseBeforeSnapshot = null;
                             _pendingMouseBeforeScreenshot = null;
+                            _pendingMouseBeforeTimestampMs = 0;
                         }
                     }
 
@@ -644,7 +995,9 @@ namespace UniversalMockRecorder
                 "  \"format\": \"UniversalInteractionTrace\",\n" +
                 "  \"version\": \"0.2\",\n" +
                 "  \"platform\": \"windows\",\n" +
-                "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"visual_change_diff\"],\n" +
+                "  \"uiAutomationTargets\": " + (_captureUiAutomationTargets ? "true" : "false") + ",\n" +
+                "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"command_context_screenshot_bursts\", \"visual_change_diff\"" +
+                (_captureUiAutomationTargets ? ", \"ui_automation_targets\"" : "") + "],\n" +
                 "  \"createdAt\": \"" + DateTimeOffset.UtcNow.ToString("o") + "\"\n" +
                 "}\n",
                 new UTF8Encoding(false));
@@ -694,6 +1047,201 @@ namespace UniversalMockRecorder
             if (input.Key == "ENTER" || input.Key == "RETURN" || input.Key == "ESCAPE" || input.Key == "DELETE" ||
                 input.Key == "BACK" || input.Key == "BACKSPACE") return true;
             return input.Modifiers != null && input.Modifiers.Length > 0;
+        }
+
+        private static bool IsLikelyCanvasTarget(UiTarget target, WindowInfo window, int pointX = 0, int pointY = 0)
+        {
+            if (target == null)
+            {
+                if (window == null || window.Width <= 0 || window.Height <= 0) return false;
+                var relativeX = (double)(pointX - window.X) / window.Width;
+                var relativeY = (double)(pointY - window.Y) / window.Height;
+                // 无 UI Automation 时只把窗口中央的大内容区视为画布，排除顶部 Ribbon 和底部状态栏。
+                return relativeX >= 0.01 && relativeX <= 0.99 && relativeY >= 0.10 && relativeY <= 0.95;
+            }
+            var searchable = ((target.Role ?? "") + " " + (target.ClassName ?? "") + " " + (target.Name ?? ""));
+            if (searchable.IndexOf("ACADDM_CHILD", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                searchable.IndexOf("DXGI_FLIP_MODE_VIEW", StringComparison.OrdinalIgnoreCase) >= 0)
+                return true;
+            if (window == null || window.Width <= 0 || window.Height <= 0 || target.Width <= 0 || target.Height <= 0)
+                return false;
+            var roleIsCanvas = searchable.IndexOf("Pane", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                               searchable.IndexOf("Document", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                               searchable.IndexOf("Custom", StringComparison.OrdinalIgnoreCase) >= 0;
+            var areaRatio = (double)target.Width * target.Height / Math.Max(1.0, (double)window.Width * window.Height);
+            return roleIsCanvas && areaRatio >= 0.2;
+        }
+
+        private void UpdateVisualCommandContext(RawInputEvent input)
+        {
+            var detected = DetectVisualModificationCommand(input);
+            if (_activeVisualCommand != null && detected != null &&
+                !string.Equals(_activeVisualCommand, detected, StringComparison.OrdinalIgnoreCase) &&
+                IsDynamicInputTarget(input.Target))
+                detected = null;
+            if (input.EventType == "key_down")
+            {
+                var key = (input.Key ?? "").ToUpperInvariant();
+                if (key == "ESCAPE")
+                {
+                    _commandTextBuffer = "";
+                    _activeVisualCommand = null;
+                    _activeVisualCommandRemainingActions = 0;
+                }
+                else if (key == "BACK" || key == "BACKSPACE")
+                {
+                    if (_commandTextBuffer.Length > 0)
+                        _commandTextBuffer = _commandTextBuffer.Substring(0, _commandTextBuffer.Length - 1);
+                }
+                else if (!string.IsNullOrEmpty(input.Text) && input.Text.Length == 1 &&
+                         (input.Modifiers == null || (Array.IndexOf(input.Modifiers, "CTRL") < 0 &&
+                          Array.IndexOf(input.Modifiers, "ALT") < 0 && Array.IndexOf(input.Modifiers, "WIN") < 0)))
+                {
+                    _commandTextBuffer += input.Text.ToUpperInvariant();
+                    if (_commandTextBuffer.Length > 40)
+                        _commandTextBuffer = _commandTextBuffer.Substring(_commandTextBuffer.Length - 40);
+                }
+
+                if (key == "ENTER" || key == "RETURN" || key == "SPACE")
+                {
+                    var typedCommand = DetectVisualModificationCommandText(_commandTextBuffer);
+                    if (typedCommand != null) detected = typedCommand;
+                    _commandTextBuffer = "";
+                }
+            }
+
+            if (detected != null)
+            {
+                _activeVisualCommand = detected;
+                _activeVisualCommandRemainingActions = 30;
+                _activeVisualCommandLastSeenMs = input.TimestampMs;
+            }
+            else if (_activeVisualCommand != null && input.EventType != "mouse_move")
+            {
+                if (input.EventType == "mouse_down" && IsDifferentRibbonTarget(input.Target))
+                {
+                    _activeVisualCommand = null;
+                    _activeVisualCommandRemainingActions = 0;
+                    input.VisualCommandContext = null;
+                    return;
+                }
+                _activeVisualCommandRemainingActions--;
+                if (_activeVisualCommandRemainingActions < 0 ||
+                    input.TimestampMs - _activeVisualCommandLastSeenMs > 90000)
+                {
+                    _activeVisualCommand = null;
+                    _activeVisualCommandRemainingActions = 0;
+                }
+                else
+                {
+                    _activeVisualCommandLastSeenMs = input.TimestampMs;
+                }
+            }
+
+            input.VisualCommandContext = _activeVisualCommand;
+        }
+
+        private static bool IsDifferentRibbonTarget(UiTarget target)
+        {
+            if (target == null || IsLikelyCanvasTarget(target, null)) return false;
+            var inRibbon = false;
+            if (target.Ancestors != null)
+            {
+                foreach (var ancestor in target.Ancestors)
+                {
+                    if ((ancestor.Name ?? "").IndexOf("Ribbon", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                        (ancestor.AutomationId ?? "").IndexOf("Tab", StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        inRibbon = true;
+                        break;
+                    }
+                }
+            }
+            if (!inRibbon) return false;
+            var role = target.Role ?? "";
+            return role.IndexOf("Button", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                   role.IndexOf("Text", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                   role.IndexOf("Menu", StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private static bool IsDynamicInputTarget(UiTarget target)
+        {
+            if (target == null) return false;
+            if ((target.Name ?? "").IndexOf("CAcDynInputWndControl", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                (target.ClassName ?? "").IndexOf("CAcDynInputWndControl", StringComparison.OrdinalIgnoreCase) >= 0)
+                return true;
+            if (target.Ancestors == null) return false;
+            foreach (var ancestor in target.Ancestors)
+            {
+                if ((ancestor.Name ?? "").IndexOf("CAcDynInputWndControl", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    (ancestor.ClassName ?? "").IndexOf("CAcDynInputWndControl", StringComparison.OrdinalIgnoreCase) >= 0)
+                    return true;
+            }
+            return false;
+        }
+
+        private static string DetectVisualModificationCommand(RawInputEvent input)
+        {
+            var text = new StringBuilder();
+            if (!string.IsNullOrEmpty(input.Text)) text.Append(input.Text).Append(' ');
+            if (!string.IsNullOrEmpty(input.Key)) text.Append(input.Key).Append(' ');
+            AppendTargetText(text, input.Target);
+            return DetectVisualModificationCommandText(text.ToString());
+        }
+
+        private static void AppendTargetText(StringBuilder text, UiTarget target)
+        {
+            if (target == null) return;
+            text.Append(target.Name).Append(' ')
+                .Append(target.AutomationId).Append(' ')
+                .Append(target.ClassName).Append(' ');
+            if (target.Ancestors == null) return;
+            foreach (var ancestor in target.Ancestors)
+            {
+                text.Append(ancestor.Name).Append(' ')
+                    .Append(ancestor.AutomationId).Append(' ')
+                    .Append(ancestor.ClassName).Append(' ');
+            }
+        }
+
+        private static string DetectVisualModificationCommandText(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text)) return null;
+            var value = text.Trim().TrimStart('_', '.', '-').ToUpperInvariant();
+            var aliases = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                { "OF", "OFFSET" }, { "TR", "TRIM" }, { "EX", "EXTEND" },
+                { "F", "FILLET" }, { "CHA", "CHAMFER" }, { "BR", "BREAK" },
+                { "S", "STRETCH" }, { "M", "MOVE" }, { "CO", "COPY" },
+                { "CP", "COPY" }, { "RO", "ROTATE" }, { "SC", "SCALE" }, { "MI", "MIRROR" }
+            };
+            string aliased;
+            if (aliases.TryGetValue(value, out aliased)) return aliased;
+            var commands = new[]
+            {
+                "OFFSET", "TRIM", "EXTEND", "FILLET", "CHAMFER", "BREAK",
+                "STRETCH", "MOVE", "COPY", "ROTATE", "SCALE", "MIRROR"
+            };
+            foreach (var command in commands)
+            {
+                if (ContainsCommandToken(value, command) || value.Contains("ID_" + command.ToUpperInvariant()))
+                    return command;
+            }
+            return null;
+        }
+
+        private static bool ContainsCommandToken(string text, string command)
+        {
+            var index = 0;
+            while ((index = text.IndexOf(command, index, StringComparison.OrdinalIgnoreCase)) >= 0)
+            {
+                var beforeOkay = index == 0 || !char.IsLetterOrDigit(text[index - 1]);
+                var end = index + command.Length;
+                var afterOkay = end >= text.Length || !char.IsLetterOrDigit(text[end]);
+                if (beforeOkay && afterOkay) return true;
+                index = end;
+            }
+            return false;
         }
 
         private static VisualChangeInfo MeasureVisualChange(Bitmap before, Bitmap after, WindowInfo window)
@@ -795,8 +1343,45 @@ namespace UniversalMockRecorder
                 X = (int)rectangle.X,
                 Y = (int)rectangle.Y,
                 Width = (int)rectangle.Width,
-                Height = (int)rectangle.Height
+                Height = (int)rectangle.Height,
+                Ancestors = ReadTargetAncestors(element)
             };
+        }
+
+        private static List<UiAncestor> ReadTargetAncestors(AutomationElement element)
+        {
+            var result = new List<UiAncestor>();
+            try
+            {
+                var current = element;
+                for (var depth = 0; depth < 8; depth++)
+                {
+                    current = TreeWalker.ControlViewWalker.GetParent(current);
+                    if (current == null) break;
+                    var name = SafeValue(delegate { return current.Current.Name; });
+                    var role = SafeValue(delegate
+                    {
+                        return current.Current.ControlType == null
+                            ? null
+                            : current.Current.ControlType.ProgrammaticName;
+                    });
+                    var automationId = SafeValue(delegate { return current.Current.AutomationId; });
+                    var className = SafeValue(delegate { return current.Current.ClassName; });
+                    if (string.IsNullOrWhiteSpace(name) && string.IsNullOrWhiteSpace(automationId)) continue;
+                    result.Add(new UiAncestor
+                    {
+                        Name = name,
+                        Role = role,
+                        AutomationId = automationId,
+                        ClassName = className
+                    });
+                }
+            }
+            catch
+            {
+                // Some transient AutoCAD popup elements disappear while their ancestry is read.
+            }
+            return result;
         }
 
         private static void ReadFocusedContext(out UiTarget target, out bool isPassword)
@@ -809,6 +1394,17 @@ namespace UniversalMockRecorder
                 if (element == null) return;
                 isPassword = element.Current.IsPassword;
                 target = ReadTarget(element);
+            }
+            catch { }
+        }
+
+        private static void ReadFocusedPasswordState(out bool isPassword)
+        {
+            isPassword = false;
+            try
+            {
+                var element = AutomationElement.FocusedElement;
+                if (element != null) isPassword = element.Current.IsPassword;
             }
             catch { }
         }
@@ -938,6 +1534,9 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotBeforeTimestampMs", EmitDefaultValue = false)] public long ScreenshotBeforeTimestampMs;
             [DataMember(Name = "screenshotAfter", EmitDefaultValue = false)] public string ScreenshotAfter;
             [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
+            [DataMember(Name = "screenshotSelection", EmitDefaultValue = false)] public string ScreenshotSelection;
+            [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
+            [DataMember(Name = "visualCommandContext", EmitDefaultValue = false)] public string VisualCommandContext;
             [DataMember(Name = "visualChange", EmitDefaultValue = false)] public VisualChangeInfo VisualChange;
             [DataMember(Name = "error", EmitDefaultValue = false)] public string Error;
             public Bitmap Snapshot;
@@ -980,6 +1579,16 @@ namespace UniversalMockRecorder
             [DataMember(Name = "y")] public int Y;
             [DataMember(Name = "width")] public int Width;
             [DataMember(Name = "height")] public int Height;
+            [DataMember(Name = "ancestors", EmitDefaultValue = false)] public List<UiAncestor> Ancestors;
+        }
+
+        [DataContract]
+        private sealed class UiAncestor
+        {
+            [DataMember(Name = "name", EmitDefaultValue = false)] public string Name;
+            [DataMember(Name = "role", EmitDefaultValue = false)] public string Role;
+            [DataMember(Name = "automationId", EmitDefaultValue = false)] public string AutomationId;
+            [DataMember(Name = "className", EmitDefaultValue = false)] public string ClassName;
         }
 
         [StructLayout(LayoutKind.Sequential)]

@@ -1,0 +1,553 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-mesh-panel-smooth",
+  "generatedAt": "2026-08-25T21:53:04.5296729Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-Mesh",
+    "tabName": "Mesh",
+    "panelUid": "RBN_00737247",
+    "panelName": "Smooth",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh",
+      "kind": "tab",
+      "name": "Mesh",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-Mesh"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-Mesh",
+        "text": "Mesh",
+        "keyTip": "ME",
+        "alias": null,
+        "officialName": "Mesh Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247",
+      "kind": "panel",
+      "name": "Smooth",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249",
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.id-rbnpnl-8980"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737247"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737247",
+        "text": "Smooth",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh - Smooth",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249",
+      "kind": "layout_row",
+      "name": "RBN_00737249",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737259",
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737249"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737249",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737259": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737259",
+      "kind": "command_button",
+      "name": "Smooth\rMore",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737259"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737259",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Smooth\rMore",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "QSM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_MORE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Smooth\rMore",
+        "official": "Smooth More",
+        "aliases": [
+          "MESHSMOOTHMORE",
+          "ID_MESH_SMOOTH_MORE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SMOOTHMORE",
+        "largeResource": "RCDATA_32_OM_SMOOTHMORE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSMOOTHMORE",
+        "macro": "'_MESHSMOOTHMORE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Increases the level smoothness for mesh objects by one level",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSMOOTHMORE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260",
+      "kind": "layout_group",
+      "name": "RBN_00737260",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261",
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737260"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737260",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261",
+      "kind": "layout_row",
+      "name": "RBN_00737261",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261.rbn-00737263"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737261"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737261",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261.rbn-00737263": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261.rbn-00737263",
+      "kind": "command_button",
+      "name": "Smooth\rLess",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737263"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737263",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Smooth\rLess",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QSL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_LESS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Smooth\rLess",
+        "official": "Smooth Less",
+        "aliases": [
+          "MESHSMOOTHLESS",
+          "ID_MESH_SMOOTH_LESS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SMOOTHLESS",
+        "largeResource": "RCDATA_32_OM_SMOOTHLESS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSMOOTHLESS",
+        "macro": "'_MESHSMOOTHLESS",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Decreases the level of smoothness for  mesh objects by one level",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSMOOTHLESS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262",
+      "kind": "layout_row",
+      "name": "RBN_00737262",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262.rbn-00737264"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737262"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737262",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262.rbn-00737264": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262.rbn-00737264",
+      "kind": "command_button",
+      "name": "Refine Mesh",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.rbn-00737249.rbn-00737260.rbn-00737262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737264"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737264",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Refine Mesh",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QSR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_REFINE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Refine Mesh",
+        "official": "Mesh Refine",
+        "aliases": [
+          "MESHREFINE",
+          "ID_MESH_SMOOTH_REFINE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_REFINEMESH",
+        "largeResource": "RCDATA_32_OM_REFINEMESH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHREFINE",
+        "macro": "'_MESHREFINE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Multiplies the number of faces in selected mesh objects or mesh faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHREFINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.id-rbnpnl-8980": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247.id-rbnpnl-8980",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8980",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-mesh.rbn-00737247",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8980"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8980",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

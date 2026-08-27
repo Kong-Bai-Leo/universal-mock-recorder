@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740544",
+  "generatedAt": "2026-08-25T21:52:51.7340432Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740544",
+    "tabName": "Point Cloud",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740544",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "kind": "tab",
+      "name": "Point Cloud",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740544"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740544",
+        "text": "Point Cloud",
+        "keyTip": "PC",
+        "alias": null,
+        "officialName": "Point Cloud Contextual tab"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 6,
+    "panels": [
+      {
+        "name": "Display",
+        "uid": "RBN_01741377",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741377",
+        "map": "display/ui-map.json",
+        "nodes": 16,
+        "actionableControls": 6
+      },
+      {
+        "name": "Visualization",
+        "uid": "RBN_01741386",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+        "map": "visualization/ui-map.json",
+        "nodes": 23,
+        "actionableControls": 7
+      },
+      {
+        "name": "Cropping",
+        "uid": "RBN_01741405",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+        "map": "cropping/ui-map.json",
+        "nodes": 18,
+        "actionableControls": 6
+      },
+      {
+        "name": "Section",
+        "uid": "RBN_201_C3743",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-c3743",
+        "map": "section/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      },
+      {
+        "name": "Extract",
+        "uid": "RBN_201_4513C",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+        "map": "extract/ui-map.json",
+        "nodes": 17,
+        "actionableControls": 4
+      },
+      {
+        "name": "Options",
+        "uid": "RBN_01741445",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741445",
+        "map": "options/ui-map.json",
+        "nodes": 11,
+        "actionableControls": 3
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 73,
+    "panels": 6,
+    "actionableControls": 27,
+    "splitButtons": 0,
+    "iconOnlyControls": 7
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

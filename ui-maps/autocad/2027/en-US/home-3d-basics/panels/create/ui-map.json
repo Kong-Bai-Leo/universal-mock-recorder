@@ -1,0 +1,2657 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-home-panel-create",
+  "generatedAt": "2026-08-25T21:52:16.2059243Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Home",
+    "tabName": "Home",
+    "panelUid": "ID_3dBasics_PanelCreate",
+    "panelName": "Create",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Home"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Home",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_3dBasics_Home",
+        "officialName": "Home - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "kind": "panel",
+      "name": "Create",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbnpnl-sm0052",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_PanelCreate"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_PanelCreate",
+        "text": "Create",
+        "keyTip": "CR",
+        "alias": null,
+        "officialName": "3D Basics - Create",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0261",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-extrude-0004",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-revolve-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-loft-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-sweep-0003"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0261"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0261",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "kind": "split_button",
+      "name": "Solid Primitives Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2342"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_2342",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Solid Primitives Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SR",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Solid Primitives Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.primary-action",
+      "kind": "primary_button",
+      "name": "Solid Primitives Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2342.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Solid Primitives Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Solid Primitives Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2342.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Solid Primitives Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Solid Primitives Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Solid Primitives Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cylinder-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cone-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-sphere-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-pyramid-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-wedge-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-torus-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-polysolid-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2342.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Solid Primitives Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-box-0002",
+      "kind": "command_button",
+      "name": "Box",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BOX_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BOX_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Box",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Box",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Box",
+        "official": "Box",
+        "aliases": [
+          "BOX",
+          "ID_Box"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BOX",
+        "largeResource": "RCDATA_32_BOX",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BOX",
+        "macro": "^C^C_box",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BOX command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cylinder-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cylinder-0002",
+      "kind": "command_button",
+      "name": "Cylinder",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CYLINDER_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CYLINDER_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cylinder",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Cylinder",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cylinder",
+        "official": "Cylinder",
+        "aliases": [
+          "CYLINDER",
+          "ID_Cylinder"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CYLIND",
+        "largeResource": "RCDATA_32_CYLIND",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CYLINDER",
+        "macro": "^C^C_cylinder",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid cylinder",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CYLINDER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cone-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-cone-0002",
+      "kind": "command_button",
+      "name": "Cone",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CONE_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CONE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cone",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Cone",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cone",
+        "official": "Cone",
+        "aliases": [
+          "CONE",
+          "ID_Cone"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONE",
+        "largeResource": "RCDATA_32_CONE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONE",
+        "macro": "^C^C_cone",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid cone",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-sphere-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-sphere-0002",
+      "kind": "command_button",
+      "name": "Sphere",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SPHERE_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SPHERE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Sphere",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Sphere",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sphere",
+        "official": "Sphere",
+        "aliases": [
+          "SPHERE",
+          "ID_Sphere"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SPHERE",
+        "largeResource": "RCDATA_32_SPHERE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPHERE",
+        "macro": "^C^C_sphere",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid sphere",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPHERE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-pyramid-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-pyramid-0002",
+      "kind": "command_button",
+      "name": "Pyramid",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PYRAMID_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PYRAMID_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Pyramid",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pyramid",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Pyramid",
+        "official": "Pyramid",
+        "aliases": [
+          "PYRAMID",
+          "ID_Pyramid"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SURPYR",
+        "largeResource": "RCDATA_32_PYRAMID",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PYRAMID",
+        "macro": "^C^C_pyramid",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid pyramid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PYRAMID command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-wedge-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-wedge-0002",
+      "kind": "command_button",
+      "name": "Wedge",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WEDGE_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WEDGE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Wedge",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Wedge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Wedge",
+        "official": "Wedge",
+        "aliases": [
+          "WEDGE",
+          "ID_Wedge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WEDGE",
+        "largeResource": "RCDATA_32_WEDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "WEDGE",
+        "macro": "^C^C_wedge",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid wedge",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 WEDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-torus-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-torus-0002",
+      "kind": "command_button",
+      "name": "Torus",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_TORUS_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_TORUS_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Torus",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Torus",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Torus",
+        "official": "Torus",
+        "aliases": [
+          "TORUS",
+          "ID_Torus"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TORUS",
+        "largeResource": "RCDATA_32_TORUS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TORUS",
+        "macro": "^C^C_torus",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a donut-shaped 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TORUS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-polysolid-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu.id-rbn-cmdbtn-polysolid-0002",
+      "kind": "command_button",
+      "name": "Polysolid",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_POLYSOLID_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.rbn-sm-2342",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_POLYSOLID_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Polysolid",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Polysolid",
+        "aliases": [
+          "POLYSOLID",
+          "ID_Polysolid"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POLYSOLID",
+        "largeResource": "RCDATA_32_POLYSOLID",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POLYSOLID",
+        "macro": "^C^C_Polysolid",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D wall-like polysolid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POLYSOLID command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-extrude-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-extrude-0004",
+      "kind": "command_button",
+      "name": "Extrude",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EXTRUDE_0004"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EXTRUDE_0004",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Extrude",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extrude",
+        "aliases": [
+          "EXTRUDE",
+          "ID_Extrude"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUD",
+        "largeResource": "RCDATA_32_EXTRUD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXTRUDE",
+        "macro": "^C^C^R_extrude _MO _SO;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or surface by extruding a 2D or 3D curve",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXTRUDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-revolve-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-revolve-0003",
+      "kind": "command_button",
+      "name": "Revolve",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REVOLVE_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REVOLVE_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revolve",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Revolve",
+        "aliases": [
+          "REVOLVE",
+          "ID_Revolve"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVOLV",
+        "largeResource": "RCDATA_32_REVOLV",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVOLVE",
+        "macro": "^C^C^R_revolve _MO _SO;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or surface by sweeping a 2D or 3D curve around an axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVOLVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-loft-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-loft-0003",
+      "kind": "command_button",
+      "name": "Loft",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LOFT_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LOFT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Loft",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Loft",
+        "aliases": [
+          "LOFT",
+          "ID_Loft"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LOFT",
+        "largeResource": "RCDATA_32_LOFT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LOFT",
+        "macro": "^C^C^R_loft _MO _SO;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or surface in the space between several cross sections",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LOFT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-sweep-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261.id-rbn-cmdbtn-sweep-0003",
+      "kind": "command_button",
+      "name": "Sweep",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SWEEP_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SWEEP_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Sweep",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Sweep",
+        "aliases": [
+          "SWEEP",
+          "ID_Sweep"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SWEEP",
+        "largeResource": "RCDATA_32_SWEEP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SWEEP",
+        "macro": "^C^C^R_sweep _MO _SO;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or surface by sweeping a 2D or 3D curve along a path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SWEEP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbnpnl-sm0052": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbnpnl-sm0052",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_SM0052",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_SM0052"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_SM0052",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0262",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-network-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-planesurf-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-blend-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-patch-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-offset-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-sculpt-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0262"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0262",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-network-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-network-0002",
+      "kind": "command_button",
+      "name": "Surface Network",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_NETWORK_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_NETWORK_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "NE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_NETWORK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Network",
+        "aliases": [
+          "SURFNETWORK",
+          "ID_SURF_NETWORK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_NETWORK",
+        "largeResource": "RCDATA_32_SM_NETWORK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFNETWORK",
+        "macro": "^C^C_SURFNETWORK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface in the space between several curves in the U and V directions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFNETWORK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-planesurf-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-planesurf-0002",
+      "kind": "command_button",
+      "name": "Planar Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLANESURF_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLANESURF_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Planesurf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Planar Surface",
+        "aliases": [
+          "PLANESURF",
+          "ID_Planesurf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLANESURF",
+        "largeResource": "RCDATA_32_PLANESURF",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLANESURF",
+        "macro": "^C^C_Planesurf",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a planar surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLANESURF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-blend-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-blend-0002",
+      "kind": "command_button",
+      "name": "Surface Blend",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_BLEND_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_BLEND_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_BLEND",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Blend",
+        "aliases": [
+          "SURFBLEND",
+          "ID_SURF_BLEND"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_BLEND",
+        "largeResource": "RCDATA_32_SM_BLEND",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFBLEND",
+        "macro": "^C^C_SURFBLEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a continuous blend surface between two existing surfaces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFBLEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-patch-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-patch-0002",
+      "kind": "command_button",
+      "name": "Surface Patch",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_PATCH_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_PATCH_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_PATCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Patch",
+        "aliases": [
+          "SURFPATCH",
+          "ID_SURF_PATCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_PATCH",
+        "largeResource": "RCDATA_32_SM_PATCH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFPATCH",
+        "macro": "^C^C_SURFPATCH",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a new surface or cap to close an open edge of an existing surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFPATCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-offset-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-offset-0002",
+      "kind": "command_button",
+      "name": "Surface Offset",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_OFFSET_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_OFFSET_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_OFFSET",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Offset",
+        "aliases": [
+          "SURFOFFSET",
+          "ID_SURF_OFFSET"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_OFFSET",
+        "largeResource": "RCDATA_32_SM_OFFSET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFOFFSET",
+        "macro": "^C^C_SURFOFFSET",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a parallel surface a specified distance from the original surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFOFFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-sculpt-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262.id-rbn-cmdbtn-surf-sculpt-0002",
+      "kind": "command_button",
+      "name": "Surface Sculpt",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_SCULPT_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_SCULPT_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SCULPT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Sculpt",
+        "aliases": [
+          "SURFSCULPT",
+          "ID_SURF_SCULPT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SCULPT",
+        "largeResource": "RCDATA_32_SM_SCULPT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFSCULPT",
+        "macro": "^C^C_SURFSCULPT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Trims and unions surfaces that bound a region to create a watertight solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFSCULPT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0263",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-box-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cylinder-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cone-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-pyramid-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-sphere-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-torus-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-wedge-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0263"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0263",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-box-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-box-0002",
+      "kind": "command_button",
+      "name": "Mesh Box",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_BOX_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_BOX_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_BOX",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Box",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_BOX"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_BOX",
+        "largeResource": "RCDATA_32_OM_BOX",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _BOX",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cylinder-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cylinder-0002",
+      "kind": "command_button",
+      "name": "Mesh Cylinder",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_CYLINDER_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_CYLINDER_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_CYLINDER",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Cylinder",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_CYLINDER"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_CYLINDER",
+        "largeResource": "RCDATA_32_OM_CYLINDER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _CYLINDER",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive cylinder",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cone-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-cone-0002",
+      "kind": "command_button",
+      "name": "Mesh Cone",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_CONE_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_CONE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_CONE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Cone",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_CONE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_CONE",
+        "largeResource": "RCDATA_32_OM_CONE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _CONE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive cone",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-pyramid-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-pyramid-0002",
+      "kind": "command_button",
+      "name": "Mesh Pyramid",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_PYRAMID_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_PYRAMID_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_PYRAMID",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Pyramid",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_PYRAMID"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_PYRAMID",
+        "largeResource": "RCDATA_32_OM_PYRAMID",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _PYRAMID",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive pyramid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-sphere-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-sphere-0002",
+      "kind": "command_button",
+      "name": "Mesh Sphere",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_SPHERE_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_SPHERE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_SPHERE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Sphere",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_SPHERE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SPHERE",
+        "largeResource": "RCDATA_32_OM_SPHERE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _SPHERE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive sphere",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-torus-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-torus-0002",
+      "kind": "command_button",
+      "name": "Mesh Torus",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_TORUS_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_TORUS_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_TORUS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Torus",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_TORUS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_TORUS",
+        "largeResource": "RCDATA_32_OM_TORUS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _TORUS",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive torus",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-wedge-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263.id-rbn-cmdbtn-mesh-primitive-wedge-0002",
+      "kind": "command_button",
+      "name": "Mesh Wedge",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_WEDGE_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_PRIMITIVE_WEDGE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_PRIMITIVE_WEDGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Wedge",
+        "aliases": [
+          "MESH",
+          "ID_MESH_PRIMITIVE_WEDGE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_WEDGE",
+        "largeResource": "RCDATA_32_OM_WEDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESH",
+        "macro": "^C^C_MESH _WEDGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D mesh primitive wedge",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0264",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edge-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edgesurf-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-rulesurf-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-tabsurf-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0264"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0264",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edge-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edge-0001",
+      "kind": "command_button",
+      "name": "Modeling, Meshes, Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EDGE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EDGE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ED",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Edge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Modeling, Meshes, Edge",
+        "aliases": [
+          "EDGE",
+          "ID_Edge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EDGE",
+        "largeResource": "RCDATA_32_EDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EDGE",
+        "macro": "^C^C_edge",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the visibility of 3D face edges",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edgesurf-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-edgesurf-0002",
+      "kind": "command_button",
+      "name": "Modeling, Meshes, Edge Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EDGESURF_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EDGESURF_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ES",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Edgesurf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Modeling, Meshes, Edge Surface",
+        "aliases": [
+          "EDGESURF",
+          "ID_Edgesurf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EDGESU",
+        "largeResource": "RCDATA_16_EDGESU",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EDGESURF",
+        "macro": "^C^C_edgesurf",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a mesh between four contiguous edges or curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EDGESURF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-rulesurf-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-rulesurf-0002",
+      "kind": "command_button",
+      "name": "Modeling, Meshes, Ruled Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_RULESURF_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_RULESURF_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Rulesurf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Modeling, Meshes, Ruled Surface",
+        "aliases": [
+          "RULESURF",
+          "ID_Rulesurf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RULESU",
+        "largeResource": "RCDATA_32_RULESU",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RULESURF",
+        "macro": "^C^C_rulesurf",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a mesh that represents the surface between two lines or curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RULESURF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-tabsurf-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264.id-rbn-cmdbtn-tabsurf-0002",
+      "kind": "command_button",
+      "name": "Modeling, Meshes, Tabulated Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate.id-rbn-row-sm-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_TABSURF_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_TABSURF_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Tabsurf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Modeling, Meshes, Tabulated Surface",
+        "aliases": [
+          "TABSURF",
+          "ID_Tabsurf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TABSUR",
+        "largeResource": "RCDATA_32_TABSUR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TABSURF",
+        "macro": "^C^C_tabsurf",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a mesh from a line or curve that is swept along a straight path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TABSURF command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

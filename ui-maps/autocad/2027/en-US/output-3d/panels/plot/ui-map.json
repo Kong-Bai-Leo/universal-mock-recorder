@@ -1,0 +1,880 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-taboutput3d-panel-plot",
+  "generatedAt": "2026-08-25T21:52:28.6939430Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabOutput3D",
+    "tabName": "Output",
+    "panelUid": "ID_PanelPlot",
+    "panelName": "Plot",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d",
+      "kind": "tab",
+      "name": "Output",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabOutput3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabOutput3D",
+        "text": "Output",
+        "keyTip": "O",
+        "alias": "ID_TabOutput3D",
+        "officialName": "Output - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot",
+      "kind": "panel",
+      "name": "Plot",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0103",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0043"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelPlot"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelPlot",
+        "text": "Plot",
+        "keyTip": null,
+        "alias": "ID_Plot",
+        "officialName": "Output - Plot",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0103": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0103",
+      "kind": "dialog_launcher",
+      "name": "Plot, Plot Options Dialog",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0103"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0103",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "PT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PlotOptionsDialog",
+        "commandId": "ID_PlotOptionsDialog",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Plot, Plot Options Dialog",
+        "aliases": [
+          "OPTIONS",
+          "ID_PlotOptionsDialog"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OPTIONS",
+        "macro": "^C^C_+OPTIONS 3",
+        "macroType": "Any",
+        "commandId": "ID_PlotOptionsDialog",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens the dialog associated with Plot, Plot Options Dialog.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OPTIONS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0203",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-print",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.rbn-00013297",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-preview",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0203"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0203",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-print": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-print",
+      "kind": "command_button",
+      "name": "Plot",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PRINT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PRINT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Plot",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Print",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Plot",
+        "official": "Plot...",
+        "aliases": [
+          "PLOT",
+          "ID_Print"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PRINT",
+        "largeResource": "RCDATA_32_PRINT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLOT",
+        "macro": "^C^C_plot",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Prints a drawing to a plotter, printer, or file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLOT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.rbn-00013297": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.rbn-00013297",
+      "kind": "command_button",
+      "name": "Batch\rPlot",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013297"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013297",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Batch\rPlot",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pub",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Batch\rPlot",
+        "official": "Publish...",
+        "aliases": [
+          "PUBLISH",
+          "ID_Pub"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PUBL",
+        "largeResource": "RCDATA_32_PUBL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PUBLISH",
+        "macro": "^C^C_publish",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Publishes drawings to an electronic sheet set (DWF, DWFx, or PDF files) or to a  plotter",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PUBLISH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-preview": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-cmdbtn-preview",
+      "kind": "command_button",
+      "name": "Preview",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PREVIEW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PREVIEW",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Preview",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Preview",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Preview",
+        "official": "Plot Preview",
+        "aliases": [
+          "PREVIEW",
+          "ID_Preview"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PREVIEW_NEW",
+        "largeResource": "RCDATA_32_PREVIEW_NEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PREVIEW",
+        "macro": "^C^C_preview",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the drawing as it will be plotted",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PREVIEW command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0040",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0040"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0040",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0204",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204.id-rbn-cmdbtn-plotsetup"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0204"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0204",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204.id-rbn-cmdbtn-plotsetup": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204.id-rbn-cmdbtn-plotsetup",
+      "kind": "command_button",
+      "name": "Page Setup Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0204",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLOTSETUP"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLOTSETUP",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Page Setup Manager",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PlotSetup",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Page Setup Manager",
+        "official": "Page Setup",
+        "aliases": [
+          "PAGESETUP",
+          "ID_PlotSetup"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLTSET",
+        "largeResource": "RCDATA_32_PLTSET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PAGESETUP",
+        "macro": "^C^C_pagesetup",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls the page layout, plotting device, paper size, and other settings for each new layout",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PAGESETUP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0205",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205.id-rbn-cmdbtn-pubdetails"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0205"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0205",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205.id-rbn-cmdbtn-pubdetails": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205.id-rbn-cmdbtn-pubdetails",
+      "kind": "command_button",
+      "name": "View Details",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0205",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PUBDETAILS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PUBDETAILS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "View Details",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PubDetails",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "View Details",
+        "official": "View Plot and Publish Details...",
+        "aliases": [
+          "VIEWPLOTDETAILS",
+          "ID_PubDetails"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_PLOT_AND_PUBLISH_DETAILS",
+        "largeResource": "RCDATA_32_VIEW_PLOT_AND_PUBLISH_DETAILS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWPLOTDETAILS",
+        "macro": "^C^c_viewplotdetails",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays information about plot and publish jobs completed in the current session",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWPLOTDETAILS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0206",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206.id-rbn-cmdbtn-plotmgr"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0206"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0206",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206.id-rbn-cmdbtn-plotmgr": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206.id-rbn-cmdbtn-plotmgr",
+      "kind": "command_button",
+      "name": "Plotter Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-row-0203.id-rbn-rowpanel-0040.id-rbn-row-0206",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLOTMGR"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLOTMGR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Plotter Manager",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PlotMgr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Plotter Manager",
+        "official": "Plotter Manager...",
+        "aliases": [
+          "PLOTTERMANAGER",
+          "ID_PlotMgr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLOT_MGR",
+        "largeResource": "RCDATA_32_PLOT_MGR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLOTTERMANAGER",
+        "macro": "^C^C_plottermanager",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Plotter Manager, where you can add or edit a plotter configuration",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLOTTERMANAGER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0043": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot.id-rbn-0043",
+      "kind": "panel_break",
+      "name": "ID_RBN_0043",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelplot",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0043"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0043",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

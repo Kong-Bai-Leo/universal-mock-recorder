@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_3dBasics_Home",
+  "tabName": "Home",
+  "panelCount": 9,
+  "panels": [
+    {
+      "name": "Create",
+      "uid": "ID_3dBasics_PanelCreate",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcreate",
+      "map": "create/ui-map.json",
+      "nodes": 43,
+      "actionableControls": 31
+    },
+    {
+      "name": "Edit",
+      "uid": "ID_3dBasics_PanelEdit",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "map": "edit/ui-map.json",
+      "nodes": 33,
+      "actionableControls": 23
+    },
+    {
+      "name": "Draw",
+      "uid": "ID_3dBasics_PanelDraw",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneldraw",
+      "map": "draw/ui-map.json",
+      "nodes": 57,
+      "actionableControls": 35
+    },
+    {
+      "name": "Modify",
+      "uid": "ID_3dBasics_PanelModify",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelmodify",
+      "map": "modify/ui-map.json",
+      "nodes": 36,
+      "actionableControls": 24
+    },
+    {
+      "name": "Selection",
+      "uid": "ID_3dBasics_PanelSelection",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection",
+      "map": "selection/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Coordinates",
+      "uid": "ID_3dBasics_PanelCoordinates",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelcoordinates",
+      "map": "coordinates/ui-map.json",
+      "nodes": 25,
+      "actionableControls": 14
+    },
+    {
+      "name": "Layers & View",
+      "uid": "ID_3dBasics_PanelLayersView",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+      "map": "layers-view/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 6
+    },
+    {
+      "name": "Section",
+      "uid": "ID_PanelSection",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-panelsection",
+      "map": "section/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 7
+    },
+    {
+      "name": "View",
+      "uid": "RBN_200_F691F",
+      "nodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.rbn-200-f691f",
+      "map": "view/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 8
+    }
+  ]
+}

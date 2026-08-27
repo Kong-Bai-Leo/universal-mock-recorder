@@ -1,0 +1,22 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:36:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Express Tools", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 26,
+  "observedControlIds": [
+    "ID_ACETBURST", "ID_ACETBLOCKREPLACE", "ID_ACETXRFLST", "ID_ACETATTIN", "ID_ACETATTOUT", "ID_ACETARCTXT",
+    "RBN_0137", "ID_ACETTXT2MT", "ID_ACETTCOUNT", "ID_ACETTCIRCL", "ID_ACETMOCORO", "ID_ACETMSTRCH",
+    "ID_ACETASPACE", "ID_ACETVPSYNC", "ID_ACETLAYOUTMRG", "ID_ACETBREAKL", "ID_ACETSHATCH", "RBN_0076",
+    "ID_ACETDIMASSOC", "ID_ACETDIMIM", "ID_ACETDIMEX", "ID_ACETALIAS", "ID_ACETXDATA", "ID_ACETXDLIST",
+    "ID_ACETSYSVAR", "RBN_0121"
+  ],
+  "lastExpandedMenuCheckAt": "2026-08-25T19:32:21.9578542Z",
+  "liveInteractionSamples": [
+    { "controlId": "RBN_0047", "action": "select_tab", "result": "Express Tools opened and all eight visible panels were read from acetmain.cuix and the live tree." },
+    { "controlId": "RBN_0137", "action": "expand_menu_then_escape", "result": "Modify Text opened with Explode Text, Change Case, Rotate Text, Fit Text, and Justify Text." },
+    { "controlId": "RBN_0076", "action": "expand_menu_then_escape", "result": "Annotation Attachment opened with Attach Leader to Annotation, Global Attach Leader to Annotation, and Detach Leaders from Annotation." },
+    { "controlId": "RBN_0121", "action": "expand_menu_then_escape", "result": "URL Options opened with Show URLs, Change URLs, and Find and Replace URLs." }
+  ],
+  "notes": ["Icon-only Express Tools controls retain stable macro IDs and official macro descriptions where available; the three flyout menus were also expanded live and closed without invoking commands."]
+}

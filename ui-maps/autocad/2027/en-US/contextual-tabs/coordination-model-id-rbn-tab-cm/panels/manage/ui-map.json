@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-rbn-tab-cm-panel-manage",
+  "generatedAt": "2026-08-25T21:52:53.0231031Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_RBN_TAB_CM",
+    "tabName": "Coordination Model",
+    "panelUid": "ID_RBN_PANEL_CM_MANAGE",
+    "panelName": "Manage",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm",
+      "kind": "tab",
+      "name": "Coordination Model",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TAB_CM"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TAB_CM",
+        "text": "Coordination Model",
+        "keyTip": "CM",
+        "alias": null,
+        "officialName": "Coordination Model Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage",
+      "kind": "panel",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.id-rbn-pnlbrk-cm-manage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PANEL_CM_MANAGE"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PANEL_CM_MANAGE",
+        "text": "Manage",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Coordination Model - Manage",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379",
+      "kind": "layout_row",
+      "name": "RBN_01851379",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379.id-rbn-btn-cm-xref"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01851379"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01851379",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379.id-rbn-btn-cm-xref": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379.id-rbn-btn-cm-xref",
+      "kind": "toggle_button",
+      "name": "External\rReference",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.rbn-01851379",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_CM_XREF"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_CM_XREF",
+        "controlId": "AcExternalReferencesCommandToggleButton",
+        "text": "External\rReference",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ER",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "External\rReference",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles External\rReference.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.id-rbn-pnlbrk-cm-manage": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage.id-rbn-pnlbrk-cm-manage",
+      "kind": "panel_break",
+      "name": "ID_RBN_PNLBRK_CM_MANAGE",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PNLBRK_CM_MANAGE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PNLBRK_CM_MANAGE",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabletab-panel-rows",
+  "generatedAt": "2026-08-25T21:52:56.3626121Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TableTab",
+    "tabName": "Table Cell",
+    "panelUid": "ID_PanelTableRows",
+    "panelName": "Rows",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab",
+      "kind": "tab",
+      "name": "Table Cell",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TableTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TableTab",
+        "text": "Table Cell",
+        "keyTip": "TA",
+        "alias": null,
+        "officialName": "Table Cell Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+      "kind": "panel",
+      "name": "Rows",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-0054"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTableRows"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTableRows",
+        "text": "Rows",
+        "keyTip": null,
+        "alias": "ID_TableRows",
+        "officialName": "Table Cells - Rows",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0259",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsabove",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsbelow",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-ribbonseparator-0103",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowdelete"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0259"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0259",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsabove": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsabove",
+      "kind": "command_button",
+      "name": "Insert\rAbove",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ROWINSABOVE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ROWINSABOVE",
+        "controlId": "AcTableRowInsAboveCommandButton",
+        "text": "Insert\rAbove",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "IA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Insert\rAbove",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Insert\rAbove.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsbelow": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowinsbelow",
+      "kind": "command_button",
+      "name": "Insert\rBelow",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ROWINSBELOW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ROWINSBELOW",
+        "controlId": "AcTableRowInsBelowCommandButton",
+        "text": "Insert\rBelow",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "IB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Insert\rBelow",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Insert\rBelow.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-ribbonseparator-0103": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-ribbonseparator-0103",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0103",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0103"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0103",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowdelete": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259.id-rbn-cmdbtn-rowdelete",
+      "kind": "command_button",
+      "name": "Delete\rRow(s)",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-row-0259",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ROWDELETE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ROWDELETE",
+        "controlId": "AcTableRowDeleteCommandButton",
+        "text": "Delete\rRow(s)",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete\rRow(s)",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Delete\rRow(s).",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-0054": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows.id-rbn-0054",
+      "kind": "panel_break",
+      "name": "ID_RBN_0054",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0054"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0054",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

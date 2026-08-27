@@ -1,0 +1,602 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabcollaborate-panel-traces",
+  "generatedAt": "2026-08-25T21:52:29.8508082Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabCollaborate",
+    "tabName": "Collaborate",
+    "panelUid": "ID_PanelTrace",
+    "panelName": "Traces",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate",
+      "kind": "tab",
+      "name": "Collaborate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabCollaborate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabCollaborate",
+        "text": "Collaborate",
+        "keyTip": "CO",
+        "alias": "ID_TABCOLLABORATE",
+        "officialName": "Collaborate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+      "kind": "panel",
+      "name": "Traces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace",
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-f4294-trace",
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTrace"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTrace",
+        "text": "Traces",
+        "keyTip": "TS",
+        "alias": null,
+        "officialName": "Collaborate - Traces",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace",
+      "kind": "layout_row",
+      "name": "RBN_231_3F461_TRACE",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-231-cc45a-trace",
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-242-cc4d8",
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-251-5a9e7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_3F461_TRACE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_3F461_TRACE",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-231-cc45a-trace": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-231-cc45a-trace",
+      "kind": "toggle_button",
+      "name": "Traces\rPalette",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_CC45A_TRACE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_CC45A_TRACE",
+        "controlId": "AcTraceToggleButton",
+        "text": "Traces\rPalette",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Traces\rPalette",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Traces\rPalette.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-242-cc4d8": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-242-cc4d8",
+      "kind": "command_button",
+      "name": "Markup\rImport",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_CC4D8"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_242_CC4D8",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Markup\rImport",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MarkupImport",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Markup\rImport",
+        "official": "Markup Import",
+        "aliases": [
+          "MARKUPIMPORT",
+          "ID_MarkupImport"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACMARKUPIMPORT",
+        "largeResource": "RCDATA_32_ACMARKUPIMPORT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MARKUPIMPORT",
+        "macro": "^C^C_MARKUPIMPORT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Import markup into a trace\n\nIdentifies the markups in your drawing and converts them to AutoCAD objects like text, leaders, and revision clouds.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MARKUPIMPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-251-5a9e7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace.rbn-251-5a9e7",
+      "kind": "command_button",
+      "name": "Create\rCheckout",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-3f461-trace",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_251_5A9E7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_251_5A9E7",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Create\rCheckout",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_TRACECHECKOUT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Create\rCheckout",
+        "official": "Create Checkout",
+        "aliases": [
+          "CHECKOUT",
+          "ID_TRACECHECKOUT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACTRACE_CHECKOUT",
+        "largeResource": "RCDATA_32_ACTRACE_CHECKOUT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHECKOUT",
+        "macro": "^C^C_CHECKOUT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Check out and modify selected geometry in the Trace workspace while a collaborator has the drawing open. Once changes are complete, submit them for approval.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHECKOUT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-f4294-trace": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-231-f4294-trace",
+      "kind": "panel_break",
+      "name": "RBN_231_F4294_TRACE",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_F4294_TRACE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_F4294_TRACE",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925",
+      "kind": "layout_row",
+      "name": "RBN_00735925",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00914523",
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00475541"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00735925"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00735925",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00914523": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00914523",
+      "kind": "toggle_button",
+      "name": "Checkout Fading Toggle Button",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00914523"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00914523",
+        "controlId": "AcCheckoutFadingCommandToggleButton",
+        "text": "Checkout Fading Toggle Button",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Checkout Fading Toggle Button",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Checkout Fading Toggle Button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00475541": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925.rbn-00475541",
+      "kind": "ribbon_control",
+      "name": "Checkout fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace.rbn-00735925",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00475541"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00475541",
+        "controlId": "AcCheckoutFadingSlider",
+        "text": "Checkout fading",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Checkout fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:34:00Z",
+    "observedControlCount": 6,
+    "evidence": "../../live-observation.json"
+  }
+}

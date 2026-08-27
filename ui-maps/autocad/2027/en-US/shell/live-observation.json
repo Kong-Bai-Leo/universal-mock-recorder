@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows"
+  },
+  "observedAt": "2026-08-25T22:05:00Z",
+  "method": "computer_use_visual_observation",
+  "window": {
+    "workspace": "Drafting & Annotation",
+    "drawing": "Drawing1.dwg",
+    "logicalViewport": {
+      "width": 1550,
+      "height": 1631
+    }
+  },
+  "coordinatePolicy": "Viewport dimensions are evidence only. Runtime agents must locate controls from the current screenshot and must not replay these coordinates.",
+  "surfaces": {
+    "applicationMenu": {
+      "opened": true,
+      "interactionTested": false,
+      "dynamicRegion": "Recent Documents",
+      "items": [
+        { "id": "search", "name": "Search Application Menu", "kind": "search_box", "command": null, "hasSubmenu": false },
+        { "id": "recent-documents", "name": "Recent Documents", "kind": "view_selector", "command": null, "hasSubmenu": false },
+        { "id": "open-documents", "name": "Open Documents", "kind": "view_selector", "command": null, "hasSubmenu": false },
+        { "id": "new", "name": "New", "kind": "split_menu_item", "command": "QNEW", "hasSubmenu": true },
+        { "id": "open", "name": "Open", "kind": "split_menu_item", "command": "OPEN", "hasSubmenu": true },
+        { "id": "save", "name": "Save", "kind": "command_item", "command": "QSAVE", "hasSubmenu": false },
+        { "id": "save-as", "name": "Save As", "kind": "split_menu_item", "command": "SAVEAS", "hasSubmenu": true },
+        { "id": "import", "name": "Import", "kind": "split_menu_item", "command": "IMPORT", "hasSubmenu": true },
+        { "id": "export", "name": "Export", "kind": "split_menu_item", "command": "EXPORT", "hasSubmenu": true },
+        { "id": "publish", "name": "Publish", "kind": "split_menu_item", "command": "PUBLISH", "hasSubmenu": true },
+        { "id": "print", "name": "Print", "kind": "split_menu_item", "command": "PLOT", "hasSubmenu": true },
+        { "id": "drawing-utilities", "name": "Drawing Utilities", "kind": "menu_item", "command": null, "hasSubmenu": true },
+        { "id": "close", "name": "Close", "kind": "split_menu_item", "command": "CLOSE", "hasSubmenu": true },
+        { "id": "options", "name": "Options", "kind": "command_item", "command": "OPTIONS", "hasSubmenu": false },
+        { "id": "exit", "name": "Exit Autodesk AutoCAD 2027", "kind": "command_item", "command": "QUIT", "hasSubmenu": false }
+      ]
+    },
+    "statusBarCustomization": {
+      "opened": true,
+      "interactionTested": false,
+      "items": [
+        { "id": "coordinates", "name": "Coordinates", "enabled": false },
+        { "id": "model-space", "name": "Model Space", "enabled": true },
+        { "id": "grid", "name": "Grid", "enabled": true },
+        { "id": "snap-mode", "name": "Snap Mode", "enabled": true },
+        { "id": "infer-constraints", "name": "Infer Constraints", "enabled": false },
+        { "id": "dynamic-input", "name": "Dynamic Input", "enabled": false },
+        { "id": "ortho-mode", "name": "Ortho Mode", "enabled": true },
+        { "id": "polar-tracking", "name": "Polar Tracking", "enabled": true },
+        { "id": "isometric-drafting", "name": "Isometric Drafting", "enabled": true },
+        { "id": "object-snap-tracking", "name": "Object Snap Tracking", "enabled": true },
+        { "id": "2d-object-snap", "name": "2D Object Snap", "enabled": true },
+        { "id": "lineweight", "name": "LineWeight", "enabled": false },
+        { "id": "transparency", "name": "Transparency", "enabled": false },
+        { "id": "selection-cycling", "name": "Selection Cycling", "enabled": false },
+        { "id": "3d-object-snap", "name": "3D Object Snap", "enabled": false },
+        { "id": "dynamic-ucs", "name": "Dynamic UCS", "enabled": false },
+        { "id": "section-filtering", "name": "Section Filtering", "enabled": false },
+        { "id": "gizmo", "name": "Gizmo", "enabled": false },
+        { "id": "annotation-visibility", "name": "Annotation Visibility", "enabled": true },
+        { "id": "autoscale", "name": "AutoScale", "enabled": true },
+        { "id": "annotation-scale", "name": "Annotation Scale", "enabled": true },
+        { "id": "workspace-switching", "name": "Workspace Switching", "enabled": true },
+        { "id": "annotation-monitor", "name": "Annotation Monitor", "enabled": true },
+        { "id": "units", "name": "Units", "enabled": false },
+        { "id": "quick-properties", "name": "Quick Properties", "enabled": false },
+        { "id": "lock-ui", "name": "Lock UI", "enabled": false },
+        { "id": "isolate-objects", "name": "Isolate Objects", "enabled": true },
+        { "id": "graphics-performance", "name": "Graphics Performance", "enabled": false },
+        { "id": "clean-screen", "name": "Clean Screen", "enabled": true }
+      ]
+    }
+  }
+}

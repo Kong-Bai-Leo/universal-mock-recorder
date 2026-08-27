@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabGeoMapImage",
+  "tabName": "Map Image",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "Properties",
+      "uid": "Geolocation_GeoMap_Properties_Panel",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel",
+      "map": "properties/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 5
+    },
+    {
+      "name": "   Update   ",
+      "uid": "Geolocation_GeoMap_Update",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update",
+      "map": "update/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

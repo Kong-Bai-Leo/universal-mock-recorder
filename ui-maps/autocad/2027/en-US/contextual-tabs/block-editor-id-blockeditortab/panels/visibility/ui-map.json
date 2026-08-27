@@ -1,0 +1,684 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditortab-panel-visibility",
+  "generatedAt": "2026-08-25T21:53:15.0301157Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorTab",
+    "tabName": "Block Editor",
+    "panelUid": "ID_PanelBlockEditorVisibility",
+    "panelName": "Visibility",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "kind": "tab",
+      "name": "Block Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorTab",
+        "text": "Block Editor",
+        "keyTip": "BE",
+        "alias": null,
+        "officialName": "Block Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+      "kind": "panel",
+      "name": "Visibility",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-0073"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelBlockEditorVisibility"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 116
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelBlockEditorVisibility",
+        "text": "Visibility",
+        "keyTip": null,
+        "alias": "ID_BlockVisibility",
+        "officialName": "Block Editor - Visibility",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0251",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-cmdbtn-bvstate",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0251"
+      },
+      "placement": {
+        "region": "main",
+        "order": 117
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0251",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-cmdbtn-bvstate": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-cmdbtn-bvstate",
+      "kind": "command_button",
+      "name": "Visibility\rStates",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BVSTATE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 118
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BVSTATE",
+        "controlId": "AcBlockVisibilityStatesButton",
+        "text": "Visibility\rStates",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "VS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visibility\rStates",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Visibility\rStates.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0052",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0052"
+      },
+      "placement": {
+        "region": "main",
+        "order": 119
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0052",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0252",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvmode",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-ribbonseparator-0126",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvshow",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvhide"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0252"
+      },
+      "placement": {
+        "region": "main",
+        "order": 120
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0252",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvmode": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvmode",
+      "kind": "command_button",
+      "name": "Visibility Mode",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BVMODE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 121
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BVMODE",
+        "controlId": "AcBlockVisibilityModeButton",
+        "text": "Visibility Mode",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "VM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visibility Mode",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Visibility Mode.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-ribbonseparator-0126": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-ribbonseparator-0126",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0126",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0126"
+      },
+      "placement": {
+        "region": "main",
+        "order": 122
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0126",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvshow": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvshow",
+      "kind": "command_button",
+      "name": "Make Visible",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BVSHOW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 123
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BVSHOW",
+        "controlId": "AcBlockVisibilityShowButton",
+        "text": "Make Visible",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Make Visible",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Make Visible.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvhide": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252.id-rbn-cmdbtn-bvhide",
+      "kind": "command_button",
+      "name": "Make Invisible",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0252",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BVHIDE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 124
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BVHIDE",
+        "controlId": "AcBlockVisibilityHideButton",
+        "text": "Make Invisible",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Make Invisible",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Make Invisible.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0253",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253.id-rbn-control-blockvisibilitiescombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0253"
+      },
+      "placement": {
+        "region": "main",
+        "order": 125
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0253",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253.id-rbn-control-blockvisibilitiescombo": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253.id-rbn-control-blockvisibilitiescombo",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Block Visibility States",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-row-0251.id-rbn-rowpanel-0052.id-rbn-row-0253",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_BLOCKVISIBILITIESCOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 126
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_BLOCKVISIBILITIESCOMBO",
+        "controlId": "AcBlockVisibilitiesCombo",
+        "text": "Ribbon Combo Box - Block Visibility States",
+        "keyTip": "VC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Block Visibility States.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-0073": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility.id-rbn-0073",
+      "kind": "panel_break",
+      "name": "ID_RBN_0073",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0073"
+      },
+      "placement": {
+        "region": "main",
+        "order": 127
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0073",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

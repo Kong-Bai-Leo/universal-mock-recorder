@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-xref-panel-options",
+  "generatedAt": "2026-08-25T21:53:10.6263323Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-Xref",
+    "tabName": "External Reference",
+    "panelUid": "RBN_00017260",
+    "panelName": "Options",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref",
+      "kind": "tab",
+      "name": "External Reference",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-Xref"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-Xref",
+        "text": "External Reference",
+        "keyTip": "EX",
+        "alias": null,
+        "officialName": "External Reference Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260",
+      "kind": "panel",
+      "name": "Options",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264",
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.id-rbn-0087"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017260"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017260",
+        "text": "Options",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "External Reference - Options",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264",
+      "kind": "layout_row",
+      "name": "RBN_00017264",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264.rbn-00017337"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017264"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017264",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264.rbn-00017337": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264.rbn-00017337",
+      "kind": "toggle_button",
+      "name": "External\rReferences",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.rbn-00017264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017337"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017337",
+        "controlId": "AcExternalReferencesCommandToggleButton",
+        "text": "External\rReferences",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "External\rReferences",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles External\rReferences.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.id-rbn-0087": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260.id-rbn-0087",
+      "kind": "panel_break",
+      "name": "ID_RBN_0087",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0087"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0087",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

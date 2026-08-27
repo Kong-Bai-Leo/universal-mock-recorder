@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-insert-panel-block",
+  "generatedAt": "2026-08-25T21:52:19.4870637Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Insert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelInsert_Block",
+    "panelName": "Block",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Insert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Insert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": null,
+        "officialName": "Insert - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block",
+      "kind": "panel",
+      "name": "Block",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbnpnl-0009"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelInsert_Block"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelInsert_Block",
+        "text": "Block",
+        "keyTip": "BK",
+        "alias": "ID_Insert_Block",
+        "officialName": "Insert - Block",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0069",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-control-dinsert-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0069"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0069",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-control-dinsert-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-control-dinsert-0001",
+      "kind": "ribbon_control",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_DINSERT_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_DINSERT_0001",
+        "controlId": "AcInsertGalleryControl",
+        "text": "Insert",
+        "keyTip": "BI"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Insert.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "kind": "split_button",
+      "name": "Detect and &Convert",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_INSERT_DETECT_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_INSERT_DETECT_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Detect and &Convert",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DT",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_DETECTION",
+        "largeImage": "RCDATA_32_DETECTION",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Detect and &Convert variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Detect and &Convert primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_INSERT_DETECT_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Detect and &Convert variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Detect and &Convert menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_INSERT_DETECT_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Detect and &Convert menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Detect and &Convert popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Detect and &Convert menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-bconvert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_INSERT_DETECT_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Detect and &Convert variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-detect",
+      "kind": "command_button",
+      "name": "Detect and\rConvert",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_INSERT_DETECT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "ui": {
+        "uid": "RBN_INSERT_DETECT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Detect and\rConvert",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DETECT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Detect and\rConvert",
+        "official": "Detect and Convert",
+        "aliases": [
+          "BDETECT",
+          "ID_DETECT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DETECTION",
+        "largeResource": "RCDATA_32_DETECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BDETECT",
+        "macro": "^C^C_BDETECT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Identifies objects in the drawing that can be converted into blocks.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BDETECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-bconvert": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu.rbn-insert-bconvert",
+      "kind": "command_button",
+      "name": "Search and\rConvert",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_INSERT_BCONVERT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.id-rbn-splitbtn-insert-detect-0001",
+      "ui": {
+        "uid": "RBN_INSERT_BCONVERT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Search and\rConvert",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BCONVERT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Search and\rConvert",
+        "official": "Search and Convert",
+        "aliases": [
+          "BSEARCH",
+          "ID_BCONVERT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLOCKCONVERT",
+        "largeResource": "RCDATA_32_BLOCKCONVERT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BSEARCH",
+        "macro": "^C^C_BSEARCH",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Identifies matching instances of an object to convert to blocks.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BSEARCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96",
+      "kind": "layout_group",
+      "name": "RBN_243_62C96",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_243_62C96"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_243_62C96",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad",
+      "kind": "layout_row",
+      "name": "RBN_243_16FAD",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_243_16FAD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_243_16FAD",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "kind": "split_button",
+      "name": "Edit\rAttribute",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ATTRIBUTE_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ATTRIBUTE_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Edit\rAttribute",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AE",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ATTEDI",
+        "largeImage": "RCDATA_32_ATTEDI",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Edit\rAttribute variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Edit\rAttribute primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ATTRIBUTE_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Edit\rAttribute variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Edit\rAttribute menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ATTRIBUTE_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Edit\rAttribute menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Edit\rAttribute popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Edit\rAttribute menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-atteditglo-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ATTRIBUTE_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Edit\rAttribute variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-eattedit-0001",
+      "kind": "command_button",
+      "name": "Single",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EATTEDIT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EATTEDIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Single",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EAttEdit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Single",
+        "official": "Attribute, Single...",
+        "aliases": [
+          "EATTEDIT",
+          "ID_EAttEdit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTEDI",
+        "largeResource": "RCDATA_32_ATTEDI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EATTEDIT",
+        "macro": "^C^C_eattedit",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits attributes in a block reference",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EATTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-atteditglo-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-atteditglo-0001",
+      "kind": "command_button",
+      "name": "Multiple",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ATTEDITGLO_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-16fad.id-rbn-splitbtn-attribute-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ATTEDITGLO_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Multiple",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_AtteditGlo",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Multiple",
+        "official": "Attribute, Global",
+        "aliases": [
+          "-ATTEDIT",
+          "ID_AtteditGlo"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTEDG",
+        "largeResource": "RCDATA_32_ATTEDG",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-ATTEDIT",
+        "macro": "^C^C_-attedit",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits the variable attributes of  a block individually or globally",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -ATTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba",
+      "kind": "layout_row",
+      "name": "RBN_243_3E4BA",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba.rbn-00014137"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_243_3E4BA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_243_3E4BA",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba.rbn-00014137": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba.rbn-00014137",
+      "kind": "data_bound_dropdown",
+      "name": "Attribute Display Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-3e4ba",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014137"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014137",
+        "controlId": "AcATTMODEDataBoundDropDown",
+        "text": "Attribute Display Drop-down",
+        "keyTip": "AT"
+      },
+      "semantics": {
+        "description": "Opens or changes the Attribute Display Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Attribute Display Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da",
+      "kind": "layout_row",
+      "name": "RBN_243_2B7DA",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da.rbn-243-585fe"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_243_2B7DA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_243_2B7DA",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da.rbn-243-585fe": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da.rbn-243-585fe",
+      "kind": "command_button",
+      "name": "Replace",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbn-row-0069.rbn-243-62c96.rbn-243-2b7da",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_243_585FE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_243_585FE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "BR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BReplace",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Replace",
+        "aliases": [
+          "BREPLACE",
+          "ID_BReplace"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BREPLACE",
+        "largeResource": "RCDATA_32_BREPLACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREPLACE",
+        "macro": "^C^C_breplace",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Replaces an existing block with a specified block.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREPLACE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbnpnl-0009": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block.id-rbnpnl-0009",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0009",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-insert.id-panelinsert-block",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0009"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0009",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

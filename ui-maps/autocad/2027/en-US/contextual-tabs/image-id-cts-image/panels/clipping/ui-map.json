@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-image-panel-clipping",
+  "generatedAt": "2026-08-25T21:53:06.9467253Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-Image",
+    "tabName": "Image",
+    "panelUid": "RBN_00016952",
+    "panelName": "Clipping",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-image"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image",
+      "kind": "tab",
+      "name": "Image",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-Image"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-Image",
+        "text": "Image",
+        "keyTip": "IM",
+        "alias": null,
+        "officialName": "Image Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952",
+      "kind": "panel",
+      "name": "Clipping",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-image",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956",
+        "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.id-rbn-0083"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016952"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016952",
+        "text": "Clipping",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Image - Clipping",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956",
+      "kind": "layout_row",
+      "name": "RBN_00016956",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.id-rbn-0017",
+        "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.rbn-00034776"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016956"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016956",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.id-rbn-0017": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.id-rbn-0017",
+      "kind": "command_button",
+      "name": "Create Clipping\rBoundary",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0017"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0017",
+        "controlId": "AcRibbonCommandButtonEnableEqualToOne",
+        "text": "Create Clipping\rBoundary",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "NB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1927",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Create Clipping\rBoundary",
+        "official": "Image, New Clip Boundary",
+        "aliases": [
+          "IMAGECLIP",
+          "MM_1927"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIPSETNEWBOUNDARY",
+        "largeResource": "RCDATA_32_CLIPSETNEWBOUNDARY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "IMAGECLIP",
+        "macro": "^C^C_imageclip _N",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Allows you to delete the old clipping boundary and create a new one",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 IMAGECLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.rbn-00034776": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956.rbn-00034776",
+      "kind": "command_button",
+      "name": "Remove\rClipping",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.rbn-00016956",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034776"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034776",
+        "controlId": "AcRibbonCommandButtonEnableEqualToOne",
+        "text": "Remove\rClipping",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ImageDeleteClipBoundary",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove\rClipping",
+        "official": "Image, Delete Clip Boundary",
+        "aliases": [
+          "IMAGECLIP",
+          "ID_ImageDeleteClipBoundary"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIPDELETEBOUNDARY",
+        "largeResource": "RCDATA_32_CLIPDELETEBOUNDARY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "IMAGECLIP",
+        "macro": "^C^C_imageclip _D",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Deletes the clipping boundary",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 IMAGECLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.id-rbn-0083": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952.id-rbn-0083",
+      "kind": "panel_break",
+      "name": "ID_RBN_0083",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-image.rbn-00016952",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0083"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0083",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabHome3D",
+  "tabName": "Home ",
+  "panelCount": 12,
+  "panels": [
+    {
+      "name": "Modeling",
+      "uid": "ID_Panel3D_Modeling",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panel3d-modeling",
+      "map": "modeling/ui-map.json",
+      "nodes": 35,
+      "actionableControls": 20
+    },
+    {
+      "name": "Mesh",
+      "uid": "ID_PanelMeshHome",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmeshhome",
+      "map": "mesh/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 5
+    },
+    {
+      "name": "Solid Editing",
+      "uid": "ID_PanelSolidEdit",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+      "map": "solid-editing/ui-map.json",
+      "nodes": 55,
+      "actionableControls": 30
+    },
+    {
+      "name": "Draw",
+      "uid": "ID_PanelDraw3D",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-paneldraw3d",
+      "map": "draw/ui-map.json",
+      "nodes": 82,
+      "actionableControls": 47
+    },
+    {
+      "name": "Modify",
+      "uid": "ID_PanelModify3D",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "map": "modify/ui-map.json",
+      "nodes": 70,
+      "actionableControls": 41
+    },
+    {
+      "name": "Section",
+      "uid": "ID_PanelSection",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "map": "section/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 7
+    },
+    {
+      "name": "Coordinates",
+      "uid": "ID_PanelCoord",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelcoord",
+      "map": "coordinates/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 19
+    },
+    {
+      "name": "View",
+      "uid": "ID_PanelView3DHome",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "map": "view/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 8
+    },
+    {
+      "name": "Selection",
+      "uid": "ID_PanelSubObject",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsubobject",
+      "map": "selection/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "Groups",
+      "uid": "ID_PanelGroup",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelgroup",
+      "map": "groups/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 6
+    },
+    {
+      "name": "Layers",
+      "uid": "ID_PanelLayers",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "map": "layers/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 22
+    },
+    {
+      "name": "View",
+      "uid": "RBN_200_F691F",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.rbn-200-f691f",
+      "map": "view-rbn-200-f691f/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 8
+    }
+  ]
+}

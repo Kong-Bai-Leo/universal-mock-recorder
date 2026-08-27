@@ -1,8 +1,11 @@
 {
   "provider": {
     "model": "gpt-5.6",
-    "timeoutSeconds": 180,
-    "maxRetries": 2
+    "timeoutSeconds": 600,
+    "streamResponses": true,
+    "maxRetries": 4,
+    "retryBaseDelayMs": 2000,
+    "retryMaxDelayMs": 20000
   },
   "analysis": {
     "language": "zh-CN",
@@ -12,7 +15,20 @@
     "maxImageHeight": 1000,
     "jpegQuality": 68,
     "maxActionsPerRequest": 150,
-    "minimumConfidence": 0.65
+    "maxActionMacroEntriesPerRequest": 90,
+    "maxValidationRepairs": 1,
+    "minimumConfidence": 0.65,
+    "finalCadVisualAudit": {
+      "enabled": true,
+      "maxScreenshots": 16
+    },
+    "autoCadKnowledge": {
+      "enabled": true,
+      "root": "ui-maps/autocad/2027/en-US",
+      "maxControls": 18,
+      "maxCommands": 14,
+      "maxMenus": 10
+    }
   },
   "output": {
     "scriptLanguage": "typescript",

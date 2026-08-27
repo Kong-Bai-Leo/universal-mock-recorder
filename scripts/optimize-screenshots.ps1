@@ -24,29 +24,35 @@ $jpegCodec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() |
     Where-Object { $_.MimeType -eq 'image/jpeg' } |
     Select-Object -First 1
 if (-not $jpegCodec) { throw 'JPEG encoder is unavailable.' }
-
 $results = @()
 for ($index = 0; $index -lt $InputItems.Count; $index++) {
     $manifestItem = $InputItems[$index]
     $sourcePath = if ($manifestItem -is [string]) { [string]$manifestItem } else { [string]$manifestItem.path }
     $sourcePath = (Get-Item -LiteralPath $sourcePath).FullName
-    $outputPath = Join-Path $OutputDirectory ('api-{0:D3}.jpg' -f $index)
     $source = [System.Drawing.Image]::FromFile($sourcePath)
+    $sourceWidth = $source.Width
+    $sourceHeight = $source.Height
     $cropped = $null
+    $hasCrop = $manifestItem -isnot [string] -and $null -ne $manifestItem.crop
+    $cropLeft = 0
+    $cropTop = 0
+    $cropWidth = $source.Width
+    $cropHeight = $source.Height
+    $outputPath = Join-Path $OutputDirectory ('api-{0:D3}.jpg' -f $index)
     try {
         $workingImage = $source
-        if ($manifestItem -isnot [string] -and $null -ne $manifestItem.crop) {
+        if ($hasCrop) {
             $cropWidth = [Math]::Min($source.Width, [Math]::Max(1, [int]$manifestItem.crop.width))
             $cropHeight = [Math]::Min($source.Height, [Math]::Max(1, [int]$manifestItem.crop.height))
-            $left = [Math]::Max(0, [Math]::Min($source.Width - $cropWidth,
+            $cropLeft = [Math]::Max(0, [Math]::Min($source.Width - $cropWidth,
                 [int][Math]::Round([double]$manifestItem.crop.centerX - $cropWidth / 2)))
-            $top = [Math]::Max(0, [Math]::Min($source.Height - $cropHeight,
+            $cropTop = [Math]::Max(0, [Math]::Min($source.Height - $cropHeight,
                 [int][Math]::Round([double]$manifestItem.crop.centerY - $cropHeight / 2)))
             $cropped = New-Object System.Drawing.Bitmap($cropWidth, $cropHeight, [System.Drawing.Imaging.PixelFormat]::Format24bppRgb)
             $cropGraphics = [System.Drawing.Graphics]::FromImage($cropped)
             try {
                 $destination = New-Object System.Drawing.Rectangle(0, 0, $cropWidth, $cropHeight)
-                $sourceRectangle = New-Object System.Drawing.Rectangle($left, $top, $cropWidth, $cropHeight)
+                $sourceRectangle = New-Object System.Drawing.Rectangle($cropLeft, $cropTop, $cropWidth, $cropHeight)
                 $cropGraphics.DrawImage($source, $destination, $sourceRectangle, [System.Drawing.GraphicsUnit]::Pixel)
             } finally {
                 $cropGraphics.Dispose()
@@ -70,16 +76,23 @@ for ($index = 0; $index -lt $InputItems.Count; $index++) {
             } finally {
                 $graphics.Dispose()
             }
+            # 局部 CAD 证据强制使用最高允许质量，避免一像素细线被普通概览压缩抹平。
+            $effectiveJpegQuality = $JpegQuality
+            if ($hasCrop) { $effectiveJpegQuality = 95 }
             $qualityEncoder = [System.Drawing.Imaging.Encoder]::Quality
             $parameters = New-Object System.Drawing.Imaging.EncoderParameters(1)
             try {
-                $parameters.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter($qualityEncoder, [long]$JpegQuality)
+                $parameters.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter($qualityEncoder, [long]$effectiveJpegQuality)
                 $bitmap.Save($outputPath, $jpegCodec, $parameters)
             } finally {
                 $parameters.Dispose()
             }
         } finally {
             $bitmap.Dispose()
+        }
+        if (-not (Test-Path -LiteralPath $outputPath)) {
+            $directoryFiles = (Get-ChildItem -LiteralPath $OutputDirectory -File | Select-Object -ExpandProperty Name) -join ','
+            throw "Screenshot encoder did not create $outputPath (hasCrop=$hasCrop; files=$directoryFiles)"
         }
     } finally {
         if ($null -ne $cropped) { $cropped.Dispose() }
@@ -89,6 +102,17 @@ for ($index = 0; $index -lt $InputItems.Count; $index++) {
         source = $sourcePath
         path = $outputPath
         bytes = (Get-Item -LiteralPath $outputPath).Length
+        sourceWidth = $sourceWidth
+        sourceHeight = $sourceHeight
+        cropLeft = $cropLeft
+        cropTop = $cropTop
+        cropWidth = $cropWidth
+        cropHeight = $cropHeight
+        outputWidth = $width
+        outputHeight = $height
+        scale = $scale
+        lossless = $false
+        jpegQuality = $effectiveJpegQuality
     }
 }
 

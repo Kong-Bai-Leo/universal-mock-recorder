@@ -1,0 +1,1396 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows"
+  },
+  "policy": "Workspace tabs are always or optionally available in a stock workspace. Other core CUIX tabs are contextual or on-demand until a live trigger is verified.",
+  "totals": {
+    "tabs": 68,
+    "workspaceTabs": 21,
+    "contextualOrOnDemand": 47
+  },
+  "tabs": [
+    {
+      "id": "ID_TabAnnotate",
+      "name": "Annotate",
+      "aliases": [
+        "ID_TabAnnotate"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740329",
+      "name": "Array",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740323",
+      "name": "Array",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740317",
+      "name": "Array",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740500",
+      "name": "Array Creation",
+      "aliases": [
+        "ID_CREATEPOLARARRAY"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740507",
+      "name": "Array Creation",
+      "aliases": [
+        "ID_CREATEPATHARRAY"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740514",
+      "name": "Array Creation",
+      "aliases": [
+        "ID_CREATERECTARRAY"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabGeo",
+      "name": "Geolocation",
+      "aliases": [
+        "ID_TabGeo"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_190_A51F9",
+      "name": "Layout",
+      "aliases": [
+        "ID_NEWLAYOUT"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740544",
+      "name": "Point Cloud",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_RBN_TAB_CM",
+      "name": "Coordination Model",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabTouchMode",
+      "name": "Touch",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabCollaborate",
+      "name": "Collaborate",
+      "aliases": [
+        "ID_TABCOLLABORATE"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics",
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabAutomation",
+      "name": "Automation",
+      "aliases": [
+        "ID_TABAUTOMATION"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": false,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": false,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": false,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabGeoMapImage",
+      "name": "Map Image",
+      "aliases": [
+        "ID_TABGEOMAPIMAGE"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_00012112",
+      "name": "Add-ins",
+      "aliases": [
+        "ID_ADDINSTAB"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics",
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabView",
+      "name": "View",
+      "aliases": [
+        "ID_TabView"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDrawingViewEditorInv",
+      "name": "Drawing View Editor",
+      "aliases": [
+        "ID_TabDrawingViewEditorInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDrawingViewCreationInv",
+      "name": "Drawing View Creation",
+      "aliases": [
+        "ID_TabDrawingViewCreationInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDrawingViewEditorMS",
+      "name": "Drawing View Editor",
+      "aliases": [
+        "ID_TabDrawingViewEditorMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDrawingViewCreationMS",
+      "name": "Drawing View Creation",
+      "aliases": [
+        "ID_TabDrawingViewCreationMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabSectionViewCreationMS",
+      "name": "Section View Creation",
+      "aliases": [
+        "ID_TabSectionViewCreationMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabSectionViewEditorMS",
+      "name": "Section View Editor",
+      "aliases": [
+        "ID_TabSectionViewEditorMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabSectionViewCreationInv",
+      "name": "Section View Creation",
+      "aliases": [
+        "ID_TabSectionViewCreationInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabSectionViewEditorInv",
+      "name": "Section View Editor",
+      "aliases": [
+        "ID_TabSectionViewEditorInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabModelDocumentation",
+      "name": "Layout",
+      "aliases": [
+        "ID_NEWLAYOUT"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabViewSketchCreation",
+      "name": "View Sketch",
+      "aliases": [
+        "ID_TabViewSketchCreation"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDrawingViewSelection",
+      "name": "Drawing View",
+      "aliases": [
+        "ID_TabDrawingViewSelection"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDetailViewCreationMS",
+      "name": "Detail View Creation",
+      "aliases": [
+        "ID_TabDetailViewCreationMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDetailViewEditorMS",
+      "name": "Detail View Editor",
+      "aliases": [
+        "ID_TabDetailViewEditorMS"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDetailViewCreationInv",
+      "name": "Detail View Creation",
+      "aliases": [
+        "ID_TabDetailViewCreationInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabView3D",
+      "name": "View",
+      "aliases": [
+        "ID_TabView3D"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TableTab",
+      "name": "Table Cell",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_MText_Tab",
+      "name": "Text Editor",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-TestBlock",
+      "name": "Test Block",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabHome",
+      "name": "Home",
+      "aliases": [
+        "ID_TabHome"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabHome3D",
+      "name": "Home ",
+      "aliases": [
+        "ID_TabHome3D"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_3dBasics_Home",
+      "name": "Home",
+      "aliases": [
+        "ID_3dBasics_Home"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabInsert",
+      "name": "Insert",
+      "aliases": [
+        "ID_TabInsert"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_3dBasics_Insert",
+      "name": "Insert",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabManage",
+      "name": "Manage",
+      "aliases": [
+        "ID_TabManage",
+        "ID_TabTools"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics",
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabMeshModeling",
+      "name": "Mesh",
+      "aliases": [
+        "ID_TabMeshModeling"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabOutput",
+      "name": "Output",
+      "aliases": [
+        "ID_TabOutput"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabOutput3D",
+      "name": "Output",
+      "aliases": [
+        "ID_TabOutput3D"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabParametric",
+      "name": "Parametric",
+      "aliases": [
+        "ID_TabParametric",
+        "RBN_00012899"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": true,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling",
+        "Drafting & Annotation"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabRender",
+      "name": "Visualize",
+      "aliases": [
+        "ID_TabRender"
+      ],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": false,
+          "menuGroup": "ACAD"
+        },
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_3dBasics_Render",
+      "name": "Visualize",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_SM_0001",
+          "workspaceName": "3D Basics",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Basics"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_SolidModeling",
+      "name": "Solid",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_SurfaceTab",
+      "name": "Surface",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_3DModeling",
+          "workspaceName": "3D Modeling",
+          "shown": true,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [
+        "3D Modeling"
+      ],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TAB_3D_TOOLS",
+      "name": "3D Tools",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "workspace_tab",
+      "workspaceRefs": [
+        {
+          "workspaceId": "WS_Anno2DDraft",
+          "workspaceName": "Drafting & Annotation",
+          "shown": false,
+          "menuGroup": "ACAD"
+        }
+      ],
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740028",
+      "name": "Associative Array Edit",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_BlockEditorCloseTab",
+      "name": "Block Editor - Close",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01737814",
+      "name": "Section Plane",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-PDFUnderlay",
+      "name": "PDF Underlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_00737425",
+      "name": "Mesh Subobject",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-Mesh",
+      "name": "Mesh",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_00737426",
+      "name": "Mesh Subobject",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-Image",
+      "name": "Image",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_TabDetailViewEditorInv",
+      "name": "Detail View Editor",
+      "aliases": [
+        "ID_TabDetailViewEditorInv"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01738281",
+      "name": "Hatch Editor",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01738148",
+      "name": "Hatch Creation",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-Xref",
+      "name": "External Reference",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_RefEditTab",
+      "name": "Edit Reference",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-DWFUnderlay",
+      "name": "DWF Underlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_CTS-DGNUnderlay",
+      "name": "DGN Underlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "ID_BlockEditorTab",
+      "name": "Block Editor",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_01740527",
+      "name": "Drawing View Hatch Editor",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "workspaceBehavior": null,
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    },
+    {
+      "id": "RBN_200_5A69F",
+      "name": "Home",
+      "aliases": [
+        "ID_TABHOME",
+        "ID_TABHOME3D"
+      ],
+      "source": "ModelDoc.cuix",
+      "workspaceBehavior": "MergeTabOnly",
+      "classification": "contextual_or_on_demand_tab",
+      "workspaceRefs": null,
+      "visibleInCoreWorkspaces": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false
+      }
+    }
+  ]
+}

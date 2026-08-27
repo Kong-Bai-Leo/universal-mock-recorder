@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabParametric",
+  "tabName": "Parametric",
+  "panelCount": 3,
+  "panels": [
+    {
+      "name": "Geometric",
+      "uid": "ID_PanelParametricGeometricConstraints",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+      "map": "geometric/ui-map.json",
+      "nodes": 33,
+      "actionableControls": 17
+    },
+    {
+      "name": "Dimensional",
+      "uid": "ID_PanelParametricDimensionalConstraints",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "map": "dimensional/ui-map.json",
+      "nodes": 35,
+      "actionableControls": 16
+    },
+    {
+      "name": "Manage",
+      "uid": "ID_PanelParametricManage",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+      "map": "manage/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    }
+  ]
+}

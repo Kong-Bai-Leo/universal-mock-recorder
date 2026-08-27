@@ -1,0 +1,520 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmeshmodeling-panel-convert-mesh",
+  "generatedAt": "2026-08-25T21:52:33.3457511Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabMeshModeling",
+    "tabName": "Mesh",
+    "panelUid": "ID_PanelConvertMesh",
+    "panelName": "Convert Mesh",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+      "kind": "tab",
+      "name": "Mesh",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabMeshModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabMeshModeling",
+        "text": "Mesh",
+        "keyTip": "MM",
+        "alias": "ID_TabMeshModeling",
+        "officialName": "Mesh Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+      "kind": "panel",
+      "name": "Convert Mesh",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737885"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelConvertMesh"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelConvertMesh",
+        "text": "Convert Mesh",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh Modeling - Convert Mesh",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884",
+      "kind": "layout_row",
+      "name": "RBN_01737884",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.id-rbn-0096"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737884"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737884",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886",
+      "kind": "layout_group",
+      "name": "RBN_01737886",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737886"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737886",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887",
+      "kind": "layout_row",
+      "name": "RBN_01737887",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887.rbn-01737890"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737887"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737887",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887.rbn-01737890": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887.rbn-01737890",
+      "kind": "command_button",
+      "name": "Convert to Solid",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737887",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737890"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737890",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to Solid",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QCU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CONV2SOLID",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to Solid",
+        "official": "Convert to Solid",
+        "aliases": [
+          "CONVTOSOLID",
+          "ID_CONV2SOLID"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONVERT2SOLID",
+        "largeResource": "RCDATA_32_CONVERT2SOLID",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONVTOSOLID",
+        "macro": "^C^C_convtosolid",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts an object to a solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONVTOSOLID command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891",
+      "kind": "layout_row",
+      "name": "RBN_01737891",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891.rbn-01737892"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737891"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737891",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891.rbn-01737892": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891.rbn-01737892",
+      "kind": "command_button",
+      "name": "Convert to Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.rbn-01737886.rbn-01737891",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737892"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737892",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to Surface",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QCS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Conv2surface",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to Surface",
+        "official": "Convert to Surface",
+        "aliases": [
+          "CONVTOSURFACE",
+          "ID_Conv2surface"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONVERT2SURFACE",
+        "largeResource": "RCDATA_32_CONVERT2SURFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONVTOSURFACE",
+        "macro": "^C^C_convtosurface",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Convert objects to a surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONVTOSURFACE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.id-rbn-0096": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884.id-rbn-0096",
+      "kind": "data_bound_dropdown",
+      "name": "Convert Options Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737884",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0096"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0096",
+        "controlId": "AcSMOOTHMESHCONVERTDataBoundDropDown",
+        "text": "Convert Options Drop-down",
+        "keyTip": "QCM"
+      },
+      "semantics": {
+        "description": "Opens or changes the Convert Options Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Convert Options Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737885": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh.rbn-01737885",
+      "kind": "panel_break",
+      "name": "RBN_01737885",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737885"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737885",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

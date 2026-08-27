@@ -1,0 +1,3837 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome3d-panel-modify",
+  "generatedAt": "2026-08-25T21:52:13.9409473Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome3D",
+    "tabName": "Home ",
+    "panelUid": "ID_PanelModify3D",
+    "panelName": "Modify",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "kind": "tab",
+      "name": "Home ",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome3D",
+        "text": "Home ",
+        "keyTip": "H",
+        "alias": "ID_TabHome3D",
+        "officialName": "Home - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "kind": "panel",
+      "name": "Modify",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbnpnl-0003",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelModify3D"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 176
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelModify3D",
+        "text": "Modify",
+        "keyTip": "MY",
+        "alias": "ID_Modify3D",
+        "officialName": "Home 3D - Modify",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0018",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.id-rbn-cmdbtn-mirror3d",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737755",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-00737731",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737754",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737756",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737757",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0018"
+      },
+      "placement": {
+        "region": "main",
+        "order": 177
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0018",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.id-rbn-cmdbtn-mirror3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.id-rbn-cmdbtn-mirror3d",
+      "kind": "command_button",
+      "name": "3D Mirror",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MIRROR3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 178
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MIRROR3D",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Mirror",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "M3",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mirror3d",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Mirror",
+        "official": "3D Mirror",
+        "aliases": [
+          "MIRROR3D",
+          "ID_Mirror3d"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DMIRROR",
+        "largeResource": "RCDATA_32_3DMIRROR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MIRROR3D",
+        "macro": "^C^C_mirror3d",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a mirrored copy of selected objects across a mirroring plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MIRROR3D command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737755": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737755",
+      "kind": "separator",
+      "name": "RBN_01737755",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737755"
+      },
+      "placement": {
+        "region": "main",
+        "order": 179
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737755",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-00737731": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-00737731",
+      "kind": "command_button",
+      "name": "3D Move",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737731"
+      },
+      "placement": {
+        "region": "main",
+        "order": 180
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737731",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Move",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "3M",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3DMove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Move",
+        "official": "3D Move",
+        "aliases": [
+          "3DMOVE",
+          "ID_3DMove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DMOVE",
+        "largeResource": "RCDATA_32_3DMOVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DMOVE",
+        "macro": "^C^C_3dmove",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "In a 3D view, displays the 3D Move gizmo to aid in moving 3D objects a specified distance in a specified direction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DMOVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737754": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737754",
+      "kind": "command_button",
+      "name": "Move",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737754"
+      },
+      "placement": {
+        "region": "main",
+        "order": 181
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737754",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Move",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Move",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Move",
+        "official": "Move",
+        "aliases": [
+          "MOVE",
+          "ID_Move"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MOVE",
+        "largeResource": "RCDATA_32_MOVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MOVE",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_move,^C^C_move)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Moves objects a specified distance in a specified direction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MOVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737756": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737756",
+      "kind": "separator",
+      "name": "RBN_01737756",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737756"
+      },
+      "placement": {
+        "region": "main",
+        "order": 182
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737756",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737757": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737757",
+      "kind": "command_button",
+      "name": "Copy",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737757"
+      },
+      "placement": {
+        "region": "main",
+        "order": 183
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737757",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Copy",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy",
+        "official": "Copy",
+        "aliases": [
+          "COPY",
+          "ID_Copy"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COPYOB",
+        "largeResource": "RCDATA_32_COPYOB",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "COPY",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_copy,^C^C_copy)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies objects a specified distance in a specified direction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 COPY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "kind": "split_button",
+      "name": "Trim-Extend Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737760"
+      },
+      "placement": {
+        "region": "main",
+        "order": 184
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737760",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Trim-Extend Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TR",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Trim-Extend Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.primary-action",
+      "kind": "primary_button",
+      "name": "Trim-Extend Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737760.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 185
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Trim-Extend Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Trim-Extend Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737760.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 186
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Trim-Extend Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Trim-Extend Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Trim-Extend Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737762"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737760.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 187
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Trim-Extend Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737761",
+      "kind": "command_button",
+      "name": "Trim",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737761"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 188
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "ui": {
+        "uid": "RBN_01737761",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Trim",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Trim",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Trim",
+        "official": "Trim",
+        "aliases": [
+          "TRIM",
+          "ID_Trim"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TRIM",
+        "largeResource": "RCDATA_32_TRIM",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TRIM",
+        "macro": "^C^C_trim",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Trims objects to meet the edges of other objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TRIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737762": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu.rbn-01737762",
+      "kind": "command_button",
+      "name": "Extend",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737762"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 189
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0018.rbn-01737760",
+      "ui": {
+        "uid": "RBN_01737762",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extend",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ET",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Extend",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extend",
+        "official": "Extend",
+        "aliases": [
+          "EXTEND",
+          "ID_Extend"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTEND",
+        "largeResource": "RCDATA_32_EXTEND",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXTEND",
+        "macro": "^C^C_extend",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extends objects to meet the edges of other objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXTEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "kind": "layout_row",
+      "name": "RBN_01737764",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-cmdbtn-3dalign",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737752",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-00737732",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737751",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737753",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737758",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737764"
+      },
+      "placement": {
+        "region": "main",
+        "order": 190
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737764",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-cmdbtn-3dalign": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-cmdbtn-3dalign",
+      "kind": "command_button",
+      "name": "3D Align",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_3DALIGN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 191
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_3DALIGN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Align",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "A3",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3dalign",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Align",
+        "official": "3D Align",
+        "aliases": [
+          "3DALIGN",
+          "ID_3dalign"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DALIGN",
+        "largeResource": "RCDATA_32_3DALIGN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DALIGN",
+        "macro": "^C^C_3dalign",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns objects with other objects in 2D and 3D",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DALIGN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737752": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737752",
+      "kind": "separator",
+      "name": "RBN_01737752",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737752"
+      },
+      "placement": {
+        "region": "main",
+        "order": 192
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737752",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-00737732": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-00737732",
+      "kind": "command_button",
+      "name": "3D Rotate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737732"
+      },
+      "placement": {
+        "region": "main",
+        "order": 193
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737732",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Rotate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "3R",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3DROTATE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Rotate",
+        "official": "3D Rotate",
+        "aliases": [
+          "3DROTATE",
+          "ID_3DROTATE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DROTATE",
+        "largeResource": "RCDATA_32_3DROTATE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DROTATE",
+        "macro": "^C^C_3drotate",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "In a 3D view, displays the 3D Rotate gizmo to aid in revolving 3D objects around a base point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DROTATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737751": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737751",
+      "kind": "command_button",
+      "name": "Rotate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737751"
+      },
+      "placement": {
+        "region": "main",
+        "order": 194
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737751",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rotate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Rotate",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rotate",
+        "official": "Rotate",
+        "aliases": [
+          "ROTATE",
+          "ID_Rotate"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ROTATE",
+        "largeResource": "RCDATA_32_ROTATE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ROTATE",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_rotate,^C^C_rotate)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates objects around a base point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ROTATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737753": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737753",
+      "kind": "separator",
+      "name": "RBN_01737753",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737753"
+      },
+      "placement": {
+        "region": "main",
+        "order": 195
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737753",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737758": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.rbn-01737758",
+      "kind": "command_button",
+      "name": "Stretch",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737758"
+      },
+      "placement": {
+        "region": "main",
+        "order": 196
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737758",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Stretch",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Stretch",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Stretch",
+        "official": "Stretch",
+        "aliases": [
+          "STRETCH",
+          "ID_Stretch"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_STRETC",
+        "largeResource": "RCDATA_32_STRETC",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "STRETCH",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_stretch,^C^C_stretch)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Stretches objects crossed by a selection window or polygon",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 STRETCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "kind": "split_button",
+      "name": "Chamfer and Fillet Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CHAMFERANDFILLET_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 197
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_CHAMFERANDFILLET_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Chamfer and Fillet Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "FI",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_POINT",
+        "largeImage": "RCDATA_16_POINT",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Chamfer and Fillet Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Chamfer and Fillet Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CHAMFERANDFILLET_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 198
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Chamfer and Fillet Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Chamfer and Fillet Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CHAMFERANDFILLET_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 199
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Chamfer and Fillet Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Chamfer and Fillet Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Chamfer and Fillet Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-chamfer-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-blend-curve-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CHAMFERANDFILLET_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 200
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Chamfer and Fillet Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-fillet-0001",
+      "kind": "command_button",
+      "name": "Fillet",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FILLET_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 201
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FILLET_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Fillet",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Fillet",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Fillet",
+        "official": "Fillet",
+        "aliases": [
+          "FILLET",
+          "ID_Fillet"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FILLET",
+        "largeResource": "RCDATA_32_FILLET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FILLET",
+        "macro": "^C^C_fillet",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rounds and fillets the edges of objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FILLET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-chamfer-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-chamfer-0001",
+      "kind": "command_button",
+      "name": "Chamfer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CHAMFER_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 202
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CHAMFER_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Chamfer",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Chamfer",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Chamfer",
+        "official": "Chamfer",
+        "aliases": [
+          "CHAMFER",
+          "ID_Chamfer"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHAMFE",
+        "largeResource": "RCDATA_32_CHAMFE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHAMFER",
+        "macro": "^C^C_chamfer",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Bevels the edges of objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHAMFER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-blend-curve-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-blend-curve-0001",
+      "kind": "command_button",
+      "name": "Blend Curves",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BLEND_CURVE_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 203
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737764.id-rbn-splitbtn-chamferandfillet-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BLEND_CURVE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BLEND_CURVES",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Blend Curves",
+        "aliases": [
+          "BLEND",
+          "ID_BLEND_CURVES"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLEND_CURVE",
+        "largeResource": "RCDATA_32_BLEND_CURVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BLEND",
+        "macro": "^C^C_BLEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a tangent or smooth spline between the endpoints of two open curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BLEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "kind": "layout_row",
+      "name": "RBN_01737763",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737759",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737749",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737938",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737748",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737750",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.id-rbn-cmdbtn-offset-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737763"
+      },
+      "placement": {
+        "region": "main",
+        "order": 204
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737763",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737759": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737759",
+      "kind": "command_button",
+      "name": "Erase",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737759"
+      },
+      "placement": {
+        "region": "main",
+        "order": 205
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737759",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Erase",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ER",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Erase",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Erase",
+        "official": "Erase",
+        "aliases": [
+          "ERASE",
+          "ID_Erase"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ERASE",
+        "largeResource": "RCDATA_32_ERASE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ERASE",
+        "macro": "^C^C_erase",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes objects from a drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ERASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737749": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737749",
+      "kind": "separator",
+      "name": "RBN_01737749",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737749"
+      },
+      "placement": {
+        "region": "main",
+        "order": 206
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737749",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737938": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737938",
+      "kind": "command_button",
+      "name": "3D Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737938"
+      },
+      "placement": {
+        "region": "main",
+        "order": 207
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737938",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "3S",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3DSCALE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Scale",
+        "official": "3D Scale",
+        "aliases": [
+          "3DSCALE",
+          "ID_3DSCALE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GIZMO_SCALE",
+        "largeResource": "RCDATA_32_GIZMO_SCALE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DSCALE",
+        "macro": "^C^C_3dscale",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "In a 3D view, displays the 3D Scale gizmo to aid in scaling 3D objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DSCALE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737748": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737748",
+      "kind": "command_button",
+      "name": "Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737748"
+      },
+      "placement": {
+        "region": "main",
+        "order": 208
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737748",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Scale",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Scale",
+        "official": "Scale",
+        "aliases": [
+          "SCALE",
+          "ID_Scale"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SCALE",
+        "largeResource": "RCDATA_32_SCALE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SCALE",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_scale,^C^C_scale)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Enlarges or reduces selected objects, keeping the proportions of the object the same after scaling",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SCALE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737750": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-01737750",
+      "kind": "separator",
+      "name": "RBN_01737750",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737750"
+      },
+      "placement": {
+        "region": "main",
+        "order": 209
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737750",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.id-rbn-cmdbtn-offset-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.id-rbn-cmdbtn-offset-0001",
+      "kind": "command_button",
+      "name": "Offset",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_OFFSET_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 210
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_OFFSET_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "OF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Offset",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset",
+        "official": "Offset",
+        "aliases": [
+          "OFFSET",
+          "ID_Offset"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSET",
+        "largeResource": "RCDATA_32_OFFSET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OFFSET",
+        "macro": "^C^C_offset",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates concentric circles, parallel lines, and parallel curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OFFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "kind": "split_button",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3247"
+      },
+      "placement": {
+        "region": "main",
+        "order": 211
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3247",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Array",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AY",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ARRREC",
+        "largeImage": "RCDATA_32_ARRREC",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Array",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.primary-action",
+      "kind": "primary_button",
+      "name": "Array primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3247.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 212
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Array variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Array menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3247.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 213
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Array menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Array popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Array menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0159",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0160"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3247.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 214
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Array variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0158",
+      "kind": "command_button",
+      "name": "Rectangular Array",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0158"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 215
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "ui": {
+        "uid": "ID_RBN_0158",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RectangularArray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Rectangular Array",
+        "aliases": [
+          "ARRAYRECT",
+          "ID_RectangularArray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRREC",
+        "largeResource": "RCDATA_32_ARRREC",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYRECT",
+        "macro": "^C^C_arrayrect",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Distributes object copies into any combination of rows, columns, and levels.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYRECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0159": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0159",
+      "kind": "command_button",
+      "name": "Path Array",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0159"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 216
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "ui": {
+        "uid": "ID_RBN_0159",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PathArray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Path Array",
+        "aliases": [
+          "ARRAYPATH",
+          "ID_PathArray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRPAT",
+        "largeResource": "RCDATA_32_ARRPAT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYPATH",
+        "macro": "^C^C_arraypath",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Evenly distributes object copies along a path or a portion of a path.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYPATH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0160": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu.id-rbn-0160",
+      "kind": "command_button",
+      "name": "Polar Array",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0160"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 217
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.rbn-01737763.rbn-3247",
+      "ui": {
+        "uid": "ID_RBN_0160",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PolarArray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Polar Array",
+        "aliases": [
+          "ARRAYPOLAR",
+          "ID_PolarArray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRPOL",
+        "largeResource": "RCDATA_32_ARRPOL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYPOLAR",
+        "macro": "^C^C_arraypolar",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Evenly distributes object copies in a circular pattern around a center point or axis of rotation.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYPOLAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbnpnl-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbnpnl-0003",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0003",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 218
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0003",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0022",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtnmm-1731-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-chspac-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0033",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-explode-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0034",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-array-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-mirror-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0022"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 219
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0022",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtnmm-1731-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtnmm-1731-0001",
+      "kind": "command_button",
+      "name": "Set to ByLayer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1731_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 220
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1731_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Set to ByLayer",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1731",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Set to ByLayer",
+        "official": "Change to ByLayer",
+        "aliases": [
+          "SETBYLAYER",
+          "MM_1731"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYER_BYLAYER",
+        "largeResource": "RCDATA_32_LAYER_BYLAYER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SETBYLAYER",
+        "macro": "^C^C_setbylayer",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the property overrides of selected objects to ByLayer",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SETBYLAYER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-chspac-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-chspac-0001",
+      "kind": "command_button",
+      "name": "Change Space",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CHSPAC_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 221
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CHSPAC_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Change Space",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CHSPAC",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Change Space",
+        "official": "Change Space",
+        "aliases": [
+          "CHSPACE",
+          "ID_CHSPAC"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHANGE_SPACE",
+        "largeResource": "RCDATA_32_CHANGE_SPACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHSPACE",
+        "macro": "^C^C_chspace",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Moves objects between model space and paper space",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHSPACE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0033": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0033",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0033",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0033"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 222
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0033",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-explode-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-explode-0001",
+      "kind": "command_button",
+      "name": "Explode",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EXPLODE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 223
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EXPLODE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Explode",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Explode",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Explode",
+        "official": "Explode",
+        "aliases": [
+          "EXPLODE",
+          "ID_Explode"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXPLODE",
+        "largeResource": "RCDATA_32_EXPLODE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXPLODE",
+        "macro": "^C^C_explode",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks a compound object into its component objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXPLODE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0034": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-ribbonseparator-0034",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0034",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0034"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 224
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0034",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-array-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-array-0001",
+      "kind": "command_button",
+      "name": "ArrayEdit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARRAY_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 225
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARRAY_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "ArrayEdit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EditArray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "ArrayEdit",
+        "official": "Edit Array",
+        "aliases": [
+          "ARRAYEDIT",
+          "ID_EditArray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARREDI",
+        "largeResource": "RCDATA_32_ARREDI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYEDIT",
+        "macro": "^C^C_arrayedit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits associative array objects and their source objects.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-mirror-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022.id-rbn-cmdbtn-mirror-0001",
+      "kind": "command_button",
+      "name": "Mirror",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MIRROR_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 226
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MIRROR_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Mirror",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mirror",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Mirror",
+        "official": "Mirror",
+        "aliases": [
+          "MIRROR",
+          "ID_Mirror"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MIRROR",
+        "largeResource": "RCDATA_32_MIRROR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MIRROR",
+        "macro": "$M=$(if,$(eq,$(substr,$(getvar,cmdnames),1,4),GRIP),_mirror,^C^C_mirror)",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a mirrored copy of selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MIRROR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0024",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738130",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738131",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-break-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-breaksele-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-join-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-ribbonseparator-0035",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-lengthen-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0024"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 227
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0024",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738130": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738130",
+      "kind": "command_button",
+      "name": "Align",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738130"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 228
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738130",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Align",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Align",
+        "aliases": [
+          "ALIGN",
+          "ID_Align"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ALIGN_NEW",
+        "largeResource": "RCDATA_32_ALIGN_NEW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ALIGN",
+        "macro": "^C^C_align",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns objects with other objects in 2D and 3D",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ALIGN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738131": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.rbn-01738131",
+      "kind": "separator",
+      "name": "RBN_01738131",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738131"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 229
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738131",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-break-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-break-0001",
+      "kind": "command_button",
+      "name": "Break",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BREAK_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 230
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BREAK_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Break",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Break",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Break",
+        "official": "Break",
+        "aliases": [
+          "BREAK",
+          "ID_Break"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BRE2PT",
+        "largeResource": "RCDATA_32_BRE2PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREAK",
+        "macro": "^C^C_break",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks the selected object between two points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREAK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-breaksele-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-breaksele-0001",
+      "kind": "command_button",
+      "name": "Break at Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BREAKSELE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 231
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BREAKSELE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Break at Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BreakSele",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Break at Point",
+        "official": "Break at Point",
+        "aliases": [
+          "BREAKATPOINT",
+          "ID_BreakSele"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BREAKATPT",
+        "largeResource": "RCDATA_32_BREAKATPT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREAKATPOINT",
+        "macro": "^C^C_breakatpoint",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks the selected object at a single point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREAKATPOINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-join-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-join-0001",
+      "kind": "command_button",
+      "name": "Join",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_JOIN_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 232
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_JOIN_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Join",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "JO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Join",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Join",
+        "official": "Join",
+        "aliases": [
+          "JOIN",
+          "ID_Join"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_JOIN",
+        "largeResource": "RCDATA_32_JOIN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "JOIN",
+        "macro": "^C^C_join",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Joins similar objects to form a single, unbroken object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 JOIN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-ribbonseparator-0035": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-ribbonseparator-0035",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0035",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0035"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 233
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0035",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-lengthen-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024.id-rbn-cmdbtn-lengthen-0001",
+      "kind": "command_button",
+      "name": "Lengthen",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LENGTHEN_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 234
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LENGTHEN_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lengthen",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Lengthen",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lengthen",
+        "official": "Lengthen",
+        "aliases": [
+          "LENGTHEN",
+          "ID_Lengthen"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LENGTH",
+        "largeResource": "RCDATA_32_LENGTH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LENGTHEN",
+        "macro": "^C^C_lengthen",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the length of objects and the included angle of arcs",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LENGTHEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0025",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034923",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034922",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-pedit-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-splinedit-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-hatchedit-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-blend-curves-002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0025"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 235
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0025",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034923": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034923",
+      "kind": "command_button",
+      "name": "Reverse",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034923"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 236
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034923",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reverse",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Reverse",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reverse",
+        "official": "Reverse",
+        "aliases": [
+          "REVERSE",
+          "ID_Reverse"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVERSE_OBJECTS",
+        "largeResource": "RCDATA_32_REVERSE_OBJECTS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVERSE",
+        "macro": "^C^C_reverse",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Reverses the direction of line, polyline, spline and helix objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVERSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034922": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.rbn-00034922",
+      "kind": "separator",
+      "name": "RBN_00034922",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034922"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 237
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034922",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-pedit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-pedit-0001",
+      "kind": "command_button",
+      "name": "Edit Polyline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PEDIT_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 238
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PEDIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Polyline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pedit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Polyline",
+        "official": "Polyline Edit",
+        "aliases": [
+          "PEDIT",
+          "ID_Pedit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PEDIT",
+        "largeResource": "RCDATA_32_PEDIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PEDIT",
+        "macro": "^C^C_pedit",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits polylines and 3D polygon meshes",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-splinedit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-splinedit-0001",
+      "kind": "command_button",
+      "name": "Edit Spline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SPLINEDIT_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 239
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SPLINEDIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Spline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ES",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Splinedit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Spline",
+        "official": "Spline Edit",
+        "aliases": [
+          "SPLINEDIT",
+          "ID_Splinedit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SPLEDI",
+        "largeResource": "RCDATA_32_SPLEDI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPLINEDIT",
+        "macro": "^C^C^R_splinedit",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits a spline or spline-fit polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPLINEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-hatchedit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-cmdbtn-hatchedit-0001",
+      "kind": "command_button",
+      "name": "Edit Hatch",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_HATCHEDIT_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 240
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_HATCHEDIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Hatch",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Hatchedit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Hatch",
+        "official": "Hatch Edit",
+        "aliases": [
+          "HATCHEDIT",
+          "ID_Hatchedit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HATEDI",
+        "largeResource": "RCDATA_32_HATEDI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "HATCHEDIT",
+        "macro": "^C^C_hatchedit",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Modifies an existing hatch object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 HATCHEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-blend-curves-002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025.id-rbn-blend-curves-002",
+      "kind": "command_button",
+      "name": "Blend Curves",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelmodify3d.id-rbn-row-0025",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BLEND_CURVES_002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 241
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BLEND_CURVES_002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BLEND_CURVES",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Blend Curves",
+        "aliases": [
+          "BLEND",
+          "ID_BLEND_CURVES"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLEND_CURVE",
+        "largeResource": "RCDATA_32_BLEND_CURVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BLEND",
+        "macro": "^C^C_BLEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a tangent or smooth spline between the endpoints of two open curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BLEND command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

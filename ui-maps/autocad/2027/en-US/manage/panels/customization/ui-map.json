@@ -1,0 +1,1053 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-customization",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelCustomization",
+    "panelName": "Customization",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization",
+      "kind": "panel",
+      "name": "Customization",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-0042"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCustomization"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCustomization",
+        "text": "Customization",
+        "keyTip": null,
+        "alias": "ID_Customization",
+        "officialName": "Manage - Customization",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0169",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-menuload",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-cpalette",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0169"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0169",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-menuload": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-menuload",
+      "kind": "command_button",
+      "name": "User\rInterface",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MENULOAD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MENULOAD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "User\rInterface",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Menuload",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "User\rInterface",
+        "official": "Customize, Interface...",
+        "aliases": [
+          "CUI",
+          "ID_Menuload"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CUI",
+        "largeResource": "RCDATA_32_CUI",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUI",
+        "macro": "^C^C_cui",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages customized user interface elements in the product",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUI command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-cpalette": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-cmdbtn-cpalette",
+      "kind": "command_button",
+      "name": "Tool\rPalettes",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CPALETTE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CPALETTE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tool\rPalettes",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CPalette",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tool\rPalettes",
+        "official": "Customize, Tool Palettes...",
+        "aliases": [
+          "CUSTOMIZE",
+          "ID_CPalette"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CUSTOMIZE",
+        "largeResource": "RCDATA_32_CUSTOMIZE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUSTOMIZE",
+        "macro": "^C^C_+customize 4",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Customizes tool palettes and tool palette groups",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUSTOMIZE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0031",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0031"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0031",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0170",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170.id-rbn-cmdbtnmm-1558"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0170"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0170",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170.id-rbn-cmdbtnmm-1558": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170.id-rbn-cmdbtnmm-1558",
+      "kind": "command_button",
+      "name": "Import",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0170",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1558"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1558",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Import",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1558",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Import",
+        "official": "Customize, Import Customizations...",
+        "aliases": [
+          "CUIIMPORT",
+          "MM_1558"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPORT_CUI",
+        "largeResource": "RCDATA_32_IMPORT_CUI",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUIIMPORT",
+        "macro": "^C^C_cuiimport;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imports customized settings from an enterprise or partial CUI file to the main CUI file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUIIMPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0171",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171.id-rbn-cmdbtnmm-1559"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0171"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0171",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171.id-rbn-cmdbtnmm-1559": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171.id-rbn-cmdbtnmm-1559",
+      "kind": "command_button",
+      "name": "Export",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0171",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1559"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1559",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Export",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1559",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Export",
+        "official": "Customize, Export Customizations...",
+        "aliases": [
+          "CUIEXPORT",
+          "MM_1559"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CUSTOMIZATION_EXPORT",
+        "largeResource": "RCDATA_32_CUSTOMIZATION_EXPORT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUIEXPORT",
+        "macro": "^C^C_cuiexport;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Exports customized settings from the main CUI file to an enterprise or partial CUI file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUIEXPORT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0172",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0172"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0172",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "kind": "split_button",
+      "name": "Edit Aliases",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_SplitBtn_EditAliases"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_SplitBtn_EditAliases",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Edit Aliases",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EA",
+        "behavior": "DropDownFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available Edit Aliases variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editaliases"
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Edit Aliases menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_SplitBtn_EditAliases.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Edit Aliases menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Edit Aliases popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Edit Aliases menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editaliases",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editsynonymlist"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_SplitBtn_EditAliases.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Edit Aliases variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editaliases": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editaliases",
+      "kind": "command_button",
+      "name": "Edit Aliases",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EDITAliases"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "ui": {
+        "uid": "RBN_200_EDITAliases",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Aliases",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EditPGP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Aliases",
+        "official": "Customize, Edit Program Parameters (acad.pgp)",
+        "aliases": [
+          "AI_EDITCUSTFILE",
+          "ID_EditPGP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOOLS_EDIT_PGP",
+        "largeResource": "RCDATA_32_TOOLS_EDIT_PGP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AI_EDITCUSTFILE",
+        "macro": "^C^C^P_ai_editcustfile $M=$(getvar,program).pgp;^P",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the Program Parameters (PGP) text file that defines command abbreviations",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AI_EDITCUSTFILE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist",
+      "kind": "command_button",
+      "name": "Edit AutoCorrect List",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist.xls-200-6b9a5"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EDITAutoCrrtLIST"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "ui": {
+        "uid": "RBN_200_EDITAutoCrrtLIST",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit AutoCorrect List",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_EditAutoCorrectList",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit AutoCorrect List",
+        "official": "Customize, Edit AutoCorrect List",
+        "aliases": [
+          "AI_EDITCUSTFILE",
+          "MM_EditAutoCorrectList"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_AUTOCORRECT_LIST_ACCESS",
+        "largeResource": "RCDATA_32_AUTOCORRECT_LIST_ACCESS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AI_EDITCUSTFILE",
+        "macro": "^C^C^P_ai_editcustfile $M=AutoCorrectUserDB.pgp;^P",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edit AutoCorrect List",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AI_EDITCUSTFILE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist.xls-200-6b9a5": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist.xls-200-6b9a5",
+      "kind": "groupname",
+      "name": "XLS_200_6B9A5",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editautocrrtlist",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLS_200_6B9A5"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "ui": {
+        "uid": "XLS_200_6B9A5",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editsynonymlist": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu.rbn-200-editsynonymlist",
+      "kind": "command_button",
+      "name": "Edit Synonym List",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EDITSynonymLIST"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-row-0169.id-rbn-rowpanel-0031.id-rbn-row-0172.rbn-200-splitbtn-editaliases",
+      "ui": {
+        "uid": "RBN_200_EDITSynonymLIST",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Synonym List",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_EditSynmonymList",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Synonym List",
+        "official": "Customize, Edit Synonym List",
+        "aliases": [
+          "AI_EDITCUSTFILE",
+          "MM_EditSynmonymList"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SYNONYM_LIST_ACCESS",
+        "largeResource": "RCDATA_32_SYNONYM_LIST_ACCESS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AI_EDITCUSTFILE",
+        "macro": "^C^C^P_ai_editcustfile $M=$(getvar,program)SynonymsGlobalDB.pgp;^P",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edit Synonym List",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AI_EDITCUSTFILE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-0042": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization.id-rbn-0042",
+      "kind": "panel_break",
+      "name": "ID_RBN_0042",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0042"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0042",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

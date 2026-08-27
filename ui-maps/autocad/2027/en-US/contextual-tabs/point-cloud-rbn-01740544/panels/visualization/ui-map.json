@@ -1,0 +1,952 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740544-panel-visualization",
+  "generatedAt": "2026-08-25T21:52:51.7340432Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740544",
+    "tabName": "Point Cloud",
+    "panelUid": "RBN_01741386",
+    "panelName": "Visualization",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "kind": "tab",
+      "name": "Point Cloud",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740544"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740544",
+        "text": "Point Cloud",
+        "keyTip": "PC",
+        "alias": null,
+        "officialName": "Point Cloud Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+      "kind": "panel",
+      "name": "Visualization",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741403"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741386"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741386",
+        "text": "Visualization",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Point Cloud Extension - Visualization",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+      "kind": "layout_row",
+      "name": "RBN_01741388",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741389",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741395",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741388"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741388",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741389": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741389",
+      "kind": "command_button",
+      "name": "   *VARIES*   ",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741389"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741389",
+        "controlId": "AcPointCloudStylizaton",
+        "text": "   *VARIES*   ",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "   *VARIES*   ",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes    *VARIES*   .",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390",
+      "kind": "layout_group",
+      "name": "RBN_01741390",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741390"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741390",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391",
+      "kind": "layout_row",
+      "name": "RBN_01741391",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391.rbn-01741392"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741391"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741391",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391.rbn-01741392": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391.rbn-01741392",
+      "kind": "ribbon_control",
+      "name": "Point Cloud Color Scheme Combo Box",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741391",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741392"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741392",
+        "controlId": "AcPointCloudColorScheme",
+        "text": "Point Cloud Color Scheme Combo Box",
+        "keyTip": "IS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Point Cloud Color Scheme Combo Box.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393",
+      "kind": "layout_row",
+      "name": "RBN_01741393",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393.rbn-01741394"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741393"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741393",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393.rbn-01741394": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393.rbn-01741394",
+      "kind": "command_button",
+      "name": "Color Mapping",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-01741393",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741394"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741394",
+        "controlId": "AcPointCloudColorMapButton",
+        "text": "Color Mapping",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PointCloud_Colormap",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Color Mapping",
+        "official": "Point Cloud Color Map",
+        "aliases": [
+          "POINTCLOUDCOLORMAP",
+          "ID_PointCloud_Colormap"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINTCLOUD_COLOR_MAP",
+        "largeResource": "RCDATA_32_POINTCLOUD_COLOR_MAP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POINTCLOUDCOLORMAP",
+        "macro": "^C^C_pointcloudcolormap",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Customizes color schemes and sets ranges for intensity and elevation stylizations of a point cloud; sets colors for classification properties.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POINTCLOUDCOLORMAP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7",
+      "kind": "layout_row",
+      "name": "RBN_201_507C7",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7.rbn-201-17d91"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_507C7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_507C7",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7.rbn-201-17d91": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7.rbn-201-17d91",
+      "kind": "ribbon_control",
+      "name": "Point Cloud Transparency",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741390.rbn-201-507c7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_17D91"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_17D91",
+        "controlId": "AcPointCloudTransparencySlider",
+        "text": "Point Cloud Transparency",
+        "keyTip": "TR"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Point Cloud Transparency.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741395": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741395",
+      "kind": "separator",
+      "name": "RBN_01741395",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741395"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741395",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396",
+      "kind": "layout_group",
+      "name": "RBN_01741396",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741396"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741396",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397",
+      "kind": "layout_row",
+      "name": "RBN_01741397",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397.rbn-01741398"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741397"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741397",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397.rbn-01741398": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397.rbn-01741398",
+      "kind": "command_button",
+      "name": "RBN_01741398",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741397",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741398"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741398",
+        "controlId": "AcPointCloudLightingDropDown",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01741398.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401",
+      "kind": "layout_row",
+      "name": "RBN_01741401",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401.rbn-01741402"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741401"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741401",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401.rbn-01741402": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401.rbn-01741402",
+      "kind": "command_button",
+      "name": "RBN_01741402",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741401",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741402"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741402",
+        "controlId": "AcPointCloudShadingDropDown",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01741402.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399",
+      "kind": "layout_row",
+      "name": "RBN_01741399",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399.rbn-01741400"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741399"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741399",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399.rbn-01741400": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399.rbn-01741400",
+      "kind": "command_button",
+      "name": "RBN_01741400",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741388.rbn-01741396.rbn-01741399",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741400"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741400",
+        "controlId": "AcPointCloudLightSourceDropDown",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01741400.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741403": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386.rbn-01741403",
+      "kind": "panel_break",
+      "name": "RBN_01741403",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741403"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741403",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

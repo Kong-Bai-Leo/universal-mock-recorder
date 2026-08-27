@@ -1,0 +1,2985 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-dimensions",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelDimensions",
+    "panelName": "Dimensions",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "kind": "panel",
+      "name": "Dimensions",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-0015",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbnpnl-0013",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelDimensions"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelDimensions",
+        "text": "Dimensions",
+        "keyTip": "DM",
+        "alias": "ID_Dimensions",
+        "officialName": "Annotate - Dimensions",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-0015": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-0015",
+      "kind": "dialog_launcher",
+      "name": "Dimension, Dimension Style...",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0015"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0015",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "DS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ddim",
+        "commandId": "ID_Ddim",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Dimension, Dimension Style...",
+        "aliases": [
+          "DIMSTYLE",
+          "ID_Ddim"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMSTY",
+        "largeResource": "RCDATA_32_DIMSTY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMSTYLE",
+        "macro": "'_dimstyle",
+        "macroType": "Format",
+        "commandId": "ID_Ddim",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Creates and modifies dimension styles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMSTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0095",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-cmdbtn-dimension",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0095"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0095",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-cmdbtn-dimension": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-cmdbtn-dimension",
+      "kind": "command_button",
+      "name": "Dimension",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMENSION"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMENSION",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Dimension",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Dimension",
+        "official": "Dimension",
+        "aliases": [
+          "DIM",
+          "ID_Dimension"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SDIM",
+        "largeResource": "RCDATA_32_SDIM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIM",
+        "macro": "^C^C_dim",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates multiple types of dimensions within a single command session.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0016",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0016"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0016",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0096",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylecombo-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylegallery-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimbreak",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimspace",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.rbn-01738133"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0096"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0096",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylecombo-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylecombo-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Dimension Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_DIMENSIONSTYLECOMBO_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_DIMENSIONSTYLECOMBO_0001",
+        "controlId": "AcDimensionStyleCombo",
+        "text": "Ribbon Combo Box - Dimension Style",
+        "keyTip": "DY"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Dimension Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylegallery-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-control-dimensionstylegallery-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Gallery Box - Dimension Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_DIMENSIONSTYLEGALLERY_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_DIMENSIONSTYLEGALLERY_0001",
+        "controlId": "AcDimensionStyleGallery",
+        "text": "Ribbon Gallery Box - Dimension Style",
+        "keyTip": "DY"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Gallery Box - Dimension Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimbreak": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimbreak",
+      "kind": "command_button",
+      "name": "Break",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMBREAK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMBREAK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Break",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimbreak",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Break",
+        "official": "Dimension, Dimbreak",
+        "aliases": [
+          "DIMBREAK",
+          "ID_Dimbreak"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMBRE",
+        "largeResource": "RCDATA_32_DIMBRE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMBREAK",
+        "macro": "^C^C_DIMBREAK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks or restores dimension and extension lines where they cross other objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMBREAK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimspace": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.id-rbn-cmdbtn-dimspace",
+      "kind": "command_button",
+      "name": "Adjust Space",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMSPACE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMSPACE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Adjust Space",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimspace",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Adjust Space",
+        "official": "Dimension, Dimspace",
+        "aliases": [
+          "DIMSPACE",
+          "ID_Dimspace"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMSPA",
+        "largeResource": "RCDATA_32_DIMSPA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMSPACE",
+        "macro": "^C^C_DIMSPACE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adjusts the spacing between linear dimensions or angular dimensions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMSPACE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.rbn-01738133": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096.rbn-01738133",
+      "kind": "command_button",
+      "name": "Jog Line",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738133"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738133",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Jog Line",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DJ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimjoglin",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Jog Line",
+        "official": "Dimension, Dimjogline",
+        "aliases": [
+          "DIMJOGLINE",
+          "ID_Dimjoglin"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMJGL",
+        "largeResource": "RCDATA_32_DIMJGL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMJOGLINE",
+        "macro": "^C^C_DIMJOGLINE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds or removes a jog line on a linear or aligned dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMJOGLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0097",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.rbn-201-3daa0",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-diminspection",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimstylea",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimreasso"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0097"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0097",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.rbn-201-3daa0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.rbn-201-3daa0",
+      "kind": "ribbon_control",
+      "name": "Dim Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_3DAA0"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_3DAA0",
+        "controlId": "AcDimLayerCombo",
+        "text": "Dim Layer Gallery",
+        "keyTip": "DA"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Dim Layer Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-diminspection": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-diminspection",
+      "kind": "command_button",
+      "name": "Inspect",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMINSPECTION"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMINSPECTION",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Inspect",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Diminspection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Inspect",
+        "official": "Dimension, Diminspect",
+        "aliases": [
+          "DIMINSPECT",
+          "ID_Diminspection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMINS",
+        "largeResource": "RCDATA_32_DIMINS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMINSPECT",
+        "macro": "^C^C_DIMINSPECT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds or removes inspection information for a selected dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMINSPECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimstylea": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimstylea",
+      "kind": "command_button",
+      "name": "Update",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMSTYLEA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMSTYLEA",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Update",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimstyleA",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Update",
+        "official": "Dimension, Update",
+        "aliases": [
+          "-DIMSTYLE",
+          "ID_DimstyleA"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMUPD",
+        "largeResource": "RCDATA_32_DIMUPD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-DIMSTYLE",
+        "macro": "^C^C_-dimstyle _apply",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates dimension objects with the current dimension style",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -DIMSTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimreasso": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097.id-rbn-cmdbtn-dimreasso",
+      "kind": "command_button",
+      "name": "Reassociate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.id-rbn-row-0097",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMREASSO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMREASSO",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reassociate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimreasso",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reassociate",
+        "official": "Dimension, Reassociate Dimensions",
+        "aliases": [
+          "DIMREASSOCIATE",
+          "ID_Dimreasso"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REASSOCIATEDIM",
+        "largeResource": "RCDATA_32_REASSOCIATEDIM",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMREASSOCIATE",
+        "macro": "^C^C_dimreassociate",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Associates or reassociates selected dimensions to objects or points on objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMREASSOCIATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0",
+      "kind": "layout_row",
+      "name": "RBN_200_EB8A0",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-cmdbtn-qdim",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EB8A0"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_EB8A0",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "kind": "split_button",
+      "name": "Linear Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5707A"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_5707A",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Linear Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DN",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Linear Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.primary-action",
+      "kind": "primary_button",
+      "name": "Linear Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5707A.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Linear Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Linear Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5707A.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Linear Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Linear Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Linear Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-41a2e",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-b7c49",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c1040",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c6a6d",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-50742",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-31fd3",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-55a00",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-f55d0",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-0baef"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5707A.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Linear Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-94781",
+      "kind": "command_button",
+      "name": "Linear",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_94781"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_94781",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Linear",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimlinear",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Linear",
+        "official": "Dimension, Linear",
+        "aliases": [
+          "DIMLINEAR",
+          "ID_Dimlinear"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMLIN",
+        "largeResource": "RCDATA_32_DIMLIN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMLINEAR",
+        "macro": "^C^C_dimlinear",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a linear dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMLINEAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-41a2e": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-41a2e",
+      "kind": "command_button",
+      "name": "Aligned",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_41A2E"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_41A2E",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Aligned",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimaligne",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Aligned",
+        "official": "Dimension, Aligned",
+        "aliases": [
+          "DIMALIGNED",
+          "ID_Dimaligne"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMALI",
+        "largeResource": "RCDATA_32_DIMALI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMALIGNED",
+        "macro": "^C^C_dimaligned",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an aligned linear dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMALIGNED command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-b7c49": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-b7c49",
+      "kind": "command_button",
+      "name": "Angular",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_B7C49"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_B7C49",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Angular",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimangula",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Angular",
+        "official": "Dimension, Angular",
+        "aliases": [
+          "DIMANGULAR",
+          "ID_Dimangula"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMANG",
+        "largeResource": "RCDATA_32_DIMANG",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMANGULAR",
+        "macro": "^C^C_dimangular",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an angular dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMANGULAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c1040": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c1040",
+      "kind": "separator",
+      "name": "RBN_201_C1040",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_C1040"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_C1040",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c6a6d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-c6a6d",
+      "kind": "command_button",
+      "name": "Arc Length",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_C6A6D"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_C6A6D",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Arc Length",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimarclen",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Arc Length",
+        "official": "Dimension, Arc Length",
+        "aliases": [
+          "DIMARC",
+          "ID_Dimarclen"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMARC",
+        "largeResource": "RCDATA_32_DIMARC",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMARC",
+        "macro": "^C^C_dimarc",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc length dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-50742": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-50742",
+      "kind": "command_button",
+      "name": "Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_50742"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_50742",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimradius",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Radius",
+        "official": "Dimension, Radius",
+        "aliases": [
+          "DIMRADIUS",
+          "ID_Dimradius"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMRAD",
+        "largeResource": "RCDATA_32_DIMRAD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMRADIUS",
+        "macro": "^C^C_dimradius",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a radius dimension for a circle or an arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMRADIUS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-31fd3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-31fd3",
+      "kind": "command_button",
+      "name": "Diameter",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_31FD3"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_31FD3",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Diameter",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimdiamet",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Diameter",
+        "official": "Dimension, Diameter",
+        "aliases": [
+          "DIMDIAMETER",
+          "ID_Dimdiamet"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMDIA",
+        "largeResource": "RCDATA_32_DIMDIA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMDIAMETER",
+        "macro": "^C^C_dimdiameter",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a diameter dimension for a circle or an arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMDIAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-55a00": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-55a00",
+      "kind": "separator",
+      "name": "RBN_201_55A00",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_55A00"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_55A00",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-f55d0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-f55d0",
+      "kind": "command_button",
+      "name": "Jogged",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_F55D0"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_F55D0",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Jogged",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimjogged",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Jogged",
+        "official": "Dimension, Jogged",
+        "aliases": [
+          "DIMJOGGED",
+          "ID_Dimjogged"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMJOG",
+        "largeResource": "RCDATA_32_DIMJOG",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMJOGGED",
+        "macro": "^C^C_dimjogged",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates jogged dimensions for circles and arcs",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMJOGGED command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-0baef": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu.rbn-201-0baef",
+      "kind": "command_button",
+      "name": "Ordinate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_0BAEF"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.rbn-201-5707a",
+      "ui": {
+        "uid": "RBN_201_0BAEF",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Ordinate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimordina",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Ordinate",
+        "official": "Dimension, Ordinate",
+        "aliases": [
+          "DIMORDINATE",
+          "ID_Dimordina"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMORD",
+        "largeResource": "RCDATA_32_DIMORD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMORDINATE",
+        "macro": "^C^C_dimordinate",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates ordinate dimensions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMORDINATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-cmdbtn-qdim": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-cmdbtn-qdim",
+      "kind": "command_button",
+      "name": "Quick",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_QDIM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_QDIM",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Quick",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_QDim",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Quick",
+        "official": "Dimension, Quick Dimension",
+        "aliases": [
+          "QDIM",
+          "ID_QDim"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QDIM",
+        "largeResource": "RCDATA_32_QDIM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "QDIM",
+        "macro": "^C^C_qdim",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Quickly creates a series of dimensions from selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 QDIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "kind": "split_button",
+      "name": "Continue Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_DIMENSION_0002"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_DIMENSION_0002",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Continue Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CO",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Continue Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.primary-action",
+      "kind": "primary_button",
+      "name": "Continue Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_DIMENSION_0002.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Continue Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Continue Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_DIMENSION_0002.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Continue Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Continue Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Continue Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimbaseli"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_DIMENSION_0002.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Continue Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimcontin",
+      "kind": "command_button",
+      "name": "Continue",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMCONTIN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMCONTIN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Continue",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimcontin",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Continue",
+        "official": "Dimension, Continue",
+        "aliases": [
+          "DIMCONTINUE",
+          "ID_Dimcontin"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMCON",
+        "largeResource": "RCDATA_32_DIMCON",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONTINUE",
+        "macro": "^C^C_dimcontinue",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a dimension that starts from an extension line of a previously created dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONTINUE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimbaseli": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu.id-rbn-cmdbtn-dimbaseli",
+      "kind": "command_button",
+      "name": "Baseline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMBASELI"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0095.id-rbn-rowpanel-0016.rbn-200-eb8a0.id-rbn-splitbtn-dimension-0002",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMBASELI",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Baseline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimbaseli",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Baseline",
+        "official": "Dimension, Baseline",
+        "aliases": [
+          "DIMBASELINE",
+          "ID_Dimbaseli"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMBAS",
+        "largeResource": "RCDATA_32_DIMBAS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMBASELINE",
+        "macro": "^C^C_dimbaseline",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Continues a linear, angular, or ordinate dimension from the baseline of the previous or selected dimension",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMBASELINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbnpnl-0013": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbnpnl-0013",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0013",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0013"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0013",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0098",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-tolerance",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-eca02",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimedito",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-c86e7",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimtedita",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-e5c44",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditl",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditc",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditr",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-6752d",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimoverri"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0098"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0098",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-tolerance": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-tolerance",
+      "kind": "command_button",
+      "name": "Tolerance",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_TOLERANCE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_TOLERANCE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tolerance",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Tolerance",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tolerance",
+        "official": "Dimension, Tolerance...",
+        "aliases": [
+          "TOLERANCE",
+          "ID_Tolerance"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOLERA",
+        "largeResource": "RCDATA_32_TOLERA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TOLERANCE",
+        "macro": "^C^C_tolerance",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates geometric tolerances contained in a feature control frame",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TOLERANCE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-eca02": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-eca02",
+      "kind": "separator",
+      "name": "RBN_200_ECA02",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_ECA02"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_ECA02",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimedito": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimedito",
+      "kind": "command_button",
+      "name": "Oblique",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMEDITO"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMEDITO",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Oblique",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimedito",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Oblique",
+        "official": "Dimension, Oblique",
+        "aliases": [
+          "DIMEDIT",
+          "ID_Dimedito"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMOBL",
+        "largeResource": "RCDATA_32_DIMOBL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMEDIT",
+        "macro": "^C^C_dimedit _o",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Makes the extension lines of linear dimensions oblique",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-c86e7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-c86e7",
+      "kind": "separator",
+      "name": "RBN_200_C86E7",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C86E7"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_C86E7",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimtedita": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimtedita",
+      "kind": "command_button",
+      "name": "Text Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMTEDITA"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMTEDITA",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Text Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DTA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimteditA",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Text Angle",
+        "official": "Dimension, Align Text, Angle",
+        "aliases": [
+          "DIMTEDIT",
+          "ID_DimteditA"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMTRO",
+        "largeResource": "RCDATA_32_DIMTRO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMTEDIT",
+        "macro": "^C^C_dimtedit \\_a",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates dimension text to an angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-e5c44": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-e5c44",
+      "kind": "separator",
+      "name": "RBN_200_E5C44",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E5C44"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E5C44",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditl": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditl",
+      "kind": "command_button",
+      "name": "Left Justify",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMTEDITL"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMTEDITL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Left Justify",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DTL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimteditL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Left Justify",
+        "official": "Dimension, Align Text, Left",
+        "aliases": [
+          "DIMTEDIT",
+          "ID_DimteditL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMTLE",
+        "largeResource": "RCDATA_32_DIMTLE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMTEDIT",
+        "macro": "^C^C_dimtedit \\_l",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Left justifies dimension text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditc": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditc",
+      "kind": "command_button",
+      "name": "Center Justify",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMTEDITC"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMTEDITC",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center Justify",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DTC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimteditC",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center Justify",
+        "official": "Dimension, Align Text, Center",
+        "aliases": [
+          "DIMTEDIT",
+          "ID_DimteditC"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMTCE",
+        "largeResource": "RCDATA_32_DIMTCE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMTEDIT",
+        "macro": "^C^C_dimtedit \\_c",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Centers dimension text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditr": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimteditr",
+      "kind": "command_button",
+      "name": "Right Justify",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMTEDITR"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMTEDITR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Right Justify",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DTR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimteditR",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Right Justify",
+        "official": "Dimension, Align Text, Right",
+        "aliases": [
+          "DIMTEDIT",
+          "ID_DimteditR"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMTRI",
+        "largeResource": "RCDATA_32_DIMTRI",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMTEDIT",
+        "macro": "^C^C_dimtedit \\_r",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Right justifies dimension text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-6752d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.rbn-200-6752d",
+      "kind": "separator",
+      "name": "RBN_200_6752D",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_6752D"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_6752D",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimoverri": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098.id-rbn-cmdbtn-dimoverri",
+      "kind": "command_button",
+      "name": "Override",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions.id-rbn-row-0098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIMOVERRI"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIMOVERRI",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Override",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dimoverri",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Override",
+        "official": "Dimension, Override",
+        "aliases": [
+          "DIMOVERRIDE",
+          "ID_Dimoverri"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIMOVE",
+        "largeResource": "RCDATA_32_DIMOVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMOVERRIDE",
+        "macro": "^C^C_dimoverride",
+        "macroType": "Dimension",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls overrides of system variables used in selected dimensions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMOVERRIDE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

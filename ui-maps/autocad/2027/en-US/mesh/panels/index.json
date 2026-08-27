@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabMeshModeling",
+  "tabName": "Mesh",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Primitives",
+      "uid": "ID_PanelPrimitives",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelprimitives",
+      "map": "primitives/ui-map.json",
+      "nodes": 26,
+      "actionableControls": 14
+    },
+    {
+      "name": "Mesh",
+      "uid": "ID_PanelSmoothMesh",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelsmoothmesh",
+      "map": "mesh/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 7
+    },
+    {
+      "name": "Mesh Edit",
+      "uid": "ID_PanelMeshEdit",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelmeshedit",
+      "map": "mesh-edit/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 6
+    },
+    {
+      "name": "Convert Mesh",
+      "uid": "ID_PanelConvertMesh",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+      "map": "convert-mesh/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 3
+    },
+    {
+      "name": "Section",
+      "uid": "RBN_01737906",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "map": "section/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    },
+    {
+      "name": "Selection",
+      "uid": "ID_PanelSubObject",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelsubobject",
+      "map": "selection/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    }
+  ]
+}

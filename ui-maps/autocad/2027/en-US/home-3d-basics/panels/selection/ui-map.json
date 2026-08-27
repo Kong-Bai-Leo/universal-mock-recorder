@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-home-panel-selection",
+  "generatedAt": "2026-08-25T21:52:16.2059243Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Home",
+    "tabName": "Home",
+    "panelUid": "ID_3dBasics_PanelSelection",
+    "panelName": "Selection",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Home"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Home",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_3dBasics_Home",
+        "officialName": "Home - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection",
+      "kind": "panel",
+      "name": "Selection",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbnpnl-sm-0057"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_PanelSelection"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 157
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_PanelSelection",
+        "text": "Selection",
+        "keyTip": "CO",
+        "alias": null,
+        "officialName": "3D Basics - Selection",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0278",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3239",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3240",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-sm-2711",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.xlsr-uie-1912"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0278"
+      },
+      "placement": {
+        "region": "main",
+        "order": 158
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0278",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3239": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3239",
+      "kind": "separator",
+      "name": "RBN_3239",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3239"
+      },
+      "placement": {
+        "region": "main",
+        "order": 159
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3239",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3240": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-3240",
+      "kind": "toggle_button",
+      "name": "Culling",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3240"
+      },
+      "placement": {
+        "region": "main",
+        "order": 160
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3240",
+        "controlId": "CullingObjToggleButton",
+        "text": "Culling",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Culling",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Culling.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-sm-2711": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.rbn-sm-2711",
+      "kind": "ribbon_control",
+      "name": "Subobject Selection Mode Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_2711"
+      },
+      "placement": {
+        "region": "main",
+        "order": 161
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_2711",
+        "controlId": "AcSUBOBJSELECTIONMODESplitButton",
+        "text": "Subobject Selection Mode Drop-down",
+        "keyTip": "SB"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Subobject Selection Mode Drop-down.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.xlsr-uie-1912": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278.xlsr-uie-1912",
+      "kind": "ribbon_control",
+      "name": "Default Gizmo Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbn-row-sm-0278",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_UIE_1912"
+      },
+      "placement": {
+        "region": "main",
+        "order": 162
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_UIE_1912",
+        "controlId": "AcDEFAULTGIZMOSplitButton",
+        "text": "Default Gizmo Drop-down",
+        "keyTip": "DG"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Default Gizmo Drop-down.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbnpnl-sm-0057": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection.id-rbnpnl-sm-0057",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_SM_0057",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panelselection",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_SM_0057"
+      },
+      "placement": {
+        "region": "main",
+        "order": 163
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_SM_0057",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

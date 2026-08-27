@@ -1,0 +1,1013 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabrender-panel-sun-location",
+  "generatedAt": "2026-08-25T21:52:34.5434845Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabRender",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelSun",
+    "panelName": "Sun & Location",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabRender"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabRender",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": "ID_TabRender",
+        "officialName": "Visualize"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "kind": "panel",
+      "name": "Sun & Location",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0108",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0031",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelSun"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 117
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelSun",
+        "text": "Sun & Location",
+        "keyTip": null,
+        "alias": "ID_Sun",
+        "officialName": "Render - Sun & Location",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0108": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0108",
+      "kind": "dialog_launcher",
+      "name": "Sun Properties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0108"
+      },
+      "placement": {
+        "region": "main",
+        "order": 118
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0108",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SunProperties",
+        "commandId": "ID_SunProperties",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Sun Properties",
+        "aliases": [
+          "SUNPROPERTIES",
+          "ID_SunProperties"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SUN_PROPERTIES",
+        "largeResource": "RCDATA_32_SUN_PROPERTIES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SUNPROPERTIES",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,sunpropertiesstate),0)),^C^C_sunpropertiesclose,^C^C_sunproperties)",
+        "macroType": "View",
+        "commandId": "ID_SunProperties",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Displays the Sun Properties window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SUNPROPERTIES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0129",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.id-rbn-togglebtn-sunstatus",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.xlsr-1129"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0129"
+      },
+      "placement": {
+        "region": "main",
+        "order": 119
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0129",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.id-rbn-togglebtn-sunstatus": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.id-rbn-togglebtn-sunstatus",
+      "kind": "toggle_button",
+      "name": "Sun\rStatus",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_SUNSTATUS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 120
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_SUNSTATUS",
+        "controlId": "AcSunStatusCommandToggleButton",
+        "text": "Sun\rStatus",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sun\rStatus",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Sun\rStatus.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.xlsr-1129": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129.xlsr-1129",
+      "kind": "data_bound_dropdown",
+      "name": "Sky Status Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-row-0129",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_1129"
+      },
+      "placement": {
+        "region": "main",
+        "order": 121
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_1129",
+        "controlId": "AcSKYSTATUSDataBoundDropDown",
+        "text": "Sky Status Drop-down",
+        "keyTip": "SY"
+      },
+      "semantics": {
+        "description": "Opens or changes the Sky Status Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Sky Status Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0031": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.id-rbn-0031",
+      "kind": "panel_break",
+      "name": "ID_RBN_0031",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0031"
+      },
+      "placement": {
+        "region": "main",
+        "order": 122
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0031",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0",
+      "kind": "layout_row",
+      "name": "RBN_200_1BFD0",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_1BFD0"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 123
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_1BFD0",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c",
+      "kind": "layout_group",
+      "name": "RBN_200_E7E0C",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E7E0C"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 124
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E7E0C",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559",
+      "kind": "layout_row",
+      "name": "RBN_200_F0559",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F0559"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 125
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F0559",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "kind": "split_button",
+      "name": "Set Location",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C951F"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 126
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_C951F",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Set Location",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ST",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_GEO_LOCATION",
+        "largeImage": "RCDATA_32_GEO_LOCATION",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Specifies the geographic location information for a drawing file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e356"
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Set Location menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C951F.menu-trigger"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 127
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Set Location menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Set Location popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Set Location menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e356",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e359",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-f2507"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C951F.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 128
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Set Location variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e356": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e356",
+      "kind": "command_button",
+      "name": "From Esri Maps",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_0E356"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 129
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "ui": {
+        "uid": "ID_RBN_200_0E356",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From Esri Maps",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Esri Maps",
+        "official": "Geographic Location from Esri Maps",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_ESRI",
+        "largeResource": "RCDATA_32_GEO_ESRI",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _m)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Assigns geographic location using Esri maps from Esri online map service",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e359": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-0e359",
+      "kind": "command_button",
+      "name": "From Bing Maps",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_0E359"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 130
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "ui": {
+        "uid": "ID_RBN_200_0E359",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From Bing Maps",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_Bing_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Bing Maps",
+        "official": "Geographic Location from Bing Maps",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_Bing_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION",
+        "largeResource": "RCDATA_32_GEO_LOCATION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _b)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Assigns geographic location using Bing maps from Bing online map service",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-f2507": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu.id-rbn-200-f2507",
+      "kind": "command_button",
+      "name": "From File",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_F2507"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 131
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-f0559.rbn-200-c951f",
+      "ui": {
+        "uid": "ID_RBN_200_F2507",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From File",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_File",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From File",
+        "official": "Geographic Location from File",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_File"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_FILE",
+        "largeResource": "RCDATA_32_GEO_LOCATION_FILE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _f)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Assigns geographic location by importing coordinates from a GIS file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702",
+      "kind": "layout_row",
+      "name": "RBN_200_61702",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702.rbn-200-eef71"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_61702"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 132
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_61702",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702.rbn-200-eef71": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702.rbn-200-eef71",
+      "kind": "ribbon_control",
+      "name": "Date",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-61702",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EEF71"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 133
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_EEF71",
+        "controlId": "AcLightsDateSlider",
+        "text": "Date",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Date.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721",
+      "kind": "layout_row",
+      "name": "RBN_200_62721",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721.rbn-200-d2bc7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_62721"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 134
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_62721",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721.rbn-200-d2bc7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721.rbn-200-d2bc7",
+      "kind": "ribbon_control",
+      "name": "Sun time",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun.rbn-200-1bfd0.rbn-200-e7e0c.rbn-200-62721",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2BC7"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 135
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2BC7",
+        "controlId": "AcLightsTimeSlider",
+        "text": "Sun time",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Sun time.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

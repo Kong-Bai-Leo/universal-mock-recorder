@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 7,
+    "panels": [
+      {
+        "name": "Text",
+        "uid": "ID_PanelText",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltext",
+        "map": "text/ui-map.json",
+        "nodes": 32,
+        "actionableControls": 13
+      },
+      {
+        "name": "Dimensions",
+        "uid": "ID_PanelDimensions",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+        "map": "dimensions/ui-map.json",
+        "nodes": 55,
+        "actionableControls": 33
+      },
+      {
+        "name": "Centerlines",
+        "uid": "ID_PanelCenterlines",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+        "map": "centerlines/ui-map.json",
+        "nodes": 11,
+        "actionableControls": 3
+      },
+      {
+        "name": "Leaders",
+        "uid": "ID_PanelMultileaders",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+        "map": "leaders/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 9
+      },
+      {
+        "name": "Tables",
+        "uid": "ID_PanelTables",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+        "map": "tables/ui-map.json",
+        "nodes": 21,
+        "actionableControls": 9
+      },
+      {
+        "name": "Markup",
+        "uid": "ID_PanelMarkup",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+        "map": "markup/ui-map.json",
+        "nodes": 17,
+        "actionableControls": 7
+      },
+      {
+        "name": "Annotation Scaling",
+        "uid": "ID_PanelAnnotationScaling",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+        "map": "annotation-scaling/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 7
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 152,
+    "panels": 7,
+    "actionableControls": 81,
+    "splitButtons": 5,
+    "iconOnlyControls": 36
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "live-observation.json"
+  }
+}

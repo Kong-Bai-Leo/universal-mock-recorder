@@ -1,0 +1,2013 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabview-panel-navigate",
+  "generatedAt": "2026-08-25T21:52:23.6324184Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabView",
+    "tabName": "View",
+    "panelUid": "ID_PanelViewNavigate2D",
+    "panelName": "Navigate",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview",
+      "kind": "tab",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabView"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabView",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_TabView",
+        "officialName": "View 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d",
+      "kind": "panel",
+      "name": "Navigate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.rbn-uie-3888"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelViewNavigate2D"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 154
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelViewNavigate2D",
+        "text": "Navigate",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "View - Navigate 2D",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0315",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-viewback-001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-zoom-next-001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-ribbonseparator-0898",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0315"
+      },
+      "placement": {
+        "region": "main",
+        "order": 155
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0315",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-viewback-001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-viewback-001",
+      "kind": "command_button",
+      "name": "$(if,$(getvar, VIEWBACKSTATUS),,~)Back",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_VIEWBACK_001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 156
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_VIEWBACK_001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "$(if,$(getvar, VIEWBACKSTATUS),,~)Back",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ViewBackward",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "$(if,$(getvar, VIEWBACKSTATUS),,~)Back",
+        "official": "View Back",
+        "aliases": [
+          "VIEWBACK",
+          "ID_ViewBackward"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_BACK",
+        "largeResource": "RCDATA_32_VIEW_BACK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWBACK",
+        "macro": "^C^C'_VIEWBACK",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Backward view navigation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWBACK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-zoom-next-001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-zoom-next-001",
+      "kind": "command_button",
+      "name": "$(if,$(getvar, VIEWFWDSTATUS),,~)Forward",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ZOOM_NEXT_001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 157
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ZOOM_NEXT_001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "$(if,$(getvar, VIEWFWDSTATUS),,~)Forward",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "NV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ViewForward",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "$(if,$(getvar, VIEWFWDSTATUS),,~)Forward",
+        "official": "View Forward",
+        "aliases": [
+          "VIEWFORWARD",
+          "ID_ViewForward"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_FWD",
+        "largeResource": "RCDATA_32_VIEW_FWD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWFORWARD",
+        "macro": "^C^C'_VIEWFORWARD",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Forward view navigation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWFORWARD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-ribbonseparator-0898": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.id-rbn-ribbonseparator-0898",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0898",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0898"
+      },
+      "placement": {
+        "region": "main",
+        "order": 158
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0898",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120",
+      "kind": "layout_group",
+      "name": "RBN_000175120",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_000175120"
+      },
+      "placement": {
+        "region": "main",
+        "order": 159
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_000175120",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131",
+      "kind": "layout_row",
+      "name": "RBN_3131",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131.rbn-00017507"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3131"
+      },
+      "placement": {
+        "region": "main",
+        "order": 160
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3131",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131.rbn-00017507": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131.rbn-00017507",
+      "kind": "command_button",
+      "name": "Pan",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-3131",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017507"
+      },
+      "placement": {
+        "region": "main",
+        "order": 161
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017507",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Pan",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1572",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Pan",
+        "official": "Pan Realtime",
+        "aliases": [
+          "PAN",
+          "MM_1572"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RTPAN",
+        "largeResource": "RCDATA_32_RTPAN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PAN",
+        "macro": "'_pan",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Moves the view planar to the screen",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PAN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661",
+      "kind": "layout_row",
+      "name": "RBN_00017661",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017661"
+      },
+      "placement": {
+        "region": "main",
+        "order": 162
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017661",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "kind": "split_button",
+      "name": "Orbit Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ORBIT_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 163
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ORBIT_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Orbit Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "OR",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Orbit Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Orbit Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ORBIT_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 164
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Orbit Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Orbit Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ORBIT_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 165
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Orbit Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Orbit Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Orbit Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-free-orbit-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-3dcorbit-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ORBIT_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 166
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Orbit Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-constrained-orbit-0001",
+      "kind": "command_button",
+      "name": "Orbit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CONSTRAINED_ORBIT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 167
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CONSTRAINED_ORBIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Orbit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Constrained_Orbit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Orbit",
+        "official": "3D Constrained Orbit",
+        "aliases": [
+          "3DORBIT",
+          "ID_Constrained_Orbit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DCONSTRAINEDORBIT",
+        "largeResource": "RCDATA_32_3DCONSTRAINEDORBIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DORBIT",
+        "macro": "'_3dorbit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the view in 3D space, but constrained to horizontal and vertical orbit only",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DORBIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-free-orbit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-free-orbit-0001",
+      "kind": "command_button",
+      "name": "Free Orbit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FREE_ORBIT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 168
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FREE_ORBIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Free Orbit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Free_Orbit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Free Orbit",
+        "official": "3D Free Orbit",
+        "aliases": [
+          "3DFORBIT",
+          "ID_Free_Orbit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DFREEORBIT",
+        "largeResource": "RCDATA_32_3DFREEORBIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DFORBIT",
+        "macro": "'_3DFOrbit",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the view in 3D space without constraining roll",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DFORBIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-3dcorbit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-3dcorbit-0001",
+      "kind": "command_button",
+      "name": "Continuous Orbit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_3DCORBIT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 169
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017661.id-rbn-splitbtn-orbit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_3DCORBIT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Continuous Orbit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3dcorbit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Continuous Orbit",
+        "official": "3D Continuous Orbit",
+        "aliases": [
+          "3DCORBIT",
+          "ID_3dcorbit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DCORBIT",
+        "largeResource": "RCDATA_32_3DCORBIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DCORBIT",
+        "macro": "'_3dcorbit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates the view in 3D space with continuous motion",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DCORBIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662",
+      "kind": "layout_row",
+      "name": "RBN_00017662",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017662"
+      },
+      "placement": {
+        "region": "main",
+        "order": 170
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017662",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "kind": "split_button",
+      "name": "Zoom Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ZOOM_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 171
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ZOOM_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Zoom Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ZO",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Zoom Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Zoom Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ZOOM_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 172
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Zoom Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Zoom Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ZOOM_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 173
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Zoom Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Zoom Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Zoom Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomwindo-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomprevi-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomrealt-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomall-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomdynam-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomscale-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomcente-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomobjec-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomin-0001",
+        "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomout-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ZOOM_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 174
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Zoom Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomexten-0001",
+      "kind": "command_button",
+      "name": "Extents",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMEXTEN_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 175
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMEXTEN_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extents",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomExten",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extents",
+        "official": "Zoom Extents",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomExten"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOEXT",
+        "largeResource": "RCDATA_32_ZOOEXT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _e",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display the maximum extents of all objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomwindo-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomwindo-0001",
+      "kind": "command_button",
+      "name": "Window",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMWINDO_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 176
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMWINDO_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Window",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomWindo",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Window",
+        "official": "Zoom Window",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomWindo"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOWIN",
+        "largeResource": "RCDATA_32_ZOOWIN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _w",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display an area specified by a rectangular window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomprevi-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomprevi-0001",
+      "kind": "command_button",
+      "name": "Previous",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMPREVI_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 177
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMPREVI_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Previous",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomPrevi",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Previous",
+        "official": "Zoom, Previous",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomPrevi"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOPRE",
+        "largeResource": "RCDATA_32_ZOOPRE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _p",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display the previous view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomrealt-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomrealt-0001",
+      "kind": "command_button",
+      "name": "Realtime",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMREALT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 178
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMREALT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Realtime",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomRealt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Realtime",
+        "official": "Zoom Realtime",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomRealt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOM_NEW",
+        "largeResource": "RCDATA_32_ZOOM_NEW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom ;",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to increase or decrease the apparent size of objects in the current viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomall-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomall-0001",
+      "kind": "command_button",
+      "name": "All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMALL_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 179
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMALL_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "All",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomAll",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "All",
+        "official": "Zoom, All",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomAll"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOALL",
+        "largeResource": "RCDATA_32_ZOOALL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _all",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display all visible objects and visual aids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomdynam-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomdynam-0001",
+      "kind": "command_button",
+      "name": "Dynamic",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMDYNAM_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 180
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMDYNAM_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Dynamic",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomDynam",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Dynamic",
+        "official": "Zoom, Dynamic",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomDynam"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOODYN",
+        "largeResource": "RCDATA_32_ZOODYN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _d",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Pans and zooms using a rectangular viewbox",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomscale-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomscale-0001",
+      "kind": "command_button",
+      "name": "Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMSCALE_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 181
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMSCALE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomScale",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Scale",
+        "official": "Zoom, Scale",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomScale"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOSCA",
+        "largeResource": "RCDATA_32_ZOOSCA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _s",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to change the magnification of a view using a scale factor",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomcente-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomcente-0001",
+      "kind": "command_button",
+      "name": "Center",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMCENTE_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 182
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMCENTE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomCente",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center",
+        "official": "Zoom, Center",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomCente"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOCEN",
+        "largeResource": "RCDATA_32_ZOOCEN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _c",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display a view defined by a center point and a magnification value or a height",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomobjec-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomobjec-0001",
+      "kind": "command_button",
+      "name": "Object",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMOBJEC_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 183
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMOBJEC_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Object",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomObjec",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Object",
+        "official": "Zoom, Object",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomObjec"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOOBJ",
+        "largeResource": "RCDATA_32_ZOOOBJ",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom _o",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to display one or more selected objects as large as possible and in the center of the view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomin-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomin-0001",
+      "kind": "command_button",
+      "name": "In",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMIN_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 184
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMIN_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "In",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomIn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "In",
+        "official": "Zoom, In",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomIn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOIN",
+        "largeResource": "RCDATA_32_ZOOIN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom 2x",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to increase the magnification of the current view by a factor of 2",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomout-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-zoomout-0001",
+      "kind": "command_button",
+      "name": "Out",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ZOOMOUT_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 185
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.id-rbn-row-0315.rbn-000175120.rbn-00017662.id-rbn-splitbtn-zoom-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ZOOMOUT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Out",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ZoomOut",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Out",
+        "official": "Zoom, Out",
+        "aliases": [
+          "ZOOM",
+          "ID_ZoomOut"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ZOOOUT",
+        "largeResource": "RCDATA_32_ZOOOUT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ZOOM",
+        "macro": "'_zoom .5x",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Zooms to decrease the magnification of the current view by a factor of 2",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ZOOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.rbn-uie-3888": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d.rbn-uie-3888",
+      "kind": "panel_break",
+      "name": "RBN_UIE_3888",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_3888"
+      },
+      "placement": {
+        "region": "main",
+        "order": 186
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_3888",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:26:00Z",
+    "observedControlCount": 36,
+    "evidence": "../../live-observation.json"
+  }
+}

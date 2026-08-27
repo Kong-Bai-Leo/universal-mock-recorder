@@ -1,0 +1,911 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome3d-panel-section",
+  "generatedAt": "2026-08-25T21:52:13.9409473Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome3D",
+    "tabName": "Home ",
+    "panelUid": "ID_PanelSection",
+    "panelName": "Section",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "kind": "tab",
+      "name": "Home ",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome3D",
+        "text": "Home ",
+        "keyTip": "H",
+        "alias": "ID_TabHome3D",
+        "officialName": "Home - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "kind": "panel",
+      "name": "Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbn-0064",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbnpnl-8597",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelSection"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 242
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelSection",
+        "text": "Section",
+        "keyTip": "SE",
+        "alias": null,
+        "officialName": "Home 3D - Section",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbn-0064": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbn-0064",
+      "kind": "dialog_launcher",
+      "name": "Section, Section Plane Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0064"
+      },
+      "placement": {
+        "region": "main",
+        "order": 243
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0064",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "SG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SectionPlaneSettings",
+        "commandId": "ID_SectionPlaneSettings",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Section, Section Plane Settings",
+        "aliases": [
+          "SECTIONPLANESETTINGS",
+          "ID_SectionPlaneSettings"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANESETTINGS",
+        "macro": "^C^C_SECTIONPLANESETTINGS",
+        "macroType": "Any",
+        "commandId": "ID_SectionPlaneSettings",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Sets display options for the selected section plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANESETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296",
+      "kind": "layout_row",
+      "name": "RBN_00012296",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296.rbn-00012298"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00012296"
+      },
+      "placement": {
+        "region": "main",
+        "order": 244
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00012296",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296.rbn-00012298": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296.rbn-00012298",
+      "kind": "command_button",
+      "name": "Section\rPlane",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00012296",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00012298"
+      },
+      "placement": {
+        "region": "main",
+        "order": 245
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00012298",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Section\rPlane",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "XP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1719",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Section\rPlane",
+        "official": "Modeling, Section Plane",
+        "aliases": [
+          "SECTIONPLANE",
+          "MM_1719"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIO",
+        "largeResource": "RCDATA_32_SECTIO",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANE",
+        "macro": "^C^C_sectionplane",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a section object that acts as a cutting plane through 3D objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbnpnl-8597": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.id-rbnpnl-8597",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8597",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8597"
+      },
+      "placement": {
+        "region": "main",
+        "order": 246
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8597",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230",
+      "kind": "layout_row",
+      "name": "RBN_00013230",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230.rbn-01737982"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013230"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 247
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013230",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230.rbn-01737982": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230.rbn-01737982",
+      "kind": "command_button",
+      "name": "Live Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013230",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737982"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 248
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737982",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Live Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Livesection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Live Section",
+        "official": "Live Section",
+        "aliases": [
+          "LIVESECTION",
+          "ID_Livesection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LIVESECTION",
+        "largeResource": "RCDATA_32_LIVESECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LIVESECTION",
+        "macro": "^C^C_livesection",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles the live section state on or off for the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LIVESECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232",
+      "kind": "layout_row",
+      "name": "RBN_00013232",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232.rbn-01737983"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013232"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 249
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013232",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232.rbn-01737983": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232.rbn-01737983",
+      "kind": "command_button",
+      "name": "Add Jog",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-00013232",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737983"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 250
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737983",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add Jog",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "JS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Jogsection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add Jog",
+        "official": "Modeling, Section Plane Jog",
+        "aliases": [
+          "SECTIONPLANEJOG",
+          "ID_Jogsection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_JOGSECTION",
+        "largeResource": "RCDATA_32_JOGSECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANEJOG",
+        "macro": "^C^C_sectionplanejog",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a jog to the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANEJOG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979",
+      "kind": "layout_row",
+      "name": "RBN_01737979",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979.rbn-01738033"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737979"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 251
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737979",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979.rbn-01738033": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979.rbn-01738033",
+      "kind": "command_button",
+      "name": "Generate Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737979",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738033"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 252
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738033",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Generate Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANETOBLOCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Generate Section",
+        "official": "Generate Section Block",
+        "aliases": [
+          "SECTIONPLANETOBLOCK",
+          "ID_SECTIONPLANETOBLOCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIONPLANETOBLOCK",
+        "largeResource": "RCDATA_32_SECTIONPLANETOBLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANETOBLOCK",
+        "macro": "^C^C_SECTIONPLANETOBLOCK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the Generate Section/Elevation dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANETOBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980",
+      "kind": "layout_row",
+      "name": "RBN_01737980",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980.rbn-00013231"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737980"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 253
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737980",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980.rbn-00013231": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980.rbn-00013231",
+      "kind": "command_button",
+      "name": "Flatshot",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737980",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013231"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 254
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013231",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Flatshot",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "FT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Flatshot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Flatshot",
+        "official": "Flatshot",
+        "aliases": [
+          "FLATSHOT",
+          "ID_Flatshot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FLATSHOT",
+        "largeResource": "RCDATA_32_FLATSHOT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FLATSHOT",
+        "macro": "^C^C_flatshot",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D representation of all 3D objects based on the current view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FLATSHOT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981",
+      "kind": "layout_row",
+      "name": "RBN_01737981",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981.rbn-00013233"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737981"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 255
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737981",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981.rbn-00013233": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981.rbn-00013233",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsection.rbn-01737981",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013233"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 256
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013233",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Edges",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Edges",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

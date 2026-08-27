@@ -1,0 +1,866 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-groups",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "ID_PanelGroup",
+    "panelName": "Groups",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "kind": "panel",
+      "name": "Groups",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740017",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelGroup"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 333
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelGroup",
+        "text": "Groups",
+        "keyTip": "GR",
+        "alias": null,
+        "officialName": "Home - Groups",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740016",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740008",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740016"
+      },
+      "placement": {
+        "region": "main",
+        "order": 334
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740016",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740008": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740008",
+      "kind": "command_button",
+      "name": "Group",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740008"
+      },
+      "placement": {
+        "region": "main",
+        "order": 335
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740008",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "GG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GROUP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Group",
+        "aliases": [
+          "GROUP",
+          "ID_GROUP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_NEWGROUP",
+        "largeResource": "RCDATA_32_NEWGROUP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GROUP",
+        "macro": "^C^C_group",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a group of objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GROUP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015",
+      "kind": "layout_group",
+      "name": "RBN_UIE_01740015",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740015"
+      },
+      "placement": {
+        "region": "main",
+        "order": 336
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740015",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740010",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010.rbn-uie-01740009"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740010"
+      },
+      "placement": {
+        "region": "main",
+        "order": 337
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740010",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010.rbn-uie-01740009": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010.rbn-uie-01740009",
+      "kind": "command_button",
+      "name": "Ungroup",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740010",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740009"
+      },
+      "placement": {
+        "region": "main",
+        "order": 338
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740009",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ungroup",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Ungroup",
+        "aliases": [
+          "UNGROUP",
+          "ID_Ungroup"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNGROUP",
+        "largeResource": "RCDATA_32_UNGROUP",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UNGROUP",
+        "macro": "^C^C_ungroup",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Explodes or ungroups a group",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UNGROUP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740012",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012.rbn-uie-01740021"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740012"
+      },
+      "placement": {
+        "region": "main",
+        "order": 339
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740012",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012.rbn-uie-01740021": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012.rbn-uie-01740021",
+      "kind": "command_button",
+      "name": "Group Edit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740012",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740021"
+      },
+      "placement": {
+        "region": "main",
+        "order": 340
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740021",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Group Edit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GroupEdit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Group Edit",
+        "official": "Group Edit",
+        "aliases": [
+          "GROUPEDIT",
+          "ID_GroupEdit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GROUPEDIT",
+        "largeResource": "RCDATA_32_GROUPEDIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GROUPEDIT",
+        "macro": "^C^C_groupedit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds or removes objects from a group",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GROUPEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740014",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014.rbn-uie-01740013"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740014"
+      },
+      "placement": {
+        "region": "main",
+        "order": 341
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740014",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014.rbn-uie-01740013": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014.rbn-uie-01740013",
+      "kind": "toggle_button",
+      "name": "Ribbon Toggle Button - Group Selection On/Off",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740016.rbn-uie-01740015.rbn-uie-01740014",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740013"
+      },
+      "placement": {
+        "region": "main",
+        "order": 342
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740013",
+        "controlId": "AcGroupSelectionToggleButton",
+        "text": "Ribbon Toggle Button - Group Selection On/Off",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Ribbon Toggle Button - Group Selection On/Off",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Ribbon Toggle Button - Group Selection On/Off.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740017": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740017",
+      "kind": "panel_break",
+      "name": "RBN_UIE_01740017",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740017"
+      },
+      "placement": {
+        "region": "main",
+        "order": 343
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740017",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740019",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019.rbn-uie-01740018"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740019"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 344
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740019",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019.rbn-uie-01740018": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019.rbn-uie-01740018",
+      "kind": "command_button",
+      "name": "Group Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740019",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740018"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 345
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740018",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "GN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ClassicGroup",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Group Manager",
+        "aliases": [
+          "CLASSICGROUP",
+          "ID_ClassicGroup"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GROUP",
+        "largeResource": "RCDATA_32_GROUP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CLASSICGROUP",
+        "macro": "^C^C_classicgroup",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays group dialog to manage named groups",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CLASSICGROUP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029",
+      "kind": "layout_row",
+      "name": "RBN_UIE_01740029",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029.rbn-uie-01740030"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740029"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 346
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740029",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029.rbn-uie-01740030": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029.rbn-uie-01740030",
+      "kind": "toggle_button",
+      "name": "Group Bounding Box",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelgroup.rbn-uie-01740029",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_01740030"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 347
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_01740030",
+        "controlId": "AcGroupBoundBoxToggleButton",
+        "text": "Group Bounding Box",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "GW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Group Bounding Box",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Group Bounding Box.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

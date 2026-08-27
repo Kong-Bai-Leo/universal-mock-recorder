@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_00737426",
+  "tabName": "Mesh Subobject",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "Crease",
+      "uid": "RBN_00737251",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737251",
+      "map": "crease/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Edit Face",
+      "uid": "RBN_00737255",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255",
+      "map": "edit-face/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    }
+  ]
+}

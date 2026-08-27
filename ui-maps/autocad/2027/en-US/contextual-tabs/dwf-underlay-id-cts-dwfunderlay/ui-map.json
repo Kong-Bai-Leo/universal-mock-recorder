@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-dwfunderlay",
+  "generatedAt": "2026-08-25T21:53:12.9358420Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-DWFUnderlay",
+    "tabName": "DWF Underlay",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+      "kind": "tab",
+      "name": "DWF Underlay",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-DWFUnderlay"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-DWFUnderlay",
+        "text": "DWF Underlay",
+        "keyTip": "DW",
+        "alias": null,
+        "officialName": "DWF Underlay Contextual Tab"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 4,
+    "panels": [
+      {
+        "name": "Adjust",
+        "uid": "RBN_00018524",
+        "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+        "map": "adjust/ui-map.json",
+        "nodes": 13,
+        "actionableControls": 3
+      },
+      {
+        "name": "Clipping",
+        "uid": "RBN_00018533",
+        "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+        "map": "clipping/ui-map.json",
+        "nodes": 9,
+        "actionableControls": 2
+      },
+      {
+        "name": "Options",
+        "uid": "RBN_00018539",
+        "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018539",
+        "map": "options/ui-map.json",
+        "nodes": 10,
+        "actionableControls": 3
+      },
+      {
+        "name": "DWF Layers",
+        "uid": "RBN_01737931",
+        "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-01737931",
+        "map": "dwf-layers/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 28,
+    "panels": 4,
+    "actionableControls": 9,
+    "splitButtons": 0,
+    "iconOnlyControls": 0
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

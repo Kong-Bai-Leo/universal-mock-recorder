@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabCollaborate",
+  "tabName": "Collaborate",
+  "panelCount": 4,
+  "panels": [
+    {
+      "name": "Share",
+      "uid": "ID_PanelSharedViews",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews",
+      "map": "share/ui-map.json",
+      "nodes": 7,
+      "actionableControls": 1
+    },
+    {
+      "name": "Compare",
+      "uid": "RBN_231_16526",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.rbn-231-16526",
+      "map": "compare/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Forma",
+      "uid": "ID_PanelPlanGrid",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelplangrid",
+      "map": "forma/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Traces",
+      "uid": "ID_PanelTrace",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-paneltrace",
+      "map": "traces/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 5
+    }
+  ]
+}

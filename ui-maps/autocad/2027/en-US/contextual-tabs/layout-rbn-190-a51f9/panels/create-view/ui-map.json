@@ -1,0 +1,1487 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-190-a51f9-panel-create-view",
+  "generatedAt": "2026-08-25T21:52:50.5240095Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_190_A51F9",
+    "tabName": "Layout",
+    "panelUid": "ID_PanelCreateViewMD",
+    "panelName": "Create View",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "kind": "tab",
+      "name": "Layout",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A51F9"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_A51F9",
+        "text": "Layout",
+        "keyTip": "L",
+        "alias": "ID_NEWLAYOUT",
+        "officialName": "Layout"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd",
+      "kind": "panel",
+      "name": "Create View",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740608"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCreateViewMD"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCreateViewMD",
+        "text": "Create View",
+        "keyTip": "MC",
+        "alias": null,
+        "officialName": "Model Doc - Create",
+        "resizeStyle": "Default",
+        "sourceCuix": "ModelDoc.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+      "kind": "layout_row",
+      "name": "RBN_01740607",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-projectedviewcv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740607"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740607",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "kind": "split_button",
+      "name": "Base",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BaseViewSplitBtn"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BaseViewSplitBtn",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Base",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BV",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ACSYNERGY_BASEVIEW",
+        "largeImage": "RCDATA_32_ACSYNERGY_BASEVIEW",
+        "commandId": "ID_BaseView",
+        "commandType": "Macro"
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Creates a base view from model space or Autodesk Inventor models.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrommodelspace"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Base menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BaseViewSplitBtn.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Base menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Base popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Base menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrommodelspace",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrominventor"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BaseViewSplitBtn.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Base variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrommodelspace": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrommodelspace",
+      "kind": "command_button",
+      "name": "From Model Space",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CreateFromModelSpace"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "ui": {
+        "uid": "ID_CreateFromModelSpace",
+        "controlId": "Ac2DViewsBaseMSCommandButton",
+        "text": "From Model Space",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "BM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Model Space",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes From Model Space.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrominventor": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu.id-createfrominventor",
+      "kind": "command_button",
+      "name": "From Inventor",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CreateFromInventor"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-baseviewsplitbtn",
+      "ui": {
+        "uid": "ID_CreateFromInventor",
+        "controlId": "Ac2DViewsBaseINVCommandButton",
+        "text": "From Inventor",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "BI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Inventor",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes From Inventor.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-projectedviewcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-projectedviewcv",
+      "kind": "command_button",
+      "name": "Projected",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_ProjectedViewCV"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_ProjectedViewCV",
+        "controlId": "AcRibbonCommandButtonEnabledForAcSynergyObj",
+        "text": "Projected",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ProjView",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Projected",
+        "official": "Projected View",
+        "aliases": [
+          "VIEWPROJ",
+          "ID_ProjView"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_PROJECTEDVIEW",
+        "largeResource": "RCDATA_32_ACSYNERGY_PROJECTEDVIEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWPROJ",
+        "macro": "^C^C_viewproj",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates orthographic and isometric views from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWPROJ command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "kind": "split_button",
+      "name": "Section",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SesctionViewSplitBtn"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SesctionViewSplitBtn",
+        "controlId": "AcRibbonSplitButtonEnabledForAcSynergyObj",
+        "text": "Section",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SV",
+        "behavior": "SplitNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ACSYNERGY_SECTIONVIEW",
+        "largeImage": "RCDATA_32_ACSYNERGY_SECTIONVIEW",
+        "commandId": "ID_SesctionView",
+        "commandType": "Macro"
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Creates a section view from an existing Drawing View.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.primary-action",
+      "kind": "primary_button",
+      "name": "Section primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SesctionViewSplitBtn.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Section variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Section menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SesctionViewSplitBtn.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Section menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Section popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Section menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewhalfcv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewoffsetcv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewalignedcv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.rbn-01740963",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewobjectcv"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SesctionViewSplitBtn.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Section variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewfullcv",
+      "kind": "command_button",
+      "name": "Full",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SectionViewFullCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "ID_SectionViewFullCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Full",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewFull",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Full",
+        "official": "Section View Full",
+        "aliases": [
+          "VIEWSECTION",
+          "ID_SecViewFull"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONVIEW_FULL",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONVIEW_FULL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTION",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewsection _t _f,^C^C_viewsection)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates a full section view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewhalfcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewhalfcv",
+      "kind": "command_button",
+      "name": "Half",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SectionViewHalfCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "ID_SectionViewHalfCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Half",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "SH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewHalf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Half",
+        "official": "Section View Half",
+        "aliases": [
+          "VIEWSECTION",
+          "ID_SecViewHalf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONVIEW_HALF",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONVIEW_HALF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTION",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewsection _t _h,^C^C_viewsection)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates a half section view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewoffsetcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewoffsetcv",
+      "kind": "command_button",
+      "name": "Offset",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SectionViewOffsetCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "ID_SectionViewOffsetCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "SO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewOffset",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset",
+        "official": "Section View Offset",
+        "aliases": [
+          "VIEWSECTION",
+          "ID_SecViewOffset"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONVIEW_OFFSET",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONVIEW_OFFSET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTION",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewsection _t _of,^C^C_viewsection)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates an offset section view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewalignedcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewalignedcv",
+      "kind": "command_button",
+      "name": "Aligned",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SectionViewAlignedCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "ID_SectionViewAlignedCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Aligned",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "SA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewAligned",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Aligned",
+        "official": "Section View Aligned",
+        "aliases": [
+          "VIEWSECTION",
+          "ID_SecViewAligned"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONVIEW_ALIGNED",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONVIEW_ALIGNED",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTION",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewsection _t _a,^C^C_viewsection)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates an aligned section view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.rbn-01740963": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.rbn-01740963",
+      "kind": "separator",
+      "name": "RBN_01740963",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740963"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "RBN_01740963",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewobjectcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu.id-sectionviewobjectcv",
+      "kind": "command_button",
+      "name": "From Object",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SectionViewObjectCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-sesctionviewsplitbtn",
+      "ui": {
+        "uid": "ID_SectionViewObjectCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From Object",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "SB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewObject",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Object",
+        "official": "Section View Object",
+        "aliases": [
+          "VIEWSECTION",
+          "ID_SecViewObject"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONVIEW",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONVIEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTION",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewsection _t _ob,^C^C_viewsection)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates a section view from a drawing view using geometry in the layout to define the cutting plane.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "kind": "split_button",
+      "name": "Detail",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewBtn"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_DetailViewBtn",
+        "controlId": "AcRibbonSplitButtonEnabledForAcSynergyObj",
+        "text": "Detail",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DV",
+        "behavior": "SplitNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ACSYNERGY_DETAILVIEW",
+        "largeImage": "RCDATA_32_ACSYNERGY_DETAILVIEW",
+        "commandId": "ID_DetailView",
+        "commandType": "Macro"
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Creates a detail view from an existing Drawing View.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.primary-action",
+      "kind": "primary_button",
+      "name": "Detail primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewBtn.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Detail variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Detail menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewBtn.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Detail menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Detail popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Detail menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewrectangularcv"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewBtn.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Detail variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewcirclecv",
+      "kind": "command_button",
+      "name": "Circular",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewCircleCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "ui": {
+        "uid": "ID_DetailViewCircleCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Circular",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "DC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DetailViewCirc",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Circular",
+        "official": "Detail View Circular",
+        "aliases": [
+          "VIEWDETAIL",
+          "ID_DetailViewCirc"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_DETAILVIEW_CIRCULAR",
+        "largeResource": "RCDATA_32_ACSYNERGY_DETAILVIEW_CIRCULAR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWDETAIL",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewdetail _b _c,^C^C_viewdetail)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates a circular detail view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWDETAIL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewrectangularcv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu.id-detailviewrectangularcv",
+      "kind": "command_button",
+      "name": "Rectangular",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_DetailViewRectangularCV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740607.id-detailviewbtn",
+      "ui": {
+        "uid": "ID_DetailViewRectangularCV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rectangular",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "DR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DetailViewRect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rectangular",
+        "official": "Detail View Rectangular",
+        "aliases": [
+          "VIEWDETAIL",
+          "ID_DetailViewRect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_DETAILVIEW_RECTANGULAR",
+        "largeResource": "RCDATA_32_ACSYNERGY_DETAILVIEW_RECTANGULAR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWDETAIL",
+        "macro": "$M=$(if,$(and,$(eq,$(getvar,\"tilemode\"),0),$(eq,$(getvar,\"cvport\"),1)),^C^C_viewdetail _b _r,^C^C_viewdetail)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Generates a rectangular detail view from a drawing view.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWDETAIL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740608": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd.rbn-01740608",
+      "kind": "panel_break",
+      "name": "RBN_01740608",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740608"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740608",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

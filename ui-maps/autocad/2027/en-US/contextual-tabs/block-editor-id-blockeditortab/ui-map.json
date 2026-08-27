@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditortab",
+  "generatedAt": "2026-08-25T21:53:15.0301157Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorTab",
+    "tabName": "Block Editor",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "kind": "tab",
+      "name": "Block Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorTab",
+        "text": "Block Editor",
+        "keyTip": "BE",
+        "alias": null,
+        "officialName": "Block Editor Contextual Tab"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 6,
+    "panels": [
+      {
+        "name": "Open/Save ",
+        "uid": "ID_PanelBlockEditorOpenSave",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+        "map": "open-save/ui-map.json",
+        "nodes": 15,
+        "actionableControls": 4
+      },
+      {
+        "name": "Geometric",
+        "uid": "ID_PanelBlockEditorGeometricConstraints",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorgeometricconstraints",
+        "map": "geometric/ui-map.json",
+        "nodes": 33,
+        "actionableControls": 17
+      },
+      {
+        "name": "Dimensional",
+        "uid": "ID_PanelBlockEditorDimensionalConstraints",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditordimensionalconstraints",
+        "map": "dimensional/ui-map.json",
+        "nodes": 25,
+        "actionableControls": 12
+      },
+      {
+        "name": "Manage",
+        "uid": "RBN_01737960",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+        "map": "manage/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 6
+      },
+      {
+        "name": "Action Parameters",
+        "uid": "ID_PanelBlockEditorActionParameters",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+        "map": "action-parameters/ui-map.json",
+        "nodes": 39,
+        "actionableControls": 25
+      },
+      {
+        "name": "Visibility",
+        "uid": "ID_PanelBlockEditorVisibility",
+        "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+        "map": "visibility/ui-map.json",
+        "nodes": 16,
+        "actionableControls": 5
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 128,
+    "panels": 6,
+    "actionableControls": 69,
+    "splitButtons": 3,
+    "iconOnlyControls": 37
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabletab",
+  "generatedAt": "2026-08-25T21:52:56.3626121Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TableTab",
+    "tabName": "Table Cell",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabletab",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab",
+      "kind": "tab",
+      "name": "Table Cell",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TableTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TableTab",
+        "text": "Table Cell",
+        "keyTip": "TA",
+        "alias": null,
+        "officialName": "Table Cell Contextual Tab"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 7,
+    "panels": [
+      {
+        "name": "Rows",
+        "uid": "ID_PanelTableRows",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+        "map": "rows/ui-map.json",
+        "nodes": 11,
+        "actionableControls": 3
+      },
+      {
+        "name": "Columns",
+        "uid": "ID_PanelTableColumns",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecolumns",
+        "map": "columns/ui-map.json",
+        "nodes": 11,
+        "actionableControls": 3
+      },
+      {
+        "name": "Merge",
+        "uid": "ID_PanelTableMerge",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+        "map": "merge/ui-map.json",
+        "nodes": 14,
+        "actionableControls": 5
+      },
+      {
+        "name": "Cell Styles",
+        "uid": "ID_PanelTableCellStyles",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+        "map": "cell-styles/ui-map.json",
+        "nodes": 17,
+        "actionableControls": 5
+      },
+      {
+        "name": "Cell Format",
+        "uid": "ID_PanelTableCellFormat",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellformat",
+        "map": "cell-format/ui-map.json",
+        "nodes": 9,
+        "actionableControls": 2
+      },
+      {
+        "name": "Insert",
+        "uid": "ID_PanelTableInsertPanel",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltableinsertpanel",
+        "map": "insert/ui-map.json",
+        "nodes": 12,
+        "actionableControls": 4
+      },
+      {
+        "name": "Data",
+        "uid": "ID_PanelTableData",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltabledata",
+        "map": "data/ui-map.json",
+        "nodes": 9,
+        "actionableControls": 2
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 59,
+    "panels": 7,
+    "actionableControls": 24,
+    "splitButtons": 1,
+    "iconOnlyControls": 3
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

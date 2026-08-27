@@ -1,0 +1,948 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-applications",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelScriptsAndMacros",
+    "panelName": "Applications",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "kind": "panel",
+      "name": "Applications",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbnpnl-0022",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelScriptsAndMacros"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelScriptsAndMacros",
+        "text": "Applications",
+        "keyTip": "AN",
+        "alias": "ID_ScriptsAndMacros",
+        "officialName": "Manage - Applications",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0173",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-appload",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-script",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0173"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0173",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-appload": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-appload",
+      "kind": "command_button",
+      "name": "Load\rApplication",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_APPLOAD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_APPLOAD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Load\rApplication",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Appload",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Load\rApplication",
+        "official": "Load Application...",
+        "aliases": [
+          "APPLOAD",
+          "ID_Appload"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LOAD_APPLICATIONS",
+        "largeResource": "RCDATA_32_LOAD_APPLICATIONS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "APPLOAD",
+        "macro": "^C^C_appload",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Loads and unloads applications and defines which applications to load at startup",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 APPLOAD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-script": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-cmdbtn-script",
+      "kind": "command_button",
+      "name": "Run\rScript",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SCRIPT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SCRIPT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Run\rScript",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Script",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Run\rScript",
+        "official": "Run Script...",
+        "aliases": [
+          "SCRIPT",
+          "ID_Script"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SCRIPTRUN",
+        "largeResource": "RCDATA_32_SCRIPTRUN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SCRIPT",
+        "macro": "'_script",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Executes a sequence of commands from a script file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SCRIPT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0032",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0032"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0032",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0174",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174.id-rbn-cmdbtn-vbaide"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0174"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0174",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174.id-rbn-cmdbtn-vbaide": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174.id-rbn-cmdbtn-vbaide",
+      "kind": "command_button",
+      "name": "Visual Basic Editor",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0174",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_VBAIDE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_VBAIDE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Visual Basic Editor",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VBAIDE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visual Basic Editor",
+        "official": "VBA, Visual Basic Editor",
+        "aliases": [
+          "VBAIDE",
+          "ID_VBAIDE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOOLS_VBA_EDITOR",
+        "largeResource": "RCDATA_32_TOOLS_VBA_EDITOR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VBAIDE",
+        "macro": "^C^C_vbaide",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Visual Basic Editor",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VBAIDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0175",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175.id-rbn-cmdbtn-aulpide"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0175"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0175",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175.id-rbn-cmdbtn-aulpide": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175.id-rbn-cmdbtn-aulpide",
+      "kind": "command_button",
+      "name": "Visual LISP Editor",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0175",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_AULPIDE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_AULPIDE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Visual LISP Editor",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_AULPIDE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visual LISP Editor",
+        "official": "Visual LISP Editor",
+        "aliases": [
+          "VLISP",
+          "ID_AULPIDE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOOLS_LISP_EDITOR",
+        "largeResource": "RCDATA_32_TOOLS_LISP_EDITOR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VLISP",
+        "macro": "^C^C_vlide",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Visual LISP interactive development environment",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VLISP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0176",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176.id-rbn-cmdbtn-vbarun"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0176"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0176",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176.id-rbn-cmdbtn-vbarun": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176.id-rbn-cmdbtn-vbarun",
+      "kind": "command_button",
+      "name": "Run VBA Macro",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0173.id-rbn-rowpanel-0032.id-rbn-row-0176",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_VBARUN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_VBARUN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Run VBA Macro",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VBARun",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Run VBA Macro",
+        "official": "VBA, Macros...",
+        "aliases": [
+          "VBARUN",
+          "ID_VBARun"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOOLS_MACROS",
+        "largeResource": "RCDATA_32_TOOLS_MACROS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VBARUN",
+        "macro": "^C^C_vbarun",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Runs a VBA macro",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VBARUN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbnpnl-0022": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbnpnl-0022",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0022",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0022"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0022",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0177",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177.id-rbn-cmdbtn-vbaload"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0177"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0177",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177.id-rbn-cmdbtn-vbaload": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177.id-rbn-cmdbtn-vbaload",
+      "kind": "command_button",
+      "name": "Load Project",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0177",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_VBALOAD"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_VBALOAD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Load Project",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VBALoad",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Load Project",
+        "official": "VBA, Load Project...",
+        "aliases": [
+          "VBALOAD",
+          "ID_VBALoad"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LOAD_PROJECT",
+        "largeResource": "RCDATA_32_LOAD_PROJECT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VBALOAD",
+        "macro": "^C^C_vbaload",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Loads a global VBA project into the current work session",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VBALOAD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0178",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178.id-rbn-cmdbtn-vbaman"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0178"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0178",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178.id-rbn-cmdbtn-vbaman": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178.id-rbn-cmdbtn-vbaman",
+      "kind": "command_button",
+      "name": "VBA Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros.id-rbn-row-0178",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_VBAMAN"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_VBAMAN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "VBA Manager",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VBAMan",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "VBA Manager",
+        "official": "VBA, VBA Manager...",
+        "aliases": [
+          "VBAMAN",
+          "ID_VBAMan"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOOLS_VBA_MGR",
+        "largeResource": "RCDATA_32_TOOLS_VBA_MGR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VBAMAN",
+        "macro": "^C^C_vbaman",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages VBA project operations using a dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VBAMAN command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

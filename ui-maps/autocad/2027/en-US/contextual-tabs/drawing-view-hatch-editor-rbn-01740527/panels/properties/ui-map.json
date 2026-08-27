@@ -1,0 +1,1706 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740527-panel-properties",
+  "generatedAt": "2026-08-25T21:53:16.2376591Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740527",
+    "tabName": "Drawing View Hatch Editor",
+    "panelUid": "RBN_01738379",
+    "panelName": "Properties",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527",
+      "kind": "tab",
+      "name": "Drawing View Hatch Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740527"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740527",
+        "text": "Drawing View Hatch Editor",
+        "keyTip": "CH",
+        "alias": null,
+        "officialName": "Hatch Editor Contextual Tab for Section View"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+      "kind": "panel",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738390",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738379"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738379",
+        "text": "Properties",
+        "keyTip": "HP",
+        "alias": null,
+        "officialName": "Hatch - Properties",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389",
+      "kind": "layout_row",
+      "name": "RBN_01738389",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738389"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738389",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388",
+      "kind": "layout_group",
+      "name": "RBN_01738388",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738388"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738388",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383",
+      "kind": "layout_row",
+      "name": "RBN_01738383",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383.rbn-01738382"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738383"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738383",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383.rbn-01738382": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383.rbn-01738382",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Font",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738383",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738382"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738382",
+        "controlId": "AcHatchTypeCombo",
+        "text": "Ribbon Combo Box - Font",
+        "keyTip": "HT"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Font.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385",
+      "kind": "layout_row",
+      "name": "RBN_01738385",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738384",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738439"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738385"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738385",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738384": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738384",
+      "kind": "ribbon_control",
+      "name": "Hatch Pattern Color Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738384"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738384",
+        "controlId": "AcHatchPatternColorCombo",
+        "text": "Hatch Pattern Color Gallery",
+        "keyTip": "HC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Hatch Pattern Color Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738439": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385.rbn-01738439",
+      "kind": "ribbon_control",
+      "name": "Hatch Gradient Color 1 Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738385",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738439"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738439",
+        "controlId": "AcHatchGradientColor1Combo",
+        "text": "Hatch Gradient Color 1 Gallery",
+        "keyTip": "GR"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Hatch Gradient Color 1 Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387",
+      "kind": "layout_row",
+      "name": "RBN_01738387",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738386",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01739967",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738440"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738387"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738387",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738386": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738386",
+      "kind": "ribbon_control",
+      "name": "Hatch Pattern Background Color Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738386"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738386",
+        "controlId": "AcHatchPatternBGColorCombo",
+        "text": "Hatch Pattern Background Color Gallery",
+        "keyTip": "BC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Hatch Pattern Background Color Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01739967": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01739967",
+      "kind": "toggle_button",
+      "name": "RBN_01739967",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01739967"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01739967",
+        "controlId": "AcHatchGradientColorStateToggle1",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles RBN_01739967.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738440": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387.rbn-01738440",
+      "kind": "ribbon_control",
+      "name": "Hatch Gradient Color 2 Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738388.rbn-01738387",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738440"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738440",
+        "controlId": "AcHatchGradientColor2Combo",
+        "text": "Hatch Gradient Color 2 Gallery",
+        "keyTip": "GC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Hatch Gradient Color 2 Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROW_0241",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0241"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0241",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490",
+      "kind": "layout_row",
+      "name": "RBN_01738490",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490.id-rbn-ribbonseparator-0201"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738490"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738490",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490.id-rbn-ribbonseparator-0201": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490.id-rbn-ribbonseparator-0201",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0201",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.id-rbn-row-0241.rbn-01738490",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0201"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0201",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406",
+      "kind": "layout_group",
+      "name": "RBN_01738406",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738406"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738406",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401",
+      "kind": "layout_row",
+      "name": "RBN_01738401",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-hatchsplitbtn",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-01738400"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738401"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738401",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-hatchsplitbtn": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-hatchsplitbtn",
+      "kind": "data_bound_dropdown",
+      "name": "Transparency Method",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_HATCHSPLITBTN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_HATCHSPLITBTN",
+        "controlId": "AcHatchTransparencyMethodSplitDropDown",
+        "text": "Transparency Method",
+        "keyTip": "TR"
+      },
+      "semantics": {
+        "description": "Opens or changes the Transparency Method selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Transparency Method setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-01738400": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401.rbn-01738400",
+      "kind": "ribbon_control",
+      "name": "Select",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738401",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738400"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738400",
+        "controlId": "AcHatchTransparencySlider",
+        "text": "Select",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Select.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403",
+      "kind": "layout_row",
+      "name": "RBN_01738403",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738402",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-hatchuserangleslider",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738441"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738403"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738403",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738402": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738402",
+      "kind": "ribbon_control",
+      "name": "Angle",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738402"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738402",
+        "controlId": "AcHatchPatternAngleSlider",
+        "text": "Angle",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Angle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-hatchuserangleslider": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-hatchuserangleslider",
+      "kind": "ribbon_control",
+      "name": "Angle",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_HatchUserAngleSlider"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_HatchUserAngleSlider",
+        "controlId": "AcHatchUserAngleSlider",
+        "text": "Angle",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Angle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738441": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403.rbn-01738441",
+      "kind": "ribbon_control",
+      "name": "Angle",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738403",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738441"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738441",
+        "controlId": "AcHatchGradientAngleSlider",
+        "text": "Angle",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Angle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405",
+      "kind": "layout_row",
+      "name": "RBN_01738405",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738404",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738438",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738442",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738444"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738405"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738405",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738404": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738404",
+      "kind": "ribbon_control",
+      "name": "Ribbon Spinner - Hatch Scale",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738404"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738404",
+        "controlId": "AcHatchScaleSpinner",
+        "text": "Ribbon Spinner - Hatch Scale",
+        "keyTip": "SC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Spinner - Hatch Scale.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738438": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738438",
+      "kind": "ribbon_control",
+      "name": "Ribbon Spinner - Hatch Scale",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738438"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738438",
+        "controlId": "AcHatchSpaceSpinner",
+        "text": "Ribbon Spinner - Hatch Scale",
+        "keyTip": "SC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Spinner - Hatch Scale.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738442": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738442",
+      "kind": "toggle_button",
+      "name": "RBN_01738442",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738442"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738442",
+        "controlId": "AcHatchGradientColorStateToggle",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles RBN_01738442.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738444": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405.rbn-01738444",
+      "kind": "ribbon_control",
+      "name": "Tint",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738389.rbn-01738406.rbn-01738405",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738444"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738444",
+        "controlId": "AcHatchGradientTintSlider",
+        "text": "Tint",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Tint.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738390": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738390",
+      "kind": "panel_break",
+      "name": "RBN_01738390",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738390"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738390",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521",
+      "kind": "layout_row",
+      "name": "RBN_01738521",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738521"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738521",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530",
+      "kind": "layout_group",
+      "name": "RBN_01738530",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738530"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738530",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523",
+      "kind": "layout_row",
+      "name": "RBN_01738523",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523.rbn-01738522"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738523"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738523",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523.rbn-01738522": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523.rbn-01738522",
+      "kind": "ribbon_control",
+      "name": "Hatch Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738523",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738522"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738522",
+        "controlId": "AcHatchLayerCombo",
+        "text": "Hatch Layer Gallery",
+        "keyTip": "HL"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Hatch Layer Gallery.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525",
+      "kind": "layout_row",
+      "name": "RBN_01738525",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-01738524",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-relativepsbutton"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738525"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738525",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-01738524": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-01738524",
+      "kind": "toggle_button",
+      "name": "Relative To Paper Space",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738524"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738524",
+        "controlId": "AcHatchRelativeToPaperSpaceToggle",
+        "text": "Relative To Paper Space",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Relative To Paper Space",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Relative To Paper Space.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-relativepsbutton": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525.rbn-relativepsbutton",
+      "kind": "command_button",
+      "name": "Relative To Paper Space",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738525",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_RELATIVEPSBUTTON"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_RELATIVEPSBUTTON",
+        "controlId": "AcHatchRelativeToPaperSpaceButton",
+        "text": "Relative To Paper Space",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Relative To Paper Space",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Relative To Paper Space.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527",
+      "kind": "layout_row",
+      "name": "RBN_01738527",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527.rbn-01738526"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738527"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738527",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527.rbn-01738526": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527.rbn-01738526",
+      "kind": "toggle_button",
+      "name": "Double",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738527",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738526"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738526",
+        "controlId": "AcHatchUserDefinedDoubleToggle",
+        "text": "Double",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Double",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Double.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529",
+      "kind": "layout_row",
+      "name": "RBN_01738529",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529.rbn-01738531"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738529"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738529",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529.rbn-01738531": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529.rbn-01738531",
+      "kind": "ribbon_control",
+      "name": "ISO Pen Width:",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379.rbn-01738521.rbn-01738530.rbn-01738529",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738531"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738531",
+        "controlId": "AcHatchISOPenWidth",
+        "text": "ISO Pen Width:",
+        "keyTip": "IS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named ISO Pen Width:.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-leaders",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelMultileaders",
+    "panelName": "Leaders",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+      "kind": "panel",
+      "name": "Leaders",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0016",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0027"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelMultileaders"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelMultileaders",
+        "text": "Leaders",
+        "keyTip": null,
+        "alias": "ID_Multileaders",
+        "officialName": "Annotate - Leaders",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0016": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0016",
+      "kind": "dialog_launcher",
+      "name": "Multileader Style Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0016"
+      },
+      "placement": {
+        "region": "main",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0016",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "MS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader_Style",
+        "commandId": "ID_Mleader_Style",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Multileader Style Manager",
+        "aliases": [
+          "MLEADERSTYLE",
+          "ID_Mleader_Style"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_STYLE",
+        "largeResource": "RCDATA_32_ML_STYLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADERSTYLE",
+        "macro": "^C^C_mleaderstyle",
+        "macroType": "Any",
+        "commandId": "ID_Mleader_Style",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Creates and modifies multileader styles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADERSTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0100",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-cmdbtn-mleader-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0100"
+      },
+      "placement": {
+        "region": "main",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0100",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-cmdbtn-mleader-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-cmdbtn-mleader-0001",
+      "kind": "command_button",
+      "name": "Multileader",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MLEADER_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MLEADER_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Multileader",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ML",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Multileader",
+        "official": "Multileader",
+        "aliases": [
+          "MLEADER",
+          "ID_Mleader"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_CMD",
+        "largeResource": "RCDATA_32_ML_CMD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADER",
+        "macro": "^C^C_mleader",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a multileader object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0017",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0017"
+      },
+      "placement": {
+        "region": "main",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0017",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0101",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylecombo-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylegallery-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0101"
+      },
+      "placement": {
+        "region": "main",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0101",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylecombo-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylecombo-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Multileader Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_MULTILEADERSTYLECOMBO_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_MULTILEADERSTYLECOMBO_0001",
+        "controlId": "AcMultiLeaderStyleCombo",
+        "text": "Ribbon Combo Box - Multileader Style",
+        "keyTip": "MY"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Multileader Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylegallery-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101.id-rbn-control-multileaderstylegallery-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Gallery Box - Multileader Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0101",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_MULTILEADERSTYLEGALLERY_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_MULTILEADERSTYLEGALLERY_0001",
+        "controlId": "AcMultiLeaderStyleGallery",
+        "text": "Ribbon Gallery Box - Multileader Style",
+        "keyTip": "MY"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Gallery Box - Multileader Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0102",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102.rbn-250-1dec4"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0102"
+      },
+      "placement": {
+        "region": "main",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0102",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102.rbn-250-1dec4": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102.rbn-250-1dec4",
+      "kind": "gallery",
+      "name": "Mleader Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.id-rbn-row-0102",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_250_1DEC4"
+      },
+      "placement": {
+        "region": "main",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_250_1DEC4",
+        "controlId": "AcMleaderLayerCombo",
+        "text": "Mleader Layer Gallery",
+        "keyTip": "MU"
+      },
+      "semantics": {
+        "description": "Displays the Mleader Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Mleader Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048",
+      "kind": "layout_row",
+      "name": "RBN_01738048",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-align-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-collect-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-add-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-remove-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738048"
+      },
+      "placement": {
+        "region": "main",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738048",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-align-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-align-0001",
+      "kind": "command_button",
+      "name": "Align",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MLEADER_ALIGN_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MLEADER_ALIGN_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Align",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MAL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader_Align",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Align",
+        "official": "Multileader Align",
+        "aliases": [
+          "MLEADERALIGN",
+          "ID_Mleader_Align"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_ALIGN",
+        "largeResource": "RCDATA_32_ML_ALIGN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADERALIGN",
+        "macro": "^C^C_mleaderalign",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns and spaces selected multileader objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADERALIGN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-collect-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-collect-0001",
+      "kind": "command_button",
+      "name": "Collect",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MLEADER_COLLECT_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 102
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MLEADER_COLLECT_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Collect",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader_Collect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Collect",
+        "official": "Multileader Collect",
+        "aliases": [
+          "MLEADERCOLLECT",
+          "ID_Mleader_Collect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_COLL",
+        "largeResource": "RCDATA_32_ML_COLL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADERCOLLECT",
+        "macro": "^C^C_mleadercollect",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Organizes selected multileaders that contain blocks into rows or columns, and displays the result with a single leader line",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADERCOLLECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-add-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-add-0001",
+      "kind": "command_button",
+      "name": "Add Leader",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MLEADER_ADD_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 103
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MLEADER_ADD_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add Leader",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MAD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader_Add",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add Leader",
+        "official": "Add Leader",
+        "aliases": [
+          "MLEADEREDIT",
+          "ID_Mleader_Add"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_EDIT_ADD",
+        "largeResource": "RCDATA_32_ML_EDIT_ADD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADEREDIT",
+        "macro": "^C^C^P_aimleadereditadd ^P",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Add a leader line to an existing multileader object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADEREDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-remove-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048.id-rbn-cmdbtn-mleader-remove-0001",
+      "kind": "command_button",
+      "name": "Remove Leader",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-row-0100.id-rbn-rowpanel-0017.rbn-01738048",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MLEADER_REMOVE_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 104
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MLEADER_REMOVE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Remove Leader",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Mleader_Remove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove Leader",
+        "official": "Remove Leader",
+        "aliases": [
+          "MLEADEREDIT",
+          "ID_Mleader_Remove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ML_EDIT_DELETE",
+        "largeResource": "RCDATA_32_ML_EDIT_DELETE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MLEADEREDIT",
+        "macro": "^C^C^P_aimleadereditremove ^P",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes a leader line from an existing multileader object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MLEADEREDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0027": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders.id-rbn-0027",
+      "kind": "panel_break",
+      "name": "ID_RBN_0027",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0027"
+      },
+      "placement": {
+        "region": "main",
+        "order": 105
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0027",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

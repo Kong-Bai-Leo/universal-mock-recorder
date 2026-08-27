@@ -1,0 +1,867 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome3d-panel-view",
+  "generatedAt": "2026-08-25T21:52:13.9409473Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome3D",
+    "tabName": "Home ",
+    "panelUid": "ID_PanelView3DHome",
+    "panelName": "View",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "kind": "tab",
+      "name": "Home ",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome3D",
+        "text": "Home ",
+        "keyTip": "H",
+        "alias": "ID_TabHome3D",
+        "officialName": "Home - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "kind": "panel",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbnpnl-0023",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelView3DHome"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 292
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelView3DHome",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_View3DHome",
+        "officialName": "Home 3D - View",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0180",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180.rbn-00014004"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0180"
+      },
+      "placement": {
+        "region": "main",
+        "order": 293
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0180",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180.rbn-00014004": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180.rbn-00014004",
+      "kind": "gallery",
+      "name": "Visual\rStyles",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0180",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014004"
+      },
+      "placement": {
+        "region": "main",
+        "order": 294
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014004",
+        "controlId": "AcVisualStyleGalleryControl",
+        "text": "Visual\rStyles",
+        "keyTip": "VS"
+      },
+      "semantics": {
+        "description": "Displays the Visual\rStyles gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Visual\rStyles item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070",
+      "kind": "layout_row",
+      "name": "RBN_00014070",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070.rbn-01738045"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014070"
+      },
+      "placement": {
+        "region": "main",
+        "order": 295
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014070",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070.rbn-01738045": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070.rbn-01738045",
+      "kind": "gallery",
+      "name": "3D Navigation Combo Control",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-00014070",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738045"
+      },
+      "placement": {
+        "region": "main",
+        "order": 296
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738045",
+        "controlId": "AcNamedViewControl",
+        "text": "3D Navigation Combo Control",
+        "keyTip": "NV"
+      },
+      "semantics": {
+        "description": "Displays the 3D Navigation Combo Control gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected 3D Navigation Combo Control item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070",
+      "kind": "layout_row",
+      "name": "RBN_SM_00024070",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024070"
+      },
+      "placement": {
+        "region": "main",
+        "order": 297
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_00024070",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "kind": "split_button",
+      "name": "New Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024071"
+      },
+      "placement": {
+        "region": "main",
+        "order": 298
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SM_00024071",
+        "controlId": "AcRibbonSplitButton",
+        "text": "New Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": null,
+        "behavior": "DropDownFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": "ID_Multiple_Vports",
+        "commandType": "Macro"
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available New Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024072"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open New Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024071.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 299
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the New Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The New Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "New Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024072",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024073"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024071.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 300
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable New Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024072": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024072",
+      "kind": "command_button",
+      "name": "Single viewport",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024072"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 301
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "ui": {
+        "uid": "RBN_SM_00024072",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Single_Vport",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Single viewport",
+        "aliases": "ID_Single_Vport"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SINGLE_VPORT",
+        "largeResource": "RCDATA_16_SINGLE_VPORT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "$M=$(if,$(eq,$(getvar,tilemode),1),^C^C_-vports _si,^P_ai_emptyprinc^P)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Single viewport.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024073": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu.rbn-sm-00024073",
+      "kind": "command_button",
+      "name": "Multiple viewports",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SM_00024073"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 302
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.rbn-sm-00024070.rbn-sm-00024071",
+      "ui": {
+        "uid": "RBN_SM_00024073",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Multiple_Vports",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Multiple viewports",
+        "aliases": "ID_Multiple_Vports"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MULTI_VPORTS",
+        "largeResource": "RCDATA_16_MULTI_VPORTS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "$M=$(if,$(eq,$(getvar,tilemode),1),^C^C_-vports;_m,^P_ai_emptyprinc^P)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Multiple viewports.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbnpnl-0023": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbnpnl-0023",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0023",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0023"
+      },
+      "placement": {
+        "region": "main",
+        "order": 303
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0023",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0184",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184.id-rbn-control-nav3dlenslengthslider"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0184"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 304
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0184",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184.id-rbn-control-nav3dlenslengthslider": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184.id-rbn-control-nav3dlenslengthslider",
+      "kind": "ribbon_control",
+      "name": "Lens length",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0184",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_NAV3DLENSLENGTHSLIDER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 305
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_NAV3DLENSLENGTHSLIDER",
+        "controlId": "AcNav3DLensLengthSlider",
+        "text": "Lens length",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Lens length.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0185",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185.id-rbn-control-3dnavpointtriplet1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0185"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 306
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0185",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185.id-rbn-control-3dnavpointtriplet1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185.id-rbn-control-3dnavpointtriplet1",
+      "kind": "ribbon_control",
+      "name": "3D Navigation PointTriplet1",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0185",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_3DNAVPOINTTRIPLET1"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 307
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_3DNAVPOINTTRIPLET1",
+        "controlId": "Ac3DNavPointTriplet1",
+        "text": "3D Navigation PointTriplet1",
+        "keyTip": "PS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named 3D Navigation PointTriplet1.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0186",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186.id-rbn-control-3dnavpointtriplet2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0186"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 308
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0186",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186.id-rbn-control-3dnavpointtriplet2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186.id-rbn-control-3dnavpointtriplet2",
+      "kind": "ribbon_control",
+      "name": "3D Navigation PointTriplet2",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelview3dhome.id-rbn-row-0186",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_3DNAVPOINTTRIPLET2"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 309
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_3DNAVPOINTTRIPLET2",
+        "controlId": "Ac3DNavPointTriplet2",
+        "text": "3D Navigation PointTriplet2",
+        "keyTip": "TP"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named 3D Navigation PointTriplet2.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

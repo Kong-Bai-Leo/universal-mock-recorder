@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_RBN_TAB_CM",
+  "tabName": "Coordination Model",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "Display",
+      "uid": "ID_RBN_PANEL_CM_DISPLAY",
+      "nodeId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "map": "display/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 6
+    },
+    {
+      "name": "Manage",
+      "uid": "ID_RBN_PANEL_CM_MANAGE",
+      "nodeId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-manage",
+      "map": "manage/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

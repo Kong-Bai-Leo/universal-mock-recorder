@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-surfacetab-panel-create",
+  "generatedAt": "2026-08-25T21:52:32.1199734Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SurfaceTab",
+    "tabName": "Surface",
+    "panelUid": "ID_RBN_Surface_Creation",
+    "panelName": "Create",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "kind": "tab",
+      "name": "Surface",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SurfaceTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SurfaceTab",
+        "text": "Surface",
+        "keyTip": "SU",
+        "alias": null,
+        "officialName": "Surface Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation",
+      "kind": "panel",
+      "name": "Create",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-8047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_Surface_Creation"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_Surface_Creation",
+        "text": "Create",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Surface - Creation",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8040",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8158",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8159",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8161",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8160",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8165",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8167",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8888"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8040"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8040",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154",
+      "kind": "layout_group",
+      "name": "ID_RBN_SM_8154",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8154"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8154",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8055",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055.id-rbn-8155"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8055"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8055",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055.id-rbn-8155": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055.id-rbn-8155",
+      "kind": "command_button",
+      "name": "Network",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8055",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8155"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8155",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Network",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "NE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_NETWORK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Network",
+        "official": "Surface Network",
+        "aliases": [
+          "SURFNETWORK",
+          "ID_SURF_NETWORK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_NETWORK",
+        "largeResource": "RCDATA_32_SM_NETWORK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFNETWORK",
+        "macro": "^C^C_SURFNETWORK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface in the space between several curves in the U and V directions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFNETWORK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8056",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056.id-rbn-8156"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8056"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8056",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056.id-rbn-8156": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056.id-rbn-8156",
+      "kind": "command_button",
+      "name": "Loft",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8056",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8156"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8156",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Loft",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_LOFT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Loft",
+        "official": "Loft",
+        "aliases": [
+          "LOFT",
+          "ID_SURF_LOFT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LOFT_SURFACE",
+        "largeResource": "RCDATA_32_LOFT_SURFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LOFT",
+        "macro": "^C^C^R_loft _mo _su;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface in the space between several cross sections",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LOFT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8058",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058.id-rbn-8157"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8058"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8058",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058.id-rbn-8157": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058.id-rbn-8157",
+      "kind": "command_button",
+      "name": "Sweep",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-sm-8154.id-rbn-sm-8058",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8157"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8157",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Sweep",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SWEEP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sweep",
+        "official": "Sweep",
+        "aliases": [
+          "SWEEP",
+          "ID_SURF_SWEEP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SWEEP_SURFACE",
+        "largeResource": "RCDATA_32_SWEEP_SURFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SWEEP",
+        "macro": "^C^C^R_sweep _mo _su;",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface by sweeping a 2D or 3D curve along a path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SWEEP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045",
+      "kind": "layout_group",
+      "name": "ID_RBN_8045",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8045"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8045",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044",
+      "kind": "layout_row",
+      "name": "ID_RBN_8044",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044.id-rbn-8053"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8044"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8044",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044.id-rbn-8053": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044.id-rbn-8053",
+      "kind": "command_button",
+      "name": "Planar",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8044",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8053"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8053",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Planar",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Planesurf",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Planar",
+        "official": "Planar Surface",
+        "aliases": [
+          "PLANESURF",
+          "ID_Planesurf"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLANESURF",
+        "largeResource": "RCDATA_32_PLANESURF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLANESURF",
+        "macro": "^C^C_Planesurf",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a planar surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLANESURF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042",
+      "kind": "layout_row",
+      "name": "ID_RBN_8042",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042.id-rbn-8052"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8042"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8042",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042.id-rbn-8052": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042.id-rbn-8052",
+      "kind": "command_button",
+      "name": "Extrude",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8042",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8052"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8052",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extrude",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_EXTRUDE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extrude",
+        "official": "Extrude",
+        "aliases": [
+          "EXTRUDE",
+          "ID_SURF_EXTRUDE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUD_SURFACE",
+        "largeResource": "RCDATA_32_EXTRUD_SURFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXTRUDE",
+        "macro": "^C^C^R_extrude _mo _su;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface by extruding a 2D or 3D curve",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXTRUDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040",
+      "kind": "layout_row",
+      "name": "ID_RBN_8040",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040.id-rbn-8051"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8040"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8040",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040.id-rbn-8051": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040.id-rbn-8051",
+      "kind": "command_button",
+      "name": "Revolve",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8045.id-rbn-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8051"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8051",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Revolve",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_REVOLVE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Revolve",
+        "official": "Revolve",
+        "aliases": [
+          "REVOLVE",
+          "ID_SURF_REVOLVE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVOLV_SURFACE",
+        "largeResource": "RCDATA_32_REVOLV_SURFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVOLVE",
+        "macro": "^C^C^R_revolve _mo _su;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D surface by sweeping a 2D or 3D curve around an axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVOLVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8158": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8158",
+      "kind": "separator",
+      "name": "ID_RBN_8158",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8158"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8158",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8159": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8159",
+      "kind": "command_button",
+      "name": "Blend",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8159"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8159",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Blend",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_BLEND",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Blend",
+        "official": "Surface Blend",
+        "aliases": [
+          "SURFBLEND",
+          "ID_SURF_BLEND"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_BLEND",
+        "largeResource": "RCDATA_32_SM_BLEND",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFBLEND",
+        "macro": "^C^C_SURFBLEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a continuous blend surface between two existing surfaces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFBLEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8161": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8161",
+      "kind": "command_button",
+      "name": "Patch",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8161"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8161",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Patch",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_PATCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Patch",
+        "official": "Surface Patch",
+        "aliases": [
+          "SURFPATCH",
+          "ID_SURF_PATCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_PATCH",
+        "largeResource": "RCDATA_32_SM_PATCH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFPATCH",
+        "macro": "^C^C_SURFPATCH",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a new surface or cap to close an open edge of an existing surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFPATCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8160": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8160",
+      "kind": "command_button",
+      "name": "Offset",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8160"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8160",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_OFFSET",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset",
+        "official": "Surface Offset",
+        "aliases": [
+          "SURFOFFSET",
+          "ID_SURF_OFFSET"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_OFFSET",
+        "largeResource": "RCDATA_32_SM_OFFSET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFOFFSET",
+        "macro": "^C^C_SURFOFFSET",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a parallel surface a specified distance from the original surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFOFFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8165": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8165",
+      "kind": "separator",
+      "name": "ID_RBN_8165",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8165"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8165",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8167": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8167",
+      "kind": "toggle_button",
+      "name": "Surface\rAssociativity",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8167"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8167",
+        "controlId": "AcSurfaceAssociativityToggleButton",
+        "text": "Surface\rAssociativity",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Surface\rAssociativity",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Surface\rAssociativity.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8888": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040.id-rbn-8888",
+      "kind": "toggle_button",
+      "name": "NURBS\rCreation",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-sm-8040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8888"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8888",
+        "controlId": "AcSurfaceModelingModeToggleButton",
+        "text": "NURBS\rCreation",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "NC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "NURBS\rCreation",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles NURBS\rCreation.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-8047": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation.id-rbn-8047",
+      "kind": "panel_break",
+      "name": "ID_RBN_8047",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8047"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8047",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

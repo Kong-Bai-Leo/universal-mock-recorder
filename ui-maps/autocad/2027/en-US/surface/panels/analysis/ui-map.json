@@ -1,0 +1,688 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-surfacetab-panel-analysis",
+  "generatedAt": "2026-08-25T21:52:32.1199734Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SurfaceTab",
+    "tabName": "Surface",
+    "panelUid": "ID_RBN_Surface_Analysis",
+    "panelName": "Analysis",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "kind": "tab",
+      "name": "Surface",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SurfaceTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SurfaceTab",
+        "text": "Surface",
+        "keyTip": "SU",
+        "alias": null,
+        "officialName": "Surface Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis",
+      "kind": "panel",
+      "name": "Analysis",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8321"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_Surface_Analysis"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 153
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_Surface_Analysis",
+        "text": "Analysis",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Surface - Analysis",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320",
+      "kind": "layout_row",
+      "name": "ID_RBN_8320",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8359",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8360",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8320"
+      },
+      "placement": {
+        "region": "main",
+        "order": 154
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8320",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8359": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8359",
+      "kind": "command_button",
+      "name": "Analysis\rOptions",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8359"
+      },
+      "placement": {
+        "region": "main",
+        "order": 155
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8359",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Analysis\rOptions",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_ANALYSIS_OPTIONS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Analysis\rOptions",
+        "official": "Analysis Options",
+        "aliases": [
+          "ANALYSISOPTIONS",
+          "ID_SURF_ANALYSIS_OPTIONS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_ANALYSISOPTIONS",
+        "largeResource": "RCDATA_32_SM_ANALYSISOPTIONS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ANALYSISOPTIONS",
+        "macro": "^C^C_ANALYSISOPTIONS",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Analysis Options dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ANALYSISOPTIONS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8360": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8360",
+      "kind": "separator",
+      "name": "ID_RBN_8360",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8360"
+      },
+      "placement": {
+        "region": "main",
+        "order": 156
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8360",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319",
+      "kind": "layout_group",
+      "name": "ID_RBN_8319",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8319"
+      },
+      "placement": {
+        "region": "main",
+        "order": 157
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8319",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380",
+      "kind": "layout_row",
+      "name": "ID_RBN_8380",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380.id-rbn-8288"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8380"
+      },
+      "placement": {
+        "region": "main",
+        "order": 158
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8380",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380.id-rbn-8288": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380.id-rbn-8288",
+      "kind": "command_button",
+      "name": "Zebra",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8380",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8288"
+      },
+      "placement": {
+        "region": "main",
+        "order": 159
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8288",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Zebra",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AZ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_ZEBRA",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Zebra",
+        "official": "Analysis Zebra",
+        "aliases": [
+          "ANALYSISZEBRA",
+          "ID_SURF_ZEBRA"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_ANALYSISZEBRA",
+        "largeResource": "RCDATA_32_SM_ANALYSISZEBRA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ANALYSISZEBRA",
+        "macro": "^C^C_ANALYSISZEBRA",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Projects parallel lines onto a model to help you analyze surface continuity",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ANALYSISZEBRA command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316",
+      "kind": "layout_row",
+      "name": "ID_RBN_8316",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316.id-rbn-8290"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8316"
+      },
+      "placement": {
+        "region": "main",
+        "order": 160
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8316",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316.id-rbn-8290": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316.id-rbn-8290",
+      "kind": "command_button",
+      "name": "Curvature",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8316",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8290"
+      },
+      "placement": {
+        "region": "main",
+        "order": 161
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8290",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Curvature",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_CURVATURE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Curvature",
+        "official": "Analysis Curvature",
+        "aliases": [
+          "ANALYSISCURVATURE",
+          "ID_SURF_CURVATURE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_ANALYSISCURVATURE",
+        "largeResource": "RCDATA_32_SM_ANALYSISCURVATURE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ANALYSISCURVATURE",
+        "macro": "^C^C_ANALYSISCURVATURE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays a color gradient onto surface parts so that you can evaluate the high and low areas of curvature",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ANALYSISCURVATURE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318",
+      "kind": "layout_row",
+      "name": "ID_RBN_8318",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318.id-rbn-8291"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8318"
+      },
+      "placement": {
+        "region": "main",
+        "order": 162
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8318",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318.id-rbn-8291": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318.id-rbn-8291",
+      "kind": "command_button",
+      "name": "Draft",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8320.id-rbn-8319.id-rbn-8318",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8291"
+      },
+      "placement": {
+        "region": "main",
+        "order": 163
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8291",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Draft",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_DRAFT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Draft",
+        "official": "Analysis Draft",
+        "aliases": [
+          "ANALYSISDRAFT",
+          "ID_SURF_DRAFT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_ANALYSISDRAFT",
+        "largeResource": "RCDATA_32_SM_ANALYSISDRAFT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ANALYSISDRAFT",
+        "macro": "^C^C_ANALYSISDRAFT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays a color gradient onto surfaces so that you evaluate if a model has adequate draft between a part and its mold",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ANALYSISDRAFT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8321": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis.id-rbn-8321",
+      "kind": "panel_break",
+      "name": "ID_RBN_8321",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8321"
+      },
+      "placement": {
+        "region": "main",
+        "order": 164
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8321",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

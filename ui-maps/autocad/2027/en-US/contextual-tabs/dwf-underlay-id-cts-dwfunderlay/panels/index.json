@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_CTS-DWFUnderlay",
+  "tabName": "DWF Underlay",
+  "panelCount": 4,
+  "panels": [
+    {
+      "name": "Adjust",
+      "uid": "RBN_00018524",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+      "map": "adjust/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 3
+    },
+    {
+      "name": "Clipping",
+      "uid": "RBN_00018533",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+      "map": "clipping/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Options",
+      "uid": "RBN_00018539",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018539",
+      "map": "options/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "DWF Layers",
+      "uid": "RBN_01737931",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-01737931",
+      "map": "dwf-layers/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

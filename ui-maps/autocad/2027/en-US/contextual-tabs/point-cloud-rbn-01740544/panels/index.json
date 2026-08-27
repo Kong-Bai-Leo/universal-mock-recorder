@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_01740544",
+  "tabName": "Point Cloud",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Display",
+      "uid": "RBN_01741377",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741377",
+      "map": "display/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 6
+    },
+    {
+      "name": "Visualization",
+      "uid": "RBN_01741386",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741386",
+      "map": "visualization/ui-map.json",
+      "nodes": 23,
+      "actionableControls": 7
+    },
+    {
+      "name": "Cropping",
+      "uid": "RBN_01741405",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+      "map": "cropping/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 6
+    },
+    {
+      "name": "Section",
+      "uid": "RBN_201_C3743",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-c3743",
+      "map": "section/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Extract",
+      "uid": "RBN_201_4513C",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+      "map": "extract/ui-map.json",
+      "nodes": 17,
+      "actionableControls": 4
+    },
+    {
+      "name": "Options",
+      "uid": "RBN_01741445",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741445",
+      "map": "options/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    }
+  ]
+}

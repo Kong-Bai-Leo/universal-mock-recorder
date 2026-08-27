@@ -1,0 +1,12 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:32:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Add-ins", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 1,
+  "observedControlIds": ["MM_190_0B26B"],
+  "liveInteractionSamples": [
+    { "controlId": "RBN_00012112", "action": "select_tab", "result": "Add-ins tab opened; the App Manager panel contributed by AppManager.cuix was observed live." }
+  ],
+  "notes": ["The Add-ins tab is an empty shell in acad.CUIX and receives its App Manager panel from a partial CUIX via the shared ID_ADDINSTAB alias."]
+}

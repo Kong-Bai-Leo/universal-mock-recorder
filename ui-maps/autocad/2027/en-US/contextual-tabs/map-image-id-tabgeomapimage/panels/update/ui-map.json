@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabgeomapimage-panel-update",
+  "generatedAt": "2026-08-25T21:52:55.3010333Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabGeoMapImage",
+    "tabName": "Map Image",
+    "panelUid": "Geolocation_GeoMap_Update",
+    "panelName": "   Update   ",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage",
+      "kind": "tab",
+      "name": "Map Image",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabGeoMapImage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabGeoMapImage",
+        "text": "Map Image",
+        "keyTip": "MI",
+        "alias": "ID_TABGEOMAPIMAGE",
+        "officialName": "Map Image Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update",
+      "kind": "panel",
+      "name": "   Update   ",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.id-rbn-200-5d97b"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Geolocation_GeoMap_Update"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "Geolocation_GeoMap_Update",
+        "text": "   Update   ",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Geolocation GeoMap - Update",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760",
+      "kind": "layout_row",
+      "name": "RBN_00042760",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760.rbn-200-51671"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00042760"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00042760",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760.rbn-200-51671": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760.rbn-200-51671",
+      "kind": "command_button",
+      "name": "Reload\rImage",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.rbn-00042760",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_51671"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_51671",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reload\rImage",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoMapImageUpdate",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reload\rImage",
+        "official": "Geo Map Image Update",
+        "aliases": [
+          "GEOMAPIMAGEUPDATE",
+          "ID_GeoMapImageUpdate"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEOMAP_UPDATE",
+        "largeResource": "RCDATA_32_GEOMAP_UPDATE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMAPIMAGEUPDATE",
+        "macro": "^C^C_geomapimageupdate",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates image with latest map imagery and optimizes resolution",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMAPIMAGEUPDATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.id-rbn-200-5d97b": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update.id-rbn-200-5d97b",
+      "kind": "panel_break",
+      "name": "ID_RBN_200_5D97B",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-update",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_5D97B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_5D97B",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

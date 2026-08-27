@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01737814-panel-generate",
+  "generatedAt": "2026-08-25T21:53:00.8506429Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01737814",
+    "tabName": "Section Plane",
+    "panelUid": "RBN_201_CE620",
+    "panelName": "Generate",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814",
+      "kind": "tab",
+      "name": "Section Plane",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737814"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737814",
+        "text": "Section Plane",
+        "keyTip": "SP",
+        "alias": null,
+        "officialName": "Section Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620",
+      "kind": "panel",
+      "name": "Generate",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-a7717"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_CE620"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_CE620",
+        "text": "Generate",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Section - Generate",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77",
+      "kind": "layout_row",
+      "name": "RBN_201_ACD77",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_ACD77"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_ACD77",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "kind": "split_button",
+      "name": "New Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_280DE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_280DE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "New Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PI",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available New Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b"
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.primary-action",
+      "kind": "primary_button",
+      "name": "New Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_280DE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default New Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open New Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_280DE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the New Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The New Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "New Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-6be3c"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_280DE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable New Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-1176b",
+      "kind": "command_button",
+      "name": "Generate\rSection Block",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_1176B"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "ui": {
+        "uid": "RBN_201_1176B",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Generate\rSection Block",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANETOBLOCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Generate\rSection Block",
+        "official": "Generate Section Block",
+        "aliases": [
+          "SECTIONPLANETOBLOCK",
+          "ID_SECTIONPLANETOBLOCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIONPLANETOBLOCK",
+        "largeResource": "RCDATA_32_SECTIONPLANETOBLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANETOBLOCK",
+        "macro": "^C^C_SECTIONPLANETOBLOCK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the Generate Section/Elevation dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANETOBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-6be3c": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu.rbn-201-6be3c",
+      "kind": "command_button",
+      "name": "Extract\rSection Lines",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_6BE3C"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-acd77.rbn-201-280de",
+      "ui": {
+        "uid": "RBN_201_6BE3C",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract\rSection Lines",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_201_69253",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract\rSection Lines",
+        "official": "Extract Section lines",
+        "aliases": [
+          "PCEXTRACTSECTION",
+          "MM_201_69253"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIO_EXTRACT_LINES",
+        "largeResource": "RCDATA_32_SECTIO_EXTRACT_LINES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PCEXTRACTSECTION",
+        "macro": "^C^C_pcextractsection",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts 2D geometry from point cloud for the active section plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PCEXTRACTSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-a7717": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620.rbn-201-a7717",
+      "kind": "panel_break",
+      "name": "RBN_201_A7717",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_A7717"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_A7717",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-190-37149",
+  "generatedAt": "2026-08-25T19:50:52.2877642Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_190_37149",
+    "tabName": "Featured Apps",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-190-37149",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-37149"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-37149": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-37149",
+      "kind": "tab",
+      "name": "Featured Apps",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_37149"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_37149",
+        "text": "Featured Apps",
+        "keyTip": "AP",
+        "alias": null,
+        "officialName": "Featured Apps"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 2,
+    "panels": [
+      {
+        "name": "App Store",
+        "uid": "RBN_190_FBEAE",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-190-37149.rbn-190-fbeae",
+        "map": "app-store/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      },
+      {
+        "name": "Featured Apps",
+        "uid": "RBN_190_0AB71",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-190-37149.rbn-190-0ab71",
+        "map": "featured-apps/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 12,
+    "panels": 2,
+    "actionableControls": 2,
+    "splitButtons": 0,
+    "iconOnlyControls": 0
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:38:00Z",
+    "observedControlCount": 2,
+    "evidence": "live-observation.json"
+  }
+}

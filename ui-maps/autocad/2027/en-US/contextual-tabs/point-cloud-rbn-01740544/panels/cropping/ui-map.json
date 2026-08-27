@@ -1,0 +1,790 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740544-panel-cropping",
+  "generatedAt": "2026-08-25T21:52:51.7340432Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740544",
+    "tabName": "Point Cloud",
+    "panelUid": "RBN_01741405",
+    "panelName": "Cropping",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "kind": "tab",
+      "name": "Point Cloud",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740544"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740544",
+        "text": "Point Cloud",
+        "keyTip": "PC",
+        "alias": null,
+        "officialName": "Point Cloud Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+      "kind": "panel",
+      "name": "Cropping",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741421",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741405"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741405",
+        "text": "Cropping",
+        "keyTip": "CP",
+        "alias": null,
+        "officialName": "Point Cloud Extension - Cropping",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407",
+      "kind": "layout_row",
+      "name": "RBN_01741407",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741413",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741407"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741407",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741413": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741413",
+      "kind": "command_button",
+      "name": "RBN_01741413",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741413"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741413",
+        "controlId": "AcPointCloudCroppingDropDown",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01741413.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411",
+      "kind": "layout_group",
+      "name": "RBN_01741411",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741411"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741411",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412",
+      "kind": "layout_row",
+      "name": "RBN_01741412",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412.rbn-01741408"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741412"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741412",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412.rbn-01741408": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412.rbn-01741408",
+      "kind": "toggle_button",
+      "name": "Show/Hide",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741412",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741408"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741408",
+        "controlId": "AcPointCloudCropShowHide",
+        "text": "Show/Hide",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show/Hide",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Show/Hide.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417",
+      "kind": "layout_row",
+      "name": "RBN_01741417",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417.rbn-01741461"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741417"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741417",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417.rbn-01741461": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417.rbn-01741461",
+      "kind": "command_button",
+      "name": "RBN_01741461",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741417",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741461"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741461",
+        "controlId": "AcPointCloudUncropDropDown",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "UN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01741461.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419",
+      "kind": "layout_row",
+      "name": "RBN_01741419",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419.rbn-01741420"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741419"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741419",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419.rbn-01741420": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419.rbn-01741420",
+      "kind": "toggle_button",
+      "name": "Invert",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741407.rbn-01741411.rbn-01741419",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741420"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741420",
+        "controlId": "AcPointCloudCropInvertButton",
+        "text": "Invert",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Invert",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Invert.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741421": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-01741421",
+      "kind": "panel_break",
+      "name": "RBN_01741421",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01741421"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01741421",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1",
+      "kind": "layout_row",
+      "name": "RBN_CROP_1",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-2",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-3"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_CROP_1"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_CROP_1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-2": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-2",
+      "kind": "command_button",
+      "name": "New Crop State",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_CROP_2"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_CROP_2",
+        "controlId": "AcPointCloudNewCropState",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PC_SAVE_CROP_SATE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "New Crop State",
+        "aliases": [
+          "POINTCLOUDCROPSTATE",
+          "ID_PC_SAVE_CROP_SATE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINTCLOUD_CROP_STATE_NEW",
+        "largeResource": "RCDATA_32_POINTCLOUD_CROP_STATE_NEW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POINTCLOUDCROPSTATE",
+        "macro": "^C^C_pointcloudcropstate _save",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves the current crop state to a name",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POINTCLOUDCROPSTATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-3": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1.rbn-crop-3",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - PointCloudCropState",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-01741405.rbn-crop-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_CROP_3"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_CROP_3",
+        "controlId": "AcPointCloudCropStateCombo",
+        "text": "Ribbon Combo Box - PointCloudCropState",
+        "keyTip": "CS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - PointCloudCropState.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

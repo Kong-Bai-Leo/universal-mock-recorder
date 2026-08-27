@@ -1,0 +1,1627 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-text",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0022",
+    "panelName": "Text",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "kind": "panel",
+      "name": "Text",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0025",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0022"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0022",
+        "text": "Text",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools - Text",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024",
+      "kind": "layout_row",
+      "name": "RBN_0024",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0026",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0024"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0024",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0026": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0026",
+      "kind": "command_button",
+      "name": "Arc\rAligned",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0026"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0026",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Arc\rAligned",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETARCTXT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Arc\rAligned",
+        "official": "Arc-Aligned Text",
+        "aliases": [
+          "ARCTEXT",
+          "ID_ACETARCTXT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARC_TEXT",
+        "largeResource": "RCDATA_32_ARC_TEXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARCTEXT",
+        "macro": "^C^C_.arctext",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates text following a selected arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARCTEXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "kind": "split_button",
+      "name": "Modify\rText",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0137"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0137",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Modify\rText",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MT",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Modify\rText variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.primary-action",
+      "kind": "primary_button",
+      "name": "Modify\rText primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0137.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Modify\rText variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Modify\rText menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0137.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Modify\rText menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Modify\rText popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Modify\rText menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0143"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0137.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Modify\rText variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0142",
+      "kind": "command_button",
+      "name": "Explode",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0142"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "RBN_0142",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Explode",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTXTEXP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Explode",
+        "official": "Explode Text",
+        "aliases": [
+          "TXTEXP",
+          "ID_ACETTXTEXP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TXTEXP",
+        "largeResource": "RCDATA_32_TXTEXP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TXTEXP",
+        "macro": "^C^Ctxtexp",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Explodes text into polylines",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TXTEXP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139",
+      "kind": "command_button",
+      "name": "Change\rCase",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139.xls-0372"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0139"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "RBN_0139",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Change\rCase",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MNACETTCASE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Change\rCase",
+        "official": "Change Text Case",
+        "aliases": [
+          "TCASE",
+          "ID_MNACETTCASE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TCASE",
+        "largeResource": "RCDATA_32_TCASE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TCASE",
+        "macro": "^C^Ctcase",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the case of selected text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TCASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139.xls-0372": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139.xls-0372",
+      "kind": "groupname",
+      "name": "XLS_0372",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0139",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLS_0372"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "XLS_0372",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140",
+      "kind": "command_button",
+      "name": "Rotate",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140.xls-0373"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0140"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "RBN_0140",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rotate",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTORIEN",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rotate",
+        "official": "Rotate Text",
+        "aliases": [
+          "TORIENT",
+          "ID_ACETTORIEN"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TORIENT",
+        "largeResource": "RCDATA_32_TORIENT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TORIENT",
+        "macro": "^C^Ctorient",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates text, multiline text, and block attribute objects to new orientation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TORIENT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140.xls-0373": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140.xls-0373",
+      "kind": "groupname",
+      "name": "XLS_0373",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0140",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLS_0373"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "XLS_0373",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141",
+      "kind": "command_button",
+      "name": "Fit",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141.xls-0374"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0141"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "RBN_0141",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Fit",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTXTFIT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Fit",
+        "official": "Text Fit",
+        "aliases": [
+          "TEXTFIT",
+          "ID_ACETTXTFIT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TEXTFIT",
+        "largeResource": "RCDATA_32_TEXTFIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TEXTFIT",
+        "macro": "^C^Ctextfit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Fits text between specified points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TEXTFIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141.xls-0374": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141.xls-0374",
+      "kind": "groupname",
+      "name": "XLS_0374",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0141",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLS_0374"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "XLS_0374",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0143": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu.rbn-0143",
+      "kind": "command_button",
+      "name": "Justify",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0143"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0137",
+      "ui": {
+        "uid": "RBN_0143",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Justify",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTJUST",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Justify",
+        "official": "Justify Text",
+        "aliases": [
+          "TJUST",
+          "ID_ACETTJUST"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TJUST",
+        "largeResource": "RCDATA_32_TJUST",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TJUST",
+        "macro": "^C^Ctjust",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Justifies text created with MTEXT and ATTDEF",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TJUST command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092",
+      "kind": "layout_group",
+      "name": "RBN_0092",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0092"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0092",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093",
+      "kind": "layout_row",
+      "name": "RBN_0093",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093.rbn-0028"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0093"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0093",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093.rbn-0028": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093.rbn-0028",
+      "kind": "command_button",
+      "name": "Convert to\rMtext",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0093",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0028"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0028",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to\rMtext",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTXT2MT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to\rMtext",
+        "official": "Convert Text to Mtext",
+        "aliases": [
+          "TXT2MTXT",
+          "ID_ACETTXT2MT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TXT2MTXT",
+        "largeResource": "RCDATA_32_TXT2MTXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TXT2MTXT",
+        "macro": "^C^C_txt2mtxt",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts text created with TEXT or DTEXT to multiline text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TXT2MTXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096",
+      "kind": "layout_row",
+      "name": "RBN_0096",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096.rbn-0030"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0096"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0096",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096.rbn-0030": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096.rbn-0030",
+      "kind": "command_button",
+      "name": "Auto Number",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0096",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0030"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0030",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Auto Number",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTCOUNT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Auto Number",
+        "official": "Automatic Text Numbering",
+        "aliases": [
+          "TCOUNT",
+          "ID_ACETTCOUNT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TCOUNT",
+        "largeResource": "RCDATA_32_TCOUNT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TCOUNT",
+        "macro": "^C^Ctcount",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds sequential numbering to text objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TCOUNT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097",
+      "kind": "layout_row",
+      "name": "RBN_0097",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097.rbn-0029"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0097"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0097",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097.rbn-0029": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097.rbn-0029",
+      "kind": "command_button",
+      "name": "Enclose in Object",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0024.rbn-0092.rbn-0097",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0029"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0029",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Enclose in Object",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTCIRCL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Enclose in Object",
+        "official": "Enclose Text with Object",
+        "aliases": [
+          "TCIRCLE",
+          "ID_ACETTCIRCL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TCIRCLE",
+        "largeResource": "RCDATA_32_TCIRCLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TCIRCLE",
+        "macro": "^C^Ctcircle",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Surrounds text or multiline text with circles, slots, or rectangles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TCIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0025": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0025",
+      "kind": "panel_break",
+      "name": "RBN_0025",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0025"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0025",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035",
+      "kind": "layout_row",
+      "name": "RBN_0035",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035.rbn-0036"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0035"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0035",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035.rbn-0036": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035.rbn-0036",
+      "kind": "command_button",
+      "name": "Remote Text",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0035",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0036"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0036",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETRTEXT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Remote Text",
+        "aliases": [
+          "RTEXT",
+          "ID_ACETRTEXT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RTEXT",
+        "largeResource": "RCDATA_32_RTEXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RTEXT",
+        "macro": "^C^Crtext",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Inserts or edits a remote text object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RTEXT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037",
+      "kind": "layout_row",
+      "name": "RBN_0037",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037.rbn-0038"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0037"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0037",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037.rbn-0038": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037.rbn-0038",
+      "kind": "command_button",
+      "name": "Text Mask",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0037",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0038"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0038",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTXTMSK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Text Mask",
+        "aliases": [
+          "TEXTMASK",
+          "ID_ACETTXTMSK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BACKGROUNDTEXTMASK",
+        "largeResource": "RCDATA_32_BACKGROUNDTEXTMASK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TEXTMASK",
+        "macro": "^C^Ctextmask",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Places a mask behind selected text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TEXTMASK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040",
+      "kind": "layout_row",
+      "name": "RBN_0040",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040.rbn-0039"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0040"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0040",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040.rbn-0039": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040.rbn-0039",
+      "kind": "command_button",
+      "name": "Unmask Text",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022.rbn-0040",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0039"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0039",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "UT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETTXTUMSK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Unmask Text",
+        "aliases": [
+          "TEXTUNMASK",
+          "ID_ACETTXTUMSK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TEXTUNMASK",
+        "largeResource": "RCDATA_32_TEXTUNMASK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TEXTUNMASK",
+        "macro": "^C^Ctextunmask",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes a mask from behind selected text",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TEXTUNMASK command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

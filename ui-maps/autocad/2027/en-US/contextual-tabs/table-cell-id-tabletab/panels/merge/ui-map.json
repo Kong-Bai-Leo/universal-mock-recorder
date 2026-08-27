@@ -1,0 +1,659 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabletab-panel-merge",
+  "generatedAt": "2026-08-25T21:52:56.3626121Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TableTab",
+    "tabName": "Table Cell",
+    "panelUid": "ID_PanelTableMerge",
+    "panelName": "Merge",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab",
+      "kind": "tab",
+      "name": "Table Cell",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TableTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TableTab",
+        "text": "Table Cell",
+        "keyTip": "TA",
+        "alias": null,
+        "officialName": "Table Cell Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+      "kind": "panel",
+      "name": "Merge",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-0056"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTableMerge"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTableMerge",
+        "text": "Merge",
+        "keyTip": null,
+        "alias": "ID_TableMerge",
+        "officialName": "Table Cells - Merge",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0261",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-cmdbtn-cellunmerge"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0261"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0261",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "kind": "split_button",
+      "name": "Merge\rCells",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MERGE\rCELLS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_MERGE\rCELLS",
+        "controlId": "AcTableMergeSplitButton",
+        "text": "Merge\rCells",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ME",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_MERGE_CELLS",
+        "largeImage": "RCDATA_32_MERGE_CELLS",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available Merge\rCells variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergeall"
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Merge\rCells menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MERGE\rCELLS.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Merge\rCells menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Merge\rCells popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Merge\rCells menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergeall",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebyrow",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebycolumn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MERGE\rCELLS.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Merge\rCells variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergeall": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergeall",
+      "kind": "command_button",
+      "name": "Merge All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLMERGEALL"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLMERGEALL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Merge All",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CellMergeAll",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Merge All",
+        "official": "Merge All",
+        "aliases": [
+          "EDITTABLECELL",
+          "ID_CellMergeAll"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MERGE_CELLS",
+        "largeResource": "RCDATA_32_MERGE_CELLS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EDITTABLECELL",
+        "macro": "^R^C^C_EditTableCell _Operation _Merge _All _Quit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges all cells in a table",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EDITTABLECELL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebyrow": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebyrow",
+      "kind": "command_button",
+      "name": "Merge By Row",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLMERGEBYROW"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLMERGEBYROW",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Merge By Row",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CellMergeByRow",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Merge By Row",
+        "official": "Merge By Row",
+        "aliases": "ID_CellMergeByRow"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MERGEBYROW",
+        "largeResource": "RCDATA_32_MERGEBYROW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "^R^C^C_EditTableCell _Operation _Merge _Horizontal _Quit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges table cells by row",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebycolumn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu.id-rbn-cmdbtn-cellmergebycolumn",
+      "kind": "command_button",
+      "name": "Merge By Column",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLMERGEBYCOLUMN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-splitbtn-merge-cells",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLMERGEBYCOLUMN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Merge By Column",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CellMergeByColumn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Merge By Column",
+        "official": "Merge By Column",
+        "aliases": "ID_CellMergeByColumn"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MERGEBYCOLUMN",
+        "largeResource": "RCDATA_32_MERGEBYCOLUMN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "^R^C^C_EditTableCell _Operation _Merge _Vertical _Quit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges table cells by column",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-cmdbtn-cellunmerge": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261.id-rbn-cmdbtn-cellunmerge",
+      "kind": "command_button",
+      "name": "Unmerge\rCells",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-row-0261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLUNMERGE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLUNMERGE",
+        "controlId": "AcTableUnMergeCommandButton",
+        "text": "Unmerge\rCells",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Unmerge\rCells",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Unmerge\rCells.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-0056": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge.id-rbn-0056",
+      "kind": "panel_break",
+      "name": "ID_RBN_0056",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0056"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0056",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-cad-standards",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelCADStandards",
+    "panelName": "CAD Standards",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "kind": "panel",
+      "name": "CAD Standards",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-0041"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCADStandards"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCADStandards",
+        "text": "CAD Standards",
+        "keyTip": null,
+        "alias": "ID_CADStandards",
+        "officialName": "Manage - CAD Standards",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0166",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166.id-rbn-cmdbtn-laytrans"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0166"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0166",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166.id-rbn-cmdbtn-laytrans": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166.id-rbn-cmdbtn-laytrans",
+      "kind": "command_button",
+      "name": "Layer\rTranslator",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-row-0166",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYTRANS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYTRANS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Layer\rTranslator",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LayTrans",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layer\rTranslator",
+        "official": "CAD Standards, Layer Translator...",
+        "aliases": [
+          "LAYTRANS",
+          "ID_LayTrans"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYTRANS",
+        "largeResource": "RCDATA_32_LAYTRANS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYTRANS",
+        "macro": "^C^C_laytrans",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Translates the layers in the current drawing to specified layer standards",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYTRANS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764",
+      "kind": "layout_row",
+      "name": "RBN_00014764",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764.id-rbn-cmdbtn-checkstan"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014764"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014764",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764.id-rbn-cmdbtn-checkstan": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764.id-rbn-cmdbtn-checkstan",
+      "kind": "command_button",
+      "name": "Check",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014764",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CHECKSTAN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CHECKSTAN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Check",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CheckStan",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Check",
+        "official": "CAD Standards, Check...",
+        "aliases": [
+          "CHECKSTANDARDS",
+          "ID_CheckStan"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHECKSTD",
+        "largeResource": "RCDATA_32_CHECKSTD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHECKSTANDARDS",
+        "macro": "^C^C_checkstandards",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Checks the current drawing for standards violations",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHECKSTANDARDS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765",
+      "kind": "layout_row",
+      "name": "RBN_00014765",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765.id-rbn-cmdbtn-standards"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014765"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014765",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765.id-rbn-cmdbtn-standards": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765.id-rbn-cmdbtn-standards",
+      "kind": "command_button",
+      "name": "Configure",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.rbn-00014765",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_STANDARDS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_STANDARDS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Configure",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Standards",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Configure",
+        "official": "CAD Standards, Configure...",
+        "aliases": [
+          "STANDARDS",
+          "ID_Standards"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONFIGSTD_NEW",
+        "largeResource": "RCDATA_32_CONFIGSTD_NEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "STANDARDS",
+        "macro": "^C^C_standards",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages the association of standards files with drawings",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 STANDARDS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-0041": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards.id-rbn-0041",
+      "kind": "panel_break",
+      "name": "ID_RBN_0041",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0041"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0041",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

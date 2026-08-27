@@ -1,0 +1,421 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01737814-panel-adjust",
+  "generatedAt": "2026-08-25T21:53:00.8506429Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01737814",
+    "tabName": "Section Plane",
+    "panelUid": "RBN_201_C6B7E",
+    "panelName": "Adjust",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814",
+      "kind": "tab",
+      "name": "Section Plane",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737814"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737814",
+        "text": "Section Plane",
+        "keyTip": "SP",
+        "alias": null,
+        "officialName": "Section Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "kind": "panel",
+      "name": "Adjust",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.id-rbn-4a14",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c",
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-0d94a"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_C6B7E"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_C6B7E",
+        "text": "Adjust",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Section - Adjust Slice",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.id-rbn-4a14": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.id-rbn-4a14",
+      "kind": "dialog_launcher",
+      "name": "Section Spinner Increment",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_4A14"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_4A14",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "SI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONSPINNERS",
+        "commandId": "ID_SECTIONSPINNERS",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Section Spinner Increment",
+        "aliases": [
+          "SECTIONSPINNERS",
+          "ID_SECTIONSPINNERS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OPTIONS",
+        "largeResource": "RCDATA_32_OPTIONS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONSPINNERS",
+        "macro": "^C^C_SECTIONSPINNERS",
+        "macroType": "Any",
+        "commandId": "ID_SECTIONSPINNERS",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Sets the distance increment for section offset and slice thickness spinner controls in the ribbon",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONSPINNERS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094",
+      "kind": "layout_row",
+      "name": "RBN_201_00094",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094.rbn-201-7b3a6"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_00094"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_00094",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094.rbn-201-7b3a6": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094.rbn-201-7b3a6",
+      "kind": "ribbon_control",
+      "name": "Section Elevation",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-00094",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_7B3A6"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_7B3A6",
+        "controlId": "AcSectionElevationSpinner",
+        "text": "Section Elevation",
+        "keyTip": "EL"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Section Elevation.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c",
+      "kind": "layout_row",
+      "name": "RBN_201_1B46C",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c.rbn-201-a9742"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_1B46C"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_1B46C",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c.rbn-201-a9742": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c.rbn-201-a9742",
+      "kind": "ribbon_control",
+      "name": "Section Thickness Depth",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-1b46c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_A9742"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_A9742",
+        "controlId": "AcSectionThicknessDepthSpinner",
+        "text": "Section Thickness Depth",
+        "keyTip": "TH"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Section Thickness Depth.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-0d94a": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e.rbn-201-0d94a",
+      "kind": "panel_break",
+      "name": "RBN_201_0D94A",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_0D94A"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_0D94A",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

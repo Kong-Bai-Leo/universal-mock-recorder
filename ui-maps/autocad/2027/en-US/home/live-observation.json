@@ -1,0 +1,213 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T19:49:27Z",
+  "lastExpandedMenuCheckAt": "2026-08-25T19:49:27Z",
+  "viewport": {
+    "widthPx": 3070,
+    "heightPx": 1678,
+    "ribbonTab": "Home",
+    "workspace": "Drafting & Annotation"
+  },
+  "observedControlCount": 80,
+  "observedControlIds": [
+    "ID_Line",
+    "ID_Pline",
+    "ID_RBN_SPLITBTN_CIRCLE",
+    "ID_RBN_SPLITBTN_ARC",
+    "ID_RBN_SPLITBTN_RECTANGLE",
+    "ID_RBN_SPLITBTN_ELLIPSE",
+    "RBN_01740416",
+    "ID_Move",
+    "ID_Copy",
+    "ID_Stretch",
+    "ID_Rotate",
+    "ID_Mirror",
+    "ID_Scale",
+    "ID_RBN_SPLITBTN_TRIMEXTENDFLYOUT",
+    "ID_RBN_SPLITBTN_CHAMFERANDFILLET",
+    "RBN_01740006",
+    "ID_Erase",
+    "ID_Explode",
+    "ID_Offset",
+    "RBN_01738052",
+    "ID_Dimension",
+    "ID_RBN_SPLITBTN_DIMENSION",
+    "ID_RBN_SPLITBTN_MULTILEADERS",
+    "ID_Table",
+    "AcLayerCommandToggleButton",
+    "LayerControl",
+    "ID_LAYOFF",
+    "ID_LAYISO",
+    "ID_LAYFRZ",
+    "ID_LAYLCK",
+    "ID_Laymcur",
+    "ID_LAYON",
+    "MM_LAYUNISO",
+    "ID_LAYTHW",
+    "ID_LAYULK",
+    "ID_LAYMCH",
+    "AcInsertGalleryControl",
+    "ID_RBN_SPLITBTN_DETECT_0001",
+    "ID_Bmake",
+    "ID_Bedit",
+    "ID_RBN_SPLITBTN_ATTRIBUTE",
+    "ID_Matchprop",
+    "AcObjectColorCombo",
+    "AcLineWeightCombo",
+    "AcLinetypeCombo",
+    "ID_GROUP",
+    "ID_Ungroup",
+    "ID_GroupEdit",
+    "AcGroupSelectionToggleButton",
+    "ID_RBN_SPLITBTN_MEASURE",
+    "ID_Qselect",
+    "ID_SelAll",
+    "AcQuickCalcCommandToggleButton",
+    "ID_RBN_SPLITBTN_PASTE_0001",
+    "RBN_242_DDD3E",
+    "RBN_242_A6505",
+    "RBN_200_50B30",
+    "ID_RBN_SPLITBTN_DRAWORDER",
+    "ID_SURF_SPLINE_KNOT",
+    "ID_SURF_SPLINECV",
+    "ID_Xline",
+    "ID_Ray",
+    "ID_PointMult",
+    "ID_Divide",
+    "ID_Measure",
+    "ID_Region",
+    "ID_Wipeout",
+    "ID_3dpoly",
+    "ID_Helix",
+    "ID_Donut",
+    "RBN_201_3F23A",
+    "ID_CircleRad",
+    "ID_CircleDia",
+    "ID_Circle2pt",
+    "ID_Circle3pt",
+    "ID_CircleTTR",
+    "ID_CircleTTT",
+    "ID_RectangularArray",
+    "ID_PathArray",
+    "ID_PolarArray"
+  ],
+  "liveInteractionSamples": [
+    {
+      "controlId": "ID_RBN_SPLITBTN_CIRCLE",
+      "action": "open_dropdown",
+      "result": "Displayed Center Radius, Center Diameter, 2-Point, 3-Point, Tan Tan Radius, and Tan Tan Tan."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_CIRCLE",
+      "action": "invoke_primary_then_cancel",
+      "result": "Invoked CIRCLE and safely cancelled with Escape."
+    },
+    {
+      "controlId": "RBN_01740006",
+      "action": "open_dropdown",
+      "result": "Displayed Rectangular Array, Path Array, and Polar Array."
+    },
+    {
+      "controlId": "ID_PanelDraw",
+      "action": "open_slideout",
+      "result": "Displayed the icon-only Draw slideout controls and their accessible names."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_ARC",
+      "action": "open_dropdown",
+      "result": "Displayed 3-Point; Start, Center, End; Start, Center, Angle; Start, Center, Length; Start, End, Angle; Start, End, Direction; Start, End, Radius; Center, Start, End; Center, Start, Angle; Center, Start, Length; and Continue."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_RECTANGLE",
+      "action": "open_dropdown",
+      "result": "Displayed Rectangle and Polygon."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_ELLIPSE",
+      "action": "open_dropdown",
+      "result": "Displayed Center; Axis, End; and Elliptical Arc."
+    },
+    {
+      "controlId": "RBN_01740416",
+      "action": "open_dropdown",
+      "result": "Displayed Hatch, Gradient, and Boundary."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_TRIMEXTENDFLYOUT",
+      "action": "open_dropdown",
+      "result": "Displayed Trim and Extend."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_CHAMFERANDFILLET",
+      "action": "open_dropdown",
+      "result": "Displayed Fillet, Chamfer, and Blend Curves."
+    },
+    {
+      "controlId": "RBN_01738052",
+      "action": "open_dropdown",
+      "result": "Displayed Multiline Text (MTEXT) and Single Line (TEXT)."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_DIMENSION",
+      "action": "open_dropdown",
+      "result": "Displayed Linear, Aligned, Angular, Arc Length, Radius, Diameter, Ordinate, and Jogged."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_MULTILEADERS",
+      "action": "open_dropdown",
+      "result": "Displayed Leader, Add Leader, Remove Leader, Align, and Collect."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_DETECT_0001",
+      "action": "open_dropdown",
+      "result": "Displayed Detect and Convert and Search and Convert."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_ATTRIBUTE",
+      "action": "open_dropdown",
+      "result": "Displayed Single and Multiple attribute editing."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_MEASURE",
+      "action": "open_dropdown",
+      "result": "Displayed Quick, Distance, Radius, Angle, Area, and Volume."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_PASTE_0001",
+      "action": "open_dropdown",
+      "result": "Displayed Paste, Paste as Block, Paste as Hyperlink, Paste to Original Coordinates, and Paste Special."
+    },
+    {
+      "controlId": "RBN_242_DDD3E",
+      "action": "open_dropdown",
+      "result": "Displayed Cut and Cut with Base Point."
+    },
+    {
+      "controlId": "RBN_242_A6505",
+      "action": "open_dropdown",
+      "result": "Displayed Copy Clip and Copy with Base Point."
+    },
+    {
+      "controlId": "RBN_200_50B30",
+      "action": "open_dropdown",
+      "result": "Displayed From Model Space and From Inventor."
+    },
+    {
+      "controlId": "RBN_201_3F23A",
+      "action": "open_slideout_then_dropdown",
+      "result": "Opened the Draw slideout and displayed Rectangular, Polygonal, and Freehand Revision Cloud variants."
+    },
+    {
+      "controlId": "ID_RBN_SPLITBTN_DRAWORDER",
+      "action": "open_slideout_then_dropdown",
+      "result": "Opened the Modify slideout and displayed Bring to Front, Send to Back, Bring Above Objects, Send Under Objects, Bring Text to Front, Bring Dimensions to Front, Bring Leaders to Front, Bring All Annotations to Front, and Send Hatches to Back."
+    }
+  ],
+  "notes": [
+    "The Home main Ribbon controls were matched against the live accessibility tree.",
+    "Icon-only controls are named from Autodesk menu macros and image resource identifiers.",
+    "Transient menu bounds depend on window size; semantic ownership is stored instead of hard-coded popup coordinates.",
+    "All Home split-button menus, including Revision Cloud and Draw Order inside panel slideouts, were expanded in the live AutoCAD 2027 window and closed without invoking a drawing command."
+  ]
+}

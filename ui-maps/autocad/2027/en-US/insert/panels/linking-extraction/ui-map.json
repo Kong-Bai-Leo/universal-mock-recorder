@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabinsert-panel-linking-extraction",
+  "generatedAt": "2026-08-25T21:52:18.0849772Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabInsert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelInsert_DataLink",
+    "panelName": "Linking & Extraction",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabInsert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabInsert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": "ID_TabInsert",
+        "officialName": "Insert"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+      "kind": "panel",
+      "name": "Linking & Extraction",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-0026"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelInsert_DataLink"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelInsert_DataLink",
+        "text": "Linking & Extraction",
+        "keyTip": null,
+        "alias": "ID_Insert_DataLink",
+        "officialName": "Insert - Linking & Extraction",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0086",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-cmdbtn-datalinkmgr",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0086"
+      },
+      "placement": {
+        "region": "main",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0086",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-cmdbtn-datalinkmgr": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-cmdbtn-datalinkmgr",
+      "kind": "command_button",
+      "name": "Data\rLink",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DATALINKMGR"
+      },
+      "placement": {
+        "region": "main",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DATALINKMGR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Data\rLink",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DataLinkMgr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Data\rLink",
+        "official": "Data Link Manager",
+        "aliases": [
+          "DATALINK",
+          "ID_DataLinkMgr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TABLE_DATA",
+        "largeResource": "RCDATA_32_TABLE_DATA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINK",
+        "macro": "^C^C_DATALINK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Data Link Manager",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0014",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0014"
+      },
+      "placement": {
+        "region": "main",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0014",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0087",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087.id-rbn-cmdbtn-updatedatalinksall"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0087"
+      },
+      "placement": {
+        "region": "main",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0087",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087.id-rbn-cmdbtn-updatedatalinksall": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087.id-rbn-cmdbtn-updatedatalinksall",
+      "kind": "command_button",
+      "name": "Download from Source",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0087",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UPDATEDATALINKSALL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UPDATEDATALINKSALL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Download from Source",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "UD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UpdateDataLinksAll",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Download from Source",
+        "official": "Update Data Links",
+        "aliases": [
+          "DATALINKUPDATE",
+          "ID_UpdateDataLinksAll"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UPDATE_DATA",
+        "largeResource": "RCDATA_32_UPDATE_DATA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINKUPDATE",
+        "macro": "^C^C_DATALINKUPDATE _U",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates linked data from an external data file to a table in the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINKUPDATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0088",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088.id-rbn-cmdbtn-writedatalinks"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0088"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0088",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088.id-rbn-cmdbtn-writedatalinks": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088.id-rbn-cmdbtn-writedatalinks",
+      "kind": "command_button",
+      "name": "Upload to Source",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0088",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WRITEDATALINKS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WRITEDATALINKS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Upload to Source",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "WD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WriteDataLinks",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Upload to Source",
+        "official": "Update Data Links",
+        "aliases": [
+          "DATALINKUPDATE _W",
+          "ID_WriteDataLinks"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DOWNLOADCHANGES",
+        "largeResource": "RCDATA_32_DOWNLOADCHANGES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINKUPDATE _W",
+        "macro": "^C^C_DATALINKUPDATE _W",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates linked data from a table in the current drawing to an external data file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINKUPDATE _W command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0089",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089.id-rbn-cmdbtn-eattext"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0089"
+      },
+      "placement": {
+        "region": "main",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0089",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089.id-rbn-cmdbtn-eattext": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089.id-rbn-cmdbtn-eattext",
+      "kind": "command_button",
+      "name": "Extract\r Data",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-row-0086.id-rbn-rowpanel-0014.id-rbn-row-0089",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EATTEXT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EATTEXT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract\r Data",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EAttExt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract\r Data",
+        "official": "Data Extraction...",
+        "aliases": [
+          "DATAEXTRACTION",
+          "ID_EAttExt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EATTEXT",
+        "largeResource": "RCDATA_32_EATTEXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATAEXTRACTION",
+        "macro": "^C^C_dataextraction",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts drawing data and merges data from an external source to a data extraction table or external file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATAEXTRACTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-0026": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink.id-rbn-0026",
+      "kind": "panel_break",
+      "name": "ID_RBN_0026",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-datalink",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0026"
+      },
+      "placement": {
+        "region": "main",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0026",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:20:00Z",
+    "observedControlCount": 28,
+    "evidence": "../../live-observation.json"
+  }
+}

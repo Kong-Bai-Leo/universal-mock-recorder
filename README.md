@@ -5,7 +5,7 @@
 系统分成两部分：
 
 1. Windows 录制器捕获系统级鼠标、键盘、前台窗口、通用控件信息和关键截图。
-2. 分析器通过 OpenAI Responses API 清洗无意义操作，生成语义轨迹、Mock TypeScript 描述和可直接运行的 Windows 回放脚本。
+2. 分析器通过 OpenAI Responses API 清洗无意义操作，生成语义轨迹、结构化 CAD 操作和 Mock TypeScript 描述；SCR 只是结构化结果的一个验证后端。
 
 仓库还包含一个完全独立的 `Computer Use Validator`。它不读取录制器目录，只接收用户选择的
 任务 MD，并通过 OpenAI Computer Use 控制用户明确选中的 Windows 窗口。可先用真实 AutoCAD
@@ -16,22 +16,29 @@
 - 全局鼠标移动、左右键、中键、滚轮记录
 - 拖拽轨迹采样
 - 全局键盘和组合键记录
-- Windows UI Automation 控件名称、类型、ID和边界读取
+- Windows UI Automation 控件名称、类型、ID、边界和最多 8 层命名祖先读取
 - 前台窗口及窗口相对坐标记录
 - 点击和关键按键截图
 - 每个画布操作的前后截图、变化像素比例和变化区域
+- OFFSET、TRIM、EXTEND 等修改命令额外记录“操作前—选择/预览中—稳定后”三态截图
+- 对本地检测到变化的操作成对上传前后截图，供 AI 配准判断 OFFSET 方向和 TRIM 删除区段
+- 连续修改会把前一次“稳定后”画面作为持久状态基线；若当前稳定结果与基线相同，悬停预览、捕捉标记和显卡重绘残影会作为无最终贡献输入省略
+- 可选启用 AutoCAD Action Recorder；停止后自动收集 ACTMX，并以有界顺序摘录辅助 AI 确认命令、输入和选择阶段
 - 密码控件输入自动脱敏
 - `Ctrl+Shift+F12` 暂停或恢复隐私输入采集
 - 单击、双击、右键、拖拽、滚动和连续文本初步分段
 - GPT 清洗无效操作并生成目标导向的 Mock 脚本
-- 自动生成可双击运行的 Windows 键鼠回放脚本，在真实 CAD 或其他目标软件中复现必要步骤
-- 回放时重新识别当前画布，并把录制坐标转换为画布归一化坐标
+- AutoCAD 录制按每个操作分段检索本地 UI/命令知识库，不会整库上传
+- 使用 Tab → Panel → Control → Split Part/Menu Item 层级帮助识别按钮
+- PGP 缩写仅用于识别，结构化 CAD 操作保存知识库校验过的规范英文命令
+- AI 不直接拼写 SCR；本地编译器从同一份 CAD 操作生成 AutoCAD 验证脚本
 - 输出画布对象变化、几何测量提示和完整拖拽轨迹
 - 生成可直接交给 Computer Use Agent 的复现任务说明
 - 直接使用 OpenAI 官方 Responses API
 - 长流程自动分段，截图按整个分段均匀抽样并与事件文件名关联
 - API 上传前自动把关键截图压缩为临时副本；本地原始截图保持不变
-- 上传连接临时中断、超时或服务端繁忙时自动有限重试
+- 上传连接临时中断、超时或服务端繁忙时自动指数退避重试
+- 每个成功分析分段都会保存检查点；连接失败后重新生成只从失败分段继续
 - 使用严格 JSON Schema 和本地校验约束 Mock 工作流
 - OpenAI 请求设置 `store: false`
 
@@ -49,7 +56,7 @@ powershell -ExecutionPolicy Bypass -File scripts\build-recorder.ps1
 bin\recorder\UniversalMockRecorder.exe
 ```
 
-运行后点击“开始录制”，完成目标软件操作，再点击“停止并保存”。录制目录位于：
+运行后点击“开始录制”，完成目标软件操作，再点击“停止并保存”。默认会记录 Windows UI Automation 控件名称、Automation ID 和父级层次；若要测试仅依赖鼠标、键盘和截图的视觉识别准确度，可在开始前取消勾选“记录 UI Automation 控件信息”。如果当前录制的是 AutoCAD，且希望增加原生命令证据，可在开始前勾选“同时启用 AutoCAD Action Recorder”；其他软件不要勾选。录制目录位于：
 
 ```text
 bin\recorder\recordings\日期-时间\
@@ -67,11 +74,16 @@ if (-not (Test-Path config.json)) { Copy-Item config.example.json config.json }
 
 - `model`：要调用的 OpenAI 模型
 - `timeoutSeconds`：单次分析的超时时间
+- `maxRetries` / `retryBaseDelayMs`：临时断线或服务繁忙时的重试次数和指数退避起点
 - `maxActionsPerRequest`：长流程每次发送的最大候选动作数
+- `maxActionMacroEntriesPerRequest`：每个分段最多发送的 ACTMX JSON/XML 顺序条目数
+- `maxValidationRepairs`：AI 结果未通过结构校验时，最多自动携带错误和原结果纠正的次数
 - `maxScreenshotsPerRequest`：每个分段最多发送的截图数
+- `finalCadVisualAudit`：分段合并后，再用录制结束画布和修改命令前后图审计最终 CAD 拓扑，补齐细线穿圆、TRIM 区段遗漏等跨分段问题
 - `maxImageWidth` / `maxImageHeight`：仅用于 API 临时副本的最大尺寸
 - `jpegQuality`：API 临时 JPEG 副本质量；不会修改录制原图
 - `minimumConfidence`：标记低置信度步骤的阈值
+- `autoCadKnowledge`：AutoCAD 知识库开关、目录和每段最多返回的控件/命令/菜单候选数
 
 把 OpenAI API 密钥填写到项目根目录的 `.env` 文件：
 
@@ -94,10 +106,14 @@ powershell -ExecutionPolicy Bypass -File scripts\analyze-recording.ps1 `
 
 ```text
 generated\semantic-trace.json
+generated\cad-program.json
 generated\analysis-input-manifest.json
+generated\analysis-harness.json
+generated\knowledge-used.json
 generated\mock-script.ts
 generated\computer-use-task.md
 generated\autocad-replay.scr
+generated\autocad-scr-validation.json
 ```
 
 要在真实 CAD 中回放：
@@ -107,13 +123,36 @@ generated\autocad-replay.scr
 3. 选择 `generated\autocad-replay.scr`。
 4. AutoCAD 将按 SCR 中的命令和业务坐标执行录制后的有效流程。
 
-SCR 会把工具栏动作转换为等价的 AutoCAD 命令，并省略误输入和被撤销的动作。只有在键盘事件或截图中能确认业务坐标、半径等关键数值时才会生成，像素距离不会冒充 CAD 单位。请只在空白、可丢弃的测试图纸中运行。
+`cad-program.json` 是主要的 CAD 识别产物，保存命令、强类型参数、实体 ID、对象捕捉关系和录制证据。OFFSET/TRIM 还会保存 `visualInference`（使用的前后截图、变化区域、源/参考实体和方向）以及可严格确定时的 `resultGeometry`。前后截图只用于消除方向和拓扑歧义，CAD 尺寸仍必须来自明确输入、已知实体或解析几何，不能按像素猜测。它不绑定 SCR，可由 AutoCAD、Mock CAD 或其他执行器分别编译。AI 不直接输出 SCR 文本，也不会由 SCR 编译器偷偷修正识别坐标。
+
+Enter 提交数值前的 AutoCAD 动态输入截图会优先以局部高分辨率上传，用于同时读取字段标签、距离、角度、坐标和对象捕捉。此前分段创建的实体会通过稳定实体目录继续传给后续分段，避免一个早期 LINE 被遗漏后造成 OFFSET、ROTATE、FILLET、TRIM 等操作整链丢失。
+
+多阶段命令会保留操作级证据：例如 OFFSET 使用“选择源对象前”和“提交侧点后”的画面，而不是错误地要求最终变化出现在同一次点击中。分析器还会依据命令目录重新计算可能滞后的命令上下文，并拒绝引用没有由此前操作实际创建的“幽灵实体”。
+
+关联 ARRAY 会一直分析到用户点击 `Close Array` 后才形成几何分段；阵列成员会在下一条 FILLET/TRIM 等修改命令开始前确定性展开。TRIM 产生的新圆弧或线段会替换原实体，后续分段只能引用仍存在的结果 ID。若旧分析遗漏了同一源圆的中间圆弧，但原始切割边、点击证据和最终交点均可严格确定，最终审计可把连续修剪规范化为一个 composite TRIM，一次表达最终全部保留圆弧，而不会创建幽灵实体。
+
+`analysis-harness.json` 记录每个分段在调用 AI 前建立的命令状态、候选命令、当前命令的选项语法和逐项输入解释。它只向 AI 提供当前相关的少量语法，不会把完整命令手册全部塞进一次请求。例如在 ARRAY 已激活时，`I` 会被解释为 `Items` 选项，后续 `12` 才会被解释为 `item_count=12`；Enter 的含义取决于当前提示，Escape 会明确取消当前命令。跨分段未完成的命令通过 `commandState` 继续传递，避免把下一段的选项误认成新命令。
+
+当某些操作缺少精确参数时，`cad-program.json` 会保留其余已经确认的 operations，并使用 `complete=false` 标记缺口；不会再因为一项不完整而清空整个 CAD 模型或把 Mock 脚本判为生成失败。
+
+`autocad-replay.scr` 仅用于在真实 AutoCAD 中检查结构化操作是否能正确还原。只有在键盘事件或截图中能确认业务坐标、半径等关键数值时才会生成，像素距离不会冒充 CAD 单位。验证后端会根据稳定实体链和精确 `resultGeometry` 直接绘制最终几何，不再交互式重放 ROTATE、FILLET、TRIM 后用窗口猜选对象。请只在空白、可丢弃的测试图纸中运行。
+
+`autocad-scr-validation.json` 单独记录 SCR 后端是否成功。如果某个完整 CAD 操作暂时无法编译成 SCR，主分析仍然成功并保留 `cad-program.json`，不会为了迁就 SCR 而篡改 AI 的识别结果。
+
+`knowledge-used.json` 记录每个分析分段实际提供给模型的控件、菜单和命令引用，以及最终 CAD
+操作通过本地命令目录校验的结果。它不会复制完整知识库，也不会记录固定屏幕坐标。
+
+启用 AutoCAD Action Recorder 后，录制根目录会增加 `action-recorder.json` 和
+`action-recorder\*.actmx`。`analysis-input-manifest.json` 会记录每个 AI 请求是否附带了 Action
+Macro 摘录及条目范围。新版 JSON ACTMX 会被解析为 CommandNode 及其输入子节点，距离、取点和命令提示不再被当成一整段文本截断。ACTMX 可提供精确的已记录 CAD 输入，但对象 ID 和最终拓扑仍必须由事件、前后截图和已有实体共同验证。
 
 `mock-script.ts` 不复制真实软件的绝对坐标。它要求 Mock Runtime 按以下顺序寻找等价按钮：
 
 ```text
 语义功能 → 无障碍信息 → 按钮文字 → 视觉识别 → 相对位置兜底
 ```
+
+如果 Mock Runtime 支持 CAD 操作模型，应优先消费同一 workflow 中的 `cadProgram`；否则按 `steps` 查找界面按钮并执行。两种执行方式使用的是同一次 AI 识别结果。
 
 每一步执行后都需要验证界面状态；选错按钮时应退出、撤销并尝试下一个候选。
 

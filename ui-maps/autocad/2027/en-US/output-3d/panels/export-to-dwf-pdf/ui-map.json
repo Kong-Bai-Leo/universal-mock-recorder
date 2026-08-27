@@ -1,0 +1,1089 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-taboutput3d-panel-export-to-dwf-pdf",
+  "generatedAt": "2026-08-25T21:52:28.6939430Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabOutput3D",
+    "tabName": "Output",
+    "panelUid": "ID_PanelExportPDFDWF3D",
+    "panelName": "Export to DWF/PDF",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d",
+      "kind": "tab",
+      "name": "Output",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabOutput3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabOutput3D",
+        "text": "Output",
+        "keyTip": "O",
+        "alias": "ID_TabOutput3D",
+        "officialName": "Output - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d",
+      "kind": "panel",
+      "name": "Export to DWF/PDF",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.id-rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelExportPDFDWF3D"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelExportPDFDWF3D",
+        "text": "Export to DWF/PDF",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Output - Export to DWF/PDF 3D",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "kind": "layout_row",
+      "name": "RBN_00014840",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-eplotexport3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rbn-exportpanelseparator-1-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014907",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014840"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014840",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-eplotexport3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-eplotexport3d",
+      "kind": "ribbon_control",
+      "name": "Export Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_EPLOTEXPORT3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_EPLOTEXPORT3D",
+        "controlId": "AcEXPORTEPLOTFORMATSplitDropDown",
+        "text": "Export Drop-down",
+        "keyTip": "EX"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Export Drop-down.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rbn-exportpanelseparator-1-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rbn-exportpanelseparator-1-3d",
+      "kind": "separator",
+      "name": "ID_RBN_EXPORTPANELSEPARATOR_1_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_1_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_1_3D",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d",
+      "kind": "layout_group",
+      "name": "ID_ROWPANEL_EXPORT_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_ROWPANEL_EXPORT_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_ROWPANEL_EXPORT_3D",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_EXPORT_1_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exporteplot-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-exportpanelseparator-2-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exportwindowbutton-3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_EXPORT_1_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_EXPORT_1_3D",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exporteplot-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exporteplot-3d",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - EplotExport",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_EXPORTEPLOT_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_EXPORTEPLOT_3D",
+        "controlId": "AcExportEplotCombo",
+        "text": "Ribbon Combo Box - EplotExport",
+        "keyTip": "EP"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - EplotExport.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-exportpanelseparator-2-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-exportpanelseparator-2-3d",
+      "kind": "separator",
+      "name": "ID_RBN_EXPORTPANELSEPARATOR_2_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_2_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_2_3D",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exportwindowbutton-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d.id-rbn-control-exportwindowbutton-3d",
+      "kind": "ribbon_control",
+      "name": "Export Window",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-1-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_EXPORTWINDOWBUTTON_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_EXPORTWINDOWBUTTON_3D",
+        "controlId": "AcExportWindowButton",
+        "text": "Export Window",
+        "keyTip": "EW"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Export Window.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_EXPORT_2_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-exportpageset-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-exportpanelseparator-3-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-pagesetupbutton-3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_EXPORT_2_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_EXPORT_2_3D",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-exportpageset-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-exportpageset-3d",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - EplotExport",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_EXPORTPAGESET_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_EXPORTPAGESET_3D",
+        "controlId": "AcExportPageSetupCombo",
+        "text": "Ribbon Combo Box - EplotExport",
+        "keyTip": "ES"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - EplotExport.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-exportpanelseparator-3-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-exportpanelseparator-3-3d",
+      "kind": "separator",
+      "name": "ID_RBN_EXPORTPANELSEPARATOR_3_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_3_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_3_3D",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-pagesetupbutton-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d.id-rbn-control-pagesetupbutton-3d",
+      "kind": "ribbon_control",
+      "name": "Page Setup",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-2-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_PAGESETUPBUTTON_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_PAGESETUPBUTTON_3D",
+        "controlId": "AcPageSetupButton",
+        "text": "Page Setup",
+        "keyTip": "PG"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Page Setup.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_EXPORT_3_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-preview-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-exportpanelseparator-4-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-options-3d",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-8f33e",
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-9f7ad"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_EXPORT_3_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_EXPORT_3_3D",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-preview-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-preview-3d",
+      "kind": "command_button",
+      "name": "Preview",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PUBLISH_PREVIEW_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PUBLISH_PREVIEW_3D",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Preview",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Publish_Preview",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Preview",
+        "official": "Publish Preview",
+        "aliases": [
+          "EXPORTSETTINGS",
+          "ID_Publish_Preview"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PUBLISH_PREVIEW",
+        "largeResource": "RCDATA_32_PUBLISH_PREVIEW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXPORTSETTINGS",
+        "macro": "^C^C^Q_exportsettings _Preview",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the drawing in a preview window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXPORTSETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-exportpanelseparator-4-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-exportpanelseparator-4-3d",
+      "kind": "separator",
+      "name": "ID_RBN_EXPORTPANELSEPARATOR_4_3D",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_4_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_EXPORTPANELSEPARATOR_4_3D",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-options-3d": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.id-rbn-publish-options-3d",
+      "kind": "command_button",
+      "name": "Export to DWF Options",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PUBLISH_OPTIONS_3D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PUBLISH_OPTIONS_3D",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Export to DWF Options",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Publish_Options",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Export to DWF Options",
+        "official": "Publish Option",
+        "aliases": "ID_Publish_Options"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PUBLISH_OPTIONS",
+        "largeResource": "RCDATA_32_PUBLISH_OPTIONS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": "^C^C^Q_exportsettings _Options",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Export to DWF Palette",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-8f33e": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-8f33e",
+      "kind": "separator",
+      "name": "RBN_201_8F33E",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_8F33E"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_8F33E",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-9f7ad": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d.rbn-201-9f7ad",
+      "kind": "command_button",
+      "name": "Export to PDF Options",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.id-rowpanel-export-3d.id-rbn-row-export-3-3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_9F7AD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_9F7AD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Export to PDF Options",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Publish_PDF_Options",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Export to PDF Options",
+        "official": "Publish PDF Option",
+        "aliases": "ID_Publish_PDF_Options"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PUBLISH_PDF_OPTIONS",
+        "largeResource": "RCDATA_32_PUBLISH_PDF_OPTIONS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": "^C^C^Q_exportsettings _pDfoptions",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the PDF Options dialog",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014907": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014907",
+      "kind": "separator",
+      "name": "RBN_00014907",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014907"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014907",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904",
+      "kind": "layout_group",
+      "name": "RBN_00014904",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014904"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014904",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905",
+      "kind": "layout_row",
+      "name": "RBN_00014905",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905.rbn-00014906"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014905"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014905",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905.rbn-00014906": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905.rbn-00014906",
+      "kind": "command_button",
+      "name": "3D DWF",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.rbn-00014840.rbn-00014904.rbn-00014905",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014906"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014906",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D DWF",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "3D",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1696",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D DWF",
+        "official": "3DDWF",
+        "aliases": [
+          "3DDWF",
+          "MM_1696"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DDWF_BTN",
+        "largeResource": "RCDATA_32_3DDWF_BTN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DDWF",
+        "macro": "^C^C_3DDWF",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Launches 3D DWF Publish Interface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DDWF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.id-rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d.id-rbn-0047",
+      "kind": "panel_break",
+      "name": "ID_RBN_0047",
+      "parentId": "autocad.window.main.ribbon.tab.id-taboutput3d.id-panelexportpdfdwf3d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0047"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0047",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

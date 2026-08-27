@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-solidmodeling-panel-boolean",
+  "generatedAt": "2026-08-25T21:52:30.8724778Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SolidModeling",
+    "tabName": "Solid",
+    "panelUid": "RBNU_2126",
+    "panelName": "Boolean",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "kind": "tab",
+      "name": "Solid",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SolidModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SolidModeling",
+        "text": "Solid",
+        "keyTip": "SO",
+        "alias": null,
+        "officialName": "Solid Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+      "kind": "panel",
+      "name": "Boolean",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2129"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2126"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2126",
+        "text": "Boolean",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Solid Modeling - Boolean",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128",
+      "kind": "layout_row",
+      "name": "RBNU_2128",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2185",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2186",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2187"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2128"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2128",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2185": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2185",
+      "kind": "command_button",
+      "name": "Union",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2185"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2185",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Union",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Union",
+        "aliases": [
+          "UNION",
+          "ID_Union"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNION",
+        "largeResource": "RCDATA_32_UNION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UNION",
+        "macro": "^C^C_union",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by addition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UNION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2186": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2186",
+      "kind": "command_button",
+      "name": "Subtract",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2186"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2186",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Subtract",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Subtract",
+        "aliases": [
+          "SUBTRACT",
+          "ID_Subtract"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SUBTRA",
+        "largeResource": "RCDATA_32_SUBTRA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SUBTRACT",
+        "macro": "^C^C_subtract",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by subtraction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SUBTRACT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2187": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128.rbnu-2187",
+      "kind": "command_button",
+      "name": "Intersect",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2128",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2187"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2187",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "IN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Intersect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Intersect",
+        "aliases": [
+          "INTERSECT",
+          "ID_Intersect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERSECTION",
+        "largeResource": "RCDATA_32_INTERSECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERSECT",
+        "macro": "^C^C_intersect",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or 2D region from selected overlapping solids or regions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERSECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2129": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126.rbnu-2129",
+      "kind": "panel_break",
+      "name": "RBNU_2129",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2129"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2129",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

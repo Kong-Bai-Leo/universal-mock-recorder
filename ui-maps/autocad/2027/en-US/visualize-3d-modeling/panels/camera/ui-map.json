@@ -1,0 +1,484 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabrender-panel-camera",
+  "generatedAt": "2026-08-25T21:52:34.5434845Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabRender",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelCameras",
+    "panelName": "Camera",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabRender"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabRender",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": "ID_TabRender",
+        "officialName": "Visualize"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "kind": "panel",
+      "name": "Camera",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.id-rbnpnl-8974"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCameras"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 160
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCameras",
+        "text": "Camera",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Render - Camera",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533",
+      "kind": "layout_row",
+      "name": "RBN_00016533",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533.rbn-00016535"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016533"
+      },
+      "placement": {
+        "region": "main",
+        "order": 161
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016533",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533.rbn-00016535": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533.rbn-00016535",
+      "kind": "command_button",
+      "name": "Create Camera",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-00016533",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016535"
+      },
+      "placement": {
+        "region": "main",
+        "order": 162
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016535",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Create Camera",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Camera",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Create Camera",
+        "official": "Create Camera",
+        "aliases": [
+          "CAMERA",
+          "ID_Camera"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CAMERA",
+        "largeResource": "RCDATA_32_CAMERA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CAMERA",
+        "macro": "^C^C_camera",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a camera object in model space",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CAMERA command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943",
+      "kind": "layout_row",
+      "name": "RBN_01737943",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943.rbn-00016537"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737943"
+      },
+      "placement": {
+        "region": "main",
+        "order": 163
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737943",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943.rbn-00016537": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943.rbn-00016537",
+      "kind": "toggle_button",
+      "name": "Show \rCameras",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737943",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016537"
+      },
+      "placement": {
+        "region": "main",
+        "order": 164
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016537",
+        "controlId": "AcCameraCommandToggleButton",
+        "text": "Show \rCameras",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show \rCameras",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Show \rCameras.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944",
+      "kind": "layout_row",
+      "name": "RBN_01737944",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944.rbn-01737945"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737944"
+      },
+      "placement": {
+        "region": "main",
+        "order": 165
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737944",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944.rbn-01737945": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944.rbn-01737945",
+      "kind": "ribbon_control",
+      "name": "Ribbon Control - Empty Row Aligner",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.rbn-01737944",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737945"
+      },
+      "placement": {
+        "region": "main",
+        "order": 166
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737945",
+        "controlId": "AcRibbonEmptyRowAligner",
+        "text": "Ribbon Control - Empty Row Aligner",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Control - Empty Row Aligner.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.id-rbnpnl-8974": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras.id-rbnpnl-8974",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8974",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8974"
+      },
+      "placement": {
+        "region": "main",
+        "order": 167
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8974",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,1791 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabparametric-panel-geometric",
+  "generatedAt": "2026-08-25T21:52:22.1975036Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabParametric",
+    "tabName": "Parametric",
+    "panelUid": "ID_PanelParametricGeometricConstraints",
+    "panelName": "Geometric",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "kind": "tab",
+      "name": "Parametric",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabParametric"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabParametric",
+        "text": "Parametric",
+        "keyTip": "PA",
+        "alias": "ID_TabParametric",
+        "officialName": "Parametric"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+      "kind": "panel",
+      "name": "Geometric",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0104",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0069"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelParametricGeometricConstraints"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelParametricGeometricConstraints",
+        "text": "Geometric",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Parametric - Geometric",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0104": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0104",
+      "kind": "dialog_launcher",
+      "name": "Constraint Settings, Geometric",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0104"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0104",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "CG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ConstraintSettingsGeometricTab",
+        "commandId": "ID_ConstraintSettingsGeometricTab",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Constraint Settings, Geometric",
+        "aliases": [
+          "CONSTRAINTSETTINGS",
+          "ID_ConstraintSettingsGeometricTab"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONSTRAINTSETTINGS",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C_+CONSTRAINTSETTINGS 0,^C^C_+CONSTRAINTSETTINGS)",
+        "macroType": "Any",
+        "commandId": "ID_ConstraintSettingsGeometricTab",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens the Constraint Settings dialog to the Geometric tab.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONSTRAINTSETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+      "kind": "layout_row",
+      "name": "RBNU_1688",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1663",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1680",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1688"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1688",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1663": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1663",
+      "kind": "command_button",
+      "name": "Auto\rConstrain",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1663"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1663",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Auto\rConstrain",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_AutoConstrain",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Auto\rConstrain",
+        "official": "AutoConstrain",
+        "aliases": [
+          "AUTOCONSTRAIN",
+          "MM_AutoConstrain"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_AUTOCONSTRAIN_16",
+        "largeResource": "RCDATA_32_AUTOCONSTRAIN_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AUTOCONSTRAIN",
+        "macro": "^C^C_AutoConstrain",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Applies multiple geometric constraints to the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AUTOCONSTRAIN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679",
+      "kind": "layout_group",
+      "name": "RBNU_1679",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1679"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1679",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+      "kind": "layout_row",
+      "name": "RBNU_1668",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1664",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1665",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1666",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1667"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1668"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1668",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1664": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1664",
+      "kind": "command_button",
+      "name": "Coincident",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1664"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1664",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Coincident",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Coincident",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Coincident",
+        "official": "Geometric Constraint, Coincident",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Coincident"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COINCIDENT_16",
+        "largeResource": "RCDATA_32_COINCIDENT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcCoincident",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two points to coincide, or a point to lie anywhere on an object or the extension of an object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1665": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1665",
+      "kind": "command_button",
+      "name": "Collinear",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1665"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1665",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Collinear",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Colinear",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Collinear",
+        "official": "Geometric Constraint, Collinear",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Colinear"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COLINEAR_16",
+        "largeResource": "RCDATA_32_COLINEAR_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcCollinear",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two lines to lie on the same infinite line",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1666": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1666",
+      "kind": "command_button",
+      "name": "Concentric",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1666"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1666",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Concentric",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Concentric",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Concentric",
+        "official": "Geometric Constraint, Concentric",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Concentric"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COCENTERIC_16",
+        "largeResource": "RCDATA_32_COCENTERIC_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcConcentric",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains selected circles, arcs, or ellipses to maintain the same center point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1667": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668.rbnu-1667",
+      "kind": "command_button",
+      "name": "Fix",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1668",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1667"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1667",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Fix",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "FI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Fix",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Fix",
+        "official": "Geometric Constraint, Fix",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Fix"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FIX_16",
+        "largeResource": "RCDATA_32_FIX_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcFix",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains a point or a curve to a fixed location and orientation relative to the World Coordinate System",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+      "kind": "layout_row",
+      "name": "RBNU_1673",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1669",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1670",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1671",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1672"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1673"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1673",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1669": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1669",
+      "kind": "command_button",
+      "name": "Parallel",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1669"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1669",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Parallel",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Parallel",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Parallel",
+        "official": "Geometric Constraint, Parallel",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Parallel"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PARALLEL_16",
+        "largeResource": "RCDATA_32_PARALLEL_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcParallel",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two lines to maintain the same angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1670": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1670",
+      "kind": "command_button",
+      "name": "Perpendicular",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1670"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1670",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Perpendicular",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Perpendicular",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Perpendicular",
+        "official": "Geometric Constraint, Perpendicular",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Perpendicular"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PERPENDICULAR_16",
+        "largeResource": "RCDATA_32_PERPENDICULAR_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcPerpendicular",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two lines, or polyline segments to maintain a 90-degree angle to each another",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1671": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1671",
+      "kind": "command_button",
+      "name": "Horizontal",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1671"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1671",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Horizontal",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Horizontal",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Horizontal",
+        "official": "Geometric Constraint, Horizontal",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Horizontal"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HORIZONTAL_16",
+        "largeResource": "RCDATA_32_HORIZONTAL_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcHorizontal",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains a line or pairs of points to lie parallel to the X-axis of the current UCS",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1672": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673.rbnu-1672",
+      "kind": "command_button",
+      "name": "Vertical",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1673",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1672"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1672",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Vertical",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "VE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Vertical",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Vertical",
+        "official": "Geometric Constraint, Vertical",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Vertical"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VERTICAL_16",
+        "largeResource": "RCDATA_32_VERTICAL_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcVertical",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains lines or pairs of points to lie parallel to the Y-axis of the current UCS",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678",
+      "kind": "layout_row",
+      "name": "RBNU_1678",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1674",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1675",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1676",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1677"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1678"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1678",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1674": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1674",
+      "kind": "command_button",
+      "name": "Tangent",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1674"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1674",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tangent",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Tangent",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tangent",
+        "official": "Geometric Constraint, Tangent",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Tangent"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TANGENT_16",
+        "largeResource": "RCDATA_32_TANGENT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcTangent",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two curves to maintain a point of tangency to each other or their extensions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1675": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1675",
+      "kind": "command_button",
+      "name": "Smooth",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1675"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1675",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Smooth",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Geomconstraint_smooth",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Smooth",
+        "official": "Geometric Constraint, Smooth",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_Geomconstraint_smooth"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SMOOTH_16",
+        "largeResource": "RCDATA_32_SMOOTH_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcSmooth",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains a spline to be contiguous and maintain G2 continuity with another spline, line, arc, or polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1676": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1676",
+      "kind": "command_button",
+      "name": "Symmetric",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1676"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1676",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Symmetric",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Symmetric",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Symmetric",
+        "official": "Geometric Constraint, Symmetric",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Symmetric"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SYMMETRIC_16",
+        "largeResource": "RCDATA_32_SYMMETRIC_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcSymmetric",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two curves or points on objects to maintain symmetry about a selected line",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1677": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678.rbnu-1677",
+      "kind": "command_button",
+      "name": "Equal",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1679.rbnu-1678",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1677"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1677",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Equal",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EQ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_GeomConstraint_Equal",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Equal",
+        "official": "Geometric Constraint, Equal",
+        "aliases": [
+          "GEOMCONSTRAINT",
+          "MM_GeomConstraint_Equal"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EQUAL_16",
+        "largeResource": "RCDATA_32_EQUAL_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMCONSTRAINT",
+        "macro": "^C^C_GcEqual",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains two lines or polyline segments to maintain equal lengths, or arcs and circles to maintain equal radius values",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1680": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1680",
+      "kind": "separator",
+      "name": "RBNU_1680",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1680"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1680",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687",
+      "kind": "layout_group",
+      "name": "RBNU_1687",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1687"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1687",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682",
+      "kind": "layout_row",
+      "name": "RBNU_1682",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682.rbnu-1795"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1682"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1682",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682.rbnu-1795": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682.rbnu-1795",
+      "kind": "command_button",
+      "name": "Show/Hide",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1682",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1795"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1795",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show/Hide",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_SelectObject",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show/Hide",
+        "official": "Show Geometric Constraints",
+        "aliases": [
+          "CONSTRAINTBAR",
+          "MM_SelectObject"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHOWCONSTRAINTBAR_16",
+        "largeResource": "RCDATA_32_SHOWCONSTRAINTBAR_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONSTRAINTBAR",
+        "macro": "^C^C_ConstraintBar",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays or hides geometric constraints for selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONSTRAINTBAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684",
+      "kind": "layout_row",
+      "name": "RBNU_1684",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684.rbnu-1681"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1684"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1684",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684.rbnu-1681": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684.rbnu-1681",
+      "kind": "command_button",
+      "name": "Show All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1684",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1681"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1681",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show All",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Show_All",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show All",
+        "official": "Show All Geometric Constraints",
+        "aliases": [
+          "CONSTRAINTBAR",
+          "MM_Show_All"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHOWALLCONSTRAINTBAR_16",
+        "largeResource": "RCDATA_32_SHOWALLCONSTRAINTBAR_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONSTRAINTBAR",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C^Q_ConstraintBar _Showall,^C^C^Q_ConstraintBar)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays all geometric constraints in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONSTRAINTBAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686",
+      "kind": "layout_row",
+      "name": "RBNU_1686",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686.rbnu-1683"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1686"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1686",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686.rbnu-1683": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686.rbnu-1683",
+      "kind": "command_button",
+      "name": "Hide All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.rbnu-1688.rbnu-1687.rbnu-1686",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1683"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1683",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hide All",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "HA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Hide_All",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hide All",
+        "official": "Hide All Geometric Constraints",
+        "aliases": [
+          "CONSTRAINTBAR",
+          "MM_Hide_All"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HIDEALLCONSTRAINTBAR_16",
+        "largeResource": "RCDATA_32_HIDEALLCONSTRAINTBAR_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONSTRAINTBAR",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C^Q_ConstraintBar _Hideall,^C^C^Q_ConstraintBar)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Hides all geometric constraints in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONSTRAINTBAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0069": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints.id-rbn-0069",
+      "kind": "panel_break",
+      "name": "ID_RBN_0069",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0069"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0069",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:24:00Z",
+    "observedControlCount": 27,
+    "evidence": "../../live-observation.json"
+  }
+}

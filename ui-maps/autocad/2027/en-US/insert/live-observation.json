@@ -1,0 +1,28 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:20:00Z",
+  "lastExpandedMenuCheckAt": "2026-08-25T19:15:39.1680573Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Insert", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 28,
+  "observedControlIds": [
+    "AcInsertGalleryControl", "ID_RBN_SPLITBTN_INSERT_DETECT_0001", "ID_RBN_SPLITBTN_ATTRIBUTE_0001",
+    "AcATTMODEDataBoundDropDown", "ID_BReplace", "ID_RBN_SPLITBTN_CREATEBLOCK", "ID_Attdef", "ID_BattMan",
+    "ID_Bedit", "ID_ATTACH", "ID_CLIP", "ID_ADJUST", "ID_ULAYERS", "AcFrameDataBoundDropDown",
+    "AcUOSNAPDataBoundDropDown", "ID_SplitButton_InsertImport", "ID_INSERT_PDFSHXTEXT",
+    "ID_INSERT_PDFSHXTEXT_SETTINGS", "ID_INSERT_TXT2MTXT", "ID_Field", "ID_UpdField", "ID_Insertobj",
+    "ID_Hyperlink", "ID_DataLinkMgr", "ID_UpdateDataLinksAll", "ID_WriteDataLinks", "ID_EAttExt", "RBN_200_A455E"
+  ],
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabInsert", "action": "select_tab", "result": "Insert tab opened and all seven visible panels were read from the accessibility tree." },
+    { "controlId": "ID_RBN_SPLITBTN_INSERT_DETECT_0001", "action": "open_dropdown", "result": "Displayed Detect and Convert and Search and Convert." },
+    { "controlId": "ID_RBN_SPLITBTN_ATTRIBUTE_0001", "action": "open_dropdown", "result": "Displayed Single and Multiple attribute editing choices." },
+    { "controlId": "ID_RBN_SPLITBTN_CREATEBLOCK", "action": "open_dropdown", "result": "Displayed Create Block and Write Block; the live accessibility tree exposed ID_Bmake and ID_WBLOCK." },
+    { "controlId": "ID_SplitButton_InsertImport", "action": "open_dropdown", "result": "Displayed PDF Import, DGN Import, and Import." },
+    { "controlId": "RBN_200_A455E", "action": "open_dropdown", "result": "Displayed From Esri Maps, From Bing Maps, and From File." }
+  ],
+  "notes": [
+    "All controls visible on the Insert Ribbon at the observed viewport were matched by stable Autodesk control IDs.",
+    "Every split or dropdown-only control on the Insert tab was expanded in the live AutoCAD window and closed without invoking a command."
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-refedittab-panel-edit-reference",
+  "generatedAt": "2026-08-25T21:53:11.7757638Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_RefEditTab",
+    "tabName": "Edit Reference",
+    "panelUid": "ID_PanelReferencePanel",
+    "panelName": "Edit Reference",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-refedittab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab",
+      "kind": "tab",
+      "name": "Edit Reference",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RefEditTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RefEditTab",
+        "text": "Edit Reference",
+        "keyTip": "ER",
+        "alias": null,
+        "officialName": "Edit Reference Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel",
+      "kind": "panel",
+      "name": "Edit Reference",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-0053"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelReferencePanel"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelReferencePanel",
+        "text": "Edit Reference",
+        "keyTip": null,
+        "alias": "ID_ReferencePanel",
+        "officialName": "Reference Edit - Edit Reference",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0246",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refsave",
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refdscrd",
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.rbn-00016468",
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refadd",
+        "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refremove"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0246"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0246",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refsave": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refsave",
+      "kind": "command_button",
+      "name": "Save\rChanges",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REFSAVE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REFSAVE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Save\rChanges",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefSave",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Save\rChanges",
+        "official": "Xref and Block, Save Reference Edits",
+        "aliases": [
+          "REFCLOSE",
+          "ID_RefSave"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_SAVE",
+        "largeResource": "RCDATA_32_REFED_SAVE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFCLOSE",
+        "macro": "$M=$(if,$(eq,$(getvar,refeditname),\"\"),^C^C^P(ai_refedit_alert)^P,^C^C_refclose _sav)",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves REFEDIT working set changes",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFCLOSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refdscrd": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refdscrd",
+      "kind": "command_button",
+      "name": "Discard\rChanges",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REFDSCRD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REFDSCRD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Discard\rChanges",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefDscrd",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Discard\rChanges",
+        "official": "Xref and Block, Close Reference",
+        "aliases": [
+          "REFCLOSE",
+          "ID_RefDscrd"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_DISC",
+        "largeResource": "RCDATA_32_REFED_DISC",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFCLOSE",
+        "macro": "$M=$(if,$(eq,$(getvar,refeditname),\"\"),^C^C^P(ai_refedit_alert)^P,^C^C_refclose _disc)",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Discards REFEDIT working set changes",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFCLOSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.rbn-00016468": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.rbn-00016468",
+      "kind": "separator",
+      "name": "RBN_00016468",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016468"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016468",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refadd": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refadd",
+      "kind": "command_button",
+      "name": "Add to\rWorking Set",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REFADD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REFADD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add to\rWorking Set",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefAdd",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add to\rWorking Set",
+        "official": "Xref and Block, Add to Working set",
+        "aliases": [
+          "REFSET",
+          "ID_RefAdd"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_ADD",
+        "largeResource": "RCDATA_32_REFED_ADD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFSET",
+        "macro": "$M=$(if,$(eq,$(getvar,refeditname),\"\"),^C^C^P(ai_refedit_alert);^P,$(if,$(and,$(=,$(getvar,tilemode),0),$(=,$(getvar,cvport),1)),^C^C_refset;,^C^C_refset _add;))^Z",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Transfers objects from the host drawing to the REFEDIT working set",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refremove": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246.id-rbn-cmdbtn-refremove",
+      "kind": "command_button",
+      "name": "Remove from\rWorking Set",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-row-0246",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REFREMOVE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REFREMOVE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Remove from\rWorking Set",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefRemove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove from\rWorking Set",
+        "official": "Xref and Block, Remove from Working set",
+        "aliases": [
+          "REFSET",
+          "ID_RefRemove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_RMV",
+        "largeResource": "RCDATA_32_REFED_RMV",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFSET",
+        "macro": "$M=$(if,$(eq,$(getvar,refeditname),\"\"),^C^C^P(ai_refedit_alert);^P,$(if,$(and,$(=,$(getvar,tilemode),0),$(=,$(getvar,cvport),1)),^C^C_refset;,^C^C_refset _rem;))^Z",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Transfers objects from the REFEDIT working set to the host drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-0053": {
+      "id": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel.id-rbn-0053",
+      "kind": "panel_break",
+      "name": "ID_RBN_0053",
+      "parentId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0053"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0053",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

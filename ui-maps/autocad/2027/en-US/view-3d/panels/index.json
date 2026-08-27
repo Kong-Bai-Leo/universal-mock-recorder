@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabView3D",
+  "tabName": "View",
+  "panelCount": 7,
+  "panels": [
+    {
+      "name": "Viewport Tools",
+      "uid": "RBN_200_14623",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-14623",
+      "map": "viewport-tools/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 4
+    },
+    {
+      "name": "Named Views",
+      "uid": "ID_PanelNamedViews2",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2",
+      "map": "named-views/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 3
+    },
+    {
+      "name": "Palettes",
+      "uid": "RBN_200_97B23",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+      "map": "palettes/ui-map.json",
+      "nodes": 41,
+      "actionableControls": 20
+    },
+    {
+      "name": "Interface",
+      "uid": "ID_PanelWindow",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+      "map": "interface/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 7
+    },
+    {
+      "name": "Navigate",
+      "uid": "ID_PanelViewNavigate3D",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelviewnavigate3d",
+      "map": "navigate/ui-map.json",
+      "nodes": 47,
+      "actionableControls": 28
+    },
+    {
+      "name": "Review",
+      "uid": "RBN_231_E07B6",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-231-e07b6",
+      "map": "review/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "History",
+      "uid": "RBN_231_D4737",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-231-d4737",
+      "map": "history/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

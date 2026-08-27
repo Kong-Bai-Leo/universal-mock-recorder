@@ -1,0 +1,2488 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows"
+  },
+  "source": {
+    "type": "autodesk_installed_cuix",
+    "file": "acad.CUIX",
+    "entry": "WorkspaceRoot.cui"
+  },
+  "defaultWorkspaceId": "WS_Anno2DDraft",
+  "totals": {
+    "workspaces": 3,
+    "coreVisibleRibbonTabReferences": 30,
+    "palettes": 1
+  },
+  "workspaces": [
+    {
+      "id": "WS_Anno2DDraft",
+      "name": "Drafting & Annotation",
+      "default": true,
+      "uiState": {
+        "menuBar": "off",
+        "statusBar": "ApplicationOnly",
+        "navigationBar": "on",
+        "layoutModelTabs": "on"
+      },
+      "ribbonTabs": [
+        {
+          "tabId": "ID_TabHome",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabInsert",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0008",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabAnnotate",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0015",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabParametric",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0011",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TAB_3D_TOOLS",
+          "menuGroup": "ACAD",
+          "shown": false,
+          "active": false,
+          "sourceUid": "WSR_0829",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabRender",
+          "menuGroup": "ACAD",
+          "shown": false,
+          "active": false,
+          "sourceUid": "WSR_0067",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabView",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_231_B4C1E",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabManage",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0022",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabOutput",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0036",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_00012112",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0814",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabCollaborate",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_Anno2DDraft_TabCollaborate",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabAutomation",
+          "menuGroup": "ACAD",
+          "shown": false,
+          "active": false,
+          "sourceUid": "ID_WSR_Anno2DDraft_TabAutomation",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_0047",
+          "menuGroup": "EXPRESS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_FF1E8",
+          "includedInCore": false
+        },
+        {
+          "tabId": "RBN_190_37149",
+          "menuGroup": "FEATUREDAPPS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_7156E",
+          "includedInCore": false
+        }
+      ],
+      "ribbonPanels": [
+        {
+          "panelId": "ID_PanelDraw",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0001"
+        },
+        {
+          "panelId": "ID_PanelModify",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0002"
+        },
+        {
+          "panelId": "ID_PanelBasicAnnotation",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0003"
+        },
+        {
+          "panelId": "ID_PanelLayers",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0004"
+        },
+        {
+          "panelId": "ID_PanelHome_Blocks",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0005"
+        },
+        {
+          "panelId": "ID_PanelStandard_Properties",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0006"
+        },
+        {
+          "panelId": "ID_PanelGroup",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0030"
+        },
+        {
+          "panelId": "ID_PanelStandard_Clipboard",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0007"
+        },
+        {
+          "panelId": "RBN_00011049",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0079"
+        },
+        {
+          "panelId": "MODELDOC.RBN_200_F691F",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "WSRU_260_F1186"
+        },
+        {
+          "panelId": "ID_PanelInsert_Block",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0009"
+        },
+        {
+          "panelId": "ID_PanelAttributes",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0010"
+        },
+        {
+          "panelId": "ID_PanelInsert_Reference",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0011"
+        },
+        {
+          "panelId": "ID_PanelInsert_Import",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0012"
+        },
+        {
+          "panelId": "ID_PanelInsert_Data",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0013"
+        },
+        {
+          "panelId": "ID_PanelInsert_DataLink",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0014"
+        },
+        {
+          "panelId": "ID_Panel_Set_GeoLocation",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_FDB01"
+        },
+        {
+          "panelId": "ID_PanelText",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0016"
+        },
+        {
+          "panelId": "ID_PanelDimensions",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0017"
+        },
+        {
+          "panelId": "ID_PanelCenterlines",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0032"
+        },
+        {
+          "panelId": "ID_PanelMultileaders",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0018"
+        },
+        {
+          "panelId": "ID_PanelTables",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0019"
+        },
+        {
+          "panelId": "ID_PanelMarkup",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0020"
+        },
+        {
+          "panelId": "ID_PanelAnnotationScaling",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0021"
+        },
+        {
+          "panelId": "ID_PanelParametricGeometricConstraints",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0027"
+        },
+        {
+          "panelId": "ID_PanelParametricDimensionalConstraints",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0029"
+        },
+        {
+          "panelId": "ID_PanelParametricManage",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0031"
+        },
+        {
+          "panelId": "ID_PANEL_3DTOOLS_MODELING",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0159"
+        },
+        {
+          "panelId": "ID_PANEL_3DTOOLS_SOLID_EDITING",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0160"
+        },
+        {
+          "panelId": "ID_PANEL_3DTOOLS_SURFACES",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0161"
+        },
+        {
+          "panelId": "ID_PANEL_3DTOOLS_MESH",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0162"
+        },
+        {
+          "panelId": "ID_PanelSection",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0163"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelSelection",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0164"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelCoordinates",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0165"
+        },
+        {
+          "panelId": "ID_PanelLights",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0166"
+        },
+        {
+          "panelId": "ID_PanelSun",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0167"
+        },
+        {
+          "panelId": "ID_PanelMaterials",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0168"
+        },
+        {
+          "panelId": "ID_PanelCameras",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0169"
+        },
+        {
+          "panelId": "ID_PanelMotionPathAnimation",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0170"
+        },
+        {
+          "panelId": "ID_PanelRender",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0171"
+        },
+        {
+          "panelId": "RBN_200_14623",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_F9076"
+        },
+        {
+          "panelId": "ID_PanelNamedViews2",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_01D99"
+        },
+        {
+          "panelId": "ID_PanelVisualStyles",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_7527D"
+        },
+        {
+          "panelId": "ID_PanelViewports",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_EF1C4"
+        },
+        {
+          "panelId": "ID_PanelCoord",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_B7273"
+        },
+        {
+          "panelId": "RBN_231_E07B6",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_1259B"
+        },
+        {
+          "panelId": "RBN_231_D4737",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_1259C"
+        },
+        {
+          "panelId": "ID_PanelPalettes",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_F6ACA"
+        },
+        {
+          "panelId": "ID_PanelWindow",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_C17BC"
+        },
+        {
+          "panelId": "ID_PanelViewNavigate2D",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_75553"
+        },
+        {
+          "panelId": "ID_PanelActionRecorder",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0028"
+        },
+        {
+          "panelId": "ID_PanelCustomization",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0033"
+        },
+        {
+          "panelId": "ID_PanelScriptsAndMacros",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0034"
+        },
+        {
+          "panelId": "ID_PanelCADStandards",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0035"
+        },
+        {
+          "panelId": "ID_PanelPlot",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0037"
+        },
+        {
+          "panelId": "ID_PanelExportPDFDWF2D",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0039"
+        },
+        {
+          "panelId": "APPMANAGER.RBN_190_B55E9",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "WSRU_260_BAE8B"
+        },
+        {
+          "panelId": "ID_PanelSharedViews",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_210_SHAREVIEW"
+        },
+        {
+          "panelId": "ID_PanelPlanGrid",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_210_PLANGRID"
+        },
+        {
+          "panelId": "ID_PanelTrace",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_210_TRACE"
+        },
+        {
+          "panelId": "ID_PanelMacroAdvisor",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_MACRO_ADVISOR"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0001",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_945CF"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0022",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_9F07F"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0041",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_E2A6E"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0051",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_2A061"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0065",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_09CE6"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0072",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_6EF5D"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0100",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_468FA"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0113",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_DE55A"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_FBEAE",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_436ED"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_0AB71",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_39C79"
+        }
+      ],
+      "classicMenus": [
+        {
+          "menuId": "ID_MnFile",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnEdit",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnView",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnInsert",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnFormat",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnTools",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDraw",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDimensi",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnModify",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnParametric",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnWindow",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnHelp",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MNEXPRESS",
+          "menuGroup": "EXPRESS",
+          "includedInCore": false,
+          "displayedWhenMenuBarEnabled": true
+        }
+      ],
+      "palettes": [
+        {
+          "id": "WSE_0125",
+          "name": "Lights in Model",
+          "command": "LIGHTLIST",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0127",
+          "name": "External References",
+          "command": "EXTERNALREFERENCES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0128",
+          "name": "Sun Properties",
+          "command": "SUNPROPERTIES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0130",
+          "name": "Visual Styles Manager",
+          "command": "VISUALSTYLES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0131",
+          "name": "Properties",
+          "command": "PROPERTIES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0132",
+          "name": "Advanced Render Settings",
+          "command": "RPREF",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0133",
+          "name": "Markup Set Manager",
+          "command": "MARKUP",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0134",
+          "name": "Quick Calc",
+          "command": "QUICKCALC",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0135",
+          "name": "Tool Palette",
+          "command": "TOOLPALETTES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0136",
+          "name": "Design Center",
+          "command": "ADCENTER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0137",
+          "name": "dbConnect Manager",
+          "command": "DBCONNECT",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0138",
+          "name": "SheetSet Manager",
+          "command": "SHEETSET",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0139",
+          "name": "Command Line",
+          "command": "COMMANDLINE",
+          "displayed": true,
+          "dockState": "docked",
+          "orientation": "bottom"
+        },
+        {
+          "id": "WSE_0143",
+          "name": "Ribbon",
+          "command": "RIBBON",
+          "displayed": true,
+          "dockState": "docked",
+          "orientation": "top"
+        },
+        {
+          "id": "WSE_0150",
+          "name": "Layer Properties Manager",
+          "command": "LAYER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0152",
+          "name": "Material Browser",
+          "command": "MATBROWSEROPEN",
+          "displayed": false,
+          "dockState": "docked",
+          "orientation": "right"
+        },
+        {
+          "id": "WSE_0156",
+          "name": "Material Editor",
+          "command": "MATEDITOROPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "left"
+        },
+        {
+          "id": "WSE_0160",
+          "name": "Design Feed",
+          "command": "DESIGNFEEDOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "right"
+        },
+        {
+          "id": "WSE_0161",
+          "name": "Blocks",
+          "command": "BLOCKSPALETTE",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_12102021",
+          "name": "Command Macros",
+          "command": "COMMANDMACROS",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252022",
+          "name": "Activity Insights",
+          "command": "ACTIVITYINSIGHTSOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252023",
+          "name": "Activity Insights StartPage",
+          "command": "ACTIVITYINSIGHTSSTARTPAGEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252024",
+          "name": "Trace Palette",
+          "command": "TRACEPALETTEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252025",
+          "name": "Autodesk Assistant",
+          "command": "ASSISTANTOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252026",
+          "name": "Push to Forma Data Management",
+          "command": "PUSHTOFORMAOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252027",
+          "name": "PerfAnalyzer",
+          "command": "PERFANALYZER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252028",
+          "name": "Geometry Cleanup",
+          "command": "GEOMETRYCLEANUPOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        }
+      ],
+      "quickAccessToolbar": {
+        "id": "QAT_TOOLBAR1",
+        "orientation": "Above"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "evidence": [
+          "autodesk_installed_acad_cuix"
+        ]
+      }
+    },
+    {
+      "id": "WS_3DModeling",
+      "name": "3D Modeling",
+      "default": false,
+      "uiState": {
+        "menuBar": "off",
+        "statusBar": "ApplicationOnly",
+        "navigationBar": "on",
+        "layoutModelTabs": "on"
+      },
+      "ribbonTabs": [
+        {
+          "tabId": "ID_TabHome3D",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0015",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_SolidModeling",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0812",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_SurfaceTab",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_00813",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabMeshModeling",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0016",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabRender",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0010",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabParametric",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0186",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabInsert",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0067",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabAnnotate",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0074",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabView3D",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_231_910F5",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabManage",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0081",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabOutput3D",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_0089",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_00012112",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0815",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabCollaborate",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_3DModeling_TabCollaborate",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabAutomation",
+          "menuGroup": "ACAD",
+          "shown": false,
+          "active": false,
+          "sourceUid": "ID_WSR_3DModeling_TabAutomation",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_0047",
+          "menuGroup": "EXPRESS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_182D9",
+          "includedInCore": false
+        },
+        {
+          "tabId": "RBN_190_37149",
+          "menuGroup": "FEATUREDAPPS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_5305B",
+          "includedInCore": false
+        }
+      ],
+      "ribbonPanels": [
+        {
+          "panelId": "ID_Panel3D_Modeling",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0040"
+        },
+        {
+          "panelId": "ID_PanelMeshHome",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0041"
+        },
+        {
+          "panelId": "ID_PanelSolidEdit",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0042"
+        },
+        {
+          "panelId": "ID_PanelDraw3D",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0043"
+        },
+        {
+          "panelId": "ID_PanelModify3D",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0044"
+        },
+        {
+          "panelId": "ID_PanelSection",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0045"
+        },
+        {
+          "panelId": "ID_PanelCoord",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0746"
+        },
+        {
+          "panelId": "ID_PanelView3DHome",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0046"
+        },
+        {
+          "panelId": "ID_PanelSubObject",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0047"
+        },
+        {
+          "panelId": "ID_PanelLayers",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0048"
+        },
+        {
+          "panelId": "ID_PanelGroup",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0377"
+        },
+        {
+          "panelId": "MODELDOC.RBN_200_F691F",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "WSRU_260_F2AF2"
+        },
+        {
+          "panelId": "ID_RBN_Surface_Creation",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0852"
+        },
+        {
+          "panelId": "ID_RBN_Surface_Edit",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0853"
+        },
+        {
+          "panelId": "ID_RBN_SURFACE_CV",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0854"
+        },
+        {
+          "panelId": "ID_RBN_SURFACE_Curves",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0855"
+        },
+        {
+          "panelId": "ID_RBN_Surface_Project",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0856"
+        },
+        {
+          "panelId": "ID_RBN_Surface_Analysis",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0857"
+        },
+        {
+          "panelId": "ID_PanelPrimitives",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0127"
+        },
+        {
+          "panelId": "ID_PanelSmoothMesh",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0128"
+        },
+        {
+          "panelId": "ID_PanelMeshEdit",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0129"
+        },
+        {
+          "panelId": "ID_PanelConvertMesh",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0076"
+        },
+        {
+          "panelId": "RBN_01737906",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0075"
+        },
+        {
+          "panelId": "ID_PanelSubObject",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0131"
+        },
+        {
+          "panelId": "ID_PanelNamedViews2",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_220_052DA"
+        },
+        {
+          "panelId": "ID_PanelCoord",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_CC1AA"
+        },
+        {
+          "panelId": "ID_PanelViewports",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_BD6AD"
+        },
+        {
+          "panelId": "ID_PanelVisualStyles",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_217C2"
+        },
+        {
+          "panelId": "ID_PanelLights",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_44AE3"
+        },
+        {
+          "panelId": "ID_PanelSun",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_4BBFE"
+        },
+        {
+          "panelId": "ID_PanelMaterials",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_D1827"
+        },
+        {
+          "panelId": "ID_PanelMotionPathAnimation",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_0EE93"
+        },
+        {
+          "panelId": "ID_PanelCameras",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_D30FC"
+        },
+        {
+          "panelId": "ID_PanelRender",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_EC442"
+        },
+        {
+          "panelId": "ID_PanelParametricGeometricConstraints",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0183"
+        },
+        {
+          "panelId": "ID_PanelParametricDimensionalConstraints",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0184"
+        },
+        {
+          "panelId": "ID_PanelParametricManage",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0185"
+        },
+        {
+          "panelId": "ID_PanelInsert_Block",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0056"
+        },
+        {
+          "panelId": "ID_PanelAttributes",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0057"
+        },
+        {
+          "panelId": "ID_PanelInsert_Reference",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0058"
+        },
+        {
+          "panelId": "ID_PanelInsert_Import",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0059"
+        },
+        {
+          "panelId": "ID_PanelInsert_Data",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0061"
+        },
+        {
+          "panelId": "ID_PanelInsert_DataLink",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0062"
+        },
+        {
+          "panelId": "ID_Panel_Set_GeoLocation",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_E3F4F"
+        },
+        {
+          "panelId": "ID_PanelText",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0063"
+        },
+        {
+          "panelId": "ID_PanelDimensions",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0064"
+        },
+        {
+          "panelId": "ID_PanelCenterlines",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0070"
+        },
+        {
+          "panelId": "ID_PanelMultileaders",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0065"
+        },
+        {
+          "panelId": "ID_PanelTables",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0066"
+        },
+        {
+          "panelId": "ID_PanelMarkup",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0068"
+        },
+        {
+          "panelId": "ID_PanelAnnotationScaling",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0069"
+        },
+        {
+          "panelId": "RBN_200_14623",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_288A7"
+        },
+        {
+          "panelId": "ID_PanelNamedViews2",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_E8FF2"
+        },
+        {
+          "panelId": "RBN_231_E07B6",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_590F1"
+        },
+        {
+          "panelId": "RBN_231_D4737",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_590F2"
+        },
+        {
+          "panelId": "RBN_200_97B23",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_273AC"
+        },
+        {
+          "panelId": "ID_PanelWindow",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_2B067"
+        },
+        {
+          "panelId": "ID_PanelViewNavigate3D",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_B80E4"
+        },
+        {
+          "panelId": "ID_PanelActionRecorder",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0077"
+        },
+        {
+          "panelId": "ID_PanelCustomization",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0082"
+        },
+        {
+          "panelId": "ID_PanelScriptsAndMacros",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0083"
+        },
+        {
+          "panelId": "ID_PanelCADStandards",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0084"
+        },
+        {
+          "panelId": "ID_PanelPlot",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0086"
+        },
+        {
+          "panelId": "ID_PanelExportPDFDWF3D",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_0080"
+        },
+        {
+          "panelId": "APPMANAGER.RBN_190_B55E9",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "WSRU_260_F6531"
+        },
+        {
+          "panelId": "ID_PanelSharedViews",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_310_SHAREVIEW"
+        },
+        {
+          "panelId": "ID_PanelPlanGrid",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_310_PLANGRID"
+        },
+        {
+          "panelId": "ID_PanelTrace",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_310_TRACE"
+        },
+        {
+          "panelId": "ID_PanelMacroAdvisor",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_3DM_MACRO_ADVISOR"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0001",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_23E51"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0022",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_11CF3"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0041",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_D5190"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0051",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_12001"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0065",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_7573C"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0072",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_37C19"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0100",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_E4761"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0113",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_E0610"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_FBEAE",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_2AADA"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_0AB71",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_1B436"
+        }
+      ],
+      "classicMenus": [
+        {
+          "menuId": "ID_MnFile",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnEdit",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnView",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnInsert",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnFormat",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnTools",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDraw",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDimensi",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnModify",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnWindow",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnHelp",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MNEXPRESS",
+          "menuGroup": "EXPRESS",
+          "includedInCore": false,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnParametric",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        }
+      ],
+      "palettes": [
+        {
+          "id": "WSE_0022",
+          "name": "Properties",
+          "command": "PROPERTIES",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0023",
+          "name": "Advanced Render Settings",
+          "command": "RPREF",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0024",
+          "name": "Markup Set Manager",
+          "command": "MARKUP",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0026",
+          "name": "Quick Calc",
+          "command": "QUICKCALC",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0027",
+          "name": "Tool Palette",
+          "command": "TOOLPALETTES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0028",
+          "name": "Design Center",
+          "command": "ADCENTER",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0029",
+          "name": "dbConnect Manager",
+          "command": "DBCONNECT",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0030",
+          "name": "SheetSet Manager",
+          "command": "SHEETSET",
+          "displayed": false,
+          "dockState": "floating",
+          "orientation": "floating"
+        },
+        {
+          "id": "WSE_0031",
+          "name": "Command Line",
+          "command": "COMMANDLINE",
+          "displayed": true,
+          "dockState": "docked",
+          "orientation": "bottom"
+        },
+        {
+          "id": "WSE_0119",
+          "name": "External References",
+          "command": "EXTERNALREFERENCES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0121",
+          "name": "Visual Styles Manager",
+          "command": "VISUALSTYLES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0140",
+          "name": "Lights in Model",
+          "command": "LIGHTLIST",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0141",
+          "name": "Sun Properties",
+          "command": "SUNPROPERTIES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0144",
+          "name": "Ribbon",
+          "command": "RIBBON",
+          "displayed": true,
+          "dockState": "docked",
+          "orientation": "top"
+        },
+        {
+          "id": "WSE_0151",
+          "name": "Layer Properties Manager",
+          "command": "LAYER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0153",
+          "name": "Material Browser",
+          "command": "MATBROWSEROPEN",
+          "displayed": false,
+          "dockState": "docked",
+          "orientation": "right"
+        },
+        {
+          "id": "WSE_0157",
+          "name": "Material Editor",
+          "command": "MATEDITOROPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "left"
+        },
+        {
+          "id": "WSE_0159",
+          "name": "Blocks",
+          "command": "BLOCKSPALETTE",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_12102021_3DM",
+          "name": "Command Macros",
+          "command": "COMMANDMACROS",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252022_3DM",
+          "name": "Activity Insights",
+          "command": "ACTIVITYINSIGHTSOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252023_3DM",
+          "name": "Activity Insights StartPage",
+          "command": "ACTIVITYINSIGHTSSTARTPAGEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252024_3DM",
+          "name": "Trace Palette",
+          "command": "TRACEPALETTEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252025_3DM",
+          "name": "Autodesk Assistant",
+          "command": "ASSISTANTOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252026_3DM",
+          "name": "Push to Forma Data Management",
+          "command": "PUSHTOFORMAOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252027_3DM",
+          "name": "PerfAnalyzer",
+          "command": "PERFANALYZER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252028_3DM",
+          "name": "Geometry Cleanup",
+          "command": "GEOMETRYCLEANUPOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        }
+      ],
+      "quickAccessToolbar": {
+        "id": "QAT_TOOLBAR1",
+        "orientation": "Above"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "evidence": [
+          "autodesk_installed_acad_cuix"
+        ]
+      }
+    },
+    {
+      "id": "WS_SM_0001",
+      "name": "3D Basics",
+      "default": false,
+      "uiState": {
+        "menuBar": "off",
+        "statusBar": "ApplicationOnly",
+        "navigationBar": "on",
+        "layoutModelTabs": "on"
+      },
+      "ribbonTabs": [
+        {
+          "tabId": "ID_3dBasics_Home",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_SM_0101",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_3dBasics_Render",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_SM_0028",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_3dBasics_Insert",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_SM_0051",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabView3D",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_231_B5401",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabManage",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_SM_0050",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabOutput3D",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_SM_0055",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_00012112",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSR_0816",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabCollaborate",
+          "menuGroup": "ACAD",
+          "shown": true,
+          "active": false,
+          "sourceUid": "ID_WSR_3DBasics_TabCollaborate",
+          "includedInCore": true
+        },
+        {
+          "tabId": "ID_TabAutomation",
+          "menuGroup": "ACAD",
+          "shown": false,
+          "active": false,
+          "sourceUid": "ID_WSR_3DBasics_TabAutomation",
+          "includedInCore": true
+        },
+        {
+          "tabId": "RBN_0047",
+          "menuGroup": "EXPRESS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_A38D3",
+          "includedInCore": false
+        },
+        {
+          "tabId": "RBN_190_37149",
+          "menuGroup": "FEATUREDAPPS",
+          "shown": true,
+          "active": false,
+          "sourceUid": "WSRU_260_F5CFE",
+          "includedInCore": false
+        }
+      ],
+      "ribbonPanels": [
+        {
+          "panelId": "ID_3dBasics_PanelCreate",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0040"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelEdit",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0041"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelDraw",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0042"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelModify",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0043"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelSelection",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0044"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelCoordinates",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0045"
+        },
+        {
+          "panelId": "ID_3dBasics_PanelLayersView",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0046"
+        },
+        {
+          "panelId": "ID_PanelSection",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0047"
+        },
+        {
+          "panelId": "ID_PanelNamedViews2",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_220_052DC"
+        },
+        {
+          "panelId": "ID_PanelCoord",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_49683"
+        },
+        {
+          "panelId": "ID_PanelVisualStyles",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_F93E8"
+        },
+        {
+          "panelId": "ID_PanelViewports",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_ABEED"
+        },
+        {
+          "panelId": "ID_PanelLights",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_460A2"
+        },
+        {
+          "panelId": "ID_PanelSun",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_57EAC"
+        },
+        {
+          "panelId": "ID_PanelMaterials",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_67328"
+        },
+        {
+          "panelId": "ID_PanelRender",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_200_B28BE"
+        },
+        {
+          "panelId": "ID_PanelInsert_Block",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0174"
+        },
+        {
+          "panelId": "ID_PanelInsert_Reference",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0175"
+        },
+        {
+          "panelId": "ID_PanelInsert_Import",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0176"
+        },
+        {
+          "panelId": "RBN_200_14623",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_23061"
+        },
+        {
+          "panelId": "ID_PanelNamedViews2",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_92FBA"
+        },
+        {
+          "panelId": "RBN_231_E07B6",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_2AB59"
+        },
+        {
+          "panelId": "RBN_231_D4737",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_2AB60"
+        },
+        {
+          "panelId": "RBN_200_97B23",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_21BD4"
+        },
+        {
+          "panelId": "ID_PanelWindow",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_A1F1E"
+        },
+        {
+          "panelId": "ID_PanelViewNavigate3D",
+          "shown": false,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_231_DD10C"
+        },
+        {
+          "panelId": "ID_PanelActionRecorder",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0169"
+        },
+        {
+          "panelId": "ID_PanelCustomization",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0171"
+        },
+        {
+          "panelId": "ID_PanelScriptsAndMacros",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0172"
+        },
+        {
+          "panelId": "ID_PanelCADStandards",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0173"
+        },
+        {
+          "panelId": "ID_PanelPlot",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0056"
+        },
+        {
+          "panelId": "ID_PanelExportPDFDWF3D",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_SM_0057"
+        },
+        {
+          "panelId": "APPMANAGER.RBN_190_B55E9",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "WSRU_260_9619C"
+        },
+        {
+          "panelId": "ID_PanelSharedViews",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_410_SHAREVIEW"
+        },
+        {
+          "panelId": "ID_PanelPlanGrid",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_410_PLANGRID"
+        },
+        {
+          "panelId": "ID_PanelTrace",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_410_TRACE"
+        },
+        {
+          "panelId": "ID_PanelMacroAdvisor",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_3DB_MACRO_ADVISOR"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0001",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_F86BA"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0022",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_535E3"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0041",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_64253"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0051",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_5E607"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0065",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_DB5F6"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0072",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_CE43C"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0100",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_65CF2"
+        },
+        {
+          "panelId": "EXPRESS.RBN_0113",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_6AAA0"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_FBEAE",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_C8E56"
+        },
+        {
+          "panelId": "FEATUREDAPPS.RBN_190_0AB71",
+          "shown": true,
+          "orientation": "Docked",
+          "sourceUid": "ID_WSR_260_09C9A"
+        }
+      ],
+      "classicMenus": [
+        {
+          "menuId": "ID_MnFile",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnEdit",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnView",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnInsert",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnFormat",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnTools",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDraw",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnDimensi",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnModify",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnWindow",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnHelp",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MNEXPRESS",
+          "menuGroup": "EXPRESS",
+          "includedInCore": false,
+          "displayedWhenMenuBarEnabled": true
+        },
+        {
+          "menuId": "ID_MnParametric",
+          "menuGroup": "ACAD",
+          "includedInCore": true,
+          "displayedWhenMenuBarEnabled": true
+        }
+      ],
+      "palettes": [
+        {
+          "id": "WSE_SM_0001",
+          "name": "Lights in Model",
+          "command": "LIGHTLIST",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0002",
+          "name": "External References",
+          "command": "EXTERNALREFERENCES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0003",
+          "name": "Sun Properties",
+          "command": "SUNPROPERTIES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0005",
+          "name": "Visual Styles Manager",
+          "command": "VISUALSTYLES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0006",
+          "name": "Properties",
+          "command": "PROPERTIES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0007",
+          "name": "Advanced Settings Dialog",
+          "command": "RPREF",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0008",
+          "name": "Markup Set Manager",
+          "command": "MARKUP",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0009",
+          "name": "Quick Calc",
+          "command": "QUICKCALC",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0010",
+          "name": "Tool Palette",
+          "command": "TOOLPALETTES",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0011",
+          "name": "Ribbon",
+          "command": "RIBBON",
+          "displayed": true,
+          "dockState": "docked",
+          "orientation": "top"
+        },
+        {
+          "id": "WSE_SM_0012",
+          "name": "Design Center",
+          "command": "ADCENTER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0013",
+          "name": "dbConnect Manager",
+          "command": "DBCONNECT",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0014",
+          "name": "SheetSet Manager",
+          "command": "SHEETSET",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0015",
+          "name": "Command Line",
+          "command": "COMMANDLINE",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_SM_0016",
+          "name": "Layer Properties Manager",
+          "command": "LAYER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_0154",
+          "name": "Material Browser",
+          "command": "MATBROWSEROPEN",
+          "displayed": false,
+          "dockState": "docked",
+          "orientation": "right"
+        },
+        {
+          "id": "WSE_0158",
+          "name": "Material Editor",
+          "command": "MATEDITOROPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "left"
+        },
+        {
+          "id": "WSE_0162",
+          "name": "Blocks",
+          "command": "BLOCKSPALETTE",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_12102021_3D",
+          "name": "Command Macros",
+          "command": "COMMANDMACROS",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252022_3D",
+          "name": "Activity Insights",
+          "command": "ACTIVITYINSIGHTSOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252023_3D",
+          "name": "Activity Insights StartPage",
+          "command": "ACTIVITYINSIGHTSSTARTPAGEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252024_3D",
+          "name": "Trace Palette",
+          "command": "TRACEPALETTEOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252025_3D",
+          "name": "Autodesk Assistant",
+          "command": "ASSISTANTOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252026_3D",
+          "name": "Push to Forma Data Management",
+          "command": "PUSHTOFORMAOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252027_3D",
+          "name": "PerfAnalyzer",
+          "command": "PERFANALYZER",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        },
+        {
+          "id": "WSE_05252028_3D",
+          "name": "Geometry Cleanup",
+          "command": "GEOMETRYCLEANUPOPEN",
+          "displayed": false,
+          "dockState": "ignore",
+          "orientation": "ignore"
+        }
+      ],
+      "quickAccessToolbar": {
+        "id": "QAT_TOOLBAR1",
+        "orientation": "Above"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "evidence": [
+          "autodesk_installed_acad_cuix"
+        ]
+      }
+    }
+  ]
+}

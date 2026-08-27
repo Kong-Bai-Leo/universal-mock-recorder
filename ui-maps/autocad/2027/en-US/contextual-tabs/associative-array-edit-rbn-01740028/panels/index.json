@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_01740028",
+  "tabName": "Associative Array Edit",
+  "panelCount": 1,
+  "panels": [
+    {
+      "name": "Edit Array",
+      "uid": "RBN_01740029",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740028.rbn-01740029",
+      "map": "edit-array/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    }
+  ]
+}

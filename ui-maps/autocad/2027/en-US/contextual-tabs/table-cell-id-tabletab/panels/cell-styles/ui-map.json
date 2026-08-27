@@ -1,0 +1,653 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabletab-panel-cell-styles",
+  "generatedAt": "2026-08-25T21:52:56.3626121Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TableTab",
+    "tabName": "Table Cell",
+    "panelUid": "ID_PanelTableCellStyles",
+    "panelName": "Cell Styles",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab",
+      "kind": "tab",
+      "name": "Table Cell",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TableTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TableTab",
+        "text": "Table Cell",
+        "keyTip": "TA",
+        "alias": null,
+        "officialName": "Table Cell Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+      "kind": "panel",
+      "name": "Cell Styles",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-0057"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTableCellStyles"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTableCellStyles",
+        "text": "Cell Styles",
+        "keyTip": null,
+        "alias": "ID_TableCellStyles",
+        "officialName": "Table Cells - Cell Styles",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0262",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-cmdbtn-cellmatch",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-splitbtn-alignment",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0262"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0262",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-cmdbtn-cellmatch": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-cmdbtn-cellmatch",
+      "kind": "command_button",
+      "name": "Match Cell",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLMATCH"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLMATCH",
+        "controlId": "AcTableCellMatchCommandButton",
+        "text": "Match Cell",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Match Cell",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Match Cell.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-splitbtn-alignment": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-splitbtn-alignment",
+      "kind": "ribbon_control",
+      "name": "Alignment",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ALIGNMENT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ALIGNMENT",
+        "controlId": "AcTableAlignmentMenu",
+        "text": "Alignment",
+        "keyTip": "AL"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Alignment.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0054",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0054"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0054",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0263",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263.id-rbn-control-cellstylecombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0263"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0263",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263.id-rbn-control-cellstylecombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263.id-rbn-control-cellstylecombo",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Cell Styles",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0263",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_CELLSTYLECOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_CELLSTYLECOMBO",
+        "controlId": "AcCellStyleCombo",
+        "text": "Ribbon Combo Box - Cell Styles",
+        "keyTip": "CS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Cell Styles.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0264",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-control-backgroundcolorcombo",
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-ribbonseparator-0106"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0264"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0264",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-control-backgroundcolorcombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-control-backgroundcolorcombo",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - Background Color",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_BACKGROUNDCOLORCOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_BACKGROUNDCOLORCOMBO",
+        "controlId": "AcBackgroundColorCombo",
+        "text": "Ribbon Combo Box - Background Color",
+        "keyTip": "BA"
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - Background Color gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - Background Color item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-ribbonseparator-0106": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264.id-rbn-ribbonseparator-0106",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0106",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.id-rbn-row-0264",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0106"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0106",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404",
+      "kind": "layout_row",
+      "name": "RBN_00016404",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404.id-rbn-cmdbtn-cellborder"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016404"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016404",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404.id-rbn-cmdbtn-cellborder": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404.id-rbn-cmdbtn-cellborder",
+      "kind": "command_button",
+      "name": "Edit Borders",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-row-0262.id-rbn-rowpanel-0054.rbn-00016404",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CELLBORDER"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CELLBORDER",
+        "controlId": "AcTableCellBorderCommandButton",
+        "text": "Edit Borders",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Borders",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Edit Borders.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-0057": {
+      "id": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles.id-rbn-0057",
+      "kind": "panel_break",
+      "name": "ID_RBN_0057",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0057"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0057",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabview3d-panel-named-views",
+  "generatedAt": "2026-08-25T21:52:24.9631008Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabView3D",
+    "tabName": "View",
+    "panelUid": "ID_PanelNamedViews2",
+    "panelName": "Named Views",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "kind": "tab",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabView3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabView3D",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_TabView3D",
+        "officialName": "View 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2",
+      "kind": "panel",
+      "name": "Named Views",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.rbn-230-9fb2f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelNamedViews2"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelNamedViews2",
+        "text": "Named Views",
+        "keyTip": null,
+        "alias": "ID_NamedViews",
+        "officialName": "View - Named Views",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_NAMED_VIEWS",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_NAMED_VIEWS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_NAMED_VIEWS",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_NAMED_VIEWS",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_NAMED_VIEWS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_NAMED_VIEWS",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c",
+      "kind": "layout_row",
+      "name": "RBN_220_DEC7C",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c.rbn-220-5e105"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_DEC7C"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_DEC7C",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c.rbn-220-5e105": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c.rbn-220-5e105",
+      "kind": "gallery",
+      "name": "Named Views",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-dec7c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_5E105"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_5E105",
+        "controlId": "AcNamedViewControl",
+        "text": "Named Views",
+        "keyTip": "NA"
+      },
+      "semantics": {
+        "description": "Displays the Named Views gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Named Views item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0",
+      "kind": "layout_row",
+      "name": "RBN_220_C3FA0",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0.rbn-220-2eca1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_C3FA0"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_C3FA0",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0.rbn-220-2eca1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0.rbn-220-2eca1",
+      "kind": "command_button",
+      "name": "New View",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-c3fa0",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_2ECA1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_2ECA1",
+        "controlId": "AcRibbonCommandButton",
+        "text": "New View",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "NV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_NEWVIEW",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "New View",
+        "official": "New View",
+        "aliases": [
+          "NEWVIEW",
+          "ID_NEWVIEW"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_NEWVIEW",
+        "largeResource": "RCDATA_32_NEWVIEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "NEWVIEW",
+        "macro": "^C^C_newview",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves a new named view from what's displayed in the current viewport, or by defining a rectangular window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 NEWVIEW command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd",
+      "kind": "layout_row",
+      "name": "RBN_220_B40FD",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd.rbn-220-9e669"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_B40FD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_B40FD",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd.rbn-220-9e669": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd.rbn-220-9e669",
+      "kind": "command_button",
+      "name": "View\rManager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.id-rbn-row-named-views.id-rbn-rowpanel-named-views.rbn-220-b40fd",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_9E669"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_9E669",
+        "controlId": "AcRibbonCommandButton",
+        "text": "View\rManager",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ddview",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "View\rManager",
+        "official": "Named Views...",
+        "aliases": [
+          "VIEW",
+          "ID_Ddview"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DDVIEW",
+        "largeResource": "RCDATA_32_DDVIEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEW",
+        "macro": "^C^C_view",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages Named Views.  Allows creating, deleting, renaming, and editing named views.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEW command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.rbn-230-9fb2f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2.rbn-230-9fb2f",
+      "kind": "panel_break",
+      "name": "RBN_230_9FB2F",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelnamedviews2",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_230_9FB2F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_230_9FB2F",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

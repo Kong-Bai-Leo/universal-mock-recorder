@@ -1,0 +1,1446 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-clipboard",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "RBN_00011049",
+    "panelName": "Clipboard",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049",
+      "kind": "panel",
+      "name": "Clipboard",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-0022"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00011049"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 372
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00011049",
+        "text": "Clipboard",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Home - Clipboard",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0295",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0295"
+      },
+      "placement": {
+        "region": "main",
+        "order": 373
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0295",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "kind": "split_button",
+      "name": "Paste",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PASTE_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 374
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_PASTE_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Paste",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PA",
+        "behavior": "SplitNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_PASTE",
+        "largeImage": "RCDATA_32_PASTE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Paste variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Paste primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PASTE_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 375
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Paste variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Paste menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PASTE_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 376
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Paste menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Paste popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Paste menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastebloc-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastehlnk-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteorig-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastesp-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_PASTE_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 377
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Paste variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteclip-0001",
+      "kind": "command_button",
+      "name": "Paste",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PASTECLIP_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 378
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PASTECLIP_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Paste",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pasteclip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Paste",
+        "official": "Paste",
+        "aliases": [
+          "PASTECLIP",
+          "ID_Pasteclip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PASTE",
+        "largeResource": "RCDATA_32_PASTE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PASTECLIP",
+        "macro": "^C^C_pasteclip",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Pastes objects from the Clipboard into the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PASTECLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastebloc-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastebloc-0001",
+      "kind": "command_button",
+      "name": "Paste as Block",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PASTEBLOC_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 379
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PASTEBLOC_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Paste as Block",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pastebloc",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Paste as Block",
+        "official": "Paste as Block",
+        "aliases": [
+          "PASTEBLOCK",
+          "ID_Pastebloc"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PASTE_BLOCK",
+        "largeResource": "RCDATA_32_PASTE_BLOCK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PASTEBLOCK",
+        "macro": "^C^C_pasteblock",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Pastes objects from the Clipboard into the current drawing as a block",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PASTEBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastehlnk-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastehlnk-0001",
+      "kind": "command_button",
+      "name": "Paste as Hyperlink",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PASTEHLNK_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 380
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PASTEHLNK_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Paste as Hyperlink",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pastehlnk",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Paste as Hyperlink",
+        "official": "Paste as Hyperlink",
+        "aliases": [
+          "PASTEASHYPERLINK",
+          "ID_Pastehlnk"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PASTE_HYPERLINK",
+        "largeResource": "RCDATA_32_PASTE_HYPERLINK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PASTEASHYPERLINK",
+        "macro": "^C^C_pasteashyperlink",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a hyperlink to a file, and associates it with a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PASTEASHYPERLINK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteorig-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pasteorig-0001",
+      "kind": "command_button",
+      "name": "Paste to Original Coordinates",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PASTEORIG_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 381
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PASTEORIG_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Paste to Original Coordinates",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pasteorig",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Paste to Original Coordinates",
+        "official": "Paste to Original Coordinates",
+        "aliases": [
+          "PASTEORIG",
+          "ID_Pasteorig"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PASTE_ORIGINAL_COR",
+        "largeResource": "RCDATA_32_PASTE_ORIGINAL_COR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PASTEORIG",
+        "macro": "^C^C_pasteorig",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Pastes objects from the Clipboard into the current drawing using the original coordinates",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PASTEORIG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastesp-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-pastesp-0001",
+      "kind": "command_button",
+      "name": "Paste Special",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PASTESP_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 382
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-splitbtn-paste-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PASTESP_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Paste Special",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pastesp",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Paste Special",
+        "official": "Paste Special...",
+        "aliases": [
+          "PASTESPEC",
+          "ID_Pastesp"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PASTE_SPECIAL",
+        "largeResource": "RCDATA_32_PASTE_SPECIAL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PASTESPEC",
+        "macro": "^C^C_pastespec",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Pastes objects from the Clipboard into the current drawing and controls the format of the data",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PASTESPEC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0061",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0061"
+      },
+      "placement": {
+        "region": "main",
+        "order": 383
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0061",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0296",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0296"
+      },
+      "placement": {
+        "region": "main",
+        "order": 384
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0296",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "kind": "split_button",
+      "name": "Cut Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_DDD3E"
+      },
+      "placement": {
+        "region": "main",
+        "order": 385
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_242_DDD3E",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Cut Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "behavior": "DropDownFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available Cut Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutclip-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Cut Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_DDD3E.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 386
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Cut Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Cut Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Cut Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutclip-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutbase-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_DDD3E.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 387
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Cut Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutclip-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutclip-0001",
+      "kind": "command_button",
+      "name": "Cut",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CUTCLIP_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 388
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CUTCLIP_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cut",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Cutclip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cut",
+        "official": "Cut",
+        "aliases": [
+          "CUTCLIP",
+          "ID_Cutclip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CUT",
+        "largeResource": "RCDATA_32_CUT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUTCLIP",
+        "macro": "^C^C_cutclip",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies selected objects to the Clipboard and removes them from the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUTCLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutbase-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu.id-rbn-cmdbtn-cutbase-0001",
+      "kind": "command_button",
+      "name": "Cut with Base Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CUTBASE_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 389
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0296.rbn-242-ddd3e",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CUTBASE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cut with Base Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SCX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Cutbaseclip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cut with Base Point",
+        "official": "Cut with Base Point",
+        "aliases": [
+          "CUTBASE",
+          "ID_Cutbaseclip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CUT_BASEPOINT",
+        "largeResource": "RCDATA_32_CUT_BASEPOINT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CUTBASE",
+        "macro": "^C^C_cutbase",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies selected objects to the Clipboard along with a specified base point and removes them from the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CUTBASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0297",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0297"
+      },
+      "placement": {
+        "region": "main",
+        "order": 390
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0297",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "kind": "split_button",
+      "name": "Copy Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_A6505"
+      },
+      "placement": {
+        "region": "main",
+        "order": 391
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_242_A6505",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Copy Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "behavior": "DropDownFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available Copy Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copyclip-0002"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Copy Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_A6505.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 392
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Copy Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Copy Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Copy Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copyclip-0002",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copybase-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_242_A6505.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 393
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Copy Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copyclip-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copyclip-0002",
+      "kind": "command_button",
+      "name": "Copy Clip",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_COPYCLIP_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 394
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_COPYCLIP_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy Clip",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Copyclip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy Clip",
+        "official": "Copy Clip",
+        "aliases": [
+          "COPYCLIP",
+          "ID_Copyclip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COPY",
+        "largeResource": "RCDATA_32_COPY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "COPYCLIP",
+        "macro": "^C^C_copyclip",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies selected objects to the Clipboard",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 COPYCLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copybase-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu.id-rbn-cmdbtn-copybase-0002",
+      "kind": "command_button",
+      "name": "Copy with Base Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_COPYBASE_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 395
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-row-0295.id-rbn-rowpanel-0061.id-rbn-row-0297.rbn-242-a6505",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_COPYBASE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy with Base Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SCC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Copybase",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy with Base Point",
+        "official": "Copy with Base Point",
+        "aliases": [
+          "COPYBASE",
+          "ID_Copybase"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CPYBASE",
+        "largeResource": "RCDATA_32_CPYBASE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "COPYBASE",
+        "macro": "^C^C_copybase",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies selected objects to the Clipboard along with a specified base point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 COPYBASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-0022": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049.id-rbn-0022",
+      "kind": "panel_break",
+      "name": "ID_RBN_0022",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-00011049",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0022"
+      },
+      "placement": {
+        "region": "main",
+        "order": 396
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0022",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

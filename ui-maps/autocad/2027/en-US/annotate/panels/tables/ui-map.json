@@ -1,0 +1,963 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-tables",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelTables",
+    "panelName": "Tables",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "kind": "panel",
+      "name": "Tables",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0018",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0028",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTables"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 106
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTables",
+        "text": "Tables",
+        "keyTip": "TG",
+        "alias": "ID_Tables",
+        "officialName": "Annotate - Tables",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0018": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0018",
+      "kind": "dialog_launcher",
+      "name": "Table Style...",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0018"
+      },
+      "placement": {
+        "region": "main",
+        "order": 107
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0018",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "TT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_TblStyle",
+        "commandId": "ID_TblStyle",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Table Style...",
+        "aliases": [
+          "TABLESTYLE",
+          "ID_TblStyle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TABLESTYLE",
+        "largeResource": "RCDATA_32_TABLESTYLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TABLESTYLE",
+        "macro": "^c^c_tablestyle",
+        "macroType": "Format",
+        "commandId": "ID_TblStyle",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Creates, modifies, or specifies table styles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TABLESTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0103",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-cmdbtn-table-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0103"
+      },
+      "placement": {
+        "region": "main",
+        "order": 108
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0103",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-cmdbtn-table-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-cmdbtn-table-0001",
+      "kind": "command_button",
+      "name": "Table",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_TABLE_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 109
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_TABLE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Table",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Table",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Table",
+        "official": "Table...",
+        "aliases": [
+          "TABLE",
+          "ID_Table"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TABLE",
+        "largeResource": "RCDATA_32_TABLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TABLE",
+        "macro": "^C^C_table",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an empty table object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TABLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0018",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0018"
+      },
+      "placement": {
+        "region": "main",
+        "order": 110
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0018",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0104",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylecombo-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylegallery-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0104"
+      },
+      "placement": {
+        "region": "main",
+        "order": 111
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0104",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylecombo-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylecombo-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Table Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_TABLESTYLECOMBO_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 112
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_TABLESTYLECOMBO_0001",
+        "controlId": "AcTableStyleCombo",
+        "text": "Ribbon Combo Box - Table Style",
+        "keyTip": "TL"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Table Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylegallery-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104.id-rbn-control-tablestylegallery-0001",
+      "kind": "ribbon_control",
+      "name": "Ribbon Gallery Box - Table Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0104",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_TABLESTYLEGALLERY_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 113
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_TABLESTYLEGALLERY_0001",
+        "controlId": "AcTableStyleGallery",
+        "text": "Ribbon Gallery Box - Table Style",
+        "keyTip": "TL"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Gallery Box - Table Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0105",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.id-rbn-cmdbtn-updatedatalinksall-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.rbn-200-62013"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0105"
+      },
+      "placement": {
+        "region": "main",
+        "order": 114
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0105",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.id-rbn-cmdbtn-updatedatalinksall-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.id-rbn-cmdbtn-updatedatalinksall-0001",
+      "kind": "command_button",
+      "name": "Download from Source",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UPDATEDATALINKSALL_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 115
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UPDATEDATALINKSALL_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Download from Source",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UpdateDataLinksAll",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Download from Source",
+        "official": "Update Data Links",
+        "aliases": [
+          "DATALINKUPDATE",
+          "ID_UpdateDataLinksAll"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UPDATE_DATA",
+        "largeResource": "RCDATA_32_UPDATE_DATA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINKUPDATE",
+        "macro": "^C^C_DATALINKUPDATE _U",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates linked data from an external data file to a table in the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINKUPDATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.rbn-200-62013": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105.rbn-200-62013",
+      "kind": "command_button",
+      "name": "Extract Data",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.id-rbn-row-0105",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_62013"
+      },
+      "placement": {
+        "region": "main",
+        "order": 116
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_62013",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Data",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EAttExt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Data",
+        "official": "Data Extraction...",
+        "aliases": [
+          "DATAEXTRACTION",
+          "ID_EAttExt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EATTEXT",
+        "largeResource": "RCDATA_32_EATTEXT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATAEXTRACTION",
+        "macro": "^C^C_dataextraction",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts drawing data and merges data from an external source to a data extraction table or external file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATAEXTRACTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050",
+      "kind": "layout_row",
+      "name": "RBN_01738050",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-writedatalinks-0001",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-datalinkmgr-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738050"
+      },
+      "placement": {
+        "region": "main",
+        "order": 117
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738050",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-writedatalinks-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-writedatalinks-0001",
+      "kind": "command_button",
+      "name": "Upload to Source",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WRITEDATALINKS_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 118
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WRITEDATALINKS_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Upload to Source",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WriteDataLinks",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Upload to Source",
+        "official": "Update Data Links",
+        "aliases": [
+          "DATALINKUPDATE _W",
+          "ID_WriteDataLinks"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DOWNLOADCHANGES",
+        "largeResource": "RCDATA_32_DOWNLOADCHANGES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINKUPDATE _W",
+        "macro": "^C^C_DATALINKUPDATE _W",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates linked data from a table in the current drawing to an external data file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINKUPDATE _W command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-datalinkmgr-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050.id-rbn-cmdbtn-datalinkmgr-0001",
+      "kind": "command_button",
+      "name": "Link Data",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-row-0103.id-rbn-rowpanel-0018.rbn-01738050",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DATALINKMGR_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 119
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DATALINKMGR_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Link Data",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DataLinkMgr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Link Data",
+        "official": "Data Link Manager",
+        "aliases": [
+          "DATALINK",
+          "ID_DataLinkMgr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TABLE_DATA",
+        "largeResource": "RCDATA_32_TABLE_DATA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DATALINK",
+        "macro": "^C^C_DATALINK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Data Link Manager",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DATALINK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0028": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.id-rbn-0028",
+      "kind": "panel_break",
+      "name": "ID_RBN_0028",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0028"
+      },
+      "placement": {
+        "region": "main",
+        "order": 120
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0028",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051",
+      "kind": "layout_row",
+      "name": "RBN_01738051",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051.rbn-01738053"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738051"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 121
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738051",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051.rbn-01738053": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051.rbn-01738053",
+      "kind": "gallery",
+      "name": "Table Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables.rbn-01738051",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738053"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 122
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738053",
+        "controlId": "AcTableLayerCombo",
+        "text": "Table Layer Gallery",
+        "keyTip": "TU"
+      },
+      "semantics": {
+        "description": "Displays the Table Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Table Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_CTS-PDFUnderlay",
+  "tabName": "PDF Underlay",
+  "panelCount": 5,
+  "panels": [
+    {
+      "name": "Adjust",
+      "uid": "RBN_00012168",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012168",
+      "map": "adjust/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 3
+    },
+    {
+      "name": "Clipping",
+      "uid": "RBN_00012171",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012171",
+      "map": "clipping/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Options",
+      "uid": "RBN_00012174",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-00012174",
+      "map": "options/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "PDF Layers",
+      "uid": "RBN_01737923",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-01737923",
+      "map": "pdf-layers/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "PDF Import",
+      "uid": "RBN_PDFBINDUNDERLAY",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-pdfunderlay.rbn-pdfbindunderlay",
+      "map": "pdf-import/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

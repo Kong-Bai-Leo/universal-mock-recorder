@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_SurfaceTab",
+  "tabName": "Surface",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Create",
+      "uid": "ID_RBN_Surface_Creation",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-creation",
+      "map": "create/ui-map.json",
+      "nodes": 28,
+      "actionableControls": 11
+    },
+    {
+      "name": "Edit",
+      "uid": "ID_RBN_Surface_Edit",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "map": "edit/ui-map.json",
+      "nodes": 23,
+      "actionableControls": 7
+    },
+    {
+      "name": "Control Vertices",
+      "uid": "ID_RBN_SURFACE_CV",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv",
+      "map": "control-vertices/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    },
+    {
+      "name": "Curves",
+      "uid": "ID_RBN_SURFACE_Curves",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "map": "curves/ui-map.json",
+      "nodes": 83,
+      "actionableControls": 47
+    },
+    {
+      "name": "Project Geometry",
+      "uid": "ID_RBN_Surface_Project",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-project",
+      "map": "project-geometry/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Analysis",
+      "uid": "ID_RBN_Surface_Analysis",
+      "nodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-analysis",
+      "map": "analysis/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 4
+    }
+  ]
+}

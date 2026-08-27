@@ -1,0 +1,480 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-dwfunderlay-panel-adjust",
+  "generatedAt": "2026-08-25T21:53:12.9358420Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-DWFUnderlay",
+    "tabName": "DWF Underlay",
+    "panelUid": "RBN_00018524",
+    "panelName": "Adjust",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+      "kind": "tab",
+      "name": "DWF Underlay",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-DWFUnderlay"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-DWFUnderlay",
+        "text": "DWF Underlay",
+        "keyTip": "DW",
+        "alias": null,
+        "officialName": "DWF Underlay Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+      "kind": "panel",
+      "name": "Adjust",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532",
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.id-rbn-0088"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018524"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018524",
+        "text": "Adjust",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "DWF Underlay - Adjust",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532",
+      "kind": "layout_row",
+      "name": "RBN_00018532",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530",
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018531"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018532"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018532",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530",
+      "kind": "layout_group",
+      "name": "RBN_00018530",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527",
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018530"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018530",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527",
+      "kind": "layout_row",
+      "name": "RBN_00018527",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527.rbn-00018526"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018527"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018527",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527.rbn-00018526": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527.rbn-00018526",
+      "kind": "ribbon_control",
+      "name": "Contrast",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018527",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018526"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018526",
+        "controlId": "AcUnderlayContrastSlider",
+        "text": "Contrast",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Contrast.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529",
+      "kind": "layout_row",
+      "name": "RBN_00018529",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529.rbn-00018528"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018529"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018529",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529.rbn-00018528": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529.rbn-00018528",
+      "kind": "ribbon_control",
+      "name": "Fade",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018530.rbn-00018529",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018528"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018528",
+        "controlId": "AcUnderlayFadeSlider",
+        "text": "Fade",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Fade.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018531": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532.rbn-00018531",
+      "kind": "toggle_button",
+      "name": "Display in Monochrome",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.rbn-00018532",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018531"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018531",
+        "controlId": "AcUnderlayDisplayMonochrome",
+        "text": "Display in Monochrome",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Display in Monochrome",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Display in Monochrome.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.id-rbn-0088": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524.id-rbn-0088",
+      "kind": "panel_break",
+      "name": "ID_RBN_0088",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018524",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0088"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0088",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

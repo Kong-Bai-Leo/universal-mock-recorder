@@ -1,0 +1,942 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-solidmodeling-panel-section",
+  "generatedAt": "2026-08-25T21:52:30.8724778Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SolidModeling",
+    "tabName": "Solid",
+    "panelUid": "RBNU_2219",
+    "panelName": "Section",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "kind": "tab",
+      "name": "Solid",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SolidModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SolidModeling",
+        "text": "Solid",
+        "keyTip": "SO",
+        "alias": null,
+        "officialName": "Solid Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "kind": "panel",
+      "name": "Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2220",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2230",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2219"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2219",
+        "text": "Section",
+        "keyTip": "SN",
+        "alias": null,
+        "officialName": "Solid Modeling - Section",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2220": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2220",
+      "kind": "dialog_launcher",
+      "name": "Section, Section Plane Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2220"
+      },
+      "placement": {
+        "region": "main",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2220",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "SZ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANESETTINGS",
+        "commandId": "ID_SECTIONPLANESETTINGS",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Section, Section Plane Settings",
+        "aliases": [
+          "SECTIONPLANESETTINGS",
+          "ID_SECTIONPLANESETTINGS"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANESETTINGS",
+        "macro": "^C^C_SECTIONPLANESETTINGS",
+        "macroType": "Any",
+        "commandId": "ID_SECTIONPLANESETTINGS",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Sets display options for the selected section plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANESETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229",
+      "kind": "layout_row",
+      "name": "RBNU_2229",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2221",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2229"
+      },
+      "placement": {
+        "region": "main",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2229",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2221": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2221",
+      "kind": "command_button",
+      "name": "Section\rPlane",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2221"
+      },
+      "placement": {
+        "region": "main",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2221",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Section\rPlane",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "XP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1719",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Section\rPlane",
+        "official": "Modeling, Section Plane",
+        "aliases": [
+          "SECTIONPLANE",
+          "MM_1719"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIO",
+        "largeResource": "RCDATA_32_SECTIO",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANE",
+        "macro": "^C^C_sectionplane",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a section object that acts as a cutting plane through 3D objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228",
+      "kind": "layout_group",
+      "name": "RBNU_2228",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2228"
+      },
+      "placement": {
+        "region": "main",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2228",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223",
+      "kind": "layout_row",
+      "name": "RBNU_2223",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223.rbnu-2222"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2223"
+      },
+      "placement": {
+        "region": "main",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2223",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223.rbnu-2222": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223.rbnu-2222",
+      "kind": "command_button",
+      "name": "Live Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2223",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2222"
+      },
+      "placement": {
+        "region": "main",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2222",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Live Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Livesection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Live Section",
+        "official": "Live Section",
+        "aliases": [
+          "LIVESECTION",
+          "ID_Livesection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LIVESECTION",
+        "largeResource": "RCDATA_32_LIVESECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LIVESECTION",
+        "macro": "^C^C_livesection",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles the live section state on or off for the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LIVESECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225",
+      "kind": "layout_row",
+      "name": "RBNU_2225",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225.rbnu-2224"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2225"
+      },
+      "placement": {
+        "region": "main",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2225",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225.rbnu-2224": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225.rbnu-2224",
+      "kind": "command_button",
+      "name": "Add Jog",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2224"
+      },
+      "placement": {
+        "region": "main",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2224",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add Jog",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "JS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Jogsection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add Jog",
+        "official": "Modeling, Section Plane Jog",
+        "aliases": [
+          "SECTIONPLANEJOG",
+          "ID_Jogsection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_JOGSECTION",
+        "largeResource": "RCDATA_32_JOGSECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANEJOG",
+        "macro": "^C^C_sectionplanejog",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a jog to the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANEJOG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227",
+      "kind": "layout_row",
+      "name": "RBNU_2227",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227.rbnu-2226"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2227"
+      },
+      "placement": {
+        "region": "main",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2227",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227.rbnu-2226": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227.rbnu-2226",
+      "kind": "command_button",
+      "name": "Generate Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2229.rbnu-2228.rbnu-2227",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2226"
+      },
+      "placement": {
+        "region": "main",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2226",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Generate Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANETOBLOCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Generate Section",
+        "official": "Generate Section Block",
+        "aliases": [
+          "SECTIONPLANETOBLOCK",
+          "ID_SECTIONPLANETOBLOCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIONPLANETOBLOCK",
+        "largeResource": "RCDATA_32_SECTIONPLANETOBLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANETOBLOCK",
+        "macro": "^C^C_SECTIONPLANETOBLOCK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the Generate Section/Elevation dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANETOBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2230": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2230",
+      "kind": "panel_break",
+      "name": "RBNU_2230",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2230"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2230",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232",
+      "kind": "layout_row",
+      "name": "RBNU_2232",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232.rbnu-2231"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2232"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2232",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232.rbnu-2231": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232.rbnu-2231",
+      "kind": "command_button",
+      "name": "Flatshot",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2232",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2231"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2231",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Flatshot",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "FT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Flatshot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Flatshot",
+        "official": "Flatshot",
+        "aliases": [
+          "FLATSHOT",
+          "ID_Flatshot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FLATSHOT",
+        "largeResource": "RCDATA_32_FLATSHOT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FLATSHOT",
+        "macro": "^C^C_flatshot",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D representation of all 3D objects based on the current view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FLATSHOT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234",
+      "kind": "layout_row",
+      "name": "RBNU_2234",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234.rbnu-2233"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2234"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2234",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234.rbnu-2233": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234.rbnu-2233",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219.rbnu-2234",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2233"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2233",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Edges",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Edges",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

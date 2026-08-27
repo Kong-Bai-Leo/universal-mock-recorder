@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabparametric",
+  "generatedAt": "2026-08-25T21:52:22.1975036Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabParametric",
+    "tabName": "Parametric",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabparametric",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "kind": "tab",
+      "name": "Parametric",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabParametric"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabParametric",
+        "text": "Parametric",
+        "keyTip": "PA",
+        "alias": "ID_TabParametric",
+        "officialName": "Parametric"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 3,
+    "panels": [
+      {
+        "name": "Geometric",
+        "uid": "ID_PanelParametricGeometricConstraints",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricgeometricconstraints",
+        "map": "geometric/ui-map.json",
+        "nodes": 33,
+        "actionableControls": 17
+      },
+      {
+        "name": "Dimensional",
+        "uid": "ID_PanelParametricDimensionalConstraints",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+        "map": "dimensional/ui-map.json",
+        "nodes": 35,
+        "actionableControls": 16
+      },
+      {
+        "name": "Manage",
+        "uid": "ID_PanelParametricManage",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+        "map": "manage/ui-map.json",
+        "nodes": 9,
+        "actionableControls": 2
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 69,
+    "panels": 3,
+    "actionableControls": 35,
+    "splitButtons": 1,
+    "iconOnlyControls": 19
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:24:00Z",
+    "observedControlCount": 27,
+    "evidence": "live-observation.json"
+  }
+}

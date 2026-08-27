@@ -8,6 +8,7 @@ export function renderTypeScript(plan, runtimeImport = "@mock/runtime") {
     `  const agent = await createMockAgent();\n` +
     `  await agent.run(workflow, {\n` +
     `    locateOrder: ["semantic", "accessibility", "text", "visual", "relative_position"],\n` +
+    `    preferStructuredCadProgram: true,\n` +
     `    verifyAfterEachStep: true,\n` +
     `    retryCandidates: true,\n` +
     `    recoverWithEscapeOrUndo: true\n` +

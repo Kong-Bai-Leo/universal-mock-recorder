@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_190_37149",
+  "tabName": "Featured Apps",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "App Store",
+      "uid": "RBN_190_FBEAE",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-37149.rbn-190-fbeae",
+      "map": "app-store/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Featured Apps",
+      "uid": "RBN_190_0AB71",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-37149.rbn-190-0ab71",
+      "map": "featured-apps/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

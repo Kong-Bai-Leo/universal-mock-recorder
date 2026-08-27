@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabAnnotate",
+  "tabName": "Annotate",
+  "panelCount": 7,
+  "panels": [
+    {
+      "name": "Text",
+      "uid": "ID_PanelText",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltext",
+      "map": "text/ui-map.json",
+      "nodes": 32,
+      "actionableControls": 13
+    },
+    {
+      "name": "Dimensions",
+      "uid": "ID_PanelDimensions",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneldimensions",
+      "map": "dimensions/ui-map.json",
+      "nodes": 55,
+      "actionableControls": 33
+    },
+    {
+      "name": "Centerlines",
+      "uid": "ID_PanelCenterlines",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+      "map": "centerlines/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Leaders",
+      "uid": "ID_PanelMultileaders",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmultileaders",
+      "map": "leaders/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 9
+    },
+    {
+      "name": "Tables",
+      "uid": "ID_PanelTables",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-paneltables",
+      "map": "tables/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 9
+    },
+    {
+      "name": "Markup",
+      "uid": "ID_PanelMarkup",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+      "map": "markup/ui-map.json",
+      "nodes": 17,
+      "actionableControls": 7
+    },
+    {
+      "name": "Annotation Scaling",
+      "uid": "ID_PanelAnnotationScaling",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+      "map": "annotation-scaling/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    }
+  ]
+}

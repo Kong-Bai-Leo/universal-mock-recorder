@@ -1,0 +1,2915 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome3d-panel-solid-editing",
+  "generatedAt": "2026-08-25T21:52:13.9409473Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome3D",
+    "tabName": "Home ",
+    "panelUid": "ID_PanelSolidEdit",
+    "panelName": "Solid Editing",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "kind": "tab",
+      "name": "Home ",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome3D",
+        "text": "Home ",
+        "keyTip": "H",
+        "alias": "ID_TabHome3D",
+        "officialName": "Home - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+      "kind": "panel",
+      "name": "Solid Editing",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbnpnl-0025",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelSolidEdit"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelSolidEdit",
+        "text": "Solid Editing",
+        "keyTip": "SI",
+        "alias": "ID_SolidEdit",
+        "officialName": "Home 3D - Solid Editing",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0215",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0215"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0215",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727",
+      "kind": "layout_group",
+      "name": "RBN_00737727",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737727"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737727",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728",
+      "kind": "layout_row",
+      "name": "RBN_00737728",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00018122",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-01737745",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00737734"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737728"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737728",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00018122": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00018122",
+      "kind": "command_button",
+      "name": "Union",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018122"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018122",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Union",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Union",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Union",
+        "official": "Union",
+        "aliases": [
+          "UNION",
+          "ID_Union"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNION",
+        "largeResource": "RCDATA_32_UNION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UNION",
+        "macro": "^C^C_union",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by addition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UNION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-01737745": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-01737745",
+      "kind": "separator",
+      "name": "RBN_01737745",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737745"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737745",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00737734": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728.rbn-00737734",
+      "kind": "command_button",
+      "name": "Interfere",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737728",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737734"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737734",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Interfere",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Interfere",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Interfere",
+        "official": "Interference Checking",
+        "aliases": [
+          "INTERFERE",
+          "ID_Interfere"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERF",
+        "largeResource": "RCDATA_32_INTERF",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERFERE",
+        "macro": "^C^C_interfere",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a temporary 3D solid from the interferences between two sets of selected 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERFERE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729",
+      "kind": "layout_row",
+      "name": "RBN_00737729",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00018123",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-01737746",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00737735"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737729"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737729",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00018123": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00018123",
+      "kind": "command_button",
+      "name": "Subtract",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018123"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018123",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Subtract",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Subtract",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Subtract",
+        "official": "Subtract",
+        "aliases": [
+          "SUBTRACT",
+          "ID_Subtract"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SUBTRA",
+        "largeResource": "RCDATA_32_SUBTRA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SUBTRACT",
+        "macro": "^C^C_subtract",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by subtraction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SUBTRACT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-01737746": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-01737746",
+      "kind": "separator",
+      "name": "RBN_01737746",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737746"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737746",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00737735": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729.rbn-00737735",
+      "kind": "command_button",
+      "name": "Slice",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737729",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737735"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737735",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Slice",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Slice",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Slice",
+        "official": "Slice",
+        "aliases": [
+          "SLICE",
+          "ID_Slice"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SLICE",
+        "largeResource": "RCDATA_32_SLICE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SLICE",
+        "macro": "^C^C_slice",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates new 3D solids and surfaces by slicing, or dividing, existing objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SLICE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730",
+      "kind": "layout_row",
+      "name": "RBN_00737730",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00018124",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-01737747",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00737736"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737730"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737730",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00018124": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00018124",
+      "kind": "command_button",
+      "name": "Intersect",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018124"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018124",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Intersect",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "IN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Intersect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Intersect",
+        "official": "Intersect",
+        "aliases": [
+          "INTERSECT",
+          "ID_Intersect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERSECTION",
+        "largeResource": "RCDATA_32_INTERSECTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERSECT",
+        "macro": "^C^C_intersect",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or 2D region from selected overlapping solids or regions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERSECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-01737747": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-01737747",
+      "kind": "separator",
+      "name": "RBN_01737747",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737747"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737747",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00737736": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730.rbn-00737736",
+      "kind": "command_button",
+      "name": "Thicken",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.rbn-00737727.rbn-00737730",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737736"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737736",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Thicken",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Thicken",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Thicken",
+        "official": "Thicken",
+        "aliases": [
+          "THICKEN",
+          "ID_Thicken"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_THICKEN",
+        "largeResource": "RCDATA_32_THICKEN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "THICKEN",
+        "macro": "^C^C_Thicken",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a surface into a 3D solid with a specified thickness",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 THICKEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0042",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0042"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0042",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0216",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0216"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0216",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "kind": "split_button",
+      "name": "Edge Editing Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_EDGES"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_EDGES",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Edge Editing Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ED",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Edge Editing Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.primary-action",
+      "kind": "primary_button",
+      "name": "Edge Editing Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_EDGES.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Edge Editing Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Edge Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_EDGES.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Edge Editing Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Edge Editing Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Edge Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-imprint",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecolor",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecopy"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_EDGES.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Edge Editing Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-extractedges",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EXTRACTEDGES"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EXTRACTEDGES",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Edges",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Edges",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-imprint": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-imprint",
+      "kind": "command_button",
+      "name": "Imprint",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_IMPRINT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_IMPRINT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Imprint",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Imprint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Imprint",
+        "official": "Imprint",
+        "aliases": [
+          "IMPRINT",
+          "ID_Imprint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMPRINT",
+        "largeResource": "RCDATA_32_IMPRINT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "IMPRINT",
+        "macro": "^C^C_imprint",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Imprints 2D geometry on a 3D solid, creating additional edges on planar faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 IMPRINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecolor": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecolor",
+      "kind": "command_button",
+      "name": "Color Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EDGECOLOR"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EDGECOLOR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Color Edges",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EdgeColor",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Color Edges",
+        "official": "Color edges",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_EdgeColor"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COLOREDGE",
+        "largeResource": "RCDATA_32_COLOREDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C^R_solidedit _edge _color",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the color of selected edges on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecopy": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu.id-rbn-cmdbtn-edgecopy",
+      "kind": "command_button",
+      "name": "Copy Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EDGECOPY"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0216.id-rbn-splitbtn-edges",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EDGECOPY",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy Edges",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EdgeCopy",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy Edges",
+        "official": "Copy edges",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_EdgeCopy"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COPYEDGE",
+        "largeResource": "RCDATA_32_COPYEDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _edge _copy",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies selected edges on a 3D solid as 2D arcs, circles, ellipses, lines, or splines",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0217",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0217"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0217",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "kind": "split_button",
+      "name": "Face Editing Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_FACES"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_FACES",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Face Editing Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "FA",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Face Editing Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.primary-action",
+      "kind": "primary_button",
+      "name": "Face Editing Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_FACES.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Face Editing Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Face Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_FACES.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Face Editing Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Face Editing Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Face Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facetaper",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facemove",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecopy",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceoffse",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facedel",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facerotat",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecolor"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_FACES.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Face Editing Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceextru-0001",
+      "kind": "command_button",
+      "name": "Extrude Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEEXTRU_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEEXTRU_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extrude Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceExtru",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extrude Faces",
+        "official": "Extrude faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceExtru"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUDE_FACES",
+        "largeResource": "RCDATA_32_EXTRUDE_FACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _extrude",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extrudes selected planar faces of a 3D solid by a specified distance or along a path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facetaper": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facetaper",
+      "kind": "command_button",
+      "name": "Taper Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACETAPER"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACETAPER",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Taper Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceTaper",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Taper Faces",
+        "official": "Taper faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceTaper"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TAPER",
+        "largeResource": "RCDATA_32_TAPER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _taper",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Tapers a face on a 3D solid at a specified angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facemove": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facemove",
+      "kind": "command_button",
+      "name": "Move Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEMOVE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEMOVE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Move Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceMove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Move Faces",
+        "official": "Move faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceMove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MOVEFACES",
+        "largeResource": "RCDATA_32_MOVEFACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _move",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Moves a face on 3D solids in a specified distance and direction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecopy": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecopy",
+      "kind": "command_button",
+      "name": "Copy Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACECOPY"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACECOPY",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceCopy",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy Faces",
+        "official": "Copy faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceCopy"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COPYFACE",
+        "largeResource": "RCDATA_32_COPYFACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _copy",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies faces from a 3D solid resulting in regions or solid bodies",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceoffse": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-faceoffse",
+      "kind": "command_button",
+      "name": "Offset Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEOFFSE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEOFFSE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceOffse",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset Faces",
+        "official": "Offset faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceOffse"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSETFACES",
+        "largeResource": "RCDATA_32_OFFSETFACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _offset",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Offsets selected faces of a 3D solid by a specified distance, changing its shape",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facedel": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facedel",
+      "kind": "command_button",
+      "name": "Delete Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEDEL"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEDEL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Delete Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceDel",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete Faces",
+        "official": "Delete faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceDel"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DELETEFACES",
+        "largeResource": "RCDATA_32_DELETEFACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _delete",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Deletes faces, including fillets or chamfers, on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facerotat": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facerotat",
+      "kind": "command_button",
+      "name": "Rotate Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEROTAT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEROTAT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rotate Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceRotat",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rotate Faces",
+        "official": "Rotate faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceRotat"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ROTATEFACE",
+        "largeResource": "RCDATA_32_ROTATEFACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _rotate",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rotates selected faces on a 3D solid around a specified axis",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecolor": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu.id-rbn-cmdbtn-facecolor",
+      "kind": "command_button",
+      "name": "Color Faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACECOLOR"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0217.id-rbn-splitbtn-faces",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACECOLOR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Color Faces",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceColor",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Color Faces",
+        "official": "Color faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceColor"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COLORFACE",
+        "largeResource": "RCDATA_32_COLORFACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C^R_solidedit _face _color",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the color of selected faces on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0218",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0218"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0218",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "kind": "split_button",
+      "name": "Solid Editing Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SOLIDEDIT_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_SOLIDEDIT_0001",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Solid Editing Drop-down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SX",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Solid Editing Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.primary-action",
+      "kind": "primary_button",
+      "name": "Solid Editing Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SOLIDEDIT_0001.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Solid Editing Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Solid Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SOLIDEDIT_0001.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Solid Editing Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Solid Editing Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Solid Editing Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodycln",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-shell",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodychk"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SOLIDEDIT_0001.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Solid Editing Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-separate",
+      "kind": "command_button",
+      "name": "Separate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SEPARATE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SEPARATE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Separate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Separate",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Separate",
+        "official": "Separate",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_Separate"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SEPARATE",
+        "largeResource": "RCDATA_32_SEPARATE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _separate",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Separates a 3D solid object with several non-continuous volumes into independent 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodycln": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodycln",
+      "kind": "command_button",
+      "name": "Clean",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BODYCLN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BODYCLN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Clean",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BodyCln",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Clean",
+        "official": "Clean",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_BodyCln"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLEAN",
+        "largeResource": "RCDATA_32_CLEAN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _clean",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes all redundant edges and vertices on a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-shell": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-shell",
+      "kind": "command_button",
+      "name": "Shell",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SHELL"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SHELL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Shell",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Shell",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Shell",
+        "official": "Shell",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_Shell"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHELL",
+        "largeResource": "RCDATA_32_SHELL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _shell",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a 3D solid into a hollow shell with a wall of specified thickness",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodychk": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu.id-rbn-cmdbtn-bodychk",
+      "kind": "command_button",
+      "name": "Check",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BODYCHK"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0215.id-rbn-rowpanel-0042.id-rbn-row-0218.id-rbn-splitbtn-solidedit-0001",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BODYCHK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Check",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BodyChk",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Check",
+        "official": "Check",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_BodyChk"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CHECK",
+        "largeResource": "RCDATA_32_CHECK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _body _check",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Validates the geometric data in a 3D solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbnpnl-0025": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbnpnl-0025",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0025",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0025"
+      },
+      "placement": {
+        "region": "main",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0025",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0219",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2solid",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2surface"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0219"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0219",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2solid": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2solid",
+      "kind": "command_button",
+      "name": "Convert to Solid",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CONV2SOLID"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CONV2SOLID",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to Solid",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CONV2SOLID",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to Solid",
+        "official": "Convert to Solid",
+        "aliases": [
+          "CONVTOSOLID",
+          "ID_CONV2SOLID"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONVERT2SOLID",
+        "largeResource": "RCDATA_32_CONVERT2SOLID",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONVTOSOLID",
+        "macro": "^C^C_convtosolid",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts an object to a solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONVTOSOLID command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2surface": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219.id-rbn-cmdbtn-conv2surface",
+      "kind": "command_button",
+      "name": "Convert to Surface",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panelsolidedit.id-rbn-row-0219",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CONV2SURFACE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CONV2SURFACE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to Surface",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Conv2surface",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to Surface",
+        "official": "Convert to Surface",
+        "aliases": [
+          "CONVTOSURFACE",
+          "ID_Conv2surface"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CONVERT2SURFACE",
+        "largeResource": "RCDATA_32_CONVERT2SURFACE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONVTOSURFACE",
+        "macro": "^C^C_convtosurface",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Convert objects to a surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONVTOSURFACE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

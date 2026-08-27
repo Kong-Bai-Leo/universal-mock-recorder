@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabOutput",
+  "tabName": "Output",
+  "panelCount": 2,
+  "panels": [
+    {
+      "name": "Plot",
+      "uid": "ID_PanelPlot",
+      "nodeId": "autocad.window.main.ribbon.tab.id-taboutput.id-panelplot",
+      "map": "plot/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 7
+    },
+    {
+      "name": "Export to DWF/PDF",
+      "uid": "ID_PanelExportPDFDWF2D",
+      "nodeId": "autocad.window.main.ribbon.tab.id-taboutput.id-panelexportpdfdwf2d",
+      "map": "export-to-dwf-pdf/ui-map.json",
+      "nodes": 24,
+      "actionableControls": 8
+    }
+  ]
+}

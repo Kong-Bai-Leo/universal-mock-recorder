@@ -1,0 +1,12 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:34:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Collaborate", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 6,
+  "observedControlIds": ["ID_ShareDrawing", "AcPlanGridToggleButton", "AcTraceToggleButton", "ID_MarkupImport", "ID_TRACECHECKOUT", "ID_DWG_COMPARE"],
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabCollaborate", "action": "select_tab", "result": "Collaborate tab opened and Share, Forma, Traces, and Compare panels were read live." }
+  ],
+  "notes": ["Cloud or sharing actions were not invoked; controls were only inspected."]
+}

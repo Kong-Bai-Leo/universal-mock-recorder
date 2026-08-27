@@ -1,0 +1,1017 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-properties",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "ID_PanelStandard_Properties",
+    "panelName": "Properties",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "kind": "panel",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-0062",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbnpnl-0987",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelStandard_Properties"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 311
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelStandard_Properties",
+        "text": "Properties",
+        "keyTip": "PE",
+        "alias": "ID_Standard_Properties",
+        "officialName": "Home - Properties",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-0062": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-0062",
+      "kind": "dialog_launcher",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0062"
+      },
+      "placement": {
+        "region": "main",
+        "order": 312
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0062",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "CH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Modify",
+        "commandId": "ID_Modify",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Properties",
+        "aliases": [
+          "PROPERTIES",
+          "ID_Modify"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MODIFY",
+        "largeResource": "RCDATA_32_MODIFY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PROPERTIES",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,opmstate),0)),^C^C_propertiesclose,^C^C_properties)",
+        "macroType": "Tools",
+        "commandId": "ID_Modify",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Controls properties of existing objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PROPERTIES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0052",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-42beb",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0052"
+      },
+      "placement": {
+        "region": "main",
+        "order": 313
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0052",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-42beb": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-42beb",
+      "kind": "command_button",
+      "name": "Match\rProperties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_42BEB"
+      },
+      "placement": {
+        "region": "main",
+        "order": 314
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_42BEB",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Match\rProperties",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Matchprop",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Match\rProperties",
+        "official": "Match Properties",
+        "aliases": [
+          "MATCHPROP",
+          "ID_Matchprop"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MATCH",
+        "largeResource": "RCDATA_32_MATCH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MATCHPROP",
+        "macro": "'_matchprop",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Applies the properties of a selected object to other objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MATCHPROP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f",
+      "kind": "layout_group",
+      "name": "RBN_200_49A5F",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_49A5F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 315
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_49A5F",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81",
+      "kind": "layout_row",
+      "name": "RBN_200_B5B81",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81.id-rbn-control-objectcolorcombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_B5B81"
+      },
+      "placement": {
+        "region": "main",
+        "order": 316
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_B5B81",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81.id-rbn-control-objectcolorcombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81.id-rbn-control-objectcolorcombo",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - Object Color",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-b5b81",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_OBJECTCOLORCOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 317
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_OBJECTCOLORCOMBO",
+        "controlId": "AcObjectColorCombo",
+        "text": "Ribbon Combo Box - Object Color",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - Object Color gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - Object Color item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7",
+      "kind": "layout_row",
+      "name": "RBN_200_A33A7",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7.id-rbn-control-lineweightcombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A33A7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 318
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A33A7",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7.id-rbn-control-lineweightcombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7.id-rbn-control-lineweightcombo",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - Lineweight",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-a33a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LINEWEIGHTCOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 319
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LINEWEIGHTCOMBO",
+        "controlId": "AcLineWeightCombo",
+        "text": "Ribbon Combo Box - Lineweight",
+        "keyTip": "PW"
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - Lineweight gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - Lineweight item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3",
+      "kind": "layout_row",
+      "name": "RBN_200_904A3",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3.id-rbn-control-linetypecombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_904A3"
+      },
+      "placement": {
+        "region": "main",
+        "order": 320
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_904A3",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3.id-rbn-control-linetypecombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3.id-rbn-control-linetypecombo",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - Linetype",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbn-row-0052.rbn-200-49a5f.rbn-200-904a3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LINETYPECOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 321
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LINETYPECOMBO",
+        "controlId": "AcLinetypeCombo",
+        "text": "Ribbon Combo Box - Linetype",
+        "keyTip": "PY"
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - Linetype gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - Linetype item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbnpnl-0987": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.id-rbnpnl-0987",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0987",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0987"
+      },
+      "placement": {
+        "region": "main",
+        "order": 322
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0987",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402",
+      "kind": "layout_row",
+      "name": "RBN_01740402",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740402"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 323
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740402",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403",
+      "kind": "layout_group",
+      "name": "RBN_01740403",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740403"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 324
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740403",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404",
+      "kind": "layout_row",
+      "name": "RBN_01740404",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404.rbn-01740405"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740404"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 325
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740404",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404.rbn-01740405": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404.rbn-01740405",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - Plot Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740404",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740405"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 326
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740405",
+        "controlId": "AcPlotStyleCombo",
+        "text": "Ribbon Combo Box - Plot Style",
+        "keyTip": "PP"
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - Plot Style gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - Plot Style item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406",
+      "kind": "layout_row",
+      "name": "RBN_01740406",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740407",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740408",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740409"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740406"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 327
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740406",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740407": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740407",
+      "kind": "data_bound_dropdown",
+      "name": "Transparency Method",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740407"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 328
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740407",
+        "controlId": "AcTransparencyMethodSplitDropDown",
+        "text": "Transparency Method",
+        "keyTip": "TP"
+      },
+      "semantics": {
+        "description": "Opens or changes the Transparency Method selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Transparency Method setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740408": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740408",
+      "kind": "separator",
+      "name": "RBN_01740408",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740408"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 329
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740408",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740409": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406.rbn-01740409",
+      "kind": "ribbon_control",
+      "name": "Transparency",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740406",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740409"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 330
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740409",
+        "controlId": "AcTransparencySlider",
+        "text": "Transparency",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Transparency.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410",
+      "kind": "layout_row",
+      "name": "RBN_01740410",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410.rbn-01740411"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740410"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 331
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740410",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410.rbn-01740411": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410.rbn-01740411",
+      "kind": "command_button",
+      "name": "List",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-properties.rbn-01740402.rbn-01740403.rbn-01740410",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740411"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 332
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740411",
+        "controlId": "AcRibbonCommandButton",
+        "text": "List",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_List",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "List",
+        "official": "List",
+        "aliases": [
+          "LIST",
+          "ID_List"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LIST",
+        "largeResource": "RCDATA_32_LIST",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LIST",
+        "macro": "^C^C_list",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays property data for selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LIST command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

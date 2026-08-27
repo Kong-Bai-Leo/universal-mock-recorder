@@ -1,0 +1,940 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-surfacetab-panel-control-vertices",
+  "generatedAt": "2026-08-25T21:52:32.1199734Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SurfaceTab",
+    "tabName": "Surface",
+    "panelUid": "ID_RBN_SURFACE_CV",
+    "panelName": "Control Vertices",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "kind": "tab",
+      "name": "Surface",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SurfaceTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SurfaceTab",
+        "text": "Surface",
+        "keyTip": "SU",
+        "alias": null,
+        "officialName": "Surface Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv",
+      "kind": "panel",
+      "name": "Control Vertices",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8257"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SURFACE_CV"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SURFACE_CV",
+        "text": "Control Vertices",
+        "keyTip": "DW",
+        "alias": "ID_SURF_CV",
+        "officialName": "Surface - Control Vertices",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "kind": "layout_row",
+      "name": "ID_RBN_8256",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9259",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9260",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8259",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8260",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8261",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8280",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8256"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8256",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9259": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9259",
+      "kind": "command_button",
+      "name": "CV Edit Bar",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_9259"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_9259",
+        "controlId": "AcRibbonCommandButton",
+        "text": "CV Edit Bar",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "3B",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_3DEDITBAR",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "CV Edit Bar",
+        "official": "Surface CV Edit Bar",
+        "aliases": [
+          "3DEDITBAR",
+          "ID_SURF_3DEDITBAR"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVEDITGIZMO",
+        "largeResource": "RCDATA_32_SM_CVEDITGIZMO",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DEDITBAR",
+        "macro": "^C^C_3DEDITBAR",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds and edits control vertices on a NURBS surface or spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DEDITBAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9260": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-sm-9260",
+      "kind": "separator",
+      "name": "ID_RBN_SM_9260",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_9260"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_9260",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8259": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8259",
+      "kind": "command_button",
+      "name": "Convert to\rNURBS",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8259"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8259",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert to\rNURBS",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_CONVTONURBS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert to\rNURBS",
+        "official": "Convert to NURBS",
+        "aliases": [
+          "CONVTONURBS",
+          "ID_SURF_CONVTONURBS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_convertToNURBSSurface",
+        "largeResource": "RCDATA_32_SM_convertToNURBSSurface",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONVTONURBS",
+        "macro": "^C^C_CONVTONURBS",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a surface, solid, or mesh to a NURBS surface",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONVTONURBS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8260": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8260",
+      "kind": "separator",
+      "name": "ID_RBN_8260",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8260"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8260",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8261": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8261",
+      "kind": "command_button",
+      "name": "Show\rCV",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8261"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8261",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show\rCV",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CV_SHOW",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show\rCV",
+        "official": "Surface CV - Show",
+        "aliases": [
+          "CVSHOW",
+          "ID_CV_SHOW"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVSHOW",
+        "largeResource": "RCDATA_32_SM_CVSHOW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CVSHOW",
+        "macro": "^C^C_CVSHOW",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the control vertices of a NURBS surface or spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CVSHOW command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8280": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8280",
+      "kind": "command_button",
+      "name": "Hide\rCV",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8280"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8280",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hide\rCV",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CV_HIDE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hide\rCV",
+        "official": "Surface CV - Hide",
+        "aliases": [
+          "CVHIDE",
+          "ID_CV_HIDE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVHIDE",
+        "largeResource": "RCDATA_32_SM_CVHIDE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CVHIDE",
+        "macro": "^C^C_CVHIDE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Hides the control vertices for NURBS surfaces or splines",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CVHIDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253",
+      "kind": "layout_group",
+      "name": "ID_RBN_8253",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8253"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8253",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248",
+      "kind": "layout_row",
+      "name": "ID_RBN_8248",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248.id-rbn-8262"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8248"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8248",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248.id-rbn-8262": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248.id-rbn-8262",
+      "kind": "command_button",
+      "name": "Rebuild",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8248",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8262"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8262",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rebuild",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_CV_REBUILD",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rebuild",
+        "official": "Surface CV - Rebuilt",
+        "aliases": [
+          "CVREBUILD",
+          "ID_SURF_CV_REBUILD"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVREBUILD",
+        "largeResource": "RCDATA_32_SM_CVREBUILD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CVREBUILD",
+        "macro": "^C^C_CVREBUILD",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Allows you to rebuild the control vertices of a NURBS surface or spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CVREBUILD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250",
+      "kind": "layout_row",
+      "name": "ID_RBN_8250",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250.id-rbn-8263"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8250"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8250",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250.id-rbn-8263": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250.id-rbn-8263",
+      "kind": "command_button",
+      "name": "Add",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8250",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8263"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8263",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_CV_ADD",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add",
+        "official": "Surface CV - Add",
+        "aliases": [
+          "CVADD",
+          "ID_SURF_CV_ADD"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVADD",
+        "largeResource": "RCDATA_32_SM_CVADD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CVADD",
+        "macro": "^C^C_CVADD",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds control vertices to a NURBS surface or spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CVADD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252",
+      "kind": "layout_row",
+      "name": "ID_RBN_8252",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252.id-rbn-8264"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8252"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8252",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252.id-rbn-8264": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252.id-rbn-8264",
+      "kind": "command_button",
+      "name": "Remove",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8256.id-rbn-8253.id-rbn-8252",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8264"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8264",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Remove",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_CV_REMOVE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove",
+        "official": "Surface CV - Remove",
+        "aliases": [
+          "CVREMOVE",
+          "ID_SURF_CV_REMOVE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CVREMOVE",
+        "largeResource": "RCDATA_32_SM_CVREMOVE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CVREMOVE",
+        "macro": "^C^C_CVREMOVE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes control vertices from a NURBS surface or spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CVREMOVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8257": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv.id-rbn-8257",
+      "kind": "panel_break",
+      "name": "ID_RBN_8257",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-cv",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8257"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8257",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

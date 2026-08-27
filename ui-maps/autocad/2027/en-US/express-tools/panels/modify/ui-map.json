@@ -1,0 +1,874 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-modify",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0041",
+    "panelName": "Modify",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "kind": "panel",
+      "name": "Modify",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0135",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0044",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0041"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0041",
+        "text": "Modify",
+        "keyTip": "EM",
+        "alias": null,
+        "officialName": "Express Tools - Modify",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043",
+      "kind": "layout_row",
+      "name": "RBN_0043",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043.rbn-0045"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0043"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0043",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043.rbn-0045": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043.rbn-0045",
+      "kind": "command_button",
+      "name": "Move/Copy/Rotate",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0043",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0045"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0045",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETMOCORO",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Move/Copy/Rotate",
+        "aliases": [
+          "MOCORO",
+          "ID_ACETMOCORO"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MOCORO",
+        "largeResource": "RCDATA_32_MOCORO",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MOCORO",
+        "macro": "^C^C_.MOCORO",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Moves, copies, rotates, and scales objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MOCORO command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130",
+      "kind": "layout_row",
+      "name": "RBN_0130",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130.rbn-0046"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0130"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0130",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130.rbn-0046": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130.rbn-0046",
+      "kind": "command_button",
+      "name": "Stretch Multiple",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0130",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0046"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0046",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Stretch Multiple",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETMSTRCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Stretch Multiple",
+        "official": "Multiple Object Stretch",
+        "aliases": [
+          "MSTRETCH",
+          "ID_ACETMSTRCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MSTRETCH",
+        "largeResource": "RCDATA_32_MSTRETCH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MSTRETCH",
+        "macro": "^C^Cmstretch",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Stretches objects with multiple selection windows",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MSTRETCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0135": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0135",
+      "kind": "layout_row",
+      "name": "RBN_0135",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0135"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0135",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0044": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0044",
+      "kind": "panel_break",
+      "name": "RBN_0044",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0044"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0044",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136",
+      "kind": "layout_row",
+      "name": "RBN_0136",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136.rbn-0144"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0136"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0136",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136.rbn-0144": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136.rbn-0144",
+      "kind": "command_button",
+      "name": "Flatten objects",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0136",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0144"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0144",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "FO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETFLATTEN",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Flatten objects",
+        "aliases": [
+          "FLATTEN",
+          "ID_ACETFLATTEN"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FLATTEN",
+        "largeResource": "RCDATA_32_FLATTEN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FLATTEN",
+        "macro": "^C^CFlatten",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts 3D geometry to 2D",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FLATTEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127",
+      "kind": "layout_row",
+      "name": "RBN_0127",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127.rbn-0131"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0127"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0127",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127.rbn-0131": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127.rbn-0131",
+      "kind": "command_button",
+      "name": "Extended Clip",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0127",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0131"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0131",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETCLIPIT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extended Clip",
+        "aliases": [
+          "CLIPIT",
+          "ID_ACETCLIPIT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIPIT",
+        "largeResource": "RCDATA_32_CLIPIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CLIPIT",
+        "macro": "^C^Cclipit",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds arc, circle, and polyline capability to XCLIP",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CLIPIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128",
+      "kind": "layout_row",
+      "name": "RBN_0128",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128.rbn-0132"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0128"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0128",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128.rbn-0132": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128.rbn-0132",
+      "kind": "command_button",
+      "name": "Extended Offset",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0128",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0132"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0132",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MNACETEXOFFSET",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extended Offset",
+        "aliases": [
+          "EXOFFSET",
+          "ID_MNACETEXOFFSET"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXOFFSET",
+        "largeResource": "RCDATA_32_EXOFFSET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXOFFSET",
+        "macro": "^C^Cexoffset",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Enhances OFFSET",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXOFFSET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129",
+      "kind": "layout_row",
+      "name": "RBN_0129",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129.rbn-0133"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0129"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0129",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129.rbn-0133": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129.rbn-0133",
+      "kind": "command_button",
+      "name": "Convert Shape to Block",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041.rbn-0129",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0133"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0133",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETSHPBLK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Convert Shape to Block",
+        "aliases": [
+          "SHP2BLK",
+          "ID_ACETSHPBLK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHP2BLK",
+        "largeResource": "RCDATA_32_SHP2BLK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SHP2BLK",
+        "macro": "^C^Cshp2blk",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts from a shape definition to a block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SHP2BLK command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

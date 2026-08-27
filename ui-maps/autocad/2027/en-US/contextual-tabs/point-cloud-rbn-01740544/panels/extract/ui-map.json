@@ -1,0 +1,720 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740544-panel-extract",
+  "generatedAt": "2026-08-25T21:52:51.7340432Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740544",
+    "tabName": "Point Cloud",
+    "panelUid": "RBN_201_4513C",
+    "panelName": "Extract",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "kind": "tab",
+      "name": "Point Cloud",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740544"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740544",
+        "text": "Point Cloud",
+        "keyTip": "PC",
+        "alias": null,
+        "officialName": "Point Cloud Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+      "kind": "panel",
+      "name": "Extract",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-f570d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_4513C"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_4513C",
+        "text": "Extract",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Point Cloud Extension - Extract",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf",
+      "kind": "layout_row",
+      "name": "RBN_201_DFBAF",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_DFBAF"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_DFBAF",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca",
+      "kind": "layout_group",
+      "name": "RBN_201_C6CCA",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231",
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_C6CCA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_C6CCA",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92",
+      "kind": "layout_row",
+      "name": "RBN_201_F4D92",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92.rbn-201-ccc8a"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_F4D92"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_F4D92",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92.rbn-201-ccc8a": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92.rbn-201-ccc8a",
+      "kind": "command_button",
+      "name": "Edge",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-f4d92",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_CCC8A"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_CCC8A",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edge",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PC_Extract_Edge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edge",
+        "official": "Point Cloud Extract Edge",
+        "aliases": [
+          "PCEXTRACTEDGE",
+          "ID_PC_Extract_Edge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINTCLOUD_EXTRACT_EDGE",
+        "largeResource": "RCDATA_32_POINTCLOUD_EXTRACT_EDGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PCEXTRACTEDGE",
+        "macro": "^C^C_pcextractedge",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts a line from the intersection of 2 planar segments of a point cloud.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PCEXTRACTEDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231",
+      "kind": "layout_row",
+      "name": "RBN_201_E3231",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231.rbn-201-d3dbc"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_E3231"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_E3231",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231.rbn-201-d3dbc": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231.rbn-201-d3dbc",
+      "kind": "command_button",
+      "name": "Corner",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-e3231",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_D3DBC"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_D3DBC",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Corner",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PC_Extract_Corner",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Corner",
+        "official": "Point Cloud Extract Corner",
+        "aliases": [
+          "PCEXTRACTCORNER",
+          "ID_PC_Extract_Corner"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINTCLOUD_EXTRACT_CORNER",
+        "largeResource": "RCDATA_32_POINTCLOUD_EXTRACT_CORNER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PCEXTRACTCORNER",
+        "macro": "^C^C_pcextractcorner",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts a corner point from the intersection of 3 planar segments or a point cloud.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PCEXTRACTCORNER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad",
+      "kind": "layout_row",
+      "name": "RBN_201_4EFAD",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad.rbn-201-e12a7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_4EFAD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_4EFAD",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad.rbn-201-e12a7": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad.rbn-201-e12a7",
+      "kind": "command_button",
+      "name": "Center Line",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-c6cca.rbn-201-4efad",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_E12A7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_E12A7",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center Line",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PC_Extract_Center_Line",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center Line",
+        "official": "Point Cloud Extract Center Line",
+        "aliases": [
+          "PCEXTRACTCENTERLINE",
+          "ID_PC_Extract_Center_Line"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINTCLOUD_EXTRACT_CENTERLINE",
+        "largeResource": "RCDATA_32_POINTCLOUD_EXTRACT_CENTERLINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PCEXTRACTCENTERLINE",
+        "macro": "^C^C_pcextractcenterline",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts a centerline from a cylindrical segment of a point cloud.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PCEXTRACTCENTERLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79",
+      "kind": "layout_group",
+      "name": "RBN_201_BCD79",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_BCD79"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_BCD79",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39",
+      "kind": "layout_row",
+      "name": "RBN_201_C6A39",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39.rbn-201-b552e"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_C6A39"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_C6A39",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39.rbn-201-b552e": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39.rbn-201-b552e",
+      "kind": "command_button",
+      "name": "Section\rLines",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-dfbaf.rbn-201-bcd79.rbn-201-c6a39",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_B552E"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_B552E",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Section\rLines",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ES",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_201_69253",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Section\rLines",
+        "official": "Extract Section lines",
+        "aliases": [
+          "PCEXTRACTSECTION",
+          "MM_201_69253"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIO_EXTRACT_LINES",
+        "largeResource": "RCDATA_32_SECTIO_EXTRACT_LINES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PCEXTRACTSECTION",
+        "macro": "^C^C_pcextractsection",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extracts 2D geometry from point cloud for the active section plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PCEXTRACTSECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-f570d": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c.rbn-201-f570d",
+      "kind": "panel_break",
+      "name": "RBN_201_F570D",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740544.rbn-201-4513c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_F570D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_F570D",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

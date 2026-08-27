@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740323-panel-items",
+  "generatedAt": "2026-08-25T21:52:43.1542466Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740323",
+    "tabName": "Array",
+    "panelUid": "RBN_01740151",
+    "panelName": "Items",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323",
+      "kind": "tab",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740323"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740323",
+        "text": "Array",
+        "keyTip": "AR",
+        "alias": null,
+        "officialName": "Path Array Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+      "kind": "panel",
+      "name": "Items",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153",
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156",
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157",
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740154"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740151"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740151",
+        "text": "Items",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Path Array - Items",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153",
+      "kind": "layout_row",
+      "name": "RBN_01740153",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153.rbn-01740155"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740153"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740153",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153.rbn-01740155": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153.rbn-01740155",
+      "kind": "ribbon_control",
+      "name": "Path Array Item Count",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740153",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740155"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740155",
+        "controlId": "AcPathArrayItemCount",
+        "text": "Path Array Item Count",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Path Array Item Count.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156",
+      "kind": "layout_row",
+      "name": "RBN_01740156",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156.rbn-01740158"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740156"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740156",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156.rbn-01740158": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156.rbn-01740158",
+      "kind": "ribbon_control",
+      "name": "Path Array Item Spacing",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740156",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740158"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740158",
+        "controlId": "AcPathArrayItemSpacing",
+        "text": "Path Array Item Spacing",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Path Array Item Spacing.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157",
+      "kind": "layout_row",
+      "name": "RBN_01740157",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157.rbn-01740159"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740157"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740157",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157.rbn-01740159": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157.rbn-01740159",
+      "kind": "ribbon_control",
+      "name": "Path Array Item Span",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740157",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740159"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740159",
+        "controlId": "AcPathArrayItemSpan",
+        "text": "Path Array Item Span",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Path Array Item Span.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740154": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151.rbn-01740154",
+      "kind": "panel_break",
+      "name": "RBN_01740154",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740323.rbn-01740151",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740154"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740154",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

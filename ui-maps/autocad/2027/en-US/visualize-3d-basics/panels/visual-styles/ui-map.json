@@ -1,0 +1,881 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-render-panel-visual-styles",
+  "generatedAt": "2026-08-25T21:52:35.9883985Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Render",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelVisualStyles",
+    "panelName": "Visual Styles",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Render"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Render",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": null,
+        "officialName": "Visualize - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "kind": "panel",
+      "name": "Visual Styles",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbn-0106",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbnpnl-0014",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelVisualStyles"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelVisualStyles",
+        "text": "Visual Styles",
+        "keyTip": "VY",
+        "alias": "ID_VisualStyles",
+        "officialName": "View - Visual Styles",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbn-0106": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbn-0106",
+      "kind": "dialog_launcher",
+      "name": "Visual Style Manager...",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0106"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0106",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "VM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1724",
+        "commandId": "MM_1724",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Visual Style Manager...",
+        "aliases": "MM_1724"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VS_STYLE_PALETTE",
+        "largeResource": "RCDATA_32_VS_STYLE_PALETTE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "^C^C$M=$(if,$(eq,$(getvar,vsstate),0),_visualstyles,_visualstylesclose)",
+        "macroType": "Any",
+        "commandId": "MM_1724",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Manage Visual Styles...",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214",
+      "kind": "layout_row",
+      "name": "RBN_01738214",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738214"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738214",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215",
+      "kind": "layout_group",
+      "name": "RBN_01738215",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738215"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738215",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216",
+      "kind": "layout_row",
+      "name": "RBN_01738216",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216.rbn-01738217"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738216"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738216",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216.rbn-01738217": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216.rbn-01738217",
+      "kind": "gallery",
+      "name": "Visual\rStyles",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738216",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738217"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738217",
+        "controlId": "AcVisualStyleGalleryControl",
+        "text": "Visual\rStyles",
+        "keyTip": "VS"
+      },
+      "semantics": {
+        "description": "Displays the Visual\rStyles gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Visual\rStyles item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157",
+      "kind": "layout_row",
+      "name": "RBN_01738157",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738218",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.id-rbn-cmdbtn-hide2",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738153",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738219"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738157"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738157",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738218": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738218",
+      "kind": "data_bound_dropdown",
+      "name": "Edge Mode Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738218"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738218",
+        "controlId": "AcVSEDGESDataBoundDropDown",
+        "text": "Edge Mode Drop-down",
+        "keyTip": "EM"
+      },
+      "semantics": {
+        "description": "Opens or changes the Edge Mode Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Edge Mode Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.id-rbn-cmdbtn-hide2": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.id-rbn-cmdbtn-hide2",
+      "kind": "command_button",
+      "name": "Hide",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_HIDE2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_HIDE2",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Hide",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Hide",
+        "aliases": [
+          "HIDE",
+          "ID_Hide"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HIDE",
+        "largeResource": "RCDATA_32_HIDE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "HIDE",
+        "macro": "^C^C_hide",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Regenerates a 3D model with hidden lines suppressed",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 HIDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738153": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738153",
+      "kind": "data_bound_dropdown",
+      "name": "Face Color Mode Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738153"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738153",
+        "controlId": "AcVSFACECOLORMODEDataBoundDropDown",
+        "text": "Face Color Mode Drop-down",
+        "keyTip": "FM"
+      },
+      "semantics": {
+        "description": "Opens or changes the Face Color Mode Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Face Color Mode Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738219": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157.rbn-01738219",
+      "kind": "data_bound_dropdown",
+      "name": "Face Style Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738214.rbn-01738215.rbn-01738157",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738219"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738219",
+        "controlId": "AcVSFACESTYLEDataBoundDropDown",
+        "text": "Face Style Drop-down",
+        "keyTip": "FS"
+      },
+      "semantics": {
+        "description": "Opens or changes the Face Style Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Face Style Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222",
+      "kind": "layout_row",
+      "name": "RBN_01738222",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738220",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738221",
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.opacitybutton"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738222"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738222",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738220": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738220",
+      "kind": "toggle_button",
+      "name": "X-ray",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738220"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738220",
+        "controlId": "AcXRayModeCommandToggleButton",
+        "text": "X-ray",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "XR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "X-ray",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles X-ray.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738221": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.rbn-01738221",
+      "kind": "separator",
+      "name": "RBN_01738221",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738221"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738221",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.opacitybutton": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222.opacitybutton",
+      "kind": "ribbon_control",
+      "name": "Opacity",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738222",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "OpacityButton"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "OpacityButton",
+        "controlId": "AcVisualStylesOpacitySlider",
+        "text": "Opacity",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Opacity.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbnpnl-0014": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.id-rbnpnl-0014",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0014",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0014"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0014",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168",
+      "kind": "layout_row",
+      "name": "RBN_01738168",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168.rbn-01738166"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738168"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738168",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168.rbn-01738166": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168.rbn-01738166",
+      "kind": "ribbon_control",
+      "name": "Smoothing",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-render.id-panelvisualstyles.rbn-01738168",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738166"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738166",
+        "controlId": "AcArcCircleSmoothingSpinner",
+        "text": "Smoothing",
+        "keyTip": "SO"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Smoothing.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

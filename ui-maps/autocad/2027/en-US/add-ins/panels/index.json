@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_00012112",
+  "tabName": "Add-ins",
+  "panelCount": 1,
+  "panels": [
+    {
+      "name": "App Manager",
+      "uid": "RBN_190_B55E9",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-00012112.rbn-190-b55e9",
+      "map": "app-manager/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

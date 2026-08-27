@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TableTab",
+  "tabName": "Table Cell",
+  "panelCount": 7,
+  "panels": [
+    {
+      "name": "Rows",
+      "uid": "ID_PanelTableRows",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablerows",
+      "map": "rows/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Columns",
+      "uid": "ID_PanelTableColumns",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecolumns",
+      "map": "columns/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Merge",
+      "uid": "ID_PanelTableMerge",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablemerge",
+      "map": "merge/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 5
+    },
+    {
+      "name": "Cell Styles",
+      "uid": "ID_PanelTableCellStyles",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellstyles",
+      "map": "cell-styles/ui-map.json",
+      "nodes": 17,
+      "actionableControls": 5
+    },
+    {
+      "name": "Cell Format",
+      "uid": "ID_PanelTableCellFormat",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltablecellformat",
+      "map": "cell-format/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Insert",
+      "uid": "ID_PanelTableInsertPanel",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltableinsertpanel",
+      "map": "insert/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 4
+    },
+    {
+      "name": "Data",
+      "uid": "ID_PanelTableData",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabletab.id-paneltabledata",
+      "map": "data/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    }
+  ]
+}

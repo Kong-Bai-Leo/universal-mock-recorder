@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabRender",
+  "tabName": "Visualize",
+  "panelCount": 10,
+  "panels": [
+    {
+      "name": "Named Views",
+      "uid": "ID_PanelNamedViews2",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelnamedviews2",
+      "map": "named-views/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 3
+    },
+    {
+      "name": "Coordinates",
+      "uid": "ID_PanelCoord",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcoord",
+      "map": "coordinates/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 19
+    },
+    {
+      "name": "Visual Styles",
+      "uid": "ID_PanelVisualStyles",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelvisualstyles",
+      "map": "visual-styles/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 9
+    },
+    {
+      "name": "Model Viewports",
+      "uid": "ID_PanelViewports",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelviewports",
+      "map": "model-viewports/ui-map.json",
+      "nodes": 31,
+      "actionableControls": 17
+    },
+    {
+      "name": "Lights",
+      "uid": "ID_PanelLights",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "map": "lights/ui-map.json",
+      "nodes": 27,
+      "actionableControls": 13
+    },
+    {
+      "name": "Sun & Location",
+      "uid": "ID_PanelSun",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelsun",
+      "map": "sun-location/ui-map.json",
+      "nodes": 23,
+      "actionableControls": 9
+    },
+    {
+      "name": "Materials",
+      "uid": "ID_PanelMaterials",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelmaterials",
+      "map": "materials/ui-map.json",
+      "nodes": 28,
+      "actionableControls": 13
+    },
+    {
+      "name": "Camera",
+      "uid": "ID_PanelCameras",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelcameras",
+      "map": "camera/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Animations",
+      "uid": "ID_PanelMotionPathAnimation",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelmotionpathanimation",
+      "map": "animations/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 10
+    },
+    {
+      "name": "Render",
+      "uid": "ID_PanelRender",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "map": "render/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 9
+    }
+  ]
+}

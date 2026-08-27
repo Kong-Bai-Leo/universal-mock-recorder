@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-xref-panel-edit",
+  "generatedAt": "2026-08-25T21:53:10.6263323Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-Xref",
+    "tabName": "External Reference",
+    "panelUid": "RBN_00017176",
+    "panelName": "Edit",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref",
+      "kind": "tab",
+      "name": "External Reference",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-Xref"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-Xref",
+        "text": "External Reference",
+        "keyTip": "EX",
+        "alias": null,
+        "officialName": "External Reference Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176",
+      "kind": "panel",
+      "name": "Edit",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177",
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.id-rbn-0085"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017176"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017176",
+        "text": "Edit",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "External Reference - Edit",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177",
+      "kind": "layout_row",
+      "name": "RBN_00017177",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017179",
+        "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017180"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017177"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017177",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017179": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017179",
+      "kind": "command_button",
+      "name": "Edit Reference In-Place",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017179"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017179",
+        "controlId": "AcRibbonCommandButtonEnableNotInXCompareEqualToOne",
+        "text": "Edit Reference In-Place",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ER",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefEditor",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Reference In-Place",
+        "official": "Xref and Block, Edit Reference In-Place",
+        "aliases": [
+          "REFEDIT",
+          "ID_RefEditor"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_EDIT",
+        "largeResource": "RCDATA_32_REFED_EDIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFEDIT",
+        "macro": "^C^C_refedit;",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits a block or an external reference directly within the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017180": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177.rbn-00017180",
+      "kind": "command_button",
+      "name": "Open Reference",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.rbn-00017177",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017180"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017180",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Open Reference",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "OR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_XOpen",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Open Reference",
+        "official": "Xref and Block, Open Reference",
+        "aliases": [
+          "XOPEN",
+          "ID_XOpen"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OPEN_REFERENCE",
+        "largeResource": "RCDATA_32_OPEN_REFERENCE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XOPEN",
+        "macro": "^C^C_xopen;",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the block or external reference in a separate window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XOPEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.id-rbn-0085": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176.id-rbn-0085",
+      "kind": "panel_break",
+      "name": "ID_RBN_0085",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0085"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0085",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

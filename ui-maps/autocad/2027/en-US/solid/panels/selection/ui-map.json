@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-solidmodeling-panel-selection",
+  "generatedAt": "2026-08-25T21:52:30.8724778Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SolidModeling",
+    "tabName": "Solid",
+    "panelUid": "ID_PanelSubObject",
+    "panelName": "Selection",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "kind": "tab",
+      "name": "Solid",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SolidModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SolidModeling",
+        "text": "Solid",
+        "keyTip": "SO",
+        "alias": null,
+        "officialName": "Solid Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+      "kind": "panel",
+      "name": "Selection",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.id-rbn-0023"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelSubObject"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 102
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelSubObject",
+        "text": "Selection",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Home 3D - Selection",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369",
+      "kind": "layout_row",
+      "name": "RBN_00012369",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.rbn-00013234",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994863",
+        "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994869"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00012369"
+      },
+      "placement": {
+        "region": "main",
+        "order": 103
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00012369",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.rbn-00013234": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.rbn-00013234",
+      "kind": "toggle_button",
+      "name": "Culling",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013234"
+      },
+      "placement": {
+        "region": "main",
+        "order": 104
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013234",
+        "controlId": "CullingObjToggleButton",
+        "text": "Culling",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Culling",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Culling.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994863": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994863",
+      "kind": "ribbon_control",
+      "name": "Subobject Selection Mode Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0994863"
+      },
+      "placement": {
+        "region": "main",
+        "order": 105
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0994863",
+        "controlId": "AcSUBOBJSELECTIONMODESplitButton",
+        "text": "Subobject Selection Mode Drop-down",
+        "keyTip": "SB"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Subobject Selection Mode Drop-down.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994869": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369.xlsr-0994869",
+      "kind": "ribbon_control",
+      "name": "Default Gizmo Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.rbn-00012369",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0994869"
+      },
+      "placement": {
+        "region": "main",
+        "order": 106
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0994869",
+        "controlId": "AcDEFAULTGIZMOSplitButton",
+        "text": "Default Gizmo Drop-down",
+        "keyTip": "DG"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Default Gizmo Drop-down.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.id-rbn-0023": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject.id-rbn-0023",
+      "kind": "panel_break",
+      "name": "ID_RBN_0023",
+      "parentId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0023"
+      },
+      "placement": {
+        "region": "main",
+        "order": 107
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0023",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,982 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabrender-panel-render",
+  "generatedAt": "2026-08-25T21:52:34.5434845Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabRender",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelRender",
+    "panelName": "Render",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabRender"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabRender",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": "ID_TabRender",
+        "officialName": "Visualize"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "kind": "panel",
+      "name": "Render",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-a95bf",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-37a4f",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelRender"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 186
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelRender",
+        "text": "Render",
+        "keyTip": "RN",
+        "alias": "ID_Render",
+        "officialName": "Render - Render",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-a95bf": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-a95bf",
+      "kind": "dialog_launcher",
+      "name": "Render Preset Manager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_A95BF"
+      },
+      "placement": {
+        "region": "main",
+        "order": 187
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_A95BF",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "RY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Rpref",
+        "commandId": "ID_Rpref",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Render Preset Manager",
+        "aliases": [
+          "RPREF",
+          "ID_Rpref"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RPREF",
+        "largeResource": "RCDATA_32_RPREF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RPREF",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,renderprefsstate),0)),^C^C_rprefclose,^C^C_rpref)",
+        "macroType": "View",
+        "commandId": "ID_Rpref",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Displays or hides the Render Preset Manager palette for access to the rendering settings",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RPREF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+      "kind": "layout_row",
+      "name": "RBN_201_4F1C3",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-45553",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-renderonline-0001",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-rendergallery-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_4F1C3"
+      },
+      "placement": {
+        "region": "main",
+        "order": 188
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_4F1C3",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-45553": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-45553",
+      "kind": "command_button",
+      "name": "Render to Size",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_45553"
+      },
+      "placement": {
+        "region": "main",
+        "order": 189
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_45553",
+        "controlId": "AcRenderOutputSizeMenuButton",
+        "text": "Render to Size",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render to Size",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Render to Size.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e",
+      "kind": "layout_group",
+      "name": "RBN_201_2BA0E",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_2BA0E"
+      },
+      "placement": {
+        "region": "main",
+        "order": 190
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_2BA0E",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b",
+      "kind": "layout_row",
+      "name": "RBN_201_5E45B",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b.rbn-201-e1071"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5E45B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 191
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_5E45B",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b.rbn-201-e1071": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b.rbn-201-e1071",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Render Presets",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45b",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_E1071"
+      },
+      "placement": {
+        "region": "main",
+        "order": 192
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_E1071",
+        "controlId": "AcRenderPresetList",
+        "text": "Ribbon Combo Box - Render Presets",
+        "keyTip": "RP"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Render Presets.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c",
+      "kind": "layout_row",
+      "name": "RBN_201_5E45C",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c.rbn-201-e1072"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5E45C"
+      },
+      "placement": {
+        "region": "main",
+        "order": 193
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_5E45C",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c.rbn-201-e1072": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c.rbn-201-e1072",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Render Target",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-5e45c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_E1072"
+      },
+      "placement": {
+        "region": "main",
+        "order": 194
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_E1072",
+        "controlId": "AcRenderTarget",
+        "text": "Ribbon Combo Box - Render Target",
+        "keyTip": "RH"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Render Target.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53",
+      "kind": "layout_row",
+      "name": "RBN_201_A1B53",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53.rbn-201-b1b87"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_A1B53"
+      },
+      "placement": {
+        "region": "main",
+        "order": 195
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_A1B53",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53.rbn-201-b1b87": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53.rbn-201-b1b87",
+      "kind": "ribbon_control",
+      "name": "Render Progress Bar",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.rbn-201-2ba0e.rbn-201-a1b53",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_B1B87"
+      },
+      "placement": {
+        "region": "main",
+        "order": 196
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_B1B87",
+        "controlId": "AcRenderDualProgressBar",
+        "text": "Render Progress Bar",
+        "keyTip": "RZ"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Render Progress Bar.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-renderonline-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-renderonline-0001",
+      "kind": "command_button",
+      "name": "Render in\rCloud",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ONLINERENDER_RenderOnline_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 197
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ONLINERENDER_RenderOnline_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Render in\rCloud",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Render_Online",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render in\rCloud",
+        "official": "Render Online",
+        "aliases": [
+          "RENDERONLINE",
+          "ID_Render_Online"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RENDER_ONLINE",
+        "largeResource": "RCDATA_32_RENDER_ONLINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RENDERONLINE",
+        "macro": "^C^C_renderonline",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Uploads the current drawing and renders its 3D views with Autodesk Online Rendering Service.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RENDERONLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-rendergallery-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3.id-rbn-cmdbtn-onlinerender-rendergallery-0001",
+      "kind": "command_button",
+      "name": "Render\rGallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-4f1c3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ONLINERENDER_RenderGallery_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 198
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ONLINERENDER_RenderGallery_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Render\rGallery",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Show_Render_Gallery",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render\rGallery",
+        "official": "Show Render Gallery",
+        "aliases": [
+          "SHOWRENDERGALLERY",
+          "ID_Show_Render_Gallery"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_IMAGE_GALLERY",
+        "largeResource": "RCDATA_32_IMAGE_GALLERY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SHOWRENDERGALLERY",
+        "macro": "^C^C_showrendergallery",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens your online gallery of completed and in-progress renderings in a browser.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SHOWRENDERGALLERY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-37a4f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-37a4f",
+      "kind": "panel_break",
+      "name": "RBN_201_37A4F",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_37A4F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 199
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_37A4F",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda",
+      "kind": "layout_row",
+      "name": "RBN_201_EBBDA",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda.rbn-201-5cbe2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_EBBDA"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 200
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_EBBDA",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda.rbn-201-5cbe2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda.rbn-201-5cbe2",
+      "kind": "command_button",
+      "name": "Render Environment and Exposure",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-ebbda",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_5CBE2"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 201
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_5CBE2",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Render Environment and Exposure",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Adjust_Environment_And_Exposure",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render Environment and Exposure",
+        "official": "Adjust Environment and Exposure...",
+        "aliases": [
+          "RENDEREXPOSURE",
+          "ID_Adjust_Environment_And_Exposure"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RENDER_ENV_AND_EXP",
+        "largeResource": "RCDATA_32_RENDER_ENV_AND_EXP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RENDEREXPOSURE",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,renderenvstate),0)),^C^C_renderexposureclose,^C^C_renderexposure)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Launches the Render Environment and Exposure palette where lighting and background, dark/bright and cool/warm tones  are applied to the scene.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RENDEREXPOSURE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811",
+      "kind": "layout_row",
+      "name": "RBN_201_F5811",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811.rbn-201-ceb20"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_F5811"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 202
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_F5811",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811.rbn-201-ceb20": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811.rbn-201-ceb20",
+      "kind": "command_button",
+      "name": "Render Window",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panelrender.rbn-201-f5811",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_CEB20"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 203
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_CEB20",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Render Window",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RenderWin",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render Window",
+        "official": "Show Render Window...",
+        "aliases": [
+          "RENDERWINDOW",
+          "ID_RenderWin"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RENDERWINDOW_ON",
+        "largeResource": "RCDATA_32_RENDERWINDOW_ON",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RENDERWINDOW",
+        "macro": "^C^C_renderwindow",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the Render window without starting a rendering operation",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RENDERWINDOW command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

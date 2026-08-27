@@ -1,0 +1,4993 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-draw",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "ID_PanelDraw",
+    "panelName": "Draw",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "kind": "panel",
+      "name": "Draw",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbnpnl",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelDraw"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:open_slideout"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelDraw",
+        "text": "Draw",
+        "keyTip": "DW",
+        "alias": "ID_Draw",
+        "officialName": "Home 2D - Draw",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-line",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-pline",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-line": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-line",
+      "kind": "command_button",
+      "name": "Line",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LINE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LINE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Line",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Line",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Line",
+        "official": "Line",
+        "aliases": [
+          "LINE",
+          "ID_Line"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LINE",
+        "largeResource": "RCDATA_32_LINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LINE",
+        "macro": "^C^C_line",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates straight line segments",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-pline": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-cmdbtn-pline",
+      "kind": "command_button",
+      "name": "Polyline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLINE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLINE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polyline",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pline",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polyline",
+        "official": "Polyline",
+        "aliases": [
+          "PLINE",
+          "ID_Pline"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLINE",
+        "largeResource": "RCDATA_32_PLINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLINE",
+        "macro": "^C^C_pline",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "kind": "split_button",
+      "name": "Circle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CIRCLE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown",
+          "live_interaction:invoke_primary_then_cancel"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_CIRCLE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Circle",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CI",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_CIRRAD",
+        "largeImage": "RCDATA_32_CIRRAD",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Circle variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.primary-action",
+      "kind": "primary_button",
+      "name": "Circle primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CIRCLE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Circle variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Circle menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CIRCLE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Circle menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Circle popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Circle menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circledia",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0005",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle2pt",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle3pt",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0006",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettr",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettt"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CIRCLE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Circle variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlerad",
+      "kind": "command_button",
+      "name": "Center, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLERAD"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLERAD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleRad",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Radius",
+        "official": "Circle, Center, Radius",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleRad"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRRAD",
+        "largeResource": "RCDATA_32_CIRRAD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using a center point and a radius",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circledia": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circledia",
+      "kind": "command_button",
+      "name": "Center, Diameter",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLEDIA"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLEDIA",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Diameter",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleDia",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Diameter",
+        "official": "Circle, Center, Diameter",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleDia"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRDIA",
+        "largeResource": "RCDATA_32_CIRDIA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle \\_d",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using a center point and a diameter",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0005": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0005",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0005",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0005"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0005",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle2pt": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle2pt",
+      "kind": "command_button",
+      "name": "2-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLE2PT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLE2PT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "2-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Circle2pt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "2-Point",
+        "official": "Circle, 2 Points",
+        "aliases": [
+          "CIRCLE",
+          "ID_Circle2pt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIR2PT",
+        "largeResource": "RCDATA_32_CIR2PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _2p",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using two endpoints of the diameter",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle3pt": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circle3pt",
+      "kind": "command_button",
+      "name": "3-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLE3PT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLE3PT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Circle3pt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3-Point",
+        "official": "Circle, 3 Points",
+        "aliases": [
+          "CIRCLE",
+          "ID_Circle3pt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIR3PT",
+        "largeResource": "RCDATA_32_CIR3PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _3p",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using three points on the circumference",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0006": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-ribbonseparator-0006",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0006",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0006"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0006",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettr": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettr",
+      "kind": "command_button",
+      "name": "Tan, Tan, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLETTR"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLETTR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tan, Tan, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleTTR",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tan, Tan, Radius",
+        "official": "Circle, Tan, Tan, Radius",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleTTR"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRTTR",
+        "largeResource": "RCDATA_32_CIRTTR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _ttr",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle with a specified radius tangent to two objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettt": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu.id-rbn-cmdbtn-circlettt",
+      "kind": "command_button",
+      "name": "Tan, Tan, Tan",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CIRCLETTT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-circle",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CIRCLETTT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tan, Tan, Tan",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleTTT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tan, Tan, Tan",
+        "official": "Circle, Tan, Tan, Tan",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleTTT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRTTT",
+        "largeResource": "RCDATA_32_CIRTTT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _3p _tan \\_tan \\_tan \\",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle tangent to three objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "kind": "split_button",
+      "name": "Arc",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ARC"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ARC",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Arc",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AR",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ARC3PT",
+        "largeImage": "RCDATA_32_ARC3PT",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Arc variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.primary-action",
+      "kind": "primary_button",
+      "name": "Arc primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ARC.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Arc variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Arc menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ARC.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Arc menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Arc popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Arc menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstceen",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcean",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcele",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenag",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstendi",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenra",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0002",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccesten",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestan",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestle",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0003",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccontin"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ARC.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Arc variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arc3point",
+      "kind": "command_button",
+      "name": "3-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARC3POINT"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARC3POINT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Arc3point",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3-Point",
+        "official": "Arc, 3 Points",
+        "aliases": [
+          "ARC",
+          "ID_Arc3point"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARC3PT",
+        "largeResource": "RCDATA_32_ARC3PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using three points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstceen": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstceen",
+      "kind": "command_button",
+      "name": "Start, Center, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTCEEN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTCEEN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeEn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, End",
+        "official": "Arc, Start, Center, End",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeEn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCE",
+        "largeResource": "RCDATA_32_ARCSCE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using the start point, center, and endpoint",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcean": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcean",
+      "kind": "command_button",
+      "name": "Start, Center, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTCEAN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTCEAN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeAn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, Angle",
+        "official": "Arc, Start, Center, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeAn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCA",
+        "largeResource": "RCDATA_32_ARCSCA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c \\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, center, and an included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcele": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstcele",
+      "kind": "command_button",
+      "name": "Start, Center, Length",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTCELE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTCELE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, Length",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeLe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, Length",
+        "official": "Arc, Start, Center, Length",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeLe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCL",
+        "largeResource": "RCDATA_32_ARCSCL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c \\_l",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, center, and the length of a chord",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0001",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0001",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0001"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0001",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenag": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenag",
+      "kind": "command_button",
+      "name": "Start, End, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTENAG"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTENAG",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnAg",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Angle",
+        "official": "Arc, Start, End, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnAg"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSEA",
+        "largeResource": "RCDATA_32_ARCSEA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and an included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstendi": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstendi",
+      "kind": "command_button",
+      "name": "Start, End, Direction",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTENDI"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTENDI",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Direction",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnDi",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Direction",
+        "official": "Arc, Start, End, Direction",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnDi"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSED",
+        "largeResource": "RCDATA_32_ARCSED",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_d",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and a tangent direction at the start point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenra": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arcstenra",
+      "kind": "command_button",
+      "name": "Start, End, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCSTENRA"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCSTENRA",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnRa",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Radius",
+        "official": "Arc, Start, End, Radius",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnRa"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSER",
+        "largeResource": "RCDATA_32_ARCSER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_r",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and a radius",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0002",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0002",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0002",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccesten": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccesten",
+      "kind": "command_button",
+      "name": "Center, Start, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCCESTEN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCCESTEN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStEn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, End",
+        "official": "Arc, Center, Start, End",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStEn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSE",
+        "largeResource": "RCDATA_32_ARCCSE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and a third point that determines the endpoint",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestan": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestan",
+      "kind": "command_button",
+      "name": "Center, Start, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCCESTAN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCCESTAN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStAn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, Angle",
+        "official": "Arc, Center, Start, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStAn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSA",
+        "largeResource": "RCDATA_32_ARCCSA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c \\\\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and the included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestle": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccestle",
+      "kind": "command_button",
+      "name": "Center, Start, Length",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCCESTLE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCCESTLE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, Length",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStLe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, Length",
+        "official": "Arc, Center, Start, Length",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStLe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSL",
+        "largeResource": "RCDATA_32_ARCCSL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c \\\\_l",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and the length of a chord",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-ribbonseparator-0003",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0003",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0003"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0003",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccontin": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu.id-rbn-cmdbtn-arccontin",
+      "kind": "command_button",
+      "name": "Continue",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ARCCONTIN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-splitbtn-arc",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ARCCONTIN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Continue",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcContin",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Continue",
+        "official": "Arc, Continue",
+        "aliases": [
+          "ARC",
+          "ID_ArcContin"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCON",
+        "largeResource": "RCDATA_32_ARCCON",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc ;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc tangent to the last line or arc drawn",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0001",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-ribbonseparator-0007"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0001",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "kind": "split_button",
+      "name": "Rectangle Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_RECTANGLE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_RECTANGLE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Rectangle Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RE",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Rectangle Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.primary-action",
+      "kind": "primary_button",
+      "name": "Rectangle Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_RECTANGLE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Rectangle Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Rectangle Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_RECTANGLE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Rectangle Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Rectangle Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Rectangle Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740414"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_RECTANGLE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Rectangle Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740413",
+      "kind": "command_button",
+      "name": "Rectangle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740413"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "ui": {
+        "uid": "RBN_01740413",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rectangle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Rectang",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rectangle",
+        "official": "Rectangle",
+        "aliases": [
+          "RECTANG",
+          "ID_Rectang"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RECTAN",
+        "largeResource": "RCDATA_32_RECTAN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RECTANG",
+        "macro": "^C^C_rectang",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a rectangular polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RECTANG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740414": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu.rbn-01740414",
+      "kind": "command_button",
+      "name": "Polygon",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740414"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-splitbtn-rectangle",
+      "ui": {
+        "uid": "RBN_01740414",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polygon",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Polygon",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polygon",
+        "official": "Polygon",
+        "aliases": [
+          "POLYGON",
+          "ID_Polygon"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POLYGO",
+        "largeResource": "RCDATA_32_POLYGO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POLYGON",
+        "macro": "^C^C_polygon",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an equilateral closed polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POLYGON command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-ribbonseparator-0007": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001.id-rbn-ribbonseparator-0007",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0007",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0007"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0007",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0003",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-ribbonseparator-0009"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0003",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "kind": "split_button",
+      "name": "Ellipse Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ELLIPSE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_ELLIPSE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Ellipse Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EL",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ELLAE",
+        "largeImage": "RCDATA_16_ELLAE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Ellipse Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.primary-action",
+      "kind": "primary_button",
+      "name": "Ellipse Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ELLIPSE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Ellipse Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Ellipse Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ELLIPSE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Ellipse Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Ellipse Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Ellipse Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipseax",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-ribbonseparator-0008",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsear"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_ELLIPSE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Ellipse Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsece",
+      "kind": "command_button",
+      "name": "Center",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ELLIPSECE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ELLIPSECE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseCe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center",
+        "official": "Ellipse, Center",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseCe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLCEN",
+        "largeResource": "RCDATA_32_ELLCEN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse _c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an ellipse using a specified center point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipseax": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipseax",
+      "kind": "command_button",
+      "name": "Axis, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ELLIPSEAX"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ELLIPSEAX",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Axis, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseAx",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Axis, End",
+        "official": "Ellipse, Axis, End",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseAx"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLAE",
+        "largeResource": "RCDATA_32_ELLAE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an ellipse or an elliptical arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-ribbonseparator-0008": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-ribbonseparator-0008",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0008",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0008"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0008",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsear": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu.id-rbn-cmdbtn-ellipsear",
+      "kind": "command_button",
+      "name": "Elliptical Arc",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ELLIPSEAR"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-splitbtn-ellipse",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ELLIPSEAR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Elliptical Arc",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseAr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Elliptical Arc",
+        "official": "Ellipse, Arc",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseAr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLARC",
+        "largeResource": "RCDATA_32_ELLARC",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse _a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an elliptical arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-ribbonseparator-0009": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003.id-rbn-ribbonseparator-0009",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0009",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.id-rbn-row-0003",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0009"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0009",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415",
+      "kind": "layout_row",
+      "name": "RBN_01740415",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740415"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740415",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "kind": "split_button",
+      "name": "Hatch Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740416"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740416",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Hatch Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HA",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Hatch Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.primary-action",
+      "kind": "primary_button",
+      "name": "Hatch Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740416.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Hatch Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Hatch Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740416.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Hatch Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Hatch Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Hatch Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740418",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740419"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740416.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Hatch Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740417",
+      "kind": "command_button",
+      "name": "Hatch",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740417"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "ui": {
+        "uid": "RBN_01740417",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hatch",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Bhatch",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hatch",
+        "official": "Hatch...",
+        "aliases": [
+          "HATCH",
+          "ID_Bhatch"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BHATCH",
+        "largeResource": "RCDATA_32_BHATCH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "HATCH",
+        "macro": "^C^C_hatch",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Fills an enclosed area or selected objects with a hatch pattern or fill",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 HATCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740418": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740418",
+      "kind": "command_button",
+      "name": "Gradient",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740418"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "ui": {
+        "uid": "RBN_01740418",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Gradient",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "GR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Gradient",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Gradient",
+        "official": "Gradient...",
+        "aliases": [
+          "GRADIENT",
+          "ID_Gradient"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GRADIENT",
+        "largeResource": "RCDATA_32_GRADIENT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GRADIENT",
+        "macro": "^C^C_gradient",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Fills an enclosed area or selected objects with a gradient fill",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GRADIENT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740419": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu.rbn-01740419",
+      "kind": "command_button",
+      "name": "Boundary",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740419"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row.id-rbn-rowpanel.rbn-01740415.rbn-01740416",
+      "ui": {
+        "uid": "RBN_01740419",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Boundary",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Boundary",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Boundary",
+        "official": "Boundary...",
+        "aliases": [
+          "BOUNDARY",
+          "ID_Boundary"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BPOLY",
+        "largeResource": "RCDATA_32_BPOLY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BOUNDARY",
+        "macro": "^C^C_boundary",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a region or a polyline from an enclosed area",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BOUNDARY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbnpnl": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbnpnl",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0004",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-spline",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-01740420",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-00017414",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-xline",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-ray",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-pointmult",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-ribbonseparator-0010",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-divide",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-measure"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0004"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0004",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-spline": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-spline",
+      "kind": "command_button",
+      "name": "Spline Fit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SPLINE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SPLINE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spline Fit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SPLINE_KNOT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spline Fit",
+        "official": "Spline Knot",
+        "aliases": [
+          "SPLINE",
+          "ID_SURF_SPLINE_KNOT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SPLINEKNOT",
+        "largeResource": "RCDATA_32_SM_SPLINEKNOT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPLINE",
+        "macro": "^C^C_^RSPLINE _M _FIT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Draws a spline with fit points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-01740420": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-01740420",
+      "kind": "command_button",
+      "name": "Spline CV",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740420"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740420",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spline CV",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SPLINECV",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spline CV",
+        "official": "Spline",
+        "aliases": [
+          "SPLINE",
+          "ID_SURF_SPLINECV"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SPLINECV",
+        "largeResource": "RCDATA_32_SM_SPLINECV",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPLINE",
+        "macro": "^C^C_^RSPLINE _M _CV",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Draws a spline with control vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-00017414": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.rbn-00017414",
+      "kind": "separator",
+      "name": "RBN_00017414",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017414"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017414",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-xline": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-xline",
+      "kind": "command_button",
+      "name": "Construction Line",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_XLINE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_XLINE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Construction Line",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "XL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Xline",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Construction Line",
+        "official": "Construction Line",
+        "aliases": [
+          "XLINE",
+          "ID_Xline"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_XLINE",
+        "largeResource": "RCDATA_32_XLINE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XLINE",
+        "macro": "^C^C_xline",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a line of infinite length",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-ray": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-ray",
+      "kind": "command_button",
+      "name": "Ray",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_RAY"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_RAY",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Ray",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Ray",
+        "official": "Ray",
+        "aliases": [
+          "RAY",
+          "ID_Ray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RAY",
+        "largeResource": "RCDATA_32_RAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RAY",
+        "macro": "^C^C_ray",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a line that starts at a point and continues to infinity",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RAY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-pointmult": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-pointmult",
+      "kind": "command_button",
+      "name": "Multiple Points",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_POINTMULT"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_POINTMULT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Multiple Points",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PointMult",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Multiple Points",
+        "official": "Point, Multiple Point",
+        "aliases": [
+          "POINT",
+          "ID_PointMult"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINT",
+        "largeResource": "RCDATA_32_POINT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POINT",
+        "macro": "*^C^C_point",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates multiple point objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-ribbonseparator-0010": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-ribbonseparator-0010",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0010",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0010"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0010",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-divide": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-divide",
+      "kind": "command_button",
+      "name": "Divide",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIVIDE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIVIDE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Divide",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Divide",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Divide",
+        "official": "Divide",
+        "aliases": [
+          "DIVIDE",
+          "ID_Divide"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIVIDE",
+        "largeResource": "RCDATA_32_DIVIDE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIVIDE",
+        "macro": "^C^C_divide",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates evenly spaced point objects or blocks along the length or perimeter of an object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIVIDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-measure": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004.id-rbn-cmdbtn-measure",
+      "kind": "command_button",
+      "name": "Measure",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MEASURE"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MEASURE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Measure",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ME",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Measure",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Measure",
+        "official": "Measure",
+        "aliases": [
+          "MEASURE",
+          "ID_Measure"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MEASUR",
+        "largeResource": "RCDATA_32_MEASUR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASURE",
+        "macro": "^C^C_measure",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates point objects or blocks at measured intervals along the length or perimeter of an object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASURE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0005",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-region",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-ribbonseparator-0011",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-wipeout",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-3dpoly",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-helix",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-donut",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0005"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0005",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-region": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-region",
+      "kind": "command_button",
+      "name": "Region",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REGION"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REGION",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Region",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Region",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Region",
+        "official": "Region",
+        "aliases": [
+          "REGION",
+          "ID_Region"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REGION",
+        "largeResource": "RCDATA_32_REGION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REGION",
+        "macro": "^C^C_region",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts an object that encloses an area into a region object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REGION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-ribbonseparator-0011": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-ribbonseparator-0011",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0011",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0011"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0011",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-wipeout": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-wipeout",
+      "kind": "command_button",
+      "name": "Wipeout",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WIPEOUT"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WIPEOUT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Wipeout",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Wipeout",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Wipeout",
+        "official": "Wipeout",
+        "aliases": [
+          "WIPEOUT",
+          "ID_Wipeout"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WIPEOUT",
+        "largeResource": "RCDATA_32_WIPEOUT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "WIPEOUT",
+        "macro": "^C^C_wipeout",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a wipeout object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 WIPEOUT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-3dpoly": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-3dpoly",
+      "kind": "command_button",
+      "name": "3D Polyline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_3DPOLY"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_3DPOLY",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Polyline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "3D",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3dpoly",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Polyline",
+        "official": "3D Polyline",
+        "aliases": [
+          "3DPOLY",
+          "ID_3dpoly"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DPOLY",
+        "largeResource": "RCDATA_32_3DPOLY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DPOLY",
+        "macro": "^C^C_3dpoly",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DPOLY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-helix": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-helix",
+      "kind": "command_button",
+      "name": "Helix",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_HELIX"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_HELIX",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Helix",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Helix",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Helix",
+        "official": "Helix",
+        "aliases": [
+          "HELIX",
+          "ID_Helix"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HELIX",
+        "largeResource": "RCDATA_32_HELIX",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "HELIX",
+        "macro": "^C^C_Helix",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D spiral or 3D spring",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 HELIX command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-donut": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.id-rbn-cmdbtn-donut",
+      "kind": "command_button",
+      "name": "Donut",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DONUT"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DONUT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Donut",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Donut",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Donut",
+        "official": "Donut",
+        "aliases": [
+          "DONUT",
+          "ID_Donut"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DONUT",
+        "largeResource": "RCDATA_32_DONUT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DONUT",
+        "macro": "^C^C_donut",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a filled circle or a wide ring",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DONUT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "kind": "split_button",
+      "name": "Revision\rCloud",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_3F23A"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_slideout_then_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_201_3F23A",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Revision\rCloud",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": "ID_Revcloud_Rectangle",
+        "commandType": "Macro"
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Revision\rCloud variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.primary-action",
+      "kind": "primary_button",
+      "name": "Revision\rCloud primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_3F23A.primary"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Revision\rCloud variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Revision\rCloud menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_3F23A.menu-trigger"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Revision\rCloud menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Revision\rCloud popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Revision\rCloud menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-501d5",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-e290b"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_3F23A.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Revision\rCloud variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-ebf57",
+      "kind": "command_button",
+      "name": "Rectangular",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_EBF57"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "ui": {
+        "uid": "RBN_201_EBF57",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rectangular",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud_Rectangle",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rectangular",
+        "official": "Rectangular Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud_Rectangle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD_RECTANGLE",
+        "largeResource": "RCDATA_32_REVCLOUD_RECTANGLE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _R",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a rectangle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-501d5": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-501d5",
+      "kind": "command_button",
+      "name": "Polygonal",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_501D5"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "ui": {
+        "uid": "RBN_201_501D5",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polygonal",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud_Polygon",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polygonal",
+        "official": "Polygonal Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud_Polygon"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD_POLYGONAL",
+        "largeResource": "RCDATA_32_REVCLOUD_POLYGONAL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _P",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a polyline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-e290b": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu.rbn-201-e290b",
+      "kind": "command_button",
+      "name": "Freehand",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_201_E290B"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-paneldraw.id-rbn-row-0005.rbn-201-3f23a",
+      "ui": {
+        "uid": "RBN_201_E290B",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Freehand",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Freehand",
+        "official": "Freehand Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD",
+        "largeResource": "RCDATA_32_REVCLOUD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _F",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a freeform polyline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

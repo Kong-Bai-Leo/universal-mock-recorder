@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_01740527",
+  "tabName": "Drawing View Hatch Editor",
+  "panelCount": 4,
+  "panels": [
+    {
+      "name": "Pattern",
+      "uid": "RBN_01738445",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738445",
+      "map": "pattern/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Properties",
+      "uid": "RBN_01738379",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738379",
+      "map": "properties/ui-map.json",
+      "nodes": 44,
+      "actionableControls": 20
+    },
+    {
+      "name": "Origin",
+      "uid": "RBN_01738625",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "map": "origin/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 9
+    },
+    {
+      "name": "Close",
+      "uid": "RBN_01739986",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01739986",
+      "map": "close/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

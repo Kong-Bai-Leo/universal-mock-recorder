@@ -1,0 +1,839 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabview3d-panel-interface",
+  "generatedAt": "2026-08-25T21:52:24.9631008Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabView3D",
+    "tabName": "View",
+    "panelUid": "ID_PanelWindow",
+    "panelName": "Interface",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "kind": "tab",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabView3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabView3D",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_TabView3D",
+        "officialName": "View 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+      "kind": "panel",
+      "name": "Interface",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0112",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0039"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelWindow"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelWindow",
+        "text": "Interface",
+        "keyTip": null,
+        "alias": "ID_Window",
+        "officialName": "View - Interface",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0112": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0112",
+      "kind": "dialog_launcher",
+      "name": "Options, Display Tab",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0112"
+      },
+      "placement": {
+        "region": "main",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0112",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "OP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_OptionsDisplayTab",
+        "commandId": "ID_OptionsDisplayTab",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Options, Display Tab",
+        "aliases": [
+          "OPTIONS",
+          "ID_OptionsDisplayTab"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OPTIONS",
+        "macro": "^C^C_+options 1",
+        "macroType": "Any",
+        "commandId": "ID_OptionsDisplayTab",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens the Options dialog to the Display tab.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OPTIONS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0200",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-control-opendrawingslist",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-filetab",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-layouttab",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0200"
+      },
+      "placement": {
+        "region": "main",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0200",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-control-opendrawingslist": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-control-opendrawingslist",
+      "kind": "ribbon_control",
+      "name": "Switch\rWindows",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_OPENDRAWINGSLIST"
+      },
+      "placement": {
+        "region": "main",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_OPENDRAWINGSLIST",
+        "controlId": "AcOpenDrawingsList",
+        "text": "Switch\rWindows",
+        "keyTip": "OD"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Switch\rWindows.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-filetab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-filetab",
+      "kind": "toggle_button",
+      "name": "File\rTabs",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RTBN_FILETAB"
+      },
+      "placement": {
+        "region": "main",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RTBN_FILETAB",
+        "controlId": "AcFileTabToggleButton",
+        "text": "File\rTabs",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "File\rTabs",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles File\rTabs.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-layouttab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rtbn-layouttab",
+      "kind": "toggle_button",
+      "name": "Layout\rTabs",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RTBN_LAYOUTTAB"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RTBN_LAYOUTTAB",
+        "controlId": "AcLayoutTabToggleButton",
+        "text": "Layout\rTabs",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layout\rTabs",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Layout\rTabs.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0039",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202",
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0039"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0039",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0201",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201.id-rbn-cmdbtn-window-tile-horz"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0201"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0201",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201.id-rbn-cmdbtn-window-tile-horz": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201.id-rbn-cmdbtn-window-tile-horz",
+      "kind": "command_button",
+      "name": "Tile Horizontally",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0201",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WINDOW_TILE_HORZ"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WINDOW_TILE_HORZ",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tile Horizontally",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WINDOW_TILE_HORZ",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tile Horizontally",
+        "official": "Tile Horizontally",
+        "aliases": [
+          "SYSWINDOWS",
+          "ID_WINDOW_TILE_HORZ"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WINHOR",
+        "largeResource": "RCDATA_32_WINHOR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SYSWINDOWS",
+        "macro": "^C^C^Q_syswindows;_hor",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Arranges windows and icons in horizontal, non-overlapping tiles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SYSWINDOWS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0202",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202.id-rbn-cmdbtn-window-tile-vert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0202"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0202",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202.id-rbn-cmdbtn-window-tile-vert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202.id-rbn-cmdbtn-window-tile-vert",
+      "kind": "command_button",
+      "name": "Tile Vertically",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.id-rbn-row-0202",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WINDOW_TILE_VERT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WINDOW_TILE_VERT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tile Vertically",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WINDOW_TILE_VERT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tile Vertically",
+        "official": "Tile Vertically",
+        "aliases": [
+          "SYSWINDOWS",
+          "ID_WINDOW_TILE_VERT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WINVRT",
+        "largeResource": "RCDATA_32_WINVRT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SYSWINDOWS",
+        "macro": "^C^C^Q_syswindows;_vert",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Arranges windows and icons in vertical, non-overlapping tiles",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SYSWINDOWS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755",
+      "kind": "layout_row",
+      "name": "RBN_00013755",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755.id-rbn-cmdbtn-window-cascade"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013755"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00013755",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755.id-rbn-cmdbtn-window-cascade": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755.id-rbn-cmdbtn-window-cascade",
+      "kind": "command_button",
+      "name": "Cascade",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-row-0200.id-rbn-rowpanel-0039.rbn-00013755",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WINDOW_CASCADE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WINDOW_CASCADE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Cascade",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WINDOW_CASCADE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Cascade",
+        "official": "Cascade",
+        "aliases": [
+          "SYSWINDOWS",
+          "ID_WINDOW_CASCADE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WINCAS",
+        "largeResource": "RCDATA_32_WINCAS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SYSWINDOWS",
+        "macro": "^C^C^Q_syswindows;_cascade",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Overlaps windows, leaving title bars visible",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SYSWINDOWS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0039": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow.id-rbn-0039",
+      "kind": "panel_break",
+      "name": "ID_RBN_0039",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.id-panelwindow",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0039"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0039",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-centerlines",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelCenterlines",
+    "panelName": "Centerlines",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+      "kind": "panel",
+      "name": "Centerlines",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-0380",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCenterlines"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCenterlines",
+        "text": "Centerlines",
+        "keyTip": "CE",
+        "alias": "ID_Centerlines",
+        "officialName": "Annotate - Centerlines",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_PanelCenterlines_1",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centermark",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centerline"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_PanelCenterlines_1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_PanelCenterlines_1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centermark": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centermark",
+      "kind": "command_button",
+      "name": "Center\rMark",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_Annotation_CENTERMARK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_Annotation_CENTERMARK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center\rMark",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Centermark",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center\rMark",
+        "official": "Center Mark",
+        "aliases": [
+          "CENTERMARK",
+          "ID_Centermark"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CENTERMARK",
+        "largeResource": "RCDATA_32_CENTERMARK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CENTERMARK",
+        "macro": "^C^C_centermark",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an associative, cross-shaped mark at the center of a selected circle, arc, or polygonal arc.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CENTERMARK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centerline": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1.id-rbn-annotation-centerline",
+      "kind": "command_button",
+      "name": "Centerline",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_Annotation_CENTERLINE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_Annotation_CENTERLINE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Centerline",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Centerline",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Centerline",
+        "official": "Centerline",
+        "aliases": [
+          "CENTERLINE",
+          "ID_Centerline"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CENTERLINE",
+        "largeResource": "RCDATA_32_CENTERLINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CENTERLINE",
+        "macro": "^C^C_centerline",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates centerline geometry of a specified linetype in association with selected lines and polylines.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CENTERLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-0380": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-0380",
+      "kind": "panel_break",
+      "name": "ID_RBN_0380",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0380"
+      },
+      "placement": {
+        "region": "main",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0380",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_PanelCenterlines_2",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2.rbn-250-1dec5"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_PanelCenterlines_2"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_PanelCenterlines_2",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2.rbn-250-1dec5": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2.rbn-250-1dec5",
+      "kind": "gallery",
+      "name": "Center Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelcenterlines.id-rbn-row-panelcenterlines-2",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_250_1DEC5"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_250_1DEC5",
+        "controlId": "AcCenterLayerCombo",
+        "text": "Center Layer Gallery",
+        "keyTip": "CA"
+      },
+      "semantics": {
+        "description": "Displays the Center Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Center Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,959 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01738148-panel-boundaries",
+  "generatedAt": "2026-08-25T21:53:09.3667840Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01738148",
+    "tabName": "Hatch Creation",
+    "panelUid": "RBN_01738199",
+    "panelName": "Boundaries",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148",
+      "kind": "tab",
+      "name": "Hatch Creation",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738148"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738148",
+        "text": "Hatch Creation",
+        "keyTip": "CH",
+        "alias": null,
+        "officialName": "Hatch Creation Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "kind": "panel",
+      "name": "Boundaries",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738202",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738199"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738199",
+        "text": "Boundaries",
+        "keyTip": "BO",
+        "alias": null,
+        "officialName": "Hatch - Boundaries",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201",
+      "kind": "layout_row",
+      "name": "RBN_01738201",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.id-rbn-btn-hatchpickpoints",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738201"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738201",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.id-rbn-btn-hatchpickpoints": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.id-rbn-btn-hatchpickpoints",
+      "kind": "command_button",
+      "name": "Pick Points",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_HATCHPICKPOINTS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_HATCHPICKPOINTS",
+        "controlId": "AcHatchPickPointsButton",
+        "text": "Pick Points",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Pick Points",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Pick Points.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259",
+      "kind": "layout_group",
+      "name": "RBN_01738259",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738259"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738259",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260",
+      "kind": "layout_row",
+      "name": "RBN_01738260",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260.id-rbn-btn-hatchselectobjects"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738260"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738260",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260.id-rbn-btn-hatchselectobjects": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260.id-rbn-btn-hatchselectobjects",
+      "kind": "command_button",
+      "name": "Select",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738260",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_HATCHSELECTOBJECTS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_HATCHSELECTOBJECTS",
+        "controlId": "AcHatchSelectObjectsButton",
+        "text": "Select",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Select",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Select.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261",
+      "kind": "layout_row",
+      "name": "RBN_01738261",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261.id-rbn-btn-hatchremoveboundaries"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738261"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738261",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261.id-rbn-btn-hatchremoveboundaries": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261.id-rbn-btn-hatchremoveboundaries",
+      "kind": "command_button",
+      "name": "Remove",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738261",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_HATCHREMOVEBOUNDARIES"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_HATCHREMOVEBOUNDARIES",
+        "controlId": "AcHatchRemoveBoundariesButton",
+        "text": "Remove",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Remove.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280",
+      "kind": "layout_row",
+      "name": "RBN_01738280",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280.id-rbn-btn-hatchrecreateboundaries"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738280"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738280",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280.id-rbn-btn-hatchrecreateboundaries": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280.id-rbn-btn-hatchrecreateboundaries",
+      "kind": "command_button",
+      "name": "Recreate",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738201.rbn-01738259.rbn-01738280",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_HATCHRECREATEBOUNDARIES"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_HATCHRECREATEBOUNDARIES",
+        "controlId": "AcHatchRecreateBoundariesButton",
+        "text": "Recreate",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "RC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Recreate",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Recreate.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738202": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738202",
+      "kind": "panel_break",
+      "name": "RBN_01738202",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738202"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738202",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566",
+      "kind": "layout_row",
+      "name": "RBN_01738566",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566.rbn-01738567"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738566"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738566",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566.rbn-01738567": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566.rbn-01738567",
+      "kind": "command_button",
+      "name": "Display Boundary Objects",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738566",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738567"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738567",
+        "controlId": "AcHatchDisplayBoundaryObjectsButton",
+        "text": "Display Boundary Objects",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Display Boundary Objects",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Display Boundary Objects.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568",
+      "kind": "layout_row",
+      "name": "RBN_01738568",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568.rbn-01738570"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738568"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738568",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568.rbn-01738570": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568.rbn-01738570",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Hatch Retain Boundaries",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738568",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738570"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738570",
+        "controlId": "AcHatchRetainBoundariesCombo",
+        "text": "Ribbon Combo Box - Hatch Retain Boundaries",
+        "keyTip": "RB"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Hatch Retain Boundaries.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571",
+      "kind": "layout_row",
+      "name": "RBN_01738571",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738572",
+        "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738573"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738571"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738571",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738572": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738572",
+      "kind": "command_button",
+      "name": "RBN_01738572",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738572"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738572",
+        "controlId": "AcHatchDefineBoundarySetButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "HA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes RBN_01738572.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738573": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571.rbn-01738573",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Hatch Defined Boundary Set",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01738148.rbn-01738199.rbn-01738571",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738573"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738573",
+        "controlId": "AcHatchDefineBoundarySetCombo",
+        "text": "Ribbon Combo Box - Hatch Defined Boundary Set",
+        "keyTip": "BS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Hatch Defined Boundary Set.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

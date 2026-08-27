@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_190_A51F9",
+  "tabName": "Layout",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Layout",
+      "uid": "RBN_190_1E477",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-1e477",
+      "map": "layout/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 5
+    },
+    {
+      "name": "Layout Viewports",
+      "uid": "RBN_190_F549F",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "map": "layout-viewports/ui-map.json",
+      "nodes": 30,
+      "actionableControls": 12
+    },
+    {
+      "name": "Create View",
+      "uid": "ID_PanelCreateViewMD",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelcreateviewmd",
+      "map": "create-view/ui-map.json",
+      "nodes": 29,
+      "actionableControls": 15
+    },
+    {
+      "name": "Modify View",
+      "uid": "ID_PanelModifyViewMD",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelmodifyviewmd",
+      "map": "modify-view/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Update",
+      "uid": "ID_PanelUpdateViewMD",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd",
+      "map": "update/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 5
+    },
+    {
+      "name": "Styles and Standards",
+      "uid": "ID_PanelStylesMD",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelstylesmd",
+      "map": "styles-and-standards/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 5
+    }
+  ]
+}

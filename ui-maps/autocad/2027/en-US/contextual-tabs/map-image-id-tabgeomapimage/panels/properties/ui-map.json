@@ -1,0 +1,557 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabgeomapimage-panel-properties",
+  "generatedAt": "2026-08-25T21:52:55.3010333Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabGeoMapImage",
+    "tabName": "Map Image",
+    "panelUid": "Geolocation_GeoMap_Properties_Panel",
+    "panelName": "Properties",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage",
+      "kind": "tab",
+      "name": "Map Image",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabGeoMapImage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabGeoMapImage",
+        "text": "Map Image",
+        "keyTip": "MI",
+        "alias": "ID_TABGEOMAPIMAGE",
+        "officialName": "Map Image Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel",
+      "kind": "panel",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.id-rbn-200-1d97a"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Geolocation_GeoMap_Properties_Panel"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "Geolocation_GeoMap_Properties_Panel",
+        "text": "Properties",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Geolocation GeoMap - Properties",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769",
+      "kind": "layout_row",
+      "name": "RBN_00042769",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26377",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26477",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00042769"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00042769",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26377": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26377",
+      "kind": "ribbon_control",
+      "name": "Show Map",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_26377"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_26377",
+        "controlId": "AcGeoMapImageTypeDropDown",
+        "text": "Show Map",
+        "keyTip": "MT"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Show Map.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26477": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.id-rbn-200-26477",
+      "kind": "ribbon_control",
+      "name": "Resolution",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_26477"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_26477",
+        "controlId": "AcGeoMapImageResolutionDropDown",
+        "text": "Resolution",
+        "keyTip": "IR"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Resolution.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767",
+      "kind": "layout_group",
+      "name": "RBN_00022767",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7",
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00022767"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00022767",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6",
+      "kind": "layout_row",
+      "name": "ID_RBN_200_42DB6",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6.id-rbn-control-geomap-brightness"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_42DB6"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_42DB6",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6.id-rbn-control-geomap-brightness": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6.id-rbn-control-geomap-brightness",
+      "kind": "ribbon_control",
+      "name": "Brightness",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db6",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_GEOMAP_BRIGHTNESS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_GEOMAP_BRIGHTNESS",
+        "controlId": "AcGeoMapBrightnessSlider",
+        "text": "Brightness",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Brightness.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7",
+      "kind": "layout_row",
+      "name": "ID_RBN_200_42DB7",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7.id-rbn-control-geomap-contrast"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_42DB7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_42DB7",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7.id-rbn-control-geomap-contrast": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7.id-rbn-control-geomap-contrast",
+      "kind": "ribbon_control",
+      "name": "Contrast",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_GEOMAP_CONTRAST"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_GEOMAP_CONTRAST",
+        "controlId": "AcGeoMapContrastSlider",
+        "text": "Contrast",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Contrast.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8",
+      "kind": "layout_row",
+      "name": "ID_RBN_200_42DB8",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8.id-rbn-control-geomap-fade"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_42DB8"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_42DB8",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8.id-rbn-control-geomap-fade": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8.id-rbn-control-geomap-fade",
+      "kind": "ribbon_control",
+      "name": "Fade",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.rbn-00042769.rbn-00022767.id-rbn-200-42db8",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_GEOMAP_FADE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_GEOMAP_FADE",
+        "controlId": "AcGeoMapFadeSlider",
+        "text": "Fade",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Fade.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.id-rbn-200-1d97a": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel.id-rbn-200-1d97a",
+      "kind": "panel_break",
+      "name": "ID_RBN_200_1D97A",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeomapimage.geolocation-geomap-properties-panel",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_1D97A"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_1D97A",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

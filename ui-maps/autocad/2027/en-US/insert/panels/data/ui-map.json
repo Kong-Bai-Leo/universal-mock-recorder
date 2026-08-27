@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabinsert-panel-data",
+  "generatedAt": "2026-08-25T21:52:18.0849772Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabInsert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelInsert_Data",
+    "panelName": "Data",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabInsert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabInsert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": "ID_TabInsert",
+        "officialName": "Insert"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+      "kind": "panel",
+      "name": "Data",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-0025"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelInsert_Data"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelInsert_Data",
+        "text": "Data",
+        "keyTip": null,
+        "alias": "ID_Insert_Data",
+        "officialName": "Insert - Data",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0083",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-cmdbtn-field",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0083"
+      },
+      "placement": {
+        "region": "main",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0083",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-cmdbtn-field": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-cmdbtn-field",
+      "kind": "command_button",
+      "name": "Field",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FIELD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FIELD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Field",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Field",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Field",
+        "official": "Field...",
+        "aliases": [
+          "FIELD",
+          "ID_Field"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INSERT_FIELD",
+        "largeResource": "RCDATA_32_INSERT_FIELD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FIELD",
+        "macro": "^c^c_Field",
+        "macroType": "Insert",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Inserts a string of text that can be updated automatically as the field value changes",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FIELD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0013",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0013"
+      },
+      "placement": {
+        "region": "main",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0013",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0084",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084.id-rbn-cmdbtn-updfield"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0084"
+      },
+      "placement": {
+        "region": "main",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0084",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084.id-rbn-cmdbtn-updfield": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084.id-rbn-cmdbtn-updfield",
+      "kind": "command_button",
+      "name": "Update\rFields",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0084",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UPDFIELD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UPDFIELD",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Update\rFields",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "UF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UpdField",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Update\rFields",
+        "official": "Update Fields",
+        "aliases": [
+          "UPDATEFIELD",
+          "ID_UpdField"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UPDFIELD",
+        "largeResource": "RCDATA_32_UPDFIELD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UPDATEFIELD",
+        "macro": "^c^c_updatefield",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manually updates the fields in selected objects to the current value",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UPDATEFIELD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0085",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085.id-rbn-cmdbtn-insertobj"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0085"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0085",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085.id-rbn-cmdbtn-insertobj": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085.id-rbn-cmdbtn-insertobj",
+      "kind": "command_button",
+      "name": "OLE Object",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.id-rbn-row-0085",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_INSERTOBJ"
+      },
+      "placement": {
+        "region": "main",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_INSERTOBJ",
+        "controlId": "AcRibbonCommandButton",
+        "text": "OLE Object",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "OL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Insertobj",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "OLE Object",
+        "official": "OLE Object...",
+        "aliases": [
+          "INSERTOBJ",
+          "ID_Insertobj"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INSOLE",
+        "largeResource": "RCDATA_32_INSOLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INSERTOBJ",
+        "macro": "^C^C_insertobj",
+        "macroType": "Insert",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Inserts a linked or embedded object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INSERTOBJ command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199",
+      "kind": "layout_row",
+      "name": "RBN_00014199",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199.id-rbn-cmdbtn-hyperlink"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00014199"
+      },
+      "placement": {
+        "region": "main",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00014199",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199.id-rbn-cmdbtn-hyperlink": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199.id-rbn-cmdbtn-hyperlink",
+      "kind": "command_button",
+      "name": "Hyperlink",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-row-0083.id-rbn-rowpanel-0013.rbn-00014199",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_HYPERLINK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_HYPERLINK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hyperlink",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "HY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Hyperlink",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hyperlink",
+        "official": "Hyperlink...",
+        "aliases": [
+          "HYPERLINK",
+          "ID_Hyperlink"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_URL",
+        "largeResource": "RCDATA_32_URL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "HYPERLINK",
+        "macro": "^C^C_hyperlink",
+        "macroType": "Insert",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Attaches a hyperlink to an object or modifies an existing hyperlink",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 HYPERLINK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-0025": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data.id-rbn-0025",
+      "kind": "panel_break",
+      "name": "ID_RBN_0025",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-data",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0025"
+      },
+      "placement": {
+        "region": "main",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0025",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:20:00Z",
+    "observedControlCount": 28,
+    "evidence": "../../live-observation.json"
+  }
+}

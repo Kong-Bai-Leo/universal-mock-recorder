@@ -1,0 +1,25 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:24:00Z",
+  "lastExpandedMenuCheckAt": "2026-08-25T19:20:14.7509984Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Parametric", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 27,
+  "observedControlIds": [
+    "MM_AutoConstrain", "MM_GeomConstraint_Coincident", "MM_GeomConstraint_Colinear", "MM_GeomConstraint_Concentric",
+    "MM_GeomConstraint_Fix", "MM_GeomConstraint_Parallel", "MM_GeomConstraint_Perpendicular",
+    "MM_GeomConstraint_Horizontal", "MM_GeomConstraint_Vertical", "MM_GeomConstraint_Tangent",
+    "MM_Geomconstraint_smooth", "MM_GeomConstraint_Symmetric", "MM_GeomConstraint_Equal", "MM_SelectObject",
+    "MM_Show_All", "MM_Hide_All", "RBNU_1855", "MM_DimConstraint_Aligned", "MM_DimConstraint_Radius",
+    "MM_DimConstraint_Diameter", "MM_DimConstraint_Angular", "ID_DimensionalConstraintConvert", "MM_Show_Dyn_Constr",
+    "MM_Show_All_Dyn_Constr", "MM_Hide_All_Dyn_Constr", "MM_Del_Constraint", "AcParametersManagerCommandToggleButton"
+  ],
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabParametric", "action": "select_tab", "result": "Parametric tab opened and Geometric, Dimensional, and Manage panels were read live." },
+    { "controlId": "RBNU_1855", "action": "open_dropdown", "result": "Displayed Linear, Horizontal, and Vertical dimensional constraint choices." }
+  ],
+  "notes": [
+    "Icon-only geometric and dimensional constraint buttons were identified by stable CUIX macro IDs.",
+    "The only split control on the Parametric tab was expanded in the live AutoCAD window and closed without invoking a command."
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740317",
+  "generatedAt": "2026-08-25T21:52:44.4705412Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740317",
+    "tabName": "Array",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740317",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317",
+      "kind": "tab",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740317"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740317",
+        "text": "Array",
+        "keyTip": "AR",
+        "alias": null,
+        "officialName": "Rectangular Array Contextual tab"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 7,
+    "panels": [
+      {
+        "name": "Type",
+        "uid": "RBN_01740340",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740340",
+        "map": "type/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      },
+      {
+        "name": "Columns",
+        "uid": "RBN_01740133",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+        "map": "columns/ui-map.json",
+        "nodes": 12,
+        "actionableControls": 3
+      },
+      {
+        "name": "Rows",
+        "uid": "RBN_01740160",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740160",
+        "map": "rows/ui-map.json",
+        "nodes": 14,
+        "actionableControls": 4
+      },
+      {
+        "name": "Levels",
+        "uid": "RBN_01740169",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740169",
+        "map": "levels/ui-map.json",
+        "nodes": 12,
+        "actionableControls": 3
+      },
+      {
+        "name": "Properties",
+        "uid": "RBN_01740178",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+        "map": "properties/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      },
+      {
+        "name": "Options",
+        "uid": "RBN_01740296",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740296",
+        "map": "options/ui-map.json",
+        "nodes": 10,
+        "actionableControls": 3
+      },
+      {
+        "name": "Close",
+        "uid": "ID_CloseArrayEditorPanel",
+        "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.id-closearrayeditorpanel",
+        "map": "close/ui-map.json",
+        "nodes": 8,
+        "actionableControls": 1
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 48,
+    "panels": 7,
+    "actionableControls": 16,
+    "splitButtons": 0,
+    "iconOnlyControls": 0
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

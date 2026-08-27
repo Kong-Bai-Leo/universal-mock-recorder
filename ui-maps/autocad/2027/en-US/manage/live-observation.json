@@ -1,0 +1,22 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:28:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Manage", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 26,
+  "observedControlIds": [
+    "AcActionRecorderRecorderButtonItem", "AcActionRecorderUserMessageButtonItem", "AcActionRecorderBasePointButtonItem",
+    "AcActionRecorderUserInputButtonItem", "AcActionRecorderPlaybackButtonItem", "AcActionRecorderPreferenceButtonItem",
+    "AcActionRecorderManageMacrosButtonItem", "AcActionRecorderComboBoxItem", "ID_Menuload", "ID_CPalette", "MM_1558",
+    "MM_1559", "RBN_200_SplitBtn_EditAliases", "ID_Appload", "ID_Script", "ID_VBAIDE", "ID_AULPIDE", "ID_VBARun",
+    "ID_LayTrans", "ID_CheckStan", "ID_Standards", "AcGeometrycleanupPaletteCommandToggleButton", "RBN_SB_PURGE_1",
+    "ID_Audit", "ID_OVERKILL", "ID_PerfAnalyzer"
+  ],
+  "lastExpandedMenuCheckAt": "2026-08-25T19:30:12.7373791Z",
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabManage", "action": "select_tab", "result": "Manage tab opened and six visible panels were read live." },
+    { "controlId": "RBN_200_SplitBtn_EditAliases", "action": "expand_menu_then_escape", "result": "Edit Aliases opened with Edit Aliases, Edit AutoCorrect List, and Edit Synonym List." },
+    { "controlId": "RBN_SB_PURGE_1", "action": "expand_menu_then_escape", "result": "Purge opened with Purge and Find Non-Purgeable Items." }
+  ],
+  "notes": ["No commands that could edit configuration or drawings were invoked; the tab and split menus were inspected, then each menu was closed with Escape."]
+}

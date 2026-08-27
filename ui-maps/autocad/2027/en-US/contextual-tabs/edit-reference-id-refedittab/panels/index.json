@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_RefEditTab",
+  "tabName": "Edit Reference",
+  "panelCount": 1,
+  "panels": [
+    {
+      "name": "Edit Reference",
+      "uid": "ID_PanelReferencePanel",
+      "nodeId": "autocad.window.main.ribbon.tab.id-refedittab.id-panelreferencepanel",
+      "map": "edit-reference/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 4
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740514-panel-close",
+  "generatedAt": "2026-08-25T21:52:48.2480987Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740514",
+    "tabName": "Array Creation",
+    "panelUid": "ID_CloseArrayCreationPanel",
+    "panelName": "Close",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740514"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740514": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740514",
+      "kind": "tab",
+      "name": "Array Creation",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740514"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740514",
+        "text": "Array Creation",
+        "keyTip": "AR",
+        "alias": "ID_CREATERECTARRAY",
+        "officialName": "Rectangular Array Creation Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel",
+      "kind": "panel",
+      "name": "Close",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740514",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521",
+        "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740524"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CloseArrayCreationPanel"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CloseArrayCreationPanel",
+        "text": "Close",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Array Creation - Close",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521",
+      "kind": "layout_row",
+      "name": "RBN_01740521",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521.rbn-01740522"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740521"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740521",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521.rbn-01740522": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521.rbn-01740522",
+      "kind": "command_button",
+      "name": "Close\rArray",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740521",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740522"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740522",
+        "controlId": "AcArrayCreationCloseButton",
+        "text": "Close\rArray",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Close\rArray",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Close\rArray.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740524": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel.rbn-01740524",
+      "kind": "panel_break",
+      "name": "RBN_01740524",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740514.id-closearraycreationpanel",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740524"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740524",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

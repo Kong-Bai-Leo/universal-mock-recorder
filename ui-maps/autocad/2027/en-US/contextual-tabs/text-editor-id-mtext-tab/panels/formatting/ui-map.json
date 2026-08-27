@@ -1,0 +1,1598 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-mtext-tab-panel-formatting",
+  "generatedAt": "2026-08-25T21:52:57.5942628Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_MText_Tab",
+    "tabName": "Text Editor",
+    "panelUid": "ID_PanelIPE_Font",
+    "panelName": "Formatting",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "kind": "tab",
+      "name": "Text Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_MText_Tab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_MText_Tab",
+        "text": "Text Editor",
+        "keyTip": "TE",
+        "alias": null,
+        "officialName": "Text Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "kind": "panel",
+      "name": "Formatting",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbnpnl-0027",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelIPE_Font"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelIPE_Font",
+        "text": "Formatting",
+        "keyTip": "FM",
+        "alias": "ID_IPE_Font",
+        "officialName": "Multiline Text Editor - Formatting",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0230",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-5635a",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0230"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0230",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-5635a": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-5635a",
+      "kind": "toggle_button",
+      "name": "Match",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_5635A"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_5635A",
+        "controlId": "AcIPEMatchPropertiesToggleButton",
+        "text": "Match",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Match",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Match.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2",
+      "kind": "layout_group",
+      "name": "RBN_200_908B2",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_908B2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_908B2",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+      "kind": "layout_row",
+      "name": "RBN_200_A2546",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-boldipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-italicipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-strikethroughipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.rbn-200-3787b"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A2546"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A2546",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-boldipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-boldipetogglebutton",
+      "kind": "toggle_button",
+      "name": "Bold",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_BOLDIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_BOLDIPETOGGLEBUTTON",
+        "controlId": "AcBoldIPEToggleButton",
+        "text": "Bold",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Bold",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Bold.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-italicipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-italicipetogglebutton",
+      "kind": "toggle_button",
+      "name": "Italic",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ITALICIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ITALICIPETOGGLEBUTTON",
+        "controlId": "AcItalicIPEToggleButton",
+        "text": "Italic",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "IT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Italic",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Italic.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-strikethroughipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.id-rbn-control-strikethroughipetogglebutton",
+      "kind": "command_button",
+      "name": "Strikethrough",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_STRIKETHROUGHIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_STRIKETHROUGHIPETOGGLEBUTTON",
+        "controlId": "AcStrikeThroughIPEToggleButton",
+        "text": "Strikethrough",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Strikethrough",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Strikethrough.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.rbn-200-3787b": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546.rbn-200-3787b",
+      "kind": "command_button",
+      "name": "Clear",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-a2546",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_3787B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_3787B",
+        "controlId": "AcIPERemoveFormatting",
+        "text": "Clear",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Clear",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Clear.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b",
+      "kind": "layout_row",
+      "name": "RBN_200_16D3B",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-underlineipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-overlineipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-ipestacktogglebutton"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_16D3B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_16D3B",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-underlineipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-underlineipetogglebutton",
+      "kind": "toggle_button",
+      "name": "Underline",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_UNDERLINEIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_UNDERLINEIPETOGGLEBUTTON",
+        "controlId": "AcUnderlineIPEToggleButton",
+        "text": "Underline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Underline",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Underline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-overlineipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-overlineipetogglebutton",
+      "kind": "toggle_button",
+      "name": "Overline",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_OVERLINEIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_OVERLINEIPETOGGLEBUTTON",
+        "controlId": "AcOverlineIPEToggleButton",
+        "text": "Overline",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "OL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Overline",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Overline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-ipestacktogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b.id-rbn-control-ipestacktogglebutton",
+      "kind": "command_button",
+      "name": "Stack",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-16d3b",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPESTACKTOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPESTACKTOGGLEBUTTON",
+        "controlId": "AcStackIPEToggleButton",
+        "text": "Stack",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Stack",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Stack.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c",
+      "kind": "layout_row",
+      "name": "RBN_200_2199C",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e71fb",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e3e2f",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.id-rbn-btn-ipemakecase"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_2199C"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_2199C",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e71fb": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e71fb",
+      "kind": "command_button",
+      "name": "Superscript",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E71FB"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E71FB",
+        "controlId": "AcIPESuperscriptBtn",
+        "text": "Superscript",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Superscript",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Superscript.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e3e2f": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.rbn-200-e3e2f",
+      "kind": "command_button",
+      "name": "Subscript",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E3E2F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E3E2F",
+        "controlId": "AcIPESubscriptBtn",
+        "text": "Subscript",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Subscript",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Subscript.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.id-rbn-btn-ipemakecase": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c.id-rbn-btn-ipemakecase",
+      "kind": "command_button",
+      "name": "Change Case",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-200-908b2.rbn-200-2199c",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_IPEMAKECASE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_IPEMAKECASE",
+        "controlId": "AcIPEMakeCase",
+        "text": "Change Case",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Change Case",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Change Case.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047",
+      "kind": "layout_group",
+      "name": "RBN_231_D0047",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_D0047"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_D0047",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951",
+      "kind": "layout_row",
+      "name": "RBN_231_F2951",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951.id-rbn-control-ipefontnamecombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_F2951"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_F2951",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951.id-rbn-control-ipefontnamecombo": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951.id-rbn-control-ipefontnamecombo",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Font",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-f2951",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPEFONTNAMECOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPEFONTNAMECOMBO",
+        "controlId": "AcIPEFontNameCombo",
+        "text": "Ribbon Combo Box - Font",
+        "keyTip": "FO"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Font.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad",
+      "kind": "layout_row",
+      "name": "RBN_231_151AD",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad.id-rbn-control-ipefontcolorcombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_151AD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_151AD",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad.id-rbn-control-ipefontcolorcombo": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad.id-rbn-control-ipefontcolorcombo",
+      "kind": "gallery",
+      "name": "Ribbon Combo Box - IPE Color Color",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-151ad",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPEFONTCOLORCOMBO"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPEFONTCOLORCOMBO",
+        "controlId": "AcIPEFontColorCombo",
+        "text": "Ribbon Combo Box - IPE Color Color",
+        "keyTip": "CO"
+      },
+      "semantics": {
+        "description": "Displays the Ribbon Combo Box - IPE Color Color gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Ribbon Combo Box - IPE Color Color item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480",
+      "kind": "layout_row",
+      "name": "RBN_231_62480",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480.rbn-231-070b5"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_62480"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_62480",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480.rbn-231-070b5": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480.rbn-231-070b5",
+      "kind": "gallery",
+      "name": "Text Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0230.rbn-231-d0047.rbn-231-62480",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_070B5"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_070B5",
+        "controlId": "AcTextLayerCombo",
+        "text": "Text Layer Gallery",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Displays the Text Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Text Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbnpnl-0027": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbnpnl-0027",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0027",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0027"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0027",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0233",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233.id-rbn-control-ipeobliqueanglespinner"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0233"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0233",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233.id-rbn-control-ipeobliqueanglespinner": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233.id-rbn-control-ipeobliqueanglespinner",
+      "kind": "ribbon_control",
+      "name": "Ribbon Spinner - Oblique Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0233",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPEOBLIQUEANGLESPINNER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPEOBLIQUEANGLESPINNER",
+        "controlId": "AcIPEObliqueAngleSpinner",
+        "text": "Ribbon Spinner - Oblique Angle",
+        "keyTip": "OA"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Spinner - Oblique Angle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0234",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234.id-rbn-control-ipetrackingspinner"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0234"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0234",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234.id-rbn-control-ipetrackingspinner": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234.id-rbn-control-ipetrackingspinner",
+      "kind": "ribbon_control",
+      "name": "Ribbon Spinner - Tracking",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0234",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPETRACKINGSPINNER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPETRACKINGSPINNER",
+        "controlId": "AcIPETrackingSpinner",
+        "text": "Ribbon Spinner - Tracking",
+        "keyTip": "TR"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Spinner - Tracking.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0235",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235.id-rbn-control-ipewidthfactorspinner"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0235"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0235",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235.id-rbn-control-ipewidthfactorspinner": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235.id-rbn-control-ipewidthfactorspinner",
+      "kind": "ribbon_control",
+      "name": "Ribbon Spinner - Width Factor",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font.id-rbn-row-0235",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_IPEWIDTHFACTORSPINNER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_IPEWIDTHFACTORSPINNER",
+        "controlId": "AcIPEWidthFactorSpinner",
+        "text": "Ribbon Spinner - Width Factor",
+        "keyTip": "WF"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Spinner - Width Factor.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

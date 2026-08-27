@@ -1,0 +1,1241 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabrender-panel-lights",
+  "generatedAt": "2026-08-25T21:52:34.5434845Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabRender",
+    "tabName": "Visualize",
+    "panelUid": "ID_PanelLights",
+    "panelName": "Lights",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender",
+      "kind": "tab",
+      "name": "Visualize",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabRender"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabRender",
+        "text": "Visualize",
+        "keyTip": "R",
+        "alias": "ID_TabRender",
+        "officialName": "Visualize"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "kind": "panel",
+      "name": "Lights",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-rn-0107",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbnpnl-rn-0016",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelLights"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelLights",
+        "text": "Lights",
+        "keyTip": "LI",
+        "alias": "ID_Lights",
+        "officialName": "Render - Lights",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-rn-0107": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-rn-0107",
+      "kind": "dialog_launcher",
+      "name": "Lights in Model",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RN_0107"
+      },
+      "placement": {
+        "region": "main",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RN_0107",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "LL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LightList",
+        "commandId": "ID_LightList",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Lights in Model",
+        "aliases": [
+          "LIGHTLIST",
+          "ID_LightList"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LIGHT_LIST",
+        "largeResource": "RCDATA_32_LIGHT_LIST",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LIGHTLIST",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,lightliststate),0)),^C^C_lightlistclose,^C^C_lightlist)",
+        "macroType": "View",
+        "commandId": "ID_LightList",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Turns on and off the Lights in Model palette that lists all lights in the model",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LIGHTLIST command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_RN_0123",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.xlsr-0397-rn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_RN_0123"
+      },
+      "placement": {
+        "region": "main",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_RN_0123",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "kind": "split_button",
+      "name": "Create\rLight",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_LIGHT_RN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_LIGHT_RN",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Create\rLight",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LT",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_POINT_LIGHT",
+        "largeImage": "RCDATA_32_POINT_LIGHT",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Create\rLight variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn"
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.primary-action",
+      "kind": "primary_button",
+      "name": "Create\rLight primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_LIGHT_RN.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Create\rLight variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Create\rLight menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_LIGHT_RN.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Create\rLight menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Create\rLight popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Create\rLight menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-spotlight-rn",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-distantlight-rn",
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-weblight-rn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_LIGHT_RN.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Create\rLight variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-pointlight-rn",
+      "kind": "command_button",
+      "name": "Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_POINTLIGHT_RN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_POINTLIGHT_RN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PointLight",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Point",
+        "official": "Light, New Point Light",
+        "aliases": [
+          "POINTLIGHT",
+          "ID_PointLight"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINT_LIGHT",
+        "largeResource": "RCDATA_32_POINT_LIGHT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POINTLIGHT",
+        "macro": "^C^C_pointlight",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a point light that radiates light in all directions from its location",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POINTLIGHT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-spotlight-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-spotlight-rn",
+      "kind": "command_button",
+      "name": "Spot",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SPOTLIGHT_RN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 102
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SPOTLIGHT_RN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spot",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SpotLight",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spot",
+        "official": "Light, New Spotlight",
+        "aliases": [
+          "SPOTLIGHT",
+          "ID_SpotLight"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SPOT_LIGHT",
+        "largeResource": "RCDATA_32_SPOT_LIGHT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPOTLIGHT",
+        "macro": "^C^C_spotlight",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a spotlight that emits a directional cone of light",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPOTLIGHT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-distantlight-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-distantlight-rn",
+      "kind": "command_button",
+      "name": "Distant",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DISTANTLIGHT_RN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 103
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DISTANTLIGHT_RN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Distant",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DistantLight",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Distant",
+        "official": "Light, New Distant Light",
+        "aliases": [
+          "DISTANTLIGHT",
+          "ID_DistantLight"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DISTANT_LIGHT",
+        "largeResource": "RCDATA_32_DISTANT_LIGHT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DISTANTLIGHT",
+        "macro": "^C^C_distantlight",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a distant light",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DISTANTLIGHT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-weblight-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu.id-rbn-cmdbtn-weblight-rn",
+      "kind": "command_button",
+      "name": "Weblight",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WEBLIGHT_RN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 104
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.id-rbn-splitbtn-light-rn",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WEBLIGHT_RN",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WEBLIGHT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Weblight",
+        "aliases": [
+          "WEBLIGHT",
+          "ID_WEBLIGHT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_WEBLIGHT",
+        "largeResource": "RCDATA_32_SM_WEBLIGHT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "WEBLIGHT",
+        "macro": "^C^C_WEBLIGHT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Web light",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 WEBLIGHT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.xlsr-0397-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123.xlsr-0397-rn",
+      "kind": "data_bound_dropdown",
+      "name": "Ribbon Control Drop-down - Shadow Mode",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0123",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0397_RN"
+      },
+      "placement": {
+        "region": "main",
+        "order": 105
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0397_RN",
+        "controlId": "AcVSSHADOWSDataBoundDropDown",
+        "text": "Ribbon Control Drop-down - Shadow Mode",
+        "keyTip": "SM"
+      },
+      "semantics": {
+        "description": "Opens or changes the Ribbon Control Drop-down - Shadow Mode selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Ribbon Control Drop-down - Shadow Mode setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbnpnl-rn-0016": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbnpnl-rn-0016",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_RN_0016",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_RN_0016"
+      },
+      "placement": {
+        "region": "main",
+        "order": 106
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_RN_0016",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942",
+      "kind": "layout_row",
+      "name": "RBN_RN_01737942",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942.id-rbn-togglebtn-defaultlighting-rn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_RN_01737942"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 107
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_RN_01737942",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942.id-rbn-togglebtn-defaultlighting-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942.id-rbn-togglebtn-defaultlighting-rn",
+      "kind": "toggle_button",
+      "name": "Default\rLighting",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.rbn-rn-01737942",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_DEFAULTLIGHTING_RN"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 108
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_DEFAULTLIGHTING_RN",
+        "controlId": "AcDefaultLightingCommandToggleButton",
+        "text": "Default\rLighting",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Default\rLighting",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Default\rLighting.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_RN_0124",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124.id-rbn-control-lightsexposureslider"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_RN_0124"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 109
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_RN_0124",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124.id-rbn-control-lightsexposureslider": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124.id-rbn-control-lightsexposureslider",
+      "kind": "ribbon_control",
+      "name": "Exposure",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0124",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LIGHTSEXPOSURESLIDER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 110
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LIGHTSEXPOSURESLIDER",
+        "controlId": "AcLightsExposureSlider",
+        "text": "Exposure",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Exposure.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_RN_0125",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125.id-rbn-control-lightswhitebalanceslider"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_RN_0125"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 111
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_RN_0125",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125.id-rbn-control-lightswhitebalanceslider": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125.id-rbn-control-lightswhitebalanceslider",
+      "kind": "ribbon_control",
+      "name": "White Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0125",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LIGHTSWHITEBALANCESLIDER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 112
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LIGHTSWHITEBALANCESLIDER",
+        "controlId": "AcLightsWhiteBalanceSlider",
+        "text": "White Point",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named White Point.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_RN_0127",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127.id-rbn-togglebtn-lightglyph-rn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_RN_0127"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 113
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_RN_0127",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127.id-rbn-togglebtn-lightglyph-rn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127.id-rbn-togglebtn-lightglyph-rn",
+      "kind": "toggle_button",
+      "name": "Light glyph display",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0127",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_LIGHTGLYPH_RN"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 114
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_LIGHTGLYPH_RN",
+        "controlId": "AcLightGlyphCommandToggleButton",
+        "text": "Light glyph display",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Light glyph display",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Light glyph display.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_RN_0128",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128.xlsr-rn-0434"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_RN_0128"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 115
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_RN_0128",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128.xlsr-rn-0434": {
+      "id": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128.xlsr-rn-0434",
+      "kind": "data_bound_dropdown",
+      "name": "Lighting Units Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabrender.id-panellights.id-rbn-row-rn-0128",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_RN_0434"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 116
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_RN_0434",
+        "controlId": "AcLIGHTINGUNITSDataBoundDropDown",
+        "text": "Lighting Units Drop-down",
+        "keyTip": "LU"
+      },
+      "semantics": {
+        "description": "Opens or changes the Lighting Units Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Lighting Units Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabView",
+  "tabName": "View",
+  "panelCount": 10,
+  "panels": [
+    {
+      "name": "Viewport Tools",
+      "uid": "RBN_200_14623",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.rbn-200-14623",
+      "map": "viewport-tools/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 4
+    },
+    {
+      "name": "Named Views",
+      "uid": "ID_PanelNamedViews2",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelnamedviews2",
+      "map": "named-views/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 3
+    },
+    {
+      "name": "Visual Styles",
+      "uid": "ID_PanelVisualStyles",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelvisualstyles",
+      "map": "visual-styles/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 9
+    },
+    {
+      "name": "Model Viewports",
+      "uid": "ID_PanelViewports",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewports",
+      "map": "model-viewports/ui-map.json",
+      "nodes": 31,
+      "actionableControls": 17
+    },
+    {
+      "name": "Coordinates",
+      "uid": "ID_PanelCoord",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelcoord",
+      "map": "coordinates/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 19
+    },
+    {
+      "name": "Palettes",
+      "uid": "ID_PanelPalettes",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelpalettes",
+      "map": "palettes/ui-map.json",
+      "nodes": 42,
+      "actionableControls": 21
+    },
+    {
+      "name": "Interface",
+      "uid": "ID_PanelWindow",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelwindow",
+      "map": "interface/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 7
+    },
+    {
+      "name": "Navigate",
+      "uid": "ID_PanelViewNavigate2D",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.id-panelviewnavigate2d",
+      "map": "navigate/ui-map.json",
+      "nodes": 37,
+      "actionableControls": 21
+    },
+    {
+      "name": "Review",
+      "uid": "RBN_231_E07B6",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-e07b6",
+      "map": "review/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "History",
+      "uid": "RBN_231_D4737",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737",
+      "map": "history/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

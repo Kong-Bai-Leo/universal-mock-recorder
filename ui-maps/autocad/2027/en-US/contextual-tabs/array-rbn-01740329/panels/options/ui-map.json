@@ -1,0 +1,460 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740329-panel-options",
+  "generatedAt": "2026-08-25T21:52:41.9331396Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740329",
+    "tabName": "Array",
+    "panelUid": "RBN_01740304",
+    "panelName": "Options",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740329"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329",
+      "kind": "tab",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740329"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740329",
+        "text": "Array",
+        "keyTip": "AR",
+        "alias": null,
+        "officialName": "Polar Array  Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304",
+      "kind": "panel",
+      "name": "Options",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306",
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740307"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740304"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740304",
+        "text": "Options",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Polar Array  - Options",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306",
+      "kind": "layout_row",
+      "name": "RBN_01740306",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740314",
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740315",
+        "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740316"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740306"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740306",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740314": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740314",
+      "kind": "command_button",
+      "name": "Edit\rSource",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740314"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740314",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit\rSource",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ES",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ASSOCARRAY_POLAR_EDITSOURCE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit\rSource",
+        "official": "Edit Source",
+        "aliases": [
+          "ARRAYEDIT",
+          "ID_ASSOCARRAY_POLAR_EDITSOURCE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRAYPOLAREDITSOURCE",
+        "largeResource": "RCDATA_32_ARRAYPOLAREDITSOURCE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYEDIT",
+        "macro": "^C^C_arrayedit _s",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Activates an editing state in which you can edit the source objects (or replacement source objects) for a selected item.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740315": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740315",
+      "kind": "command_button",
+      "name": "Replace\rItem",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740315"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740315",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Replace\rItem",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ASSOCARRAY_POLAR_REPLACEITEM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Replace\rItem",
+        "official": "Replace Item",
+        "aliases": [
+          "ARRAYEDIT",
+          "ID_ASSOCARRAY_POLAR_REPLACEITEM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRAYPOLARREPLACEITEM",
+        "largeResource": "RCDATA_32_ARRAYPOLARREPLACEITEM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYEDIT",
+        "macro": "^C^C_arrayedit _rep",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Replaces the source objects for selected items or for all items referencing the original source objects.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740316": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306.rbn-01740316",
+      "kind": "command_button",
+      "name": "Reset\rArray",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740306",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740316"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740316",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Reset\rArray",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ASSOCARRAY_POLAR_RESETARRAY",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reset\rArray",
+        "official": "Reset Array",
+        "aliases": [
+          "ARRAYEDIT",
+          "ID_ASSOCARRAY_POLAR_RESETARRAY"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRAYPOLARRESETARRAY",
+        "largeResource": "RCDATA_32_ARRAYPOLARRESETARRAY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYEDIT",
+        "macro": "^C^C_arrayedit _res _x",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Restores erased items and removes any item overrides.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740307": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304.rbn-01740307",
+      "kind": "panel_break",
+      "name": "RBN_01740307",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740329.rbn-01740304",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740307"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740307",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

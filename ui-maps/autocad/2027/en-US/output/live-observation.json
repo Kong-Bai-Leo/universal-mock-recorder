@@ -1,0 +1,16 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:30:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Output", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 14,
+  "observedControlIds": [
+    "ID_Print", "ID_Pub", "ID_Preview", "ID_PlotSetup", "ID_PubDetails", "ID_PlotMgr",
+    "AcEXPORTEPLOTFORMATSplitDropDown", "AcExportEplotCombo", "AcExportWindowButton", "AcExportPageSetupCombo",
+    "AcPageSetupButton", "ID_Publish_Preview", "ID_Publish_Options", "ID_Publish_PDF_Options"
+  ],
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabOutput", "action": "select_tab", "result": "Output tab opened and Plot plus Export to DWF/PDF panels were read live." }
+  ],
+  "notes": ["Plot, publish, preview, page setup, export format, and PDF/DWF option controls were observed without invoking them."]
+}

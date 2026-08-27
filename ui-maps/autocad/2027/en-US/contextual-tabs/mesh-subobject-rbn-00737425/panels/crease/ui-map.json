@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-00737425-panel-crease",
+  "generatedAt": "2026-08-25T21:53:03.2462872Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_00737425",
+    "tabName": "Mesh Subobject",
+    "panelUid": "RBN_00737251",
+    "panelName": "Crease",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737425"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425",
+      "kind": "tab",
+      "name": "Mesh Subobject",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737425"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737425",
+        "text": "Mesh Subobject",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh Subobject without Faces Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251",
+      "kind": "panel",
+      "name": "Crease",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737425",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253",
+        "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.id-rbn-0091"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737251"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737251",
+        "text": "Crease",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh - Crease",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253",
+      "kind": "layout_row",
+      "name": "RBN_00737253",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737344",
+        "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737345"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737253"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737253",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737344": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737344",
+      "kind": "command_button",
+      "name": "Add\rCrease",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737344"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737344",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add\rCrease",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "QAC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_CREASE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add\rCrease",
+        "official": "Add Crease",
+        "aliases": [
+          "MESHCREASE",
+          "ID_MESH_SMOOTH_CREASE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_CREASE",
+        "largeResource": "RCDATA_32_OM_CREASE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHCREASE",
+        "macro": "^C^C_MESHCREASE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Sharpens selected mesh faces, edges, or vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHCREASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737345": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253.rbn-00737345",
+      "kind": "command_button",
+      "name": "Remove\rCrease",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.rbn-00737253",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737345"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737345",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Remove\rCrease",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "QRC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_UNCREASE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove\rCrease",
+        "official": "Remove Crease",
+        "aliases": [
+          "MESHUNCREASE",
+          "ID_MESH_SMOOTH_UNCREASE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_UNCREASE",
+        "largeResource": "RCDATA_32_OM_UNCREASE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHUNCREASE",
+        "macro": "^C^C_MESHUNCREASE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes the crease from selected mesh faces, edges, or vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHUNCREASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.id-rbn-0091": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251.id-rbn-0091",
+      "kind": "panel_break",
+      "name": "ID_RBN_0091",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737425.rbn-00737251",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0091"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0091",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

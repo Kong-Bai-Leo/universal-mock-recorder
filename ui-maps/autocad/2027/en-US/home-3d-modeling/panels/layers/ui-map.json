@@ -1,0 +1,2062 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome3d-panel-layers",
+  "generatedAt": "2026-08-25T21:52:13.9409473Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome3D",
+    "tabName": "Home ",
+    "panelUid": "ID_PanelLayers",
+    "panelName": "Layers",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "kind": "tab",
+      "name": "Home ",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome3D",
+        "text": "Home ",
+        "keyTip": "H",
+        "alias": "ID_TabHome3D",
+        "officialName": "Home - 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "kind": "panel",
+      "name": "Layers",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbnpnl-0004",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelLayers"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 331
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelLayers",
+        "text": "Layers",
+        "keyTip": "LL",
+        "alias": "ID_Layers",
+        "officialName": "Home - Layers",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419",
+      "kind": "layout_row",
+      "name": "RBN_00017419",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.id-rbn-togglebtn-layer",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017419"
+      },
+      "placement": {
+        "region": "main",
+        "order": 332
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017419",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.id-rbn-togglebtn-layer": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.id-rbn-togglebtn-layer",
+      "kind": "toggle_button",
+      "name": "Layer\rProperties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_LAYER"
+      },
+      "placement": {
+        "region": "main",
+        "order": 333
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_LAYER",
+        "controlId": "AcLayerCommandToggleButton",
+        "text": "Layer\rProperties",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layer\rProperties",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Layer\rProperties.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2",
+      "kind": "layout_group",
+      "name": "RBN_200_A6ED2",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A6ED2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 334
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A6ED2",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48",
+      "kind": "layout_row",
+      "name": "RBN_200_D3F48",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48.id-rbn-control-layercontrol"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D3F48"
+      },
+      "placement": {
+        "region": "main",
+        "order": 335
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D3F48",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48.id-rbn-control-layercontrol": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48.id-rbn-control-layercontrol",
+      "kind": "ribbon_control",
+      "name": "Layer Combo Control",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-d3f48",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LAYERCONTROL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 336
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LAYERCONTROL",
+        "controlId": "LayerControl",
+        "text": "Layer Combo Control",
+        "keyTip": "LA"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Layer Combo Control.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "kind": "layout_row",
+      "name": "RBN_200_0E5A7",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017429",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017425",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017428",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.id-rbn-cmdbtn-laylck",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017420"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_0E5A7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 337
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_0E5A7",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017429": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017429",
+      "kind": "command_button",
+      "name": "Off",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017429"
+      },
+      "placement": {
+        "region": "main",
+        "order": 338
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017429",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Off",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYOFF",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Off",
+        "official": "Layer, Layer Off",
+        "aliases": [
+          "LAYOFF",
+          "ID_LAYOFF"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFLAY",
+        "largeResource": "RCDATA_32_OFFLAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYOFF",
+        "macro": "^C^C_layoff",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Turns off the layer of a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYOFF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017425": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017425",
+      "kind": "command_button",
+      "name": "Isolate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017425"
+      },
+      "placement": {
+        "region": "main",
+        "order": 339
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017425",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Isolate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYISO",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Isolate",
+        "official": "Layer, Layer Isolate",
+        "aliases": [
+          "LAYISO",
+          "ID_LAYISO"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYISO",
+        "largeResource": "RCDATA_32_LAYISO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYISO",
+        "macro": "^C^C_layiso",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Hides or locks all layers except those of the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYISO command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017428": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017428",
+      "kind": "command_button",
+      "name": "Freeze",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017428"
+      },
+      "placement": {
+        "region": "main",
+        "order": 340
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017428",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Freeze",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYFRZ",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Freeze",
+        "official": "Layer, Layer Freeze",
+        "aliases": [
+          "LAYFRZ",
+          "ID_LAYFRZ"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FRZLAY",
+        "largeResource": "RCDATA_32_FRZLAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYFRZ",
+        "macro": "^C^C_layfrz",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Freezes the layer of selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYFRZ command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.id-rbn-cmdbtn-laylck": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.id-rbn-cmdbtn-laylck",
+      "kind": "command_button",
+      "name": "Lock",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYLCK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 341
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYLCK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lock",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LK",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYLCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lock",
+        "official": "Layer, Layer Lock",
+        "aliases": [
+          "LAYLCK",
+          "ID_LAYLCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LCKLAY",
+        "largeResource": "RCDATA_32_LCKLAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYLCK",
+        "macro": "^C^C_laylck",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Locks the layer of a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYLCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017420": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7.rbn-00017420",
+      "kind": "command_button",
+      "name": "Make Current",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-0e5a7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017420"
+      },
+      "placement": {
+        "region": "main",
+        "order": 342
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017420",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Make Current",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Laymcur",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Make Current",
+        "official": "Layer, Make Object's Layer Current",
+        "aliases": [
+          "LAYMCUR",
+          "ID_Laymcur"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MOLC",
+        "largeResource": "RCDATA_32_MOLC",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYMCUR",
+        "macro": "^C^C_Laymcur",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Sets the current layer to that of a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYMCUR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "kind": "layout_row",
+      "name": "RBN_200_EA743",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layon",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017426",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-laythw",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layulk",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017422"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_EA743"
+      },
+      "placement": {
+        "region": "main",
+        "order": 343
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_EA743",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layon": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layon",
+      "kind": "command_button",
+      "name": "Turn All Layers On",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 344
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYON",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Turn All Layers On",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYON",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Turn All Layers On",
+        "official": "Layer, Turn All Layers On",
+        "aliases": [
+          "LAYON",
+          "ID_LAYON"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ONLAY",
+        "largeResource": "RCDATA_32_ONLAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYON",
+        "macro": "^C^C_layon",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Turns on all layers in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYON command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017426": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017426",
+      "kind": "command_button",
+      "name": "Unisolate",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017426"
+      },
+      "placement": {
+        "region": "main",
+        "order": 345
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017426",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Unisolate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_LAYUNISO",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Unisolate",
+        "official": "Layer, Layer Unisolate",
+        "aliases": [
+          "LAYUNISO",
+          "MM_LAYUNISO"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYUNISO",
+        "largeResource": "RCDATA_32_LAYUNISO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYUNISO",
+        "macro": "^C^C_Layuniso",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Restores all layers that were hidden or locked with the LAYISO command",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYUNISO command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-laythw": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-laythw",
+      "kind": "command_button",
+      "name": "Thaw All Layers",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYTHW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 346
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYTHW",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Thaw All Layers",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYTHW",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Thaw All Layers",
+        "official": "Layer, Thaw All Layers",
+        "aliases": [
+          "LAYTHW",
+          "ID_LAYTHW"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYTHW",
+        "largeResource": "RCDATA_32_LAYTHW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYTHW",
+        "macro": "^C^C_laythw",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Thaws all layers in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYTHW command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layulk": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.id-rbn-cmdbtn-layulk",
+      "kind": "command_button",
+      "name": "Unlock",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYULK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 347
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYULK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Unlock",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "UL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYULK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Unlock",
+        "official": "Layer, Layer Unlock",
+        "aliases": [
+          "LAYULK",
+          "ID_LAYULK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ULKLAY",
+        "largeResource": "RCDATA_32_ULKLAY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYULK",
+        "macro": "^C^C_layulk",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Unlocks the layer of a selected object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYULK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017422": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743.rbn-00017422",
+      "kind": "command_button",
+      "name": "Match Layer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017419.rbn-200-a6ed2.rbn-200-ea743",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017422"
+      },
+      "placement": {
+        "region": "main",
+        "order": 348
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017422",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Match Layer",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYMCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Match Layer",
+        "official": "Layer, Layer Match",
+        "aliases": [
+          "LAYMCH",
+          "ID_LAYMCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MCHLAY",
+        "largeResource": "RCDATA_32_MCHLAY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYMCH",
+        "macro": "^C^C_laymch",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the layer of a selected object to match the destination layer",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYMCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbnpnl-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbnpnl-0004",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0004",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0004"
+      },
+      "placement": {
+        "region": "main",
+        "order": 349
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0004",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417",
+      "kind": "layout_row",
+      "name": "RBN_00017417",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417.id-rbn-control-layerstatecombo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017417"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 350
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017417",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417.id-rbn-control-layerstatecombo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417.id-rbn-control-layerstatecombo",
+      "kind": "ribbon_control",
+      "name": "Ribbon Combo Box - Layer State",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.rbn-00017417",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LAYERSTATECOMBO"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 351
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LAYERSTATECOMBO",
+        "controlId": "AcLayerStateCombo",
+        "text": "Ribbon Combo Box - Layer State",
+        "keyTip": "LT"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Ribbon Combo Box - Layer State.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0030",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.rbn-00017423",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0040",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laycur",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-copyto",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laywlk",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0041",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-layvpi",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0042",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laymrg",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laydel"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0030"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 352
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0030",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.rbn-00017423": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.rbn-00017423",
+      "kind": "command_button",
+      "name": "Previous",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00017423"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 353
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00017423",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Previous",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LayerP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Previous",
+        "official": "Layer, Layer Previous",
+        "aliases": [
+          "LAYERP",
+          "ID_LayerP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYERP",
+        "largeResource": "RCDATA_32_LAYERP",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYERP",
+        "macro": "^C^C_LayerP",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Undoes the last change or set of changes made to layer settings",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYERP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0040": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0040",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0040",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0040"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 354
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0040",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laycur": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laycur",
+      "kind": "command_button",
+      "name": "Change to Current Layer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYCUR"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 355
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYCUR",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Change to Current Layer",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYCUR",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Change to Current Layer",
+        "official": "Layer, Change to Current Layer",
+        "aliases": [
+          "LAYCUR",
+          "ID_LAYCUR"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYCUR",
+        "largeResource": "RCDATA_32_LAYCUR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYCUR",
+        "macro": "^C^C_laycur",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the layer property of selected objects to the current layer",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYCUR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-copyto": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-copyto",
+      "kind": "command_button",
+      "name": "Copy Objects to New Layer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_COPYTO"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 356
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_COPYTO",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Copy Objects to New Layer",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CPY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_COPYTO",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Copy Objects to New Layer",
+        "official": "Layer, Copy Objects to New Layer",
+        "aliases": [
+          "COPYTOLAYER",
+          "ID_COPYTO"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_COPYTO",
+        "largeResource": "RCDATA_32_COPYTO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "COPYTOLAYER",
+        "macro": "^C^C_copytolayer",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Copies one or more objects to another layer",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 COPYTOLAYER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laywlk": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laywlk",
+      "kind": "command_button",
+      "name": "Layer Walk",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYWLK"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 357
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYWLK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Layer Walk",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYWLK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layer Walk",
+        "official": "Layer, Layer Walk...",
+        "aliases": [
+          "LAYWALK",
+          "ID_LAYWLK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WLKLAY",
+        "largeResource": "RCDATA_32_LAYWLK",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYWALK",
+        "macro": "^C^C_.laywalk",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays objects on selected layers and hides objects on all other layers",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYWALK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0041": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0041",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0041",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0041"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 358
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0041",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-layvpi": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-layvpi",
+      "kind": "command_button",
+      "name": " VP Freeze in All Viewports except Current",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYVPI"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 359
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYVPI",
+        "controlId": "AcRibbonCommandButton",
+        "text": " VP Freeze in All Viewports except Current",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "VP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYVPI",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": " VP Freeze in All Viewports except Current",
+        "official": "Layer, VP Freeze in All Viewports except Current",
+        "aliases": [
+          "LAYVPI",
+          "ID_LAYVPI"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYER_ISO_TO_CURRENT_VP",
+        "largeResource": "RCDATA_32_LAYER_ISO_TO_CURRENT_VP",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYVPI",
+        "macro": "^C^C_layvpi",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Freezes selected layers in all layout viewports except the current viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYVPI command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0042": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-ribbonseparator-0042",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0042",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0042"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 360
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0042",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laymrg": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laymrg",
+      "kind": "command_button",
+      "name": "Merge",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYMRG"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 361
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYMRG",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Merge",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYMRG",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Merge",
+        "official": "Layer, Layer Merge",
+        "aliases": [
+          "LAYMRG",
+          "ID_LAYMRG"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYER_MERGE_2",
+        "largeResource": "RCDATA_32_LAYER_MERGE_2",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYMRG",
+        "macro": "^C^C_laymrg",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges selected layers into a target layer, removing the previous layers from the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYMRG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laydel": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030.id-rbn-cmdbtn-laydel",
+      "kind": "command_button",
+      "name": "Delete",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0030",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYDEL"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 362
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYDEL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Delete",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_LAYDEL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete",
+        "official": "Layer, Layer Delete",
+        "aliases": [
+          "LAYDEL",
+          "ID_LAYDEL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYER_DELETE",
+        "largeResource": "RCDATA_32_LAYER_DELETE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYDEL",
+        "macro": "^C^C_laydel",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Deletes all objects on a layer and purges the layer",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYDEL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0032",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-togglebtn-lockedlayerfading",
+        "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-control-lockedlayerfadingslider"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0032"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 363
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0032",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-togglebtn-lockedlayerfading": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-togglebtn-lockedlayerfading",
+      "kind": "toggle_button",
+      "name": "Locked Layer fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_LOCKEDLAYERFADING"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 364
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_LOCKEDLAYERFADING",
+        "controlId": "AcLockedLayerFadingCommandToggleButton",
+        "text": "Locked Layer fading",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Locked Layer fading",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Locked Layer fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-control-lockedlayerfadingslider": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032.id-rbn-control-lockedlayerfadingslider",
+      "kind": "ribbon_control",
+      "name": "Layer fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome3d.id-panellayers.id-rbn-row-0032",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LOCKEDLAYERFADINGSLIDER"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 365
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LOCKEDLAYERFADINGSLIDER",
+        "controlId": "AcLockedLayerFadingSlider",
+        "text": "Layer fading",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Layer fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

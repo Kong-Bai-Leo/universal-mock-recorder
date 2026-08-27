@@ -1,0 +1,889 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditortab-panel-manage",
+  "generatedAt": "2026-08-25T21:53:15.0301157Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorTab",
+    "tabName": "Block Editor",
+    "panelUid": "RBN_01737960",
+    "panelName": "Manage",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "kind": "tab",
+      "name": "Block Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorTab",
+        "text": "Block Editor",
+        "keyTip": "BE",
+        "alias": null,
+        "officialName": "Block Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+      "kind": "panel",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.id-rbn-0061",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737963"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737960"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737960",
+        "text": "Manage",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Block Editor - Manage",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.id-rbn-0061": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.id-rbn-0061",
+      "kind": "dialog_launcher",
+      "name": "Block Editor, Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0061"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0061",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "BM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockEditorSettings",
+        "commandId": "ID_BlockEditorSettings",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Block Editor, Settings",
+        "aliases": [
+          "BESETTINGS",
+          "ID_BlockEditorSettings"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BESETTINGS",
+        "macro": "^C^C_besettings",
+        "macroType": "Any",
+        "commandId": "ID_BlockEditorSettings",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Manages Block Editor settings",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BESETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962",
+      "kind": "layout_row",
+      "name": "RBN_01737962",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737968",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737962"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737962",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966",
+      "kind": "layout_group",
+      "name": "RBN_01737966",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737966"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737966",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967",
+      "kind": "layout_row",
+      "name": "RBN_01737967",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967.rbn-blockeditormanagedeleteconstraintsacadonly"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737967"
+      },
+      "placement": {
+        "region": "main",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737967",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967.rbn-blockeditormanagedeleteconstraintsacadonly": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967.rbn-blockeditormanagedeleteconstraintsacadonly",
+      "kind": "command_button",
+      "name": "Delete",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737967",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_BlockEditorManageDeleteConstraintsAcadOnly"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_BlockEditorManageDeleteConstraintsAcadOnly",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Delete",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Del_Constraint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete",
+        "official": "Delete Constraints",
+        "aliases": [
+          "DELCONSTRAINT",
+          "MM_Del_Constraint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DELETECONSTRAINT_16",
+        "largeResource": "RCDATA_32_DELETECONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DELCONSTRAINT",
+        "macro": "^C^C_DelConstraint",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes all constraints from the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DELCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971",
+      "kind": "layout_row",
+      "name": "RBN_01737971",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971.rbn-01737974"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737971"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737971",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971.rbn-01737974": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971.rbn-01737974",
+      "kind": "command_button",
+      "name": "Construction",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737971",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737974"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737974",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Construction",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "XG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ConstructionGeometry",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Construction",
+        "official": "Construction Geometry",
+        "aliases": [
+          "BCONSTRUCTION",
+          "ID_ConstructionGeometry"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BCONSTRUCTION",
+        "largeResource": "RCDATA_32_BCONSTRUCTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BCONSTRUCTION",
+        "macro": "^C^C_bconstruction",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts objects to construction geometry",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BCONSTRUCTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972",
+      "kind": "layout_row",
+      "name": "RBN_01737972",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972.rbn-blockeditormanagepanelconstraintstatustogglebuttonacadonly"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737972"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737972",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972.rbn-blockeditormanagepanelconstraintstatustogglebuttonacadonly": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972.rbn-blockeditormanagepanelconstraintstatustogglebuttonacadonly",
+      "kind": "toggle_button",
+      "name": "Constraint Status",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737966.rbn-01737972",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_BlockEditorManagePanelConstraintStatusToggleButtonAcadOnly"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_BlockEditorManagePanelConstraintStatusToggleButtonAcadOnly",
+        "controlId": "AcBlockConstraintStatusToggleButton",
+        "text": "Constraint Status",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Constraint Status",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Constraint Status.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737968": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737968",
+      "kind": "separator",
+      "name": "RBN_01737968",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737968"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737968",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964",
+      "kind": "layout_group",
+      "name": "RBN_01737964",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737964"
+      },
+      "placement": {
+        "region": "main",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737964",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965",
+      "kind": "layout_row",
+      "name": "RBN_01737965",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-blockeditormanageparametersmanageracadonly",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-01737969"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737965"
+      },
+      "placement": {
+        "region": "main",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737965",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-blockeditormanageparametersmanageracadonly": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-blockeditormanageparametersmanageracadonly",
+      "kind": "toggle_button",
+      "name": "Parameters\rManager",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_BlockEditorManageParametersManagerAcadOnly"
+      },
+      "placement": {
+        "region": "main",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_BlockEditorManageParametersManagerAcadOnly",
+        "controlId": "AcParametersManagerCommandToggleButton",
+        "text": "Parameters\rManager",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Parameters\rManager",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Parameters\rManager.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-01737969": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965.rbn-01737969",
+      "kind": "toggle_button",
+      "name": "Authoring\rPalettes",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737962.rbn-01737964.rbn-01737965",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737969"
+      },
+      "placement": {
+        "region": "main",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737969",
+        "controlId": "AcAuthorPaletteCommandToggleButton",
+        "text": "Authoring\rPalettes",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Authoring\rPalettes",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Authoring\rPalettes.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737963": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960.rbn-01737963",
+      "kind": "panel_break",
+      "name": "RBN_01737963",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737963"
+      },
+      "placement": {
+        "region": "main",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737963",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

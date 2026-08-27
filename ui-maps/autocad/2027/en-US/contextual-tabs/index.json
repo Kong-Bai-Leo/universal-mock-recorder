@@ -1,0 +1,642 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows"
+  },
+  "scope": {
+    "included": "Standalone stock contextual/on-demand Ribbon tabs extracted from acad.CUIX and ModelDoc.cuix",
+    "excluded": [
+      "MergeTabOnly contributions",
+      "internal Test Block tab",
+      "plug-in tabs",
+      "industry toolset tabs"
+    ]
+  },
+  "usagePolicy": "Do not assume a contextual tab is visible. Confirm its triggering object/editor state in the current screenshot before loading its map.",
+  "totals": {
+    "tabs": 30,
+    "nodes": 1329.0,
+    "panels": 127.0,
+    "panelMaps": 127.0,
+    "actionableControls": 539.0,
+    "liveObserved": 0,
+    "contextTriggerTested": 0
+  },
+  "tabs": [
+    {
+      "tab": "Array",
+      "uid": "RBN_01740329",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "array-rbn-01740329/ui-map.json",
+      "panelsIndex": "array-rbn-01740329/panels/index.json",
+      "nodes": 50,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 18,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "DGN Underlay",
+      "uid": "ID_CTS-DGNUnderlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "dgn-underlay-id-cts-dgnunderlay/ui-map.json",
+      "panelsIndex": "dgn-underlay-id-cts-dgnunderlay/panels/index.json",
+      "nodes": 28,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 9,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "DWF Underlay",
+      "uid": "ID_CTS-DWFUnderlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "dwf-underlay-id-cts-dwfunderlay/ui-map.json",
+      "panelsIndex": "dwf-underlay-id-cts-dwfunderlay/panels/index.json",
+      "nodes": 28,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 9,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Edit Reference",
+      "uid": "ID_RefEditTab",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "edit-reference-id-refedittab/ui-map.json",
+      "panelsIndex": "edit-reference-id-refedittab/panels/index.json",
+      "nodes": 12,
+      "panels": 1,
+      "panelMaps": 1,
+      "actionableControls": 4,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "External Reference",
+      "uid": "ID_CTS-Xref",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "external-reference-id-cts-xref/ui-map.json",
+      "panelsIndex": "external-reference-id-cts-xref/panels/index.json",
+      "nodes": 18,
+      "panels": 3,
+      "panelMaps": 3,
+      "actionableControls": 5,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Hatch Creation",
+      "uid": "RBN_01738148",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "hatch-creation-rbn-01738148/ui-map.json",
+      "panelsIndex": "hatch-creation-rbn-01738148/panels/index.json",
+      "nodes": 102,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 50,
+      "splitButtons": 0,
+      "iconOnlyControls": 9,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Hatch Editor",
+      "uid": "RBN_01738281",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "hatch-editor-rbn-01738281/ui-map.json",
+      "panelsIndex": "hatch-editor-rbn-01738281/panels/index.json",
+      "nodes": 102,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 50,
+      "splitButtons": 0,
+      "iconOnlyControls": 9,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Image",
+      "uid": "ID_CTS-Image",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "image-id-cts-image/ui-map.json",
+      "panelsIndex": "image-id-cts-image/panels/index.json",
+      "nodes": 23,
+      "panels": 3,
+      "panelMaps": 3,
+      "actionableControls": 8,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Mesh Subobject",
+      "uid": "RBN_00737426",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "mesh-subobject-rbn-00737426/ui-map.json",
+      "panelsIndex": "mesh-subobject-rbn-00737426/panels/index.json",
+      "nodes": 20,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 6,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Mesh",
+      "uid": "ID_CTS-Mesh",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "mesh-id-cts-mesh/ui-map.json",
+      "panelsIndex": "mesh-id-cts-mesh/panels/index.json",
+      "nodes": 22,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 6,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Mesh Subobject",
+      "uid": "RBN_00737425",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "mesh-subobject-rbn-00737425/ui-map.json",
+      "panelsIndex": "mesh-subobject-rbn-00737425/panels/index.json",
+      "nodes": 9,
+      "panels": 1,
+      "panelMaps": 1,
+      "actionableControls": 2,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "PDF Underlay",
+      "uid": "ID_CTS-PDFUnderlay",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "pdf-underlay-id-cts-pdfunderlay/ui-map.json",
+      "panelsIndex": "pdf-underlay-id-cts-pdfunderlay/panels/index.json",
+      "nodes": 32,
+      "panels": 5,
+      "panelMaps": 5,
+      "actionableControls": 10,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Section Plane",
+      "uid": "RBN_01737814",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "section-plane-rbn-01737814/ui-map.json",
+      "panelsIndex": "section-plane-rbn-01737814/panels/index.json",
+      "nodes": 33,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 12,
+      "splitButtons": 1,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Block Editor - Close",
+      "uid": "ID_BlockEditorCloseTab",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "block-editor-close-id-blockeditorclosetab/ui-map.json",
+      "panelsIndex": "block-editor-close-id-blockeditorclosetab/panels/index.json",
+      "nodes": 8,
+      "panels": 1,
+      "panelMaps": 1,
+      "actionableControls": 1,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Associative Array Edit",
+      "uid": "RBN_01740028",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "associative-array-edit-rbn-01740028/ui-map.json",
+      "panelsIndex": "associative-array-edit-rbn-01740028/panels/index.json",
+      "nodes": 9,
+      "panels": 1,
+      "panelMaps": 1,
+      "actionableControls": 2,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Text Editor",
+      "uid": "ID_MText_Tab",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "text-editor-id-mtext-tab/ui-map.json",
+      "panelsIndex": "text-editor-id-mtext-tab/panels/index.json",
+      "nodes": 95,
+      "panels": 8,
+      "panelMaps": 8,
+      "actionableControls": 41,
+      "splitButtons": 0,
+      "iconOnlyControls": 12,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Table Cell",
+      "uid": "ID_TableTab",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "table-cell-id-tabletab/ui-map.json",
+      "panelsIndex": "table-cell-id-tabletab/panels/index.json",
+      "nodes": 59,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 24,
+      "splitButtons": 1,
+      "iconOnlyControls": 3,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Map Image",
+      "uid": "ID_TabGeoMapImage",
+      "aliases": [
+        "ID_TABGEOMAPIMAGE"
+      ],
+      "source": "acad.CUIX",
+      "map": "map-image-id-tabgeomapimage/ui-map.json",
+      "panelsIndex": "map-image-id-tabgeomapimage/panels/index.json",
+      "nodes": 20,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 6,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Touch",
+      "uid": "ID_TabTouchMode",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "touch-id-tabtouchmode/ui-map.json",
+      "panelsIndex": "touch-id-tabtouchmode/panels/index.json",
+      "nodes": 8,
+      "panels": 1,
+      "panelMaps": 1,
+      "actionableControls": 1,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Coordination Model",
+      "uid": "ID_RBN_TAB_CM",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "coordination-model-id-rbn-tab-cm/ui-map.json",
+      "panelsIndex": "coordination-model-id-rbn-tab-cm/panels/index.json",
+      "nodes": 20,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 7,
+      "splitButtons": 0,
+      "iconOnlyControls": 3,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Point Cloud",
+      "uid": "RBN_01740544",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "point-cloud-rbn-01740544/ui-map.json",
+      "panelsIndex": "point-cloud-rbn-01740544/panels/index.json",
+      "nodes": 73,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 27,
+      "splitButtons": 0,
+      "iconOnlyControls": 7,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Layout",
+      "uid": "RBN_190_A51F9",
+      "aliases": [
+        "ID_NEWLAYOUT"
+      ],
+      "source": "acad.CUIX",
+      "map": "layout-rbn-190-a51f9/ui-map.json",
+      "panelsIndex": "layout-rbn-190-a51f9/panels/index.json",
+      "nodes": 99,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 45,
+      "splitButtons": 7,
+      "iconOnlyControls": 5,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Geolocation",
+      "uid": "ID_TabGeo",
+      "aliases": [
+        "ID_TabGeo"
+      ],
+      "source": "acad.CUIX",
+      "map": "geolocation-id-tabgeo/ui-map.json",
+      "panelsIndex": "geolocation-id-tabgeo/panels/index.json",
+      "nodes": 31,
+      "panels": 3,
+      "panelMaps": 3,
+      "actionableControls": 13,
+      "splitButtons": 2,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Array Creation",
+      "uid": "RBN_01740514",
+      "aliases": [
+        "ID_CREATERECTARRAY"
+      ],
+      "source": "acad.CUIX",
+      "map": "array-creation-rbn-01740514/ui-map.json",
+      "panelsIndex": "array-creation-rbn-01740514/panels/index.json",
+      "nodes": 43,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 14,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Array Creation",
+      "uid": "RBN_01740507",
+      "aliases": [
+        "ID_CREATEPATHARRAY"
+      ],
+      "source": "acad.CUIX",
+      "map": "array-creation-rbn-01740507/ui-map.json",
+      "panelsIndex": "array-creation-rbn-01740507/panels/index.json",
+      "nodes": 47,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 18,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Array Creation",
+      "uid": "RBN_01740500",
+      "aliases": [
+        "ID_CREATEPOLARARRAY"
+      ],
+      "source": "acad.CUIX",
+      "map": "array-creation-rbn-01740500/ui-map.json",
+      "panelsIndex": "array-creation-rbn-01740500/panels/index.json",
+      "nodes": 45,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 16,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Array",
+      "uid": "RBN_01740317",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "array-rbn-01740317/ui-map.json",
+      "panelsIndex": "array-rbn-01740317/panels/index.json",
+      "nodes": 48,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 16,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Array",
+      "uid": "RBN_01740323",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "array-rbn-01740323/ui-map.json",
+      "panelsIndex": "array-rbn-01740323/panels/index.json",
+      "nodes": 51,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 19,
+      "splitButtons": 0,
+      "iconOnlyControls": 0,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Block Editor",
+      "uid": "ID_BlockEditorTab",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "block-editor-id-blockeditortab/ui-map.json",
+      "panelsIndex": "block-editor-id-blockeditortab/panels/index.json",
+      "nodes": 128,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 69,
+      "splitButtons": 3,
+      "iconOnlyControls": 37,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    },
+    {
+      "tab": "Drawing View Hatch Editor",
+      "uid": "RBN_01740527",
+      "aliases": [],
+      "source": "acad.CUIX",
+      "map": "drawing-view-hatch-editor-rbn-01740527/ui-map.json",
+      "panelsIndex": "drawing-view-hatch-editor-rbn-01740527/panels/index.json",
+      "nodes": 66,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 31,
+      "splitButtons": 0,
+      "iconOnlyControls": 8,
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "contextTriggerTested": false,
+        "triggerHint": null
+      }
+    }
+  ]
+}

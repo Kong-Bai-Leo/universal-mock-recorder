@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-draw",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0065",
+    "panelName": "Draw",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065",
+      "kind": "panel",
+      "name": "Draw",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0068"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0065"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0065",
+        "text": "Draw",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Express Tools - Draw",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067",
+      "kind": "layout_row",
+      "name": "RBN_0067",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0070",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0069"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0067"
+      },
+      "placement": {
+        "region": "main",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0067",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0070": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0070",
+      "kind": "command_button",
+      "name": "Break-line\rSymbol",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0070"
+      },
+      "placement": {
+        "region": "main",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0070",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Break-line\rSymbol",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETBREAKL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Break-line\rSymbol",
+        "official": "Break-line Symbol",
+        "aliases": [
+          "BREAKLINE",
+          "ID_ACETBREAKL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BREAKLINE",
+        "largeResource": "RCDATA_32_BREAKLINE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREAKLINE",
+        "macro": "^C^Cbreakline",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates polylines and inserts break-line symbol",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREAKLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0069": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067.rbn-0069",
+      "kind": "command_button",
+      "name": "Super\rHatch",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0067",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0069"
+      },
+      "placement": {
+        "region": "main",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0069",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Super\rHatch",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETSHATCH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Super\rHatch",
+        "official": "Super Hatch...",
+        "aliases": [
+          "SUPERHATCH",
+          "ID_ACETSHATCH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SUPERHATCH",
+        "largeResource": "RCDATA_32_SUPERHATCH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SUPERHATCH",
+        "macro": "^C^C_superhatch",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Uses images, blocks, external references, or wipeouts as hatch patterns",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SUPERHATCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0068": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065.rbn-0068",
+      "kind": "panel_break",
+      "name": "RBN_0068",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0068"
+      },
+      "placement": {
+        "region": "main",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0068",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

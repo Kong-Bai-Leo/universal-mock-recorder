@@ -1,0 +1,939 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740527-panel-origin",
+  "generatedAt": "2026-08-25T21:53:16.2376591Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740527",
+    "tabName": "Drawing View Hatch Editor",
+    "panelUid": "RBN_01738625",
+    "panelName": "Origin",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527",
+      "kind": "tab",
+      "name": "Drawing View Hatch Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740527"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740527",
+        "text": "Drawing View Hatch Editor",
+        "keyTip": "CH",
+        "alias": null,
+        "officialName": "Hatch Editor Contextual Tab for Section View"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "kind": "panel",
+      "name": "Origin",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738630",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738625"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738625",
+        "text": "Origin",
+        "keyTip": "OR",
+        "alias": null,
+        "officialName": "Hatch Edit - Origin",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629",
+      "kind": "layout_row",
+      "name": "RBN_01738629",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738627",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738628"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738629"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738629",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738627": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738627",
+      "kind": "command_button",
+      "name": "Set\rOrigin",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738627"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738627",
+        "controlId": "AcHatchSetOriginButton",
+        "text": "Set\rOrigin",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Set\rOrigin",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Set\rOrigin.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738628": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629.rbn-01738628",
+      "kind": "toggle_button",
+      "name": "Centered",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738629",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738628"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738628",
+        "controlId": "AcHatchGradientShiftToggle",
+        "text": "Centered",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Centered",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Centered.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738630": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738630",
+      "kind": "panel_break",
+      "name": "RBN_01738630",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738630"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738630",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "kind": "layout_row",
+      "name": "RBN_01738632",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738740",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738735",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738736",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738737",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738738",
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738739"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738632"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738632",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738740": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738740",
+      "kind": "command_button",
+      "name": "Bottom Left",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738740"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738740",
+        "controlId": "AcHatchOriginBottomLeftButton",
+        "text": "Bottom Left",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Bottom Left",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Bottom Left.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738735": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738735",
+      "kind": "command_button",
+      "name": "Bottom Right",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738735"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738735",
+        "controlId": "AcHatchOriginBottomRightButton",
+        "text": "Bottom Right",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Bottom Right",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Bottom Right.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738736": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738736",
+      "kind": "command_button",
+      "name": "Top Left",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738736"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738736",
+        "controlId": "AcHatchOriginTopLeftButton",
+        "text": "Top Left",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Top Left",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Top Left.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738737": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738737",
+      "kind": "command_button",
+      "name": "Top Right",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738737"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738737",
+        "controlId": "AcHatchOriginTopRightButton",
+        "text": "Top Right",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Top Right",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Top Right.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738738": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738738",
+      "kind": "command_button",
+      "name": "Center",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738738"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738738",
+        "controlId": "AcHatchOriginCenterButton",
+        "text": "Center",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Center.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738739": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632.rbn-01738739",
+      "kind": "command_button",
+      "name": "Use Current Origin",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738632",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738739"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738739",
+        "controlId": "AcHatchOriginUseCurrentButton",
+        "text": "Use Current Origin",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Use Current Origin",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Use Current Origin.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634",
+      "kind": "layout_row",
+      "name": "RBN_01738634",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634.rbn-01738633"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738634"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738634",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634.rbn-01738633": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634.rbn-01738633",
+      "kind": "command_button",
+      "name": "Store as Default Origin",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740527.rbn-01738625.rbn-01738634",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738633"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738633",
+        "controlId": "AcHatchStoreAsDefaultOriginButton",
+        "text": "Store as Default Origin",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "DO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Store as Default Origin",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Store as Default Origin.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

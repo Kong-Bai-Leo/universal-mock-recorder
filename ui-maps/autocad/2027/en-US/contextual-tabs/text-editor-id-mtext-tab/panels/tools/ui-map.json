@@ -1,0 +1,513 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-mtext-tab-panel-tools",
+  "generatedAt": "2026-08-25T21:52:57.5942628Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_MText_Tab",
+    "tabName": "Text Editor",
+    "panelUid": "RBN_00015815",
+    "panelName": "Tools",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "kind": "tab",
+      "name": "Text Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_MText_Tab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_MText_Tab",
+        "text": "Text Editor",
+        "keyTip": "TE",
+        "alias": null,
+        "officialName": "Text Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "kind": "panel",
+      "name": "Tools",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.id-rbnpnl-0098",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015815"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015815",
+        "text": "Tools",
+        "keyTip": "TO",
+        "alias": null,
+        "officialName": "Multiline Text Editor - Tools",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816",
+      "kind": "layout_row",
+      "name": "RBN_00015816",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816.id-rbn-btn-ipefindreplacemenu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015816"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015816",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816.id-rbn-btn-ipefindreplacemenu": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816.id-rbn-btn-ipefindreplacemenu",
+      "kind": "command_button",
+      "name": "Find &\rReplace",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015816",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_IPEFINDREPLACEMENU"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_IPEFINDREPLACEMENU",
+        "controlId": "AcIPEFindReplaceMenuButton",
+        "text": "Find &\rReplace",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Find &\rReplace",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Find &\rReplace.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.id-rbnpnl-0098": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.id-rbnpnl-0098",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0098",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0098"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0098",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883",
+      "kind": "layout_row",
+      "name": "RBN_00015883",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883.id-rbn-btn-ipeimporttext"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015883"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015883",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883.id-rbn-btn-ipeimporttext": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883.id-rbn-btn-ipeimporttext",
+      "kind": "command_button",
+      "name": "Import Text",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015883",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_IPEIMPORTTEXT"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_IPEIMPORTTEXT",
+        "controlId": "AcIPEImportText",
+        "text": "Import Text",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "IE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Import Text",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Import Text.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949",
+      "kind": "layout_row",
+      "name": "RBN_00015949",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949.id-rbn-btn-ipeautocaps"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015949"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015949",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949.id-rbn-btn-ipeautocaps": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949.id-rbn-btn-ipeautocaps",
+      "kind": "command_button",
+      "name": "All CAPS",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815.rbn-00015949",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_IPEAUTOCAPS"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_IPEAUTOCAPS",
+        "controlId": "AcIPEAutoCaps",
+        "text": "All CAPS",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "All CAPS",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes All CAPS.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

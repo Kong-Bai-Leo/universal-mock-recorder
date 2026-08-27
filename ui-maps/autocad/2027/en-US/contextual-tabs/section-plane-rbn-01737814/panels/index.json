@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_01737814",
+  "tabName": "Section Plane",
+  "panelCount": 4,
+  "panels": [
+    {
+      "name": "Display",
+      "uid": "RBN_201_76EE5",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-76ee5",
+      "map": "display/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Modify",
+      "uid": "RBN_201_873AD",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-873ad",
+      "map": "modify/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Adjust",
+      "uid": "RBN_201_C6B7E",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-c6b7e",
+      "map": "adjust/ui-map.json",
+      "nodes": 11,
+      "actionableControls": 3
+    },
+    {
+      "name": "Generate",
+      "uid": "RBN_201_CE620",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01737814.rbn-201-ce620",
+      "map": "generate/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 4
+    }
+  ]
+}

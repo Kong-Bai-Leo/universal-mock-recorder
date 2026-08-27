@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-performance",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelPerfAnalyzer",
+    "panelName": "Performance",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer",
+      "kind": "panel",
+      "name": "Performance",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelPerfAnalyzer"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelPerfAnalyzer",
+        "text": "Performance",
+        "keyTip": null,
+        "alias": "ID_Performance",
+        "officialName": "Manage - Performance",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_PERFANALYZER_0001",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001.id-rbn-cmdbtn-perfanalyzer"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_PERFANALYZER_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_PERFANALYZER_0001",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001.id-rbn-cmdbtn-perfanalyzer": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001.id-rbn-cmdbtn-perfanalyzer",
+      "kind": "command_button",
+      "name": "Performance\rAnalyzer",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer.id-rbn-row-perfanalyzer-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PERFANALYZER"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PERFANALYZER",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Performance\rAnalyzer",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PerfAnalyzer",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Performance\rAnalyzer",
+        "official": "Record Analyze",
+        "aliases": [
+          "PERFANALYZER",
+          "ID_PerfAnalyzer"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PERFANALYZER",
+        "largeResource": "RCDATA_32_PERFANALYZER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PERFANALYZER",
+        "macro": "^C^C_perfanalyzer",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Records and analyzes AutoCAD performance",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PERFANALYZER command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

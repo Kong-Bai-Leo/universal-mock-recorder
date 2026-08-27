@@ -1,0 +1,942 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmeshmodeling-panel-section",
+  "generatedAt": "2026-08-25T21:52:33.3457511Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabMeshModeling",
+    "tabName": "Mesh",
+    "panelUid": "RBN_01737906",
+    "panelName": "Section",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+      "kind": "tab",
+      "name": "Mesh",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabMeshModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabMeshModeling",
+        "text": "Mesh",
+        "keyTip": "MM",
+        "alias": "ID_TabMeshModeling",
+        "officialName": "Mesh Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "kind": "panel",
+      "name": "Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.id-rbn-0100",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737910",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737906"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737906",
+        "text": "Section",
+        "keyTip": "SN",
+        "alias": null,
+        "officialName": "Mesh Modeling - Section",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.id-rbn-0100": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.id-rbn-0100",
+      "kind": "dialog_launcher",
+      "name": "Section, Section Plane Settings",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0100"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0100",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "SZ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANESETTINGS",
+        "commandId": "ID_SECTIONPLANESETTINGS",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Section, Section Plane Settings",
+        "aliases": [
+          "SECTIONPLANESETTINGS",
+          "ID_SECTIONPLANESETTINGS"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANESETTINGS",
+        "macro": "^C^C_SECTIONPLANESETTINGS",
+        "macroType": "Any",
+        "commandId": "ID_SECTIONPLANESETTINGS",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Sets display options for the selected section plane",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANESETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909",
+      "kind": "layout_row",
+      "name": "RBN_01737909",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737908",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737909"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737909",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737908": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737908",
+      "kind": "command_button",
+      "name": "Section\rPlane",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737908"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737908",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Section\rPlane",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "XP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1719",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Section\rPlane",
+        "official": "Modeling, Section Plane",
+        "aliases": [
+          "SECTIONPLANE",
+          "MM_1719"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIO",
+        "largeResource": "RCDATA_32_SECTIO",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANE",
+        "macro": "^C^C_sectionplane",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a section object that acts as a cutting plane through 3D objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915",
+      "kind": "layout_group",
+      "name": "RBN_01737915",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918",
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737915"
+      },
+      "placement": {
+        "region": "main",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737915",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916",
+      "kind": "layout_row",
+      "name": "RBN_01737916",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916.rbn-01737940"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737916"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737916",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916.rbn-01737940": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916.rbn-01737940",
+      "kind": "command_button",
+      "name": "Live Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737916",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737940"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737940",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Live Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Livesection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Live Section",
+        "official": "Live Section",
+        "aliases": [
+          "LIVESECTION",
+          "ID_Livesection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LIVESECTION",
+        "largeResource": "RCDATA_32_LIVESECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LIVESECTION",
+        "macro": "^C^C_livesection",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles the live section state on or off for the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LIVESECTION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918",
+      "kind": "layout_row",
+      "name": "RBN_01737918",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918.rbn-01737920"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737918"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737918",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918.rbn-01737920": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918.rbn-01737920",
+      "kind": "command_button",
+      "name": "Add Jog",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737918",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737920"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737920",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add Jog",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "JS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Jogsection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add Jog",
+        "official": "Modeling, Section Plane Jog",
+        "aliases": [
+          "SECTIONPLANEJOG",
+          "ID_Jogsection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_JOGSECTION",
+        "largeResource": "RCDATA_32_JOGSECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANEJOG",
+        "macro": "^C^C_sectionplanejog",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a jog to the section object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANEJOG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919",
+      "kind": "layout_row",
+      "name": "RBN_01737919",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919.rbn-01737921"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737919"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737919",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919.rbn-01737921": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919.rbn-01737921",
+      "kind": "command_button",
+      "name": "Generate Section",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737909.rbn-01737915.rbn-01737919",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737921"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737921",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Generate Section",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SECTIONPLANETOBLOCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Generate Section",
+        "official": "Generate Section Block",
+        "aliases": [
+          "SECTIONPLANETOBLOCK",
+          "ID_SECTIONPLANETOBLOCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SECTIONPLANETOBLOCK",
+        "largeResource": "RCDATA_32_SECTIONPLANETOBLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SECTIONPLANETOBLOCK",
+        "macro": "^C^C_SECTIONPLANETOBLOCK",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the Generate Section/Elevation dialog box",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SECTIONPLANETOBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737910": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737910",
+      "kind": "panel_break",
+      "name": "RBN_01737910",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737910"
+      },
+      "placement": {
+        "region": "main",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737910",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912",
+      "kind": "layout_row",
+      "name": "RBN_01737912",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912.rbn-01737911"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737912"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737912",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912.rbn-01737911": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912.rbn-01737911",
+      "kind": "command_button",
+      "name": "Flatshot",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737912",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737911"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737911",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Flatshot",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "FT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Flatshot",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Flatshot",
+        "official": "Flatshot",
+        "aliases": [
+          "FLATSHOT",
+          "ID_Flatshot"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FLATSHOT",
+        "largeResource": "RCDATA_32_FLATSHOT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FLATSHOT",
+        "macro": "^C^C_flatshot",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D representation of all 3D objects based on the current view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FLATSHOT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914",
+      "kind": "layout_row",
+      "name": "RBN_01737914",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914.rbn-01737913"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737914"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737914",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914.rbn-01737913": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914.rbn-01737913",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906.rbn-01737914",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737913"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737913",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Edges",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Edges",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

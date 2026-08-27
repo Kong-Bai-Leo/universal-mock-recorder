@@ -1,0 +1,2094 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabview3d-panel-palettes",
+  "generatedAt": "2026-08-25T21:52:24.9631008Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabView3D",
+    "tabName": "View",
+    "panelUid": "RBN_200_97B23",
+    "panelName": "Palettes",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "kind": "tab",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabView3D"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabView3D",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_TabView3D",
+        "officialName": "View 3D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+      "kind": "panel",
+      "name": "Palettes",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-69682",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_97B23"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_97B23",
+        "text": "Palettes",
+        "keyTip": null,
+        "alias": "ID_PALETTES3D",
+        "officialName": "View 3D - Palettes",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "kind": "layout_row",
+      "name": "RBN_200_DDE17",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-c2bc9",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-b7f36",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2be9",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2cea",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f21",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f22",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d65c6",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-7c696",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_DDE17"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_DDE17",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-c2bc9": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-c2bc9",
+      "kind": "toggle_button",
+      "name": "Tool\rPalettes",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C2BC9"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_C2BC9",
+        "controlId": "AcToolPaletteCommandToggleButton",
+        "text": "Tool\rPalettes",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tool\rPalettes",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Tool\rPalettes.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-b7f36": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-b7f36",
+      "kind": "toggle_button",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_B7F36"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_B7F36",
+        "controlId": "AcPropertiesCommandToggleButton",
+        "text": "Properties",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Properties",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Properties.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2be9": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2be9",
+      "kind": "toggle_button",
+      "name": "Blocks",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2BE9"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2BE9",
+        "controlId": "AcBlocksPaletteCommandToggleButton",
+        "text": "Blocks",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Blocks",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Blocks.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2cea": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2cea",
+      "kind": "toggle_button",
+      "name": "Traces",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2CEA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2CEA",
+        "controlId": "AcTracePaletteCommandToggleButton",
+        "text": "Traces",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Traces",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Traces.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f21": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f21",
+      "kind": "toggle_button",
+      "name": "Count",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2F21"
+      },
+      "placement": {
+        "region": "main",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2F21",
+        "controlId": "AcCountPaletteCommandToggleButton",
+        "text": "Count",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Count",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Count.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f22": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d2f22",
+      "kind": "toggle_button",
+      "name": "Command\rMacros",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2F22"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2F22",
+        "controlId": "AcMacrosPaletteCommandToggleButton",
+        "text": "Command\rMacros",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Command\rMacros",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Command\rMacros.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d65c6": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-d65c6",
+      "kind": "toggle_button",
+      "name": "Sheet Set\rManager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D65C6"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D65C6",
+        "controlId": "AcSheetSetManagerCommandToggleButton",
+        "text": "Sheet Set\rManager",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sheet Set\rManager",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Sheet Set\rManager.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16",
+      "kind": "layout_group",
+      "name": "RBN_200_88E16",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_88E16"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_88E16",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155",
+      "kind": "layout_row",
+      "name": "RBN_200_74155",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-321ca",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-a206f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_74155"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_74155",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-321ca": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-321ca",
+      "kind": "toggle_button",
+      "name": "Command Line",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_321CA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_321CA",
+        "controlId": "AcCommandLineCommandToggleButton",
+        "text": "Command Line",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Command Line",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Command Line.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-a206f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155.rbn-200-a206f",
+      "kind": "toggle_button",
+      "name": "Markup Set\rManager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-74155",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A206F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A206F",
+        "controlId": "AcMarkupSetManagerCommandToggleButton",
+        "text": "Markup Set\rManager",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Markup Set\rManager",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Markup Set\rManager.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f",
+      "kind": "layout_row",
+      "name": "RBN_200_8144F",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-abeaa",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-f6de7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_8144F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_8144F",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-abeaa": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-abeaa",
+      "kind": "toggle_button",
+      "name": "Layer\rProperties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_ABEAA"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_ABEAA",
+        "controlId": "AcLayerCommandToggleButton",
+        "text": "Layer\rProperties",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layer\rProperties",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Layer\rProperties.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-f6de7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f.rbn-200-f6de7",
+      "kind": "toggle_button",
+      "name": "Quick Calculator",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-8144f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F6DE7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F6DE7",
+        "controlId": "AcQuickCalcCommandToggleButton",
+        "text": "Quick Calculator",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "QC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Quick Calculator",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Quick Calculator.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1",
+      "kind": "layout_row",
+      "name": "RBN_200_FCCF1",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-0c8f6",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-d9b4e"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_FCCF1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_FCCF1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-0c8f6": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-0c8f6",
+      "kind": "toggle_button",
+      "name": "Design\rCenter",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_0C8F6"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_0C8F6",
+        "controlId": "AcDesignCenterCommandToggleButton",
+        "text": "Design\rCenter",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Design\rCenter",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Design\rCenter.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-d9b4e": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1.rbn-200-d9b4e",
+      "kind": "toggle_button",
+      "name": "External References",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-88e16.rbn-200-fccf1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D9B4E"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D9B4E",
+        "controlId": "AcExternalReferencesCommandToggleButton",
+        "text": "External References",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "External References",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles External References.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-7c696": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-7c696",
+      "kind": "separator",
+      "name": "RBN_200_7C696",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_7C696"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_7C696",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456",
+      "kind": "layout_group",
+      "name": "RBN_200_99456",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_99456"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_99456",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af",
+      "kind": "layout_row",
+      "name": "RBN_200_566AF",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af.rbn-200-7eee8"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_566AF"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_566AF",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af.rbn-200-7eee8": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af.rbn-200-7eee8",
+      "kind": "toggle_button",
+      "name": "Materials Browser",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-566af",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_7EEE8"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_7EEE8",
+        "controlId": "AcMaterialsBrowserCommandToggleButton",
+        "text": "Materials Browser",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Materials Browser",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Materials Browser.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1",
+      "kind": "layout_row",
+      "name": "RBN_200_B9DB1",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1.rbn-200-d2a7d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_B9DB1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_B9DB1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1.rbn-200-d2a7d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1.rbn-200-d2a7d",
+      "kind": "toggle_button",
+      "name": "Materials Editor",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-b9db1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_D2A7D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_D2A7D",
+        "controlId": "AcMaterialsCommandToggleButton",
+        "text": "Materials Editor",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Materials Editor",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Materials Editor.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1",
+      "kind": "layout_row",
+      "name": "RBN_200_1E3A1",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1.rbn-200-f1bf3"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_1E3A1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_1E3A1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1.rbn-200-f1bf3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1.rbn-200-f1bf3",
+      "kind": "toggle_button",
+      "name": "Visual\rStyles",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-99456.rbn-200-1e3a1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F1BF3"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F1BF3",
+        "controlId": "AcVisualStylesCommandToggleButton",
+        "text": "Visual\rStyles",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visual\rStyles",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Visual\rStyles.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4",
+      "kind": "layout_group",
+      "name": "RBN_200_F6CE4",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d",
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F6CE4"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F6CE4",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7",
+      "kind": "layout_row",
+      "name": "RBN_200_8A1B7",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7.rbn-200-f45c7"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_8A1B7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_8A1B7",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7.rbn-200-f45c7": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7.rbn-200-f45c7",
+      "kind": "toggle_button",
+      "name": "Render\rSettings",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-8a1b7",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F45C7"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F45C7",
+        "controlId": "AcAdvancedRenderSettingsCommandToggleButton",
+        "text": "Render\rSettings",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Render\rSettings",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Render\rSettings.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d",
+      "kind": "layout_row",
+      "name": "RBN_200_BB35D",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d.rbn-200-a2a95"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_BB35D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_BB35D",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d.rbn-200-a2a95": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d.rbn-200-a2a95",
+      "kind": "toggle_button",
+      "name": "Lights in\rModel",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-bb35d",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A2A95"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A2A95",
+        "controlId": "AcLightsCommandToggleButton",
+        "text": "Lights in\rModel",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lights in\rModel",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Lights in\rModel.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3",
+      "kind": "layout_row",
+      "name": "RBN_200_ED2F3",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3.rbn-200-6c237"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_ED2F3"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_ED2F3",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3.rbn-200-6c237": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3.rbn-200-6c237",
+      "kind": "toggle_button",
+      "name": "Sun\rProperties",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-dde17.rbn-200-f6ce4.rbn-200-ed2f3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_6C237"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_6C237",
+        "controlId": "AcSunPropertiesCommandToggleButton",
+        "text": "Sun\rProperties",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sun\rProperties",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Sun\rProperties.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-69682": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-69682",
+      "kind": "panel_break",
+      "name": "RBN_200_69682",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_69682"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_69682",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a",
+      "kind": "layout_row",
+      "name": "RBN_200_E840A",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a.rbn-200-ed13c"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E840A"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E840A",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a.rbn-200-ed13c": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a.rbn-200-ed13c",
+      "kind": "command_button",
+      "name": "Text Window",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview3d.rbn-200-97b23.rbn-200-e840a",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_ED13C"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_ED13C",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Textscr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Text Window",
+        "aliases": [
+          "TEXTSCR",
+          "ID_Textscr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DISPLAY_TEXT_WINDOW",
+        "largeResource": "RCDATA_32_DISPLAY_TEXT_WINDOW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "TEXTSCR",
+        "macro": "^P'_textscr",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the text window",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 TEXTSCR command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

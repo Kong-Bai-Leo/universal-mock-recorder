@@ -1,0 +1,2033 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-home-panel-edit",
+  "generatedAt": "2026-08-25T21:52:16.2059243Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Home",
+    "tabName": "Home",
+    "panelUid": "ID_3dBasics_PanelEdit",
+    "panelName": "Edit",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Home"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Home",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_3dBasics_Home",
+        "officialName": "Home - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "kind": "panel",
+      "name": "Edit",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbnpnl-sm-0053",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_PanelEdit"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_PanelEdit",
+        "text": "Edit",
+        "keyTip": "ED",
+        "alias": null,
+        "officialName": "3D Basics - Edit",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0265",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-presspull-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-union-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-subtract-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-intersect-0003"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0265"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0265",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-presspull-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-presspull-0002",
+      "kind": "command_button",
+      "name": "Presspull",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PRESSPULL_0002"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PRESSPULL_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Presspull",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Presspull",
+        "aliases": [
+          "PRESSPULL",
+          "ID_Presspull"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PRESSPULL",
+        "largeResource": "RCDATA_32_PRESSPULL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PRESSPULL",
+        "macro": "^C^C_presspull",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Presses or pulls bounded areas",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PRESSPULL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-union-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-union-0003",
+      "kind": "command_button",
+      "name": "Union",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_UNION_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_UNION_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Union",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Union",
+        "aliases": [
+          "UNION",
+          "ID_Union"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNION",
+        "largeResource": "RCDATA_32_UNION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "UNION",
+        "macro": "^C^C_union",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by addition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 UNION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-subtract-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-subtract-0003",
+      "kind": "command_button",
+      "name": "Subtract",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SUBTRACT_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SUBTRACT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Subtract",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Subtract",
+        "aliases": [
+          "SUBTRACT",
+          "ID_Subtract"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SUBTRA",
+        "largeResource": "RCDATA_32_SUBTRA",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SUBTRACT",
+        "macro": "^C^C_subtract",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Combines selected 3D solids or 2D regions by subtraction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SUBTRACT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-intersect-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265.id-rbn-cmdbtn-intersect-0003",
+      "kind": "command_button",
+      "name": "Intersect",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0265",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_INTERSECT_0003"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_INTERSECT_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "IN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Intersect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Intersect",
+        "aliases": [
+          "INTERSECT",
+          "ID_Intersect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERSECTION",
+        "largeResource": "RCDATA_32_INTERSECTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERSECT",
+        "macro": "^C^C_intersect",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D solid or 2D region from selected overlapping solids or regions",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERSECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbnpnl-sm-0053": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbnpnl-sm-0053",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_SM_0053",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_SM_0053"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_SM_0053",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0266",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-filletdge-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtnm-chamferedge-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-extractedges-0005",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-slice-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-thicken-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-facetaper-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceextru-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceoffse-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-interfere-0003"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0266"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0266",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-filletdge-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-filletdge-0001",
+      "kind": "command_button",
+      "name": "Fillet Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FILLETDGE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FILLETDGE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ED",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FILLET_EDGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Fillet Edge",
+        "aliases": [
+          "FILLETEDGE",
+          "ID_FILLET_EDGE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_FILLET_EDGE",
+        "largeResource": "RCDATA_32_SM_FILLET_EDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "FILLETEDGE",
+        "macro": "^C^C_FILLETEDGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Rounds and fillets the edges of solid objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 FILLETEDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtnm-chamferedge-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtnm-chamferedge-0001",
+      "kind": "command_button",
+      "name": "Chamfer Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNM_CHAMFEREDGE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNM_CHAMFEREDGE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CHAMFER_EDGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Chamfer Edge",
+        "aliases": [
+          "CHAMFEREDGE",
+          "ID_CHAMFER_EDGE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_CHAMFER_EDGE",
+        "largeResource": "RCDATA_32_SM_CHAMFER_EDGE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CHAMFEREDGE",
+        "macro": "^C^C_CHAMFEREDGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Bevels the edges of solid objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CHAMFEREDGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-extractedges-0005": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-extractedges-0005",
+      "kind": "command_button",
+      "name": "Extract Edges",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_EXTRACTEDGES_0005"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_EXTRACTEDGES_0005",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractEdges",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extract Edges",
+        "aliases": [
+          "XEDGES",
+          "ID_ExtractEdges"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRACT_EDGES",
+        "largeResource": "RCDATA_32_EXTRACT_EDGES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "XEDGES",
+        "macro": "^C^C_xedges",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates wireframe geometry from the edges of a 3D solid, surface, mesh, region, or subobject",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 XEDGES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-slice-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-slice-0003",
+      "kind": "command_button",
+      "name": "Slice",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SLICE_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SLICE_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Slice",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Slice",
+        "aliases": [
+          "SLICE",
+          "ID_Slice"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SLICE",
+        "largeResource": "RCDATA_32_SLICE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SLICE",
+        "macro": "^C^C_slice",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates new 3D solids and surfaces by slicing, or dividing, existing objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SLICE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-thicken-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-thicken-0003",
+      "kind": "command_button",
+      "name": "Thicken",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_THICKEN_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_THICKEN_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Thicken",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Thicken",
+        "aliases": [
+          "THICKEN",
+          "ID_Thicken"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_THICKEN",
+        "largeResource": "RCDATA_32_THICKEN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "THICKEN",
+        "macro": "^C^C_Thicken",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts a surface into a 3D solid with a specified thickness",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 THICKEN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-facetaper-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-facetaper-0002",
+      "kind": "command_button",
+      "name": "Taper faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACETAPER_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACETAPER_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "TF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceTaper",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Taper faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceTaper"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TAPER",
+        "largeResource": "RCDATA_32_TAPER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _taper",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Tapers a face on a 3D solid at a specified angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceextru-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceextru-0003",
+      "kind": "command_button",
+      "name": "Extrude faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEEXTRU_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEEXTRU_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "FE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceExtru",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extrude faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceExtru"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUDE_FACES",
+        "largeResource": "RCDATA_32_EXTRUDE_FACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _extrude",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extrudes selected planar faces of a 3D solid by a specified distance or along a path",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceoffse-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-faceoffse-0002",
+      "kind": "command_button",
+      "name": "Offset faces",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_FACEOFFSE_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_FACEOFFSE_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "FO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_FaceOffse",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Offset faces",
+        "aliases": [
+          "SOLIDEDIT",
+          "ID_FaceOffse"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSETFACES",
+        "largeResource": "RCDATA_32_OFFSETFACES",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SOLIDEDIT",
+        "macro": "^C^C_solidedit _face _offset",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Offsets selected faces of a 3D solid by a specified distance, changing its shape",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SOLIDEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-interfere-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266.id-rbn-cmdbtn-interfere-0003",
+      "kind": "command_button",
+      "name": "Interference Checking",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0266",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_INTERFERE_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_INTERFERE_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "IF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Interfere",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Interference Checking",
+        "aliases": [
+          "INTERFERE",
+          "ID_Interfere"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERF",
+        "largeResource": "RCDATA_32_INTERF",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERFERE",
+        "macro": "^C^C_interfere",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a temporary 3D solid from the interferences between two sets of selected 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERFERE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0267",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-fillet-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-trim-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-untrim-0002",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-extend-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0267"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0267",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-fillet-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-fillet-0002",
+      "kind": "command_button",
+      "name": "Surface Fillet",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_FILLET_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_FILLET_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_FILLET",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Fillet",
+        "aliases": [
+          "SURFFILLET",
+          "ID_SURF_FILLET"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_FILLET",
+        "largeResource": "RCDATA_32_SM_FILLET",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFFILLET",
+        "macro": "^C^C_SURFFILLET",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a new, rounded surface in the space between existing surfaces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFFILLET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-trim-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-trim-0002",
+      "kind": "command_button",
+      "name": "Surface Trim",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_TRIM_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_TRIM_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ST",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_TRIM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Trim",
+        "aliases": [
+          "SURFTRIM",
+          "ID_SURF_TRIM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_TRIM",
+        "largeResource": "RCDATA_32_SM_TRIM",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFTRIM",
+        "macro": "^C^C_SURFTRIM",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Trims portions of a surface where it meets another surface or type of geometry",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFTRIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-untrim-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-untrim-0002",
+      "kind": "command_button",
+      "name": "Surface Untrim",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_UNTRIM_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_UNTRIM_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_UNTRIM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Untrim",
+        "aliases": [
+          "SURFUNTRIM",
+          "ID_SURF_UNTRIM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_UNTRIM",
+        "largeResource": "RCDATA_32_SM_UNTRIM",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFUNTRIM",
+        "macro": "^C^C_SURFUNTRIM",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Replaces surface areas removed by the SURFTRIM command",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFUNTRIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-extend-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267.id-rbn-cmdbtn-surf-extend-0002",
+      "kind": "command_button",
+      "name": "Surface Extend",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0267",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SURF_EXTEND_0002"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SURF_EXTEND_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_EXTEND",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Surface Extend",
+        "aliases": [
+          "SURFEXTEND",
+          "ID_SURF_EXTEND"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_EXTEND",
+        "largeResource": "RCDATA_32_SM_EXTEND",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFEXTEND",
+        "macro": "^C^C_SURFEXTEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Lengthens a surface to meet another object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFEXTEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0268",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-more-0004",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-less-0004",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-refine-0005",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-crease-0003",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-uncrease-0003"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0268"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0268",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-0003",
+      "kind": "command_button",
+      "name": "Smooth Object",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Smooth Object",
+        "aliases": [
+          "MESHSMOOTH",
+          "ID_MESH_SMOOTH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SMOOTHMESH",
+        "largeResource": "RCDATA_32_OM_SMOOTHMESH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSMOOTH",
+        "macro": "^C^C_MESHSMOOTH",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Converts 3D object to mesh object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSMOOTH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-more-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-more-0004",
+      "kind": "command_button",
+      "name": "Smooth More",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_MORE_0004"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_MORE_0004",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_MORE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Smooth More",
+        "aliases": [
+          "MESHSMOOTHMORE",
+          "ID_MESH_SMOOTH_MORE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SMOOTHMORE",
+        "largeResource": "RCDATA_32_OM_SMOOTHMORE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSMOOTHMORE",
+        "macro": "'_MESHSMOOTHMORE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Increases the level smoothness for mesh objects by one level",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSMOOTHMORE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-less-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-less-0004",
+      "kind": "command_button",
+      "name": "Smooth Less",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_LESS_0004"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_LESS_0004",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "ML",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_LESS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Smooth Less",
+        "aliases": [
+          "MESHSMOOTHLESS",
+          "ID_MESH_SMOOTH_LESS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SMOOTHLESS",
+        "largeResource": "RCDATA_32_OM_SMOOTHLESS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSMOOTHLESS",
+        "macro": "'_MESHSMOOTHLESS",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Decreases the level of smoothness for  mesh objects by one level",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSMOOTHLESS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-refine-0005": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-refine-0005",
+      "kind": "command_button",
+      "name": "Mesh Refine",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_REFINE_0005"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_REFINE_0005",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "MR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_REFINE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Mesh Refine",
+        "aliases": [
+          "MESHREFINE",
+          "ID_MESH_SMOOTH_REFINE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_REFINEMESH",
+        "largeResource": "RCDATA_32_OM_REFINEMESH",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHREFINE",
+        "macro": "'_MESHREFINE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Multiplies the number of faces in selected mesh objects or mesh faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHREFINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-crease-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-crease-0003",
+      "kind": "command_button",
+      "name": "Add Crease",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_CREASE_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_CREASE_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_CREASE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Add Crease",
+        "aliases": [
+          "MESHCREASE",
+          "ID_MESH_SMOOTH_CREASE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_CREASE",
+        "largeResource": "RCDATA_32_OM_CREASE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHCREASE",
+        "macro": "^C^C_MESHCREASE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Sharpens selected mesh faces, edges, or vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHCREASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-uncrease-0003": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268.id-rbn-cmdbtn-mesh-smooth-uncrease-0003",
+      "kind": "command_button",
+      "name": "Remove Crease",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-paneledit.id-rbn-row-sm-0268",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_UNCREASE_0003"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_MESH_SMOOTH_UNCREASE_0003",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_UNCREASE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Remove Crease",
+        "aliases": [
+          "MESHUNCREASE",
+          "ID_MESH_SMOOTH_UNCREASE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_UNCREASE",
+        "largeResource": "RCDATA_32_OM_UNCREASE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHUNCREASE",
+        "macro": "^C^C_MESHUNCREASE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes the crease from selected mesh faces, edges, or vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHUNCREASE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

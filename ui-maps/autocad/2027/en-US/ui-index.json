@@ -1,0 +1,373 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows",
+    "workspaces": [
+      "Drafting & Annotation",
+      "3D Basics",
+      "3D Modeling"
+    ]
+  },
+  "scope": {
+    "defaultForAgent": "core_stock_only",
+    "included": "Visible Ribbon tabs in the three stock AutoCAD workspaces",
+    "excluded": [
+      "Add-ins",
+      "Express Tools",
+      "Featured Apps",
+      "industry toolsets",
+      "third-party plug-ins"
+    ]
+  },
+  "related": {
+    "commandCatalog": "commands/command-catalog.json",
+    "applicationShell": "shell/ui-map.json",
+    "workspaceIndex": "workspaces/index.json",
+    "allRibbonTabs": "ribbon/all-tabs-index.json",
+    "contextualTabs": "contextual-tabs/index.json",
+    "menuCatalog": "menus/menu-catalog.json"
+  },
+  "hierarchy": [
+    "application",
+    "window",
+    "ribbon",
+    "tab",
+    "panel",
+    "layout",
+    "control",
+    "split part",
+    "popup menu",
+    "menu item"
+  ],
+  "lookupPolicy": "Choose the active tab map, then resolve a control by stable ID, name, panel ancestry, region, sibling order, icon resource, and current screenshot. Do not reuse stored pixel coordinates across windows.",
+  "totals": {
+    "tabs": 18,
+    "nodes": 2686.0,
+    "panels": 119.0,
+    "panelMaps": 119.0,
+    "actionableControls": 1400.0,
+    "splitButtons": 95.0,
+    "iconOnlyControls": 666.0,
+    "liveEvidenceControlsMatched": 257.0
+  },
+  "tabs": [
+    {
+      "tab": "Home",
+      "uid": "ID_TabHome",
+      "workspaces": [
+        "Drafting & Annotation"
+      ],
+      "map": "home/ui-map.json",
+      "panelsIndex": "home/panels/index.json",
+      "evidence": "home/live-observation.json",
+      "nodes": 414,
+      "panels": 10,
+      "panelMaps": 10,
+      "actionableControls": 224,
+      "splitButtons": 20,
+      "iconOnlyControls": 139,
+      "liveEvidenceControlsMatched": 80
+    },
+    {
+      "tab": "Home",
+      "uid": "ID_TabHome3D",
+      "workspaces": [
+        "3D Modeling"
+      ],
+      "map": "home-3d-modeling/ui-map.json",
+      "panelsIndex": "home-3d-modeling/panels/index.json",
+      "evidence": null,
+      "nodes": 383,
+      "panels": 12,
+      "panelMaps": 12,
+      "actionableControls": 216,
+      "splitButtons": 16,
+      "iconOnlyControls": 151,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Home",
+      "uid": "ID_3dBasics_Home",
+      "workspaces": [
+        "3D Basics"
+      ],
+      "map": "home-3d-basics/ui-map.json",
+      "panelsIndex": "home-3d-basics/panels/index.json",
+      "evidence": null,
+      "nodes": 232,
+      "panels": 9,
+      "panelMaps": 9,
+      "actionableControls": 151,
+      "splitButtons": 10,
+      "iconOnlyControls": 97,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Insert",
+      "uid": "ID_TabInsert",
+      "workspaces": [
+        "Drafting & Annotation",
+        "3D Modeling"
+      ],
+      "map": "insert/ui-map.json",
+      "panelsIndex": "insert/panels/index.json",
+      "evidence": "insert/live-observation.json",
+      "nodes": 111,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 50,
+      "splitButtons": 5,
+      "iconOnlyControls": 4,
+      "liveEvidenceControlsMatched": 28
+    },
+    {
+      "tab": "Insert",
+      "uid": "ID_3dBasics_Insert",
+      "workspaces": [
+        "3D Basics"
+      ],
+      "map": "insert-3d-basics/ui-map.json",
+      "panelsIndex": "insert-3d-basics/panels/index.json",
+      "evidence": null,
+      "nodes": 73,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 33,
+      "splitButtons": 4,
+      "iconOnlyControls": 3,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Annotate",
+      "uid": "ID_TabAnnotate",
+      "workspaces": [
+        "Drafting & Annotation",
+        "3D Modeling"
+      ],
+      "map": "annotate/ui-map.json",
+      "panelsIndex": "annotate/panels/index.json",
+      "evidence": "annotate/live-observation.json",
+      "nodes": 152,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 81,
+      "splitButtons": 5,
+      "iconOnlyControls": 36,
+      "liveEvidenceControlsMatched": 40
+    },
+    {
+      "tab": "Parametric",
+      "uid": "ID_TabParametric",
+      "workspaces": [
+        "Drafting & Annotation",
+        "3D Modeling"
+      ],
+      "map": "parametric/ui-map.json",
+      "panelsIndex": "parametric/panels/index.json",
+      "evidence": "parametric/live-observation.json",
+      "nodes": 69,
+      "panels": 3,
+      "panelMaps": 3,
+      "actionableControls": 35,
+      "splitButtons": 1,
+      "iconOnlyControls": 19,
+      "liveEvidenceControlsMatched": 27
+    },
+    {
+      "tab": "View",
+      "uid": "ID_TabView",
+      "workspaces": [
+        "Drafting & Annotation"
+      ],
+      "map": "view/ui-map.json",
+      "panelsIndex": "view/panels/index.json",
+      "evidence": "view/live-observation.json",
+      "nodes": 195,
+      "panels": 10,
+      "panelMaps": 10,
+      "actionableControls": 103,
+      "splitButtons": 5,
+      "iconOnlyControls": 51,
+      "liveEvidenceControlsMatched": 36
+    },
+    {
+      "tab": "View",
+      "uid": "ID_TabView3D",
+      "workspaces": [
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "map": "view-3d/ui-map.json",
+      "panelsIndex": "view-3d/panels/index.json",
+      "evidence": null,
+      "nodes": 124,
+      "panels": 7,
+      "panelMaps": 7,
+      "actionableControls": 64,
+      "splitButtons": 3,
+      "iconOnlyControls": 31,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Manage",
+      "uid": "ID_TabManage",
+      "workspaces": [
+        "Drafting & Annotation",
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "map": "manage/ui-map.json",
+      "panelsIndex": "manage/panels/index.json",
+      "evidence": "manage/live-observation.json",
+      "nodes": 87,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 35,
+      "splitButtons": 2,
+      "iconOnlyControls": 0,
+      "liveEvidenceControlsMatched": 26
+    },
+    {
+      "tab": "Output",
+      "uid": "ID_TabOutput",
+      "workspaces": [
+        "Drafting & Annotation"
+      ],
+      "map": "output/ui-map.json",
+      "panelsIndex": "output/panels/index.json",
+      "evidence": "output/live-observation.json",
+      "nodes": 38,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 15,
+      "splitButtons": 0,
+      "iconOnlyControls": 3,
+      "liveEvidenceControlsMatched": 14
+    },
+    {
+      "tab": "Output",
+      "uid": "ID_TabOutput3D",
+      "workspaces": [
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "map": "output-3d/ui-map.json",
+      "panelsIndex": "output-3d/panels/index.json",
+      "evidence": null,
+      "nodes": 42,
+      "panels": 2,
+      "panelMaps": 2,
+      "actionableControls": 16,
+      "splitButtons": 0,
+      "iconOnlyControls": 3,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Collaborate",
+      "uid": "ID_TabCollaborate",
+      "workspaces": [
+        "Drafting & Annotation",
+        "3D Basics",
+        "3D Modeling"
+      ],
+      "map": "collaborate/ui-map.json",
+      "panelsIndex": "collaborate/panels/index.json",
+      "evidence": "collaborate/live-observation.json",
+      "nodes": 24,
+      "panels": 4,
+      "panelMaps": 4,
+      "actionableControls": 8,
+      "splitButtons": 0,
+      "iconOnlyControls": 1,
+      "liveEvidenceControlsMatched": 6
+    },
+    {
+      "tab": "Solid",
+      "uid": "ID_SolidModeling",
+      "workspaces": [
+        "3D Modeling"
+      ],
+      "map": "solid/ui-map.json",
+      "panelsIndex": "solid/panels/index.json",
+      "evidence": null,
+      "nodes": 108,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 52,
+      "splitButtons": 5,
+      "iconOnlyControls": 4,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Surface",
+      "uid": "ID_SurfaceTab",
+      "workspaces": [
+        "3D Modeling"
+      ],
+      "map": "surface/ui-map.json",
+      "panelsIndex": "surface/panels/index.json",
+      "evidence": null,
+      "nodes": 165,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 80,
+      "splitButtons": 5,
+      "iconOnlyControls": 34,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Mesh",
+      "uid": "ID_TabMeshModeling",
+      "workspaces": [
+        "3D Modeling"
+      ],
+      "map": "mesh/ui-map.json",
+      "panelsIndex": "mesh/panels/index.json",
+      "evidence": null,
+      "nodes": 87,
+      "panels": 6,
+      "panelMaps": 6,
+      "actionableControls": 40,
+      "splitButtons": 1,
+      "iconOnlyControls": 11,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Visualize",
+      "uid": "ID_TabRender",
+      "workspaces": [
+        "3D Modeling"
+      ],
+      "map": "visualize-3d-modeling/ui-map.json",
+      "panelsIndex": "visualize-3d-modeling/panels/index.json",
+      "evidence": null,
+      "nodes": 204,
+      "panels": 10,
+      "panelMaps": 10,
+      "actionableControls": 105,
+      "splitButtons": 7,
+      "iconOnlyControls": 43,
+      "liveEvidenceControlsMatched": 0
+    },
+    {
+      "tab": "Visualize",
+      "uid": "ID_3dBasics_Render",
+      "workspaces": [
+        "3D Basics"
+      ],
+      "map": "visualize-3d-basics/ui-map.json",
+      "panelsIndex": "visualize-3d-basics/panels/index.json",
+      "evidence": null,
+      "nodes": 178,
+      "panels": 8,
+      "panelMaps": 8,
+      "actionableControls": 92,
+      "splitButtons": 6,
+      "iconOnlyControls": 36,
+      "liveEvidenceControlsMatched": 0
+    }
+  ]
+}

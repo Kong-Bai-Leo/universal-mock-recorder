@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabparametric-panel-manage",
+  "generatedAt": "2026-08-25T21:52:22.1975036Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabParametric",
+    "tabName": "Parametric",
+    "panelUid": "ID_PanelParametricManage",
+    "panelName": "Manage",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "kind": "tab",
+      "name": "Parametric",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabParametric"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabParametric",
+        "text": "Parametric",
+        "keyTip": "PA",
+        "alias": "ID_TabParametric",
+        "officialName": "Parametric"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+      "kind": "panel",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-0071"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelParametricManage"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelParametricManage",
+        "text": "Manage",
+        "keyTip": null,
+        "alias": "ID_Manage",
+        "officialName": "Parametric - Manage",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0270",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-cmdbtnmm-del-constraint",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-togglebtn-parametermanager"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0270"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0270",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-cmdbtnmm-del-constraint": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-cmdbtnmm-del-constraint",
+      "kind": "command_button",
+      "name": "Delete\rConstraints",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_DEL_CONSTRAINT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_DEL_CONSTRAINT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Delete\rConstraints",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Del_Constraint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete\rConstraints",
+        "official": "Delete Constraints",
+        "aliases": [
+          "DELCONSTRAINT",
+          "MM_Del_Constraint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DELETECONSTRAINT_16",
+        "largeResource": "RCDATA_32_DELETECONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DELCONSTRAINT",
+        "macro": "^C^C_DelConstraint",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes all constraints from the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DELCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-togglebtn-parametermanager": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270.id-rbn-togglebtn-parametermanager",
+      "kind": "toggle_button",
+      "name": "Parameters\rManager",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-row-0270",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_PARAMETERMANAGER"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_PARAMETERMANAGER",
+        "controlId": "AcParametersManagerCommandToggleButton",
+        "text": "Parameters\rManager",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Parameters\rManager",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Parameters\rManager.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-0071": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage.id-rbn-0071",
+      "kind": "panel_break",
+      "name": "ID_RBN_0071",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricmanage",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0071"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0071",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:24:00Z",
+    "observedControlCount": 27,
+    "evidence": "../../live-observation.json"
+  }
+}

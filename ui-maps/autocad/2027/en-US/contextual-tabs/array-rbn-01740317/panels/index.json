@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_01740317",
+  "tabName": "Array",
+  "panelCount": 7,
+  "panels": [
+    {
+      "name": "Type",
+      "uid": "RBN_01740340",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740340",
+      "map": "type/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Columns",
+      "uid": "RBN_01740133",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "map": "columns/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Rows",
+      "uid": "RBN_01740160",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740160",
+      "map": "rows/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 4
+    },
+    {
+      "name": "Levels",
+      "uid": "RBN_01740169",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740169",
+      "map": "levels/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Properties",
+      "uid": "RBN_01740178",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+      "map": "properties/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    },
+    {
+      "name": "Options",
+      "uid": "RBN_01740296",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740296",
+      "map": "options/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "Close",
+      "uid": "ID_CloseArrayEditorPanel",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-01740317.id-closearrayeditorpanel",
+      "map": "close/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

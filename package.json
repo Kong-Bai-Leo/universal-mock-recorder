@@ -8,6 +8,8 @@
     "analyze": "node src/analyzer/cli.mjs",
     "build:recorder": "powershell -ExecutionPolicy Bypass -File scripts/build-recorder.ps1",
     "build:validator": "powershell -ExecutionPolicy Bypass -File scripts/build-validator.ps1",
-    "test:validator": "powershell -ExecutionPolicy Bypass -File scripts/test-validator.ps1"
+    "test:validator": "powershell -ExecutionPolicy Bypass -File scripts/test-validator.ps1",
+    "map:autocad": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/build-autocad-knowledge-base.ps1",
+    "test:autocad-map": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/test-autocad-knowledge-base.ps1"
   }
 }

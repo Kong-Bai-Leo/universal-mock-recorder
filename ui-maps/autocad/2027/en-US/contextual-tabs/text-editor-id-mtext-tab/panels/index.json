@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_MText_Tab",
+  "tabName": "Text Editor",
+  "panelCount": 8,
+  "panels": [
+    {
+      "name": "Style",
+      "uid": "ID_PanelIPE_Style",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-style",
+      "map": "style/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Formatting",
+      "uid": "ID_PanelIPE_Font",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-font",
+      "map": "formatting/ui-map.json",
+      "nodes": 35,
+      "actionableControls": 17
+    },
+    {
+      "name": "Paragraph",
+      "uid": "ID_PanelIPE_Paragraph",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-paragraph",
+      "map": "paragraph/ui-map.json",
+      "nodes": 18,
+      "actionableControls": 6
+    },
+    {
+      "name": "Insert",
+      "uid": "ID_PanelIPE_Insert",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-insert",
+      "map": "insert/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "Spell Check",
+      "uid": "RBN_00015684",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+      "map": "spell-check/ui-map.json",
+      "nodes": 10,
+      "actionableControls": 3
+    },
+    {
+      "name": "Tools",
+      "uid": "RBN_00015815",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015815",
+      "map": "tools/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Options",
+      "uid": "ID_PanelIPE_Options",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-options",
+      "map": "options/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Close",
+      "uid": "ID_PanelIPE_Close",
+      "nodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.id-panelipe-close",
+      "map": "close/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}

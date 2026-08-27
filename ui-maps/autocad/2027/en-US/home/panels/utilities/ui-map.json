@@ -1,0 +1,1418 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-utilities",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "ID_PanelStandard_Clipboard",
+    "panelName": "Utilities",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "kind": "panel",
+      "name": "Utilities",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-0021",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelStandard_Clipboard"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 348
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelStandard_Clipboard",
+        "text": "Utilities",
+        "keyTip": "HU",
+        "alias": "ID_Standard_Clipboard",
+        "officialName": "Home - Utilities",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0062",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0062"
+      },
+      "placement": {
+        "region": "main",
+        "order": 349
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0062",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "kind": "split_button",
+      "name": "Measure",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MEASURE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 350
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_MEASURE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Measure",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DT",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Measure variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.primary-action",
+      "kind": "primary_button",
+      "name": "Measure primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MEASURE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 351
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Measure variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Measure menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MEASURE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 352
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Measure menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Measure popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Measure menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-dist",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-radius",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-angle",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-area",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-volume"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_MEASURE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 353
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Measure variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.rbn-cmdbtn-quickmeasure",
+      "kind": "command_button",
+      "name": "Quick",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_CMDBTN_QUICKMEASURE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 354
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "RBN_CMDBTN_QUICKMEASURE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Quick",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_QuickMeasure",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Quick",
+        "official": "Quick Measure",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_QuickMeasure"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QUICKMEASURE",
+        "largeResource": "RCDATA_32_QUICKMEASURE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _quick",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays measurements of the geometry near the cursor in a 2D plan view",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-dist": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-dist",
+      "kind": "command_button",
+      "name": "Distance",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_DIST"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 355
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_DIST",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Distance",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Dist",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Distance",
+        "official": "Measure Distance",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_Dist"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIST",
+        "largeResource": "RCDATA_32_DIST",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _distance",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Measures the distance between two points or along a polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-radius": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-radius",
+      "kind": "command_button",
+      "name": "Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_RADIUS"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 356
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_RADIUS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Radius",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Radius",
+        "official": "Measure Radius",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_Radius"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MEASUR_RADIUS",
+        "largeResource": "RCDATA_32_MEASUR_RADIUS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _radius",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Measures the radius of a circle or arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-angle": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-angle",
+      "kind": "command_button",
+      "name": "Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ANGLE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 357
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ANGLE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Angle",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Angle",
+        "official": "Measure Angle",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_Angle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MEASUR_ANGLE",
+        "largeResource": "RCDATA_32_MEASUR_ANGLE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _angle",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Measures the angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-area": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-area",
+      "kind": "command_button",
+      "name": "Area",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_AREA"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 358
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_AREA",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Area",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Area",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Area",
+        "official": "Measure Area",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_Area"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_AREA",
+        "largeResource": "RCDATA_32_AREA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _area",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Measures the area",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-volume": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu.id-rbn-cmdbtn-volume",
+      "kind": "command_button",
+      "name": "Volume",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_VOLUME"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 359
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-splitbtn-measure",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_VOLUME",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Volume",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Volume",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Volume",
+        "official": "Measure Volume",
+        "aliases": [
+          "MEASUREGEOM",
+          "ID_Volume"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MEASUR_VOLUME",
+        "largeResource": "RCDATA_32_MEASUR_VOLUME",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASUREGEOM",
+        "macro": "^C^C_MEASUREGEOM _volume",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Measures the volume",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASUREGEOM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0009",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064",
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0009"
+      },
+      "placement": {
+        "region": "main",
+        "order": 360
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0009",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0063",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063.id-rbn-cmdbtn-qselect"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0063"
+      },
+      "placement": {
+        "region": "main",
+        "order": 361
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0063",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063.id-rbn-cmdbtn-qselect": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063.id-rbn-cmdbtn-qselect",
+      "kind": "command_button",
+      "name": "Quick Select",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0063",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_QSELECT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 362
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_QSELECT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Quick Select",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "QS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Qselect",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Quick Select",
+        "official": "Quick Select...",
+        "aliases": [
+          "QSELECT",
+          "ID_Qselect"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_QUICK_SELECT",
+        "largeResource": "RCDATA_32_QUICK_SELECT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "QSELECT",
+        "macro": "^C^C_qselect",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a selection set based on filtering criteria",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 QSELECT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0064",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064.id-rbn-cmdbtn-selall"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0064"
+      },
+      "placement": {
+        "region": "main",
+        "order": 363
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0064",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064.id-rbn-cmdbtn-selall": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064.id-rbn-cmdbtn-selall",
+      "kind": "command_button",
+      "name": "Select All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0064",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SELALL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 364
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SELALL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Select All",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SelAll",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Select All",
+        "official": "Select All",
+        "aliases": [
+          "AI_SELALL",
+          "ID_SelAll"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SELECT",
+        "largeResource": "RCDATA_32_SELECT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AI_SELALL",
+        "macro": "^C^C_ai_selall",
+        "macroType": "Edit",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Selects all objects in either model space or the current layout, except those objects on frozen or on locked layers",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AI_SELALL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0065",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065.id-rbn-control-quickcalccommandtogglebutton"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0065"
+      },
+      "placement": {
+        "region": "main",
+        "order": 365
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0065",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065.id-rbn-control-quickcalccommandtogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065.id-rbn-control-quickcalccommandtogglebutton",
+      "kind": "toggle_button",
+      "name": "Ribbon Toggle Button - Quick Calculator",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-row-0062.id-rbn-rowpanel-0009.id-rbn-row-0065",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_QUICKCALCCOMMANDTOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 366
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_QUICKCALCCOMMANDTOGGLEBUTTON",
+        "controlId": "AcQuickCalcCommandToggleButton",
+        "text": "Ribbon Toggle Button - Quick Calculator",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "QC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Ribbon Toggle Button - Quick Calculator",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Ribbon Toggle Button - Quick Calculator.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-0021": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.id-rbn-0021",
+      "kind": "panel_break",
+      "name": "ID_RBN_0021",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0021"
+      },
+      "placement": {
+        "region": "main",
+        "order": 367
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0021",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054",
+      "kind": "layout_row",
+      "name": "RBN_01738054",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054.rbn-01738056"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738054"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 368
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738054",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054.rbn-01738056": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054.rbn-01738056",
+      "kind": "command_button",
+      "name": "ID Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738054",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738056"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 369
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738056",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ID",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Id",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "ID Point",
+        "aliases": [
+          "ID",
+          "ID_Id"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ID_NEW",
+        "largeResource": "RCDATA_32_ID_NEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ID",
+        "macro": "'_id",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays the UCS coordinate values of a specified location",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ID command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055",
+      "kind": "layout_row",
+      "name": "RBN_01738055",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055.rbn-01738057"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738055"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 370
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738055",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055.rbn-01738057": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055.rbn-01738057",
+      "kind": "command_button",
+      "name": "Point Style...",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.id-panelstandard-clipboard.rbn-01738055",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738057"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 371
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738057",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Ddptype",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Point Style...",
+        "aliases": [
+          "PTYPE",
+          "ID_Ddptype"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINT_SYTLE_FORMAT",
+        "largeResource": "RCDATA_32_POINT_SYTLE_FORMAT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PTYPE",
+        "macro": "'_ptype",
+        "macroType": "Format",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Specifies the display style and size of point objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PTYPE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

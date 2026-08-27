@@ -1,0 +1,29 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:22:00Z",
+  "lastExpandedMenuCheckAt": "2026-08-25T19:18:41.9965550Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "Annotate", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 40,
+  "observedControlIds": [
+    "RBN_00014261", "ID_Spell", "ID_TextAlign", "ID_Justifyte", "AcTextStyleCombo", "AcRibbonFindTextControl",
+    "AcTFontSizeCombo", "ID_Dimension", "AcDimensionStyleGallery", "ID_Dimbreak", "ID_Dimspace", "ID_Dimjoglin",
+    "AcDimLayerCombo", "ID_Diminspection", "ID_DimstyleA", "ID_Dimreasso", "RBN_201_5707A", "ID_QDim",
+    "ID_RBN_SPLITBTN_DIMENSION_0002", "ID_Centermark", "ID_Centerline", "ID_Mleader", "AcMultiLeaderStyleGallery",
+    "AcMleaderLayerCombo", "ID_Mleader_Align", "ID_Mleader_Collect", "ID_Mleader_Add", "ID_Mleader_Remove",
+    "ID_Table", "AcTableStyleGallery", "ID_UpdateDataLinksAll", "ID_EAttExt", "ID_WriteDataLinks", "ID_DataLinkMgr",
+    "ID_Wipeout", "ID_RBN_SPLITBTN_REVCLOUD", "ID_RBN_SPLITBTN_SCALE", "ID_ScaleList", "MM_1735", "MM_1736"
+  ],
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabAnnotate", "action": "select_tab", "result": "Annotate tab opened and all seven visible panels were read from the accessibility tree." },
+    { "controlId": "RBN_00014261", "action": "open_dropdown", "result": "Displayed Multiline Text and Single Line." },
+    { "controlId": "RBN_201_5707A", "action": "open_dropdown", "result": "Displayed Linear, Aligned, Angular, Arc Length, Radius, Diameter, Jogged, and Ordinate." },
+    { "controlId": "ID_RBN_SPLITBTN_DIMENSION_0002", "action": "open_dropdown", "result": "Displayed Continue and Baseline." },
+    { "controlId": "ID_RBN_SPLITBTN_REVCLOUD", "action": "open_dropdown", "result": "Displayed Rectangular, Polygonal, and Freehand revision cloud choices." },
+    { "controlId": "ID_RBN_SPLITBTN_SCALE", "action": "open_dropdown", "result": "Displayed Add Current Scale and Delete Current Scale." }
+  ],
+  "notes": [
+    "Text, Dimensions, Centerlines, Leaders, Tables, Markup, and Annotation Scaling panels were observed live.",
+    "Every split control on the Annotate tab was expanded in the live AutoCAD window and closed without invoking a command."
+  ]
+}

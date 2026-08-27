@@ -1,0 +1,187 @@
+{
+  "format": "AutoCADCommandAnalysisGrammar",
+  "version": "0.1",
+  "scope": "core_high_frequency_initial",
+  "rules": {
+    "idlePromptPatterns": ["^Command:\\s*$", "^Type a command"],
+    "cancelKeys": ["ESCAPE"],
+    "commitKeys": ["ENTER", "SPACE"],
+    "optionSyntax": "Prompt options are displayed in square brackets; highlighted/capitalized letters are the keyboard key.",
+    "limitations": [
+      "This grammar supplies candidates, not proof of the visible prompt or current state.",
+      "The screenshot, dynamic input text, keyboard sequence and persistent canvas change remain authoritative.",
+      "Commands absent from this initial grammar must use prompt OCR plus the command catalog and be marked as inferred."
+    ]
+  },
+  "commands": {
+    "ARRAY": {
+      "startStage": "select_objects",
+      "stages": [
+        { "id": "select_objects", "expects": "selection", "promptPatterns": ["Select objects"] },
+        { "id": "array_type", "expects": "option", "promptPatterns": ["Rectangular", "Path", "Polar"] },
+        { "id": "center", "expects": "point", "promptPatterns": ["Specify center point", "Center point"] },
+        { "id": "array_parameters", "expects": "option_or_completion", "promptPatterns": ["Items", "Between", "Fill", "Rows", "Levels"] }
+      ],
+      "options": [
+        { "keys": ["R"], "name": "Rectangular", "parameterName": "array_type", "valueType": "keyword", "validStages": ["array_type"] },
+        { "keys": ["PA"], "name": "Path", "parameterName": "array_type", "valueType": "keyword", "validStages": ["array_type"] },
+        { "keys": ["PO"], "name": "Polar", "parameterName": "array_type", "valueType": "keyword", "validStages": ["array_type"] },
+        { "keys": ["I"], "name": "Items", "parameterName": "item_count", "valueType": "integer", "validStages": ["array_parameters"] },
+        { "keys": ["B"], "name": "Between", "parameterName": "angle_between", "valueType": "number", "validStages": ["array_parameters"] },
+        { "keys": ["F"], "name": "Fill", "parameterName": "fill_angle", "valueType": "number", "validStages": ["array_parameters"] },
+        { "keys": ["R"], "name": "Rows", "parameterName": "row_count", "valueType": "integer", "validStages": ["array_parameters"] },
+        { "keys": ["L"], "name": "Levels", "parameterName": "level_count", "valueType": "integer", "validStages": ["array_parameters"] },
+        { "keys": ["A"], "name": "Associative", "parameterName": "associative", "valueType": "boolean", "validStages": ["array_parameters"] }
+      ],
+      "completionSignals": ["prompt_returns_to_command", "new_command_starts", "escape_cancels", "array_geometry_persists"]
+    },
+    "-ARRAY": {
+      "startStage": "select_objects",
+      "stages": [
+        { "id": "select_objects", "expects": "selection", "promptPatterns": ["Select objects"] },
+        { "id": "array_type", "expects": "option", "promptPatterns": ["Enter the type of array"] },
+        { "id": "center", "expects": "point", "promptPatterns": ["Specify center point"] },
+        { "id": "item_count", "expects": "integer", "promptPatterns": ["Number of items"] },
+        { "id": "fill_angle", "expects": "number", "promptPatterns": ["Angle to fill"] },
+        { "id": "rotate_items", "expects": "boolean", "promptPatterns": ["Rotate arrayed objects"] }
+      ],
+      "options": [
+        { "keys": ["R"], "name": "Rectangular", "parameterName": "array_type", "valueType": "keyword", "validStages": ["array_type"] },
+        { "keys": ["P"], "name": "Polar", "parameterName": "array_type", "valueType": "keyword", "validStages": ["array_type"] },
+        { "keys": ["B"], "name": "Base", "parameterName": "base_point", "valueType": "point", "validStages": ["center"] }
+      ],
+      "completionSignals": ["prompt_returns_to_command", "new_command_starts", "escape_cancels", "array_geometry_persists"]
+    },
+    "LINE": {
+      "startStage": "first_point",
+      "stages": [
+        { "id": "first_point", "expects": "point", "promptPatterns": ["Specify first point"] },
+        { "id": "next_point", "expects": "point_or_option", "promptPatterns": ["Specify next point"] }
+      ],
+      "options": [
+        { "keys": ["C"], "name": "Close", "parameterName": "close", "valueType": "none", "validStages": ["next_point"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["next_point"] }
+      ],
+      "completionSignals": ["enter_after_at_least_two_points", "escape_cancels", "new_command_starts", "prompt_returns_to_command"]
+    },
+    "PLINE": {
+      "startStage": "first_point",
+      "stages": [
+        { "id": "first_point", "expects": "point_or_option", "promptPatterns": ["Specify start point"] },
+        { "id": "next_point", "expects": "point_or_option", "promptPatterns": ["Specify next point"] }
+      ],
+      "options": [
+        { "keys": ["A"], "name": "Arc", "parameterName": "segment_mode", "valueType": "keyword", "validStages": ["next_point"] },
+        { "keys": ["C"], "name": "Close", "parameterName": "close", "valueType": "none", "validStages": ["next_point"] },
+        { "keys": ["H"], "name": "Halfwidth", "parameterName": "halfwidth", "valueType": "number", "validStages": ["first_point", "next_point"] },
+        { "keys": ["L"], "name": "Length", "parameterName": "length", "valueType": "number", "validStages": ["next_point"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["next_point"] },
+        { "keys": ["W"], "name": "Width", "parameterName": "width", "valueType": "number_pair", "validStages": ["first_point", "next_point"] }
+      ],
+      "completionSignals": ["enter_after_at_least_two_points", "close_option", "escape_cancels", "prompt_returns_to_command"]
+    },
+    "CIRCLE": {
+      "startStage": "center_or_method",
+      "stages": [
+        { "id": "center_or_method", "expects": "point_or_option", "promptPatterns": ["Specify center point for circle"] },
+        { "id": "radius", "expects": "number_or_point_or_option", "promptPatterns": ["Specify radius of circle"] }
+      ],
+      "options": [
+        { "keys": ["3P"], "name": "3P", "parameterName": "construction_method", "valueType": "keyword", "validStages": ["center_or_method"] },
+        { "keys": ["2P"], "name": "2P", "parameterName": "construction_method", "valueType": "keyword", "validStages": ["center_or_method"] },
+        { "keys": ["TTR"], "name": "Ttr", "parameterName": "construction_method", "valueType": "keyword", "validStages": ["center_or_method"] },
+        { "keys": ["D"], "name": "Diameter", "parameterName": "diameter", "valueType": "number", "validStages": ["radius"] }
+      ],
+      "completionSignals": ["radius_or_final_point_committed", "escape_cancels", "prompt_returns_to_command"]
+    },
+    "TRIM": {
+      "startStage": "select_objects_to_trim",
+      "stages": [
+        { "id": "select_cutting_edges", "expects": "selection_or_option", "promptPatterns": ["Select cutting edges"] },
+        { "id": "select_objects_to_trim", "expects": "selection_or_option", "promptPatterns": ["Select object to trim", "shift-select to extend"] },
+        { "id": "fence_points", "expects": "point_sequence", "promptPatterns": ["Specify first fence point", "Specify next fence point"] }
+      ],
+      "options": [
+        { "keys": ["F"], "name": "Fence", "parameterName": "selection_mode", "valueType": "point_sequence", "validStages": ["select_objects_to_trim"] },
+        { "keys": ["C"], "name": "Crossing", "parameterName": "selection_mode", "valueType": "selection", "validStages": ["select_objects_to_trim"] },
+        { "keys": ["P"], "name": "Project", "parameterName": "project_mode", "valueType": "keyword", "validStages": ["select_objects_to_trim"] },
+        { "keys": ["E"], "name": "Edge", "parameterName": "edge_mode", "valueType": "keyword", "validStages": ["select_objects_to_trim"] },
+        { "keys": ["R"], "name": "eRase", "parameterName": "erase", "valueType": "selection", "validStages": ["select_objects_to_trim"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["select_objects_to_trim", "fence_points"] }
+      ],
+      "completionSignals": ["enter_finishes_selection", "escape_cancels", "new_command_starts", "prompt_returns_to_command"]
+    },
+    "OFFSET": {
+      "startStage": "distance_or_option",
+      "stages": [
+        { "id": "distance_or_option", "expects": "number_or_option", "promptPatterns": ["Specify offset distance"] },
+        { "id": "select_source", "expects": "selection_or_option", "promptPatterns": ["Select object to offset"] },
+        { "id": "side_point", "expects": "point_or_option", "promptPatterns": ["Specify point on side to offset"] }
+      ],
+      "options": [
+        { "keys": ["T"], "name": "Through", "parameterName": "through", "valueType": "point", "validStages": ["distance_or_option"] },
+        { "keys": ["E"], "name": "Erase", "parameterName": "erase_source", "valueType": "boolean", "validStages": ["distance_or_option", "select_source"] },
+        { "keys": ["L"], "name": "Layer", "parameterName": "layer_mode", "valueType": "keyword", "validStages": ["distance_or_option", "select_source"] },
+        { "keys": ["M"], "name": "Multiple", "parameterName": "multiple", "valueType": "none", "validStages": ["side_point"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["select_source", "side_point"] }
+      ],
+      "completionSignals": ["escape_cancels", "new_command_starts", "prompt_returns_to_command"]
+    },
+    "FILLET": {
+      "startStage": "first_object_or_option",
+      "stages": [
+        { "id": "first_object_or_option", "expects": "selection_or_option", "promptPatterns": ["Select first object"] },
+        { "id": "second_object", "expects": "selection", "promptPatterns": ["Select second object"] }
+      ],
+      "options": [
+        { "keys": ["P"], "name": "Polyline", "parameterName": "polyline", "valueType": "selection", "validStages": ["first_object_or_option"] },
+        { "keys": ["R"], "name": "Radius", "parameterName": "radius", "valueType": "number", "validStages": ["first_object_or_option"] },
+        { "keys": ["T"], "name": "Trim", "parameterName": "trim_mode", "valueType": "boolean", "validStages": ["first_object_or_option"] },
+        { "keys": ["M"], "name": "Multiple", "parameterName": "multiple", "valueType": "none", "validStages": ["first_object_or_option"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["first_object_or_option"] }
+      ],
+      "completionSignals": ["second_object_committed", "escape_cancels", "prompt_returns_to_command"]
+    },
+    "ROTATE": {
+      "startStage": "select_objects",
+      "stages": [
+        { "id": "select_objects", "expects": "selection", "promptPatterns": ["Select objects"] },
+        { "id": "base_point", "expects": "point", "promptPatterns": ["Specify base point"] },
+        { "id": "angle_or_option", "expects": "number_or_option", "promptPatterns": ["Specify rotation angle"] }
+      ],
+      "options": [
+        { "keys": ["C"], "name": "Copy", "parameterName": "copy", "valueType": "none", "validStages": ["angle_or_option"] },
+        { "keys": ["R"], "name": "Reference", "parameterName": "reference_angle", "valueType": "number_or_points", "validStages": ["angle_or_option"] }
+      ],
+      "completionSignals": ["angle_or_final_point_committed", "escape_cancels", "prompt_returns_to_command"]
+    },
+    "COPY": {
+      "startStage": "select_objects",
+      "stages": [
+        { "id": "select_objects", "expects": "selection", "promptPatterns": ["Select objects"] },
+        { "id": "base_point", "expects": "point_or_option", "promptPatterns": ["Specify base point"] },
+        { "id": "second_point", "expects": "point_or_option", "promptPatterns": ["Specify second point"] }
+      ],
+      "options": [
+        { "keys": ["D"], "name": "Displacement", "parameterName": "displacement", "valueType": "point", "validStages": ["base_point"] },
+        { "keys": ["M"], "name": "Mode", "parameterName": "copy_mode", "valueType": "keyword", "validStages": ["base_point"] },
+        { "keys": ["A"], "name": "Array", "parameterName": "array", "valueType": "integer", "validStages": ["second_point"] },
+        { "keys": ["E"], "name": "Exit", "parameterName": "exit", "valueType": "none", "validStages": ["second_point"] },
+        { "keys": ["U"], "name": "Undo", "parameterName": "undo", "valueType": "none", "validStages": ["second_point"] }
+      ],
+      "completionSignals": ["exit_option", "enter_after_copy", "escape_cancels", "prompt_returns_to_command"]
+    },
+    "MOVE": {
+      "startStage": "select_objects",
+      "stages": [
+        { "id": "select_objects", "expects": "selection", "promptPatterns": ["Select objects"] },
+        { "id": "base_point", "expects": "point_or_option", "promptPatterns": ["Specify base point"] },
+        { "id": "second_point", "expects": "point", "promptPatterns": ["Specify second point"] }
+      ],
+      "options": [
+        { "keys": ["D"], "name": "Displacement", "parameterName": "displacement", "valueType": "point", "validStages": ["base_point"] }
+      ],
+      "completionSignals": ["second_point_committed", "escape_cancels", "prompt_returns_to_command"]
+    }
+  }
+}

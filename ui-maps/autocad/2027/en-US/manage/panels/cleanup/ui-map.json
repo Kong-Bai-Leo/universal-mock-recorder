@@ -1,0 +1,875 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-cleanup",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelCleanup",
+    "panelName": "Cleanup",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup",
+      "kind": "panel",
+      "name": "Cleanup",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0005"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelCleanup"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelCleanup",
+        "text": "Cleanup",
+        "keyTip": null,
+        "alias": "ID_Cleanup",
+        "officialName": "Manage - Cleanup",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CLEANUP_0001",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.id-rbn-togglebtn-geomcleanup",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CLEANUP_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CLEANUP_0001",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.id-rbn-togglebtn-geomcleanup": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.id-rbn-togglebtn-geomcleanup",
+      "kind": "toggle_button",
+      "name": "Geometry\rCleanup",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_GEOMCLEANUP"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_GEOMCLEANUP",
+        "controlId": "AcGeometrycleanupPaletteCommandToggleButton",
+        "text": "Geometry\rCleanup",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "GC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Geometry\rCleanup",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Geometry\rCleanup.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "kind": "split_button",
+      "name": "Purge",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SB_PURGE_1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:expand_menu_then_escape"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_SB_PURGE_1",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Purge",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "PU",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_PURGE",
+        "largeImage": "RCDATA_32_PURGE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Purge variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge"
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.primary-action",
+      "kind": "primary_button",
+      "name": "Purge primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SB_PURGE_1.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Purge variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Purge menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SB_PURGE_1.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Purge menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Purge popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Purge menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-pluspurge"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_SB_PURGE_1.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Purge variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-purge",
+      "kind": "command_button",
+      "name": "Purge",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PURGE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PURGE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Purge",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "PU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Purge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Purge",
+        "official": "Purge...",
+        "aliases": [
+          "PURGE",
+          "ID_Purge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PURGE",
+        "largeResource": "RCDATA_32_PURGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PURGE",
+        "macro": "^C^C_+purge 0",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes unused named items, such as block definitions and layers, from the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PURGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-pluspurge": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu.id-rbn-cmdbtn-pluspurge",
+      "kind": "command_button",
+      "name": "Find\rNon-Purgeable Items",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_PLUSPURGE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-sb-purge-1",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_PLUSPURGE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Find\rNon-Purgeable Items",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "FN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PLUSPurge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Find\rNon-Purgeable Items",
+        "official": "Find Non-Purgeable Items",
+        "aliases": "ID_PLUSPurge"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FINDNONPURGEABLE",
+        "largeResource": "RCDATA_32_FINDNONPURGEABLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": "^C^C_+purge 1",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Previews objects that you can't purge and finds those objects in the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002",
+      "kind": "layout_group",
+      "name": "RBN_UIE_CLEANUP_0002",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_CLEANUP_0002"
+      },
+      "placement": {
+        "region": "main",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_CLEANUP_0002",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CLEANUP_0004",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004.id-rbn-cmdbtn-audit"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CLEANUP_0004"
+      },
+      "placement": {
+        "region": "main",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CLEANUP_0004",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004.id-rbn-cmdbtn-audit": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004.id-rbn-cmdbtn-audit",
+      "kind": "command_button",
+      "name": "Audit",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0004",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_AUDIT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_AUDIT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Audit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Audit",
+        "aliases": [
+          "AUDIT",
+          "ID_Audit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FILEAUDIT",
+        "largeResource": "RCDATA_32_FILEAUDIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "AUDIT",
+        "macro": "^C^C_audit",
+        "macroType": "File",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Evaluates the integrity of a drawing and corrects some errors",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 AUDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CLEANUP_0010",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010.id-rbn-cmdbtn-overkill2"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CLEANUP_0010"
+      },
+      "placement": {
+        "region": "main",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CLEANUP_0010",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010.id-rbn-cmdbtn-overkill2": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010.id-rbn-cmdbtn-overkill2",
+      "kind": "command_button",
+      "name": "Overkill",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0001.rbn-uie-cleanup-0002.id-rbn-row-cleanup-0010",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_OVERKILL2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_OVERKILL2",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Overkill",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "OK",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_OVERKILL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Overkill",
+        "official": "Delete Duplicate Objects",
+        "aliases": [
+          "OVERKILL",
+          "ID_OVERKILL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OVERKILL",
+        "largeResource": "RCDATA_32_OVERKILL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OVERKILL",
+        "macro": "^C^C_overkill",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Cleans up overlapping geometry by removing duplicated and/or unneeded objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OVERKILL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0005": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup.id-rbn-row-cleanup-0005",
+      "kind": "panel_break",
+      "name": "ID_RBN_ROW_CLEANUP_0005",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CLEANUP_0005"
+      },
+      "placement": {
+        "region": "main",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CLEANUP_0005",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-dgnunderlay-panel-dgn-layers",
+  "generatedAt": "2026-08-25T21:53:13.9618309Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-DGNUnderlay",
+    "tabName": "DGN Underlay",
+    "panelUid": "RBN_01737927",
+    "panelName": "DGN Layers",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dgnunderlay"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dgnunderlay": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay",
+      "kind": "tab",
+      "name": "DGN Underlay",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-DGNUnderlay"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-DGNUnderlay",
+        "text": "DGN Underlay",
+        "keyTip": "DG",
+        "alias": null,
+        "officialName": "DGN Underlay Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927",
+      "kind": "panel",
+      "name": "DGN Layers",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929",
+        "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737930"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737927"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737927",
+        "text": "DGN Layers",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "DGN Underlay - DGN Layers",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929",
+      "kind": "layout_row",
+      "name": "RBN_01737929",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929.rbn-00016877"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737929"
+      },
+      "placement": {
+        "region": "main",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737929",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929.rbn-00016877": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929.rbn-00016877",
+      "kind": "command_button",
+      "name": "Edit\rLayers",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737929",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00016877"
+      },
+      "placement": {
+        "region": "main",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00016877",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit\rLayers",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ULAYERS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit\rLayers",
+        "official": "Ulayers",
+        "aliases": [
+          "ULAYERS",
+          "ID_ULAYERS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNDERLAYLAYERS",
+        "largeResource": "RCDATA_32_UNDERLAYLAYERS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ULAYERS",
+        "macro": "^C^C_ulayers",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls the display of layers in an underlay",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ULAYERS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737930": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927.rbn-01737930",
+      "kind": "panel_break",
+      "name": "RBN_01737930",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dgnunderlay.rbn-01737927",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737930"
+      },
+      "placement": {
+        "region": "main",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737930",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740317-panel-columns",
+  "generatedAt": "2026-08-25T21:52:44.4705412Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740317",
+    "tabName": "Array",
+    "panelUid": "RBN_01740133",
+    "panelName": "Columns",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317",
+      "kind": "tab",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740317"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740317",
+        "text": "Array",
+        "keyTip": "AR",
+        "alias": null,
+        "officialName": "Rectangular Array Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "kind": "panel",
+      "name": "Columns",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135",
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138",
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139",
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740136"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740133"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740133",
+        "text": "Columns",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Rectangular Array - Columns",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135",
+      "kind": "layout_row",
+      "name": "RBN_01740135",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135.rbn-01740137"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740135"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740135",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135.rbn-01740137": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135.rbn-01740137",
+      "kind": "ribbon_control",
+      "name": "Rect Array Column Count",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740135",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740137"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740137",
+        "controlId": "AcRectArrayColumnCount",
+        "text": "Rect Array Column Count",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Rect Array Column Count.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138",
+      "kind": "layout_row",
+      "name": "RBN_01740138",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138.rbn-01740140"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740138"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740138",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138.rbn-01740140": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138.rbn-01740140",
+      "kind": "ribbon_control",
+      "name": "Rect Array Column Spacing",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740138",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740140"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740140",
+        "controlId": "AcRectArrayColumnSpacing",
+        "text": "Rect Array Column Spacing",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Rect Array Column Spacing.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139",
+      "kind": "layout_row",
+      "name": "RBN_01740139",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139.rbn-01740141"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740139"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740139",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139.rbn-01740141": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139.rbn-01740141",
+      "kind": "ribbon_control",
+      "name": "Rect Array Column Span",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740139",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740141"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740141",
+        "controlId": "AcRectArrayColumnSpan",
+        "text": "Rect Array Column Span",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Rect Array Column Span.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740136": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133.rbn-01740136",
+      "kind": "panel_break",
+      "name": "RBN_01740136",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740133",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740136"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740136",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

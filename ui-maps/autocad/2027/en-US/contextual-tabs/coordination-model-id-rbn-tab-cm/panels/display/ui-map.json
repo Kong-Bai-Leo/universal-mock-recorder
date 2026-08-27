@@ -1,0 +1,701 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-rbn-tab-cm-panel-display",
+  "generatedAt": "2026-08-25T21:52:53.0231031Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_RBN_TAB_CM",
+    "tabName": "Coordination Model",
+    "panelUid": "ID_RBN_PANEL_CM_DISPLAY",
+    "panelName": "Display",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm",
+      "kind": "tab",
+      "name": "Coordination Model",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TAB_CM"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TAB_CM",
+        "text": "Coordination Model",
+        "keyTip": "CM",
+        "alias": null,
+        "officialName": "Coordination Model Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "kind": "panel",
+      "name": "Display",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-pnlbrk-cm-display"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PANEL_CM_DISPLAY"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PANEL_CM_DISPLAY",
+        "text": "Display",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Coordination Model - Display",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CM_DISPLAY_1",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1.id-rbn-slider-cm-colorfading"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CM_DISPLAY_1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CM_DISPLAY_1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1.id-rbn-slider-cm-colorfading": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1.id-rbn-slider-cm-colorfading",
+      "kind": "ribbon_control",
+      "name": "Color Fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SLIDER_CM_COLORFADING"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SLIDER_CM_COLORFADING",
+        "controlId": "AcCoordinationModelColorFadingSlider",
+        "text": "Color Fading",
+        "keyTip": "CF"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Color Fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CM_DISPLAY_2",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2.id-rbn-slider-cm-opacityfading"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CM_DISPLAY_2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CM_DISPLAY_2",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2.id-rbn-slider-cm-opacityfading": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2.id-rbn-slider-cm-opacityfading",
+      "kind": "ribbon_control",
+      "name": "Opacity Fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-2",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SLIDER_CM_OPACITYFADING"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SLIDER_CM_OPACITYFADING",
+        "controlId": "AcCoordinationModelOpacityFadingSlider",
+        "text": "Opacity Fading",
+        "keyTip": "OF"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Opacity Fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_CM_DISPLAY_3",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-perspective",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-sep-cm-display",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dorbit",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dswivel",
+        "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dwalk"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_CM_DISPLAY_3"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_CM_DISPLAY_3",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-perspective": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-perspective",
+      "kind": "toggle_button",
+      "name": "Perspective",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_CM_PERSPECTIVE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_CM_PERSPECTIVE",
+        "controlId": "AcPerspectiveToggleButton",
+        "text": "Perspective",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Perspective",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Perspective.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-sep-cm-display": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-sep-cm-display",
+      "kind": "separator",
+      "name": "ID_RBN_SEP_CM_DISPLAY",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SEP_CM_DISPLAY"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SEP_CM_DISPLAY",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dorbit": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dorbit",
+      "kind": "command_button",
+      "name": "3D Orbit",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_CM_3DORBIT"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_CM_3DORBIT",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Orbit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "OB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3d_orbit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Orbit",
+        "official": "3D Orbit",
+        "aliases": [
+          "3DORBIT",
+          "ID_3d_orbit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DCONSTRAINEDORBIT",
+        "largeResource": "RCDATA_32_3DCONSTRAINEDORBIT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DORBIT",
+        "macro": "'_3dorbit",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls the interactive viewing of objects in 3D",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DORBIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dswivel": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dswivel",
+      "kind": "command_button",
+      "name": "3D Swivel",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_CM_3DSWIVEL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_CM_3DSWIVEL",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Swivel",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SW",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3dswivel",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Swivel",
+        "official": "3D Swivel",
+        "aliases": [
+          "3DSWIVEL",
+          "ID_3dswivel"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DSWIVEL",
+        "largeResource": "RCDATA_32_3DSWIVEL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DSWIVEL",
+        "macro": "'_3dswivel",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Starts the 3DSWIVEL command and simulates the effect of turning the camera",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DSWIVEL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dwalk": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3.id-rbn-btn-cm-3dwalk",
+      "kind": "command_button",
+      "name": "3D Walk",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-row-cm-display-3",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_CM_3DWALK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_CM_3DWALK",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3D Walk",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "WA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3DWalk",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3D Walk",
+        "official": "3D Walk",
+        "aliases": [
+          "3DWALK",
+          "ID_3DWalk"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WALK_3DWALK",
+        "largeResource": "RCDATA_32_WALK_3DWALK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DWALK",
+        "macro": "^C^C_3dwalk",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the 3D view in a drawing interactively to create the appearance of walking through the model",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DWALK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-pnlbrk-cm-display": {
+      "id": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display.id-rbn-pnlbrk-cm-display",
+      "kind": "panel_break",
+      "name": "ID_RBN_PNLBRK_CM_DISPLAY",
+      "parentId": "autocad.window.main.ribbon.tab.id-rbn-tab-cm.id-rbn-panel-cm-display",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PNLBRK_CM_DISPLAY"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PNLBRK_CM_DISPLAY",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

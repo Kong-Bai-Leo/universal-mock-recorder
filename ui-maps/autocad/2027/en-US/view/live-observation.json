@@ -1,0 +1,32 @@
+{
+  "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+  "liveAccessibilityChecked": true,
+  "observedAt": "2026-08-25T07:26:00Z",
+  "viewport": { "widthPx": 3070, "heightPx": 1678, "ribbonTab": "View", "workspace": "Drafting & Annotation" },
+  "observedControlCount": 36,
+  "observedControlIds": [
+    "AcUcsiconToggleButton", "AcViewCubeToggleButton", "AcNavigationBarToggleButton", "AcNamedViewControl",
+    "ID_NEWVIEW", "ID_Ddview", "RBN_190_2B2FA", "ID_Ai_tiledv", "AcRibbonCommandButtonViewportJoin",
+    "MM_190_068EF", "ID_DWG_COMPARE", "AcParkerPaletteCommandToggleButton", "AcToolPaletteCommandToggleButton",
+    "AcPropertiesCommandToggleButton", "AcBlocksPaletteCommandToggleButton", "AcTracePaletteCommandToggleButton",
+    "AcCountPaletteCommandToggleButton", "AcMacrosPaletteCommandToggleButton", "AcGeometrycleanupPaletteCommandToggleButton",
+    "AcSheetSetManagerCommandToggleButton", "AcCommandLineCommandToggleButton", "AcMarkupSetManagerCommandToggleButton",
+    "AcLayerCommandToggleButton", "AcQuickCalcCommandToggleButton", "AcDesignCenterCommandToggleButton",
+    "AcExternalReferencesCommandToggleButton", "AcOpenDrawingsList", "AcFileTabToggleButton", "AcLayoutTabToggleButton",
+    "ID_WINDOW_TILE_HORZ", "ID_WINDOW_TILE_VERT", "ID_WINDOW_CASCADE",
+    "RBN_COORD_0011", "RBN_COORD_0019", "ID_RBN_SPLITBTN_ORBIT_0001", "ID_RBN_SPLITBTN_ZOOM_0001"
+  ],
+  "lastExpandedMenuCheckAt": "2026-08-25T19:28:13.4284242Z",
+  "liveInteractionSamples": [
+    { "controlId": "ID_TabView", "action": "select_tab", "result": "View tab opened and the visible viewport, view, palette, and interface controls were read live." },
+    { "controlId": "RBN_190_2B2FA", "action": "expand_menu_then_escape", "result": "Viewport Configuration opened with Single; Two: Vertical; Two: Horizontal; Three: Right; Three: Left; Three: Above; Three: Below; Three: Vertical; Three: Horizontal; Four: Equal; Four: Right; Four: Left." },
+    { "controlId": "RBN_COORD_0011", "action": "expand_menu_then_escape", "result": "Rotate UCS opened with X, Y, and Z." },
+    { "controlId": "RBN_COORD_0019", "action": "expand_menu_then_escape", "result": "Define UCS opened with View, Object, and Face; the live menu is icon-only and the installed CUIX supplies these labels." },
+    { "controlId": "ID_RBN_SPLITBTN_ORBIT_0001", "action": "expand_menu_then_escape", "result": "Orbit opened with Orbit, Free Orbit, and Continuous Orbit." },
+    { "controlId": "ID_RBN_SPLITBTN_ZOOM_0001", "action": "expand_menu_then_escape", "result": "Zoom opened with Extents, Window, Previous, Realtime, All, Dynamic, Scale, Center, Object, In, and Out." }
+  ],
+  "notes": [
+    "Visual Styles, Coordinates, and Navigate were initially hidden in Drafting & Annotation. They were enabled through View tab context menu > Show Panels and left visible for verification.",
+    "The static map retains additional slideout controls that may be collapsed at a specific viewport width."
+  ]
+}

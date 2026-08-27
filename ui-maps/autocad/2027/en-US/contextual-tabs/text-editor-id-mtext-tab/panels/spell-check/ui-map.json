@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-mtext-tab-panel-spell-check",
+  "generatedAt": "2026-08-25T21:52:57.5942628Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_MText_Tab",
+    "tabName": "Text Editor",
+    "panelUid": "RBN_00015684",
+    "panelName": "Spell Check",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "kind": "tab",
+      "name": "Text Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_MText_Tab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_MText_Tab",
+        "text": "Text Editor",
+        "keyTip": "TE",
+        "alias": null,
+        "officialName": "Text Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+      "kind": "panel",
+      "name": "Spell Check",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0102",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0050"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015684"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015684",
+        "text": "Spell Check",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Multiline Text Editor - Spell Check",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0102": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0102",
+      "kind": "dialog_launcher",
+      "name": "ID_RBN_0102",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0102"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0102",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": "AcIPESpellCheckSettings",
+        "commandType": "RibbonCommand"
+      },
+      "names": {
+        "visible": null,
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": "AcIPESpellCheckSettings",
+        "commandType": "RibbonCommand"
+      },
+      "semantics": {
+        "description": "Opens the dialog associated with ID_RBN_0102.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685",
+      "kind": "layout_row",
+      "name": "RBN_00015685",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-control-spellipetogglebutton",
+        "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-btn-ipespelldictionary"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00015685"
+      },
+      "placement": {
+        "region": "main",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00015685",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-control-spellipetogglebutton": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-control-spellipetogglebutton",
+      "kind": "ribbon_control",
+      "name": "Spell\rCheck",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_SPELLIPETOGGLEBUTTON"
+      },
+      "placement": {
+        "region": "main",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_SPELLIPETOGGLEBUTTON",
+        "controlId": "AcSpellIPEToggleButton",
+        "text": "Spell\rCheck",
+        "keyTip": "CS"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Spell\rCheck.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-btn-ipespelldictionary": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685.id-rbn-btn-ipespelldictionary",
+      "kind": "command_button",
+      "name": "Edit\rDictionaries",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.rbn-00015685",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_BTN_IPESPELLDICTIONARY"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_BTN_IPESPELLDICTIONARY",
+        "controlId": "AcIPESpellDictionaries",
+        "text": "Edit\rDictionaries",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "ED",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit\rDictionaries",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes Edit\rDictionaries.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0050": {
+      "id": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684.id-rbn-0050",
+      "kind": "panel_break",
+      "name": "ID_RBN_0050",
+      "parentId": "autocad.window.main.ribbon.tab.id-mtext-tab.rbn-00015684",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0050"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0050",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

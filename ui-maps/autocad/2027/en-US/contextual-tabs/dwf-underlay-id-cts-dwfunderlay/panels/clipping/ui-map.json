@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-cts-dwfunderlay-panel-clipping",
+  "generatedAt": "2026-08-25T21:53:12.9358420Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_CTS-DWFUnderlay",
+    "tabName": "DWF Underlay",
+    "panelUid": "RBN_00018533",
+    "panelName": "Clipping",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+      "kind": "tab",
+      "name": "DWF Underlay",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_CTS-DWFUnderlay"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_CTS-DWFUnderlay",
+        "text": "DWF Underlay",
+        "keyTip": "DW",
+        "alias": null,
+        "officialName": "DWF Underlay Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+      "kind": "panel",
+      "name": "Clipping",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538",
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.id-rbn-0089"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018533"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018533",
+        "text": "Clipping",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "DWF Underlay - Clipping",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538",
+      "kind": "layout_row",
+      "name": "RBN_00018538",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034779",
+        "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034778"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00018538"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00018538",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034779": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034779",
+      "kind": "command_button",
+      "name": "Create Clipping\rBoundary",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034779"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034779",
+        "controlId": "AcRibbonCommandButtonEnableEqualToOne",
+        "text": "Create Clipping\rBoundary",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "NB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DWFNewClippingBoundary",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Create Clipping\rBoundary",
+        "official": "DWF, New Clipping Boundary",
+        "aliases": [
+          "DWFCLIP",
+          "ID_DWFNewClippingBoundary"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIPSETNEWBOUNDARY",
+        "largeResource": "RCDATA_32_CLIPSETNEWBOUNDARY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DWFCLIP",
+        "macro": "^C^C_dwfclip _N",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Allows you to delete the old clipping boundary and create a new one",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DWFCLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034778": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538.rbn-00034778",
+      "kind": "command_button",
+      "name": "Remove\rClipping",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.rbn-00018538",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034778"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034778",
+        "controlId": "AcRibbonCommandButtonEnableEqualToOne",
+        "text": "Remove\rClipping",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DWFDeleteClipBoundary",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove\rClipping",
+        "official": "DWF, Delete Clipping Boundary",
+        "aliases": [
+          "DWFCLIP",
+          "ID_DWFDeleteClipBoundary"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIPDELETEBOUNDARY",
+        "largeResource": "RCDATA_32_CLIPDELETEBOUNDARY",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DWFCLIP",
+        "macro": "^C^C_dwfclip _d",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Deletes the clipping boundary",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DWFCLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.id-rbn-0089": {
+      "id": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533.id-rbn-0089",
+      "kind": "panel_break",
+      "name": "ID_RBN_0089",
+      "parentId": "autocad.window.main.ribbon.tab.id-cts-dwfunderlay.rbn-00018533",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0089"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0089",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

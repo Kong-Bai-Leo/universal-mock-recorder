@@ -1,0 +1,1406 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows"
+  },
+  "mapType": "application_shell",
+  "rootNodeId": "autocad",
+  "lookupPolicy": "Resolve by surface, stable control ID, name, sibling order, current workspace, and current screenshot. Never reuse saved pixel coordinates.",
+  "related": {
+    "commandCatalog": "../commands/command-catalog.json",
+    "workspaceIndex": "../workspaces/index.json",
+    "ribbonTabIndex": "../ribbon/all-tabs-index.json",
+    "menuCatalog": "../menus/menu-catalog.json"
+  },
+  "summary": {
+    "nodes": 61,
+    "quickAccessControls": 7,
+    "applicationMenuControls": 15,
+    "statusBarControls": 29,
+    "pendingLiveSurfaces": null
+  },
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": null,
+      "children": [
+        "autocad.window"
+      ]
+    },
+    "autocad.window": {
+      "id": "autocad.window",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.application-menu",
+        "autocad.window.quick-access-toolbar",
+        "autocad.window.ribbon",
+        "autocad.window.classic-menu-bar",
+        "autocad.window.drawing-area",
+        "autocad.window.command-line",
+        "autocad.window.status-bar"
+      ]
+    },
+    "autocad.window.application-menu": {
+      "id": "autocad.window.application-menu",
+      "kind": "application_menu",
+      "name": "Application Menu",
+      "parentId": "autocad.window",
+      "children": [
+        "autocad.window.application-menu.search",
+        "autocad.window.application-menu.recent-documents",
+        "autocad.window.application-menu.open-documents",
+        "autocad.window.application-menu.new",
+        "autocad.window.application-menu.open",
+        "autocad.window.application-menu.save",
+        "autocad.window.application-menu.save-as",
+        "autocad.window.application-menu.import",
+        "autocad.window.application-menu.export",
+        "autocad.window.application-menu.publish",
+        "autocad.window.application-menu.print",
+        "autocad.window.application-menu.drawing-utilities",
+        "autocad.window.application-menu.close",
+        "autocad.window.application-menu.options",
+        "autocad.window.application-menu.exit"
+      ],
+      "source": {
+        "type": "runtime_standard_surface",
+        "staticCuixDefinition": false
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.quick-access-toolbar": {
+      "id": "autocad.window.quick-access-toolbar",
+      "kind": "quick_access_toolbar",
+      "name": "Quick Access Toolbar",
+      "parentId": "autocad.window",
+      "children": [
+        "autocad.window.quick-access-toolbar.acqatnew",
+        "autocad.window.quick-access-toolbar.acqatopen",
+        "autocad.window.quick-access-toolbar.acqatsave",
+        "autocad.window.quick-access-toolbar.acqatsaveas",
+        "autocad.window.quick-access-toolbar.acqatplot",
+        "autocad.window.quick-access-toolbar.acqatundo",
+        "autocad.window.quick-access-toolbar.acqatredo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "file": "acad.CUIX",
+        "entry": "QuickAccessToolbarRoot.cui"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatnew": {
+      "id": "autocad.window.quick-access-toolbar.acqatnew",
+      "kind": "command_button",
+      "name": "New",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_New",
+        "controlId": "AcQATNew"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 1
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "QNEW",
+        "scriptCommand": "_.QNEW",
+        "commandCatalogRef": "commands.QNEW"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatopen": {
+      "id": "autocad.window.quick-access-toolbar.acqatopen",
+      "kind": "command_button",
+      "name": "Open",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_Open",
+        "controlId": "AcQATOpen"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 2
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "OPEN",
+        "scriptCommand": "_.OPEN",
+        "commandCatalogRef": "commands.OPEN"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatsave": {
+      "id": "autocad.window.quick-access-toolbar.acqatsave",
+      "kind": "command_button",
+      "name": "Save",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_Save",
+        "controlId": "AcQATSave"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 3
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "QSAVE",
+        "scriptCommand": "_.QSAVE",
+        "commandCatalogRef": "commands.QSAVE"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatsaveas": {
+      "id": "autocad.window.quick-access-toolbar.acqatsaveas",
+      "kind": "command_button",
+      "name": "Save As",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_SaveAs",
+        "controlId": "AcQATSaveAs"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 4
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "SAVEAS",
+        "scriptCommand": "_.SAVEAS",
+        "commandCatalogRef": "commands.SAVEAS"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatplot": {
+      "id": "autocad.window.quick-access-toolbar.acqatplot",
+      "kind": "command_button",
+      "name": "Plot",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_Plot",
+        "controlId": "AcQATPlot"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 5
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "PLOT",
+        "scriptCommand": "_.PLOT",
+        "commandCatalogRef": "commands.PLOT"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatundo": {
+      "id": "autocad.window.quick-access-toolbar.acqatundo",
+      "kind": "command_button",
+      "name": "Undo",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_Undo",
+        "controlId": "AcQATUndo"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 6
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "UNDO",
+        "scriptCommand": "_.UNDO",
+        "commandCatalogRef": "commands.UNDO"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.quick-access-toolbar.acqatredo": {
+      "id": "autocad.window.quick-access-toolbar.acqatredo",
+      "kind": "command_button",
+      "name": "Redo",
+      "parentId": "autocad.window.quick-access-toolbar",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_QAT_Redo",
+        "controlId": "AcQATRedo"
+      },
+      "placement": {
+        "region": "title_bar",
+        "order": 7
+      },
+      "action": {
+        "type": "invoke_command",
+        "command": "REDO",
+        "scriptCommand": "_.REDO",
+        "commandCatalogRef": "commands.REDO"
+      },
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.8
+      }
+    },
+    "autocad.window.ribbon": {
+      "id": "autocad.window.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window",
+      "children": [],
+      "index": "../ribbon/all-tabs-index.json",
+      "verification": {
+        "extracted": true,
+        "liveObserved": true,
+        "evidence": "../home/live-observation.json"
+      }
+    },
+    "autocad.window.classic-menu-bar": {
+      "id": "autocad.window.classic-menu-bar",
+      "kind": "menu_bar",
+      "name": "Classic Menu Bar",
+      "parentId": "autocad.window",
+      "children": [],
+      "defaultVisible": false,
+      "catalog": "../menus/menu-catalog.json",
+      "verification": {
+        "extracted": true,
+        "liveObserved": false,
+        "interactionTested": false
+      }
+    },
+    "autocad.window.drawing-area": {
+      "id": "autocad.window.drawing-area",
+      "kind": "canvas",
+      "name": "Drawing Area",
+      "parentId": "autocad.window",
+      "children": [],
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": true
+      }
+    },
+    "autocad.window.command-line": {
+      "id": "autocad.window.command-line",
+      "kind": "command_line",
+      "name": "Command Line",
+      "parentId": "autocad.window",
+      "children": [],
+      "verification": {
+        "extracted": true,
+        "liveObserved": true,
+        "interactionTested": true
+      }
+    },
+    "autocad.window.status-bar": {
+      "id": "autocad.window.status-bar",
+      "kind": "status_bar",
+      "name": "Status Bar",
+      "parentId": "autocad.window",
+      "children": [
+        "autocad.window.status-bar.coordinates",
+        "autocad.window.status-bar.model-space",
+        "autocad.window.status-bar.grid",
+        "autocad.window.status-bar.snap-mode",
+        "autocad.window.status-bar.infer-constraints",
+        "autocad.window.status-bar.dynamic-input",
+        "autocad.window.status-bar.ortho-mode",
+        "autocad.window.status-bar.polar-tracking",
+        "autocad.window.status-bar.isometric-drafting",
+        "autocad.window.status-bar.object-snap-tracking",
+        "autocad.window.status-bar.2d-object-snap",
+        "autocad.window.status-bar.lineweight",
+        "autocad.window.status-bar.transparency",
+        "autocad.window.status-bar.selection-cycling",
+        "autocad.window.status-bar.3d-object-snap",
+        "autocad.window.status-bar.dynamic-ucs",
+        "autocad.window.status-bar.section-filtering",
+        "autocad.window.status-bar.gizmo",
+        "autocad.window.status-bar.annotation-visibility",
+        "autocad.window.status-bar.autoscale",
+        "autocad.window.status-bar.annotation-scale",
+        "autocad.window.status-bar.workspace-switching",
+        "autocad.window.status-bar.annotation-monitor",
+        "autocad.window.status-bar.units",
+        "autocad.window.status-bar.quick-properties",
+        "autocad.window.status-bar.lock-ui",
+        "autocad.window.status-bar.isolate-objects",
+        "autocad.window.status-bar.graphics-performance",
+        "autocad.window.status-bar.clean-screen",
+        "autocad.window.status-bar.customization-menu"
+      ],
+      "source": {
+        "type": "runtime_dynamic_surface",
+        "staticCuixDefinition": false
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.search": {
+      "id": "autocad.window.application-menu.search",
+      "kind": "search_box",
+      "name": "Search Application Menu",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 1
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "search_application_menu"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.recent-documents": {
+      "id": "autocad.window.application-menu.recent-documents",
+      "kind": "view_selector",
+      "name": "Recent Documents",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 2
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "select_view"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.open-documents": {
+      "id": "autocad.window.application-menu.open-documents",
+      "kind": "view_selector",
+      "name": "Open Documents",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 3
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "select_view"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.new": {
+      "id": "autocad.window.application-menu.new",
+      "kind": "split_menu_item",
+      "name": "New",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 4
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "QNEW",
+        "scriptCommand": "_.QNEW",
+        "commandCatalogRef": "commands.QNEW"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.open": {
+      "id": "autocad.window.application-menu.open",
+      "kind": "split_menu_item",
+      "name": "Open",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "OPEN",
+        "scriptCommand": "_.OPEN",
+        "commandCatalogRef": "commands.OPEN"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.save": {
+      "id": "autocad.window.application-menu.save",
+      "kind": "command_item",
+      "name": "Save",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "invoke_command",
+        "command": "QSAVE",
+        "scriptCommand": "_.QSAVE",
+        "commandCatalogRef": "commands.QSAVE"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.save-as": {
+      "id": "autocad.window.application-menu.save-as",
+      "kind": "split_menu_item",
+      "name": "Save As",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "SAVEAS",
+        "scriptCommand": "_.SAVEAS",
+        "commandCatalogRef": "commands.SAVEAS"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.import": {
+      "id": "autocad.window.application-menu.import",
+      "kind": "split_menu_item",
+      "name": "Import",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "IMPORT",
+        "scriptCommand": "_.IMPORT",
+        "commandCatalogRef": "commands.IMPORT"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.export": {
+      "id": "autocad.window.application-menu.export",
+      "kind": "split_menu_item",
+      "name": "Export",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "EXPORT",
+        "scriptCommand": "_.EXPORT",
+        "commandCatalogRef": "commands.EXPORT"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.publish": {
+      "id": "autocad.window.application-menu.publish",
+      "kind": "split_menu_item",
+      "name": "Publish",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "PUBLISH",
+        "scriptCommand": "_.PUBLISH",
+        "commandCatalogRef": "commands.PUBLISH"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.print": {
+      "id": "autocad.window.application-menu.print",
+      "kind": "split_menu_item",
+      "name": "Print",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "PLOT",
+        "scriptCommand": "_.PLOT",
+        "commandCatalogRef": "commands.PLOT"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.drawing-utilities": {
+      "id": "autocad.window.application-menu.drawing-utilities",
+      "kind": "menu_item",
+      "name": "Drawing Utilities",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "open_submenu"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.close": {
+      "id": "autocad.window.application-menu.close",
+      "kind": "split_menu_item",
+      "name": "Close",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "hasSubmenu": true,
+      "action": {
+        "type": "invoke_primary_or_open_submenu",
+        "command": "CLOSE",
+        "scriptCommand": "_.CLOSE",
+        "commandCatalogRef": "commands.CLOSE"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.options": {
+      "id": "autocad.window.application-menu.options",
+      "kind": "command_item",
+      "name": "Options",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "footer",
+        "order": 14
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "invoke_command",
+        "command": "OPTIONS",
+        "scriptCommand": "_.OPTIONS",
+        "commandCatalogRef": "commands.OPTIONS"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.application-menu.exit": {
+      "id": "autocad.window.application-menu.exit",
+      "kind": "command_item",
+      "name": "Exit Autodesk AutoCAD 2027",
+      "parentId": "autocad.window.application-menu",
+      "children": [],
+      "placement": {
+        "region": "footer",
+        "order": 15
+      },
+      "hasSubmenu": false,
+      "action": {
+        "type": "invoke_command",
+        "command": "QUIT",
+        "scriptCommand": "_.QUIT",
+        "commandCatalogRef": "commands.QUIT"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.coordinates": {
+      "id": "autocad.window.status-bar.coordinates",
+      "kind": "status_bar_control",
+      "name": "Coordinates",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 1
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.model-space": {
+      "id": "autocad.window.status-bar.model-space",
+      "kind": "status_bar_control",
+      "name": "Model Space",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 2
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.grid": {
+      "id": "autocad.window.status-bar.grid",
+      "kind": "status_bar_control",
+      "name": "Grid",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 3
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.snap-mode": {
+      "id": "autocad.window.status-bar.snap-mode",
+      "kind": "status_bar_control",
+      "name": "Snap Mode",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 4
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.infer-constraints": {
+      "id": "autocad.window.status-bar.infer-constraints",
+      "kind": "status_bar_control",
+      "name": "Infer Constraints",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 5
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.dynamic-input": {
+      "id": "autocad.window.status-bar.dynamic-input",
+      "kind": "status_bar_control",
+      "name": "Dynamic Input",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 6
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.ortho-mode": {
+      "id": "autocad.window.status-bar.ortho-mode",
+      "kind": "status_bar_control",
+      "name": "Ortho Mode",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 7
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.polar-tracking": {
+      "id": "autocad.window.status-bar.polar-tracking",
+      "kind": "status_bar_control",
+      "name": "Polar Tracking",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 8
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.isometric-drafting": {
+      "id": "autocad.window.status-bar.isometric-drafting",
+      "kind": "status_bar_control",
+      "name": "Isometric Drafting",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 9
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.object-snap-tracking": {
+      "id": "autocad.window.status-bar.object-snap-tracking",
+      "kind": "status_bar_control",
+      "name": "Object Snap Tracking",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 10
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.2d-object-snap": {
+      "id": "autocad.window.status-bar.2d-object-snap",
+      "kind": "status_bar_control",
+      "name": "2D Object Snap",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 11
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.lineweight": {
+      "id": "autocad.window.status-bar.lineweight",
+      "kind": "status_bar_control",
+      "name": "LineWeight",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 12
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.transparency": {
+      "id": "autocad.window.status-bar.transparency",
+      "kind": "status_bar_control",
+      "name": "Transparency",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 13
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.selection-cycling": {
+      "id": "autocad.window.status-bar.selection-cycling",
+      "kind": "status_bar_control",
+      "name": "Selection Cycling",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 14
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.3d-object-snap": {
+      "id": "autocad.window.status-bar.3d-object-snap",
+      "kind": "status_bar_control",
+      "name": "3D Object Snap",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 15
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.dynamic-ucs": {
+      "id": "autocad.window.status-bar.dynamic-ucs",
+      "kind": "status_bar_control",
+      "name": "Dynamic UCS",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 16
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.section-filtering": {
+      "id": "autocad.window.status-bar.section-filtering",
+      "kind": "status_bar_control",
+      "name": "Section Filtering",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 17
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.gizmo": {
+      "id": "autocad.window.status-bar.gizmo",
+      "kind": "status_bar_control",
+      "name": "Gizmo",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 18
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.annotation-visibility": {
+      "id": "autocad.window.status-bar.annotation-visibility",
+      "kind": "status_bar_control",
+      "name": "Annotation Visibility",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 19
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.autoscale": {
+      "id": "autocad.window.status-bar.autoscale",
+      "kind": "status_bar_control",
+      "name": "AutoScale",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 20
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.annotation-scale": {
+      "id": "autocad.window.status-bar.annotation-scale",
+      "kind": "status_bar_control",
+      "name": "Annotation Scale",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 21
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.workspace-switching": {
+      "id": "autocad.window.status-bar.workspace-switching",
+      "kind": "status_bar_control",
+      "name": "Workspace Switching",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 22
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.annotation-monitor": {
+      "id": "autocad.window.status-bar.annotation-monitor",
+      "kind": "status_bar_control",
+      "name": "Annotation Monitor",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 23
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.units": {
+      "id": "autocad.window.status-bar.units",
+      "kind": "status_bar_control",
+      "name": "Units",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 24
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.quick-properties": {
+      "id": "autocad.window.status-bar.quick-properties",
+      "kind": "status_bar_control",
+      "name": "Quick Properties",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 25
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.lock-ui": {
+      "id": "autocad.window.status-bar.lock-ui",
+      "kind": "status_bar_control",
+      "name": "Lock UI",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 26
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.isolate-objects": {
+      "id": "autocad.window.status-bar.isolate-objects",
+      "kind": "status_bar_control",
+      "name": "Isolate Objects",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 27
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.graphics-performance": {
+      "id": "autocad.window.status-bar.graphics-performance",
+      "kind": "status_bar_control",
+      "name": "Graphics Performance",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": false,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 28
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.clean-screen": {
+      "id": "autocad.window.status-bar.clean-screen",
+      "kind": "status_bar_control",
+      "name": "Clean Screen",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "enabledInObservedWorkspace": true,
+      "placement": {
+        "region": "bottom_status_bar",
+        "order": 29
+      },
+      "action": {
+        "type": "toggle_or_open_status_control",
+        "runtimeStateRequired": true
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": false,
+        "evidence": "live-observation.json"
+      }
+    },
+    "autocad.window.status-bar.customization-menu": {
+      "id": "autocad.window.status-bar.customization-menu",
+      "kind": "menu_trigger",
+      "name": "Customization",
+      "parentId": "autocad.window.status-bar",
+      "children": [],
+      "action": {
+        "type": "open_status_bar_customization_menu"
+      },
+      "verification": {
+        "extracted": false,
+        "liveObserved": true,
+        "interactionTested": true,
+        "evidence": "live-observation.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,1034 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-surfacetab-panel-edit",
+  "generatedAt": "2026-08-25T21:52:32.1199734Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SurfaceTab",
+    "tabName": "Surface",
+    "panelUid": "ID_RBN_Surface_Edit",
+    "panelName": "Edit",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "kind": "tab",
+      "name": "Surface",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SurfaceTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SurfaceTab",
+        "text": "Surface",
+        "keyTip": "SU",
+        "alias": null,
+        "officialName": "Surface Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "kind": "panel",
+      "name": "Edit",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8141",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_Surface_Edit"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_Surface_Edit",
+        "text": "Edit",
+        "keyTip": "ED",
+        "alias": null,
+        "officialName": "Surface - Edit",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+      "kind": "layout_row",
+      "name": "ID_RBN_8140",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8212",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8179",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8140"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8140",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8212": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8212",
+      "kind": "command_button",
+      "name": "Fillet",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8212"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8212",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Fillet",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_FILLET",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Fillet",
+        "official": "Surface Fillet",
+        "aliases": [
+          "SURFFILLET",
+          "ID_SURF_FILLET"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_FILLET",
+        "largeResource": "RCDATA_32_SM_FILLET",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFFILLET",
+        "macro": "^C^C_SURFFILLET",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a new, rounded surface in the space between existing surfaces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFFILLET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8179": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8179",
+      "kind": "separator",
+      "name": "ID_RBN_8179",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8179"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8179",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139",
+      "kind": "layout_group",
+      "name": "ID_RBN_8139",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8139"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8139",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134",
+      "kind": "layout_row",
+      "name": "ID_RBN_8134",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134.id-rbn-8217"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8134"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8134",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134.id-rbn-8217": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134.id-rbn-8217",
+      "kind": "command_button",
+      "name": "Trim",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.id-rbn-8139.id-rbn-8134",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8217"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8217",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Trim",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_TRIM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Trim",
+        "official": "Surface Trim",
+        "aliases": [
+          "SURFTRIM",
+          "ID_SURF_TRIM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_TRIM",
+        "largeResource": "RCDATA_32_SM_TRIM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFTRIM",
+        "macro": "^C^C_SURFTRIM",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Trims portions of a surface where it meets another surface or type of geometry",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFTRIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450",
+      "kind": "layout_group",
+      "name": "RBN_01740450",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740450"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740450",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451",
+      "kind": "layout_row",
+      "name": "RBN_01740451",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451.rbn-01740452"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740451"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740451",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451.rbn-01740452": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451.rbn-01740452",
+      "kind": "command_button",
+      "name": "Untrim",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740451",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740452"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740452",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Untrim",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TU",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_UNTRIM",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Untrim",
+        "official": "Surface Untrim",
+        "aliases": [
+          "SURFUNTRIM",
+          "ID_SURF_UNTRIM"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_UNTRIM",
+        "largeResource": "RCDATA_32_SM_UNTRIM",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFUNTRIM",
+        "macro": "^C^C_SURFUNTRIM",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Replaces surface areas removed by the SURFTRIM command",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFUNTRIM command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453",
+      "kind": "layout_row",
+      "name": "RBN_01740453",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453.rbn-01740454"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740453"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740453",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453.rbn-01740454": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453.rbn-01740454",
+      "kind": "command_button",
+      "name": "Extend",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740453",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740454"
+      },
+      "placement": {
+        "region": "main",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740454",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extend",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_EXTEND",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extend",
+        "official": "Surface Extend",
+        "aliases": [
+          "SURFEXTEND",
+          "ID_SURF_EXTEND"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_EXTEND",
+        "largeResource": "RCDATA_32_SM_EXTEND",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFEXTEND",
+        "macro": "^C^C_SURFEXTEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Lengthens a surface to meet another object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFEXTEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455",
+      "kind": "layout_row",
+      "name": "RBN_01740455",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455.rbn-01740456"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740455"
+      },
+      "placement": {
+        "region": "main",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740455",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455.rbn-01740456": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455.rbn-01740456",
+      "kind": "command_button",
+      "name": "Sculpt",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8140.rbn-01740450.rbn-01740455",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740456"
+      },
+      "placement": {
+        "region": "main",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740456",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Sculpt",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SCULPT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sculpt",
+        "official": "Surface Sculpt",
+        "aliases": [
+          "SURFSCULPT",
+          "ID_SURF_SCULPT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SCULPT",
+        "largeResource": "RCDATA_32_SM_SCULPT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFSCULPT",
+        "macro": "^C^C_SURFSCULPT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Trims and unions surfaces that bound a region to create a watertight solid",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFSCULPT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8141": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.id-rbn-8141",
+      "kind": "panel_break",
+      "name": "ID_RBN_8141",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8141"
+      },
+      "placement": {
+        "region": "main",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8141",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250",
+      "kind": "layout_row",
+      "name": "RBN_3250",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250.rbn-3251"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3250"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3250",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250.rbn-3251": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250.rbn-3251",
+      "kind": "command_button",
+      "name": "Extract Intersections",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-3250",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3251"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3251",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract Intersections",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "EI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtractIntersection",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract Intersections",
+        "official": "Extract Intersection",
+        "aliases": [
+          "INTERFERE",
+          "ID_ExtractIntersection"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_INTERF",
+        "largeResource": "RCDATA_32_INTERF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "INTERFERE",
+        "macro": "^C^C_select \\_-interfere _p;;;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extract edges from a temporary 3D solid from the interferences between two sets of selected 3D solids",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 INTERFERE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300",
+      "kind": "layout_row",
+      "name": "RBN_UIE_2300",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300.rbn-uie-3448"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_2300"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_2300",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300.rbn-uie-3448": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300.rbn-uie-3448",
+      "kind": "command_button",
+      "name": "Offset Edge",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-edit.rbn-uie-2300",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_UIE_3448"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_UIE_3448",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Offset Edge",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "OE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_OffsetEdge",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Offset Edge",
+        "official": "Offset Edge",
+        "aliases": [
+          "OFFSETEDGE",
+          "ID_OffsetEdge"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OFFSETFACES",
+        "largeResource": "RCDATA_32_OFFSETFACES",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OFFSETEDGE",
+        "macro": "^C^C_offsetedge",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes the AutoCAD OFFSETEDGE command.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OFFSETEDGE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

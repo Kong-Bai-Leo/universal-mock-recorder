@@ -1,0 +1,635 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabgeo-panel-tools",
+  "generatedAt": "2026-08-25T21:52:49.4641062Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabGeo",
+    "tabName": "Geolocation",
+    "panelUid": "RBN_200_71E35",
+    "panelName": "Tools",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo",
+      "kind": "tab",
+      "name": "Geolocation",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabGeo"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabGeo",
+        "text": "Geolocation",
+        "keyTip": "GE",
+        "alias": "ID_TabGeo",
+        "officialName": "Geolocation"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35",
+      "kind": "panel",
+      "name": "Tools",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.rbn-200-40cc5"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_71E35"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_71E35",
+        "text": "Tools",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Geolocation - Tools",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_GEO_05",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_GEO_05"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_GEO_05",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "kind": "split_button",
+      "name": "Mark\rPosition",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455G"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A455G",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Mark\rPosition",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "MP",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Mark your position",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6"
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.primary-action",
+      "kind": "primary_button",
+      "name": "Mark\rPosition primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455G.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Mark\rPosition variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Mark\rPosition menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455G.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Mark\rPosition menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Mark\rPosition popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Mark\rPosition menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31701",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31674"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455G.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Mark\rPosition variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-125f6",
+      "kind": "command_button",
+      "name": "Lat-Long",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_125F6"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "ui": {
+        "uid": "RBN_200_125F6",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lat-Long",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_MarkLocation_SpecifyLatLong",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lat-Long",
+        "official": "Lat-Long",
+        "aliases": [
+          "GEOMARKLATLONG",
+          "ID_GeoLocation_MarkLocation_SpecifyLatLong"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_MARKLOCATION_ENTERLATLONG",
+        "largeResource": "RCDATA_32_GEO_LOCATION_MARKLOCATION_ENTERLATLONG",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMARKLATLONG",
+        "macro": "^C^C_geomarklatlong",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Places a position marker for a location defined by latitude and longitude coordinates",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMARKLATLONG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31701": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31701",
+      "kind": "command_button",
+      "name": "My Location",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_31701"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "ui": {
+        "uid": "RBN_200_31701",
+        "controlId": "AcRibbonCommandButton",
+        "text": "My Location",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_MarkLocation_CurrentLocation",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "My Location",
+        "official": "My Location",
+        "aliases": [
+          "GEOMARKME",
+          "ID_GeoLocation_MarkLocation_CurrentLocation"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_MARKLOCATION_CURRENTLOCATION",
+        "largeResource": "RCDATA_32_GEO_LOCATION_MARKLOCATION_CURRENTLOCATION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMARKME",
+        "macro": "^C^C_geomarkme",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Places a position marker corresponding to your current location",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMARKME command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31674": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu.rbn-200-31674",
+      "kind": "command_button",
+      "name": "Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_31674"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.id-rbn-row-geo-05.rbn-200-a455g",
+      "ui": {
+        "uid": "RBN_200_31674",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Point",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_MarkLocation_PickPoint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Point",
+        "official": "Point",
+        "aliases": [
+          "GEOMARKPOINT",
+          "ID_GeoLocation_MarkLocation_PickPoint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_MARKLOCATION_PICKPOINT",
+        "largeResource": "RCDATA_32_GEO_LOCATION_MARKLOCATION_PICKPOINT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOMARKPOINT",
+        "macro": "^C^C_geomarkpoint",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Places a position marker at a specified point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOMARKPOINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.rbn-200-40cc5": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35.rbn-200-40cc5",
+      "kind": "panel_break",
+      "name": "RBN_200_40CC5",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e35",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_40CC5"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_40CC5",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

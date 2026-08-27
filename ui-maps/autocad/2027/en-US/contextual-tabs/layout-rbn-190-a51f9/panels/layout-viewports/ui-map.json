@@ -1,0 +1,1361 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-190-a51f9-panel-layout-viewports",
+  "generatedAt": "2026-08-25T21:52:50.5240095Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_190_A51F9",
+    "tabName": "Layout",
+    "panelUid": "RBN_190_F549F",
+    "panelName": "Layout Viewports",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "kind": "tab",
+      "name": "Layout",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A51F9"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_A51F9",
+        "text": "Layout",
+        "keyTip": "L",
+        "alias": "ID_NEWLAYOUT",
+        "officialName": "Layout"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "kind": "panel",
+      "name": "Layout Viewports",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.id-rbn-220-f5631",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-0b639",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_F549F"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_F549F",
+        "text": "Layout Viewports",
+        "keyTip": "VE",
+        "alias": null,
+        "officialName": "Layout - Viewports",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.id-rbn-220-f5631": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.id-rbn-220-f5631",
+      "kind": "dialog_launcher",
+      "name": "Viewports, New Viewports...",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_220_F5631"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_220_F5631",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "VS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VportsSav",
+        "commandId": "ID_VportsSav",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Viewports, New Viewports...",
+        "aliases": [
+          "+VPORTS",
+          "ID_VportsSav"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_VP_NEW",
+        "largeResource": "RCDATA_32_VIEW_VP_NEW",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "+VPORTS",
+        "macro": "^C^C_+vports 0",
+        "macroType": "View",
+        "commandId": "ID_VportsSav",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Displays the Viewports dialog box for creating new or restoring saved viewport configurations",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 +VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b",
+      "kind": "layout_row",
+      "name": "RBN_190_A3D4B",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A3D4B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_A3D4B",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel",
+      "kind": "layout_group",
+      "name": "RBN_INSERT_NAMED_VIEWS_ROWPANEL",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_INSERT_NAMED_VIEWS_ROWPANEL"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_INSERT_NAMED_VIEWS_ROWPANEL",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1",
+      "kind": "layout_row",
+      "name": "RBN_INSERT_NAMED_VIEWS_ROW1",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1.rbn-220-a044b"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_INSERT_NAMED_VIEWS_ROW1"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_INSERT_NAMED_VIEWS_ROW1",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1.rbn-220-a044b": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1.rbn-220-a044b",
+      "kind": "ribbon_control",
+      "name": "Insert View",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-insert-named-views-rowpanel.rbn-insert-named-views-row1",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_220_A044B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_220_A044B",
+        "controlId": "AcInsertViewGalleryControl",
+        "text": "Insert View",
+        "keyTip": "VI"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Insert View.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330",
+      "kind": "layout_group",
+      "name": "RBN_190_D3330",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_D3330"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_D3330",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2",
+      "kind": "layout_row",
+      "name": "RBN_190_791E2",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_791E2"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_791E2",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "kind": "split_button",
+      "name": "Create Viewport Drop Down",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A6245"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_A6245",
+        "controlId": "AcRibbonSplitButtonEnabledForPS",
+        "text": "Create Viewport Drop Down",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "CP",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Create Viewport Drop Down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.primary-action",
+      "kind": "primary_button",
+      "name": "Create Viewport Drop Down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A6245.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Create Viewport Drop Down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Create Viewport Drop Down menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A6245.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Create Viewport Drop Down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Create Viewport Drop Down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Create Viewport Drop Down menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-0a27c",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-c6201"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A6245.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Create Viewport Drop Down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-ac223",
+      "kind": "command_button",
+      "name": "Rectangular",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_AC223"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "ui": {
+        "uid": "RBN_190_AC223",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rectangular",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VPORTS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rectangular",
+        "official": "Viewports, Rectangular",
+        "aliases": [
+          "-VPORTS",
+          "ID_VPORTS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_VP_NEW",
+        "largeResource": "RCDATA_32_VIEW_VP_NEW",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-VPORTS",
+        "macro": "^C^C_-vports",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a rectangular paper space viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-0a27c": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-0a27c",
+      "kind": "command_button",
+      "name": "Polygonal",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_0A27C"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 27
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "ui": {
+        "uid": "RBN_190_0A27C",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polygonal",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VportsRes",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polygonal",
+        "official": "Viewports, Polygonal Viewport",
+        "aliases": [
+          "-VPORTS",
+          "ID_VportsRes"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_VP_POLYGONAL",
+        "largeResource": "RCDATA_32_VIEW_VP_POLYGONAL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-VPORTS",
+        "macro": "^C^C_-vports _p",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an irregularly shaped viewport defined by specifying points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-c6201": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu.rbn-190-c6201",
+      "kind": "command_button",
+      "name": "Object",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_C6201"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 28
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-791e2.rbn-190-a6245",
+      "ui": {
+        "uid": "RBN_190_C6201",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Object",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VportsDel",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Object",
+        "official": "Viewports, Object",
+        "aliases": [
+          "-VPORTS",
+          "ID_VportsDel"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VIEW_VP_OBJECT",
+        "largeResource": "RCDATA_32_VIEW_VP_OBJECT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-VPORTS",
+        "macro": "^C^C_-vports _o",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Specifies a closed polyline, ellipse, spline, region, or circle to convert into a viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade",
+      "kind": "layout_row",
+      "name": "RBN_190_81ADE",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade.rbn-190-7879d"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_81ADE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 29
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_81ADE",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade.rbn-190-7879d": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade.rbn-190-7879d",
+      "kind": "command_button",
+      "name": "Clip",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-81ade",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_7879D"
+      },
+      "placement": {
+        "region": "main",
+        "order": 30
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_7879D",
+        "controlId": "AcRibbonCommandButtonEnabledForPS",
+        "text": "Clip",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "XV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_VportClip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Clip",
+        "official": "Clip, Viewport",
+        "aliases": [
+          "VPCLIP",
+          "ID_VportClip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VPCLIP",
+        "largeResource": "RCDATA_32_VPCLIP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VPCLIP",
+        "macro": "^C^C_vpclip",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Clips layout viewport objects and reshapes the viewport border",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VPCLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd",
+      "kind": "layout_row",
+      "name": "RBN_190_428CD",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_428CD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 31
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_428CD",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "kind": "split_button",
+      "name": "Lock",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_C687B"
+      },
+      "placement": {
+        "region": "main",
+        "order": 32
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_C687B",
+        "controlId": "AcRibbonSplitButtonEnabledForPS",
+        "text": "Lock",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "VL",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_VP_DISPLAY_LOCKED",
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Provides the available Lock variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-142c5"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Lock menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_C687B.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Lock menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Lock popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Lock menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-142c5",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-5557e"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_C687B.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Lock variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-142c5": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-142c5",
+      "kind": "command_button",
+      "name": "Lock",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_142C5"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "ui": {
+        "uid": "RBN_190_142C5",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lock",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_190_61B6E",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lock",
+        "official": "Viewports, Lock, Yes",
+        "aliases": [
+          "-VPORTS",
+          "MM_190_61B6E"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VP_DISPLAY_LOCKED",
+        "largeResource": "RCDATA_32_VP_DISPLAY_LOCKED",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-VPORTS",
+        "macro": "^C^C_-vports _lock _on",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Locks  the scale of viewport objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-5557e": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu.rbn-190-5557e",
+      "kind": "command_button",
+      "name": "Unlock",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_5557E"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-a3d4b.rbn-190-d3330.rbn-190-428cd.rbn-190-c687b",
+      "ui": {
+        "uid": "RBN_190_5557E",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Unlock",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_190_05DBE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Unlock",
+        "official": "Viewports, Lock, No",
+        "aliases": [
+          "-VPORTS",
+          "MM_190_05DBE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYOUT_VIEWPORT_UNLOCKED",
+        "largeResource": "RCDATA_32_LAYOUT_VIEWPORT_UNLOCKED",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "-VPORTS",
+        "macro": "^C^C_-vports _Lock _off",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Unlocks the scale of viewport objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 -VPORTS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-0b639": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-190-0b639",
+      "kind": "panel_break",
+      "name": "RBN_190_0B639",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_0B639"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_0B639",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060",
+      "kind": "layout_row",
+      "name": "RBN_01738060",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060.rbn-01738061"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738060"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738060",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060.rbn-01738061": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060.rbn-01738061",
+      "kind": "gallery",
+      "name": "Viewport Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.rbn-190-f549f.rbn-01738060",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738061"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738061",
+        "controlId": "AcViewportLayerCombo",
+        "text": "Viewport Layer Gallery",
+        "keyTip": "VA"
+      },
+      "semantics": {
+        "description": "Displays the Viewport Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Viewport Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

@@ -23,6 +23,7 @@ export function renderComputerUseTask(plan) {
     `## 目标\n\n${plan.summary}\n\n` +
     `## 输入\n\n` +
     `- 完整结构化流程：\`semantic-trace.json\`\n` +
+    `- 精确 CAD 操作模型：\`cad-program.json\`（存在时优先用于几何与实体关系验收）\n` +
     `- 可执行 TypeScript 描述：\`mock-script.ts\`\n` +
     `- 原录制参考截图：\`../screenshots/\`\n` +
     `- 目标 Mock 软件入口：由执行者提供并确保可重置到初始状态\n\n` +
@@ -33,7 +34,8 @@ export function renderComputerUseTask(plan) {
     `4. drag 必须使用 gesture 的起点、终点和路径；位置均相对目标窗口归一化。\n` +
     `5. measurements 是几何验收值；业务单位不可见时只比较 px 或 window_ratio。\n` +
     `6. 不执行 omitted 中被撤销、取消或无状态贡献的动作。\n` +
-    `7. 最后保存结果截图，并报告成功步骤、失败步骤、几何误差和最终画布差异。\n\n` +
+    `7. OFFSET/TRIM 优先读取 cadProgram 中的 visualInference 和 resultGeometry；不要照抄录制时不精确的侧点或修剪点击坐标。\n` +
+    `8. 最后保存结果截图，并报告成功步骤、失败步骤、几何误差和最终画布差异。\n\n` +
     `## 步骤\n\n${steps || "没有可执行步骤。"}\n\n` +
     `## 通过标准\n\n` +
     `- 所有必要步骤执行成功；\n` +

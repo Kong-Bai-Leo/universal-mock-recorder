@@ -1,0 +1,311 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabview-panel-history",
+  "generatedAt": "2026-08-25T21:52:23.6324184Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabView",
+    "tabName": "View",
+    "panelUid": "RBN_231_D4737",
+    "panelName": "History",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview",
+      "kind": "tab",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabView"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabView",
+        "text": "View",
+        "keyTip": "VI",
+        "alias": "ID_TabView",
+        "officialName": "View 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737",
+      "kind": "panel",
+      "name": "History",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461",
+        "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-f4294"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_D4737"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 191
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_D4737",
+        "text": "History",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "View - DWG History",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461",
+      "kind": "layout_row",
+      "name": "RBN_231_3F461",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461.id-rbn-togglebtn-parker"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_3F461"
+      },
+      "placement": {
+        "region": "main",
+        "order": 192
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_3F461",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461.id-rbn-togglebtn-parker": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461.id-rbn-togglebtn-parker",
+      "kind": "toggle_button",
+      "name": "Activity\rInsights",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-3f461",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_TOGGLEBTN_Parker"
+      },
+      "placement": {
+        "region": "main",
+        "order": 193
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_TOGGLEBTN_Parker",
+        "controlId": "AcParkerPaletteCommandToggleButton",
+        "text": "Activity\rInsights",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Activity\rInsights",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Activity\rInsights.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-f4294": {
+      "id": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737.rbn-231-f4294",
+      "kind": "panel_break",
+      "name": "RBN_231_F4294",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabview.rbn-231-d4737",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_231_F4294"
+      },
+      "placement": {
+        "region": "main",
+        "order": 194
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_231_F4294",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:26:00Z",
+    "observedControlCount": 36,
+    "evidence": "../../live-observation.json"
+  }
+}

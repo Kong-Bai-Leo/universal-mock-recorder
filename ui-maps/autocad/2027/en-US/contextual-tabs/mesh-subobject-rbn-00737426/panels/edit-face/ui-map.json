@@ -1,0 +1,658 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-00737426-panel-edit-face",
+  "generatedAt": "2026-08-25T21:53:05.5813666Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_00737426",
+    "tabName": "Mesh Subobject",
+    "panelUid": "RBN_00737255",
+    "panelName": "Edit Face",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426",
+      "kind": "tab",
+      "name": "Mesh Subobject",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737426"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737426",
+        "text": "Mesh Subobject",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh Subobject with Faces Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255",
+      "kind": "panel",
+      "name": "Edit Face",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257",
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.id-rbn-0092"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737255"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737255",
+        "text": "Edit Face",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Mesh - Edit Face",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257",
+      "kind": "layout_row",
+      "name": "RBN_00737257",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737346",
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737257"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737257",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737346": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737346",
+      "kind": "command_button",
+      "name": "Split\rFace",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737346"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737346",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Split\rFace",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "QSF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SPLIT_FACE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Split\rFace",
+        "official": "Split Mesh Face",
+        "aliases": [
+          "MESHSPLIT",
+          "ID_MESH_SPLIT_FACE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_SPLITFACE",
+        "largeResource": "RCDATA_32_OM_SPLITFACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHSPLIT",
+        "macro": "^C^C_MESHSPLIT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Splits a mesh face into two faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHSPLIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347",
+      "kind": "layout_group",
+      "name": "RBN_00737347",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348",
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352",
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737347"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737347",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348",
+      "kind": "layout_row",
+      "name": "RBN_00737348",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348.rbn-00737350"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737348"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737348",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348.rbn-00737350": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348.rbn-00737350",
+      "kind": "command_button",
+      "name": "Extrude face",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737348",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737350"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737350",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extrude face",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QEF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_EXTRUDE_FACE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extrude face",
+        "official": "Extrude Face",
+        "aliases": [
+          "MESHEXTRUDE",
+          "ID_MESH_EXTRUDE_FACE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTRUD_FACE",
+        "largeResource": "RCDATA_32_EXTRUD_FACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHEXTRUDE",
+        "macro": "^C^C_MESHEXTRUDE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extends a mesh face into 3D space",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHEXTRUDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352",
+      "kind": "layout_row",
+      "name": "RBN_00737352",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352.rbn-00737353"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737352"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737352",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352.rbn-00737353": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352.rbn-00737353",
+      "kind": "command_button",
+      "name": "Merge face",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737352",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737353"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737353",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Merge face",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QEF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_MERGE_FACES",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Merge face",
+        "official": "Merge Face",
+        "aliases": [
+          "MESHMERGE",
+          "ID_MESH_MERGE_FACES"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MESHMERGE",
+        "largeResource": "RCDATA_32_MESHMERGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHMERGE",
+        "macro": "^C^C_MESHMERGE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges adjacent faces into a single face",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHMERGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349",
+      "kind": "layout_row",
+      "name": "RBN_00737349",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349.rbn-00737351"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737349"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737349",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349.rbn-00737351": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349.rbn-00737351",
+      "kind": "command_button",
+      "name": "Refine Mesh",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.rbn-00737257.rbn-00737347.rbn-00737349",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00737351"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00737351",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Refine Mesh",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "QRM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_MESH_SMOOTH_REFINE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Refine Mesh",
+        "official": "Mesh Refine",
+        "aliases": [
+          "MESHREFINE",
+          "ID_MESH_SMOOTH_REFINE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_OM_REFINEMESH",
+        "largeResource": "RCDATA_32_OM_REFINEMESH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MESHREFINE",
+        "macro": "'_MESHREFINE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Multiplies the number of faces in selected mesh objects or mesh faces",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MESHREFINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.id-rbn-0092": {
+      "id": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255.id-rbn-0092",
+      "kind": "panel_break",
+      "name": "ID_RBN_0092",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-00737426.rbn-00737255",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0092"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0092",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

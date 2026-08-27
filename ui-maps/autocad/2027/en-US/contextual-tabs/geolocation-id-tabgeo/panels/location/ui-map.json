@@ -1,0 +1,742 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabgeo-panel-location",
+  "generatedAt": "2026-08-25T21:52:49.4641062Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabGeo",
+    "tabName": "Geolocation",
+    "panelUid": "RBN_200_71E34",
+    "panelName": "Location",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo",
+      "kind": "tab",
+      "name": "Geolocation",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabGeo"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabGeo",
+        "text": "Geolocation",
+        "keyTip": "GE",
+        "alias": "ID_TabGeo",
+        "officialName": "Geolocation"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34",
+      "kind": "panel",
+      "name": "Location",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.rbn-200-40cc4"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_71E34"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_71E34",
+        "text": "Location",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Geolocation - Location",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_GEO_01",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6cc",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6bb"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_GEO_01"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_GEO_01",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "kind": "split_button",
+      "name": "Edit\rLocation",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455F"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_A455F",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Edit\rLocation",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "EL",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_GEO_LOCATION",
+        "largeImage": "RCDATA_32_GEO_LOCATION",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Changes geographic location information of a drawing file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31700"
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Edit\rLocation menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455F.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Edit\rLocation menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Edit\rLocation popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Edit\rLocation menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31700",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31707",
+        "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31671"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_A455F.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Edit\rLocation variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31700": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31700",
+      "kind": "command_button",
+      "name": "From Esri Maps",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_31700"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "ui": {
+        "uid": "RBN_200_31700",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From Esri Maps",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_Edit_Esri_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Esri Maps",
+        "official": "Geographic Location from Esri Maps",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_Edit_Esri_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_ESRI",
+        "largeResource": "RCDATA_32_GEO_ESRI",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _m)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes geographic location using maps from Esri online map service",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31707": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31707",
+      "kind": "command_button",
+      "name": "From Bing Maps",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_31707"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "ui": {
+        "uid": "RBN_200_31707",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From Bing Maps",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_Edit_Bing_Map",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Bing Maps",
+        "official": "Geographic Location from Bing Maps",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_Edit_Bing_Map"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION",
+        "largeResource": "RCDATA_32_GEO_LOCATION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _b)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes geographic location using maps from Bing online map service",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31671": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu.rbn-200-31671",
+      "kind": "command_button",
+      "name": "From File",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_31671"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-a455f",
+      "ui": {
+        "uid": "RBN_200_31671",
+        "controlId": "AcRibbonCommandButton",
+        "text": "From File",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoLocation_Edit_From_File",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From File",
+        "official": "Geographic Location from File",
+        "aliases": [
+          "GEOGRAPHICLOCATION",
+          "ID_GeoLocation_Edit_From_File"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_FILE",
+        "largeResource": "RCDATA_32_GEO_LOCATION_FILE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOGRAPHICLOCATION",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,\"cvport\"),1),$(eq,$(getvar,\"blockeditor\"),1)),^C^C_geographiclocation,^C^C_geographiclocation _f)",
+        "macroType": "View",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes geographic location by importing coordinates from a GIS file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOGRAPHICLOCATION command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6cc": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6cc",
+      "kind": "command_button",
+      "name": "Reorient\rMarker",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_DD6CC"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_DD6CC",
+        "controlId": "AcRibbonCommandReorientGeoMarker",
+        "text": "Reorient\rMarker",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RG",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoReorientMarker",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Reorient\rMarker",
+        "official": "Reorient Marker",
+        "aliases": [
+          "GEOREORIENTMARKER",
+          "ID_GeoReorientMarker"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_REORIENT_MARKER",
+        "largeResource": "RCDATA_32_GEO_LOCATION_REORIENT_MARKER",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOREORIENTMARKER",
+        "macro": "^C^C_GEOREORIENTMARKER",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Changes the location and north direction property of the geographic marker, which identifies the latitude and longitude coordinates",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOREORIENTMARKER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6bb": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01.rbn-200-dd6bb",
+      "kind": "command_button",
+      "name": "Remove\rLocation",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.id-rbn-row-geo-01",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_DD6BB"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_DD6BB",
+        "controlId": "AcRibbonCommandButtonRemoveGeoData",
+        "text": "Remove\rLocation",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_GeoRemove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Remove\rLocation",
+        "official": "Remove Location",
+        "aliases": [
+          "GEOREMOVE",
+          "ID_GeoRemove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_GEO_LOCATION_REMOVE",
+        "largeResource": "RCDATA_32_GEO_LOCATION_REMOVE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "GEOREMOVE",
+        "macro": "^C^C_GEOREMOVE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes all geographic location information from a drawing file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 GEOREMOVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.rbn-200-40cc4": {
+      "id": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34.rbn-200-40cc4",
+      "kind": "panel_break",
+      "name": "RBN_200_40CC4",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabgeo.rbn-200-71e34",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_40CC4"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_40CC4",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

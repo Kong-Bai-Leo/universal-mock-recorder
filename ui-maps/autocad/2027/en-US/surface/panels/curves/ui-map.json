@@ -1,0 +1,4450 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-surfacetab-panel-curves",
+  "generatedAt": "2026-08-25T21:52:32.1199734Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SurfaceTab",
+    "tabName": "Surface",
+    "panelUid": "ID_RBN_SURFACE_Curves",
+    "panelName": "Curves",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "kind": "tab",
+      "name": "Surface",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SurfaceTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SurfaceTab",
+        "text": "Surface",
+        "keyTip": "SU",
+        "alias": null,
+        "officialName": "Surface Modeling"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "kind": "panel",
+      "name": "Curves",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8074",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SURFACE_Curves"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SURFACE_Curves",
+        "text": "Curves",
+        "keyTip": "CU",
+        "alias": "ID_SURF_CURVES",
+        "officialName": "Surface - Curves",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+      "kind": "layout_row",
+      "name": "ID_RBN_8073",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.rbn-01740459",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8073"
+      },
+      "placement": {
+        "region": "main",
+        "order": 64
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8073",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "kind": "split_button",
+      "name": "spline Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.primary-action",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8091"
+      },
+      "placement": {
+        "region": "main",
+        "order": 65
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8091",
+        "controlId": "AcRibbonSplitButton",
+        "text": "spline Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SY",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available spline Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.primary-action",
+      "kind": "primary_button",
+      "name": "spline Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8091.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 66
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default spline Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open spline Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8091.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 67
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the spline Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The spline Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "spline Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8219",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8220"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8091.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable spline Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8218",
+      "kind": "command_button",
+      "name": "Spline CV",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8218"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "ui": {
+        "uid": "ID_RBN_8218",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spline CV",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SPLINECV",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spline CV",
+        "official": "Spline",
+        "aliases": [
+          "SPLINE",
+          "ID_SURF_SPLINECV"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SPLINECV",
+        "largeResource": "RCDATA_32_SM_SPLINECV",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPLINE",
+        "macro": "^C^C_^RSPLINE _M _CV",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Draws a spline with control vertices",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8219": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8219",
+      "kind": "command_button",
+      "name": "Spline Fit",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8219"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "ui": {
+        "uid": "ID_RBN_8219",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spline Fit",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SPLINE_KNOT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spline Fit",
+        "official": "Spline Knot",
+        "aliases": [
+          "SPLINE",
+          "ID_SURF_SPLINE_KNOT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SPLINEKNOT",
+        "largeResource": "RCDATA_32_SM_SPLINEKNOT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SPLINE",
+        "macro": "^C^C_^RSPLINE _M _FIT",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Draws a spline with fit points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SPLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8220": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu.id-rbn-8220",
+      "kind": "command_button",
+      "name": "Spline Freehand",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8220"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8091",
+      "ui": {
+        "uid": "ID_RBN_8220",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Spline Freehand",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SURF_SPLINE_FREEHAND",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Spline Freehand",
+        "official": "Spline Freehand",
+        "aliases": [
+          "SKETCH",
+          "ID_SURF_SPLINE_FREEHAND"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SM_SPLINEFREEHAND",
+        "largeResource": "RCDATA_32_SM_SPLINEFREEHAND",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SKETCH",
+        "macro": "^C^C^R_SKETCH _TYPE _SPLINE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Draws a freehand spline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SKETCH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.rbn-01740459": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.rbn-01740459",
+      "kind": "command_button",
+      "name": "Extract\rIsolines",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740459"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740459",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Extract\rIsolines",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EXTRACTISOLINES",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Extract\rIsolines",
+        "official": "Extract Isolines",
+        "aliases": [
+          "SURFEXTRACTCURVE",
+          "ID_EXTRACTISOLINES"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SURFEXTRACTCURVE",
+        "largeResource": "RCDATA_32_SURFEXTRACTCURVE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SURFEXTRACTCURVE",
+        "macro": "^C^C_SURFEXTRACTCURVE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an isoline curve from a surface, solid, or the face of a solid object in the U or V direction",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SURFEXTRACTCURVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278",
+      "kind": "layout_group",
+      "name": "ID_RBN_SM_8278",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8278"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8278",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8178",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178.id-rbn-8105"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8178"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8178",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178.id-rbn-8105": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178.id-rbn-8105",
+      "kind": "command_button",
+      "name": "3D Polyline",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8178",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8105"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8105",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "P3",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_3dpoly",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "3D Polyline",
+        "aliases": [
+          "3DPOLY",
+          "ID_3dpoly"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_3DPOLY",
+        "largeResource": "RCDATA_32_3DPOLY",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "3DPOLY",
+        "macro": "^C^C_3dpoly",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 3D polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 3DPOLY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8188",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188.id-rbn-8107"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8188"
+      },
+      "placement": {
+        "region": "main",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8188",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188.id-rbn-8107": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188.id-rbn-8107",
+      "kind": "command_button",
+      "name": "Polyline",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8188",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8107"
+      },
+      "placement": {
+        "region": "main",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8107",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Pline",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Polyline",
+        "aliases": [
+          "PLINE",
+          "ID_Pline"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_PLINE",
+        "largeResource": "RCDATA_32_PLINE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "PLINE",
+        "macro": "^C^C_pline",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a 2D polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 PLINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189",
+      "kind": "layout_row",
+      "name": "ID_RBN_SM_8189",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189.id-rbn-8110"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SM_8189"
+      },
+      "placement": {
+        "region": "main",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SM_8189",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189.id-rbn-8110": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189.id-rbn-8110",
+      "kind": "command_button",
+      "name": "Line",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-sm-8278.id-rbn-sm-8189",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8110"
+      },
+      "placement": {
+        "region": "main",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8110",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "LI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Line",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Line",
+        "aliases": [
+          "LINE",
+          "ID_Line"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LINE",
+        "largeResource": "RCDATA_32_LINE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LINE",
+        "macro": "^C^C_line",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates straight line segments",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LINE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104",
+      "kind": "layout_group",
+      "name": "ID_RBN_8104",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8104"
+      },
+      "placement": {
+        "region": "main",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8104",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099",
+      "kind": "layout_row",
+      "name": "ID_RBN_8099",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099.rbn-3249"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8099"
+      },
+      "placement": {
+        "region": "main",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8099",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099.rbn-3249": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099.rbn-3249",
+      "kind": "command_button",
+      "name": "Blend Curves",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8099",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_3249"
+      },
+      "placement": {
+        "region": "main",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_3249",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BLEND_CURVES",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Blend Curves",
+        "aliases": [
+          "BLEND",
+          "ID_BLEND_CURVES"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLEND_CURVE",
+        "largeResource": "RCDATA_32_BLEND_CURVE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BLEND",
+        "macro": "^C^C_BLEND",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a tangent or smooth spline between the endpoints of two open curves",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BLEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101",
+      "kind": "layout_row",
+      "name": "ID_RBN_8101",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8101"
+      },
+      "placement": {
+        "region": "main",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8101",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "kind": "split_button",
+      "name": "Arc",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.primary-action",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8098"
+      },
+      "placement": {
+        "region": "main",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8098",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Arc",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AR",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ARC3PT",
+        "largeImage": "RCDATA_32_ARCSCE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Arc variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.primary-action",
+      "kind": "primary_button",
+      "name": "Arc primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8098.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Arc variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Arc menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8098.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Arc menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Arc popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Arc menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0095",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0113",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0115",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0116",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0117",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0118",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0119",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0120",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0121",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0122",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0123",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0124",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0125",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0126"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8098.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Arc variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0094",
+      "kind": "command_button",
+      "name": "3-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0094"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0094",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Arc3point",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3-Point",
+        "official": "Arc, 3 Points",
+        "aliases": [
+          "ARC",
+          "ID_Arc3point"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARC3PT",
+        "largeResource": "RCDATA_32_ARC3PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using three points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0095": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0095",
+      "kind": "separator",
+      "name": "ID_RBN_0095",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0095"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0095",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0113": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0113",
+      "kind": "command_button",
+      "name": "Start, Center, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0113"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0113",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeEn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, End",
+        "official": "Arc, Start, Center, End",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeEn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCE",
+        "largeResource": "RCDATA_32_ARCSCE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using the start point, center, and endpoint",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0115": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0115",
+      "kind": "command_button",
+      "name": "Start, Center, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0115"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0115",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeAn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, Angle",
+        "official": "Arc, Start, Center, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeAn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCA",
+        "largeResource": "RCDATA_32_ARCSCA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c \\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, center, and an included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0116": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0116",
+      "kind": "command_button",
+      "name": "Start, Center, Length",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0116"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0116",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, Center, Length",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStCeLe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, Center, Length",
+        "official": "Arc, Start, Center, Length",
+        "aliases": [
+          "ARC",
+          "ID_ArcStCeLe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSCL",
+        "largeResource": "RCDATA_32_ARCSCL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_c \\_l",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, center, and the length of a chord",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0117": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0117",
+      "kind": "separator",
+      "name": "ID_RBN_0117",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0117"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0117",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0118": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0118",
+      "kind": "command_button",
+      "name": "Start, End, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0118"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0118",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnAg",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Angle",
+        "official": "Arc, Start, End, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnAg"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSEA",
+        "largeResource": "RCDATA_32_ARCSEA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and an included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0119": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0119",
+      "kind": "command_button",
+      "name": "Start, End, Direction",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0119"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0119",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Direction",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnDi",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Direction",
+        "official": "Arc, Start, End, Direction",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnDi"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSED",
+        "largeResource": "RCDATA_32_ARCSED",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_d",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and a tangent direction at the start point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0120": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0120",
+      "kind": "command_button",
+      "name": "Start, End, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0120"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0120",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Start, End, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcStEnRa",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Start, End, Radius",
+        "official": "Arc, Start, End, Radius",
+        "aliases": [
+          "ARC",
+          "ID_ArcStEnRa"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCSER",
+        "largeResource": "RCDATA_32_ARCSER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc \\_e \\_r",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a start point, endpoint, and a radius",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0121": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0121",
+      "kind": "separator",
+      "name": "ID_RBN_0121",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0121"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0121",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0122": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0122",
+      "kind": "command_button",
+      "name": "Center, Start, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0122"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0122",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStEn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, End",
+        "official": "Arc, Center, Start, End",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStEn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSE",
+        "largeResource": "RCDATA_32_ARCCSE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and a third point that determines the endpoint",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0123": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0123",
+      "kind": "command_button",
+      "name": "Center, Start, Angle",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0123"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0123",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, Angle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStAn",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, Angle",
+        "official": "Arc, Center, Start, Angle",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStAn"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSA",
+        "largeResource": "RCDATA_32_ARCCSA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c \\\\_a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and the included angle",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0124": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0124",
+      "kind": "command_button",
+      "name": "Center, Start, Length",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0124"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0124",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Start, Length",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcCeStLe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Start, Length",
+        "official": "Arc, Center, Start, Length",
+        "aliases": [
+          "ARC",
+          "ID_ArcCeStLe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCSL",
+        "largeResource": "RCDATA_32_ARCCSL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc _c \\\\_l",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc using a center point, start point, and the length of a chord",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0125": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0125",
+      "kind": "separator",
+      "name": "ID_RBN_0125",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0125"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0125",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0126": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu.id-rbn-0126",
+      "kind": "command_button",
+      "name": "Continue",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0126"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 102
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8101.id-rbn-8098",
+      "ui": {
+        "uid": "ID_RBN_0126",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Continue",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ArcContin",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Continue",
+        "official": "Arc, Continue",
+        "aliases": [
+          "ARC",
+          "ID_ArcContin"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARCCON",
+        "largeResource": "RCDATA_32_ARCCON",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARC",
+        "macro": "^C^C_arc ;",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an arc tangent to the last line or arc drawn",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103",
+      "kind": "layout_row",
+      "name": "ID_RBN_8103",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8103"
+      },
+      "placement": {
+        "region": "main",
+        "order": 103
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8103",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "kind": "split_button",
+      "name": "Circle",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.primary-action",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8100"
+      },
+      "placement": {
+        "region": "main",
+        "order": 104
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8100",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Circle",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "CI",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Circle variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.primary-action",
+      "kind": "primary_button",
+      "name": "Circle primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8100.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 105
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Circle variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Circle menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8100.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 106
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Circle menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Circle popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Circle menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0128",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0129",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0130",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0131",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0132",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0133",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0134"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8100.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 107
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Circle variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0127",
+      "kind": "command_button",
+      "name": "Center, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0127"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 108
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0127",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleRad",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Radius",
+        "official": "Circle, Center, Radius",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleRad"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRRAD",
+        "largeResource": "RCDATA_32_CIRRAD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using a center point and a radius",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0128": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0128",
+      "kind": "command_button",
+      "name": "Center, Diameter",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0128"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 109
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0128",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center, Diameter",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleDia",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center, Diameter",
+        "official": "Circle, Center, Diameter",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleDia"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRDIA",
+        "largeResource": "RCDATA_32_CIRDIA",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle \\_d",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using a center point and a diameter",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0129": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0129",
+      "kind": "separator",
+      "name": "ID_RBN_0129",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0129"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 110
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0129",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0130": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0130",
+      "kind": "command_button",
+      "name": "2-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0130"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 111
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0130",
+        "controlId": "AcRibbonCommandButton",
+        "text": "2-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Circle2pt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "2-Point",
+        "official": "Circle, 2 Points",
+        "aliases": [
+          "CIRCLE",
+          "ID_Circle2pt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIR2PT",
+        "largeResource": "RCDATA_32_CIR2PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _2p",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using two endpoints of the diameter",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0131": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0131",
+      "kind": "command_button",
+      "name": "3-Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0131"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 112
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0131",
+        "controlId": "AcRibbonCommandButton",
+        "text": "3-Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Circle3pt",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "3-Point",
+        "official": "Circle, 3 Points",
+        "aliases": [
+          "CIRCLE",
+          "ID_Circle3pt"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIR3PT",
+        "largeResource": "RCDATA_32_CIR3PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _3p",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle using three points on the circumference",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0132": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0132",
+      "kind": "separator",
+      "name": "ID_RBN_0132",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0132"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 113
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0132",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0133": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0133",
+      "kind": "command_button",
+      "name": "Tan, Tan, Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0133"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 114
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0133",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tan, Tan, Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleTTR",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tan, Tan, Radius",
+        "official": "Circle, Tan, Tan, Radius",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleTTR"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRTTR",
+        "largeResource": "RCDATA_32_CIRTTR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _ttr",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle with a specified radius tangent to two objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0134": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu.id-rbn-0134",
+      "kind": "command_button",
+      "name": "Tan, Tan, Tan",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0134"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 115
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8073.id-rbn-8104.id-rbn-8103.id-rbn-8100",
+      "ui": {
+        "uid": "ID_RBN_0134",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Tan, Tan, Tan",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CircleTTT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Tan, Tan, Tan",
+        "official": "Circle, Tan, Tan, Tan",
+        "aliases": [
+          "CIRCLE",
+          "ID_CircleTTT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CIRTTT",
+        "largeResource": "RCDATA_32_CIRTTT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CIRCLE",
+        "macro": "^C^C_circle _3p _tan \\_tan \\_tan \\",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a circle tangent to three objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CIRCLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8074": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8074",
+      "kind": "panel_break",
+      "name": "ID_RBN_8074",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8074"
+      },
+      "placement": {
+        "region": "main",
+        "order": 116
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8074",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+      "kind": "layout_row",
+      "name": "ID_RBN_8306",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8308",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8307"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8306"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 117
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8306",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "kind": "split_button",
+      "name": "Ellipse",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.primary-action",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8102"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 118
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8102",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Ellipse",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "EL",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ELLAE",
+        "largeImage": "RCDATA_16_ELLAE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Ellipse variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.primary-action",
+      "kind": "primary_button",
+      "name": "Ellipse primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8102.primary"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 119
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Ellipse variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Ellipse menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8102.menu-trigger"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 120
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Ellipse menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Ellipse popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Ellipse menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0136",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0137",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0138"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8102.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 121
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Ellipse variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0135",
+      "kind": "command_button",
+      "name": "Center",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0135"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 122
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "ui": {
+        "uid": "ID_RBN_0135",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Center",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseCe",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Center",
+        "official": "Ellipse, Center",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseCe"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLCEN",
+        "largeResource": "RCDATA_32_ELLCEN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse _c",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an ellipse using a specified center point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0136": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0136",
+      "kind": "command_button",
+      "name": "Axis, End",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0136"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 123
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "ui": {
+        "uid": "ID_RBN_0136",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Axis, End",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseAx",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Axis, End",
+        "official": "Ellipse, Axis, End",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseAx"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLAE",
+        "largeResource": "RCDATA_32_ELLAE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an ellipse or an elliptical arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0137": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0137",
+      "kind": "separator",
+      "name": "ID_RBN_0137",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0137"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 124
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "ui": {
+        "uid": "ID_RBN_0137",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0138": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu.id-rbn-0138",
+      "kind": "command_button",
+      "name": "Elliptical Arc",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0138"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 125
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8102",
+      "ui": {
+        "uid": "ID_RBN_0138",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Elliptical Arc",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_EllipseAr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Elliptical Arc",
+        "official": "Ellipse, Arc",
+        "aliases": [
+          "ELLIPSE",
+          "ID_EllipseAr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ELLARC",
+        "largeResource": "RCDATA_32_ELLARC",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ELLIPSE",
+        "macro": "^C^C_ellipse _a",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an elliptical arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ELLIPSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "kind": "split_button",
+      "name": "Point Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.primary-action",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8309"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 126
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8309",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Point Drop-down",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PT",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_POINT",
+        "largeImage": "RCDATA_16_POINT",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Point Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.primary-action",
+      "kind": "primary_button",
+      "name": "Point Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8309.primary"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 127
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Point Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Point Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8309.menu-trigger"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 128
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Point Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Point Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Point Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0093",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0139",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0140"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8309.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 129
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Point Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0147",
+      "kind": "command_button",
+      "name": "Multiple Points",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0147"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 130
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "ui": {
+        "uid": "ID_RBN_0147",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Multiple Points",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_PointMult",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Multiple Points",
+        "official": "Point, Multiple Point",
+        "aliases": [
+          "POINT",
+          "ID_PointMult"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POINT",
+        "largeResource": "RCDATA_32_POINT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POINT",
+        "macro": "*^C^C_point",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates multiple point objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0093": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0093",
+      "kind": "separator",
+      "name": "ID_RBN_0093",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0093"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 131
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "ui": {
+        "uid": "ID_RBN_0093",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0139": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0139",
+      "kind": "command_button",
+      "name": "Divide",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0139"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 132
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "ui": {
+        "uid": "ID_RBN_0139",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Divide",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Divide",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Divide",
+        "official": "Divide",
+        "aliases": [
+          "DIVIDE",
+          "ID_Divide"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIVIDE",
+        "largeResource": "RCDATA_32_DIVIDE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIVIDE",
+        "macro": "^C^C_divide",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates evenly spaced point objects or blocks along the length or perimeter of an object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIVIDE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0140": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu.id-rbn-0140",
+      "kind": "command_button",
+      "name": "Measure",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0140"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 133
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8309",
+      "ui": {
+        "uid": "ID_RBN_0140",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Measure",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Measure",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Measure",
+        "official": "Measure",
+        "aliases": [
+          "MEASURE",
+          "ID_Measure"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MEASUR",
+        "largeResource": "RCDATA_32_MEASUR",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "MEASURE",
+        "macro": "^C^C_measure",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates point objects or blocks at measured intervals along the length or perimeter of an object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 MEASURE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8308": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8308",
+      "kind": "command_button",
+      "name": "Rectangle",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8308"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 134
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8308",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Rectang",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Rectangle",
+        "aliases": [
+          "RECTANG",
+          "ID_Rectang"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RECTAN",
+        "largeResource": "RCDATA_32_RECTAN",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "RECTANG",
+        "macro": "^C^C_rectang",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a rectangular polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 RECTANG command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8307": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306.id-rbn-8307",
+      "kind": "command_button",
+      "name": "Polygon",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8306",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8307"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 135
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8307",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "PO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Polygon",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Polygon",
+        "aliases": [
+          "POLYGON",
+          "ID_Polygon"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POLYGO",
+        "largeResource": "RCDATA_32_POLYGO",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "POLYGON",
+        "macro": "^C^C_polygon",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an equilateral closed polyline",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 POLYGON command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "kind": "layout_row",
+      "name": "ID_RBN_8285",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8286",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8287",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8305",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8302",
+        "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8304"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8285"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 136
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8285",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8286": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8286",
+      "kind": "command_button",
+      "name": "Extend",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8286"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 137
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8286",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ET",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Extend",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Extend",
+        "aliases": [
+          "EXTEND",
+          "ID_Extend"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTEND",
+        "largeResource": "RCDATA_32_EXTEND",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXTEND",
+        "macro": "^C^C_extend",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Extends objects to meet the edges of other objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXTEND command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8287": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8287",
+      "kind": "command_button",
+      "name": "Join",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8287"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 138
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8287",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "JO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Join",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Join",
+        "aliases": [
+          "JOIN",
+          "ID_Join"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_JOIN",
+        "largeResource": "RCDATA_32_JOIN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "JOIN",
+        "macro": "^C^C_join",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Joins similar objects to form a single, unbroken object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 JOIN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8305": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8305",
+      "kind": "separator",
+      "name": "ID_RBN_8305",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8305"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 139
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8305",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8302": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8302",
+      "kind": "command_button",
+      "name": "Break",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8302"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 140
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8302",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Break",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Break",
+        "aliases": [
+          "BREAK",
+          "ID_Break"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BRE2PT",
+        "largeResource": "RCDATA_32_BRE2PT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREAK",
+        "macro": "^C^C_break",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks the selected object between two points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREAK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8304": {
+      "id": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285.id-rbn-8304",
+      "kind": "command_button",
+      "name": "Break at Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-surfacetab.id-rbn-surface-curves.id-rbn-8285",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_8304"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 141
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_8304",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "BP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BreakSele",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Break at Point",
+        "aliases": [
+          "BREAKATPOINT",
+          "ID_BreakSele"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BREAKATPT",
+        "largeResource": "RCDATA_32_BREAKATPT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BREAKATPOINT",
+        "macro": "^C^C_breakatpoint",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Breaks the selected object at a single point",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BREAKATPOINT command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

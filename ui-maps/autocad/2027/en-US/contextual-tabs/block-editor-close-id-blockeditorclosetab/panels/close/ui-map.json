@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditorclosetab-panel-close",
+  "generatedAt": "2026-08-25T21:52:59.8126032Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorCloseTab",
+    "tabName": "Block Editor - Close",
+    "panelUid": "ID_PanelBlockEditorClose",
+    "panelName": "Close",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditorclosetab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditorclosetab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditorclosetab",
+      "kind": "tab",
+      "name": "Block Editor - Close",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorCloseTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorCloseTab",
+        "text": "Block Editor - Close",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Block Editor - Close Contextual Merged Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose",
+      "kind": "panel",
+      "name": "Close",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditorclosetab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254",
+        "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-0074"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelBlockEditorClose"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelBlockEditorClose",
+        "text": "Close",
+        "keyTip": null,
+        "alias": "ID_BlockClose",
+        "officialName": "Block Editor - Close",
+        "resizeStyle": "NoCollapse",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0254",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254.id-rbn-cmdbtn-bclose"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0254"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0254",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254.id-rbn-cmdbtn-bclose": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254.id-rbn-cmdbtn-bclose",
+      "kind": "command_button",
+      "name": "Close\rBlock Editor",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-row-0254",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BCLOSE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BCLOSE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Close\rBlock Editor",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "XX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BClose",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Close\rBlock Editor",
+        "official": "Close",
+        "aliases": [
+          "BCLOSE",
+          "ID_BClose"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_32_CONTEXTUAL_PANEL_CLOSE",
+        "largeResource": "RCDATA_32_CONTEXTUAL_PANEL_CLOSE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BCLOSE",
+        "macro": "^C^C_BCLOSE",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Exit Block Editor and Return to Drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BCLOSE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-0074": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose.id-rbn-0074",
+      "kind": "panel_break",
+      "name": "ID_RBN_0074",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditorclosetab.id-panelblockeditorclose",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0074"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0074",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

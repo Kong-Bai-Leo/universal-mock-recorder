@@ -1,0 +1,936 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmanage-panel-action-recorder",
+  "generatedAt": "2026-08-25T21:52:26.3333066Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabManage",
+    "tabName": "Manage",
+    "panelUid": "ID_PanelActionRecorder",
+    "panelName": "Action Recorder",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "kind": "tab",
+      "name": "Manage",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabManage"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabManage",
+        "text": "Manage",
+        "keyTip": "MA",
+        "alias": "ID_TabManage",
+        "officialName": "Manage"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+      "kind": "panel",
+      "name": "Action Recorder",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbnpnl-0026",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelActionRecorder"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelActionRecorder",
+        "text": "Action Recorder",
+        "keyTip": "AX",
+        "alias": "ID_ActionRecorder",
+        "officialName": "Manage - Action Recorder",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0220",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-control-actionrecorderrecorderbuttonitem",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-ribbonseparator-0098",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0220"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0220",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-control-actionrecorderrecorderbuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-control-actionrecorderrecorderbuttonitem",
+      "kind": "ribbon_control",
+      "name": "Record",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERRECORDERBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERRECORDERBUTTONITEM",
+        "controlId": "AcActionRecorderRecorderButtonItem",
+        "text": "Record",
+        "keyTip": "AR"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Record.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0044",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0044"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0044",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0222",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222.id-rbn-control-actionrecorderusermessagebuttonitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0222"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0222",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222.id-rbn-control-actionrecorderusermessagebuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222.id-rbn-control-actionrecorderusermessagebuttonitem",
+      "kind": "ribbon_control",
+      "name": "Insert Message",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0222",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERUSERMESSAGEBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERUSERMESSAGEBUTTONITEM",
+        "controlId": "AcActionRecorderUserMessageButtonItem",
+        "text": "Insert Message",
+        "keyTip": "AM"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Insert Message.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0223",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223.id-rbn-control-actionrecorderbasepointbuttonitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0223"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0223",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223.id-rbn-control-actionrecorderbasepointbuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223.id-rbn-control-actionrecorderbasepointbuttonitem",
+      "kind": "ribbon_control",
+      "name": "Insert Base Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0223",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERBASEPOINTBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERBASEPOINTBUTTONITEM",
+        "controlId": "AcActionRecorderBasePointButtonItem",
+        "text": "Insert Base Point",
+        "keyTip": "AB"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Insert Base Point.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0224",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224.id-rbn-control-actionrecorderuserinputbuttonitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0224"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0224",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224.id-rbn-control-actionrecorderuserinputbuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224.id-rbn-control-actionrecorderuserinputbuttonitem",
+      "kind": "ribbon_control",
+      "name": "Pause for User Input",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0044.id-rbn-row-0224",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERUSERINPUTBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERUSERINPUTBUTTONITEM",
+        "controlId": "AcActionRecorderUserInputButtonItem",
+        "text": "Pause for User Input",
+        "keyTip": "AI"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Pause for User Input.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-ribbonseparator-0098": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-ribbonseparator-0098",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0098",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0098"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0098",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0045",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0045"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0045",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0225",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderplaybackbuttonitem",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-ribbonseparator-0099",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderpreferencebuttonitem",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.rbn-00034701",
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-acactionrecordermanagemacrosbuttonitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0225"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0225",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderplaybackbuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderplaybackbuttonitem",
+      "kind": "ribbon_control",
+      "name": "Play",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERPLAYBACKBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERPLAYBACKBUTTONITEM",
+        "controlId": "AcActionRecorderPlaybackButtonItem",
+        "text": "Play",
+        "keyTip": "AP"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Play.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-ribbonseparator-0099": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-ribbonseparator-0099",
+      "kind": "separator",
+      "name": "ID_RBN_RIBBONSEPARATOR_0099",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_RIBBONSEPARATOR_0099"
+      },
+      "placement": {
+        "region": "main",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_RIBBONSEPARATOR_0099",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderpreferencebuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-actionrecorderpreferencebuttonitem",
+      "kind": "ribbon_control",
+      "name": "Preference",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERPREFERENCEBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERPREFERENCEBUTTONITEM",
+        "controlId": "AcActionRecorderPreferenceButtonItem",
+        "text": "Preference",
+        "keyTip": "AE"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Preference.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.rbn-00034701": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.rbn-00034701",
+      "kind": "separator",
+      "name": "RBN_00034701",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00034701"
+      },
+      "placement": {
+        "region": "main",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00034701",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-acactionrecordermanagemacrosbuttonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225.id-rbn-control-acactionrecordermanagemacrosbuttonitem",
+      "kind": "ribbon_control",
+      "name": "Manage Action Macros",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0225",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACACTIONRECORDERMANAGEMACROSBUTTONITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACACTIONRECORDERMANAGEMACROSBUTTONITEM",
+        "controlId": "AcActionRecorderManageMacrosButtonItem",
+        "text": "Manage Action Macros",
+        "keyTip": "AC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Manage Action Macros.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0226",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226.id-rbn-control-actionrecordercomboboxitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0226"
+      },
+      "placement": {
+        "region": "main",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0226",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226.id-rbn-control-actionrecordercomboboxitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226.id-rbn-control-actionrecordercomboboxitem",
+      "kind": "ribbon_control",
+      "name": "Available Action Macro",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0220.id-rbn-rowpanel-0045.id-rbn-row-0226",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERCOMBOBOXITEM"
+      },
+      "placement": {
+        "region": "main",
+        "order": 23
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERCOMBOBOXITEM",
+        "controlId": "AcActionRecorderComboBoxItem",
+        "text": "Available Action Macro",
+        "keyTip": "AM"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Available Action Macro.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbnpnl-0026": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbnpnl-0026",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_0026",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_0026"
+      },
+      "placement": {
+        "region": "main",
+        "order": 24
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_0026",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0227",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227.id-rbn-control-actionrecordertreeviewribbonitem"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0227"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 25
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0227",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227.id-rbn-control-actionrecordertreeviewribbonitem": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227.id-rbn-control-actionrecordertreeviewribbonitem",
+      "kind": "ribbon_control",
+      "name": "Action Tree",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder.id-rbn-row-0227",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERTREEVIEWRIBBONITEM"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 26
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_ACTIONRECORDERTREEVIEWRIBBONITEM",
+        "controlId": "AcActionRecorderTreeViewRibbonItem",
+        "text": "Action Tree",
+        "keyTip": "AT"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Action Tree.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:28:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

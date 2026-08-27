@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-solidmodeling",
+  "generatedAt": "2026-08-25T21:52:30.8724778Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_SolidModeling",
+    "tabName": "Solid",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-solidmodeling",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-solidmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-solidmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-solidmodeling",
+      "kind": "tab",
+      "name": "Solid",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_SolidModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_SolidModeling",
+        "text": "Solid",
+        "keyTip": "SO",
+        "alias": null,
+        "officialName": "Solid Modeling"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 6,
+    "panels": [
+      {
+        "name": "Primitive",
+        "uid": "RBNU_2118",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2118",
+        "map": "primitive/ui-map.json",
+        "nodes": 26,
+        "actionableControls": 11
+      },
+      {
+        "name": "Solid",
+        "uid": "RBNU_2122",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2122",
+        "map": "solid/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 7
+      },
+      {
+        "name": "Boolean",
+        "uid": "RBNU_2126",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2126",
+        "map": "boolean/ui-map.json",
+        "nodes": 10,
+        "actionableControls": 3
+      },
+      {
+        "name": "Solid Editing",
+        "uid": "RBNU_2130",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2130",
+        "map": "solid-editing/ui-map.json",
+        "nodes": 42,
+        "actionableControls": 21
+      },
+      {
+        "name": "Section",
+        "uid": "RBNU_2219",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.rbnu-2219",
+        "map": "section/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 7
+      },
+      {
+        "name": "Selection",
+        "uid": "ID_PanelSubObject",
+        "nodeId": "autocad.window.main.ribbon.tab.id-solidmodeling.id-panelsubobject",
+        "map": "selection/ui-map.json",
+        "nodes": 10,
+        "actionableControls": 3
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 108,
+    "panels": 6,
+    "actionableControls": 52,
+    "splitButtons": 5,
+    "iconOnlyControls": 4
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

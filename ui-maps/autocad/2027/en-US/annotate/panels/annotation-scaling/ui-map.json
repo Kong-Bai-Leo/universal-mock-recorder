@@ -1,0 +1,912 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-annotation-scaling",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelAnnotationScaling",
+    "panelName": "Annotation Scaling",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+      "kind": "panel",
+      "name": "Annotation Scaling",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-0030"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelAnnotationScaling"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 136
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelAnnotationScaling",
+        "text": "Annotation Scaling",
+        "keyTip": null,
+        "alias": "ID_AnnotationScaling",
+        "officialName": "Annotate - Annotation Scaling",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0107",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0107"
+      },
+      "placement": {
+        "region": "main",
+        "order": 137
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0107",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "kind": "split_button",
+      "name": "Add-Remove Scales Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SCALE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 138
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_SCALE",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Add-Remove Scales Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AC",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Add-Remove Scales Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.primary-action",
+      "kind": "primary_button",
+      "name": "Add-Remove Scales Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SCALE.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 139
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Add-Remove Scales Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Add-Remove Scales Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SCALE.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 140
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Add-Remove Scales Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Add-Remove Scales Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Add-Remove Scales Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1901"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_SCALE.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 141
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Add-Remove Scales Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1900",
+      "kind": "command_button",
+      "name": "Add\rCurrent Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1900"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 142
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1900",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add\rCurrent Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1900",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add\rCurrent Scale",
+        "official": "Add Current Scale",
+        "aliases": [
+          "OBJECTSCALE",
+          "MM_1900"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ANNO_ADD",
+        "largeResource": "RCDATA_32_ANNO_ADD",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OBJECTSCALE",
+        "macro": "^C^C_AIOBJECTSCALEADD",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds the current annotation scale to the selected annotative objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OBJECTSCALE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1901": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu.id-rbn-cmdbtnmm-1901",
+      "kind": "command_button",
+      "name": "Delete Current Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1901"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 143
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-splitbtn-scale",
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1901",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Delete Current Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1901",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Delete Current Scale",
+        "official": "Delete Current Scale",
+        "aliases": [
+          "OBJECTSCALE",
+          "MM_1901"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ANNO_DEL",
+        "largeResource": "RCDATA_32_ANNO_DEL",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OBJECTSCALE",
+        "macro": "^C^C_AIOBJECTSCALEREMOVE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Removes the current annotation scale from the selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OBJECTSCALE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0019",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0019"
+      },
+      "placement": {
+        "region": "main",
+        "order": 144
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0019",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0108",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108.id-rbn-cmdbtn-scalelist"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0108"
+      },
+      "placement": {
+        "region": "main",
+        "order": 145
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0108",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108.id-rbn-cmdbtn-scalelist": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108.id-rbn-cmdbtn-scalelist",
+      "kind": "command_button",
+      "name": "Scale List",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0108",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_SCALELIST"
+      },
+      "placement": {
+        "region": "main",
+        "order": 146
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_SCALELIST",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Scale List",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ScaleList",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Scale List",
+        "official": "Scale List...",
+        "aliases": [
+          "SCALELISTEDIT",
+          "ID_ScaleList"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ANNO_LIST",
+        "largeResource": "RCDATA_32_ANNO_LIST",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SCALELISTEDIT",
+        "macro": "'_scalelistedit",
+        "macroType": "Format",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls the list of scales available for layout viewports, page layouts, and plotting",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SCALELISTEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0109",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109.id-rbn-cmdbtnmm-1735"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0109"
+      },
+      "placement": {
+        "region": "main",
+        "order": 147
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0109",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109.id-rbn-cmdbtnmm-1735": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109.id-rbn-cmdbtnmm-1735",
+      "kind": "command_button",
+      "name": "Add/Delete Scales",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0109",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1735"
+      },
+      "placement": {
+        "region": "main",
+        "order": 148
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1735",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Add/Delete Scales",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1735",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Add/Delete Scales",
+        "official": "Add/Delete Scales...",
+        "aliases": [
+          "OBJECTSCALE",
+          "MM_1735"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ANNO_ADDDEL",
+        "largeResource": "RCDATA_32_ANNO_ADDDEL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "OBJECTSCALE",
+        "macro": "^C^C_objectscale",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds or deletes supported scales for annotative objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 OBJECTSCALE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0110",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110.id-rbn-cmdbtnmm-1736"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0110"
+      },
+      "placement": {
+        "region": "main",
+        "order": 149
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0110",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110.id-rbn-cmdbtnmm-1736": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110.id-rbn-cmdbtnmm-1736",
+      "kind": "command_button",
+      "name": "Sync Scale Positions",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-row-0107.id-rbn-rowpanel-0019.id-rbn-row-0110",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTNMM_1736"
+      },
+      "placement": {
+        "region": "main",
+        "order": 150
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTNMM_1736",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Sync Scale Positions",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_1736",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Sync Scale Positions",
+        "official": "Synchronize Multiple-scale Positions",
+        "aliases": [
+          "ANNORESET",
+          "MM_1736"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SYNC_MULT_SCALE_POSITIONS",
+        "largeResource": "RCDATA_32_SYNC_MULT_SCALE_POSITIONS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ANNORESET",
+        "macro": "^C^C_annoreset",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Resets the locations of all alternate scale representations of the selected annotative objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ANNORESET command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-0030": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling.id-rbn-0030",
+      "kind": "panel_break",
+      "name": "ID_RBN_0030",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelannotationscaling",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0030"
+      },
+      "placement": {
+        "region": "main",
+        "order": 151
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0030",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

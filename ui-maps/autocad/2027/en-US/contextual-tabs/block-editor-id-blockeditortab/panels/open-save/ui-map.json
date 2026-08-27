@@ -1,0 +1,657 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditortab-panel-open-save",
+  "generatedAt": "2026-08-25T21:53:15.0301157Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorTab",
+    "tabName": "Block Editor",
+    "panelUid": "ID_PanelBlockEditorOpenSave",
+    "panelName": "Open/Save ",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "kind": "tab",
+      "name": "Block Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorTab",
+        "text": "Block Editor",
+        "keyTip": "BE",
+        "alias": null,
+        "officialName": "Block Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+      "kind": "panel",
+      "name": "Open/Save ",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.id-rbnpnl-8568",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelBlockEditorOpenSave"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelBlockEditorOpenSave",
+        "text": "Open/Save ",
+        "keyTip": "BO",
+        "alias": "ID_BlockManage",
+        "officialName": "Block Editor - Open/Save",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867",
+      "kind": "layout_row",
+      "name": "RBNU_0867",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0867"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0867",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866",
+      "kind": "layout_group",
+      "name": "RBNU_0866",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0866"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0866",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861",
+      "kind": "layout_row",
+      "name": "RBNU_0861",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0853",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0854",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0856",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0857"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0861"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0861",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0853": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0853",
+      "kind": "command_button",
+      "name": "Edit\rBlock",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0853"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0853",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit\rBlock",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Bedit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit\rBlock",
+        "official": "Block Editor",
+        "aliases": [
+          "BEDIT",
+          "ID_Bedit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BEDIT",
+        "largeResource": "RCDATA_32_BEDIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BEDIT",
+        "macro": "^C^C_bedit",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the block definition in the Block Editor",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0854": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0854",
+      "kind": "command_button",
+      "name": "Save\rBlock",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0854"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0854",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Save\rBlock",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BSave",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Save\rBlock",
+        "official": "Save",
+        "aliases": [
+          "BSAVE",
+          "ID_BSave"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SAVE_BLOCK_DEFINITION",
+        "largeResource": "RCDATA_32_SAVE_BLOCK_DEFINITION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BSAVE",
+        "macro": "^C^C_BSAVE",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Save Block Definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BSAVE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0856": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0856",
+      "kind": "separator",
+      "name": "RBNU_0856",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0856"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0856",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0857": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861.rbnu-0857",
+      "kind": "command_button",
+      "name": "Test\rBlock",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-0867.rbnu-0866.rbnu-0861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0857"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0857",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Test\rBlock",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "TB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MMU_0001",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Test\rBlock",
+        "official": "Test Block",
+        "aliases": [
+          "BTESTBLOCK",
+          "MMU_0001"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BTESTBLOCK",
+        "largeResource": "RCDATA_32_BTESTBLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BTESTBLOCK",
+        "macro": "^C^C_btestblock",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens a window to test the block",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BTESTBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.id-rbnpnl-8568": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.id-rbnpnl-8568",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8568",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8568"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8568",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033",
+      "kind": "layout_row",
+      "name": "RBNU_2033",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033.rbnu-2034"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2033"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2033",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033.rbnu-2034": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033.rbnu-2034",
+      "kind": "command_button",
+      "name": "Save Block As",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave.rbnu-2033",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2034"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2034",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Save Block As",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BSaveAs",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Save Block As",
+        "official": "Save Block As",
+        "aliases": [
+          "BSAVEAS",
+          "ID_BSaveAs"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SAVE_BLOCK_AS",
+        "largeResource": "RCDATA_32_SAVE_BLOCK_AS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BSAVEAS",
+        "macro": "^C^C_BSAVEAS",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves a copy of the block definition under a new name",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BSAVEAS command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

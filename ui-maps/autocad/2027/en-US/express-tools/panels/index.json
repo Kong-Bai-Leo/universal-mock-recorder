@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "RBN_0047",
+  "tabName": "Express Tools",
+  "panelCount": 8,
+  "panels": [
+    {
+      "name": "Blocks",
+      "uid": "RBN_0001",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0001",
+      "map": "blocks/ui-map.json",
+      "nodes": 24,
+      "actionableControls": 9
+    },
+    {
+      "name": "Text",
+      "uid": "RBN_0022",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0022",
+      "map": "text/ui-map.json",
+      "nodes": 33,
+      "actionableControls": 14
+    },
+    {
+      "name": "Modify",
+      "uid": "RBN_0041",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0041",
+      "map": "modify/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 6
+    },
+    {
+      "name": "Layout",
+      "uid": "RBN_0051",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "map": "layout/ui-map.json",
+      "nodes": 14,
+      "actionableControls": 4
+    },
+    {
+      "name": "Draw",
+      "uid": "RBN_0065",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0065",
+      "map": "draw/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Dimension",
+      "uid": "RBN_0072",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0072",
+      "map": "dimension/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 8
+    },
+    {
+      "name": "Tools",
+      "uid": "RBN_0100",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0100",
+      "map": "tools/ui-map.json",
+      "nodes": 21,
+      "actionableControls": 7
+    },
+    {
+      "name": "Web",
+      "uid": "RBN_0113",
+      "nodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0113",
+      "map": "web/ui-map.json",
+      "nodes": 13,
+      "actionableControls": 4
+    }
+  ]
+}

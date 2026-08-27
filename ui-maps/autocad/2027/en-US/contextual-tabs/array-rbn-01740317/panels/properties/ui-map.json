@@ -1,0 +1,312 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-01740317-panel-properties",
+  "generatedAt": "2026-08-25T21:52:44.4705412Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_01740317",
+    "tabName": "Array",
+    "panelUid": "RBN_01740178",
+    "panelName": "Properties",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317",
+      "kind": "tab",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740317"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740317",
+        "text": "Array",
+        "keyTip": "AR",
+        "alias": null,
+        "officialName": "Rectangular Array Contextual tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+      "kind": "panel",
+      "name": "Properties",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180",
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740181"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740178"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740178",
+        "text": "Properties",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Rectangular Array - Properties",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180",
+      "kind": "layout_row",
+      "name": "RBN_01740180",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180.rbn-01740241"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740180"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740180",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180.rbn-01740241": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180.rbn-01740241",
+      "kind": "command_button",
+      "name": "Base Point",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740180",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740241"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740241",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Base Point",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ASSOCARRAY_RECT_BASEPOINT",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Base Point",
+        "official": "Base Point",
+        "aliases": [
+          "ARRAYEDIT",
+          "ID_ASSOCARRAY_RECT_BASEPOINT"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRAYRECTBASEPOINT",
+        "largeResource": "RCDATA_32_ARRAYRECTBASEPOINT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ARRAYEDIT",
+        "macro": "^C^C_arrayedit _b \\_x",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Redefines the base point of the array.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ARRAYEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740181": {
+      "id": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178.rbn-01740181",
+      "kind": "panel_break",
+      "name": "RBN_01740181",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-01740317.rbn-01740178",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740181"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740181",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

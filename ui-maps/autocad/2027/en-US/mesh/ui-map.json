@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "tab_manifest",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabmeshmodeling",
+  "generatedAt": "2026-08-25T21:52:33.3457511Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabMeshModeling",
+    "tabName": "Mesh",
+    "completenessPolicy": "Every actionable Ribbon control, icon-only control, split-button part, menu item, separator, and layout container from the selected installed CUIX tab is retained.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabmeshmodeling"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabmeshmodeling": {
+      "id": "autocad.window.main.ribbon.tab.id-tabmeshmodeling",
+      "kind": "tab",
+      "name": "Mesh",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabMeshModeling"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabMeshModeling",
+        "text": "Mesh",
+        "keyTip": "MM",
+        "alias": "ID_TabMeshModeling",
+        "officialName": "Mesh Modeling"
+      }
+    }
+  },
+  "fragments": {
+    "kind": "panel_maps",
+    "index": "panels/index.json",
+    "count": 6,
+    "panels": [
+      {
+        "name": "Primitives",
+        "uid": "ID_PanelPrimitives",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelprimitives",
+        "map": "primitives/ui-map.json",
+        "nodes": 26,
+        "actionableControls": 14
+      },
+      {
+        "name": "Mesh",
+        "uid": "ID_PanelSmoothMesh",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelsmoothmesh",
+        "map": "mesh/ui-map.json",
+        "nodes": 19,
+        "actionableControls": 7
+      },
+      {
+        "name": "Mesh Edit",
+        "uid": "ID_PanelMeshEdit",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelmeshedit",
+        "map": "mesh-edit/ui-map.json",
+        "nodes": 19,
+        "actionableControls": 6
+      },
+      {
+        "name": "Convert Mesh",
+        "uid": "ID_PanelConvertMesh",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelconvertmesh",
+        "map": "convert-mesh/ui-map.json",
+        "nodes": 13,
+        "actionableControls": 3
+      },
+      {
+        "name": "Section",
+        "uid": "RBN_01737906",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.rbn-01737906",
+        "map": "section/ui-map.json",
+        "nodes": 20,
+        "actionableControls": 7
+      },
+      {
+        "name": "Selection",
+        "uid": "ID_PanelSubObject",
+        "nodeId": "autocad.window.main.ribbon.tab.id-tabmeshmodeling.id-panelsubobject",
+        "map": "selection/ui-map.json",
+        "nodes": 10,
+        "actionableControls": 3
+      }
+    ]
+  },
+  "summary": {
+    "nodes": 87,
+    "panels": 6,
+    "actionableControls": 40,
+    "splitButtons": 1,
+    "iconOnlyControls": 11
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

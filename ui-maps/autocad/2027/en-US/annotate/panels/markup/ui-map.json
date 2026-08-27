@@ -1,0 +1,785 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabannotate-panel-markup",
+  "generatedAt": "2026-08-25T21:52:20.9652645Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabAnnotate",
+    "tabName": "Annotate",
+    "panelUid": "ID_PanelMarkup",
+    "panelName": "Markup",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "kind": "tab",
+      "name": "Annotate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabAnnotate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabAnnotate",
+        "text": "Annotate",
+        "keyTip": "AN",
+        "alias": "ID_TabAnnotate",
+        "officialName": "Annotate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+      "kind": "panel",
+      "name": "Markup",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-0029",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelMarkup"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 123
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelMarkup",
+        "text": "Markup",
+        "keyTip": "UP",
+        "alias": "ID_Markup",
+        "officialName": "Annotate - Markup",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0106",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-cmdbtn-wipeout-0002",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0106"
+      },
+      "placement": {
+        "region": "main",
+        "order": 124
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0106",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-cmdbtn-wipeout-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-cmdbtn-wipeout-0002",
+      "kind": "command_button",
+      "name": "Wipeout",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_WIPEOUT_0002"
+      },
+      "placement": {
+        "region": "main",
+        "order": 125
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_WIPEOUT_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Wipeout",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "WI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Wipeout",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Wipeout",
+        "official": "Wipeout",
+        "aliases": [
+          "WIPEOUT",
+          "ID_Wipeout"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_WIPEOUT",
+        "largeResource": "RCDATA_32_WIPEOUT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "WIPEOUT",
+        "macro": "^C^C_wipeout",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a wipeout object",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 WIPEOUT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "kind": "split_button",
+      "name": "Revision\rCloud",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_REVCLOUD"
+      },
+      "placement": {
+        "region": "main",
+        "order": 126
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_REVCLOUD",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Revision\rCloud",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AC",
+        "behavior": "SplitFollowStaticText",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "static_default",
+      "semantics": {
+        "description": "Provides the available Revision\rCloud variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.primary-action",
+      "kind": "primary_button",
+      "name": "Revision\rCloud primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_REVCLOUD.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 127
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Revision\rCloud variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "static_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Revision\rCloud menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_REVCLOUD.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 128
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Revision\rCloud menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Revision\rCloud popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Revision\rCloud menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-polygon",
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-0002"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_REVCLOUD.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 129
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Revision\rCloud variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-rectangle",
+      "kind": "command_button",
+      "name": "Rectangular",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_RECTANGLE"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 130
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_RECTANGLE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rectangular",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud_Rectangle",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rectangular",
+        "official": "Rectangular Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud_Rectangle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD_RECTANGLE",
+        "largeResource": "RCDATA_32_REVCLOUD_RECTANGLE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _R",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a rectangle.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-polygon": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-polygon",
+      "kind": "command_button",
+      "name": "Polygonal",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_POLYGON"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 131
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_POLYGON",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polygonal",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud_Polygon",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polygonal",
+        "official": "Polygonal Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud_Polygon"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD_POLYGONAL",
+        "largeResource": "RCDATA_32_REVCLOUD_POLYGONAL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _P",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a polyline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-0002": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu.id-rbn-cmdbtn-revcloud-0002",
+      "kind": "command_button",
+      "name": "Freehand",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_0002"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 132
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-row-0106.id-rbn-splitbtn-revcloud",
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_REVCLOUD_0002",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Freehand",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "RC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Revcloud",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Freehand",
+        "official": "Freehand Revision Cloud",
+        "aliases": [
+          "REVCLOUD",
+          "ID_Revcloud"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REVCLOUD",
+        "largeResource": "RCDATA_32_REVCLOUD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REVCLOUD",
+        "macro": "^C^C_^Rrevcloud _F",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a revision cloud drawing a freeform polyline.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REVCLOUD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-0029": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.id-rbn-0029",
+      "kind": "panel_break",
+      "name": "ID_RBN_0029",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0029"
+      },
+      "placement": {
+        "region": "main",
+        "order": 133
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0029",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059",
+      "kind": "layout_row",
+      "name": "RBN_01738059",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059.rbn-01738058"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738059"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 134
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738059",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059.rbn-01738058": {
+      "id": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059.rbn-01738058",
+      "kind": "gallery",
+      "name": "Revision Cloud Layer Gallery",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabannotate.id-panelmarkup.rbn-01738059",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738058"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 135
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738058",
+        "controlId": "AcRevcloudLayerCombo",
+        "text": "Revision Cloud Layer Gallery",
+        "keyTip": "RL"
+      },
+      "semantics": {
+        "description": "Displays the Revision Cloud Layer Gallery gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Revision Cloud Layer Gallery item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:22:00Z",
+    "observedControlCount": 40,
+    "evidence": "../../live-observation.json"
+  }
+}

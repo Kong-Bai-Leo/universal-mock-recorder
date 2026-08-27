@@ -1,0 +1,635 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-0047-panel-layout",
+  "generatedAt": "2026-08-25T19:50:50.7473176Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "acetmain.cuix",
+      "AecArchxOE.cuix",
+      "AppManager.cuix",
+      "custom.cuix",
+      "dbcon.cuix",
+      "FeaturedApps.cuix",
+      "ModelDoc.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_0047",
+    "tabName": "Express Tools",
+    "panelUid": "RBN_0051",
+    "panelName": "Layout",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047",
+      "kind": "tab",
+      "name": "Express Tools",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0047"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0047",
+        "text": "Express Tools",
+        "keyTip": "ET",
+        "alias": null,
+        "officialName": "Express Tools"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "kind": "panel",
+      "name": "Layout",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0054",
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0051"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 68
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0051",
+        "text": "Layout",
+        "keyTip": "EL",
+        "alias": null,
+        "officialName": "Express Tools - Layout",
+        "resizeStyle": "Default",
+        "sourceCuix": "acetmain.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053",
+      "kind": "layout_row",
+      "name": "RBN_0053",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053.rbn-0055"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0053"
+      },
+      "placement": {
+        "region": "main",
+        "order": 69
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0053",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053.rbn-0055": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053.rbn-0055",
+      "kind": "command_button",
+      "name": "Align\rSpace",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0053",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0055"
+      },
+      "placement": {
+        "region": "main",
+        "order": 70
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0055",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Align\rSpace",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETASPACE",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Align\rSpace",
+        "official": "Align Space",
+        "aliases": [
+          "ALIGNSPACE",
+          "ID_ACETASPACE"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ALIGN_SPACE",
+        "largeResource": "RCDATA_32_ALIGN_SPACE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ALIGNSPACE",
+        "macro": "^C^Calignspace",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Aligns model space objects in different viewports with each other or with objects in paper space",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ALIGNSPACE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056",
+      "kind": "layout_row",
+      "name": "RBN_0056",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056.rbn-0058"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0056"
+      },
+      "placement": {
+        "region": "main",
+        "order": 71
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0056",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056.rbn-0058": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056.rbn-0058",
+      "kind": "command_button",
+      "name": "Synchronize Viewports",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0056",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0058"
+      },
+      "placement": {
+        "region": "main",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0058",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SY",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETVPSYNC",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Synchronize Viewports",
+        "aliases": [
+          "VPSYNC",
+          "ID_ACETVPSYNC"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VPSYNC",
+        "largeResource": "RCDATA_32_VPSYNC",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VPSYNC",
+        "macro": "^C^Cvpsync",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Synchronizes one or more viewports with a master viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VPSYNC command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057",
+      "kind": "layout_row",
+      "name": "RBN_0057",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057.rbn-0059"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0057"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0057",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057.rbn-0059": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057.rbn-0059",
+      "kind": "command_button",
+      "name": "Merge Layout",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0057",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0059"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0059",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ML",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETLAYOUTMRG",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Merge Layout",
+        "aliases": [
+          "LAYOUTMERGE",
+          "ID_ACETLAYOUTMRG"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYOUTMERGE",
+        "largeResource": "RCDATA_32_LAYOUTMERGE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYOUTMERGE",
+        "macro": "^C^Clayoutmerge",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Merges the objects from other layouts into one layout and saves corresponding views",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYOUTMERGE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0054": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0054",
+      "kind": "panel_break",
+      "name": "RBN_0054",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0054"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0054",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060",
+      "kind": "layout_row",
+      "name": "RBN_0060",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060.rbn-0061"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0060"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0060",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060.rbn-0061": {
+      "id": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060.rbn-0061",
+      "kind": "command_button",
+      "name": "List Viewport Scale",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-0047.rbn-0051.rbn-0060",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_0061"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_0061",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "LV",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ACETVPSCAL",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "List Viewport Scale",
+        "aliases": [
+          "VPSCALE",
+          "ID_ACETVPSCAL"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VPSCALE",
+        "largeResource": "RCDATA_32_VPSCALE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VPSCALE",
+        "macro": "^C^Cvpscale",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Lists the scale of a selected viewport",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VPSCALE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:36:00Z",
+    "observedControlCount": 26,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,2243 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-blockeditortab-panel-action-parameters",
+  "generatedAt": "2026-08-25T21:53:15.0301157Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_BlockEditorTab",
+    "tabName": "Block Editor",
+    "panelUid": "ID_PanelBlockEditorActionParameters",
+    "panelName": "Action Parameters",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "kind": "tab",
+      "name": "Block Editor",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_BlockEditorTab"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_BlockEditorTab",
+        "text": "Block Editor",
+        "keyTip": "BE",
+        "alias": null,
+        "officialName": "Block Editor Contextual Tab"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "kind": "panel",
+      "name": "Action Parameters",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.id-rbnpnl-8453",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelBlockEditorActionParameters"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelBlockEditorActionParameters",
+        "text": "Action Parameters",
+        "keyTip": "BP",
+        "alias": "ID_BlockTools",
+        "officialName": "Block Editor - Action Parameters",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+      "kind": "layout_row",
+      "name": "RBNU_0241",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0292",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0293"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0241"
+      },
+      "placement": {
+        "region": "main",
+        "order": 82
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0241",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "kind": "split_button",
+      "name": "Action Parameters Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.primary-action",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0290"
+      },
+      "placement": {
+        "region": "main",
+        "order": 83
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0290",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Action Parameters Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AP",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Action Parameters Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033"
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.primary-action",
+      "kind": "primary_button",
+      "name": "Action Parameters Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0290.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 84
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Action Parameters Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Action Parameters Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0290.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 85
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Action Parameters Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Action Parameters Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Action Parameters Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0411",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0412",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0525",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0526",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0527",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0528",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0529",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0530",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0531"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0290.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 86
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Action Parameters Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbn-00013033",
+      "kind": "command_button",
+      "name": "Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00013033"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 87
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBN_00013033",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Point",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterPoint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Point",
+        "official": "Block Parameter, Point",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterPoint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BPOINTPARAMETER",
+        "largeResource": "RCDATA_32_BPOINTPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _point",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a point parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0411": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0411",
+      "kind": "command_button",
+      "name": "Linear",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0411"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 88
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0411",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Linear",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterLinear",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Linear",
+        "official": "Block Parameter, Linear",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterLinear"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLINEARPARAMETER",
+        "largeResource": "RCDATA_32_BLINEARPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _linear",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a linear parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0412": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0412",
+      "kind": "command_button",
+      "name": "Polar",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0412"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 89
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0412",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polar",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterPolar",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polar",
+        "official": "Block Parameter, Polar",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterPolar"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BPOLARPARAMETER",
+        "largeResource": "RCDATA_32_BPOLARPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _polar",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a polar parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0525": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0525",
+      "kind": "command_button",
+      "name": "XY",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0525"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 90
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0525",
+        "controlId": "AcRibbonCommandButton",
+        "text": "XY",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterXY",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "XY",
+        "official": "Block Parameter, XY",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterXY"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BXYPARAMETER",
+        "largeResource": "RCDATA_32_BXYPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _xy",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds an XY parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0526": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0526",
+      "kind": "command_button",
+      "name": "Rotation",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0526"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 91
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0526",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rotation",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterRotation",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rotation",
+        "official": "Block Parameter, Rotation",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterRotation"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BROTATIONPARAMETER",
+        "largeResource": "RCDATA_32_BROTATIONPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _rotation",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a rotation parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0527": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0527",
+      "kind": "command_button",
+      "name": "Flip",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0527"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 92
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0527",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Flip",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterFlip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Flip",
+        "official": "Block Parameter, Flip",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterFlip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BFLIPPARAMETER",
+        "largeResource": "RCDATA_32_BFLIPPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _flip",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a flip parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0528": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0528",
+      "kind": "command_button",
+      "name": "Alignment",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0528"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 93
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0528",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Alignment",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterAlignment",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Alignment",
+        "official": "Block Parameter, Alignment",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterAlignment"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BALIGNMENTPARAMETER",
+        "largeResource": "RCDATA_32_BALIGNMENTPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _alignment",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds an alignment parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0529": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0529",
+      "kind": "command_button",
+      "name": "Visibility",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0529"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 94
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0529",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Visibility",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterVisibility",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Visibility",
+        "official": "Block Parameter, Visibility",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterVisibility"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BVISIBILITYPARAMETER",
+        "largeResource": "RCDATA_32_BVISIBILITYPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _visibility",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a visibility parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0530": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0530",
+      "kind": "command_button",
+      "name": "Lookup",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0530"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 95
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0530",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lookup",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterLookup",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lookup",
+        "official": "Block Parameter, Lookup",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterLookup"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLOOKUPPARAMETER",
+        "largeResource": "RCDATA_32_BLOOKUPPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _lookup",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a lookup parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0531": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu.rbnu-0531",
+      "kind": "command_button",
+      "name": "Basepoint",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0531"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 96
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0290",
+      "ui": {
+        "uid": "RBNU_0531",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Basepoint",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockParameterBasepoint",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Basepoint",
+        "official": "Block Parameter, Basepoint",
+        "aliases": [
+          "BPARAMETER",
+          "ID_BlockParameterBasepoint"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BBASEPOINTPARAMETER",
+        "largeResource": "RCDATA_32_BBASEPOINTPARAMETER",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BPARAMETER",
+        "macro": "^C^C_bparameter _base",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a base point parameter to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BPARAMETER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "kind": "split_button",
+      "name": "Actions Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.primary-action",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0291"
+      },
+      "placement": {
+        "region": "main",
+        "order": 97
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0291",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Actions Drop-down",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AT",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Actions Drop-down variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413"
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.primary-action",
+      "kind": "primary_button",
+      "name": "Actions Drop-down primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0291.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 98
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Actions Drop-down variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Actions Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0291.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 99
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Actions Drop-down menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Actions Drop-down popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Actions Drop-down menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0414",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0415",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0520",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0521",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0522",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0523",
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0524"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0291.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 100
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Actions Drop-down variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0413",
+      "kind": "command_button",
+      "name": "Move",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0413"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 101
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0413",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Move",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionMove",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Move",
+        "official": "Block Action, Move",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionMove"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_MOVEACTION",
+        "largeResource": "RCDATA_32_MOVEACTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_Bactiontool _move",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a move action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0414": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0414",
+      "kind": "command_button",
+      "name": "Stretch",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0414"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 102
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0414",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Stretch",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionStretch",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Stretch",
+        "official": "Block Action, Stretch",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionStretch"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_STRETCHACTION",
+        "largeResource": "RCDATA_32_STRETCHACTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _stretch",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a stretch action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0415": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0415",
+      "kind": "command_button",
+      "name": "Polar Stretch",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0415"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 103
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0415",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Polar Stretch",
+        "buttonStyle": "LargeWithText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionPolarStretch",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Polar Stretch",
+        "official": "Block Action, Polar Stretch",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionPolarStretch"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_POLARSTRETCHACTION",
+        "largeResource": "RCDATA_32_POLARSTRETCHACTION",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _polar",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a polar stretch action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0520": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0520",
+      "kind": "command_button",
+      "name": "Scale",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0520"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 104
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0520",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Scale",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionScale",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Scale",
+        "official": "Block Action, Scale",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionScale"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SCALEACTION",
+        "largeResource": "RCDATA_32_SCALEACTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _scale",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a scale action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0521": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0521",
+      "kind": "command_button",
+      "name": "Rotate",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0521"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 105
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0521",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Rotate",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionRotate",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Rotate",
+        "official": "Block Action, Rotate",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionRotate"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ROTATEACTION",
+        "largeResource": "RCDATA_32_ROTATEACTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _rotate",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a rotate action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0522": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0522",
+      "kind": "command_button",
+      "name": "Flip",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0522"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 106
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0522",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Flip",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionFlip",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Flip",
+        "official": "Block Action, Flip",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionFlip"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_FLIPACTION",
+        "largeResource": "RCDATA_32_FLIPACTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _flip",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a flip action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0523": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0523",
+      "kind": "command_button",
+      "name": "Array",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0523"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 107
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0523",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Array",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionArray",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Array",
+        "official": "Block Action, Array",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionArray"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ARRAYACTION",
+        "largeResource": "RCDATA_32_ARRAYACTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _array",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds an array action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0524": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu.rbnu-0524",
+      "kind": "command_button",
+      "name": "Lookup",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0524"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 108
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0291",
+      "ui": {
+        "uid": "RBNU_0524",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Lookup",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BlockActionLookup",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Lookup",
+        "official": "Block Action, Lookup",
+        "aliases": [
+          "BACTIONTOOL",
+          "ID_BlockActionLookup"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LOOKUPACTION",
+        "largeResource": "RCDATA_32_LOOKUPACTION",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONTOOL",
+        "macro": "^C^C_bactiontool _lookup",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adds a lookup action to the block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONTOOL command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0292": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0292",
+      "kind": "separator",
+      "name": "RBNU_0292",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0292"
+      },
+      "placement": {
+        "region": "main",
+        "order": 109
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0292",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0293": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241.rbnu-0293",
+      "kind": "command_button",
+      "name": "Attribute\rDefinition",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-0241",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_0293"
+      },
+      "placement": {
+        "region": "main",
+        "order": 110
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_0293",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Attribute\rDefinition",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BAttdef",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Attribute\rDefinition",
+        "official": "Define Attribute",
+        "aliases": [
+          "ATTDEF",
+          "ID_BAttdef"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTDEF",
+        "largeResource": "RCDATA_32_ATTDEF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ATTDEF",
+        "macro": "^C^C_ATTDEF",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Define Attribute",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ATTDEF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.id-rbnpnl-8453": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.id-rbnpnl-8453",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8453",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8453"
+      },
+      "placement": {
+        "region": "main",
+        "order": 111
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8453",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554",
+      "kind": "layout_row",
+      "name": "RBNU_1554",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554.rbnu-1555"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1554"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 112
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1554",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554.rbnu-1555": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554.rbnu-1555",
+      "kind": "command_button",
+      "name": "Show All Actions",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1554",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1555"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 113
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1555",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show All Actions",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ShowAllActions",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show All Actions",
+        "official": "Show All Actions",
+        "aliases": [
+          "BACTIONBAR",
+          "ID_ShowAllActions"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACTIONON",
+        "largeResource": "RCDATA_32_ACTIONON",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BACTIONBAR",
+        "macro": "^C^C_bactionbar _showall",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays action bars for selected parameter objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BACTIONBAR command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557",
+      "kind": "layout_row",
+      "name": "RBNU_1557",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557.rbnu-1556"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1557"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 114
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1557",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557.rbnu-1556": {
+      "id": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557.rbnu-1556",
+      "kind": "command_button",
+      "name": "Hide All Actions",
+      "parentId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters.rbnu-1557",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1556"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 115
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1556",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hide All Actions",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_HideAllActions",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hide All Actions",
+        "official": "Hide All Actions",
+        "aliases": "ID_HideAllActions"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACTIONOFF",
+        "largeResource": "RCDATA_32_ACTIONOFF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": "^C^C_bactionbar _hideall",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Hides action bars for selected parameter objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

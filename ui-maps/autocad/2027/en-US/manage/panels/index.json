@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_TabManage",
+  "tabName": "Manage",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Action Recorder",
+      "uid": "ID_PanelActionRecorder",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelactionrecorder",
+      "map": "action-recorder/ui-map.json",
+      "nodes": 27,
+      "actionableControls": 9
+    },
+    {
+      "name": "Customization",
+      "uid": "ID_PanelCustomization",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcustomization",
+      "map": "customization/ui-map.json",
+      "nodes": 22,
+      "actionableControls": 8
+    },
+    {
+      "name": "Applications",
+      "uid": "ID_PanelScriptsAndMacros",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelscriptsandmacros",
+      "map": "applications/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 7
+    },
+    {
+      "name": "CAD Standards",
+      "uid": "ID_PanelCADStandards",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcadstandards",
+      "map": "cad-standards/ui-map.json",
+      "nodes": 12,
+      "actionableControls": 3
+    },
+    {
+      "name": "Cleanup",
+      "uid": "ID_PanelCleanup",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelcleanup",
+      "map": "cleanup/ui-map.json",
+      "nodes": 19,
+      "actionableControls": 7
+    },
+    {
+      "name": "Performance",
+      "uid": "ID_PanelPerfAnalyzer",
+      "nodeId": "autocad.window.main.ribbon.tab.id-tabmanage.id-panelperfanalyzer",
+      "map": "performance/ui-map.json",
+      "nodes": 7,
+      "actionableControls": 1
+    }
+  ]
+}

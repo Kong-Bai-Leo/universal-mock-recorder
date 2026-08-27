@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabtouchmode-panel-touch",
+  "generatedAt": "2026-08-25T21:52:54.2177108Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabTouchMode",
+    "tabName": "Touch",
+    "panelUid": "ID_PanelTouchModeSelect",
+    "panelName": "Touch",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabtouchmode"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabtouchmode": {
+      "id": "autocad.window.main.ribbon.tab.id-tabtouchmode",
+      "kind": "tab",
+      "name": "Touch",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabTouchMode"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabTouchMode",
+        "text": "Touch",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Touch Mode"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect": {
+      "id": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect",
+      "kind": "panel",
+      "name": "Touch",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabtouchmode",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode",
+        "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-panelbreak-touchmode-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelTouchModeSelect"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelTouchModeSelect",
+        "text": "Touch",
+        "keyTip": null,
+        "alias": "ID_TOUCHMODE_SELECT",
+        "officialName": "Touch Mode",
+        "resizeStyle": "NoCollapse",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode": {
+      "id": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_TOUCHMODE",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode.id-rbn-cmdbtn-touchmode"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_TOUCHMODE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_TOUCHMODE",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode.id-rbn-cmdbtn-touchmode": {
+      "id": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode.id-rbn-cmdbtn-touchmode",
+      "kind": "command_button",
+      "name": "Select\rMode",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-row-touchmode",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_TOUCHMODE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_TOUCHMODE",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Select\rMode",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "XX",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_TouchMode",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Select\rMode",
+        "official": "Select Mode",
+        "aliases": "ID_TouchMode"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_TOUCHMODE",
+        "largeResource": "RCDATA_32_TOUCHMODE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "",
+        "macro": "^C^C^C",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Cancels touch screen operation and returns user to selection state.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-panelbreak-touchmode-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect.id-rbn-panelbreak-touchmode-0001",
+      "kind": "panel_break",
+      "name": "ID_RBN_PANELBREAK_TOUCHMODE_0001",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabtouchmode.id-paneltouchmodeselect",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_PANELBREAK_TOUCHMODE_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_PANELBREAK_TOUCHMODE_0001",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

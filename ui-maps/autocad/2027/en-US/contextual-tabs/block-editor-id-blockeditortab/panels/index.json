@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_BlockEditorTab",
+  "tabName": "Block Editor",
+  "panelCount": 6,
+  "panels": [
+    {
+      "name": "Open/Save ",
+      "uid": "ID_PanelBlockEditorOpenSave",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoropensave",
+      "map": "open-save/ui-map.json",
+      "nodes": 15,
+      "actionableControls": 4
+    },
+    {
+      "name": "Geometric",
+      "uid": "ID_PanelBlockEditorGeometricConstraints",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorgeometricconstraints",
+      "map": "geometric/ui-map.json",
+      "nodes": 33,
+      "actionableControls": 17
+    },
+    {
+      "name": "Dimensional",
+      "uid": "ID_PanelBlockEditorDimensionalConstraints",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditordimensionalconstraints",
+      "map": "dimensional/ui-map.json",
+      "nodes": 25,
+      "actionableControls": 12
+    },
+    {
+      "name": "Manage",
+      "uid": "RBN_01737960",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.rbn-01737960",
+      "map": "manage/ui-map.json",
+      "nodes": 20,
+      "actionableControls": 6
+    },
+    {
+      "name": "Action Parameters",
+      "uid": "ID_PanelBlockEditorActionParameters",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditoractionparameters",
+      "map": "action-parameters/ui-map.json",
+      "nodes": 39,
+      "actionableControls": 25
+    },
+    {
+      "name": "Visibility",
+      "uid": "ID_PanelBlockEditorVisibility",
+      "nodeId": "autocad.window.main.ribbon.tab.id-blockeditortab.id-panelblockeditorvisibility",
+      "map": "visibility/ui-map.json",
+      "nodes": 16,
+      "actionableControls": 5
+    }
+  ]
+}

@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabparametric-panel-dimensional",
+  "generatedAt": "2026-08-25T21:52:22.1975036Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabParametric",
+    "tabName": "Parametric",
+    "panelUid": "ID_PanelParametricDimensionalConstraints",
+    "panelName": "Dimensional",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "kind": "tab",
+      "name": "Parametric",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabParametric"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabParametric",
+        "text": "Parametric",
+        "keyTip": "PA",
+        "alias": "ID_TabParametric",
+        "officialName": "Parametric"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "kind": "panel",
+      "name": "Dimensional",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0105",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0070",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelParametricDimensionalConstraints"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 33
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelParametricDimensionalConstraints",
+        "text": "Dimensional",
+        "keyTip": "DM",
+        "alias": "ID_Dimensional",
+        "officialName": "Parametric - Dimensional",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0105": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0105",
+      "kind": "dialog_launcher",
+      "name": "Constraint Settings, Dimensional",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0105"
+      },
+      "placement": {
+        "region": "main",
+        "order": 34
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0105",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "CD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ConstraintSettingsDimensionalTab",
+        "commandId": "ID_ConstraintSettingsDimensionalTab",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Constraint Settings, Dimensional",
+        "aliases": [
+          "CONSTRAINTSETTINGS",
+          "ID_ConstraintSettingsDimensionalTab"
+        ]
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CONSTRAINTSETTINGS",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C_+CONSTRAINTSETTINGS 1,^C^C_+CONSTRAINTSETTINGS)",
+        "macroType": "Any",
+        "commandId": "ID_ConstraintSettingsDimensionalTab",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens the Constraint Settings dialog to the Dimension tab.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CONSTRAINTSETTINGS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "kind": "layout_row",
+      "name": "RBNU_1861",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1973",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738134",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1861"
+      },
+      "placement": {
+        "region": "main",
+        "order": 35
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1861",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "kind": "split_button",
+      "name": "Dimensional Constraints",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1855"
+      },
+      "placement": {
+        "region": "main",
+        "order": 36
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1855",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Dimensional Constraints",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "DC",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "",
+        "largeImage": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Dimensional Constraints variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977"
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.primary-action",
+      "kind": "primary_button",
+      "name": "Dimensional Constraints primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1855.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 37
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Dimensional Constraints variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Dimensional Constraints menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1855.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 38
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Dimensional Constraints menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Dimensional Constraints popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Dimensional Constraints menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1978",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1979"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1855.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 39
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Dimensional Constraints variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1977",
+      "kind": "command_button",
+      "name": "Linear",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1977"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 40
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "ui": {
+        "uid": "RBNU_1977",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Linear",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MMU_0031",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Linear",
+        "official": "Dimensional Constraint, Linear",
+        "aliases": "MMU_0031"
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HORIZONTALCONSTRAINT_16",
+        "largeResource": "RCDATA_32_HORIZONTALCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": null,
+        "macro": "^C^C_DcLinear",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the horizontal or vertical distance between points",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1978": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1978",
+      "kind": "command_button",
+      "name": "Horizontal",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1978"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 41
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "ui": {
+        "uid": "RBNU_1978",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Horizontal",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Horizontal",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Horizontal",
+        "official": "Dimensional Constraint, Horizontal",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Horizontal"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HORIZONTALCONSTRAINT_16",
+        "largeResource": "RCDATA_32_HORIZONTALCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcHorizontal",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the X-distance between points on an object,  or between two points on different objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1979": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu.rbnu-1979",
+      "kind": "command_button",
+      "name": "Vertical",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1979"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 42
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1855",
+      "ui": {
+        "uid": "RBNU_1979",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Vertical",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": null,
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Vertical",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Vertical",
+        "official": "Dimensional Constraint, Vertical",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Vertical"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_VERTICALCONSTRAINT_16",
+        "largeResource": "RCDATA_32_VERTICALCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcVertical",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the Y-distance between points on an object, or between two points on different objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1973": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1973",
+      "kind": "command_button",
+      "name": "Aligned",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1973"
+      },
+      "placement": {
+        "region": "main",
+        "order": 43
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1973",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Aligned",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Aligned",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Aligned",
+        "official": "Dimensional Constraint, Aligned",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Aligned"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ALIGNEDCONSTRAINT_16",
+        "largeResource": "RCDATA_32_ALIGNEDCONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcAligned",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the distance between two points on an object or between two points on different objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860",
+      "kind": "layout_group",
+      "name": "RBNU_1860",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1860"
+      },
+      "placement": {
+        "region": "main",
+        "order": 44
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1860",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857",
+      "kind": "layout_row",
+      "name": "RBNU_1857",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1975",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1976"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1857"
+      },
+      "placement": {
+        "region": "main",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1857",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1975": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1975",
+      "kind": "command_button",
+      "name": "Radius",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1975"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1975",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Radius",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "RA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Radius",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Radius",
+        "official": "Dimensional Constraint, Radius",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Radius"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_RADIUSCONSTRAINT_16",
+        "largeResource": "RCDATA_32_RADIUSCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcRadius",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the radius of a circle or arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1976": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857.rbnu-1976",
+      "kind": "command_button",
+      "name": "Diameter",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1857",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1976"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1976",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Diameter",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Diameter",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Diameter",
+        "official": "Dimensional Constraint, Diameter",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Diameter"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_DIAMETERCONSTRAINT_16",
+        "largeResource": "RCDATA_32_DIAMETERCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcDiameter",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the diameter of a circle or arc",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859",
+      "kind": "layout_row",
+      "name": "RBNU_1859",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbnu-1974",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbn-01737958"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1859"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1859",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbnu-1974": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbnu-1974",
+      "kind": "command_button",
+      "name": "Angular",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_1974"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_1974",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Angular",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "AN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_DimConstraint_Angular",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Angular",
+        "official": "Dimensional Constraint, Angular",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "MM_DimConstraint_Angular"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ANGULARCONSTRAINT_16",
+        "largeResource": "RCDATA_32_ANGULARCONSTRAINT_32",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcAngular",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Constrains the angle between line or polyline segments, the angle swept out by an arc or a polyline arc segment, or the angle between three points on objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbn-01737958": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859.rbn-01737958",
+      "kind": "command_button",
+      "name": "Convert",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbnu-1860.rbnu-1859",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01737958"
+      },
+      "placement": {
+        "region": "main",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01737958",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Convert",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DO",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DimensionalConstraintConvert",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Convert",
+        "official": "Dimensional Constraint, Convert",
+        "aliases": [
+          "DIMCONSTRAINT",
+          "ID_DimensionalConstraintConvert"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CNV_DIM_TO_CONSTRAINT",
+        "largeResource": "RCDATA_32_CNV_DIM_TO_CONSTRAINT",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DIMCONSTRAINT",
+        "macro": "^C^C_DcConvert",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Convert dimensions to dimensional constraints",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DIMCONSTRAINT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738134": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738134",
+      "kind": "separator",
+      "name": "RBN_01738134",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738134"
+      },
+      "placement": {
+        "region": "main",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738134",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135",
+      "kind": "layout_group",
+      "name": "RBN_01738135",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137",
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738135"
+      },
+      "placement": {
+        "region": "main",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738135",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136",
+      "kind": "layout_row",
+      "name": "RBN_01738136",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136.rbn-01738141"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738136"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738136",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136.rbn-01738141": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136.rbn-01738141",
+      "kind": "command_button",
+      "name": "Show/Hide",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738136",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738141"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738141",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show/Hide",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "TD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Show_Dyn_Constr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show/Hide",
+        "official": "Show Dynamic Constraints",
+        "aliases": [
+          "DCDISPLAY",
+          "MM_Show_Dyn_Constr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHOWDIMCONSTRAINT_16",
+        "largeResource": "RCDATA_32_SHOWDIMCONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DCDISPLAY",
+        "macro": "^C^C_dcdisplay",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays or hides dynamic dimensional constraints for selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DCDISPLAY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137",
+      "kind": "layout_row",
+      "name": "RBN_01738137",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137.rbn-01738138"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738137"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738137",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137.rbn-01738138": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137.rbn-01738138",
+      "kind": "command_button",
+      "name": "Show All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738137",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738138"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738138",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Show All",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "SD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Show_All_Dyn_Constr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Show All",
+        "official": "Show All Dynamic Constraints",
+        "aliases": [
+          "DCDISPLAY",
+          "MM_Show_All_Dyn_Constr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHOWALLDYNCONSTRAINT_16",
+        "largeResource": "RCDATA_32_SHOWALLDYNCONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DCDISPLAY",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C^Q_dcdisplay _Showall,^C^C^Q_dcdisplay)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Displays all dynamic dimensional constraints in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DCDISPLAY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140",
+      "kind": "layout_row",
+      "name": "RBN_01738140",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140.rbn-01738139"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738140"
+      },
+      "placement": {
+        "region": "main",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738140",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140.rbn-01738139": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140.rbn-01738139",
+      "kind": "command_button",
+      "name": "Hide All",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbnu-1861.rbn-01738135.rbn-01738140",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738139"
+      },
+      "placement": {
+        "region": "main",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738139",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Hide All",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "HD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "MM_Hide_All_Dyn_Constr",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Hide All",
+        "official": "Hide All Dynamic Constraints",
+        "aliases": [
+          "DCDISPLAY",
+          "MM_Hide_All_Dyn_Constr"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_HIDEALLDYNCONSTRAINT_16",
+        "largeResource": "RCDATA_32_HIDEALLDYNCONSTRAINT_32",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "DCDISPLAY",
+        "macro": "$M=$(if,$(or,$(eq,$(getvar,refeditname),\"\"),$(eq,$(getvar,VIEWSKETCHMODE),1)),^C^C^Q_dcdisplay _Hideall,^C^C^Q_dcdisplay)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Hides all dynamic dimensional constraints in the drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 DCDISPLAY command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0070": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.id-rbn-0070",
+      "kind": "panel_break",
+      "name": "ID_RBN_0070",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0070"
+      },
+      "placement": {
+        "region": "main",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0070",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142",
+      "kind": "layout_row",
+      "name": "RBN_01738142",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142.rbn-01738146"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738142"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738142",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142.rbn-01738146": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142.rbn-01738146",
+      "kind": "toggle_button",
+      "name": "Dynamic Constraint Mode",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738142",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738146"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 61
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738146",
+        "controlId": "AcDynaConstraintFormToggleButton",
+        "text": "Dynamic Constraint Mode",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Dynamic Constraint Mode",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Dynamic Constraint Mode.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143",
+      "kind": "layout_row",
+      "name": "RBN_01738143",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143.rbn-01738147"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738143"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 62
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738143",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143.rbn-01738147": {
+      "id": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143.rbn-01738147",
+      "kind": "toggle_button",
+      "name": "Annotational Constraint Mode",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabparametric.id-panelparametricdimensionalconstraints.rbn-01738143",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01738147"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 63
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01738147",
+        "controlId": "AcAnnoConstraintFormToggleButton",
+        "text": "Annotational Constraint Mode",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "MA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Annotational Constraint Mode",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Annotational Constraint Mode.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:24:00Z",
+    "observedControlCount": 27,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-rbn-190-a51f9-panel-update",
+  "generatedAt": "2026-08-25T21:52:50.5240095Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "RBN_190_A51F9",
+    "tabName": "Layout",
+    "panelUid": "ID_PanelUpdateViewMD",
+    "panelName": "Update",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "kind": "tab",
+      "name": "Layout",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_190_A51F9"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_190_A51F9",
+        "text": "Layout",
+        "keyTip": "L",
+        "alias": "ID_NEWLAYOUT",
+        "officialName": "Layout"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd",
+      "kind": "panel",
+      "name": "Update",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740618"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelUpdateViewMD"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 72
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelUpdateViewMD",
+        "text": "Update",
+        "keyTip": "MU",
+        "alias": null,
+        "officialName": "Model Doc - Update",
+        "resizeStyle": "Default",
+        "sourceCuix": "ModelDoc.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617",
+      "kind": "layout_row",
+      "name": "RBN_01740617",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-autoupdate",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740617"
+      },
+      "placement": {
+        "region": "main",
+        "order": 73
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740617",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-autoupdate": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-autoupdate",
+      "kind": "ribbon_control",
+      "name": "Auto\rUpdate",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_AutoUpdate"
+      },
+      "placement": {
+        "region": "main",
+        "order": 74
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_AutoUpdate",
+        "controlId": "Ac2DViewsAutoUpdateButton",
+        "text": "Auto\rUpdate",
+        "keyTip": "AU"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Auto\rUpdate.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "kind": "split_button",
+      "name": "Update\rView",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.primary-action",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateViewUVSplitBtn"
+      },
+      "placement": {
+        "region": "main",
+        "order": 75
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_UpdateViewUVSplitBtn",
+        "controlId": "AcRibbonSplitButtonEnabledForAcSynergyObj",
+        "text": "Update\rView",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "UV",
+        "behavior": "SplitNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ACSYNERGY_UPDATE",
+        "largeImage": "RCDATA_32_ACSYNERGY_UPDATE",
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Update\rView variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.primary-action",
+      "kind": "primary_button",
+      "name": "Update\rView primary action",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateViewUVSplitBtn.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 76
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Update\rView variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Update\rView menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateViewUVSplitBtn.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 77
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Update\rView menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Update\rView popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Update\rView menu",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv",
+        "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateallviewsuv"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateViewUVSplitBtn.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 78
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Update\rView variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateviewuv",
+      "kind": "command_button",
+      "name": "Update View",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateViewUV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 79
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "ui": {
+        "uid": "ID_UpdateViewUV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Update View",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UpdateView",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Update View",
+        "official": "Update View",
+        "aliases": [
+          "VIEWUPDATE",
+          "ID_UpdateView"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_UPDATE",
+        "largeResource": "RCDATA_32_ACSYNERGY_UPDATE",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWUPDATE",
+        "macro": "^C^C_viewupdate",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates a selected drawing view to match the source model.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWUPDATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateallviewsuv": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu.id-updateallviewsuv",
+      "kind": "command_button",
+      "name": "Update all Views",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_UpdateAllViewsUV"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 80
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740617.id-updateviewuvsplitbtn",
+      "ui": {
+        "uid": "ID_UpdateAllViewsUV",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Update all Views",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_UpdateAllViews",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Update all Views",
+        "official": "Update all Views",
+        "aliases": [
+          "VIEWUPDATE",
+          "ID_UpdateAllViews"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_UPDATEALL",
+        "largeResource": "RCDATA_32_ACSYNERGY_UPDATEALL",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWUPDATE",
+        "macro": "^C^C^P(sssetfirst)^P$M=$(if,$(eq,$(getvar,cvport),1),^C^C_viewupdate _All,^C^C_viewupdate)",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates all drawing views to match the source model.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWUPDATE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740618": {
+      "id": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd.rbn-01740618",
+      "kind": "panel_break",
+      "name": "RBN_01740618",
+      "parentId": "autocad.window.main.ribbon.tab.rbn-190-a51f9.id-panelupdateviewmd",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740618"
+      },
+      "placement": {
+        "region": "main",
+        "order": 81
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740618",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

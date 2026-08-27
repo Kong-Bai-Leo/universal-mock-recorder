@@ -1,0 +1,1067 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabinsert-panel-reference",
+  "generatedAt": "2026-08-25T21:52:18.0849772Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabInsert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelInsert_Reference",
+    "panelName": "Reference",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabInsert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabInsert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": "ID_TabInsert",
+        "officialName": "Insert"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "kind": "panel",
+      "name": "Reference",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-0097",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbnpnl-8457",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelInsert_Reference"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelInsert_Reference",
+        "text": "Reference",
+        "keyTip": "RE",
+        "alias": "ID_Insert_Reference",
+        "officialName": "Insert - Reference",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-0097": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-0097",
+      "kind": "dialog_launcher",
+      "name": "External References",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0097"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0097",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "XR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ExtReferences",
+        "commandId": "ID_ExtReferences",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "External References",
+        "aliases": [
+          "EXTERNALREFERENCES",
+          "ID_ExtReferences"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_EXTERNAL_REFERENCE_MGR",
+        "largeResource": "RCDATA_32_EXTERNAL_REFERENCE_MGR",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "EXTERNALREFERENCES",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,erstate),0)),^C^C_externalreferencesclose,^C^C_externalreferences)",
+        "macroType": "Any",
+        "commandId": "ID_ExtReferences",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Opens or closes the External References palette",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 EXTERNALREFERENCES command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0074",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-attach",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-clip",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-adjust",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0074"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0074",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-attach": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-attach",
+      "kind": "command_button",
+      "name": "Attach",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ATTACH"
+      },
+      "placement": {
+        "region": "main",
+        "order": 7
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ATTACH",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Attach",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AH",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ATTACH",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Attach",
+        "official": "Attach",
+        "aliases": [
+          "ATTACH",
+          "ID_ATTACH"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTACH",
+        "largeResource": "RCDATA_32_ATTACH",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ATTACH",
+        "macro": "^C^C_attach",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Inserts references to external files such as other drawings, raster images, and underlays.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ATTACH command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-clip": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-clip",
+      "kind": "command_button",
+      "name": "Clip",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_CLIP"
+      },
+      "placement": {
+        "region": "main",
+        "order": 8
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_CLIP",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Clip",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "CL",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_CLIP",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Clip",
+        "official": "Clip",
+        "aliases": [
+          "CLIP",
+          "ID_CLIP"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_CLIP",
+        "largeResource": "RCDATA_32_CLIP",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "CLIP",
+        "macro": "^C^C_clip",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Clip a block, externally referenced file, or viewport to a specified boundary",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 CLIP command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-adjust": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-cmdbtn-adjust",
+      "kind": "command_button",
+      "name": "Adjust",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ADJUST"
+      },
+      "placement": {
+        "region": "main",
+        "order": 9
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ADJUST",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Adjust",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AJ",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ADJUST",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Adjust",
+        "official": "Adjust",
+        "aliases": [
+          "ADJUST",
+          "ID_ADJUST"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ADJUST",
+        "largeResource": "RCDATA_32_ADJUST",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ADJUST",
+        "macro": "^C^C_adjust",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Adjust the fade, contrast, brightness and monochrome settings of an image or underlay (DWF, DWFx, PDF, or DGN)",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ADJUST command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_REFERENCE",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_REFERENCE"
+      },
+      "placement": {
+        "region": "main",
+        "order": 10
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_REFERENCE",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0075",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075.id-rbn-cmdbtn-ulayers"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0075"
+      },
+      "placement": {
+        "region": "main",
+        "order": 11
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0075",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075.id-rbn-cmdbtn-ulayers": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075.id-rbn-cmdbtn-ulayers",
+      "kind": "command_button",
+      "name": "Underlay Layers",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0075",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ULAYERS"
+      },
+      "placement": {
+        "region": "main",
+        "order": 12
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ULAYERS",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Underlay Layers",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "UN",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ULAYERS",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Underlay Layers",
+        "official": "Ulayers",
+        "aliases": [
+          "ULAYERS",
+          "ID_ULAYERS"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_UNDERLAYLAYERS",
+        "largeResource": "RCDATA_32_UNDERLAYLAYERS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ULAYERS",
+        "macro": "^C^C_ulayers",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Controls the display of layers in an underlay",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ULAYERS command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0076",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076.xlsr-0954"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0076"
+      },
+      "placement": {
+        "region": "main",
+        "order": 13
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0076",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076.xlsr-0954": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076.xlsr-0954",
+      "kind": "data_bound_dropdown",
+      "name": "Frame Settings Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.id-rbn-row-0076",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0954"
+      },
+      "placement": {
+        "region": "main",
+        "order": 14
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0954",
+        "controlId": "AcFrameDataBoundDropDown",
+        "text": "Frame Settings Drop-down",
+        "keyTip": "FR"
+      },
+      "semantics": {
+        "description": "Opens or changes the Frame Settings Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Frame Settings Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139",
+      "kind": "layout_row",
+      "name": "RBN_00035139",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139.xlsr-0955"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00035139"
+      },
+      "placement": {
+        "region": "main",
+        "order": 15
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00035139",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139.xlsr-0955": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139.xlsr-0955",
+      "kind": "data_bound_dropdown",
+      "name": "Snap Settings Drop-down",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbn-row-0074.id-rbn-rowpanel-reference.rbn-00035139",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "XLSR_0955"
+      },
+      "placement": {
+        "region": "main",
+        "order": 16
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "XLSR_0955",
+        "controlId": "AcUOSNAPDataBoundDropDown",
+        "text": "Snap Settings Drop-down",
+        "keyTip": "SN"
+      },
+      "semantics": {
+        "description": "Opens or changes the Snap Settings Drop-down selection.",
+        "inputs": [
+          "selected option"
+        ],
+        "result": "The Snap Settings Drop-down setting changes to the selected option.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbnpnl-8457": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.id-rbnpnl-8457",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_8457",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_8457"
+      },
+      "placement": {
+        "region": "main",
+        "order": 17
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_8457",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210",
+      "kind": "layout_row",
+      "name": "RBN_00035210",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210.rbn-00035211"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00035210"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 18
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00035210",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210.rbn-00035211": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210.rbn-00035211",
+      "kind": "command_button",
+      "name": "Edit Reference",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00035210",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00035211"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 19
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00035211",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Edit Reference",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "ER",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_RefEditor",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Edit Reference",
+        "official": "Xref and Block, Edit Reference In-Place",
+        "aliases": [
+          "REFEDIT",
+          "ID_RefEditor"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_REFED_EDIT",
+        "largeResource": "RCDATA_32_REFED_EDIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "REFEDIT",
+        "macro": "^C^C_refedit;",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Edits a block or an external reference directly within the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 REFEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210",
+      "kind": "layout_row",
+      "name": "RBN_00735210",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00536287",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00435211"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00735210"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 20
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00735210",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00536287": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00536287",
+      "kind": "toggle_button",
+      "name": "Xref Fading Toggle Button",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00536287"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 21
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00536287",
+        "controlId": "AcXRefFadingCommandToggleButton",
+        "text": "Xref Fading Toggle Button",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "XF",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Xref Fading Toggle Button",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles Xref Fading Toggle Button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00435211": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210.rbn-00435211",
+      "kind": "ribbon_control",
+      "name": "Xref fading",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelinsert-reference.rbn-00735210",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_00435211"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 22
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_00435211",
+        "controlId": "AcXDwgFadingSlider",
+        "text": "Xref fading",
+        "keyTip": null
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Xref fading.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:20:00Z",
+    "observedControlCount": 28,
+    "evidence": "../../live-observation.json"
+  }
+}

@@ -1,0 +1,937 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabhome-panel-view",
+  "generatedAt": "2026-08-25T21:52:10.7793571Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabHome",
+    "tabName": "Home",
+    "panelUid": "RBN_200_F691F",
+    "panelName": "View",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabHome"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabHome",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_TabHome",
+        "officialName": "Home - 2D"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "kind": "panel",
+      "name": "View",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.id-rbn-200-143f9",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-168d5",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_F691F"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 397
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_F691F",
+        "text": "View",
+        "keyTip": "DV",
+        "alias": null,
+        "officialName": "Model Doc -  Drawing View",
+        "resizeStyle": "Default",
+        "sourceCuix": "ModelDoc.cuix"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.id-rbn-200-143f9": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.id-rbn-200-143f9",
+      "kind": "dialog_launcher",
+      "name": "Drafting Standard",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_143F9"
+      },
+      "placement": {
+        "region": "main",
+        "order": 398
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_200_143F9",
+        "controlId": null,
+        "text": null,
+        "buttonStyle": null,
+        "keyTip": "DT",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DrafStandard",
+        "commandId": "ID_DrafStandard",
+        "commandType": "Macro"
+      },
+      "names": {
+        "visible": null,
+        "official": "Drafting Standard",
+        "aliases": [
+          "VIEWSTD",
+          "ID_DrafStandard"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_DRAFTING_STANDARD",
+        "largeResource": "RCDATA_32_ACSYNERGY_DRAFTING_STANDARD",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSTD",
+        "macro": "^C^C_viewstd",
+        "macroType": "Any",
+        "commandId": "ID_DrafStandard",
+        "commandType": "Macro"
+      },
+      "semantics": {
+        "description": "Defines the default settings for Drawing Views.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSTD command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271",
+      "kind": "layout_row",
+      "name": "RBN_200_50271",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_50271"
+      },
+      "placement": {
+        "region": "main",
+        "order": 399
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_50271",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "kind": "split_button",
+      "name": "Base",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_50B30"
+      },
+      "placement": {
+        "region": "main",
+        "order": 400
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_50B30",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Base",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BV",
+        "behavior": "DropDownNoFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": "RCDATA_16_ACSYNERGY_BASEVIEW",
+        "largeImage": "RCDATA_32_ACSYNERGY_BASEVIEW",
+        "commandId": "ID_BaseView",
+        "commandType": "Macro"
+      },
+      "compositeMode": "dropdown_only",
+      "defaultActionMode": "none",
+      "semantics": {
+        "description": "Creates a base view from model space or Autodesk Inventor models.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": null,
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Base menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_50B30.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 401
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Base menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Base popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Base menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn-200-aed38"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_50B30.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 402
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Base variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn",
+      "kind": "command_button",
+      "name": "From Model Space",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 403
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "ui": {
+        "uid": "ID_RBN",
+        "controlId": "Ac2DViewsBaseMSCommandButton",
+        "text": "From Model Space",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "BM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Model Space",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes From Model Space.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn-200-aed38": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu.id-rbn-200-aed38",
+      "kind": "command_button",
+      "name": "From Inventor",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_200_AED38"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 404
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-50271.rbn-200-50b30",
+      "ui": {
+        "uid": "ID_RBN_200_AED38",
+        "controlId": "Ac2DViewsBaseINVCommandButton",
+        "text": "From Inventor",
+        "buttonStyle": "LargeWithHorizontalText",
+        "keyTip": "BI",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "From Inventor",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Invokes From Inventor.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-168d5": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-168d5",
+      "kind": "panel_break",
+      "name": "RBN_200_168D5",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_168D5"
+      },
+      "placement": {
+        "region": "main",
+        "order": 405
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_168D5",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf",
+      "kind": "layout_row",
+      "name": "RBN_200_CDDAF",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-e8bf1",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-2bfab",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-69377"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_CDDAF"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 406
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_CDDAF",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-e8bf1": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-e8bf1",
+      "kind": "command_button",
+      "name": "Section View Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_E8BF1"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 407
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_E8BF1",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Section View Style",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "SS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_SecViewStyle",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Section View Style",
+        "official": "Section View Style",
+        "aliases": [
+          "VIEWSECTIONSTYLE",
+          "ID_SecViewStyle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_SECTIONSYMBOL_STYLE",
+        "largeResource": "RCDATA_32_ACSYNERGY_SECTIONSYMBOL_STYLE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWSECTIONSTYLE",
+        "macro": "^C^C_viewsectionstyle",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates and modifies section view styles.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWSECTIONSTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-2bfab": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-2bfab",
+      "kind": "separator",
+      "name": "RBN_200_2BFAB",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_2BFAB"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 408
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_2BFAB",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-69377": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf.rbn-200-69377",
+      "kind": "ribbon_control",
+      "name": "Section View Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-cddaf",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_69377"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 409
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_69377",
+        "controlId": "Ac2DViewsSectionStyleCombo",
+        "text": "Section View Style",
+        "keyTip": "SC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Section View Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0",
+      "kind": "layout_row",
+      "name": "RBN_200_471A0",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-72826",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-9e0f3",
+        "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-c0c03"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_471A0"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 410
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_471A0",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-72826": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-72826",
+      "kind": "command_button",
+      "name": "Detail View Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_72826"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 411
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_72826",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Detail View Style",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "DS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_DetailViewStyle",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Detail View Style",
+        "official": "Detail View Style",
+        "aliases": [
+          "VIEWDETAILSTYLE",
+          "ID_DetailViewStyle"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ACSYNERGY_DETAILSYMBOL_STYLE",
+        "largeResource": "RCDATA_32_ACSYNERGY_DETAILSYMBOL_STYLE",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "VIEWDETAILSTYLE",
+        "macro": "^C^C_viewdetailstyle",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates and modifies detail view styles.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 VIEWDETAILSTYLE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-9e0f3": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-9e0f3",
+      "kind": "separator",
+      "name": "RBN_200_9E0F3",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_9E0F3"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 412
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_9E0F3",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-c0c03": {
+      "id": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0.rbn-200-c0c03",
+      "kind": "ribbon_control",
+      "name": "Detail View Style",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabhome.rbn-200-f691f.rbn-200-471a0",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_200_C0C03"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 413
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_200_C0C03",
+        "controlId": "Ac2DViewsDetailStyleCombo",
+        "text": "Detail View Style",
+        "keyTip": "DC"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Detail View Style.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T19:49:27Z",
+    "observedControlCount": 80,
+    "evidence": "../../live-observation.json"
+  }
+}

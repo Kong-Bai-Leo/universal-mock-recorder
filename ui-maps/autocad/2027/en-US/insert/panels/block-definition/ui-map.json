@@ -1,0 +1,998 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabinsert-panel-block-definition",
+  "generatedAt": "2026-08-25T21:52:18.0849772Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabInsert",
+    "tabName": "Insert",
+    "panelUid": "ID_PanelAttributes",
+    "panelName": "Block Definition",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "kind": "tab",
+      "name": "Insert",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabInsert"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabInsert",
+        "text": "Insert",
+        "keyTip": "IN",
+        "alias": "ID_TabInsert",
+        "officialName": "Insert"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "kind": "panel",
+      "name": "Block Definition",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-0024",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelAttributes"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 45
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelAttributes",
+        "text": "Block Definition",
+        "keyTip": "BD",
+        "alias": "ID_Attributes",
+        "officialName": "Insert - Block Definition",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_0071",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-cmdbtn-attdef-0001",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740446",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740447"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_0071"
+      },
+      "placement": {
+        "region": "main",
+        "order": 46
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_0071",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "kind": "split_button",
+      "name": "Create Block",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.primary-action",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CREATEBLOCK"
+      },
+      "placement": {
+        "region": "main",
+        "order": 47
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree",
+          "live_interaction:open_dropdown"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_SPLITBTN_CREATEBLOCK",
+        "controlId": "AcRibbonSplitButton",
+        "text": "Create Block",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BC",
+        "behavior": "SplitFollow",
+        "listStyle": "IconText",
+        "grouping": "false",
+        "smallImage": null,
+        "largeImage": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "compositeMode": "split",
+      "defaultActionMode": "last_or_default",
+      "semantics": {
+        "description": "Provides the available Create Block variants. Use its explicit menu trigger to choose a variant.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "primaryActionNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.primary-action",
+      "menuTriggerNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger",
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443"
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.primary-action": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.primary-action",
+      "kind": "primary_button",
+      "name": "Create Block primary action",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CREATEBLOCK.primary"
+      },
+      "placement": {
+        "region": "main",
+        "order": 48
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "part": "primary",
+      "semantics": {
+        "description": "Executes the current or default Create Block variant without opening the menu.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443",
+      "action": {
+        "type": "invoke_split_default",
+        "targetMode": "last_or_default",
+        "defaultTargetNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger",
+      "kind": "menu_trigger",
+      "name": "Open Create Block menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CREATEBLOCK.menu-trigger"
+      },
+      "placement": {
+        "region": "main",
+        "order": 49
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "part": "dropdown",
+      "semantics": {
+        "description": "Opens the Create Block menu without executing its primary action.",
+        "inputs": [],
+        "result": "The Create Block popup menu becomes visible.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "opensNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu",
+      "action": {
+        "type": "open_menu",
+        "opensNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu",
+      "kind": "popup_menu",
+      "name": "Create Block menu",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443",
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740444"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_SPLITBTN_CREATEBLOCK.popup-menu"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 50
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "transient": true,
+      "semantics": {
+        "description": "Contains the selectable Create Block variants owned by this split button.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "low"
+      },
+      "openedByNodeId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger"
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740443",
+      "kind": "command_button",
+      "name": "Create\rBlock",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740443"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 51
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "ui": {
+        "uid": "RBN_01740443",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Create\rBlock",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BC",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Bmake",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Create\rBlock",
+        "official": "Block, Make...",
+        "aliases": [
+          "BLOCK",
+          "ID_Bmake"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BLOCK",
+        "largeResource": "RCDATA_32_BLOCK",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BLOCK",
+        "macro": "^C^C_block",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates a block definition from selected objects",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740444": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu.rbn-01740444",
+      "kind": "command_button",
+      "name": "Write Block",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock.menu-trigger.popup-menu",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740444"
+      },
+      "placement": {
+        "region": "transient",
+        "order": 52
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ownerSplitButtonId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-splitbtn-createblock",
+      "ui": {
+        "uid": "RBN_01740444",
+        "controlId": "AcRibbonCommandButton",
+        "text": "",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "WB",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_WBLOCK",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "",
+        "official": "Write Block",
+        "aliases": [
+          "WBLOCK",
+          "ID_WBLOCK"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SAVE_BLOCK_AS",
+        "largeResource": "RCDATA_32_SAVE_BLOCK_AS",
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "WBLOCK",
+        "macro": "^C^C_wblock",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Saves selected objects or converts a block to a specified drawing file",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 WBLOCK command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-cmdbtn-attdef-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.id-rbn-cmdbtn-attdef-0001",
+      "kind": "command_button",
+      "name": "Define\rAttributes",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ATTDEF_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 53
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ATTDEF_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Define\rAttributes",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Attdef",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Define\rAttributes",
+        "official": "Block, Define Attributes...",
+        "aliases": [
+          "ATTDEF",
+          "ID_Attdef"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTDEF",
+        "largeResource": "RCDATA_32_ATTDEF",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ATTDEF",
+        "macro": "^C^C_attdef",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Creates an attribute definition for storing data in a block",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ATTDEF command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740446": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740446",
+      "kind": "command_button",
+      "name": "Manage\rAttributes",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740446"
+      },
+      "placement": {
+        "region": "main",
+        "order": 54
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740446",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Manage\rAttributes",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "AM",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_BattMan",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Manage\rAttributes",
+        "official": "Attribute, Block Attribute Manager...",
+        "aliases": [
+          "BATTMAN",
+          "ID_BattMan"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BATTMAN",
+        "largeResource": "RCDATA_32_BATTMAN",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BATTMAN",
+        "macro": "^C^C_battman",
+        "macroType": "Modify",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages the attributes for a selected block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BATTMAN command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740447": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071.rbn-01740447",
+      "kind": "command_button",
+      "name": "Block\rEditor",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-row-0071",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740447"
+      },
+      "placement": {
+        "region": "main",
+        "order": 55
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740447",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Block\rEditor",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "BE",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Bedit",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Block\rEditor",
+        "official": "Block Editor",
+        "aliases": [
+          "BEDIT",
+          "ID_Bedit"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BEDIT",
+        "largeResource": "RCDATA_32_BEDIT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BEDIT",
+        "macro": "^C^C_bedit",
+        "macroType": "Tools",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Opens the block definition in the Block Editor",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BEDIT command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-0024": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.id-rbn-0024",
+      "kind": "panel_break",
+      "name": "ID_RBN_0024",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_0024"
+      },
+      "placement": {
+        "region": "main",
+        "order": 56
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_0024",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448",
+      "kind": "layout_row",
+      "name": "RBN_01740448",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448.id-rbn-cmdbtn-base-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740448"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 57
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740448",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448.id-rbn-cmdbtn-base-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448.id-rbn-cmdbtn-base-0001",
+      "kind": "command_button",
+      "name": "Set Base Point",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740448",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_BASE_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 58
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_BASE_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Set Base Point",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "BA",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Base",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Set Base Point",
+        "official": "Block, Base",
+        "aliases": [
+          "BASE",
+          "ID_Base"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_BASEPOINT",
+        "largeResource": "RCDATA_32_BASEPOINT",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "BASE",
+        "macro": "'_base",
+        "macroType": "Draw",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Sets the insertion base point for the current drawing",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 BASE command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449",
+      "kind": "layout_row",
+      "name": "RBN_01740449",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449.id-rbn-cmdbtn-attsync-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_01740449"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 59
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_01740449",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449.id-rbn-cmdbtn-attsync-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449.id-rbn-cmdbtn-attsync-0001",
+      "kind": "command_button",
+      "name": "Synchronize",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabinsert.id-panelattributes.rbn-01740449",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_ATTSYNC_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 60
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_ATTSYNC_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Synchronize",
+        "buttonStyle": "SmallWithText",
+        "keyTip": "AS",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_AttSync",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Synchronize",
+        "official": "Synchronize Attributes",
+        "aliases": [
+          "ATTSYNC",
+          "ID_AttSync"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_ATTSYNC",
+        "largeResource": "RCDATA_32_ATTSYNC",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "ATTSYNC",
+        "macro": "^C^C_AttSync",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Updates block references with new and changed attributes from a specified block definition",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 ATTSYNC command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:20:00Z",
+    "observedControlCount": 28,
+    "evidence": "../../live-observation.json"
+  }
+}

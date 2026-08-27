@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-tabcollaborate-panel-share",
+  "generatedAt": "2026-08-25T21:52:29.8508082Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_TabCollaborate",
+    "tabName": "Collaborate",
+    "panelUid": "ID_PanelSharedViews",
+    "panelName": "Share",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate",
+      "kind": "tab",
+      "name": "Collaborate",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_TabCollaborate"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": true,
+        "confidence": 1.0,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_interaction:select_tab"
+        ]
+      },
+      "ui": {
+        "uid": "ID_TabCollaborate",
+        "text": "Collaborate",
+        "keyTip": "CO",
+        "alias": "ID_TABCOLLABORATE",
+        "officialName": "Collaborate"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews",
+      "kind": "panel",
+      "name": "Share",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_PanelSharedViews"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 4
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_PanelSharedViews",
+        "text": "Share",
+        "keyTip": null,
+        "alias": null,
+        "officialName": "Share",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview",
+      "kind": "layout_row",
+      "name": "RBN_ROW_SHAREVIEW",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview.rbn-241-18533"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_ROW_SHAREVIEW"
+      },
+      "placement": {
+        "region": "main",
+        "order": 5
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_ROW_SHAREVIEW",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview.rbn-241-18533": {
+      "id": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview.rbn-241-18533",
+      "kind": "command_button",
+      "name": "Share\rDrawing",
+      "parentId": "autocad.window.main.ribbon.tab.id-tabcollaborate.id-panelsharedviews.rbn-row-shareview",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBN_241_18533"
+      },
+      "placement": {
+        "region": "main",
+        "order": 6
+      },
+      "verification": {
+        "liveObserved": true,
+        "interactionTested": false,
+        "confidence": 0.95,
+        "evidence": [
+          "autodesk_installed_cuix",
+          "live_accessibility_tree"
+        ]
+      },
+      "ui": {
+        "uid": "RBN_241_18533",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Share\rDrawing",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "SD",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_ShareDrawing",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Share\rDrawing",
+        "official": "Share Drawing",
+        "aliases": [
+          "SHARE",
+          "ID_ShareDrawing"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_SHAREDWG",
+        "largeResource": "RCDATA_32_SHAREDWG",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "SHARE",
+        "macro": "^C^C_SHARE",
+        "macroType": "Any",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Shares a link to the current version of the drawing including its external references.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 SHARE command",
+          "url": null
+        }
+      ]
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-25T07:34:00Z",
+    "observedControlCount": 6,
+    "evidence": "../../live-observation.json"
+  }
+}

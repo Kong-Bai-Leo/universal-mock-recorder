@@ -1,0 +1,728 @@
+{
+  "schemaVersion": "1.0",
+  "mapId": "autocad-2027-drafting-annotation-en-us-id-3dbasics-home-panel-layers-view",
+  "generatedAt": "2026-08-25T21:52:16.2059243Z",
+  "application": {
+    "name": "Autodesk AutoCAD",
+    "version": "2027",
+    "language": "en-US",
+    "workspace": "Drafting & Annotation",
+    "platform": "Windows",
+    "cuixFiles": [
+      "acad.CUIX",
+      "ModelDoc.cuix",
+      "dbcon.cuix",
+      "custom.cuix"
+    ]
+  },
+  "scope": {
+    "tabUid": "ID_3dBasics_Home",
+    "tabName": "Home",
+    "panelUid": "ID_3dBasics_PanelLayersView",
+    "panelName": "Layers & View",
+    "completenessPolicy": "This file contains the selected panel, every descendant control and popup item, plus the application/window/ribbon/tab ancestors needed to retain a valid hierarchy.",
+    "locationModel": "Resolve controls by application/window/ribbon/tab/panel ancestry, stable control IDs, region, and sibling order. Pixel coordinates and transient popup bounds must be detected from the current screenshot rather than hard-coded."
+  },
+  "rootNodeId": "autocad",
+  "focusNodeId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+  "nodes": {
+    "autocad": {
+      "id": "autocad",
+      "kind": "application",
+      "name": "Autodesk AutoCAD",
+      "parentId": "",
+      "children": [
+        "autocad.window.main"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "autocad"
+      },
+      "placement": {
+        "region": "application",
+        "order": 0
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main": {
+      "id": "autocad.window.main",
+      "kind": "window",
+      "name": "AutoCAD drawing window",
+      "parentId": "autocad",
+      "children": [
+        "autocad.window.main.ribbon"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "main-window"
+      },
+      "placement": {
+        "region": "window",
+        "order": 1
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon": {
+      "id": "autocad.window.main.ribbon",
+      "kind": "ribbon",
+      "name": "Ribbon",
+      "parentId": "autocad.window.main",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "Ribbon"
+      },
+      "placement": {
+        "region": "ribbon",
+        "order": 2
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "kind": "tab",
+      "name": "Home",
+      "parentId": "autocad.window.main.ribbon",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_Home"
+      },
+      "placement": {
+        "region": "tab",
+        "order": 3
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_Home",
+        "text": "Home",
+        "keyTip": "H",
+        "alias": "ID_3dBasics_Home",
+        "officialName": "Home - 3D Basics"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+      "kind": "panel",
+      "name": "Layers & View",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbnpnl-sm-0058",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_3dBasics_PanelLayersView"
+      },
+      "placement": {
+        "region": "panel",
+        "order": 185
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_3dBasics_PanelLayersView",
+        "text": "Layers & View",
+        "keyTip": "VI",
+        "alias": "ID_3dBasics_LayersView",
+        "officialName": "3D Basics - Layers & View",
+        "resizeStyle": "Default",
+        "sourceCuix": "acad.CUIX"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0279",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-cmdbtn-layer-0001",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0279"
+      },
+      "placement": {
+        "region": "main",
+        "order": 186
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0279",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-cmdbtn-layer-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-cmdbtn-layer-0001",
+      "kind": "command_button",
+      "name": "Layer\rProperties",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CMDBTN_LAYER_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 187
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.85,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CMDBTN_LAYER_0001",
+        "controlId": "AcRibbonCommandButton",
+        "text": "Layer\rProperties",
+        "buttonStyle": "LargeWithText",
+        "keyTip": "LP",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "ID_Layer",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "Layer\rProperties",
+        "official": "Layer Properties",
+        "aliases": [
+          "LAYER",
+          "ID_Layer"
+        ]
+      },
+      "icon": {
+        "smallResource": "RCDATA_16_LAYERS",
+        "largeResource": "RCDATA_32_LAYERS",
+        "iconOnly": false
+      },
+      "action": {
+        "type": "invoke_command",
+        "cliCommand": "LAYER",
+        "macro": "$M=$(if,$(and,$(>,$(getvar,LayerManagerState),0)),^C^C'_LayerClose,^C^C'_Layer)",
+        "macroType": "Format",
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Manages layers and layer properties",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": "AutoCAD 2027 LAYER command",
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048",
+      "kind": "layout_group",
+      "name": "ID_RBN_ROWPANEL_0048",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROWPANEL_0048"
+      },
+      "placement": {
+        "region": "main",
+        "order": 188
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROWPANEL_0048",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0280",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280.id-rbn-control-layercontrol-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0280"
+      },
+      "placement": {
+        "region": "main",
+        "order": 189
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0280",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280.id-rbn-control-layercontrol-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280.id-rbn-control-layercontrol-0001",
+      "kind": "ribbon_control",
+      "name": "Layer Combo Control",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0280",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_LAYERCONTROL_0001"
+      },
+      "placement": {
+        "region": "main",
+        "order": 190
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_LAYERCONTROL_0001",
+        "controlId": "LayerControl",
+        "text": "Layer Combo Control",
+        "keyTip": "LA"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Layer Combo Control.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0281",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281.rbnu-2901"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0281"
+      },
+      "placement": {
+        "region": "main",
+        "order": 191
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0281",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281.rbnu-2901": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281.rbnu-2901",
+      "kind": "gallery",
+      "name": "Visual\rStyles",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0281",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2901"
+      },
+      "placement": {
+        "region": "main",
+        "order": 192
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2901",
+        "controlId": "AcVisualStyleGalleryControl",
+        "text": "Visual\rStyles",
+        "keyTip": "VS"
+      },
+      "semantics": {
+        "description": "Displays the Visual\rStyles gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected Visual\rStyles item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0282",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282.rbnu-2900"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0282"
+      },
+      "placement": {
+        "region": "main",
+        "order": 193
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0282",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282.rbnu-2900": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282.rbnu-2900",
+      "kind": "gallery",
+      "name": "3D Navigation Combo Control",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0279.id-rbn-rowpanel-0048.id-rbn-row-sm-0282",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2900"
+      },
+      "placement": {
+        "region": "main",
+        "order": 194
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2900",
+        "controlId": "AcNamedViewControl",
+        "text": "3D Navigation Combo Control",
+        "keyTip": "NV"
+      },
+      "semantics": {
+        "description": "Displays the 3D Navigation Combo Control gallery and lets the user choose one of its runtime items.",
+        "inputs": [
+          "gallery item"
+        ],
+        "result": "The selected 3D Navigation Combo Control item is applied or opened.",
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbnpnl-sm-0058": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbnpnl-sm-0058",
+      "kind": "panel_break",
+      "name": "ID_RBNPNL_SM_0058",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBNPNL_SM_0058"
+      },
+      "placement": {
+        "region": "main",
+        "order": 195
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBNPNL_SM_0058",
+        "controlId": "AcRibbonPanelBreak",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283",
+      "kind": "layout_row",
+      "name": "ID_RBN_ROW_SM_0283",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview",
+      "children": [
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2735",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2736",
+        "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.id-rbn-control-visualstylesopacityslider-0001"
+      ],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_ROW_SM_0283"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 196
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_ROW_SM_0283",
+        "controlId": null,
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2735": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2735",
+      "kind": "toggle_button",
+      "name": "X-ray",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2735"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 197
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2735",
+        "controlId": "AcXRayModeCommandToggleButton",
+        "text": "X-ray",
+        "buttonStyle": "SmallWithoutText",
+        "keyTip": "XR",
+        "smallImage": null,
+        "largeImage": null,
+        "menuMacroId": "",
+        "commandId": null,
+        "commandType": null
+      },
+      "names": {
+        "visible": "X-ray",
+        "official": null,
+        "aliases": null
+      },
+      "icon": {
+        "smallResource": null,
+        "largeResource": null,
+        "iconOnly": true
+      },
+      "action": {
+        "type": "invoke_control",
+        "cliCommand": null,
+        "macro": null,
+        "macroType": null,
+        "commandId": null,
+        "commandType": null
+      },
+      "semantics": {
+        "description": "Toggles X-ray.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      },
+      "documentation": [
+        {
+          "source": "autodesk_installed_cuix",
+          "descriptionVerified": true,
+          "officialHelpQuery": null,
+          "url": null
+        }
+      ]
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2736": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.rbnu-2736",
+      "kind": "separator",
+      "name": "RBNU_2736",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "RBNU_2736"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 198
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "RBNU_2736",
+        "controlId": "AcRibbonSeparator",
+        "text": null,
+        "keyTip": null
+      }
+    },
+    "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.id-rbn-control-visualstylesopacityslider-0001": {
+      "id": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283.id-rbn-control-visualstylesopacityslider-0001",
+      "kind": "ribbon_control",
+      "name": "Opacity",
+      "parentId": "autocad.window.main.ribbon.tab.id-3dbasics-home.id-3dbasics-panellayersview.id-rbn-row-sm-0283",
+      "children": [],
+      "source": {
+        "type": "autodesk_installed_cuix",
+        "uid": "ID_RBN_CONTROL_VISUALSTYLESOPACITYSLIDER_0001"
+      },
+      "placement": {
+        "region": "slideout",
+        "order": 199
+      },
+      "verification": {
+        "liveObserved": false,
+        "interactionTested": false,
+        "confidence": 0.55,
+        "evidence": [
+          "autodesk_installed_cuix"
+        ]
+      },
+      "ui": {
+        "uid": "ID_RBN_CONTROL_VISUALSTYLESOPACITYSLIDER_0001",
+        "controlId": "AcVisualStylesOpacitySlider",
+        "text": "Opacity",
+        "keyTip": "OP"
+      },
+      "semantics": {
+        "description": "Provides the AutoCAD Ribbon control named Opacity.",
+        "inputs": [],
+        "result": null,
+        "cancelActions": [
+          "Escape"
+        ],
+        "risk": "unclassified"
+      }
+    }
+  },
+  "validation": {
+    "liveWindow": "Autodesk AutoCAD 2027 drawing window",
+    "liveAccessibilityChecked": false,
+    "observedAt": null,
+    "observedControlCount": 0,
+    "evidence": null
+  }
+}

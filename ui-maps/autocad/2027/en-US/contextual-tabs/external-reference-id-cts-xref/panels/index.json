@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "tabUid": "ID_CTS-Xref",
+  "tabName": "External Reference",
+  "panelCount": 3,
+  "panels": [
+    {
+      "name": "Edit",
+      "uid": "RBN_00017176",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017176",
+      "map": "edit/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Clipping",
+      "uid": "RBN_00017184",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017184",
+      "map": "clipping/ui-map.json",
+      "nodes": 9,
+      "actionableControls": 2
+    },
+    {
+      "name": "Options",
+      "uid": "RBN_00017260",
+      "nodeId": "autocad.window.main.ribbon.tab.id-cts-xref.rbn-00017260",
+      "map": "options/ui-map.json",
+      "nodes": 8,
+      "actionableControls": 1
+    }
+  ]
+}
