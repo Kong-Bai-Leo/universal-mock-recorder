@@ -1,0 +1,28 @@
+﻿FILEDIA 0
+OSMODE 0
+CMDECHO 1
+ATTDIA 0
+ATTREQ 1
+GRIDMODE 0
+PDMODE 34
+PDSIZE 5
+_.RECTANG 0,0 268.5826,174.8586
+_.RECTANG 0,-200 304.9721,-95.5983
+_.CIRCLE 500,100 122.3551
+_.LINE 0,300 264.8333,300
+
+_.LINE 700,0 700,200
+
+_.LINE 700,0 796.9,173.9
+
+_.POINT 900,0
+_.POINT 900,50
+_.POINT 900,100
+_.PLINE 0,-400
+304.9721,-400
+304.9721,-295.5983
+0,-295.5983
+_C
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l72/l72.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l72/l72.dxf 16

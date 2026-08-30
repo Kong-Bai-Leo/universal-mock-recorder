@@ -1,0 +1,29 @@
+FILEDIA 0
+OSMODE 0
+_.CIRCLE 0,0 161.50825
+_.-ARRAY _L
+
+_R
+3
+4
+484.5247
+484.5247
+_.CIRCLE 0,-40000 161.50825
+_.-ARRAY _L
+
+_R
+18
+16
+1203.045
+1879.9885
+_.RECTANG 0,-3000 422.6673,-2711.5917
+_.-ARRAY _L
+
+_R
+3
+4
+432.6125
+634.0009
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l32/l32.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l32/l32.dxf 16

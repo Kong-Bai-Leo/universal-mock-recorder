@@ -1,0 +1,17 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时102 三维建模界面 ----
+; 全课为界面漫游: 工作空间(三维基础/草图与注释)、视觉样式、标准视图、透视。
+; 演示的 BOX/SPHERE/PYRAMID/TORUS/WEDGE/POLYSOLID/CONE/EXTRUDE 全部鼠标拾取,
+; 命令行没有任何键入数值或提示默认值 -> 不构造几何(见报告"做不到的部分")。
+ISOLINES 4
+PERSPECTIVE 1
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l102/l102.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l102/l102.dxf 16

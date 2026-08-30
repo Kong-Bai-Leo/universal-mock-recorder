@@ -1,0 +1,18 @@
+FILEDIA 0
+_.VIEWRES _Y 1000
+SPLINESEGS 8
+FACETRES 0.5
+ISOLINES 4
+SAVETIME 10
+CURSORSIZE 5
+XDWGFADECTL 50
+XFADECTL 70
+GRIDMODE 0
+_.CIRCLE 100,100 40
+_.CIRCLE 220,100 40
+_.ZOOM _E
+_.ERASE _ALL
+
+_.SAVEAS 2004 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l4/l4.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l4/l4.dxf 16
+

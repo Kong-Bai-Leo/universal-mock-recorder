@@ -1,0 +1,108 @@
+﻿FILEDIA 0
+CMDDIA 0
+OSMODE 0
+MTEXTED .
+ATTDIA 0
+-STYLE SHOUHEITI txt.shx,gbcbig.shx 0 1 0 _N _N _N
+DIMTXSTY SHOUHEITI
+DIMTXT 20
+DIMCLRT 3
+DIMASZ 8
+DIMLDRBLK .
+DIMSCALE 1
+-DIMSTYLE _S GONGYE
+_.ZOOM _W -150,-1100 1300,200
+_.QLEADER
+0,0
+60,50
+160,50
+0
+klasdfjlak
+
+_.QLEADER
+0,-120
+60,-70
+160,-70
+0
+拉开司法局拉手孔
+
+_.QLEADER
+0,-240
+60,-190
+160,-190
+0
+lkasfjkla
+
+_.QLEADER
+0,-360
+60,-310
+160,-310
+0
+asfafas
+
+_.QLEADER
+0,-480
+60,-430
+160,-430
+0
+lkasjdkla
+
+_.QLEADER
+0,-600
+60,-550
+160,-550
+0
+sklafj;lasfjl
+lkasfjlkasfj
+jlkasfjklas
+
+_.QLEADER
+0,-780
+60,-730
+160,-730
+0
+asjlfkjasfkl
+jas;lfkj;lasf
+asfjlkasfj
+klasfjlaks
+
+_.QLEADER
+0,-960
+60,-910
+160,-910
+0
+asfasf
+asfas
+
+_.LEADER
+700,0
+760,50
+_F
+_S
+860,50
+_A
+asfa
+
+_.LEADER
+700,-200
+760,-150
+_F
+_S
+860,-150
+_A
+aksfjalk
+
+_.LEADER
+700,-400
+760,-350
+_F
+_N
+820,-390
+880,-330
+940,-370
+_A
+lk打飞机奥斯卡冷风机啊
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l58/l58.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l58/l58.dxf 16

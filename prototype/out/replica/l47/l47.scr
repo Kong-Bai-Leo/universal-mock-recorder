@@ -1,0 +1,31 @@
+﻿; 课时47 多行文字(三) — 符号/字母大小写/背景遮罩
+; 证据: cmdmont m00-m02 (3/3, 全部) — 同样几乎全在 MTEDIT 内:
+;   17.8s/25.0s _mtedit ; 48.5-129.6s MTEDIT ; 143-167s 夹点 ** 拉伸 ** 调整文字框
+;   526.6s/569.3s 右键菜单: 合并段落(O)/删除格式/背景遮罩(B).../编辑器设置
+;   905.8s _mtedit
+; 帧图回读(D): 530s 功能区 字体 Microsoft YaHei UI 字高 7.5 ; 900s 字体 黑体 字高 10
+;   900s 选择颜色-真彩色: 色调 211 饱和度 76 亮度 25, RGB 红 16 绿 62 蓝 112
+;        — 该对话框到 935s 终帧仍未应用(文字仍为白色), 按 R3 不入执行序列
+;   530s->900s "90" 变 "九十" (查找替换), ";asfsa..." 变 ";ASFSA..." (字母大小写 Aa)
+; 剔除: 163-167s 窗选 *取消* ; 900s 颜色对话框未确定
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+MTEXTED :lisped
+-STYLE Standard simhei.ttf 0 1 0 _N _N
+_.ZOOM _W -80,-60 320,140
+_.-MTEXT 60,130 _H 10 _J _TL _W 60
+aklsjhklasj
+
+_.-MTEXT -70,100 _H 10 _J _TL _W 45
+\fSimHei|b0|i1|c134|p2;UI哈市发空\P间啊\P绿色上咖啡机奥\P斯卡了\P按时发发
+
+_.-MTEXT 10,100 _H 10 _J _TL _W 70
+\fSimHei|b0|i1|c134|p2;UI哈市发空间啊\P绿色上咖啡机奥\P斯卡了\P按时发发
+
+_.-MTEXT 110,100 _H 10 _J _TL _W 190
+UI哈市发空间啊 绿色上咖啡机奥斯卡了 按时发发\Pdfhsdhf\Pdsggdas\P° 九十° ±φ≈Ω ®®®®ííííí ¢\Pface window\P;ASFSA ASFAF ASFA ASF AASFASF ASF ASF ASF ASF ASFA\Psfsa fa sfas
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l47/l47.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l47/l47.dxf 16

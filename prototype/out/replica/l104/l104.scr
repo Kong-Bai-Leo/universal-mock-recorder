@@ -1,0 +1,39 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+ISOLINES 16
+; ---- 课时104 几何体绘制 ----
+; BOX 长度(L): 长度 800 / 宽度 600 / 高度 1000            (键入, t 103-142s)
+; RECTANG 尺寸(D) 长度 600 宽度 800 -> EXTRUDE 高度 1000  (键入, t 347-361s)
+; SPHERE 半径 10000                                      (键入, t 608.6s)
+; CONE 高度 -1000 ; 底面半径取提示默认 <2626.2954>        (t 533-543s)
+; CYLINDER 取提示默认 <824.8525> / <1670.5623>            (t 440.6s)
+_.BOX 0,0,0 _L 800 600 1000
+_.MASSPROP _L
+
+_N
+_.RECTANG 1500,0 _D 600 800 2100,800
+_.EXTRUDE _L
+
+1000
+_.MASSPROP _L
+
+_N
+_.CONE 3500,4000,0 2626.2954 -1000
+_.MASSPROP _L
+
+_N
+_.CYLINDER 3500,-4000,0 824.8525 1670.5623
+_.MASSPROP _L
+
+_N
+_.SPHERE 0,-25000,0 10000
+_.MASSPROP _L
+
+_N
+_.ZOOM _W -12000,-38000 14000,10000
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l104/l104.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l104/l104.dxf 16

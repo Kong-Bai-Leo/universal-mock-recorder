@@ -1,0 +1,13 @@
+FILEDIA 0
+OSMODE 0
+_.CIRCLE 232.200,222.200 80.600
+_.LINE 468.000,168.000 974.000,168.000 
+_.LINE 654.000,171.000 1055.000,599.000 
+_.LINE 948.000,169.000 948.000,493.000 
+_.LINE 714.000,492.000 1024.000,492.000 
+_.LINE 654.000,489.000 799.000,331.000 
+_.ZOOM _E
+OSMODE 16383
+AUTOSNAP 63
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l41/l41.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l41/l41.dxf 16

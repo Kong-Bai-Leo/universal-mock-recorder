@@ -1,0 +1,17 @@
+﻿FILEDIA 0
+OSMODE 0
+DIMTXT 2.5
+_.ZOOM _W -20,-20 160,100
+_.RECTANG 0,0 60,40
+_.MLEADER
+20,20
+90,60
+引线标注A
+_.MLEADER
+40,10
+100,-10
+引线标注B
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l60/l60.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l60/l60.dxf 16
+_.ZOOM _E

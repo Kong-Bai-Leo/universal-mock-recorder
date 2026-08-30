@@ -1,0 +1,29 @@
+﻿; 课时45 多行文字(一) MTEXT
+; 证据: cmdmont m00-m06 (7/7)
+;   27.4s MTEXT 当前文字样式 "Standard" 文字高度 2.5 注释性 否 -> *取消*
+;   79-236s T(MTEXT) 指定第一角点 -> 对角点或 [高度(H)/对正(J)/行距(L)/旋转(R)/样式(S)/宽度(W)/栏(C)] -> 编辑器输入
+;   399-456s 夹点 ** 拉伸 ** 调整文字框宽度
+;   500s '_style 字体下拉框 "新宋体" 高亮
+;   539-550s MTEXT -> H(高度) -> 指定高度 <2.5>: 10
+;   380s 特性面板回读(多行文字): 图层 0 / 样式 Standard / 注释性 否 /
+;              对正 左上 / 文字高度 2.5 / 旋转 0 /
+;              内容 "UI哈市发空间啊\P爱上咖啡机奥..."
+;   593-687s SCALETEXT 基点 E -> 比例因子(S) <2> -> 参照(R) -> 参照长度<1> -> 新长度 -> 1 个对象已更改 (反复 3 次, 第2次默认比例 <1.5114>)
+; 剔除: 44.2s/52.3s/236.2s/409.6s/413.4s/567.5s/569.5s/696.2s 均为 *取消*
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+MTEXTED :lisped
+-STYLE Standard simhei.ttf 0 1 0 _N _N
+_.ZOOM _W -10,-10 200,90
+_.-MTEXT 0,70 _H 2.5 _J _TL _W 60
+UI哈市发空间啊
+爱上咖啡机奥斯卡了
+按时发发
+
+_.-MTEXT 110,70 _H 10 _J _TL _W 80
+aklsjhklasj
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l45/l45.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l45/l45.dxf 16

@@ -1,0 +1,20 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时105 拉伸工具 ----
+; 演示"哪些轮廓能被 EXTRUDE": 闭合多段线/圆/矩形/多边形/椭圆/面域 可以,
+; 开放曲线、自交曲线、非平面对象、直线 报错。
+; 命令行仅回显过 EXTRUDE 高度提示的默认值(即前一次实际使用的高度):
+;   83684.9380 / 58284.3049 / 163055.4548 / 282259.6143 / 183445.3468 /
+;   144954.7200 / 414633.6813 / 629508.8253 / 1068632.7247 / 747246.8489
+; 但轮廓的平面尺寸全部靠鼠标拾取, 没有任何数值证据, 像素测量(见 geo_overlay 尝试)
+; 因实体被"真实"视觉样式填充而不可靠 -> 不构造几何。
+ISOLINES 4
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l105/l105.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l105/l105.dxf 16

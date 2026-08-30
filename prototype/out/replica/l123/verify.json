@@ -1,0 +1,80 @@
+{
+ "file": "l123.dxf",
+ "counts": {
+  "LWPOLYLINE": 2,
+  "3DSOLID": 1,
+  "DIMENSION": 6
+ },
+ "LWPOLYLINE": [
+  {
+   "n": 4,
+   "pts": [
+    [
+     -25.0,
+     55.0
+    ],
+    [
+     -25.0,
+     0.0
+    ],
+    [
+     25.0,
+     0.0
+    ],
+    [
+     25.0,
+     55.0
+    ]
+   ],
+   "closed": true
+  },
+  {
+   "n": 4,
+   "pts": [
+    [
+     -50.0,
+     0.0
+    ],
+    [
+     50.0,
+     0.0
+    ],
+    [
+     50.0,
+     100.0
+    ],
+    [
+     -50.0,
+     100.0
+    ]
+   ],
+   "closed": true
+  }
+ ],
+ "DIMENSION": [
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 164.0
+  }
+ ]
+}

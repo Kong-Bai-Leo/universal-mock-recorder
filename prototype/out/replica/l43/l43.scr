@@ -1,0 +1,26 @@
+﻿; 课时43 单行文字 (TEXT)
+; 证据: cmdmont m00-m08 (9/9)
+;   53s/113s TEXT 当前文字样式: "Standard" 文字高度: 2.5000 注释性: 否 对正: 左
+;   120-152s 指定高度 <2.5000>: 回车 ; 指定文字的旋转角度 <0>: 回车
+;   691-700s 对正(J) 选项表: 左(L)/居中(C)/右(R)/对齐(A)/中间(M)/布满(F)/TL/TC/TR/ML/MC/MR/BL/BC/BR
+;   700-733s J -> F(布满) 指定基线两端点 + 高度 <2.5000> -> *取消* (不入序列)
+;   747-761s TEXT -> S(样式) -> 输入样式名 <Standard> -> ? 列出样式 -> *取消*
+;   817-857s '_style 透明命令: 字体下拉框, 856.1s 高亮 "微软雅黑 Light"
+;   912-921s SCALETEXT 选择对象 找到 1 个 -> 基点选项 <现有> -> 指定新模型高度 <2.5>: 10 -> "1 个对象已更改"
+; 剔除: 54.3s/66.3s TEXT *取消* ; 733.7s 布满对正 *取消* ; 761s 样式选项 *取消* ; 912.3s TEXT *取消*
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+-STYLE Standard simhei.ttf 0 1 0 _N _N
+_.ZOOM _W -10,-20 140,60
+_.TEXT 0,40 2.5 0 单行文字
+_.TEXT 0,30 2.5 0 阿卡丽司法局爱丽丝副科级
+_.TEXT 0,20 2.5 0 哈设计课六发哈萨克
+_.TEXT 0,5 2.5 45 按时发送
+_.SCALETEXT _L
+
+_E
+10
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l43/l43.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l43/l43.dxf 16

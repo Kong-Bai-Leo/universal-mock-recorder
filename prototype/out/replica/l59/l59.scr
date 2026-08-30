@@ -1,0 +1,71 @@
+﻿FILEDIA 0
+CMDDIA 0
+OSMODE 0
+MTEXTED .
+-STYLE SHOUHEITI txt.shx,gbcbig.shx 0 1 0 _N _N _N
+_.ZOOM _W -80,-360 440,80
+_.MLEADER
+0,0
+30,20
+lkjas;lkfjkas
+_.MLEADER
+0,-40
+40,-40
+asfas
+_.MLEADER
+_O
+_L
+_P
+_X
+0,-80
+30,-60
+asfasf
+_.MLEADER
+_O
+_L
+_S
+_X
+150,-40
+200,-20
+窗户
+_.MLEADER
+150,-120
+200,-120
+lkasjfdkla
+_.MLEADER
+150,-160
+200,-160
+萨法
+_.MLEADER
+150,-200
+200,-200
+阿什拉夫卡\P死简历课
+_.MLEADER
+300,-40
+340,-60
+askIflask
+_.MLEADER
+_O
+_M
+2
+_F
+30
+_S
+90
+_X
+0,-260
+60,-240
+2
+_.MLEADER
+0,-300
+60,-280
+3
+_.AIMLEADEREDITADD
+175,-30
+130,-70
+140,-90
+160,-95
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l59/l59.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l59/l59.dxf 16

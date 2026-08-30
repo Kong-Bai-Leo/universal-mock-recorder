@@ -1,0 +1,79 @@
+{
+ "file": "l51.dxf",
+ "counts": {
+  "LWPOLYLINE": 2,
+  "DIMENSION": 6
+ },
+ "LWPOLYLINE": [
+  {
+   "n": 4,
+   "pts": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     93.27,
+     0.0
+    ],
+    [
+     93.27,
+     31.64
+    ],
+    [
+     0.0,
+     31.64
+    ]
+   ],
+   "closed": true
+  },
+  {
+   "n": 4,
+   "pts": [
+    [
+     150.0,
+     0.0
+    ],
+    [
+     243.27,
+     0.0
+    ],
+    [
+     243.27,
+     31.64
+    ],
+    [
+     150.0,
+     31.64
+    ]
+   ],
+   "closed": true
+  }
+ ],
+ "DIMENSION": [
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 32.0
+  }
+ ]
+}

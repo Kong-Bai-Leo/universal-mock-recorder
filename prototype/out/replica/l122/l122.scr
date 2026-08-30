@@ -1,0 +1,22 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+ISOLINES 16
+; ---- 课时122 选择工具及其它 ----
+; 提示默认值(被回车接受): CONE 底面半径 <41.6534> 高度 <90.2115>
+;                        SPHERE 半径 <48.7930>
+; BOX 底面角点 / CYLINDER 底面半径 全为鼠标拾取, 无回显 -> 不构造
+_.CONE 0,0,0 41.6534 90.2115
+_.MASSPROP _L
+
+_N
+_.SPHERE 200,0,0 48.7930
+_.MASSPROP _L
+
+_N
+_.ZOOM _W -100,-140 340,140
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l122/l122.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l122/l122.dxf 16

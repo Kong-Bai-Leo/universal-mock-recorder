@@ -1,0 +1,22 @@
+﻿FILEDIA 0
+OSMODE 0
+_.-LAYER _M 图层1 _C 3 图层1 _M 图层2 _S 0 
+_.-LAYER _S 图层1 
+_.PLINE 0,0 120,0 120,90 0,90 _CL
+_.-LAYER _S 图层2 
+_.CIRCLE 260,45 50
+_.-LAYER _S 0 
+_.LINE 360,90 500,20 
+_.LINE 380,110 520,40 
+PICKBOX 12
+_.ZOOM _W -40,-40 580,160
+_.CHPROP
+400,72
+
+_LA
+图层1
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l66/l66.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l66/l66.dxf 16
+_.ZOOM _E

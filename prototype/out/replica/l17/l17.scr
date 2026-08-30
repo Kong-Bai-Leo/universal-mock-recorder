@@ -1,0 +1,48 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 4
+APERTURE 10
+_.ZOOM _W -2000,-3000 6500,6000
+_.LINE 0,0 1000,0
+
+_.LINE 2000,-2000 2000,-1800
+
+_.LINE 0,0 -669.1306,743.1448
+
+_.XLINE _H 0,-1500
+
+_.XLINE _V 2500,0
+
+_.XLINE _A 45 2500,-1500
+
+_.XLINE _A 120 3500,-1500
+
+_.XLINE _A _R
+-267.6522,297.2579
+100
+4500,-1500
+
+_.XLINE _B
+0,0
+500,0
+-334.5653,371.5724
+
+_.DIMANGULAR
+900,0
+-267.6522,297.2579
+-200,300
+_.XLINE _O
+200
+900,0
+900,400
+
+_.XLINE _O
+5000
+900,0
+900,400
+
+_.RAY 0,0 707.1068,707.1068
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l17/l17.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l17/l17.dxf 16

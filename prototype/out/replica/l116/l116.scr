@@ -1,0 +1,49 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+ISOLINES 16
+_.ZOOM _W -300,-300 1600,700
+_.BOX 0,0 200,200
+200
+_.BOX 100,100 300,300
+200
+_.UNION
+0,0
+300,300
+
+_.MASSPROP _L
+
+_N
+_.BOX 500,0 700,200
+200
+_.BOX 600,100 800,300
+200
+_.SUBTRACT
+500,0
+
+800,300
+
+_.MASSPROP _L
+
+_N
+_.BOX 1000,0 1200,200
+200
+_.BOX 1100,100 1300,300
+200
+_.INTERSECT
+1000,0
+1300,300
+
+_.MASSPROP _L
+
+_N
+_.ZOOM _E
+_.MASSPROP _ALL
+
+_N
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l116/l116.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l116/l116.dxf 16
+_.ZOOM _E

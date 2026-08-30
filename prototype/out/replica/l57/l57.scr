@@ -1,0 +1,44 @@
+﻿FILEDIA 0
+CMDDIA 0
+OSMODE 0
+MTEXTED .
+ATTDIA 0
+-STYLE SHOUHEITI txt.shx,gbcbig.shx 0 1 0 _N _N _N
+DIMTXSTY SHOUHEITI
+DIMTXT 50
+DIMCLRT 3
+DIMASZ 5
+DIMLDRBLK .
+DIMSCALE 1
+-DIMSTYLE _S GONGYE
+_.ZOOM _W 500,400 1300,1000
+DIMASZ 10
+DIMLDRBLK _BOXFILLED
+_.QLEADER
+620,720
+620,497
+825,497
+0
+asfas\\
+
+DIMASZ 5
+DIMLDRBLK .
+_.QLEADER
+823,808
+1090,810
+1190,890
+0
+这是个圆形
+
+_.QLEADER
+825,706
+850,636
+925,636
+0
+asfasf
+asfasfasf
+asdfgafsa
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l57/l57.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l57/l57.dxf 16

@@ -1,0 +1,40 @@
+﻿; 课时44 单行文字编辑
+; 证据: cmdmont m00-m09 (10/10)
+;   22.6s ST(STYLE) ; 31-63s TEXT Standard 2.5000 对正:左 -> *取消*
+;   81-95s TEXTEDIT 当前设置: 编辑模式 = Multiple -> *取消*
+;   104-123s TEXT J -> L(左) -> 高度<2.5000> 旋转<0> -> *取消*
+;   185.8s TEXT 当前文字样式 "Standard" 文字高度: 10.5853
+;   289.9s '_spell ; 292-306s TEXTALIGN 对齐=左对齐 间距模式=当前垂直 -> *取消* ; 306-383s FIND
+;   395-410s JUSTIFYTEXT 选择对象 找到 1 个 -> 对正选项 <左对齐>: L
+;   423-438s SCALETEXT 基点 <左对齐>: E(现有) -> 新模型高度 <2.5> -> 1 个对象已更改
+;   477-497s SCALETEXT 基点 M(中间) -> P(图纸高度) -> 新图纸高度 <100>: 100 -> "1 个非注释性对象已忽略"
+;   501-517s SCALETEXT 基点 E -> M(匹配对象) -> 高度=10.5853 -> 1 个对象已更改
+;   536-546s SCALETEXT 基点 <现有> -> M(匹配对象) -> 高度=2.5 -> 1 个对象已更改
+;   890s 文字样式对话框回读: 当前样式 Standard, 字体名 新宋体, 字体样式 常规,
+;              高度(T) 0.0000, 宽度因子(W) 1.0000, 倾斜角度(O) 0, 注释性 未勾选
+; 剔除: 61.9s/85.0s/122.9s/146.9s/154.6s/186.7s/293.8s/549.1s/853.4s 均为 *取消*
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+-STYLE Standard simhei.ttf 0 1 0 _N _N
+_.ZOOM _W -10,-10 130,50
+_.TEXT 0,30 2.5 0 银色坷垃
+_.TEXT 0,25 2.5 0 阿萨斯
+_.TEXT 20,15 2.5 0 银色s银色
+_.JUSTIFYTEXT _L
+
+_L
+_.TEXT 20,30 2.5 0 lk银色jsfkl银色
+_.SCALETEXT _L
+
+_E
+10.5853
+_.TEXT 20,5 2.5 0 银色sf银色f
+_.SCALETEXT _L
+
+_E
+_M
+30,35
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l44/l44.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l44/l44.dxf 16

@@ -1,0 +1,67 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时81 视口与注释性 ----
+; 数值来源: DIMLINEAR 回显 441/462/201/202/170/150 (证据等级 C)
+; 摆放位置为推断(证据等级 L): 视频源图纸是外部 DWG, 无法复原绝对坐标
+_.-STYLE
+5.宋体-2.5
+SimSun
+2.5
+1
+0
+_N
+_N
+_.-STYLE
+5.宋体-2.5(带注释性)
+SimSun
+_A
+_Y
+_N
+2.5
+1
+0
+_N
+_N
+CANNOSCALE
+1:2
+_.RECTANG 0,0 441,462
+_.LINE 0,60 201,60
+
+_.LINE 0,140 202,140
+
+_.LINE 0,220 170,220
+
+_.LINE 0,300 150,300
+
+_.ZOOM _W -110,-110 560,580
+_.DIMLINEAR 0,0 441,0 220,-45
+_.DIMLINEAR 0,0 0,462 -60,231
+_.DIMLINEAR 0,60 201,60 100,45
+_.DIMLINEAR 0,140 202,140 101,125
+_.DIMLINEAR 0,220 170,220 85,205
+_.DIMLINEAR 0,300 150,300 75,285
+TEXTSTYLE
+5.宋体-2.5
+_.TEXT 20,380 0 非注释性文字2.5
+TEXTSTYLE
+5.宋体-2.5(带注释性)
+_.TEXT 20,420 0 注释性文字1比2
+ANNOALLVISIBLE
+1
+ANNOAUTOSCALE
+4
+CANNOSCALE
+1:10
+_.TEXT 20,340 0 注释性文字1比10
+_.ZOOM _W -110,-110 560,580
+_.-VIEW _S 小佩奇
+TILEMODE 0
+_.MVIEW 20,20 270,190
+TILEMODE 1
+_.ZOOM _W -110,-110 560,580
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l81/l81.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l81/l81.dxf 16

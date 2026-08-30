@@ -1,0 +1,31 @@
+FILEDIA 0
+OSMODE 0
+ARRAYASSOCIATIVITY 0
+_.CIRCLE 6326,0 1000
+_.ZOOM _W -20000,-60000 20000,20000
+_.ARRAYPOLAR
+_L
+
+0,0
+6
+360
+_ROT
+_Y
+_X
+_.CIRCLE 4400,-40000 1000
+_.ARRAYPOLAR
+_L
+
+0,-40000
+10
+360
+_ROW
+3
+2000
+0
+_ROT
+_Y
+_X
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l34/l34.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l34/l34.dxf 16

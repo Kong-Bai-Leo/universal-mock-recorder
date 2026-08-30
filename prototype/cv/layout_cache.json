@@ -1,0 +1,43 @@
+{
+ "8-课时8：圆形的绘制-720P 准高清-AVC.mp4": {
+  "size": [
+   1280,
+   720
+  ],
+  "taskbar_y": 671,
+  "cmdline_y": [
+   605,
+   671
+  ],
+  "ribbon_y": 121,
+  "canvas": [
+   0,
+   121,
+   1280,
+   602
+  ],
+  "cross_canvas": [
+   0,
+   121,
+   1280,
+   602
+  ],
+  "key_zone": [
+   1117,
+   606,
+   1272,
+   684
+  ],
+  "cmd_band": [
+   0,
+   605,
+   1107,
+   671
+  ],
+  "view3d_x": null,
+  "cross_col_min": 288,
+  "cross_row_min": 512,
+  "ui_change_min_px": 160,
+  "_detected": true
+ }
+}

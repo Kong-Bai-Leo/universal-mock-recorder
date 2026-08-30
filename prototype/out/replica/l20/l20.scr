@@ -1,0 +1,41 @@
+; 课时20 区域覆盖工具 (WIPEOUT)
+; 证据: cmdmont m00-m14,m16,m18,m20-m22 (19/23)
+;   83-130s  WIPEOUT 指定第一点/下一点/闭合(C)  -> 点方式画覆盖区
+;   146-176s 再画一个; 176-206s DRAWORDER 对象上(A)/对象下(U)
+;   235-311s WIPEOUT 边框(F): 输入模式 OFF -> ON -> D(显示但不打印)
+;   317-445s WIPEOUT 多段线(P): 报错"多段线必须闭合, 并且只能由直线段构成"(取消, 不入序列)
+;   517-525s PLINE 正交开 边长 10000 x3 -> 闭合矩形多段线
+;   458-505s WIPEOUT _P -> "是否要删除多段线? [是(Y)/否(N)]" 先 Y 后 N
+;   361s CIRCLE / 365s ARC / 384s ELLIPSE _C / 370s RECTANG
+;   378s POLYGON 侧面数 6 内接于圆(I); 697s POLYGON 36 _I; 756s POLYGON 60 外切于圆(C)
+;   767-787s HATCH 拾取内部点; 826-873s DRAWORDER A/U/F/B
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+PICKBOX 3
+APERTURE 10
+_.ZOOM _W -800,-3600 6400,1600
+_.WIPEOUT 0,0 600,0 700,400 100,500 _C
+_.WIPEOUT 900,0 1500,0 1200,450 _C
+_.WIPEOUT 1800,0 2500,100 2400,500 1900,450 _C
+_.PLINE 0,-1000 1000,-1000 1000,-300 0,-300 _C
+_.WIPEOUT _P 500,-1000 _N
+_.PLINE 1400,-1000 2400,-1000 2400,-300 1400,-300 _C
+_.WIPEOUT _P 1900,-1000 _Y
+_.CIRCLE 3200,300 400
+_.ARC 2800,-600 3200,-300 3600,-600
+_.ELLIPSE _C 3200,-1400 3800,-1400 250
+_.POLYGON 6 4600,300 _I 400
+_.POLYGON 36 4600,-700 _I 400
+_.POLYGON 60 4600,-1700 _C 400
+_.RECTANG 0,-3000 2400,-1800
+_.ZOOM _W -200,-3200 2600,-1600
+_.-HATCH _P ANSI31 40 0 1200,-2400 
+_.ZOOM _W -800,-3600 6400,1600
+_.WIPEOUT 600,-2700 1400,-2700 1000,-2000 _C
+_.DRAWORDER 1000,-2700  _F
+_.WIPEOUT _F _OFF
+_.WIPEOUT _F _ON
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l20/l20.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l20/l20.dxf 16

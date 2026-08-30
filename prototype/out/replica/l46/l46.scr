@@ -1,0 +1,29 @@
+﻿; 课时46 多行文字(二) — 文字编辑器内格式化
+; 证据: cmdmont m00-m02 (3/3, 全部) — 本课几乎全在 MTEDIT 就地编辑器内完成,
+;   命令行只能读到: 25.0s _mtedit ; 32.6-38.9s CO(COPY) 找到 1 个 复制模式=多个 -> *取消* ;
+;   113-611s 反复 MTEDIT ; 261-304s 窗选 指定对角点 -> *取消* ; 902.4s _u MTEDIT GROUP (撤销)
+; 帧图回读(D): 430s/610s 编辑器功能区: 字体 黑体, 字高 10 (130s 曾为 1000), 斜体(I) 打开
+;   610s 上标: "绿2上" ; 900s 左侧副本带红色背景遮罩, 右键菜单有 合并段落/删除格式/背景遮罩(B)
+; 剔除: 34.6s/38.9s COPY *取消* ; 263-304s 窗选 *取消* ;
+;   902.4s _u MTEDIT GROUP 撤销了 900s 那次段落合并/上标编辑 -> 终态回到 915s 的四段文字
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+MTEXTED :lisped
+-STYLE Standard simhei.ttf 0 1 0 _N _N
+_.ZOOM _W -80,-10 270,140
+_.-MTEXT 60,130 _H 10 _J _TL _W 60
+aklsjhklasj
+
+_.-MTEXT -70,100 _H 10 _J _TL _W 45
+\fSimHei|b0|i1|c134|p2;UI哈市发空\P间啊\P绿色上咖啡机奥\P斯卡了\P按时发发
+
+_.-MTEXT 10,100 _H 10 _J _TL _W 70
+\fSimHei|b0|i1|c134|p2;UI哈市发空间啊\P绿色上咖啡机奥\P斯卡了\P按时发发
+
+_.-MTEXT 160,100 _H 10 _J _TL _W 70
+\fSimHei|b0|i1|c134|p2;UI哈市发空间啊\P绿色上咖啡机奥\P斯卡了\P按时发发
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l46/l46.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l46/l46.dxf 16

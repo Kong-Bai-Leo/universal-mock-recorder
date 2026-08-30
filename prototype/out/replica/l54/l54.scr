@@ -1,0 +1,26 @@
+﻿FILEDIA 0
+OSMODE 0
+DIMTXT 2.5
+DIMASZ 2.5
+_.ZOOM _W -20,-30 100,40
+_.LINE 0.0,0 0.0,-12 
+_.LINE 13.87,0 13.87,-12 
+_.LINE 52.5,0 52.5,-12 
+_.LINE 0.0,0 52.5,0 
+_.DIMLINEAR
+0.0,0
+13.87,0
+6.935,-20
+_.DIMCONTINUE
+52.5,0
+
+
+_.LINE 80,0 80,21.17 
+_.DIMLINEAR
+80,0
+80,21.17
+92,10.6
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l54/l54.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l54/l54.dxf 16
+_.ZOOM _E

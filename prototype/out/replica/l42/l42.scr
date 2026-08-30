@@ -1,0 +1,29 @@
+FILEDIA 0
+OSMODE 0
+CMDECHO 1
+_.LINE 0,0
+1000,0
+
+_.CIRCLE -2164.0,-1029.8
+862.7
+_.RECTANG 2024.8,372.7
+4111.8,-844.7
+_.ZOOM _E
+_.ZOOM 0.8x
+_.-HATCH _P
+ANSI31
+10
+0
+_S
+_L
+
+
+_.WIPEOUT
+2024.8,372.7
+4111.8,372.7
+4111.8,-844.7
+2024.8,-844.7
+_C
+_.ZOOM _E
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l42/l42.dxf 16
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l42/l42.dwg

@@ -1,0 +1,40 @@
+{
+ "file": "l76.dxf",
+ "counts": {
+  "LINE": 1,
+  "DIMENSION": 2,
+  "CIRCLE": 1
+ },
+ "CIRCLE": [
+  {
+   "c": [
+    0.0,
+    -6000.0,
+    0.0
+   ],
+   "r": 3628.5
+  }
+ ],
+ "LINE": [
+  {
+   "p0": [
+    0.0,
+    0.0
+   ],
+   "p1": [
+    3629.0,
+    0.0
+   ]
+  }
+ ],
+ "DIMENSION": [
+  {
+   "text": "<measured>",
+   "type": 32.0
+  },
+  {
+   "text": "<measured>",
+   "type": 163.0
+  }
+ ]
+}

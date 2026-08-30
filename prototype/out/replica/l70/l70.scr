@@ -1,0 +1,54 @@
+﻿FILEDIA 0
+OSMODE 0
+CMDECHO 1
+ATTDIA 0
+ATTREQ 1
+GRIDMODE 0
+-STYLE 黑体2.5 simhei.ttf 2.5 0.85 0 _N _N
+-STYLE 宋体2.5 SimSun 2.5 0.85 0 _N _N
+_.RECTANG 0,0 60,6
+_.LINE 0,3 60,3
+
+_.-ATTDEF
+
+窗户高度
+窗高
+1500MM
+0,-8
+0
+_.-ATTDEF
+
+窗台高度
+窗台高
+900MM
+0,-14
+0
+_.-ATTDEF
+
+窗梁高度
+窗梁高
+600MM
+0,-20
+0
+_.ZOOM _W -20,-40 100,30
+_.-BLOCK 窗户参数 0,0 _W -10,-30 80,20
+
+_.-INSERT 窗户参数 0,0 1 1 0
+600MM
+900MM
+1500MM
+_.-INSERT 窗户参数 150,0 1 1 0
+600MM
+900MM
+2000MM
+_.-INSERT 窗户参数 300,0 1 1 0
+600MM
+900MM
+1800MM
+_.ZOOM _E
+_.-ATTEDIT _N _N 窗户参数 窗户高度 *
+1500MM
+2100MM
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l70/l70.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l70/l70.dxf 16

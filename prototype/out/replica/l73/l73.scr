@@ -1,0 +1,36 @@
+FILEDIA 0
+OSMODE 0
+CMDECHO 1
+GRIDMODE 0
+_.-LINETYPE _L ACAD_ISO02W100 acadiso.lin
+
+_.-LINETYPE _L HIDDEN acadiso.lin
+
+_.-LINETYPE _L CENTER acadiso.lin
+
+_.-LAYER _M 粗实线 _C 7 粗实线 _L Continuous 粗实线 _LW 0.35 粗实线
+
+_.-LAYER _M 细实线 _C 7 细实线 _L Continuous 细实线 _LW 0.15 细实线
+
+_.-LAYER _M 虚线 _C 252 虚线 _L ACAD_ISO02W100 虚线 _LW 0.15 虚线
+
+_.-LAYER _M 图框 _C 4 图框 _L ACAD_ISO02W100 图框 _LW 0.30 图框
+
+_.-LAYER _M 不打印 _C 5 不打印 _L HIDDEN 不打印 _LW 0.15 不打印
+
+_.-LAYER _M 标注 _C 3 标注 _L Continuous 标注 _LW 0.15 标注
+
+_.-LAYER _M 中心线 _C 6 中心线 _L CENTER 中心线 _LW 0.15 中心线
+
+_.-LAYER _P _N 不打印
+
+_.-LAYER _S 虚线
+
+ORTHOMODE 1
+_.XLINE _V 0,0
+
+_.XLINE _H 0,0
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l73/l73.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l73/l73.dxf 16

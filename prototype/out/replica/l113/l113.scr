@@ -1,0 +1,61 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+ISOLINES 16
+_.ZOOM _W -60,-60 340,560
+_.CIRCLE 0,0,0 4
+_.LINE 0,300,0 0,500,150
+
+_.SWEEP
+4,0
+
+0,400
+_.MASSPROP _L
+
+_N
+_.CIRCLE 60,0,0 2
+_.LINE 60,300,0 60,500,150
+
+_.SWEEP
+62,0
+
+_T
+90
+60,400
+_.MASSPROP _L
+
+_N
+_.CIRCLE 120,0,0 4
+_.LINE 120,300,0 120,500,150
+
+_.SWEEP
+124,0
+
+_S
+2
+120,400
+_.MASSPROP _L
+
+_N
+_.RECTANG 180,0 _D 60 60 200,20
+_.LINE 180,300,0 280,400,120
+
+_.SWEEP
+180,0
+
+_A
+_N
+230,350
+_.MASSPROP _L
+
+_N
+_.ZOOM _E
+_.MASSPROP _ALL
+
+_N
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l113/l113.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l113/l113.dxf 16
+_.ZOOM _E

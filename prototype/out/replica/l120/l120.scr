@@ -1,0 +1,60 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+ISOLINES 16
+_.ZOOM _W -2000,-2000 8500,4000
+_.BOX 0,0 500,500
+500
+_.3DMOVE
+0,0
+
+0,0,0
+1000,0,0
+_.MASSPROP _L
+
+_N
+_.BOX 2000,0 2500,500
+500
+_.ROTATE3D
+2000,0
+
+_X
+2000,0,0
+90
+_.MASSPROP _L
+
+_N
+_.BOX 3200,0 3700,500
+500
+_.MIRROR3D
+3200,0
+
+_XY
+3200,0,250
+_N
+_.BOX 4500,0 5000,500
+500
+_.MIRROR
+4500,0
+
+4500,-600 5000,-600 _N
+_.BOX 6000,0 6500,500
+500
+_.SCALE
+6000,0
+
+6000,0,0
+2
+_.MASSPROP _L
+
+_N
+_.ZOOM _E
+_.MASSPROP _ALL
+
+_N
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l120/l120.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l120/l120.dxf 16
+_.ZOOM _E

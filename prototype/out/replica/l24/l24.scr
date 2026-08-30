@@ -1,0 +1,25 @@
+FILEDIA 0
+OSMODE 0
+_.CIRCLE 0,0 4082.1427
+_.ARC _C 0,-20000 0,-15917.8573 _A 180
+_.PLINE 0,-35000 8000,-35000 10000,-30000 2000,-28000 
+_.RECTANG 0,-50000 8000,-45000
+_.ZOOM _W -8000,-56000 56000,8000
+_.COPY _W -4500,-4500 4500,4500 
+0,0
+_A
+5
+10000,0
+_.COPY _W -4500,-24500 500,-15500 
+_D
+0,1000,0
+_.COPY _W -500,-35500 10500,-27500 
+0,-35000
+10000,-35000
+_.COPY _W -500,-50500 8500,-44500 
+_M
+0,-50000
+10000,-50000 20000,-50000 30000,-50000 
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l24/l24.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l24/l24.dxf 16

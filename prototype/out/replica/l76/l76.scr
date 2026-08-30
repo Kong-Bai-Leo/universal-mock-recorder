@@ -1,0 +1,20 @@
+﻿FILEDIA 0
+OSMODE 0
+DIMTXT 250
+DIMASZ 250
+DIMEXE 125
+DIMEXO 125
+_.ZOOM _W -9000,-9000 9000,9000
+_.LINE 0,0 3629,0 
+_.DIMLINEAR
+0,0
+3629,0
+1814,-1200
+_.CIRCLE 0,-6000 3628.5
+_.DIMDIAMETER
+3628.5,-6000
+2600,-4200
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l76/l76.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l76/l76.dxf 16
+_.ZOOM _E

@@ -1,0 +1,17 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时106 拉伸工具(续) ----
+; 演示 EXTRUDE 的选项: 模式(MO 实体/曲面)、方向(D)、路径(P)、倾斜角(T)<0>、表达式(E)。
+; 唯一键入数值: COPY 阵列(A) 项目数 5。
+; 高度提示默认值(前次实际用值): 53934.4339 / 48079.5132 / -253606.8959 /
+;   -175043.0188 / -340697.9595。轮廓平面尺寸无证据 -> 不构造几何。
+ISOLINES 4
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l106/l106.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l106/l106.dxf 16

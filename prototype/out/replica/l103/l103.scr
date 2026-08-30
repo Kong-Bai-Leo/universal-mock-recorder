@@ -1,0 +1,19 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时103 三维导航栏 ----
+; 全课为导航演示: NAVSWHEEL/3DORBIT/3DFORBIT/3DCORBIT/NAVSMOTION/PAN/ZOOM,
+; 视口配置 ai_tiledvp 2("V")/3("R")/4, 标准视图 SWISO/TOP/LEFT/BOTTOM, 透视。
+; 演示对象全部鼠标拾取, 无任何数值证据 -> 不构造几何。
+ISOLINES 4
+NAVSWHEELMODE 2
+PERSPECTIVE 1
+_.-VPORTS _4
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l103/l103.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l103/l103.dxf 16

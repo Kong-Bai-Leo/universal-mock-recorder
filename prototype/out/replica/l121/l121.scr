@@ -1,0 +1,17 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时121 截面平面 ----
+; 演示 SECTIONPLANE(类型=平面, 绘制截面 D / 正交 O / 类型 T)、SECTIONPLANEJOG、
+; SECTIONPLANETOBLOCK、FLATSHOT、XEDGES、PCEXTRACTSECTION。
+; 被剖切的 SPHERE / BOX 全部鼠标拾取, 半径与角点提示均无默认值也无键入值
+; (见 cv/cmdmont/m00 t=29.8s "SPHERE 指定半径或[直径(D)]:" 无 <默认>) -> 不构造几何。
+ISOLINES 4
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l121/l121.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l121/l121.dxf 16

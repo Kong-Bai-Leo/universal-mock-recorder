@@ -1,0 +1,125 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+_.ZOOM _W -400,-400 3400,900
+_.CIRCLE 0,0 120
+_.CIRCLE 120,0 60
+_.-ARRAY
+_L
+
+_P
+0,0
+6
+360
+_Y
+_.ARC -180,0 _E 0,0 _R 299.3
+_.COPY
+_L
+
+0,0
+180,0
+_.ARC _C 700,0 700,240 700,-240
+_.ELLIPSE _C 700,0 700,240 160
+_.LINE 700,240 860,0
+
+_.LINE 860,0 700,-240
+
+_.LINE 700,-240 540,0
+
+_.LINE 540,0 700,240
+
+_.LINE 540,0 860,0
+
+_.CIRCLE 700,0 64
+_.CIRCLE 2500,0 180
+_.POLYGON 5
+2500,0
+_I
+180
+_.CIRCLE 3010.72,390 180
+_.POLYGON 6
+3010.72,390
+_I
+3190.72,390
+_.LINE 2185.72,570 3010.72,570
+
+_.LINE 2185.72,570 1641.7242,-55.7956
+
+_.ARC _C 1698.3274,-105 1641.7242,-55.7956 1698.3274,-180
+_.LINE 1698.3274,-180 2500,-180
+
+_.LINE 3021.0661,210.2976 2489.6539,179.7024
+
+_.ZOOM _W -240,-240 240,240
+_.-VIEW _S 案例3
+_.ZOOM _W 440,-280 960,280
+_.-VIEW _S 案例4
+_.ZOOM _W 1560,-300 3260,700
+_.-VIEW _S 案例5
+_.ZOOM _E
+_.-STYLE
+CN
+SimSun
+0
+1
+0
+_N
+_N
+TILEMODE 0
+_.ERASE _ALL
+
+_.PSPACE
+_.ZOOM _W -6,-6 206,288
+_.RECTANG 0,0 199.88,281.83
+_.RECTANG 10,10 189.88,271.83
+_.RECTANG 129.88,10 189.88,40
+_.TEXT 132,32 3.5 0 名字  王二小
+_.TEXT 132,23 3.5 0 比例大小  A4-1:3
+_.TEXT 132,14 3.5 0 日期  2023-09-21
+_.TEXT 15,275 5 0 案例整理及打印
+_.MVIEW 15,185 185,266
+_.ZOOM _W -6,-6 206,288
+_.MSPACE
+_.-VIEW _R 案例3
+_.ZOOM 1/5XP
+_.PSPACE
+_.ZOOM _W -6,-6 206,288
+_.MVIEW 15,100 185,180
+_.ZOOM _W -6,-6 206,288
+_.MSPACE
+_.-VIEW _R 案例4
+_.ZOOM 1/3XP
+_.PSPACE
+_.ZOOM _W -6,-6 206,288
+_.MVIEW 15,45 185,95
+_.ZOOM _W -6,-6 206,288
+_.MSPACE
+_.-VIEW _R 案例5
+_.ZOOM 1/8XP
+_.PSPACE
+_.ZOOM _W -6,-6 206,288
+_.-PLOT
+_Y
+Layout1
+DWG To PDF.pc3
+ISO A4 (210.00 x 297.00 MM)
+_M
+_P
+_N
+_L
+1=1
+0,0
+_Y
+acad.ctb
+_Y
+_N
+_N
+_N
+C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l95/l95-Layout1.pdf
+_Y
+_N
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l95/l95.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l95/l95.dxf 16
+_.PSPACE

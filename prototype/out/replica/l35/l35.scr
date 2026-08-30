@@ -1,0 +1,93 @@
+; 课时35 分解命令与合并
+; 证据: cmdmont m00-m13 (14/14)
+;   61-80s   LINE -> EXPLODE "1 个不能分解"
+;   82-120s  PLINE -> X(EXPLODE) 找到 1 个 (可分解)
+;   136-147s CIRCLE -> EXPLODE "1 个不能分解"
+;   152-158s ARC -> EXPLODE "1 个不能分解"
+;   162-170s ELLIPSE _C -> EXPLODE "无法分解 ELLIPSE"
+;   181-185s RECTANG -> X EXPLODE 找到 1 个
+;   214-229s HATCH -> X EXPLODE "已删除图案填充边界关联性"
+;   251-291s COPY / ARRAYRECT(类型=矩形 关联=是) -> 262s X EXPLODE 找到 1 个
+;   313-325s SPLINE(方式=拟合 节点=弦) -> X EXPLODE "无法分解 SPLINE"
+;   330-341s XLINE
+;   341-349s WIPEOUT -> X EXPLODE 找到 1 个
+;   397-404s LINE x2 -> J(JOIN) 找到 2 个 -> "已合并 0 个对象, 操作中放弃了 2 个对象"
+;   415s     J JOIN 找到 4 个 -> "4 个对象已转换为 1 条多段线"
+;   441s     J JOIN 找到 4 个 -> "3 个对象已转换为 1 条多段线, 放弃 1 个"
+;   522-530s ARC + LINE -> J JOIN 找到 2 个 -> "2 个对象已转换为 1 条多段线"
+;   534-543s PEDIT 输入选项 S(样条曲线) -> *取消* -> _u PEDIT (剔除)
+;   566s     J JOIN 找到 5 个 -> 1 条多段线
+;   571-575s REGION -> "已提取 1 个环, 已创建 1 个面域" ; 578s X EXPLODE 找到 1 个
+;   602-613s REGION 再做一次 -> 已创建 1 个面域
+; 剔除: 86.9s PLINE *取消* / 154.6s ARC *取消* / 291.5s ARRAYRECT *取消*
+;       424-427s _u 撤销 JOIN / 461-468s FILLET *取消* / 541-543s PEDIT *取消* + _u
+FILEDIA 0
+OSMODE 0
+CMDDIA 0
+PICKBOX 3
+APERTURE 10
+_.ZOOM _W -600,-2800 7600,1000
+_.LINE 0,0 600,0 
+_.EXPLODE _L
+
+_.PLINE 800,0 1100,300 1400,0 1700,300 
+_.EXPLODE _L
+_.CIRCLE 2100,150 200
+_.EXPLODE _L
+
+_.ARC 2600,0 2900,300 3200,0
+_.EXPLODE _L
+
+_.ELLIPSE _C 3800,150 4200,150 150
+_.EXPLODE _L
+_.RECTANG 4600,0 5200,400
+_.EXPLODE _L
+_.SPLINE 5600,0 5800,300 6000,0 6200,300
+
+
+
+_.EXPLODE _L
+_.RECTANG 0,-1200 800,-700
+_.ZOOM _W -200,-1400 1000,-500
+_.-HATCH _P ANSI31 40 0 400,-950 
+_.ZOOM _W -600,-2800 7600,1000
+_.EXPLODE _L
+_.WIPEOUT 1200,-1200 2000,-1200 2000,-700 1200,-700 _C
+_.EXPLODE _L
+_.XLINE _H 3000,-1000 
+_.LINE 0,-2000 400,-2000 
+_.LINE 600,-2200 1000,-2200 
+_.JOIN 200,-2000 800,-2200 
+_.LINE 1500,-2000 1900,-2000 
+_.LINE 1900,-2000 1900,-1700 
+_.LINE 1900,-1700 2300,-1700 
+_.LINE 2300,-1700 2300,-2000 
+_.PEDIT _M _W 1400,-2100 2400,-1600
+
+_Y
+_J
+0
+_X
+_.LINE 3000,-2000 3400,-2000 
+_.ARC 3400,-2000 3600,-1800 3800,-2000
+_.PEDIT _M _W 2900,-2100 3900,-1700
+
+_Y
+_J
+0
+_X
+_.LINE 4500,-2200 5100,-2200 
+_.LINE 5100,-2200 5100,-1600 
+_.LINE 5100,-1600 4500,-1600 
+_.LINE 4500,-1600 4500,-2200 
+_.PEDIT _M _W 4400,-2300 5200,-1500
+
+_Y
+_J
+0
+_X
+_.REGION 4800,-2200 
+_.EXPLODE _L
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l35/l35.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l35/l35.dxf 16

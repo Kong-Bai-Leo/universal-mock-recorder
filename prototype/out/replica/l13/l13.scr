@@ -1,0 +1,12 @@
+FILEDIA 0
+OSMODE 0
+_.CIRCLE 60,60 50
+_.RECTANG 150,10 290,110
+_.POLYGON 5 380,60 _I 50
+_.ZOOM _W -60,-60 500,180
+_.-HATCH _P ANSI31 1 0 60,60 
+_.-HATCH _P AR-CONC 1 0 220,60 
+_.-HATCH _P NET 4 0 380,60 
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l13/l13.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l13/l13.dxf 16

@@ -1,0 +1,83 @@
+﻿FILEDIA 0
+OSMODE 0
+TEXTSIZE 3.5
+_.-STYLE hei SimSun 0 1 0 _N _N
+_.RECTANG 0,0 _D 420.0 297.0 10,10
+_.RECTANG 5.0,5.0 _D 410.0 287.0 15.0,15.0
+_.ZOOM _W -20,-20 460,340
+_.RECTANG 235.0,5.0 _D 180.0 50.0 245.0,15.0
+_.LINE 303.400,5.000 303.400,55.000 
+_.LINE 334.000,5.000 334.000,55.000 
+_.LINE 379.000,5.000 379.000,55.000 
+_.LINE 303.400,15.000 415.000,15.000 
+_.LINE 303.400,25.000 415.000,25.000 
+_.LINE 303.400,35.000 415.000,35.000 
+_.LINE 303.400,45.000 415.000,45.000 
+_.-ATTDEF
+
+SJ
+设计
+设计
+305.400,46.500
+3.5
+0
+_.-ATTDEF
+
+ZT
+制图
+制图
+305.400,36.500
+3.5
+0
+_.-ATTDEF
+
+JD
+校对
+校对
+305.400,26.500
+3.5
+0
+_.-ATTDEF
+
+SP
+审批
+审批
+305.400,16.500
+3.5
+0
+_.-ATTDEF
+
+TM
+图名
+平面布置图
+241.000,32.500
+5
+0
+_.-ATTDEF
+
+TH
+图号
+PM-01-04
+241.000,16.000
+5
+0
+_.-ATTDEF
+
+YM
+页码
+第01页
+305.400,6.500
+3.5
+0
+_.-ATTDEF
+
+ZY
+总页
+共19页
+336.000,6.500
+3.5
+0
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l78/l78.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l78/l78.dxf 16
+_.ZOOM _E

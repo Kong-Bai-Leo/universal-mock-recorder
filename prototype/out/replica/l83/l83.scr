@@ -1,0 +1,161 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+ATTDIA 0
+ATTREQ 1
+; ---- 课时83 打印设置及图纸调整 ----
+; 图框尺寸 199.88 x 281.83 = 打印回显"有效打印区域: 199.88 宽 X 281.83 高" (A4 纵向, 证据 C)
+; 标题栏文字/属性值来自视频属性面板与增强属性编辑器 (证据 D):
+;   设计/制图/校对/审批=王二小  日期=2023-09-21  比例=A4-1:2
+;   页码=第01页  总页=共04页  图号=PM-01-01  图名=小猪佩奇01
+; 标题栏格线尺寸为推断 (证据等级 L)
+_.-STYLE
+5.宋体-2.5(带注释性)
+SimSun
+_A
+_Y
+_N
+2.5
+1
+0
+_N
+_N
+CANNOSCALE
+1:2
+_.LINE 0,0 202,0
+
+_.DIMLINEAR 0,0 202,0 101,-40
+_.ZOOM _W -60,-80 280,120
+TILEMODE 0
+_.ZOOM _W -20,-20 235,300
+_.RECTANG 0,0 199.88,281.83
+_.RECTANG 59.88,0 199.88,32
+_.LINE 59.88,8 199.88,8
+
+_.LINE 59.88,16 199.88,16
+
+_.LINE 59.88,24 199.88,24
+
+_.LINE 79.88,0 79.88,32
+
+_.LINE 109.88,0 109.88,32
+
+_.LINE 149.88,0 149.88,32
+
+_.TEXT 62,26 0 设计
+_.TEXT 62,18 0 制图
+_.TEXT 62,10 0 校对
+_.TEXT 62,2 0 审批
+_.-ATTDEF
+
+SJ
+设计
+王二小
+82,26
+0
+_.-ATTDEF
+
+ZT
+制图
+王二小
+82,18
+0
+_.-ATTDEF
+
+JD
+校对
+王二小
+82,10
+0
+_.-ATTDEF
+
+SP
+审批
+王二小
+82,2
+0
+_.-ATTDEF
+
+RQ
+日期
+2023-09-21
+112,26
+0
+_.-ATTDEF
+
+BL
+比例
+A4-1:2
+112,18
+0
+_.-ATTDEF
+
+YM
+页码
+第01页
+112,10
+0
+_.-ATTDEF
+
+ZY
+总页
+共04页
+112,2
+0
+_.-ATTDEF
+
+TH
+图号
+PM-01-01
+152,20
+0
+_.-ATTDEF
+
+TM
+图名
+小猪佩奇01
+152,6
+0
+_.-BLOCK 标题栏 59.88,0 _W 55,-5 205,40
+
+_.-INSERT 标题栏 59.88,0 1 1 0
+小猪佩奇01
+PM-01-01
+共04页
+第01页
+A4-1:2
+2023-09-21
+王二小
+王二小
+王二小
+王二小
+_.MVIEW 8,40 192,272
+ANNOALLVISIBLE
+1
+_.-PLOT
+_Y
+Layout1
+DWG To PDF.pc3
+ISO A4 (210.00 x 297.00 MM)
+_M
+_P
+_N
+_L
+1=1
+0,0
+_Y
+acad.ctb
+_Y
+_N
+_N
+_N
+C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l83/l83-Layout1.pdf
+_Y
+_N
+TILEMODE 1
+_.ZOOM _W -60,-80 280,120
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l83/l83.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l83/l83.dxf 16

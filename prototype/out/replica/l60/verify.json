@@ -1,0 +1,31 @@
+{
+ "file": "l60.dxf",
+ "counts": {
+  "LWPOLYLINE": 1,
+  "MULTILEADER": 2
+ },
+ "LWPOLYLINE": [
+  {
+   "n": 4,
+   "pts": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     60.0,
+     0.0
+    ],
+    [
+     60.0,
+     40.0
+    ],
+    [
+     0.0,
+     40.0
+    ]
+   ],
+   "closed": true
+  }
+ ]
+}

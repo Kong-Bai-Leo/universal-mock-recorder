@@ -1,0 +1,17 @@
+FILEDIA 0
+OSMODE 0
+_.RECTANG 0,0 _D 1189 841 10,10
+_.RECTANG 1249,0 _D 841 594 1259,10
+_.RECTANG 2150,0 _D 594 420 2160,10
+_.RECTANG 2804,0 _D 420 297 2814,10
+_.RECTANG 3284,0 _D 297 210 3294,10
+_.ZOOM _W -100,-100 3400,1000
+_.OFFSET 5
+2804,0
+2824,20
+
+_.RECTANG 3104,20 _D 5 5 3109,25
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l77/l77.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l77/l77.dxf 16
+_.ZOOM _E

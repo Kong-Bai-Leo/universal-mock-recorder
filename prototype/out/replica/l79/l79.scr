@@ -1,0 +1,12 @@
+﻿FILEDIA 0
+OSMODE 0
+_.ZOOM _W -20,-20 460,320
+_.RECTANG 0,0 _D 420 297 10,10
+_.CIRCLE 100,150 60
+_.RECTANG 220,100 340,200
+TILEMODE 0
+_.MVIEW 20,20 130,120
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l79/l79.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l79/l79.dxf 16
+_.ZOOM _E

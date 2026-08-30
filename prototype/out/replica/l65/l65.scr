@@ -1,0 +1,75 @@
+﻿; 课时65 图层设置 —— 复刻脚本
+; 坐标系: 视频画面像素, CAD y = 1000 - 像素y ; 测量帧 t=600s
+; 图层表证据(D级, 图层特性管理器回读): t=205s 与 t=685s 两帧一致, 共 11 个图层
+;   名称     颜色      线型              线宽
+;   0        白(7)     Continuous        默认
+;   图层1    红(1)     BATTING           0.25
+;   图层2    洋红(6)   ACAD_ISO07W100    0.60
+;   图层3    180       BATTING           0.25
+;   图层4    黄(2)     Continuous        默认
+;   图层5    黄(2)     Continuous        默认
+;   图层6-10 红(1)     BATTING           0.25
+; 命令证据(C级, 命令行回显): _layon "所有图层均已打开" ; LAYLCK -> 图层"图层2"已锁定 ; LAYWALK 图层数:10
+FILEDIA 0
+OSMODE 0
+CMDECHO 1
+_.-LINETYPE _L BATTING acadiso.lin
+
+_.-LINETYPE _L ACAD_ISO07W100 acadiso.lin
+
+_.-LAYER _M 图层1 _C 1 图层1 _L BATTING 图层1 _LW 0.25 图层1
+
+_.-LAYER _M 图层2 _C 6 图层2 _L ACAD_ISO07W100 图层2 _LW 0.60 图层2
+
+_.-LAYER _M 图层3 _C 180 图层3 _L BATTING 图层3 _LW 0.25 图层3
+
+_.-LAYER _M 图层4 _C 2 图层4
+
+_.-LAYER _M 图层5 _C 2 图层5
+
+_.-LAYER _M 图层6 _C 1 图层6 _L BATTING 图层6 _LW 0.25 图层6
+
+_.-LAYER _M 图层7 _C 1 图层7 _L BATTING 图层7 _LW 0.25 图层7
+
+_.-LAYER _M 图层8 _C 1 图层8 _L BATTING 图层8 _LW 0.25 图层8
+
+_.-LAYER _M 图层9 _C 1 图层9 _L BATTING 图层9 _LW 0.25 图层9
+
+_.-LAYER _M 图层10 _C 1 图层10 _L BATTING 图层10 _LW 0.25 图层10
+
+_.ZOOM _W 100,20 1350,720
+; ---- 图层 0: 三个白色边框矩形 ----
+_.-LAYER _S 0
+
+_.RECTANG 148,412 564,668
+_.RECTANG 672,398 1135,681
+_.RECTANG 150,78 1294,322
+; ---- 图层1(红): 框1 内的图元 ----
+_.-LAYER _S 图层1
+
+_.RECTANG 392,552 444,584
+_.RECTANG 248,506 287,544
+_.LINE 336,584 372,570
+
+; ---- 图层2(洋红): 框2 内的两个椭圆 (同框内的手写笔画无法复刻, 见报告) ----
+_.-LAYER _S 图层2
+
+_.ELLIPSE 816,530 917,530 22
+_.ELLIPSE 983,547.5 1100,547.5 19.5
+; ---- 图层3(180 蓝): 框3 内的图元 ----
+_.-LAYER _S 图层3
+
+_.RECTANG 332,92 482,186
+_.CIRCLE 924.6,171.4 28.4
+_.CIRCLE 960.6,171.4 24.6
+_.RECTANG 808,76 887,130
+_.LINE 566,88 690,76
+
+; ---- 锁定 图层2 (命令行回显: 图层"图层2"已锁定) ----
+_.-LAYER _LO 图层2
+
+_.-LAYER _S 0
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l65/l65.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l65/l65.dxf 16

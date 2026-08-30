@@ -1,0 +1,12 @@
+FILEDIA 0
+OSMODE 0
+_.RECTANG 0,0 140,100
+_.RECTANG 160,0 300,100
+_.RECTANG 320,0 460,100
+_.ZOOM _W -60,-60 520,160
+_.-HATCH _P _U 0 8 _N 70,50 
+_.-HATCH _P _U 45 8 _N 230,50 
+_.-HATCH _P _U 45 8 _Y 390,50 
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l14/l14.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l14/l14.dxf 16

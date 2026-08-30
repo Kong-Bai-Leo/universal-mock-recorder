@@ -1,0 +1,19 @@
+﻿FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+CMDECHO 1
+; ---- 课时107 放样工具 ----
+; 演示 LOFT: 2/3 个横截面, 选项 导向(G)/路径(P)/仅横截面(C)/设置(S),
+; 报错 "至少必须选择两个轮廓" / "横截面曲线必须全部打开或全部闭合" / Error 114051。
+; 特性面板回读到两个圆(证据 D):
+;   t=348.0s  直径 408623.1108 周长 1283727.3629 面积 131140167109.3595 (r=204311.5554)
+;   t=485.8s  周长 1804.6894  面积 259176.161                            (r=287.2378)
+; 但横截面之间的 Z 间距、其余截面的尺寸全部鼠标拾取 -> 无法构成放样体。
+ISOLINES 4
+_.-VIEW _SWISO
+VSCURRENT
+_C
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l107/l107.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l107/l107.dxf 16

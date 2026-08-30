@@ -27,6 +27,11 @@
 - 使用严格 JSON Schema 和本地校验约束 Mock 工作流
 - OpenAI 请求设置 `store: false`
 
+## CAD 教学视频复刻（prototype）
+
+`prototype/` 是 AutoCAD 教程录屏 → `.scr` 无头回放流水线（SOP、cadrep、124 课脚本）。
+用法见 `prototype/README.md`。PNG / DWG / DXF / CV 切片留在本机，不进本仓库。
+
 ## 构建录制器
 
 在工作区打开 PowerShell：
