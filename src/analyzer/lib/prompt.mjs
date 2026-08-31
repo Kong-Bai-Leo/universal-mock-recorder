@@ -9,6 +9,7 @@ export const ANALYSIS_INSTRUCTIONS = `你是通用软件操作轨迹编译器。
 6. 每一步必须包含执行后的可观察验证条件。
 7. 事实与推断分开记录；不确定时保留候选和置信度，禁止编造不可见参数。
 8. 输入可能是长流程中的一个分段。保持分段内的原始顺序，使用 previousChunkContext 理解前置状态，但不要重复输出之前分段的步骤。
+8a. AutoCAD 的 steps 是面向复现的语义步骤，不是逐事件抄写：一次完整 CAD 命令（按钮/命令启动、选对象、输入参数、提交）合并为一个 step，并在 sourceEventIds 中覆盖其全部证据。连续无意义移动、重复点击和仅用于中间预览的输入合并到尽量少的 omitted 项。warnings 与 cadProgram.warnings 只保留会影响复现的未解决问题，每类问题只写一次；不要反复解释同一条规范、知识库缺项或“未使用像素估算”。
 9. 图片前面的文字会标明其录制文件名，必须按文件名关联到动作中的 screenshotBefore 或 screenshotAfter。
 10. 无状态贡献且低于 minimumConfidence 的动作放入 omitted；必要但不确定的步骤可以保留，并在 warnings 说明。
 11. 画布变化是主要证据：结合 screenshotBefore、screenshotAfter 和 visualChange，明确记录对象的创建、删除、移动、缩放、旋转、修改、选择或视图变化。
@@ -76,6 +77,9 @@ export const ANALYSIS_INSTRUCTIONS = `你是通用软件操作轨迹编译器。
 73. ENTER 不是统一的命令结束符：它可能提交数值、接受默认项、结束选择、结束命令，或在空闲时重复上一命令。ESCAPE 可取消当前命令/选择；普通空白画布点击可能是取点、选对象或侧点，绝不能当作统一退出信号。visiblePrompt 应记录截图中实际可辨认的提示，不可从语法表伪造。
 74. previousChunkContext.cadEntityCatalog 只列出当前仍存在并可选择的实体。TRIM 产生的新圆弧/线段会替换源实体；后续 TRIM 必须引用这些新 ID，不能继续引用已经被替换的完整圆或原线。若本段一次产生多项 TRIM，operations 必须严格按点击顺序排列，后一项引用前一项生成的结果实体。
 75. 若本段先结束 ARRAY、后开始 FILLET/TRIM，且 previousChunkContext 已提供确定性展开的阵列成员，必须用这些成员 ID 识别切割边；不得再次声称“阵列成员未展开”。若当前分段仍包含 ARRAY 的 Close/Exit 完成动作而 previousChunkContext 尚无成员，则只输出已完成 ARRAY 并将后续修改留给命令边界后的分段。
+76. FILLET 必须使用 semanticKind=fillet。若最终截图显示两条直线形成没有可见圆弧的尖角，且两条源线方程及点击侧能够严格确定保留部分，则不要求截图额外显示半径，也不得伪造 radius=0 参数；直接用精确线—线交点计算两条替换 line resultGeometry，并分别用 sourceEntityIds 指回两条原线。只有存在真实圆弧且半径能由明确输入或已知解析几何确定时，才输出圆弧结果。
+77. cadEntityCatalog 的 exactGeometry 是从已确认 CAD 参数或 resultGeometry 得到的解析几何。exactOverlap=true、canonicalEntityId 和 equivalentEntityIds 表示多个实体完全重合为同一条可见笔画；这种数据库身份歧义不得导致 FILLET/TRIM 及其后续依赖链被丢弃。优先使用 canonicalEntityId，并在 warning 记录等价选择；本地最终状态执行器会在替换该规范实体时同步折叠完全重合的等价对象，以复现最终可见形状。
+78. OFFSET 结果若按当前 side 计算后与已有实体完全重合，必须把它视为方向消歧检查点：比较该操作前后截图中平行线的数量和左右/上下顺序。若后图出现新的独立平行线，就必须改用另一侧的解析结果，不能输出重合副本，也不能让该错误扩散成后续 FILLET/TRIM 的“源实体缺失”。截图只选择方向，最终 CAD 坐标仍由源实体和精确 offset_distance 计算。
 
 仅输出JSON对象，结构如下：
 {

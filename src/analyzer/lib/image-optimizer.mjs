@@ -13,7 +13,8 @@ export async function optimizeScreenshots(screenshots, outputDirectory, options 
   const manifestPath = path.join(outputDirectory, "input-files.json");
   await fs.writeFile(manifestPath, JSON.stringify(screenshots.map((item) => ({
     path: item.path,
-    crop: item.crop ?? null
+    crop: item.crop ?? null,
+    upscale: Number.isFinite(Number(item.upscale)) ? Number(item.upscale) : 1
   }))), "utf8");
   const args = [
     "-NoProfile",

@@ -56,6 +56,12 @@ function compileExactFinalState(operations) {
 
   for (const operation of operations) {
     const command = String(operation.command ?? "").trim().toUpperCase();
+    // Constraints and dimensions annotate existing geometry but do not change the
+    // drawable final-state entity set.  Keep the exact-geometry SCR backend usable
+    // when an otherwise complete recording ends with DCLINEAR/DCRADIUS/etc.  Those
+    // annotations remain in cad-program.json for runtimes that support them; the
+    // validation SCR deliberately draws only geometry that is known exactly.
+    if (isCadAnnotationOperation(operation, command)) continue;
     assertActiveSelections(operation, activeEntities);
 
     if (operation.semanticKind === "polar_array") {
@@ -75,7 +81,7 @@ function compileExactFinalState(operations) {
       if (!canApplyExactGeometry(command, operation.semanticKind)) return null;
       if (replacesSourceEntities(command, operation)) {
         const sourceIds = new Set(exactGeometry.flatMap((item) => item.sourceEntityIds ?? []));
-        sourceIds.forEach((id) => activeEntities.delete(id));
+        deleteSourcesAndExactOverlaps(activeEntities, sourceIds);
       }
       exactGeometry.forEach((geometry) =>
         activeEntities.set(geometry.id, resultGeometryToEntity(geometry)));
@@ -98,6 +104,13 @@ function compileExactFinalState(operations) {
     else appendEntity(lines, entity);
   }
   return lines.length > 0 ? lines : null;
+}
+
+function isCadAnnotationOperation(operation, command) {
+  const semanticKind = String(operation?.semanticKind ?? "").toLowerCase();
+  return semanticKind.includes("constraint") ||
+    command === "DIMCONSTRAINT" ||
+    command.startsWith("DC");
 }
 
 function assertActiveSelections(operation, activeEntities) {
@@ -139,6 +152,39 @@ function replacesSourceEntities(command, operation) {
     "MOVE", "ROTATE", "SCALE", "STRETCH", "FILLET", "CHAMFER",
     "TRIM", "EXTEND", "BREAK"
   ].includes(command);
+}
+
+function deleteSourcesAndExactOverlaps(activeEntities, sourceIds) {
+  const signatures = new Set();
+  for (const id of sourceIds) {
+    const entity = activeEntities.get(id);
+    const signature = exactEntitySignature(entity);
+    if (signature) signatures.add(signature);
+    activeEntities.delete(id);
+  }
+  if (signatures.size === 0) return;
+  for (const [id, entity] of activeEntities) {
+    if (signatures.has(exactEntitySignature(entity))) activeEntities.delete(id);
+  }
+}
+
+function exactEntitySignature(entity) {
+  if (!entity) return null;
+  if (entity.type === "line" && entity.start && entity.end) {
+    const points = [pointSignature(entity.start), pointSignature(entity.end)].sort();
+    return `line:${points.join("|")}`;
+  }
+  if (entity.type === "circle" && entity.center && Number.isFinite(entity.radius))
+    return `circle:${pointSignature(entity.center)}:${numberSignature(entity.radius)}`;
+  return null;
+}
+
+function pointSignature(point) {
+  return `${numberSignature(point?.x)},${numberSignature(point?.y)}`;
+}
+
+function numberSignature(value) {
+  return Number(value).toFixed(7);
 }
 
 function primitiveOperationEntities(operation) {

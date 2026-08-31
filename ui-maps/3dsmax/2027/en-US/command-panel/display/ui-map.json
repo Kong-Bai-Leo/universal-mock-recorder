@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Display",
+  "tabOrder": 4,
+  "rollouts": ["Display Color", "Hide by Category", "Hide", "Freeze", "Display Properties", "Link Display"],
+  "hideCategories": ["Geometry", "Cameras", "Lights", "Shapes", "Helpers", "Space Warps", "Particle Systems", "Bone Objects"],
+  "displayProperties": ["Display as Box", "Backface Cull", "Edges Only", "Vertex Ticks", "Motion Paths", "See-Through", "Ignore Extents", "Show Frozen in Gray", "Never Degrade", "Vertex Colors"]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Motion",
+  "tabOrder": 3,
+  "observedControls": ["Selection Level", "Sub-Object", "Parameters", "Motion Paths", "Assign Controller"],
+  "interactionModel": {
+    "requiresSelection": true,
+    "dynamicByController": true
+  }
+}

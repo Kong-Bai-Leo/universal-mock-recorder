@@ -45,17 +45,28 @@ export function buildCandidateActions(events, options = {}) {
           textRun = {
             action: "type_text",
             text: "",
+            modifiers: [...(event.modifiers ?? [])],
             startMs: event.timestampMs,
             endMs: event.timestampMs,
             target: event.target ?? null,
             window: event.window ?? null,
             visualCommandContext: event.visualCommandContext ?? null,
+            transformEvidence: [],
             sourceEventIds: []
           };
         }
         textRun.text += event.text;
+        textRun.modifiers = [...new Set([
+          ...(textRun.modifiers ?? []),
+          ...(event.modifiers ?? [])
+        ])];
         textRun.endMs = event.timestampMs;
         if (event.visualCommandContext) textRun.visualCommandContext = event.visualCommandContext;
+        textRun.screenshotBefore ??= event.screenshotBefore ?? null;
+        textRun.screenshotAfter = event.screenshotAfter ?? event.screenshot ?? textRun.screenshotAfter ?? null;
+        if (event.transformEvidence?.length) {
+          textRun.transformEvidence.push(...event.transformEvidence);
+        }
         textRun.sourceEventIds.push(event.id);
       } else {
         flushText();
@@ -73,6 +84,7 @@ export function buildCandidateActions(events, options = {}) {
           screenshotSelectionTimestampMs: event.screenshotSelectionTimestampMs ?? null,
           visualCommandContext: event.visualCommandContext ?? null,
           visualChange: event.visualChange ?? null,
+          transformEvidence: event.transformEvidence ?? [],
           startMs: event.timestampMs,
           endMs: event.timestampMs,
           sourceEventIds: [event.id]
@@ -92,9 +104,10 @@ export function buildCandidateActions(events, options = {}) {
       const distance = pointDistance(pointerDown, event);
       const base = {
         button: pointerDown.button,
+        modifiers: pointerDown.modifiers ?? [],
         startMs: pointerDown.timestampMs,
         endMs: event.timestampMs,
-        target: pointerDown.target ?? null,
+        target: preferPointerTarget(pointerDown.target, event.target),
         window: pointerDown.window ?? null,
         screenshotBefore: pointerDown.screenshotBefore ?? pointerDown.screenshot ?? null,
         screenshotBeforeTimestampMs: pointerDown.screenshotBeforeTimestampMs ?? pointerDown.screenshotTimestampMs ?? null,
@@ -104,6 +117,10 @@ export function buildCandidateActions(events, options = {}) {
         screenshotSelectionTimestampMs: event.screenshotSelectionTimestampMs ?? null,
         visualCommandContext: event.visualCommandContext ?? pointerDown.visualCommandContext ?? null,
         visualChange: event.visualChange ?? null,
+        transformEvidence: [
+          ...(pointerDown.transformEvidence ?? []),
+          ...(event.transformEvidence ?? [])
+        ],
         sourceEventIds: [pointerDown.id, event.id]
       };
 
@@ -302,6 +319,7 @@ export function chunkActions(actions, maxActions = 150, options = {}) {
   if (!Number.isInteger(maxActions) || maxActions < 1)
     throw new Error("maxActions 必须是大于 0 的整数");
   const maxCanvasEvidence = options.maxCanvasEvidence ?? Number.POSITIVE_INFINITY;
+  const minActionsPerChunk = Math.max(0, options.minActionsPerChunk ?? 0);
   if (!(maxCanvasEvidence > 0)) throw new Error("maxCanvasEvidence 必须大于 0");
   annotateVisualModificationContexts(actions);
   const chunks = [];
@@ -327,8 +345,9 @@ export function chunkActions(actions, maxActions = 150, options = {}) {
     evidence.forEach((file) => canvasEvidence.add(file));
     const compoundFinalized = isCadCompoundFinalizeAction(
       activeCompoundCommand, action, actions[actionIndex - 1]);
-    if (compoundFinalized || isCadGeometryMaterializationBoundary(
-      current, action, actions[actionIndex + 1], activeCompoundCommand)) {
+    const geometryBoundary = isCadGeometryMaterializationBoundary(
+      current, action, actions[actionIndex + 1], activeCompoundCommand);
+    if (compoundFinalized || (geometryBoundary && current.length >= minActionsPerChunk)) {
       chunks.push(current);
       current = [];
       canvasEvidence = new Set();
@@ -599,6 +618,23 @@ function isModifierKey(key) {
     "SHIFTKEY", "LSHIFTKEY", "RSHIFTKEY",
     "MENU", "LMENU", "RMENU", "LWIN", "RWIN"
   ].includes(String(key ?? "").toUpperCase());
+}
+
+function preferPointerTarget(downTarget, upTarget) {
+  if (!downTarget) return upTarget ?? null;
+  if (!upTarget) return downTarget;
+  return targetSpecificity(upTarget) >= targetSpecificity(downTarget) ? upTarget : downTarget;
+}
+
+function targetSpecificity(target) {
+  const name = String(target?.name ?? "").trim();
+  const role = String(target?.role ?? "");
+  let score = 0;
+  if (name) score += 2;
+  if (target?.automationId) score += 1;
+  if (/Button|MenuItem|TabItem|ListItem|TreeItem|Edit|CheckBox|RadioButton/i.test(role)) score += 4;
+  if (/Panel|Pane|Viewport|Perspective|QWinHost|Content/i.test(name)) score -= 2;
+  return score;
 }
 
 function selectEvenly(items, maximum) {

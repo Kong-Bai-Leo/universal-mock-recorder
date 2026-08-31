@@ -224,7 +224,7 @@ const cadOperationSchema = {
     semanticKind: {
       type: "string",
       enum: [
-        "command", "circle", "line", "polyline", "arc_3point", "offset", "trim",
+        "command", "circle", "line", "polyline", "arc_3point", "offset", "trim", "fillet",
         "polar_array", "linear_constraint", "other"
       ]
     },
@@ -483,7 +483,7 @@ function assertCadProgram(program, options = {}) {
         if (!availableEntityIds.has(referencedId)) {
           if (retiredEntityIds.has(referencedId)) {
             throw new Error(
-              `CAD 操作 ${operation.id} 引用了已经被此前 TRIM 替换的实体 ${referencedId}`
+              `CAD 操作 ${operation.id} 引用了已经被此前修改操作替换的实体 ${referencedId}`
             );
           }
           throw new Error(
@@ -492,8 +492,8 @@ function assertCadProgram(program, options = {}) {
         }
       }
     }
-    if (operation.semanticKind === "trim") {
-      for (const sourceId of operation.visualInference?.sourceEntityIds ?? []) {
+    if (isCadReplacementOperation(operation)) {
+      for (const sourceId of cadReplacementSourceIds(operation)) {
         availableEntityIds.delete(sourceId);
         retiredEntityIds.add(sourceId);
       }
@@ -527,7 +527,7 @@ function cadOperationReferenceIds(operation) {
 
 function assertCadOperation(operation, label) {
   const semanticKinds = new Set([
-    "command", "circle", "line", "polyline", "arc_3point", "offset", "trim",
+    "command", "circle", "line", "polyline", "arc_3point", "offset", "trim", "fillet",
     "polar_array", "linear_constraint", "other"
   ]);
   if (!operation || typeof operation !== "object" || Array.isArray(operation))
@@ -551,7 +551,7 @@ function assertCadOperation(operation, label) {
       throw new Error(`${label}.resultGeometry 的 ${geometry.id} 未列入 resultEntityIds`);
   }
 
-  if (["offset", "trim"].includes(operation.semanticKind)) {
+  if (["offset", "trim", "fillet"].includes(operation.semanticKind)) {
     const inference = operation.visualInference;
     if (inference.method === "none" || !inference.beforeScreenshot || !inference.afterScreenshot)
       throw new Error(`${label} 的 ${operation.semanticKind.toUpperCase()} 缺少成对的前后截图推断`);
@@ -571,6 +571,26 @@ function assertCadOperation(operation, label) {
   }
   if (operation.semanticKind === "trim" && operation.resultGeometry.length === 0)
     throw new Error(`${label} 的 TRIM 缺少可验证的最终几何`);
+  if (operation.semanticKind === "fillet" && operation.resultGeometry.length === 0)
+    throw new Error(`${label} 的 FILLET 缺少可验证的最终几何`);
+}
+
+function isCadReplacementOperation(operation) {
+  const command = String(operation?.command ?? "").trim().toUpperCase();
+  if (command === "ROTATE" && operation.arguments?.some((argument) =>
+    argument.kind === "keyword" &&
+    (/copy/i.test(String(argument.name ?? "")) || /copy/i.test(String(argument.text ?? ""))))) return false;
+  return [
+    "MOVE", "ROTATE", "SCALE", "STRETCH", "FILLET", "CHAMFER",
+    "TRIM", "EXTEND", "BREAK"
+  ].includes(command) || ["trim", "fillet"].includes(operation?.semanticKind);
+}
+
+function cadReplacementSourceIds(operation) {
+  return [...new Set([
+    ...(operation.visualInference?.sourceEntityIds ?? []),
+    ...(operation.resultGeometry ?? []).flatMap((geometry) => geometry.sourceEntityIds ?? [])
+  ].filter(Boolean))];
 }
 
 function assertCadVisualInference(inference, label) {

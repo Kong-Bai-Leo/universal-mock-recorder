@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Modify",
+  "tabOrder": 1,
+  "blankSceneObservedControls": ["Object Name and Color", "Modifier List", "Modifier Stack toolbar"],
+  "dynamicSections": ["Modifier Stack", "Selection", "Modifier Parameters", "Sub-object Levels"],
+  "interactionModel": {
+    "requiresSelection": true,
+    "semanticFields": ["selectedObject", "modifierClass", "modifierStackIndex", "subObjectLevel", "parameterName", "parameterValue"],
+    "warning": "The panel is object- and modifier-dependent; re-observe it after every selection or stack change."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "application": "Autodesk 3ds Max",
+  "version": "2027",
+  "language": "en-US",
+  "observedAt": "2026-08-30T00:00:00Z",
+  "window": {
+    "title": "Untitled - Autodesk 3ds Max 2027 - EDUCATION (NON COMMERCIAL)",
+    "process": "3dsmax.exe",
+    "windowClass": "QMaxApplication.QmaxApplicationWindow",
+    "widthPx": 3072,
+    "heightPx": 1680
+  },
+  "method": [
+    "computer_use_screenshot",
+    "windows_ui_automation_tree",
+    "safe_menu_expansion",
+    "safe_command_panel_tab_switching"
+  ],
+  "observedTopLevelMenus": [
+    "File",
+    "Edit",
+    "Tools",
+    "Group",
+    "Views",
+    "Create",
+    "Modifiers",
+    "Animation",
+    "Graph Editors",
+    "Rendering",
+    "Customize",
+    "Scripting",
+    "Arnold",
+    "USD",
+    "Substance",
+    "Civil View",
+    "Help"
+  ],
+  "expandedMenus": [
+    "File",
+    "Edit",
+    "Tools",
+    "Group",
+    "Views",
+    "Create",
+    "Modifiers",
+    "Animation",
+    "Rendering",
+    "Customize",
+    "Scripting"
+  ],
+  "entryOnlyMenus": [
+    "Graph Editors",
+    "Arnold",
+    "USD",
+    "Substance",
+    "Civil View",
+    "Help"
+  ],
+  "observedCommandPanelTabs": [
+    "Create",
+    "Modify",
+    "Hierarchy",
+    "Motion",
+    "Display",
+    "Utilities"
+  ],
+  "interactionSafety": {
+    "sceneModified": false,
+    "objectsCreated": 0,
+    "destructiveCommandsInvoked": false,
+    "finalPanel": "Create"
+  },
+  "limitations": [
+    "Most custom-drawn menu and Command Panel controls do not expose stable Windows UI Automation IDs.",
+    "Main Toolbar actions expose substantially better stable IDs than the menu bar and Command Panel.",
+    "Plugin-provided menus were registered as top-level entries but were not exhaustively expanded in this first scan.",
+    "Control bounds are intentionally not stored as replay coordinates because window size, DPI, workspace, and panel width can change."
+  ]
+}

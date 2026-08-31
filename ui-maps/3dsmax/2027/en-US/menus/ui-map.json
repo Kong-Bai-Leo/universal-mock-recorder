@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "menu_map",
+  "mapId": "3dsmax-2027-en-us-main-menu",
+  "parent": "3dsmax.window.main.menu-bar",
+  "menus": [
+    {
+      "name": "File",
+      "verification": "live_expanded",
+      "items": ["New", "Reset", "Open...", "Open Recent", "Autobackup", "View Image File...", "Save", "Save As...", "Save Incremental (+)", "Save Copy As...", "Save Selected...", "Archive...", "Import", "Export", "Share View...", "Send to", "Reference", "Project", "Summary Info...", "File Properties...", "Preferences...", "Exit"]
+    },
+    {
+      "name": "Edit",
+      "verification": "live_expanded",
+      "items": ["Undo", "Redo", "Hold", "Fetch", "Delete", "Clone", "Move", "Rotate", "Scale", "Placement", "Transform Type-In...", "Transform Toolbox...", "Select All", "Select None", "Select Invert", "Select Similar", "Select Instances", "Select By", "Selection Region", "Manage Selection Sets...", "Object Properties..."]
+    },
+    {
+      "name": "Tools",
+      "verification": "live_expanded",
+      "items": ["Scene Explorer...", "Layer Explorer...", "Create Explorer...", "All Global Explorers", "Manage Local Explorers...", "Local Scene Explorers", "Containers", "Isolate Selection", "End Isolate", "Zoom Extents On Isolate", "Display Floater...", "Manage Scene States...", "Manage Templates...", "Light Lister...", "Mirror...", "Array...", "Align", "Snapshot...", "Flow Retopology", "Flow Studio", "Rename Objects...", "Assign Vertex Colors...", "Color Clipboard...", "Perspective Match...", "Viewport Canvas...", "Screen Capture", "Grids and Snaps", "Snap Working Pivot Tools", "Measure Distance...", "Channel Info...", "Mesh Inspector"]
+    },
+    {
+      "name": "Group",
+      "verification": "live_expanded",
+      "items": ["Group...", "Ungroup", "Open", "Open Recursively", "Close", "Attach", "Detach", "Explode", "Assembly"]
+    },
+    {
+      "name": "Views",
+      "verification": "live_expanded",
+      "items": ["Undo View Change", "Redo View Change", "Active Viewport Settings", "Viewports Configuration...", "Redraw All Views", "Show Shared Views Panel", "Set Active Viewport", "Save Active Perspective View", "Restore Active Perspective View", "ViewCube", "SteeringWheels", "Create Physical Camera From View", "Create Standard Camera From View", "Show Materials in Viewport As", "Viewport Lighting and Shadows", "xView", "Viewport Background", "Show Transform Gizmo", "Show Ghosting", "Shade Selected", "Show Dependencies", "Update During Spinner Drag", "Progressive Display", "Expert Mode"]
+    },
+    {
+      "name": "Create",
+      "verification": "live_expanded",
+      "items": ["Standard Primitives", "Extended Primitives", "AEC Objects", "Compound", "Particles", "Patch Grids", "NURBS", "Point Cloud", "Points", "Dynamics", "Shapes", "Extended Shapes", "Lights", "Cameras", "Helpers", "SpaceWarps", "Systems", "Fluids"]
+    },
+    {
+      "name": "Modifiers",
+      "verification": "live_expanded",
+      "items": ["Selection Modifiers", "Patch/Spline Editing", "Mesh Editing", "Point Editing", "Conversion", "Animation", "Cloth", "Hair and Fur", "UV Coordinates", "Cache Tools", "Subdivision Surfaces", "Free Form Deformers", "Parametric Deformers", "Surface", "NURBS Editing", "Radiosity", "Cameras", "Retopology Tools"]
+    },
+    {
+      "name": "Animation",
+      "verification": "live_expanded",
+      "items": ["Load Animation...", "Save Animation...", "IK Solvers", "Constraints", "Transform Controllers", "Position Controllers", "Rotation Controllers", "Scale Controllers", "MCG Controllers", "CAT", "MassFX", "Fluids", "Offset Controllers", "Parameter Editor...", "Parameter Collector...", "Wire Parameters", "Animation Layers...", "Reaction Manager...", "Bone Tools...", "Set as Skin Pose", "Assume Skin Pose", "Skin Pose Mode", "Toggle Limits", "Delete Selected Animation", "Populate", "Walkthrough Assistant...", "Presets"]
+    },
+    {
+      "name": "Graph Editors",
+      "verification": "entry_only",
+      "items": []
+    },
+    {
+      "name": "Rendering",
+      "verification": "live_expanded",
+      "items": ["Render", "Render in the Cloud", "Open Autodesk A360 Gallery", "Render Setup...", "Rendered Frame Window...", "State Sets...", "Camera Sequencer...", "Scene Converter...", "Exposure Control...", "Environment...", "Effects...", "Render to Texture...", "Bake to Texture...", "Render Surface Map...", "Material Editor", "Material/Map Browser...", "Material Explorer...", "Video Post...", "Panorama Exporter...", "Batch Render...", "Print Size Assistant...", "Color Management...", "Render Message Window...", "Compare Media in RAM Player..."]
+    },
+    {
+      "name": "Customize",
+      "verification": "live_expanded",
+      "items": ["Customize User Interface...", "Hotkey Editor...", "Menu Editor...", "Load Custom UI Scheme...", "Save Custom UI Scheme...", "Custom Defaults Switcher...", "Revert to Startup UI Layout", "Lock UI Layout", "Show UI", "Show Editors", "Show Explorers", "Configure Project Paths...", "Configure User and System Paths...", "Units Setup...", "Plug-in Manager...", "Preferences..."]
+    },
+    {
+      "name": "Scripting",
+      "verification": "live_expanded",
+      "items": ["Install Max Creation Graph (.mcg) Package...", "New Max Creation Graph", "Open Max Creation Graph...", "Max Creation Graph Editor", "Create MCG Geometry...", "Create and Apply MCG Modifier...", "Create Compound From Mesh...", "New Script", "Open Script...", "Run Script...", "Scripting Listener...", "Scripting Editor...", "Macro Recorder", "Visual MAXScript Editor...", "Debugger Dialog...", "MAXScript Help...", "Python Help..."]
+    },
+    {"name": "Arnold", "verification": "entry_only", "items": []},
+    {"name": "USD", "verification": "entry_only", "items": []},
+    {"name": "Substance", "verification": "entry_only", "items": []},
+    {"name": "Civil View", "verification": "entry_only", "items": []},
+    {"name": "Help", "verification": "entry_only", "items": []}
+  ]
+}

@@ -1,4 +1,6 @@
-export const ANALYSIS_HARNESS_VERSION = "0.1";
+import { buildCadGeometryCandidateLayer } from "./cad-geometry-candidates.mjs";
+
+export const ANALYSIS_HARNESS_VERSION = "0.2";
 
 export function buildAnalysisHarness({
   actions,
@@ -46,6 +48,10 @@ export function buildAnalysisHarness({
     grammarCatalog,
     catalog
   );
+  const geometricCandidateLayer = buildCadGeometryCandidateLayer({
+    cadEntityCatalog,
+    actions: actionList
+  });
   const lastEscapeIndex = findLastIndex(actionList, (action) =>
     action.action === "press_key" && action.key === "ESCAPE");
   const lastCommandEvidenceIndex = findLastIndex(actionList, (action) =>
@@ -78,6 +84,7 @@ export function buildAnalysisHarness({
     commandCandidates,
     commandGrammar,
     inputInterpretations,
+    geometricCandidateLayer,
     evidenceSummary: summarizeEvidence(actionList),
     entitySummary: summarizeEntities(cadEntityCatalog),
     decisionRules: [
@@ -87,7 +94,11 @@ export function buildAnalysisHarness({
       "ESCAPE cancels the active command or selection; an ordinary blank-canvas click is never a universal completion signal.",
       "Repeated-character normalization is a candidate aid only. Confirm it against the visible prompt and subsequent state before accepting it.",
       "The command grammar and command candidates do not prove user intent. Keep uncertainty explicit in commandState and step confidence.",
-      "Use deterministic cadEntityCatalog geometry for calculations; never convert screenshot pixels into CAD business units."
+      "Use deterministic cadEntityCatalog geometry for calculations; never convert screenshot pixels into CAD business units.",
+      "When geometricCandidateLayer contains a matching entity, pair or point, copy its canonical entity IDs and exact CAD point into the operation instead of inventing a coordinate.",
+      "Candidate IDs are an audit aid, not proof. Use screenshots and command state to choose among candidates, then preserve the chosen candidate geometry exactly.",
+      "For FILLET without a visible arc, prefer an exact_line_line_intersection candidate and emit the two replacement line geometries; do not invent a radius.",
+      "Do not claim a topology change has paired visual proof when the matching evidenceContract.evidenceHealth.usableForTopologyChange is false."
     ]
   };
   return {
@@ -101,7 +112,15 @@ export function buildAnalysisHarness({
       inputInterpretations,
       grammarCommand: activeCommandHypothesis && commandGrammar ? activeCommandHypothesis : null,
       grammarAvailable: Boolean(commandGrammar),
-      entityCount: Array.isArray(cadEntityCatalog) ? cadEntityCatalog.length : 0
+      entityCount: Array.isArray(cadEntityCatalog) ? cadEntityCatalog.length : 0,
+      geometricCandidateLayer,
+      geometricCandidates: {
+        entityCount: geometricCandidateLayer.entityCandidates.length,
+        pointCount: geometricCandidateLayer.pointCandidates.length,
+        pairCount: geometricCandidateLayer.entityPairCandidates.length,
+        evidenceContractCount: geometricCandidateLayer.evidenceContracts.length,
+        truncated: geometricCandidateLayer.truncated
+      }
     }
   };
 }

@@ -62,6 +62,46 @@ bin\recorder\UniversalMockRecorder.exe
 bin\recorder\recordings\日期-时间\
 ```
 
+### 独立的 3ds Max 2027 录制器
+
+3ds Max 使用单独的 UI Map、EXE 和录制目录，但复用同一套已经验证过的 Windows 输入采集引擎：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\build-3dsmax-recorder.ps1
+```
+
+生成文件：
+
+```text
+bin\3dsmax-recorder\ThreeDsMaxRecorder.exe
+```
+
+它只保存 `3dsmax.exe` 的交互，录制目录位于 `bin\3dsmax-recorder\recordings\日期-时间\`；
+manifest 会明确写入 `autodesk-3dsmax`、`ui-maps/3dsmax/2027/en-US` 和首选回放格式
+`maxscript`。该版本不会启用 AutoCAD Action Recorder、AutoCAD 命令启发式或 CAD SCR 分析，
+因此不会污染 AutoCAD 版本。停止录制后会调用独立的 3ds Max 分析器，先生成结构化场景操作，
+再由本地编译器输出 MAXScript；AI 不直接自由编写脚本文本。
+
+也可以分析已经存在的 3ds Max 录制：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\analyze-3dsmax-recording.ps1 `
+  -Recording "bin\3dsmax-recorder\recordings\20260830-120000" `
+  -Config "config.json"
+```
+
+核心输出为：
+
+```text
+generated\semantic-trace.json
+generated\max-program.json
+generated\3dsmax-replay.ms
+```
+
+`max-program.json` 使用稳定对象 ID 表达基础体创建、选择、移动/旋转/缩放、克隆、删除、
+参数修改、添加修改器和转换 Editable Poly。参数必须来自键盘输入或清晰可见的带标签字段；
+无法确定的三维数值不会按屏幕像素猜测。`3dsmax-replay.ms` 只编译本地后端支持且证据充分的操作。
+
 ## 配置 OpenAI API
 
 首次使用且没有 `config.json` 时复制示例配置：
@@ -75,6 +115,8 @@ if (-not (Test-Path config.json)) { Copy-Item config.example.json config.json }
 - `model`：要调用的 OpenAI 模型
 - `timeoutSeconds`：单次分析的超时时间
 - `maxRetries` / `retryBaseDelayMs`：临时断线或服务繁忙时的重试次数和指数退避起点
+- `forceTls12OnIntegrityError`：遇到 TLS 记录完整性错误时，后续重试改用无会话缓存的 TLS 1.2 新连接
+- `uploadChunkBytes`：请求体分块写入网络连接的大小；默认 65536，降低大请求经过代理或安全软件时的传输抖动
 - `maxActionsPerRequest`：长流程每次发送的最大候选动作数
 - `maxActionMacroEntriesPerRequest`：每个分段最多发送的 ACTMX JSON/XML 顺序条目数
 - `maxValidationRepairs`：AI 结果未通过结构校验时，最多自动携带错误和原结果纠正的次数
@@ -84,6 +126,8 @@ if (-not (Test-Path config.json)) { Copy-Item config.example.json config.json }
 - `jpegQuality`：API 临时 JPEG 副本质量；不会修改录制原图
 - `minimumConfidence`：标记低置信度步骤的阈值
 - `autoCadKnowledge`：AutoCAD 知识库开关、目录和每段最多返回的控件/命令/菜单候选数
+- `threeDsMax`：3ds Max 每段动作/截图数量、临时截图尺寸和校验修复次数
+- `threeDsMaxKnowledge`：3ds Max UI Map 开关、目录和每段最多检索的菜单/工具栏候选数
 
 把 OpenAI API 密钥填写到项目根目录的 `.env` 文件：
 
@@ -107,14 +151,13 @@ powershell -ExecutionPolicy Bypass -File scripts\analyze-recording.ps1 `
 ```text
 generated\semantic-trace.json
 generated\cad-program.json
-generated\analysis-input-manifest.json
-generated\analysis-harness.json
-generated\knowledge-used.json
 generated\mock-script.ts
-generated\computer-use-task.md
 generated\autocad-replay.scr
-generated\autocad-scr-validation.json
 ```
+
+默认只保留以上核心产物，避免每次录制产生大量中间文件。如需排查分析过程，可在
+`config.json` 的 `output` 中设置 `"keepDiagnostics": true`，额外保留输入清单、Harness、
+知识库使用记录、Computer Use 任务和 SCR 校验报告。
 
 要在真实 CAD 中回放：
 
@@ -124,6 +167,8 @@ generated\autocad-scr-validation.json
 4. AutoCAD 将按 SCR 中的命令和业务坐标执行录制后的有效流程。
 
 `cad-program.json` 是主要的 CAD 识别产物，保存命令、强类型参数、实体 ID、对象捕捉关系和录制证据。OFFSET/TRIM 还会保存 `visualInference`（使用的前后截图、变化区域、源/参考实体和方向）以及可严格确定时的 `resultGeometry`。前后截图只用于消除方向和拓扑歧义，CAD 尺寸仍必须来自明确输入、已知实体或解析几何，不能按像素猜测。它不绑定 SCR，可由 AutoCAD、Mock CAD 或其他执行器分别编译。AI 不直接输出 SCR 文本，也不会由 SCR 编译器偷偷修正识别坐标。
+
+默认采用节省 API 的混合策略：仍使用 `gpt-5.6`，普通分段设置低推理强度和低输出冗长度；坐标输入、局部画布变化、TRIM/OFFSET 证据及最终画布保持高清，普通概览图使用低清。相邻 CAD 命令会尽量合并进同一请求，但 ARRAY 等需要先物化实体的边界仍会保留。可在 `config.json` 调整 `reasoningEffort`、`imageDetail`、`maxScreenshotsPerRequest` 和 `minActionsPerRequest`。
 
 Enter 提交数值前的 AutoCAD 动态输入截图会优先以局部高分辨率上传，用于同时读取字段标签、距离、角度、坐标和对象捕捉。此前分段创建的实体会通过稳定实体目录继续传给后续分段，避免一个早期 LINE 被遗漏后造成 OFFSET、ROTATE、FILLET、TRIM 等操作整链丢失。
 
@@ -135,9 +180,9 @@ Enter 提交数值前的 AutoCAD 动态输入截图会优先以局部高分辨�
 
 当某些操作缺少精确参数时，`cad-program.json` 会保留其余已经确认的 operations，并使用 `complete=false` 标记缺口；不会再因为一项不完整而清空整个 CAD 模型或把 Mock 脚本判为生成失败。
 
-`autocad-replay.scr` 仅用于在真实 AutoCAD 中检查结构化操作是否能正确还原。只有在键盘事件或截图中能确认业务坐标、半径等关键数值时才会生成，像素距离不会冒充 CAD 单位。验证后端会根据稳定实体链和精确 `resultGeometry` 直接绘制最终几何，不再交互式重放 ROTATE、FILLET、TRIM 后用窗口猜选对象。请只在空白、可丢弃的测试图纸中运行。
+`autocad-replay.scr` 仅用于在真实 AutoCAD 中检查结构化操作是否能正确还原。分析结果即使标记为不完整，也会尽量根据已经确认的精确 `resultGeometry` 输出部分 SCR；缺失或不确定的操作不会被猜入脚本。像素距离不会冒充 CAD 单位。验证后端会根据稳定实体链和精确最终几何直接绘图，不再交互式重放 ROTATE、FILLET、TRIM 后用窗口猜选对象。请只在空白、可丢弃的测试图纸中运行。
 
-`autocad-scr-validation.json` 单独记录 SCR 后端是否成功。如果某个完整 CAD 操作暂时无法编译成 SCR，主分析仍然成功并保留 `cad-program.json`，不会为了迁就 SCR 而篡改 AI 的识别结果。
+启用 `keepDiagnostics` 后，`autocad-scr-validation.json` 会单独记录 SCR 后端是否成功、是否为部分结果。如果某个 CAD 操作暂时无法编译成 SCR，主分析仍然成功并保留 `cad-program.json`，不会为了迁就 SCR 而篡改 AI 的识别结果。
 
 `knowledge-used.json` 记录每个分析分段实际提供给模型的控件、菜单和命令引用，以及最终 CAD
 操作通过本地命令目录校验的结果。它不会复制完整知识库，也不会记录固定屏幕坐标。

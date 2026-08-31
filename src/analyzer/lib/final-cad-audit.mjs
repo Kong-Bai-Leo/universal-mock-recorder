@@ -1,6 +1,10 @@
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
+import { buildCadEntityCatalog } from "./cad-context.mjs";
+import { buildCadGeometryCandidateLayer } from "./cad-geometry-candidates.mjs";
+import { buildSuspiciousOffsetOverlaps } from "./cad-offset-diagnostics.mjs";
+import { normalizeAuditedCadProgram } from "./cad-program-normalizer.mjs";
 import { optimizeScreenshots } from "./image-optimizer.mjs";
 import { composeTrimEvidence } from "./trim-evidence.mjs";
 import { MOCK_WORKFLOW_SCHEMA, validateWorkflow } from "./workflow.mjs";
@@ -42,6 +46,13 @@ export const FINAL_CAD_AUDIT_INSTRUCTIONS = `
 14. composite TRIM 的每个圆弧端点仍必须来自已知线—圆解析交点；截图只决定删除哪些角区间。不同源实体（例如一条斜线和一条竖线）不得无依据合并为同一个 source；应分别输出替换操作。
 15. 如果现有结果已经与最终画布一致，changed=false 并原样返回 cadProgram。若修改，changed=true，并在 findings 简要列出修复的拓扑差异。
 16. 返回内容必须符合给定 JSON Schema；不要输出 SCR、解释性 Markdown 或 JSON 补丁。
+17. FILLET 若最终是没有可见圆弧的尖角连接，不必伪造 radius=0 参数。只要两条已知直线及最终截图能严格确定公共交点，就用 semanticKind=fillet、command=FILLET，并在 resultGeometry 中输出两条以解析交点为端点的替换线段；sourceEntityIds 必须分别指回原线。
+18. activeCadEntityCatalog 中 exactOverlap=true 表示多个数据库实体具有完全相同的可见解析几何。此时对象身份歧义不是放弃 FILLET/TRIM 的理由：优先引用 canonicalEntityId；最终形状需要替换该可见笔画时，审计和本地执行器会把 equivalentEntityIds 作为同一可见几何组处理。
+19. semanticModificationSteps 是分段分析已经从提示文字和前后图确认的修改步骤。其 sourceEventIds 与 candidateModificationActions 对齐时，优先采用其中的命令阶段，不得因录制事件上的滞后 visualCommandContext 把 FILLET/TRIM 错认成 OFFSET。
+20. geometricCandidateLayer 中的端点、圆心、象限点和解析交点均来自现有精确 CAD 几何。截图负责选择正确 candidate，选定后必须原样使用其 CAD 坐标和 canonical entity IDs；不得另行按像素估算近似点。
+21. suspiciousOffsetOverlaps 表示某个 OFFSET 的现有结果与另一条可见实体完全重合。这是强制复核信号，不得直接当成有意创建重合副本。必须比较该 OFFSET 的 before/after 图片中平行线的数量和左右顺序；若 after 新增了一条独立平行线，现有 side 或 resultGeometry 必然错误。
+22. suspiciousOffsetOverlaps.alternativeResultCandidates 是由源直线方向和精确 offsetDistance 解析计算出的另一侧候选，CAD 坐标可直接使用。截图只负责选择 left/right；禁止按像素距离重新计算 CAD 坐标。修正早期 OFFSET 后，必须同步修正后续 FILLET/TRIM 的实体引用和解析交点，不能继续报告“右侧竖线缺少稳定实体 ID”。
+23. 对平行线组做拓扑计数：若 OFFSET 前有 N 条可见平行线、后有 N+1 条，结果就不能与已有线完全重合。只有 before/after 都没有新增独立笔画，且后续数据库身份确实需要重合副本时，才允许保留 exactOverlap 结果。
 `;
 
 export function shouldRunFinalCadAudit(plan, actions, options = {}) {
@@ -76,7 +87,7 @@ export async function auditFinalCadProgram({
     };
   }
 
-  const finalScreenshot = await findFinalScreenshot(recordingDir);
+  const finalScreenshot = await findFinalScreenshot(recordingDir, actions);
   if (!finalScreenshot) {
     return {
       plan,
@@ -93,7 +104,14 @@ export async function auditFinalCadProgram({
   const limit = Math.max(3, auditOptions.maxScreenshots ?? analysisOptions.maxScreenshotsPerRequest ?? 16);
   const relevantActions = contextualActions.filter((action) => TOPOLOGY_COMMANDS.has(resolveCommand(action)));
   const trimActions = relevantActions.filter(isCanvasTrimAction);
-  const selectedTrimActions = sampleEvenly(trimActions, Math.min(trimActions.length, limit - 1));
+  const activeCadEntityCatalog = buildCadEntityCatalog([{ cadProgram: plan.cadProgram }]);
+  const suspiciousOffsetOverlaps = buildSuspiciousOffsetOverlaps({
+    cadProgram: plan.cadProgram,
+    activeCadEntityCatalog
+  });
+  const offsetEvidenceReserve = suspiciousOffsetOverlaps.suspiciousOverlaps.length > 0 ? 2 : 0;
+  const trimBudget = Math.max(0, limit - 1 - offsetEvidenceReserve);
+  const selectedTrimActions = sampleEvenly(trimActions, Math.min(trimActions.length, trimBudget));
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), "mock-recorder-final-cad-audit-"));
 
   try {
@@ -105,7 +123,16 @@ export async function auditFinalCadProgram({
         ...analysisOptions,
         ...(auditOptions.trimEvidence ?? {})
       });
-    const remaining = Math.max(0, limit - optimizedFinal.length - trimComparisons.length);
+    const offsetDiagnosticInputs = makeOffsetDiagnosticInputs(
+      recordingDir, suspiciousOffsetOverlaps.suspiciousOverlaps);
+    const offsetDiagnosticBudget = Math.max(
+      0, limit - optimizedFinal.length - trimComparisons.length);
+    const optimizedOffsetDiagnostics = await optimizeScreenshots(
+      offsetDiagnosticInputs.slice(0, offsetDiagnosticBudget),
+      path.join(tempDir, "offset-diagnostics"),
+      analysisOptions);
+    const remaining = Math.max(0, limit - optimizedFinal.length - trimComparisons.length -
+      optimizedOffsetDiagnostics.length);
     const nonTrimActions = relevantActions.filter((action) => resolveCommand(action) !== "TRIM");
     const supplementalFiles = selectFinalCadAuditFiles(
       nonTrimActions, finalScreenshot, remaining + 1)
@@ -115,16 +142,29 @@ export async function auditFinalCadProgram({
       makeAuditScreenshotInput(recordingDir, file, finalScreenshot, nonTrimActions));
     const optimizedSupplemental = await optimizeScreenshots(
       supplementalInputs, path.join(tempDir, "supplemental"), analysisOptions);
-    const screenshots = [...optimizedFinal, ...trimComparisons, ...optimizedSupplemental];
+    const screenshots = [
+      ...optimizedFinal,
+      ...trimComparisons,
+      ...optimizedOffsetDiagnostics,
+      ...optimizedSupplemental
+    ];
+    const geometricCandidateLayer = buildCadGeometryCandidateLayer({
+      cadEntityCatalog: activeCadEntityCatalog,
+      actions: relevantActions
+    });
     const auditResult = await client.analyze({
       instructions: FINAL_CAD_AUDIT_INSTRUCTIONS,
       payload: {
         format: "FinalCadGeometryAudit",
-        version: "0.1",
+        version: "0.2",
         outputLanguage: analysisOptions.language ?? "zh-CN",
         minimumConfidence,
         existingCadProgram: plan.cadProgram,
+        activeCadEntityCatalog,
+        geometricCandidateLayer,
+        suspiciousOffsetOverlaps,
         candidateModificationActions: relevantActions.map(compactAuditAction),
+        semanticModificationSteps: compactTopologyPlanSteps(plan),
         trimClickCoverage: selectedTrimActions.map((action) => ({
           action: compactAuditAction(action),
           existingOperations: findOperationsForAction(plan.cadProgram, action)
@@ -134,12 +174,19 @@ export async function auditFinalCadProgram({
       screenshots,
       outputSchema: FINAL_CAD_AUDIT_SCHEMA,
       outputName: "final_cad_geometry_audit",
-      outputDescription: "核对录制结束画布后得到的完整 AutoCAD CAD IR"
+      outputDescription: "核对录制结束画布后得到的完整 AutoCAD CAD IR",
+      reasoningEffort: auditOptions.reasoningEffort ?? "medium",
+      verbosity: auditOptions.verbosity ?? "low"
     });
+    const normalizedAudit = normalizeAuditedCadProgram(auditResult.cadProgram);
+    const auditFindings = [...new Set([
+      ...(auditResult.findings ?? []),
+      ...normalizedAudit.findings
+    ])];
     const auditedPlan = validateWorkflow({
       ...plan,
-      cadProgram: auditResult.cadProgram,
-      warnings: [...new Set([...(plan.warnings ?? []), ...(auditResult.findings ?? [])])]
+      cadProgram: normalizedAudit.program,
+      warnings: [...new Set([...(plan.warnings ?? []), ...auditFindings])]
     }, {
       minimumConfidence,
       validateCadReferences: true
@@ -148,8 +195,8 @@ export async function auditFinalCadProgram({
       plan: auditedPlan,
       audit: {
         attempted: true,
-        changed: auditResult.changed,
-        findings: auditResult.findings,
+        changed: auditResult.changed || normalizedAudit.changed,
+        findings: auditFindings,
         screenshots: screenshots.map((item) => ({
           source: formatAuditSource(recordingDir, item),
           uploadedAs: item.evidenceRole,
@@ -162,6 +209,29 @@ export async function auditFinalCadProgram({
   } finally {
     await fs.rm(tempDir, { recursive: true, force: true });
   }
+}
+
+function makeOffsetDiagnosticInputs(recordingDir, diagnostics) {
+  const result = [];
+  const seen = new Set();
+  for (const diagnostic of diagnostics ?? []) {
+    for (const [phase, file] of [
+      ["before", diagnostic.evidence?.beforeScreenshot],
+      ["after", diagnostic.evidence?.afterScreenshot]
+    ]) {
+      if (!file || seen.has(file)) continue;
+      seen.add(file);
+      result.push({
+        path: path.join(recordingDir, file),
+        label: `${file}（suspicious_offset_${phase}；operation=${diagnostic.operationId}；` +
+          `当前结果与 ${diagnostic.exactOverlap?.otherEntityIds?.join(",") || "已有实体"} 完全重合。` +
+          `必须与同 operation 的另一张图比较平行线数量和左右顺序，并从 alternativeResultCandidates 选择精确 side/几何）`,
+        evidenceRole: `suspicious_offset_${phase}`,
+        sourceEventIds: diagnostic.evidence?.sourceEventIds ?? []
+      });
+    }
+  }
+  return result;
 }
 
 export function selectFinalCadAuditFiles(actions, finalScreenshot, limit = 16) {
@@ -218,7 +288,7 @@ function makeAuditScreenshotInput(recordingDir, file, finalScreenshot, actions) 
   return item;
 }
 
-async function findFinalScreenshot(recordingDir) {
+export async function findFinalScreenshot(recordingDir, actions = []) {
   const screenshotDir = path.join(recordingDir, "screenshots");
   let files;
   try {
@@ -226,11 +296,32 @@ async function findFinalScreenshot(recordingDir) {
   } catch {
     return null;
   }
-  const finalFile = files
-    .filter((file) => /^evt-\d+(?:-(?:before|after))?\.(?:jpe?g|png)$/i.test(file))
+  const screenshotFiles = files
+    .filter((file) => /^evt-\d+(?:-(?:before|after))?\.(?:jpe?g|png)$/i.test(file));
+  const available = new Set(screenshotFiles.map((file) => `screenshots/${file}`));
+  const cadActions = [...(Array.isArray(actions) ? actions : [])]
+    .filter((action) => isAutoCadMainWindow(action?.window))
+    .sort((left, right) => Number(right?.endMs ?? 0) - Number(left?.endMs ?? 0));
+  for (const action of cadActions) {
+    for (const candidate of [action.screenshotAfter, action.screenshotSelection, action.screenshotBefore]) {
+      const normalized = String(candidate ?? "").replaceAll("\\", "/");
+      if (available.has(normalized)) return normalized;
+    }
+  }
+
+  const finalFile = screenshotFiles
     .sort((left, right) => left.localeCompare(right, "en"))
     .at(-1);
   return finalFile ? `screenshots/${finalFile}` : null;
+}
+
+function isAutoCadMainWindow(window) {
+  if (!window) return false;
+  const processName = String(window.processName ?? "").trim().toLowerCase();
+  const title = String(window.title ?? "");
+  const largeEnough = !Number.isFinite(window.width) || !Number.isFinite(window.height) ||
+    (window.width >= 600 && window.height >= 400);
+  return largeEnough && (processName === "acad" || /\bAutoCAD\b/i.test(title));
 }
 
 function compactAuditAction(action) {
@@ -246,6 +337,8 @@ function compactAuditAction(action) {
     visualComparisonContext: action.visualComparisonContext ?? null,
     resolvedCadCommandContext: action.resolvedCadCommandContext ?? null,
     inferredCadCommandContext: action.inferredCadCommandContext ?? null,
+    auditCadCommandContext: action.auditCadCommandContext ?? null,
+    semanticPlanEvidence: action.semanticPlanEvidence ?? null,
     sourceEventIds: action.sourceEventIds ?? []
   };
 }
@@ -288,6 +381,7 @@ function formatAuditSource(recordingDir, item) {
 
 function resolveCommand(action) {
   return String(
+    action?.auditCadCommandContext ??
     action?.resolvedCadCommandContext ??
     action?.inferredCadCommandContext ??
     action?.visualComparisonContext ??
@@ -314,7 +408,7 @@ export function inferTopologyActionContexts(actions, commandStateTimeline, plan)
       : contextActions.filter(isLikelyTopologyCanvasAction);
     for (const action of candidates) {
       if (!resolveCommand(action) && isLikelyTopologyCanvasAction(action))
-        inferred.set(action, command);
+        inferred.set(action, { command, source: "command_state" });
     }
   }
 
@@ -326,13 +420,69 @@ export function inferTopologyActionContexts(actions, commandStateTimeline, plan)
     for (const action of actions) {
       if ((action.sourceEventIds ?? []).some((eventId) => finalEvidenceIds.has(eventId)) &&
         !resolveCommand(action) && isLikelyTopologyCanvasAction(action))
-        inferred.set(action, finalCommand);
+        inferred.set(action, { command: finalCommand, source: "final_command_state" });
     }
   }
 
-  return actions.map((action) => inferred.has(action)
-    ? { ...action, inferredCadCommandContext: inferred.get(action) }
-    : action);
+  // 分段输出已经把可见提示、动作目标和画布变化汇总为 semantic steps。
+  // 它比事件上可能滞后的 visualCommandContext 更接近真实命令阶段，因此可覆盖旧上下文。
+  for (const step of plan?.steps ?? []) {
+    const command = topologyCommandFromStep(step);
+    if (!command) continue;
+    const evidenceIds = new Set(step.sourceEventIds ?? []);
+    if (evidenceIds.size === 0) continue;
+    for (const action of actions) {
+      if (!isLikelyTopologyCanvasAction(action)) continue;
+      if (!(action.sourceEventIds ?? []).some((eventId) => evidenceIds.has(eventId))) continue;
+      inferred.set(action, {
+        command,
+        source: "semantic_plan_step",
+        stepId: step.id ?? null,
+        goal: step.goal ?? null,
+        stateChange: step.expectedState?.stateChange ?? null
+      });
+    }
+  }
+
+  return actions.map((action) => {
+    const evidence = inferred.get(action);
+    if (!evidence) return action;
+    return {
+      ...action,
+      inferredCadCommandContext: evidence.command,
+      auditCadCommandContext: evidence.command,
+      semanticPlanEvidence: evidence.source === "semantic_plan_step" ? evidence : null
+    };
+  });
+}
+
+function topologyCommandFromStep(step) {
+  const text = [
+    step?.goal,
+    step?.target?.semanticFunction,
+    ...(step?.target?.textCandidates ?? []),
+    ...(step?.expectedState?.visibleTextCandidates ?? []),
+    step?.expectedState?.visualDescription,
+    step?.expectedState?.stateChange,
+    step?.canvasChange?.objectDescription
+  ].filter(Boolean).join(" ");
+  return [...TOPOLOGY_COMMANDS].find((command) =>
+    new RegExp(`(^|[^A-Z])${command}([^A-Z]|$)`, "i").test(text)) ?? null;
+}
+
+function compactTopologyPlanSteps(plan) {
+  return (plan?.steps ?? [])
+    .map((step) => ({ step, command: topologyCommandFromStep(step) }))
+    .filter((item) => item.command)
+    .map(({ step, command }) => ({
+      id: step.id,
+      command,
+      goal: step.goal,
+      semanticFunction: step.target?.semanticFunction ?? null,
+      stateChange: step.expectedState?.stateChange ?? null,
+      canvasChange: step.canvasChange ?? null,
+      sourceEventIds: step.sourceEventIds ?? []
+    }));
 }
 
 function topologyCommandFromState(state) {

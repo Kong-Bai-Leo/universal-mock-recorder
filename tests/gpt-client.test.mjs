@@ -4,7 +4,12 @@ import fs from "node:fs/promises";
 import http from "node:http";
 import os from "node:os";
 import path from "node:path";
-import { GptClient } from "../src/analyzer/lib/gpt-client.mjs";
+import {
+  GptClient,
+  isRetryable,
+  isTlsIntegrityError,
+  summarizeUsageRecords
+} from "../src/analyzer/lib/gpt-client.mjs";
 
 test("通过 OpenAI Responses 端点获得 JSON", async () => {
   const requests = [];
@@ -19,7 +24,16 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
     });
     response.writeHead(200, { "content-type": "application/json" });
     response.end(JSON.stringify({
-      output_text: JSON.stringify({ summary: "ok", steps: [], omitted: [], warnings: [] })
+      id: `resp_${requests.length}`,
+      model: "test-model-snapshot",
+      output_text: JSON.stringify({ summary: "ok", steps: [], omitted: [], warnings: [] }),
+      usage: {
+        input_tokens: 1000,
+        input_tokens_details: { cached_tokens: 200 },
+        output_tokens: 300,
+        output_tokens_details: { reasoning_tokens: 120 },
+        total_tokens: 1300
+      }
     }));
   });
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
@@ -32,7 +46,10 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
   try {
     const client = new GptClient({
       model: "test-model",
-      timeoutSeconds: 5
+      timeoutSeconds: 5,
+      reasoningEffort: "low",
+      verbosity: "low",
+      imageDetail: "low"
     });
     client.baseUrl = `http://127.0.0.1:${address.port}/v1`;
     const result = await client.analyze({
@@ -58,6 +75,8 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
     assert.equal(requests[0].body.model, "test-model");
     assert.equal(requests[0].body.store, false);
     assert.equal(requests[0].body.stream, true);
+    assert.equal(requests[0].body.reasoning.effort, "low");
+    assert.equal(requests[0].body.text.verbosity, "low");
     assert.match(requests[0].clientRequestId, /^[0-9a-f-]{36}$/i);
     assert.equal(requests[0].body.text.format.type, "json_schema");
     assert.equal(requests[0].body.text.format.strict, true);
@@ -65,8 +84,18 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
     assert.equal(requests[0].body.text.format.schema.properties.nativeScript, undefined);
     assert.match(requests[0].body.input[0].content[1].text, /screenshots\/evt-1\.jpg/);
     assert.match(requests[0].body.input[0].content[2].image_url, /^data:image\/jpeg;base64,/);
+    assert.equal(requests[0].body.input[0].content[2].detail, "low");
     assert.equal(requests[1].body.text.format.name, "custom_audit");
     assert.deepEqual(Object.keys(requests[1].body.text.format.schema.properties), ["summary"]);
+    const usage = summarizeUsageRecords(client.getUsageRecords());
+    assert.equal(usage.requestCount, 2);
+    assert.equal(usage.inputTokens, 2000);
+    assert.equal(usage.cachedInputTokens, 400);
+    assert.equal(usage.outputTokens, 600);
+    assert.equal(usage.reasoningTokens, 240);
+    assert.equal(usage.totalTokens, 2600);
+    assert.equal(usage.responses[0].responseId, "resp_1");
+    assert.equal(usage.responses[0].model, "test-model-snapshot");
   } finally {
     delete process.env.OPENAI_API_KEY;
     await new Promise((resolve) => server.close(resolve));
@@ -129,4 +158,15 @@ test("上传连接被关闭时自动重试", async () => {
     delete process.env.OPENAI_API_KEY;
     await new Promise((resolve) => server.close(resolve));
   }
+});
+
+test("TLS bad record mac 被识别为可重试的连接完整性错误", () => {
+  const error = new Error("ssl/tls alert bad record mac");
+  error.code = "ERR_SSL_SSL/TLS_ALERT_BAD_RECORD_MAC";
+  assert.equal(isTlsIntegrityError(error), true);
+  assert.equal(isRetryable(error), true);
+
+  const wrapped = new Error("request failed", { cause: error });
+  assert.equal(isTlsIntegrityError(wrapped), true);
+  assert.equal(isRetryable(wrapped), true);
 });

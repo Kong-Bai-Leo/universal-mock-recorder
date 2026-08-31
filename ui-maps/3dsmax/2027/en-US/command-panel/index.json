@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_index",
+  "mapId": "3dsmax-2027-en-us-command-panel",
+  "tabs": [
+    {"name": "Create", "map": "create/ui-map.json", "verification": "live_observed"},
+    {"name": "Modify", "map": "modify/ui-map.json", "verification": "live_observed_blank_scene"},
+    {"name": "Hierarchy", "map": "hierarchy/ui-map.json", "verification": "live_observed"},
+    {"name": "Motion", "map": "motion/ui-map.json", "verification": "live_observed_blank_scene"},
+    {"name": "Display", "map": "display/ui-map.json", "verification": "live_observed"},
+    {"name": "Utilities", "map": "utilities/ui-map.json", "verification": "live_observed"}
+  ],
+  "selectionRule": "Resolve the active tab from its highlighted icon and visible rollout labels. Icons alone are insufficient because themes and DPI can change.",
+  "coordinatePolicy": "Stored tab order is semantic only; detect current panel bounds before any computer-use action."
+}

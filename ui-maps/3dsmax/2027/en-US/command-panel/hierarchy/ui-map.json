@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Hierarchy",
+  "tabOrder": 2,
+  "subTabs": ["Pivot", "IK", "Link Info"],
+  "observedRollouts": ["Adjust Pivot", "Working Pivot", "Adjust Transform", "Skin Pose"],
+  "observedActions": ["Affect Pivot Only", "Affect Object Only", "Affect Hierarchy Only", "Center to Object", "Align to Object", "Align to World", "Reset Pivot", "Edit Working Pivot", "Use Working Pivot", "Align to View", "Reset", "Align Pivot to View", "Pin Working Pivot", "Don't Affect Children"]
+}

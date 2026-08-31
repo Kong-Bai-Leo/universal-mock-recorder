@@ -59,7 +59,12 @@ for ($index = 0; $index -lt $InputItems.Count; $index++) {
             }
             $workingImage = $cropped
         }
-        $scale = [Math]::Min(1.0, [Math]::Min($MaxWidth / $workingImage.Width, $MaxHeight / $workingImage.Height))
+        $requestedUpscale = 1.0
+        if ($manifestItem -isnot [string] -and $null -ne $manifestItem.upscale) {
+            $requestedUpscale = [Math]::Max(1.0, [double]$manifestItem.upscale)
+        }
+        $scale = [Math]::Min($requestedUpscale,
+            [Math]::Min($MaxWidth / $workingImage.Width, $MaxHeight / $workingImage.Height))
         $width = [Math]::Max(1, [int][Math]::Round($workingImage.Width * $scale))
         $height = [Math]::Max(1, [int][Math]::Round($workingImage.Height * $scale))
         $bitmap = New-Object System.Drawing.Bitmap($width, $height, [System.Drawing.Imaging.PixelFormat]::Format24bppRgb)

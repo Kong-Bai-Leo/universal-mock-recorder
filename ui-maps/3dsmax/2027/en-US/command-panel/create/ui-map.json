@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Create",
+  "tabOrder": 0,
+  "categories": ["Geometry", "Shapes", "Lights", "Cameras", "Helpers", "Space Warps", "Systems"],
+  "geometryTypeDropdown": ["Standard Primitives", "Extended Primitives", "Compound Objects", "Particle Systems", "Patch Grids", "Body Objects", "Doors", "NURBS Surfaces", "Windows", "AEC Extended", "Point Cloud Objects", "Dynamics Objects", "Stairs", "Alembic", "USD", "Points", "Arnold", "Fluids"],
+  "standardPrimitives": ["Box", "Cone", "Sphere", "GeoSphere", "Cylinder", "Tube", "Torus", "Pyramid", "Teapot", "Plane", "TextPlus"],
+  "rollouts": ["Object Type", "Name and Color"],
+  "interactionModel": {
+    "primitiveCreation": "Select a primitive type, then interpret viewport clicks/drags and parameter fields as one semantic create operation.",
+    "parameterPriority": ["typed spinner value", "visible labeled field", "viewport drag geometry", "pixel inference"],
+    "pixelInferencePolicy": "last_resort_low_confidence"
+  }
+}

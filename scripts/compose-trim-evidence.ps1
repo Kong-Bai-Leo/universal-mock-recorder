@@ -16,7 +16,15 @@ param(
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 New-Item -ItemType Directory -Force -Path $OutputDirectory | Out-Null
-$items = @(Get-Content -Raw -Encoding UTF8 -LiteralPath $InputManifest | ConvertFrom-Json)
+$parsedItems = Get-Content -Raw -Encoding UTF8 -LiteralPath $InputManifest | ConvertFrom-Json
+# Windows PowerShell 5.1 may preserve a top-level JSON array as one pipeline object.
+# Enumerate it explicitly so paths from several TRIM clicks are never concatenated.
+$items = @()
+if ($parsedItems -is [System.Array]) {
+    foreach ($parsedItem in $parsedItems) { $items += $parsedItem }
+} elseif ($null -ne $parsedItems) {
+    $items += $parsedItems
+}
 $jpegCodec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() |
     Where-Object { $_.MimeType -eq 'image/jpeg' } |
     Select-Object -First 1
@@ -32,7 +40,12 @@ for ($index = 0; $index -lt $items.Count; $index++) {
         [pscustomobject]@{ label = 'settled_after'; path = [string]$item.afterPath }
     ) | Where-Object { $_.path -and (Test-Path -LiteralPath $_.path) }
     if ($sourceEntries.Count -lt 2) {
-        throw "TRIM evidence $($item.id) has fewer than two available frames."
+        $results += [pscustomobject]@{
+            skipped = $true
+            reason = 'fewer_than_two_available_frames'
+            sourceScreenshots = @($sourceEntries | ForEach-Object { $_.path })
+        }
+        continue
     }
 
     $images = @()
@@ -137,6 +150,7 @@ for ($index = 0; $index -lt $items.Count; $index++) {
     }
 
     $results += [pscustomobject]@{
+        skipped = $false
         path = $outputPath
         sourceWidth = $sourceWidth
         sourceHeight = $sourceHeight

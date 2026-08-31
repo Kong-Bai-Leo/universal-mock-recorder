@@ -1,26 +1,34 @@
 {
   "provider": {
     "model": "gpt-5.6",
+    "reasoningEffort": "low",
+    "verbosity": "low",
+    "imageDetail": "low",
     "timeoutSeconds": 600,
     "streamResponses": true,
     "maxRetries": 4,
     "retryBaseDelayMs": 2000,
-    "retryMaxDelayMs": 20000
+    "retryMaxDelayMs": 20000,
+    "forceTls12OnIntegrityError": true,
+    "uploadChunkBytes": 65536
   },
   "analysis": {
     "language": "zh-CN",
     "includeScreenshots": true,
-    "maxScreenshotsPerRequest": 16,
+    "maxScreenshotsPerRequest": 24,
     "maxImageWidth": 1600,
     "maxImageHeight": 1000,
     "jpegQuality": 68,
-    "maxActionsPerRequest": 150,
+    "maxActionsPerRequest": 240,
+    "minActionsPerRequest": 18,
     "maxActionMacroEntriesPerRequest": 90,
     "maxValidationRepairs": 1,
     "minimumConfidence": 0.65,
     "finalCadVisualAudit": {
       "enabled": true,
-      "maxScreenshots": 16
+      "maxScreenshots": 10,
+      "reasoningEffort": "medium",
+      "verbosity": "low"
     },
     "autoCadKnowledge": {
       "enabled": true,
@@ -28,10 +36,28 @@
       "maxControls": 18,
       "maxCommands": 14,
       "maxMenus": 10
+    },
+    "threeDsMax": {
+      "uploadAllScreenshots": false,
+      "maxActionsPerRequest": 200,
+      "minActionsPerRequest": 12,
+      "maxScreenshotsPerRequest": 18,
+      "maxImageWidth": 1600,
+      "maxImageHeight": 1000,
+      "jpegQuality": 72,
+      "maxValidationRepairs": 1
+    },
+    "threeDsMaxKnowledge": {
+      "enabled": true,
+      "root": "ui-maps/3dsmax/2027/en-US",
+      "maxMenus": 8,
+      "maxMenuItems": 40,
+      "maxToolbarControls": 20
     }
   },
   "output": {
     "scriptLanguage": "typescript",
-    "runtimeImport": "@mock/runtime"
+    "runtimeImport": "@mock/runtime",
+    "keepDiagnostics": false
   }
 }

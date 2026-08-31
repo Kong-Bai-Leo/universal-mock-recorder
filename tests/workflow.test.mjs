@@ -256,7 +256,50 @@ test("严格实体追踪拒绝连续 TRIM 再次引用已被替换的完整圆",
   ];
 
   assert.throws(() => validateWorkflow(invalid, { validateCadReferences: true }),
-    /已经被此前 TRIM 替换的实体 full-circle/);
+    /已经被此前修改操作替换的实体 full-circle/);
+});
+
+test("允许 FILLET 用解析交点表达没有可见圆弧的尖角", () => {
+  const valid = workflow();
+  const first = cadOperation("LINE", ++workflowSequence);
+  first.semanticKind = "line";
+  first.resultEntityIds = ["line-a"];
+  const second = cadOperation("LINE", ++workflowSequence);
+  second.semanticKind = "line";
+  second.resultEntityIds = ["line-b"];
+  const fillet = {
+    ...cadOperation("FILLET", ++workflowSequence),
+    semanticKind: "fillet",
+    arguments: [{
+      kind: "selection", name: "objects", point: null, number: null, text: null,
+      selection: {
+        mode: "entities", entityIds: ["line-a", "line-b"],
+        firstCorner: null, secondCorner: null
+      }
+    }],
+    resultEntityIds: ["corner-a", "corner-b"],
+    resultGeometry: [{
+      id: "corner-a", kind: "line", points: [cadPoint(0, 0), cadPoint(5, 5)],
+      center: null, radius: null, startAngle: null, endAngle: null, clockwise: null,
+      closed: false, sourceEntityIds: ["line-a"], confidence: 0.9
+    }, {
+      id: "corner-b", kind: "line", points: [cadPoint(5, 5), cadPoint(5, 10)],
+      center: null, radius: null, startAngle: null, endAngle: null, clockwise: null,
+      closed: false, sourceEntityIds: ["line-b"], confidence: 0.9
+    }],
+    visualInference: {
+      method: "combined", beforeScreenshot: "fillet-before.jpg", afterScreenshot: "fillet-after.jpg",
+      changedRegionRelative: null, sourceEntityIds: ["line-a", "line-b"],
+      referenceEntityIds: [], side: "unknown", confidence: 0.9
+    },
+    sourceScreenshots: ["fillet-before.jpg", "fillet-after.jpg"]
+  };
+  valid.cadProgram.operations = [first, second, fillet];
+
+  const result = validateWorkflow(valid, { validateCadReferences: true });
+  assert.equal(result.cadProgram.operations.at(-1).semanticKind, "fillet");
+  assert.equal(result.cadProgram.operations.at(-1).arguments.some((item) =>
+    ["radius", "fillet_radius"].includes(item.name)), false);
 });
 
 function cadOperation(command, sequence) {

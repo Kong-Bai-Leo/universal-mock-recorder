@@ -48,7 +48,8 @@ export async function composeTrimEvidence(actions, recordingDir, outputDirectory
   if (!Array.isArray(generated) || generated.length !== actions.length)
     throw new Error("TRIM 对比图生成器返回的文件数量不正确");
 
-  return generated.map((item, index) => {
+  return generated.flatMap((item, index) => {
+    if (item?.skipped === true) return [];
     const action = actions[index];
     const eventIds = action.sourceEventIds ?? [];
     const mapping = {
@@ -67,7 +68,7 @@ export async function composeTrimEvidence(actions, recordingDir, outputDirectory
       clickInSource: { x: item.clickX, y: item.clickY },
       clickInCrop: { x: item.clickX - item.cropLeft, y: item.clickY - item.cropTop }
     };
-    return {
+    return [{
       path: item.path,
       evidenceRole: "trim_click_aligned_comparison",
       sourceScreenshots: item.sourceScreenshots,
@@ -78,7 +79,7 @@ export async function composeTrimEvidence(actions, recordingDir, outputDirectory
         `cropRectOriginal=[${item.cropLeft},${item.cropTop},${item.cropWidth},${item.cropHeight}]；` +
         `scale=${Number(item.scale).toFixed(6)}。必须只比较本图各面板：以 immediate_before 到 settled_after 为本次点击的主差分，找出永久消失或缩短的几何，并令该 pair 的 operation/resultGeometry 与之完全一致；persistent_baseline 仅用于连续状态复核。` +
         `面板内原图映射：original=[${item.cropLeft},${item.cropTop}]+panelLocal/scale）`
-    };
+    }];
   });
 }
 

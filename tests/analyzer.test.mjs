@@ -1,5 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
 import {
   annotatePersistentCanvasBaselines,
   buildCandidateActions,
@@ -10,6 +13,7 @@ import { renderTypeScript } from "../src/analyzer/lib/script-renderer.mjs";
 import { renderComputerUseTask } from "../src/analyzer/lib/computer-use-renderer.mjs";
 import { renderAutoCadScr } from "../src/analyzer/lib/autocad-scr-renderer.mjs";
 import {
+  findFinalScreenshot,
   inferTopologyActionContexts,
   selectFinalCadAuditFiles,
   shouldRunFinalCadAudit
@@ -27,11 +31,13 @@ test("组合单击并忽略纯鼠标移动", () => {
 
 test("识别拖拽", () => {
   const actions = buildCandidateActions([
-    { id: "1", eventType: "mouse_down", timestampMs: 10, x: 10, y: 20, relativeX: 0.1, relativeY: 0.2, button: "left", screenshotBefore: "screenshots/before.jpg" },
+    { id: "1", eventType: "mouse_down", timestampMs: 10, x: 10, y: 20, relativeX: 0.1, relativeY: 0.2, button: "left", modifiers: ["SHIFT"], screenshotBefore: "screenshots/before.jpg" },
     { id: "m", eventType: "mouse_move", timestampMs: 250, x: 50, y: 80 },
     { id: "2", eventType: "mouse_up", timestampMs: 500, x: 100, y: 200, relativeX: 0.8, relativeY: 0.9, button: "left", screenshotAfter: "screenshots/after.jpg", visualChange: { changed: true, relativeBounds: [0.1, 0.2, 0.7, 0.7] } }
   ]);
   assert.equal(actions[0].action, "drag");
+  assert.equal(actions[0].button, "left");
+  assert.deepEqual(actions[0].modifiers, ["SHIFT"]);
   assert.deepEqual(actions[0].to, { x: 100, y: 200, relativeX: 0.8, relativeY: 0.9 });
   assert.equal(actions[0].path.length, 3);
   assert.equal(actions[0].screenshotBefore, "screenshots/before.jpg");
@@ -80,6 +86,51 @@ test("无 UIA 时最终审计用分段 commandState 恢复 TRIM 点击上下文"
   assert.equal(shouldRunFinalCadAudit({
     cadProgram: { format: "autocad_command_ir" }, commandState: state
   }, actions), true);
+});
+
+test("最终审计用 semantic step 覆盖事件中滞后的 OFFSET 上下文", () => {
+  const filletClick = {
+    action: "click", at: { relativeY: 0.45 }, target: null,
+    visualCommandContext: "OFFSET", cadCommandContext: "OFFSET",
+    screenshotBefore: "fillet-before.jpg", screenshotAfter: "fillet-after.jpg",
+    sourceEventIds: ["evt-fillet"]
+  };
+  const plan = {
+    steps: [{
+      id: "step-fillet", goal: "完成第一组 FILLET 尖角连接",
+      target: { semanticFunction: "select_second_fillet_object", textCandidates: [] },
+      expectedState: { visibleTextCandidates: [], visualDescription: null, stateChange: "完成 FILLET" },
+      canvasChange: { objectDescription: "两条线连接" }, sourceEventIds: ["evt-fillet"]
+    }]
+  };
+
+  const [result] = inferTopologyActionContexts([filletClick], [], plan);
+  assert.equal(result.auditCadCommandContext, "FILLET");
+  assert.equal(result.semanticPlanEvidence.stepId, "step-fillet");
+});
+
+test("最终审计优先选择最后一张 AutoCAD 主窗口截图", async () => {
+  const recordingDir = await fs.mkdtemp(path.join(os.tmpdir(), "final-cad-shot-"));
+  const screenshotDir = path.join(recordingDir, "screenshots");
+  await fs.mkdir(screenshotDir);
+  await Promise.all([
+    fs.writeFile(path.join(screenshotDir, "evt-00000100-after.jpg"), "cad"),
+    fs.writeFile(path.join(screenshotDir, "evt-00000101.jpg"), "taskbar")
+  ]);
+  try {
+    const result = await findFinalScreenshot(recordingDir, [{
+      action: "press_key", endMs: 100,
+      window: { processName: "acad", title: "Autodesk AutoCAD", width: 1900, height: 1000 },
+      screenshotAfter: "screenshots/evt-00000100-after.jpg"
+    }, {
+      action: "click", endMs: 110,
+      window: { processName: "explorer", title: "", width: 1900, height: 40 },
+      screenshotAfter: "screenshots/evt-00000101.jpg"
+    }]);
+    assert.equal(result, "screenshots/evt-00000100-after.jpg");
+  } finally {
+    await fs.rm(recordingDir, { recursive: true, force: true });
+  }
 });
 
 test("修改命令保留选择中间态与录制时命令上下文", () => {
@@ -392,6 +443,25 @@ test("无 UIA 的 CAD 参数提交后先建立几何检查点再分析后续修�
   assert.equal(chunks[1][0].screenshotBefore, "trim-before.jpg");
 });
 
+test("经济模式合并过小的几何检查点以减少 API 请求", () => {
+  const window = { processName: "acad", width: 1000, height: 800 };
+  const actions = [
+    { action: "click", target: null, window },
+    { action: "type_text", text: "12", target: null, window },
+    {
+      action: "press_key", key: "ENTER", target: null, window,
+      screenshotBefore: "circle-before.jpg", screenshotAfter: "circle-after.jpg",
+      visualChange: { changed: true }
+    },
+    { action: "click", target: null, window, screenshotBefore: "next-command.jpg" }
+  ];
+  const chunks = chunkActions(actions, 150, {
+    maxCanvasEvidence: 20,
+    minActionsPerChunk: 4
+  });
+  assert.deepEqual(chunks.map((chunk) => chunk.length), [4]);
+});
+
 test("无 UIA 的关联阵列等到 Close Array 后才切段", () => {
   const window = { processName: "acad", width: 1000, height: 800 };
   const actions = [
@@ -474,6 +544,24 @@ test("缺少精确业务数值时拒绝编译伪操作", () => {
   assert.throws(() => renderAutoCadScr({
     cadProgram: { format: "none", operations: [], warnings: ["圆半径不可见"] }
   }), /圆半径不可见/);
+});
+
+test("CAD 程序不完整时仍可从已有精确几何生成部分 SCR，并忽略尺寸标注", () => {
+  const plan = cadPlan([
+    cadOperation("op-circle", "circle", "CIRCLE", [
+      pointArg("center", 10, 20), numberArg("radius", 5)
+    ], ["circle-1"]),
+    cadOperation("op-radius", "radial_constraint", "DCRADIUS", [
+      selectionArg({ mode: "entities", entityIds: ["circle-1"] }),
+      numberArg("constraint_value", 5)
+    ], ["constraint-1"])
+  ]);
+  plan.cadProgram.complete = false;
+  plan.cadProgram.warnings = ["末尾直径约束缺少完整交互证据"];
+
+  const result = renderAutoCadScr(plan);
+  assert.equal(result, "_.CIRCLE\r\n_NON\r\n10,20\r\n5\r\n");
+  assert.doesNotMatch(result, /DCRADIUS/);
 });
 
 test("SCR 后端不会偷偷修改 AI 识别出的几何坐标", () => {
@@ -601,6 +689,35 @@ test("最终几何 SCR 后端用精确 TRIM 结果替换源实体", () => {
   assert.doesNotMatch(result, /TRIM/);
   assert.doesNotMatch(result, /_NON\r\n0,0\r\n_NON\r\n10,0/);
   assert.match(result, /_NON\r\n5,0\r\n_NON\r\n10,0/);
+});
+
+test("尖角 FILLET 替换规范实体时同步折叠完全重合的可见线", () => {
+  const fillet = cadOperation("op-fillet", "fillet", "FILLET", [
+    selectionArg({ mode: "entities", entityIds: ["line-copy", "diagonal"] })
+  ], ["corner-vertical", "corner-diagonal"], {
+    resultGeometry: [
+      lineGeometry("corner-vertical", 0, 5, 0, 10, ["line-copy"]),
+      lineGeometry("corner-diagonal", -5, 5, 0, 5, ["diagonal"])
+    ],
+    visualInference: changedInference(["line-copy", "diagonal"], "unknown"),
+    sourceScreenshots: ["offset-before.jpg", "offset-after.jpg"]
+  });
+  const result = renderAutoCadScr(cadPlan([
+    cadOperation("op-original", "line", "LINE", [
+      pointArg("start", 0, 0), pointArg("end", 0, 10), enterArg()
+    ], ["line-original"]),
+    cadOperation("op-copy", "line", "LINE", [
+      pointArg("start", 0, 0), pointArg("end", 0, 10), enterArg()
+    ], ["line-copy"]),
+    cadOperation("op-diagonal", "line", "LINE", [
+      pointArg("start", -5, 5), pointArg("end", 5, 5), enterArg()
+    ], ["diagonal"]),
+    fillet
+  ]));
+
+  assert.equal(result.split("\r\n").filter((line) => line === "_.LINE").length, 2);
+  assert.doesNotMatch(result, /_NON\r\n0,0\r\n_NON\r\n0,10/);
+  assert.match(result, /_NON\r\n0,5\r\n_NON\r\n0,10/);
 });
 
 test("圆的 TRIM 结果可用圆心半径和起止角精确编译", () => {

@@ -15,6 +15,57 @@ using System.Windows.Forms;
 
 namespace UniversalMockRecorder
 {
+    internal static class RecorderProfile
+    {
+#if THREEDSMAX
+        public const string ApplicationId = "autodesk-3dsmax";
+        public const string ApplicationName = "Autodesk 3ds Max";
+        public const string ApplicationVersion = "2027";
+        public const string Language = "en-US";
+        public const string WindowTitle = "3ds Max 操作录制器 - Windows 11";
+        public const string Header = "记录 3ds Max 的鼠标、键盘、视口与控件变化";
+        public const string StopButtonText = "停止并生成";
+        public const string TargetProcess = "3dsmax";
+        public const string UiMapRoot = "ui-maps/3dsmax/2027/en-US";
+        public const string ReplayFormat = "maxscript";
+        public const string GenerateOptionText = "停止后自动调用 AI 生成结构化 3D 操作和 MAXScript（会上传录制事件和选取的关键截图）";
+        public const string AnalysisScriptFile = "analyze-3dsmax-recording.ps1";
+        public const string StructuredProgramFile = "max-program.json";
+        public const string ReplayFile = "3dsmax-replay.ms";
+        public const string ReplayDescription = "3ds Max MAXScript";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = true;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#else
+        public const string ApplicationId = "autodesk-autocad";
+        public const string ApplicationName = "Autodesk AutoCAD";
+        public const string ApplicationVersion = "2027";
+        public const string Language = "en-US";
+        public const string WindowTitle = "通用操作录制器 - Windows 11 原型";
+        public const string Header = "记录鼠标、键盘、窗口、通用控件和关键截图";
+        public const string StopButtonText = "停止并生成";
+        public const string TargetProcess = "acad";
+        public const string UiMapRoot = "ui-maps/autocad/2027/en-US";
+        public const string ReplayFormat = "autocad-scr";
+        public const string GenerateOptionText = "停止后自动调用 AI 生成结构化操作和 Mock 脚本（会上传录制事件和选取的关键截图）";
+        public const string AnalysisScriptFile = "analyze-recording.ps1";
+        public const string StructuredProgramFile = "cad-program.json";
+        public const string ReplayFile = "autocad-replay.scr";
+        public const string ReplayDescription = "AutoCAD 验证 SCR（仅包含已确认内容）";
+        public static readonly bool SupportsAutoCadActionRecorder = true;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = true;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = false;
+        public static readonly bool RequiresMockScript = true;
+        public static readonly bool RequiresReplayFile = false;
+#endif
+    }
+
     internal static class Program
     {
         [STAThread]
@@ -59,7 +110,7 @@ namespace UniversalMockRecorder
 
         public RecorderForm()
         {
-            Text = "通用操作录制器 - Windows 11 原型";
+            Text = RecorderProfile.WindowTitle;
             Width = 620;
             Height = 342;
             StartPosition = FormStartPosition.CenterScreen;
@@ -68,7 +119,7 @@ namespace UniversalMockRecorder
 
             var title = new Label
             {
-                Text = "记录鼠标、键盘、窗口、通用控件和关键截图",
+                Text = RecorderProfile.Header,
                 Left = 24,
                 Top = 22,
                 Width = 550,
@@ -77,16 +128,17 @@ namespace UniversalMockRecorder
             };
 
             _startButton = new Button { Text = "开始录制", Left = 24, Top = 66, Width = 130, Height = 38 };
-            _stopButton = new Button { Text = "停止并生成", Left = 170, Top = 66, Width = 130, Height = 38, Enabled = false };
+            _stopButton = new Button { Text = RecorderProfile.StopButtonText, Left = 170, Top = 66, Width = 130, Height = 38, Enabled = false };
             _retryButton = new Button { Text = "重新生成", Left = 316, Top = 66, Width = 130, Height = 38, Enabled = false };
             _generateAfterStopCheckBox = new CheckBox
             {
-                Text = "停止后自动调用 AI 生成结构化操作和 Mock 脚本（会上传录制事件和选取的关键截图）",
+                Text = RecorderProfile.GenerateOptionText,
                 Left = 24,
                 Top = 112,
                 Width = 560,
                 Height = 24,
-                Checked = true
+                Checked = RecorderProfile.SupportsAnalysis,
+                Visible = RecorderProfile.SupportsAnalysis
             };
             _autoCadActionRecorderCheckBox = new CheckBox
             {
@@ -95,7 +147,8 @@ namespace UniversalMockRecorder
                 Top = 140,
                 Width = 560,
                 Height = 24,
-                Checked = false
+                Checked = false,
+                Visible = RecorderProfile.SupportsAutoCadActionRecorder
             };
             _captureUiAutomationCheckBox = new CheckBox
             {
@@ -133,7 +186,16 @@ namespace UniversalMockRecorder
                 }
             };
             _timer.Start();
-            LoadPendingRecording();
+            if (RecorderProfile.SupportsAnalysis)
+                LoadPendingRecording();
+            else
+            {
+                _retryButton.Visible = false;
+                _captureUiAutomationCheckBox.Top = 112;
+                _statusLabel.Top = 146;
+                _pathLabel.Top = 174;
+                _statusLabel.Text = "3ds Max 录制器已就绪；录制文件与 AutoCAD 完全分开保存。";
+            }
         }
 
         private void LoadPendingRecording()
@@ -180,7 +242,7 @@ namespace UniversalMockRecorder
             try
             {
                 _currentRecordingDirectory = outputDirectory;
-                if (_autoCadActionRecorderCheckBox.Checked)
+                if (RecorderProfile.SupportsAutoCadActionRecorder && _autoCadActionRecorderCheckBox.Checked)
                 {
                     WindowState = FormWindowState.Minimized;
                     Application.DoEvents();
@@ -236,7 +298,7 @@ namespace UniversalMockRecorder
 
             var eventCount = _engine == null ? 0 : _engine.EventCount;
             _lastEventCount = eventCount;
-            if (_generateAfterStopCheckBox.Checked && !string.IsNullOrEmpty(_currentRecordingDirectory))
+            if (RecorderProfile.SupportsAnalysis && _generateAfterStopCheckBox.Checked && !string.IsNullOrEmpty(_currentRecordingDirectory))
             {
                 StartAnalysis(_currentRecordingDirectory, eventCount);
             }
@@ -245,6 +307,7 @@ namespace UniversalMockRecorder
                 _startButton.Enabled = true;
                 _statusLabel.Text = "录制完成，共保存事件 " + eventCount + " 条。" +
                     (string.IsNullOrEmpty(actionRecorderWarning) ? "" : " Action Recorder 未完整保存，请查看 action-recorder.json。");
+                _pathLabel.Text = "录制位置：" + _currentRecordingDirectory;
             }
         }
 
@@ -293,11 +356,11 @@ namespace UniversalMockRecorder
                         {
                             _statusLabel.Text = "生成完成，可以开始下一次录制。";
                             _retryButton.Enabled = true;
-                            var cadProgramPath = Path.Combine(generatedDirectory, "cad-program.json");
-                            var replayPath = Path.Combine(generatedDirectory, "autocad-replay.scr");
+                            var cadProgramPath = Path.Combine(generatedDirectory, RecorderProfile.StructuredProgramFile);
+                            var replayPath = Path.Combine(generatedDirectory, RecorderProfile.ReplayFile);
                             var replayMessage = File.Exists(replayPath)
-                                ? "\r\n\r\n可选的 AutoCAD 验证 SCR：\r\n" + replayPath
-                                : "\r\n\r\n本次没有生成 SCR；可查看 autocad-scr-validation.json。";
+                                ? "\r\n\r\n" + RecorderProfile.ReplayDescription + "：\r\n" + replayPath
+                                : "\r\n\r\n本次没有足够的精确信息生成 " + RecorderProfile.ReplayFormat + "。";
                             _pathLabel.Text = "结构化操作：" + cadProgramPath;
                             MessageBox.Show(
                                 this,
@@ -335,7 +398,7 @@ namespace UniversalMockRecorder
             if (workspaceDirectory == null)
                 throw new InvalidOperationException("无法确定项目目录。");
 
-            var scriptPath = Path.Combine(workspaceDirectory.FullName, "scripts", "analyze-recording.ps1");
+            var scriptPath = Path.Combine(workspaceDirectory.FullName, "scripts", RecorderProfile.AnalysisScriptFile);
             var configPath = Path.Combine(workspaceDirectory.FullName, "config.json");
             if (!File.Exists(scriptPath))
                 throw new FileNotFoundException("找不到分析脚本。", scriptPath);
@@ -381,11 +444,14 @@ namespace UniversalMockRecorder
             }
 
             var generatedScript = Path.Combine(recordingDirectory, "generated", "mock-script.ts");
-            if (!File.Exists(generatedScript))
+            if (RecorderProfile.RequiresMockScript && !File.Exists(generatedScript))
                 throw new InvalidOperationException("分析器已结束，但没有找到生成的 mock-script.ts。");
-            var cadProgram = Path.Combine(recordingDirectory, "generated", "cad-program.json");
+            var cadProgram = Path.Combine(recordingDirectory, "generated", RecorderProfile.StructuredProgramFile);
             if (!File.Exists(cadProgram))
-                throw new InvalidOperationException("分析器已结束，但没有找到生成的 cad-program.json。");
+                throw new InvalidOperationException("分析器已结束，但没有找到生成的 " + RecorderProfile.StructuredProgramFile + "。");
+            var replayFile = Path.Combine(recordingDirectory, "generated", RecorderProfile.ReplayFile);
+            if (RecorderProfile.RequiresReplayFile && !File.Exists(replayFile))
+                throw new InvalidOperationException("分析器已结束，但没有找到生成的 " + RecorderProfile.ReplayFile + "。");
         }
 
         private static string QuoteArgument(string value)
@@ -681,10 +747,12 @@ namespace UniversalMockRecorder
         private Bitmap _pendingMouseBeforeSnapshot;
         private string _pendingMouseBeforeScreenshot;
         private long _pendingMouseBeforeTimestampMs;
+        private Point _pendingMouseDownPoint;
         private string _activeVisualCommand;
         private int _activeVisualCommandRemainingActions;
         private long _activeVisualCommandLastSeenMs;
         private string _commandTextBuffer = "";
+        private int _threeDsMaxPrimitiveCaptureStepsRemaining;
         private volatile bool _privacyPaused;
         private volatile bool _recording;
 
@@ -738,6 +806,7 @@ namespace UniversalMockRecorder
             _pendingMouseBeforeSnapshot = null;
             _pendingMouseBeforeScreenshot = null;
             _pendingMouseBeforeTimestampMs = 0;
+            _pendingMouseDownPoint = Point.Empty;
             if (_writer != null) _writer.Dispose();
             _writer = null;
             _worker = null;
@@ -774,7 +843,8 @@ namespace UniversalMockRecorder
                         X = input.Point.X,
                         Y = input.Point.Y,
                         Button = MouseButton(message.ToInt32()),
-                        WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0
+                        WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0,
+                        Modifiers = GetModifiers().ToArray()
                     };
                     if (eventType == "mouse_down")
                     {
@@ -859,8 +929,16 @@ namespace UniversalMockRecorder
             {
                 try
                 {
-                    input.Window = ReadForegroundWindow();
+                    input.Window = input.EventType.StartsWith("mouse_")
+                        ? ReadWindowAtPoint(input.X, input.Y)
+                        : ReadForegroundWindow();
                     if (input.Window != null && input.Window.ProcessId == Process.GetCurrentProcess().Id) continue;
+                    if (RecorderProfile.FilterToTargetProcess &&
+                        (input.Window == null || !string.Equals(
+                            input.Window.ProcessName,
+                            RecorderProfile.TargetProcess,
+                            StringComparison.OrdinalIgnoreCase)))
+                        continue;
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
@@ -871,6 +949,7 @@ namespace UniversalMockRecorder
                             input.RelativeY = Math.Round((double)(input.Y - input.Window.Y) / input.Window.Height, 6);
                         }
                     }
+                    UpdateThreeDsMaxPrimitiveCaptureStateBefore(input);
                     UpdateVisualCommandContext(input);
                     if (input.EventType == "key_down" && input.Snapshot != null)
                     {
@@ -882,6 +961,7 @@ namespace UniversalMockRecorder
                             input.ScreenshotAfter = SaveScreenshot(input.Id + "-after", after);
                             input.ScreenshotAfterTimestampMs = UtcNowMs();
                             input.VisualChange = MeasureVisualChange(input.Snapshot, after, input.Window);
+                            CaptureThreeDsMaxTransformEvidence(input, input.Snapshot, after);
                         }
                         input.Screenshot = input.ScreenshotAfter;
                         input.ScreenshotTimestampMs = input.ScreenshotAfterTimestampMs;
@@ -922,6 +1002,7 @@ namespace UniversalMockRecorder
                                     input.ScreenshotAfter = input.Screenshot;
                                     input.ScreenshotAfterTimestampMs = input.ScreenshotTimestampMs;
                                     input.VisualChange = MeasureVisualChange(_pendingMouseBeforeSnapshot, after, input.Window);
+                                    CaptureThreeDsMaxTransformEvidence(input, _pendingMouseBeforeSnapshot, after);
                                 }
                                 _pendingMouseBeforeSnapshot.Dispose();
                                 _pendingMouseBeforeSnapshot = null;
@@ -937,6 +1018,7 @@ namespace UniversalMockRecorder
                         _pendingMouseBeforeSnapshot = (Bitmap)input.Snapshot.Clone();
                         _pendingMouseBeforeScreenshot = input.Screenshot;
                         _pendingMouseBeforeTimestampMs = input.ScreenshotTimestampMs;
+                        _pendingMouseDownPoint = new Point(input.X, input.Y);
                         input.ScreenshotBefore = input.Screenshot;
                         input.ScreenshotBeforeTimestampMs = input.ScreenshotTimestampMs;
                     }
@@ -954,10 +1036,12 @@ namespace UniversalMockRecorder
                             _pendingMouseBeforeSnapshot = null;
                             _pendingMouseBeforeScreenshot = null;
                             _pendingMouseBeforeTimestampMs = 0;
+                            _pendingMouseDownPoint = Point.Empty;
                         }
                     }
 
                     WriteEvent(input);
+                    UpdateThreeDsMaxPrimitiveCaptureStateAfter(input);
                     Interlocked.Increment(ref _eventCount);
                 }
                 catch (Exception error)
@@ -993,10 +1077,21 @@ namespace UniversalMockRecorder
                 Path.Combine(_outputDirectory, "manifest.json"),
                 "{\n" +
                 "  \"format\": \"UniversalInteractionTrace\",\n" +
-                "  \"version\": \"0.2\",\n" +
+                "  \"version\": \"0.3\",\n" +
                 "  \"platform\": \"windows\",\n" +
+                "  \"applicationProfile\": \"" + RecorderProfile.ApplicationId + "\",\n" +
+                "  \"applicationName\": \"" + RecorderProfile.ApplicationName + "\",\n" +
+                "  \"applicationVersion\": \"" + RecorderProfile.ApplicationVersion + "\",\n" +
+                "  \"language\": \"" + RecorderProfile.Language + "\",\n" +
+                "  \"targetProcess\": \"" + RecorderProfile.TargetProcess + "\",\n" +
+                "  \"uiMapRoot\": \"" + RecorderProfile.UiMapRoot + "\",\n" +
+                "  \"preferredReplayFormat\": \"" + RecorderProfile.ReplayFormat + "\",\n" +
                 "  \"uiAutomationTargets\": " + (_captureUiAutomationTargets ? "true" : "false") + ",\n" +
-                "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"command_context_screenshot_bursts\", \"visual_change_diff\"" +
+                "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"visual_change_diff\"" +
+                (RecorderProfile.EnableCadCommandHeuristics ? ", \"command_context_screenshot_bursts\"" : "") +
+                (RecorderProfile.CaptureThreeDsMaxTransformRegions
+                    ? ", \"3dsmax_transform_region_evidence\", \"3dsmax_drag_transactions\", \"3dsmax_parameter_region_evidence\""
+                    : "") +
                 (_captureUiAutomationTargets ? ", \"ui_automation_targets\"" : "") + "],\n" +
                 "  \"createdAt\": \"" + DateTimeOffset.UtcNow.ToString("o") + "\"\n" +
                 "}\n",
@@ -1035,6 +1130,225 @@ namespace UniversalMockRecorder
             return relativePath.Replace('\\', '/');
         }
 
+        private void CaptureThreeDsMaxTransformEvidence(RawInputEvent input, Bitmap before, Bitmap after)
+        {
+            if (!RecorderProfile.CaptureThreeDsMaxTransformRegions || before == null || after == null ||
+                input == null || input.Window == null || !ShouldCaptureThreeDsMaxTransformEvidence(input))
+                return;
+
+            var evidence = new List<ScreenshotRegionEvidence>();
+            if (IsThreeDsMaxCloneOptionsWindow(input.Window))
+            {
+                AddTransformRegionPair(evidence, input.Id, "clone_options", before, after, input.Window,
+                    0.0, 0.0, 1.0, 1.0);
+                if (evidence.Count > 0) input.TransformEvidence = evidence;
+                return;
+            }
+
+            if (string.Equals(input.Button, "right", StringComparison.OrdinalIgnoreCase))
+            {
+                if (input.Window.Width <= 900 && input.Window.Height <= 1200)
+                    AddTransformRegionPair(evidence, input.Id, "context_menu", before, after, input.Window,
+                        0.0, 0.0, 1.0, 1.0);
+                else
+                    AddPointerCenteredTransformRegionPair(evidence, input, "context_menu", before, after,
+                        0.38, 0.50, 0.05);
+                if (evidence.Count > 0) input.TransformEvidence = evidence;
+                return;
+            }
+
+            AddTransformRegionPair(evidence, input.Id, "transform_toolbar", before, after, input.Window,
+                0.075, 0.005, 0.14, 0.09);
+            AddTransformRegionPair(evidence, input.Id, "scene_explorer", before, after, input.Window,
+                0.005, 0.05, 0.22, 0.34);
+            AddTransformRegionPair(evidence, input.Id, "selected_object", before, after, input.Window,
+                0.84, 0.055, 0.16, 0.36);
+            AddTransformRegionPair(evidence, input.Id, "transform_type_in", before, after, input.Window,
+                0.685, 0.94, 0.19, 0.055);
+            AddTransformRegionPair(evidence, input.Id, "command_panel_context", before, after, input.Window,
+                0.90, 0.05, 0.10, 0.30);
+            AddTransformRegionPair(evidence, input.Id, "command_panel_parameters", before, after, input.Window,
+                0.90, 0.27, 0.10, 0.27);
+            if (IsThreeDsMaxViewportTransformDrag(input))
+            {
+                AddPointerCenteredTransformRegionPair(evidence, input, "viewport_transform_overlay", before, after,
+                    0.40, 0.36, 0.65);
+            }
+            if (evidence.Count > 0) input.TransformEvidence = evidence;
+        }
+
+        private bool ShouldCaptureThreeDsMaxTransformEvidence(RawInputEvent input)
+        {
+            if (input.EventType == "key_down")
+            {
+                var key = (input.Key ?? "").ToUpperInvariant();
+                var quickAlign = key == "A" && input.Modifiers != null &&
+                    Array.Exists(input.Modifiers,
+                        modifier => string.Equals(modifier, "SHIFT", StringComparison.OrdinalIgnoreCase));
+                return key == "W" || key == "E" || key == "R" || key == "ENTER" || key == "RETURN" || quickAlign;
+            }
+            if (input.EventType != "mouse_up")
+                return false;
+            if (input.Window.Width <= 0 || input.Window.Height <= 0) return false;
+            if (IsThreeDsMaxCloneOptionsWindow(input.Window)) return true;
+            if (string.Equals(input.Button, "right", StringComparison.OrdinalIgnoreCase)) return true;
+            if (!string.Equals(input.Button, "left", StringComparison.OrdinalIgnoreCase)) return false;
+
+            var relativeX = (double)(input.X - input.Window.X) / input.Window.Width;
+            var relativeY = (double)(input.Y - input.Window.Y) / input.Window.Height;
+            var topTransformToolbar = relativeX >= 0.06 && relativeX <= 0.24 && relativeY <= 0.11;
+            var bottomTransformTypeIn = relativeX >= 0.62 && relativeX <= 0.92 && relativeY >= 0.90;
+            var commandPanelInteraction = relativeX >= 0.90 && relativeY >= 0.05 && relativeY <= 0.90;
+            var viewportDrag = IsThreeDsMaxViewportTransformDrag(input);
+            var primitiveCreationStep = _threeDsMaxPrimitiveCaptureStepsRemaining > 0 &&
+                IsThreeDsMaxViewportLeftRelease(input);
+            return topTransformToolbar || bottomTransformTypeIn || commandPanelInteraction || viewportDrag ||
+                primitiveCreationStep;
+        }
+
+        private void UpdateThreeDsMaxPrimitiveCaptureStateBefore(RawInputEvent input)
+        {
+            if (!RecorderProfile.CaptureThreeDsMaxTransformRegions || input == null) return;
+            if (input.EventType == "mouse_up" &&
+                (IsThreeDsMaxPrimitiveCreateTarget(input.Target) ||
+                 (!_captureUiAutomationTargets && IsThreeDsMaxPrimitivePanelClick(input))))
+                _threeDsMaxPrimitiveCaptureStepsRemaining = 2;
+            else if (input.EventType == "key_down" && string.Equals(input.Key, "ESCAPE", StringComparison.OrdinalIgnoreCase))
+                _threeDsMaxPrimitiveCaptureStepsRemaining = 0;
+        }
+
+        private static bool IsThreeDsMaxPrimitivePanelClick(RawInputEvent input)
+        {
+            if (input == null || input.Window == null || input.Window.Width <= 0 || input.Window.Height <= 0 ||
+                input.EventType != "mouse_up" || !string.Equals(input.Button, "left", StringComparison.OrdinalIgnoreCase))
+                return false;
+            var relativeX = (double)(input.X - input.Window.X) / input.Window.Width;
+            var relativeY = (double)(input.Y - input.Window.Y) / input.Window.Height;
+            // Create > Standard Primitives 的对象类型按钮位于命令面板顶部。无 UIA 时仅把
+            // 该窄区域视为“可能开始基本体创建”，随后最多捕获两个视口阶段。
+            return relativeX >= 0.90 && relativeY >= 0.14 && relativeY <= 0.30;
+        }
+
+        private void UpdateThreeDsMaxPrimitiveCaptureStateAfter(RawInputEvent input)
+        {
+            if (_threeDsMaxPrimitiveCaptureStepsRemaining > 0 && IsThreeDsMaxViewportLeftRelease(input))
+                _threeDsMaxPrimitiveCaptureStepsRemaining--;
+        }
+
+        private static bool IsThreeDsMaxPrimitiveCreateTarget(UiTarget target)
+        {
+            if (target == null) return false;
+            var name = target.Name ?? "";
+            var primitive = name == "Box" || name == "Sphere" || name == "GeoSphere" ||
+                name == "Cylinder" || name == "Tube" || name == "Torus" || name == "Teapot" ||
+                name == "Plane" || name == "Cone" || name == "Pyramid" || name == "TextPlus";
+            if (!primitive) return false;
+            if (target.Ancestors == null) return true;
+            foreach (var ancestor in target.Ancestors)
+            {
+                var searchable = (ancestor.Name ?? "") + " " + (ancestor.AutomationId ?? "");
+                if (searchable.IndexOf("CreateButtonPanel", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    searchable.IndexOf("Object Type", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    searchable.IndexOf("QtCreatePanelWidget", StringComparison.OrdinalIgnoreCase) >= 0)
+                    return true;
+            }
+            return false;
+        }
+
+        private static bool IsThreeDsMaxViewportLeftRelease(RawInputEvent input)
+        {
+            if (input == null || input.Window == null || input.Window.Width <= 0 || input.Window.Height <= 0 ||
+                input.EventType != "mouse_up" || !string.Equals(input.Button, "left", StringComparison.OrdinalIgnoreCase))
+                return false;
+            var relativeX = (double)(input.X - input.Window.X) / input.Window.Width;
+            var relativeY = (double)(input.Y - input.Window.Y) / input.Window.Height;
+            return relativeX >= 0.01 && relativeX <= 0.90 && relativeY >= 0.10 && relativeY <= 0.95;
+        }
+
+        private void AddPointerCenteredTransformRegionPair(List<ScreenshotRegionEvidence> evidence,
+            RawInputEvent input, string kind, Bitmap before, Bitmap after, double width, double height,
+            double verticalBias)
+        {
+            var pointerX = (double)(input.X - input.Window.X) / input.Window.Width;
+            var pointerY = (double)(input.Y - input.Window.Y) / input.Window.Height;
+            var left = Math.Max(0.0, Math.Min(1.0 - width, pointerX - width / 2.0));
+            var top = Math.Max(0.02, Math.Min(0.98 - height, pointerY - height * verticalBias));
+            AddTransformRegionPair(evidence, input.Id, kind, before, after, input.Window,
+                left, top, width, height);
+        }
+
+        private bool IsThreeDsMaxViewportTransformDrag(RawInputEvent input)
+        {
+            if (input == null || input.Window == null || input.Window.Width <= 0 || input.Window.Height <= 0 ||
+                input.EventType != "mouse_up" || !string.Equals(input.Button, "left", StringComparison.OrdinalIgnoreCase))
+                return false;
+            var relativeX = (double)(input.X - input.Window.X) / input.Window.Width;
+            var relativeY = (double)(input.Y - input.Window.Y) / input.Window.Height;
+            return Distance(_pendingMouseDownPoint, new Point(input.X, input.Y)) >= 6 &&
+                relativeX >= 0.01 && relativeX <= 0.90 && relativeY >= 0.10 && relativeY <= 0.95 &&
+                input.VisualChange != null && input.VisualChange.Changed;
+        }
+
+        private static bool IsThreeDsMaxCloneOptionsWindow(WindowInfo window)
+        {
+            return window != null && !string.IsNullOrEmpty(window.Title) &&
+                window.Title.IndexOf("Clone Options", StringComparison.OrdinalIgnoreCase) >= 0;
+        }
+
+        private void AddTransformRegionPair(List<ScreenshotRegionEvidence> evidence, string eventId, string kind,
+            Bitmap before, Bitmap after, WindowInfo window, double relativeX, double relativeY,
+            double relativeWidth, double relativeHeight)
+        {
+            AddTransformRegion(evidence, eventId, kind, "before", before, window,
+                relativeX, relativeY, relativeWidth, relativeHeight);
+            AddTransformRegion(evidence, eventId, kind, "after", after, window,
+                relativeX, relativeY, relativeWidth, relativeHeight);
+        }
+
+        private void AddTransformRegion(List<ScreenshotRegionEvidence> evidence, string eventId, string kind,
+            string phase, Bitmap bitmap, WindowInfo window, double relativeX, double relativeY,
+            double relativeWidth, double relativeHeight)
+        {
+            var virtualBounds = SystemInformation.VirtualScreen;
+            var left = window.X - virtualBounds.Left + (int)Math.Round(window.Width * relativeX);
+            var top = window.Y - virtualBounds.Top + (int)Math.Round(window.Height * relativeY);
+            var width = Math.Max(1, (int)Math.Round(window.Width * relativeWidth));
+            var height = Math.Max(1, (int)Math.Round(window.Height * relativeHeight));
+            var bounds = Rectangle.Intersect(new Rectangle(left, top, width, height),
+                new Rectangle(0, 0, bitmap.Width, bitmap.Height));
+            if (bounds.Width <= 1 || bounds.Height <= 1) return;
+
+            var relativePath = Path.Combine("screenshots", "transform",
+                eventId + "-" + kind + "-" + phase + ".jpg");
+            var absolutePath = Path.Combine(_outputDirectory, relativePath);
+            Directory.CreateDirectory(Path.GetDirectoryName(absolutePath));
+            using (var cropped = bitmap.Clone(bounds, PixelFormat.Format24bppRgb))
+                SaveHighQualityJpeg(cropped, absolutePath, 95L);
+            evidence.Add(new ScreenshotRegionEvidence
+            {
+                Kind = kind,
+                Phase = phase,
+                Screenshot = relativePath.Replace('\\', '/'),
+                RelativeBounds = new[] { relativeX, relativeY, relativeWidth, relativeHeight },
+                PixelBounds = new[] { bounds.X, bounds.Y, bounds.Width, bounds.Height }
+            });
+        }
+
+        private static void SaveHighQualityJpeg(Bitmap bitmap, string path, long quality)
+        {
+            var codec = Array.Find(ImageCodecInfo.GetImageEncoders(), item => item.MimeType == "image/jpeg");
+            if (codec == null)
+            {
+                bitmap.Save(path, ImageFormat.Jpeg);
+                return;
+            }
+            using (var parameters = new EncoderParameters(1))
+            {
+                parameters.Param[0] = new EncoderParameter(System.Drawing.Imaging.Encoder.Quality, quality);
+                bitmap.Save(path, codec, parameters);
+            }
+        }
+
         private static bool ShouldCaptureScreenshot(RawInputEvent input)
         {
             return input.EventType == "mouse_down" || input.EventType == "mouse_up" ||
@@ -1046,6 +1360,8 @@ namespace UniversalMockRecorder
             if (input == null || input.EventType != "key_down") return false;
             if (input.Key == "ENTER" || input.Key == "RETURN" || input.Key == "ESCAPE" || input.Key == "DELETE" ||
                 input.Key == "BACK" || input.Key == "BACKSPACE") return true;
+            if (RecorderProfile.CaptureThreeDsMaxTransformRegions &&
+                (input.Key == "W" || input.Key == "E" || input.Key == "R")) return true;
             return input.Modifiers != null && input.Modifiers.Length > 0;
         }
 
@@ -1061,7 +1377,10 @@ namespace UniversalMockRecorder
             }
             var searchable = ((target.Role ?? "") + " " + (target.ClassName ?? "") + " " + (target.Name ?? ""));
             if (searchable.IndexOf("ACADDM_CHILD", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                searchable.IndexOf("DXGI_FLIP_MODE_VIEW", StringComparison.OrdinalIgnoreCase) >= 0)
+                searchable.IndexOf("DXGI_FLIP_MODE_VIEW", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                searchable.IndexOf("Qmax", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                searchable.IndexOf("3ds Max", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                searchable.IndexOf("Viewport", StringComparison.OrdinalIgnoreCase) >= 0)
                 return true;
             if (window == null || window.Width <= 0 || window.Height <= 0 || target.Width <= 0 || target.Height <= 0)
                 return false;
@@ -1074,6 +1393,11 @@ namespace UniversalMockRecorder
 
         private void UpdateVisualCommandContext(RawInputEvent input)
         {
+            if (!RecorderProfile.EnableCadCommandHeuristics)
+            {
+                input.VisualCommandContext = null;
+                return;
+            }
             var detected = DetectVisualModificationCommand(input);
             if (_activeVisualCommand != null && detected != null &&
                 !string.Equals(_activeVisualCommand, detected, StringComparison.OrdinalIgnoreCase) &&
@@ -1411,7 +1735,22 @@ namespace UniversalMockRecorder
 
         private static WindowInfo ReadForegroundWindow()
         {
-            var handle = GetForegroundWindow();
+            return ReadWindowInfo(GetForegroundWindow());
+        }
+
+        private static WindowInfo ReadWindowAtPoint(int x, int y)
+        {
+            var handle = WindowFromPoint(new Point(x, y));
+            if (handle != IntPtr.Zero)
+            {
+                var root = GetAncestor(handle, 2);
+                if (root != IntPtr.Zero) handle = root;
+            }
+            return ReadWindowInfo(handle);
+        }
+
+        private static WindowInfo ReadWindowInfo(IntPtr handle)
+        {
             if (handle == IntPtr.Zero) return null;
             var text = new StringBuilder(512);
             GetWindowText(handle, text, text.Capacity);
@@ -1538,6 +1877,7 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
             [DataMember(Name = "visualCommandContext", EmitDefaultValue = false)] public string VisualCommandContext;
             [DataMember(Name = "visualChange", EmitDefaultValue = false)] public VisualChangeInfo VisualChange;
+            [DataMember(Name = "transformEvidence", EmitDefaultValue = false)] public List<ScreenshotRegionEvidence> TransformEvidence;
             [DataMember(Name = "error", EmitDefaultValue = false)] public string Error;
             public Bitmap Snapshot;
             public long SnapshotTimestampMs;
@@ -1580,6 +1920,16 @@ namespace UniversalMockRecorder
             [DataMember(Name = "width")] public int Width;
             [DataMember(Name = "height")] public int Height;
             [DataMember(Name = "ancestors", EmitDefaultValue = false)] public List<UiAncestor> Ancestors;
+        }
+
+        [DataContract]
+        private sealed class ScreenshotRegionEvidence
+        {
+            [DataMember(Name = "kind")] public string Kind;
+            [DataMember(Name = "phase")] public string Phase;
+            [DataMember(Name = "screenshot")] public string Screenshot;
+            [DataMember(Name = "relativeBounds")] public double[] RelativeBounds;
+            [DataMember(Name = "pixelBounds")] public int[] PixelBounds;
         }
 
         [DataContract]
@@ -1629,6 +1979,8 @@ namespace UniversalMockRecorder
         [DllImport("user32.dll")] private static extern IntPtr CallNextHookEx(IntPtr hook, int code, IntPtr message, IntPtr data);
         [DllImport("kernel32.dll", CharSet = CharSet.Auto)] private static extern IntPtr GetModuleHandle(string moduleName);
         [DllImport("user32.dll")] private static extern IntPtr GetForegroundWindow();
+        [DllImport("user32.dll")] private static extern IntPtr WindowFromPoint(Point point);
+        [DllImport("user32.dll")] private static extern IntPtr GetAncestor(IntPtr window, uint flags);
         [DllImport("user32.dll", CharSet = CharSet.Unicode)] private static extern int GetWindowText(IntPtr window, StringBuilder text, int count);
         [DllImport("user32.dll")] private static extern bool GetWindowRect(IntPtr window, out Rect rectangle);
         [DllImport("user32.dll")] private static extern uint GetWindowThreadProcessId(IntPtr window, out uint processId);

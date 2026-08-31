@@ -68,6 +68,7 @@ async function main(options) {
   const recordingDir = path.resolve(options.recording);
   const configPath = path.resolve(options.config);
   const config = JSON.parse(await fs.readFile(configPath, "utf8"));
+  const keepDiagnosticArtifacts = config.output?.keepDiagnostics === true;
   if ((config.output?.scriptLanguage ?? "typescript") !== "typescript")
     throw new Error("当前版本只支持生成 TypeScript Mock 脚本");
   const recordingManifest = await readOptionalJson(path.join(recordingDir, "manifest.json"));
@@ -99,6 +100,7 @@ async function main(options) {
   const maxScreenshotsPerRequest = config.analysis?.maxScreenshotsPerRequest ?? 16;
   const actionChunks = chunkActions(actions, config.analysis?.maxActionsPerRequest ?? 150, {
     maxCanvasEvidence: Math.max(1, maxScreenshotsPerRequest - 4),
+    minActionsPerChunk: config.analysis?.minActionsPerRequest ?? 0,
     commandCatalog: autoCadKnowledge?.commandCatalog ?? null
   });
   const client = new GptClient(config.provider);
@@ -116,7 +118,12 @@ async function main(options) {
   const checkpointPath = path.join(outputDir, "analysis-checkpoint.json");
   const checkpointIdentity = createAnalysisCheckpointIdentity({
     pipelineVersion: "2026-08-26.1",
-    model: config.provider?.model ?? null,
+    provider: {
+      model: config.provider?.model ?? null,
+      reasoningEffort: config.provider?.reasoningEffort ?? null,
+      verbosity: config.provider?.verbosity ?? null,
+      imageDetail: config.provider?.imageDetail ?? null
+    },
     analysis: config.analysis ?? {},
     instructions: ANALYSIS_INSTRUCTIONS,
     actionChunks,
@@ -333,7 +340,13 @@ async function main(options) {
     fs.rm(path.join(outputDir, "运行回放.cmd"), { force: true }),
     fs.rm(path.join(outputDir, "autocad-replay.scr"), { force: true }),
     fs.rm(path.join(outputDir, "autocad-scr-validation.json"), { force: true }),
-    fs.rm(path.join(outputDir, "cad-program.json"), { force: true })
+    fs.rm(path.join(outputDir, "cad-program.json"), { force: true }),
+    ...(!keepDiagnosticArtifacts ? [
+      fs.rm(path.join(outputDir, "analysis-input-manifest.json"), { force: true }),
+      fs.rm(path.join(outputDir, "analysis-harness.json"), { force: true }),
+      fs.rm(path.join(outputDir, "knowledge-used.json"), { force: true }),
+      fs.rm(path.join(outputDir, "computer-use-task.md"), { force: true })
+    ] : [])
   ]);
   let knowledgeValidation = { valid: true, checkedCommands: [], skipped: "not_an_autocad_recording" };
   let knowledgeValidationError = null;
@@ -379,9 +392,7 @@ async function main(options) {
     JSON.stringify(plan.cadProgram, null, 2),
     "utf8"
   );
-  await fs.writeFile(
-    path.join(outputDir, "analysis-input-manifest.json"),
-    JSON.stringify({
+  const analysisInputManifest = {
       format: "RecorderAnalysisInputManifest",
       version: "0.1",
       model: config.provider?.model ?? null,
@@ -395,17 +406,8 @@ async function main(options) {
         available: false,
         status: "not_enabled"
       }
-    }, null, 2),
-    "utf8"
-  );
-  await fs.writeFile(
-    path.join(outputDir, "knowledge-used.json"),
-    JSON.stringify(knowledgeManifest, null, 2),
-    "utf8"
-  );
-  await fs.writeFile(
-    path.join(outputDir, "analysis-harness.json"),
-    JSON.stringify({
+    };
+  const analysisHarnessManifest = {
       format: "RecorderAnalysisHarnessManifest",
       version: ANALYSIS_HARNESS_VERSION,
       captureContext: knowledgeManifest.captureContext,
@@ -415,19 +417,38 @@ async function main(options) {
         ...chunk.analysisHarness
       })),
       finalCommandState: plan.commandState ?? null
-    }, null, 2),
-    "utf8"
-  );
+    };
+  if (keepDiagnosticArtifacts) {
+    await Promise.all([
+      fs.writeFile(
+        path.join(outputDir, "analysis-input-manifest.json"),
+        JSON.stringify(analysisInputManifest, null, 2),
+        "utf8"
+      ),
+      fs.writeFile(
+        path.join(outputDir, "knowledge-used.json"),
+        JSON.stringify(knowledgeManifest, null, 2),
+        "utf8"
+      ),
+      fs.writeFile(
+        path.join(outputDir, "analysis-harness.json"),
+        JSON.stringify(analysisHarnessManifest, null, 2),
+        "utf8"
+      )
+    ]);
+  }
   await fs.writeFile(
     path.join(outputDir, "mock-script.ts"),
     renderTypeScript(plan, config.output?.runtimeImport),
     "utf8"
   );
-  await fs.writeFile(
-    path.join(outputDir, "computer-use-task.md"),
-    renderComputerUseTask(plan),
-    "utf8"
-  );
+  if (keepDiagnosticArtifacts) {
+    await fs.writeFile(
+      path.join(outputDir, "computer-use-task.md"),
+      renderComputerUseTask(plan),
+      "utf8"
+    );
+  }
   if (knowledgeValidationError) throw knowledgeValidationError;
   let scrValidation = {
     format: "RecorderBackendValidation",
@@ -436,35 +457,36 @@ async function main(options) {
     attempted: false,
     generated: false,
     cadProgramComplete: plan.cadProgram?.complete === true,
+    partial: plan.cadProgram?.complete !== true,
     error: null
   };
   if (autoCadDetected) {
-    if (plan.cadProgram?.complete !== true) {
-      scrValidation.error = plan.cadProgram?.warnings?.join("；") || "结构化 CAD 操作不完整";
-      const warningCount = plan.cadProgram?.warnings?.length ?? 0;
-      console.warn(
-        `AI 已生成部分 CAD 操作；另有 ${warningCount} 项诊断未能精确建模。SCR 验证已跳过。`
+    scrValidation.attempted = true;
+    try {
+      const autoCadScr = renderAutoCadScr(plan, { knowledge: autoCadKnowledge });
+      await fs.writeFile(
+        path.join(outputDir, "autocad-replay.scr"),
+        autoCadScr,
+        "utf8"
       );
-    } else {
-      scrValidation.attempted = true;
-      try {
-        const autoCadScr = renderAutoCadScr(plan, { knowledge: autoCadKnowledge });
-        await fs.writeFile(
-          path.join(outputDir, "autocad-replay.scr"),
-          autoCadScr,
-          "utf8"
+      scrValidation.generated = true;
+      if (scrValidation.partial) {
+        const warningCount = plan.cadProgram?.warnings?.length ?? 0;
+        console.warn(
+          `已依据现有精确几何生成部分 SCR；${warningCount} 项未确认内容没有被猜入脚本。`
         );
-        scrValidation.generated = true;
-      } catch (error) {
-        scrValidation.error = error.message;
-        console.warn(`结构化 CAD 操作已生成，但 SCR 验证后端未通过：${error.message}`);
       }
+    } catch (error) {
+      scrValidation.error = error.message;
+      console.warn(`结构化 CAD 操作已生成，但 SCR 验证后端未通过：${error.message}`);
     }
-    await fs.writeFile(
-      path.join(outputDir, "autocad-scr-validation.json"),
-      JSON.stringify(scrValidation, null, 2),
-      "utf8"
-    );
+    if (keepDiagnosticArtifacts) {
+      await fs.writeFile(
+        path.join(outputDir, "autocad-scr-validation.json"),
+        JSON.stringify(scrValidation, null, 2),
+        "utf8"
+      );
+    }
   }
   await fs.rm(checkpointPath, { force: true });
   await fs.rm(path.join(outputDir, "analysis-error.json"), { force: true });
@@ -681,6 +703,8 @@ function serializeError(error, depth = 0) {
     requestId: error.requestId ?? null,
     clientRequestId: error.clientRequestId ?? null,
     requestSizeMb: error.requestSizeMb ?? null,
+    attemptsMade: error.attemptsMade ?? null,
+    tls12FallbackUsed: error.tls12FallbackUsed ?? null,
     stack: error.stack ?? null,
     cause: serializeError(error.cause, depth + 1)
   };

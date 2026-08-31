@@ -1,6 +1,7 @@
 .env
 config.json
 bin/recorder/recordings/
+bin/3dsmax-recorder/recordings/
 generated/
 *.exe
 bin/validator/

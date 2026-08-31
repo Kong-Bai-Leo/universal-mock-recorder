@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_index",
+  "mapId": "3dsmax-2027-en-us",
+  "generatedAt": "2026-08-30T00:00:00Z",
+  "application": {
+    "name": "Autodesk 3ds Max",
+    "version": "2027",
+    "language": "en-US",
+    "platform": "Windows",
+    "workspace": "Default"
+  },
+  "locationModel": "Resolve controls by application/window/menu-or-toolbar/command-panel ancestry, accessible action IDs when present, visible English labels, icon family, sibling order, and current screenshot geometry. Never replay stored pixel coordinates as absolute positions.",
+  "sections": [
+    {
+      "id": "menus",
+      "name": "Main Menu",
+      "map": "menus/ui-map.json",
+      "verification": "live_observed_core"
+    },
+    {
+      "id": "main-toolbar",
+      "name": "Main Toolbar",
+      "map": "toolbars/main-toolbar/ui-map.json",
+      "verification": "live_accessibility_tree"
+    },
+    {
+      "id": "command-panel",
+      "name": "Command Panel",
+      "map": "command-panel/index.json",
+      "verification": "live_observed_all_tabs"
+    }
+  ],
+  "execution": {
+    "preferredReplayLanguage": "MAXScript",
+    "secondaryReplayLanguage": "Python",
+    "interactiveFallback": "computer_use",
+    "notes": [
+      "AutoCAD SCR is not a 3ds Max replay format.",
+      "Prefer semantic scene creation and modifier operations over literal mouse-coordinate replay.",
+      "Use current viewport bounds and object state when an interaction must be replayed visually."
+    ]
+  },
+  "validation": {
+    "liveWindow": "Untitled - Autodesk 3ds Max 2027 - EDUCATION (NON COMMERCIAL)",
+    "liveAccessibilityChecked": true,
+    "observedAt": "2026-08-30T00:00:00Z",
+    "evidence": "live-observation.json"
+  }
+}

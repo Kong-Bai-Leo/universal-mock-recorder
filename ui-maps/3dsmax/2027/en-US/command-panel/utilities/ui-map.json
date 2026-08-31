@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "command_panel_tab",
+  "name": "Utilities",
+  "tabOrder": 5,
+  "topActions": ["More...", "Sets"],
+  "observedUtilities": ["Perspective Match", "Collapse", "Color Clipboard", "Measure", "Motion Capture", "Reset XForm", "MAXScript", "Flight Studio (c)"],
+  "interactionModel": {
+    "dynamicRollout": true,
+    "warning": "Selecting a utility replaces the rollout content; capture the selected utility name and all subsequent labeled parameter changes."
+  }
+}
