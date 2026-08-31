@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_surface",
+  "mapId": "kicad-10.0.6-en-us-schematic-editor",
+  "surface": {
+    "name": "Schematic Editor",
+    "executable": "eeschema.exe",
+    "verification": "official_docs_plus_live_ui",
+    "liveObservation": "../live-observation.json#surfaces.schematicEditor",
+    "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface", "local-install:kicad-cli-version"]
+  },
+  "regions": [
+    {"locatorId": "eeschema.menu-bar", "name": "Main menu bar", "kind": "menu_bar", "verification": "needs_live_scan", "provenance": ["eeschema-manual-10.0"]},
+    {"locatorId": "eeschema.top-toolbars", "name": "Top toolbars", "kind": "toolbar_group", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"]},
+    {"locatorId": "eeschema.left-toolbar", "name": "Left display toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+    {"locatorId": "eeschema.right-toolbar", "name": "Right drawing toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+    {"locatorId": "eeschema.properties-panel", "name": "Properties panel", "kind": "panel", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"]},
+    {"locatorId": "eeschema.hierarchy-panel", "name": "Schematic hierarchy navigator", "kind": "panel", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"]},
+    {"locatorId": "eeschema.selection-filter", "name": "Selection filter", "kind": "panel", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Selection and the selection filter"]},
+    {"locatorId": "eeschema.canvas", "name": "Editing canvas", "kind": "canvas", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"]},
+    {"locatorId": "eeschema.status", "name": "Message panel and status bar", "kind": "status_region", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"]}
+  ],
+  "menus": [
+    {
+      "locatorId": "eeschema.menu.file", "name": "File", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0"],
+      "items": [
+        {"name": "New", "kind": "command", "hotkey": "Ctrl+N", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Open…", "kind": "command", "hotkey": "Ctrl+O", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Save", "kind": "command", "hotkey": "Ctrl+S", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Save As…", "kind": "command", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Schematic Setup…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic Setup"]},
+        {"name": "Page Settings…", "kind": "command", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Plot…", "kind": "command", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Import", "kind": "submenu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Importing schematics"]},
+        {"name": "Export", "kind": "submenu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Exporting schematics"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.menu.edit", "name": "Edit", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Actions reference"],
+      "items": [
+        {"name": "Undo", "kind": "command", "hotkey": "Ctrl+Z", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Redo", "kind": "command", "hotkey": "Ctrl+Y", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Cut", "kind": "command", "hotkey": "Ctrl+X", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Copy", "kind": "command", "hotkey": "Ctrl+C", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Paste", "kind": "command", "hotkey": "Ctrl+V", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Delete", "kind": "command", "hotkey": "Delete", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Find…", "kind": "command", "hotkey": "Ctrl+F", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Find tool"]},
+        {"name": "Find and Replace…", "kind": "command", "hotkey": "Ctrl+Shift+F", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Find tool"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.menu.view", "name": "View", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"],
+      "items": [
+        {"name": "Panels", "kind": "submenu", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Properties Manager"]},
+        {"name": "Properties", "kind": "toggle_command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Properties Manager"]},
+        {"name": "Zoom In", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom Out", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom to Page", "kind": "command", "hotkey": "Home", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom to Objects", "kind": "command", "hotkey": "Ctrl+Home", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Navigating the editing canvas"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.menu.place", "name": "Place", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Schematic editing operations", "eeschema-manual-10.0:Actions reference"],
+      "items": [
+        {"name": "Place Symbols", "kind": "tool", "hotkey": "A", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Power Symbols", "kind": "tool", "hotkey": "P", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Draw Wires", "kind": "tool", "hotkey": "W", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Draw Buses", "kind": "tool", "hotkey": "B", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Wire to Bus Entries", "kind": "tool", "hotkey": "Z", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place No Connect Flags", "kind": "tool", "hotkey": "Q", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Junctions", "kind": "tool", "hotkey": "J", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Net Labels", "kind": "tool", "hotkey": "L", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Global Labels", "kind": "tool", "hotkey": "Ctrl+L", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Hierarchical Labels", "kind": "tool", "hotkey": "H", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Draw Hierarchical Sheets", "kind": "tool", "hotkey": "S", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Draw Text", "kind": "tool", "hotkey": "T", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Draw Lines", "kind": "tool", "hotkey": "I", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Place Images", "kind": "tool", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.menu.inspect", "name": "Inspect", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Electrical Rules Check", "eeschema-manual-10.0:Running simulations"],
+      "items": [
+        {"name": "Electrical Rules Checker…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Electrical Rules Check"]},
+        {"name": "Simulator", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Running simulations"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.menu.tools", "name": "Tools", "kind": "menu", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0"],
+      "items": [
+        {"name": "Annotate Schematic…", "kind": "command", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Edit Symbol Fields…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Assigning Footprints with the Symbol Fields Table"]},
+        {"name": "Assign Footprints…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Footprint Assignment Tool"]},
+        {"name": "Generate Bill of Materials…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Generating a Bill of Materials"]},
+        {"name": "Update PCB from Schematic…", "kind": "command", "hotkey": "F8", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Update PCB from Schematic"]}
+      ]
+    },
+    {"locatorId": "eeschema.menu.preferences", "name": "Preferences", "kind": "menu", "items": [{"name": "Preferences…", "kind": "command", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Configuration and Customization"]}], "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Configuration and Customization"]},
+    {"locatorId": "eeschema.menu.help", "name": "Help", "kind": "menu", "items": [], "verification": "needs_live_scan", "provenance": ["eeschema-manual-10.0"]}
+  ],
+  "toolbars": [
+    {
+      "locatorId": "eeschema.toolbar.top-core", "name": "Top core toolbar", "kind": "toolbar", "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:The Schematic Editor User Interface"],
+      "controls": [
+        {"name": "Save", "kind": "button", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Schematic Setup", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic Setup"]},
+        {"name": "Undo", "kind": "button", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Redo", "kind": "button", "verification": "official_action_reference", "provenance": ["eeschema-manual-10.0:Actions reference"]},
+        {"name": "Find", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Find tool"]},
+        {"name": "Find and Replace", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Find tool"]},
+        {"name": "Annotate Schematic", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Annotation tool"]},
+        {"name": "Electrical Rules Checker", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Electrical Rules Check"]},
+        {"name": "Simulator", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Running simulations"]},
+        {"name": "Edit Symbol Fields", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Assigning Footprints with the Symbol Fields Table"]},
+        {"name": "Assign Footprints", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Footprint Assignment Tool"]},
+        {"name": "Generate Bill of Materials", "kind": "button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Generating a Bill of Materials"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.toolbar.left-display", "name": "Left display toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"],
+      "controls": [
+        {"name": "Grid Display", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Grid Overrides", "kind": "toggle_button", "hotkey": "Ctrl+Shift+G", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Units", "kind": "palette_button", "choices": ["Inches", "Mils", "Millimeters"], "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Crosshair Type", "kind": "palette_button", "choices": ["Small", "Fullscreen", "45-degree Fullscreen"], "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Show Invisible Pins", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Line Mode", "kind": "palette_button", "choices": ["Free Angle", "90 Degree", "45 Degree"], "hotkey": "Shift+Space", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Annotate Automatically", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Hierarchy Navigator", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]},
+        {"name": "Properties Manager", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Left toolbar display controls"]}
+      ]
+    },
+    {
+      "locatorId": "eeschema.toolbar.right-drawing", "name": "Right drawing toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"],
+      "controls": [
+        {"name": "Selection Tool", "kind": "palette_button", "choices": ["Rectangular Selection", "Lasso Selection"], "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Highlight Net", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Symbol", "kind": "tool_button", "hotkey": "A", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Power Symbol", "kind": "tool_button", "hotkey": "P", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Wire", "kind": "tool_button", "hotkey": "W", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Bus", "kind": "tool_button", "hotkey": "B", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Wire to Bus Entry", "kind": "tool_button", "hotkey": "Z", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place No Connect Flag", "kind": "tool_button", "hotkey": "Q", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Junction", "kind": "tool_button", "hotkey": "J", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Label", "kind": "palette_button", "choices": ["Local Label", "Directive Label", "Global Label", "Hierarchical Label"], "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Rule Area", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Hierarchical Sheet", "kind": "tool_button", "hotkey": "S", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Hierarchical Sheet Pin", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Sync Hierarchical Sheet Pins", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Text", "kind": "tool_button", "hotkey": "T", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Text Box", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Table", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Rectangle", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Circle", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Arc", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Bezier Curve", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Draw Graphic Line", "kind": "tool_button", "hotkey": "I", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Place Image", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]},
+        {"name": "Interactive Delete", "kind": "tool_button", "verification": "official_documentation", "provenance": ["eeschema-manual-10.0:Schematic editing operations"]}
+      ]
+    }
+  ],
+  "coreWorkflows": [
+    {"name": "Capture and transfer a schematic", "steps": ["Place Symbols", "Draw Wires", "Annotate Schematic…", "Electrical Rules Checker…", "Assign Footprints…", "Update PCB from Schematic…"], "verification": "documentation_inferred", "provenance": ["eeschema-manual-10.0:Schematic Creation and Editing", "eeschema-manual-10.0:Update PCB from Schematic"]}
+  ],
+  "liveScanGaps": ["Toolbar glyphs need tooltip and visual scans because named accessibility buttons were not exposed", "Scan context menus for canvas selections and active tools", "Scan symbol chooser, ERC, Assign Footprints, Schematic Setup, and update dialogs", "Verify project-dependent enabled states with a disposable project", "Verify positive control IDs across a second run before treating them as stable"]
+}

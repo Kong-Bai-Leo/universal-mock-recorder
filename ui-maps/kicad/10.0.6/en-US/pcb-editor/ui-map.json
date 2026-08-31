@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_surface",
+  "mapId": "kicad-10.0.6-en-us-pcb-editor",
+  "surface": {
+    "name": "PCB Editor",
+    "executable": "pcbnew.exe",
+    "verification": "official_docs_plus_live_ui",
+    "liveObservation": "../live-observation.json#surfaces.pcbEditor",
+    "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface", "local-install:kicad-cli-version"]
+  },
+  "regions": [
+    {"locatorId": "pcbnew.menu-bar", "name": "Main menu bar", "kind": "menu_bar", "verification": "needs_live_scan", "provenance": ["pcbnew-manual-10.0"]},
+    {"locatorId": "pcbnew.top-toolbars", "name": "Top toolbars", "kind": "toolbar_group", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"]},
+    {"locatorId": "pcbnew.left-toolbar", "name": "Left display toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+    {"locatorId": "pcbnew.right-toolbar", "name": "Right drawing and routing toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+    {"locatorId": "pcbnew.properties-panel", "name": "Properties panel", "kind": "panel", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"]},
+    {"locatorId": "pcbnew.appearance-panel", "name": "Appearance panel", "kind": "panel", "tabs": ["Layers", "Objects", "Nets"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The appearance panel"]},
+    {"locatorId": "pcbnew.selection-filter", "name": "Selection filter", "kind": "panel", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"]},
+    {"locatorId": "pcbnew.canvas", "name": "Editing canvas", "kind": "canvas", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"]},
+    {"locatorId": "pcbnew.status", "name": "Message panel and status bar", "kind": "status_region", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"]}
+  ],
+  "menus": [
+    {
+      "locatorId": "pcbnew.menu.file", "name": "File", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0"],
+      "items": [
+        {"name": "New Board", "kind": "command", "hotkey": "Ctrl+N", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Open…", "kind": "command", "hotkey": "Ctrl+O", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Save", "kind": "command", "hotkey": "Ctrl+S", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Save As…", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Starting from scratch"]},
+        {"name": "Board Setup…", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Board setup"]},
+        {"name": "Page Settings…", "kind": "command", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Plot…", "kind": "command", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Plotting and fabrication outputs"]},
+        {"name": "Fabrication Outputs", "kind": "submenu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Plotting and fabrication outputs"]},
+        {"name": "Import", "kind": "submenu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Importing non-KiCad boards"]},
+        {"name": "Export", "kind": "submenu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Exporting files"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.edit", "name": "Edit", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Actions reference"],
+      "items": [
+        {"name": "Undo", "kind": "command", "hotkey": "Ctrl+Z", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Redo", "kind": "command", "hotkey": "Ctrl+Y", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Cut", "kind": "command", "hotkey": "Ctrl+X", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Copy", "kind": "command", "hotkey": "Ctrl+C", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Paste", "kind": "command", "hotkey": "Ctrl+V", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Delete", "kind": "command", "hotkey": "Delete", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Find…", "kind": "command", "hotkey": "Ctrl+F", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Grid Origin…", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Grid settings"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.view", "name": "View", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0"],
+      "items": [
+        {"name": "Panels", "kind": "submenu", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Editing object properties"]},
+        {"name": "Properties", "kind": "toggle_command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Editing object properties"]},
+        {"name": "Appearance", "kind": "toggle_command", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Zoom In", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom Out", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom to Page", "kind": "command", "hotkey": "Home", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Navigating the editing canvas"]},
+        {"name": "Zoom to Objects", "kind": "command", "hotkey": "Ctrl+Home", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Navigating the editing canvas"]},
+        {"name": "3D Viewer", "kind": "command", "hotkey": "Alt+3", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.place", "name": "Place", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"],
+      "items": [
+        {"name": "Place Footprints", "kind": "tool", "hotkey": "A", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Add Filled Zone", "kind": "tool", "hotkey": "Ctrl+Shift+Z", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Zones"]},
+        {"name": "Add Rule Area", "kind": "tool", "hotkey": "Ctrl+Shift+K", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Rule areas"]},
+        {"name": "Add Text", "kind": "tool", "hotkey": "Ctrl+Shift+T", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Text objects"]},
+        {"name": "Add Table", "kind": "tool", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Tables"]},
+        {"name": "Grid Origin", "kind": "tool", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Grid settings"]},
+        {"name": "Drill/Place File Origin", "kind": "tool", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Grid settings"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.route", "name": "Route", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Routing Tracks", "pcbnew-manual-10.0:Actions reference"],
+      "items": [
+        {"name": "Route Single Track", "kind": "tool", "hotkey": "X", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Routing Tracks"]},
+        {"name": "Route Differential Pair", "kind": "tool", "hotkey": "6", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Routing Differential Pairs"]},
+        {"name": "Tune Length of a Single Track", "kind": "tool", "hotkey": "7", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Tuning Track Lengths"]},
+        {"name": "Tune Skew of a Differential Pair", "kind": "tool", "hotkey": "9", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Tuning Track Lengths"]},
+        {"name": "Add Vias", "kind": "tool", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.inspect", "name": "Inspect", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0"],
+      "items": [
+        {"name": "Design Rules Checker…", "kind": "command", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Design Rules Checking"]},
+        {"name": "Net Inspector", "kind": "toggle_command", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Board Statistics…", "kind": "command", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.menu.tools", "name": "Tools", "kind": "menu", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0"],
+      "items": [
+        {"name": "Update PCB from Schematic…", "kind": "command", "hotkey": "F8", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Starting from a schematic"]},
+        {"name": "Switch to Schematic Editor", "kind": "command", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Collect and Embed 3D Models", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Embedded files"]},
+        {"name": "Scripting Console", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Scripting"]}
+      ]
+    },
+    {"locatorId": "pcbnew.menu.preferences", "name": "Preferences", "kind": "menu", "items": [{"name": "Preferences…", "kind": "command", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Configuration and Customization"]}], "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Configuration and Customization"]},
+    {"locatorId": "pcbnew.menu.help", "name": "Help", "kind": "menu", "items": [], "verification": "needs_live_scan", "provenance": ["pcbnew-manual-10.0"]}
+  ],
+  "toolbars": [
+    {
+      "locatorId": "pcbnew.toolbar.top-core", "name": "Top core toolbar", "kind": "toolbar", "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:The PCB Editor user interface"],
+      "controls": [
+        {"name": "Save", "kind": "button", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Board Setup", "kind": "button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Board setup"]},
+        {"name": "Undo", "kind": "button", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Redo", "kind": "button", "verification": "official_action_reference", "provenance": ["pcbnew-manual-10.0:Actions reference"]},
+        {"name": "Update PCB from Schematic", "kind": "button", "hotkey": "F8", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Starting from a schematic"]},
+        {"name": "Layer Selector", "kind": "combo_box", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Board layers"]},
+        {"name": "Track Width", "kind": "combo_box", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Track width"]},
+        {"name": "Via Size", "kind": "combo_box", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Via size"]},
+        {"name": "Grid", "kind": "combo_box", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Grid settings"]},
+        {"name": "Auto Track Width", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Track width"]},
+        {"name": "Override Locks", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Locked items"]},
+        {"name": "Scripting Console", "kind": "button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Scripting"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.toolbar.left-display", "name": "Left display toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"],
+      "controls": [
+        {"name": "Grid Display", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Grid Overrides", "kind": "toggle_button", "hotkey": "Ctrl+Shift+G", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Coordinate Display", "kind": "toggle_button", "choices": ["Polar", "Cartesian"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Units", "kind": "palette_button", "choices": ["Inches", "Mils", "Millimeters"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Crosshair Type", "kind": "palette_button", "choices": ["Small", "Fullscreen", "45-degree Fullscreen"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Line Mode", "kind": "palette_button", "choices": ["Free Angle", "90 Degree", "45 Degree"], "hotkey": "Shift+Space", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Ratsnest Display", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Curved Ratsnest", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Non-active Layer Contrast", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Toggle Net Highlight", "kind": "toggle_button", "hotkey": "Ctrl+`", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Zone Fill Display", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Zone Outline Display", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Pad Filled/Outline", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Via Filled/Outline", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Track Filled/Outline", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Appearance and Selection Filter Panels", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]},
+        {"name": "Properties Manager", "kind": "toggle_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Left toolbar display controls"]}
+      ]
+    },
+    {
+      "locatorId": "pcbnew.toolbar.right-drawing", "name": "Right drawing and routing toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"],
+      "controls": [
+        {"name": "Selection Tool", "kind": "palette_button", "choices": ["Rectangular Selection", "Lasso Selection"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Local Ratsnest", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Place Footprint", "kind": "tool_button", "hotkey": "A", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Route", "kind": "palette_button", "choices": ["Route Tracks", "Route Differential Pairs"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Tune", "kind": "palette_button", "choices": ["Tune Track Length", "Tune Differential Pair Length", "Tune Differential Pair Skew"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Via", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Filled Zone", "kind": "tool_button", "hotkey": "Ctrl+Shift+Z", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Rule Area", "kind": "tool_button", "hotkey": "Ctrl+Shift+K", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Line", "kind": "tool_button", "hotkey": "Ctrl+Shift+L", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Arc", "kind": "tool_button", "hotkey": "Ctrl+Shift+A", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Rectangle", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Circle", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Graphical Polygon", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Draw Bezier Curve", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Reference Image", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Text", "kind": "tool_button", "hotkey": "Ctrl+Shift+T", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Text Box", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Table", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Dimension", "kind": "palette_button", "choices": ["Orthogonal", "Aligned", "Center", "Radial", "Leader"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Barcode", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Interactive Delete", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Set Origin", "kind": "palette_button", "choices": ["Grid Origin", "Drill/Place Origin"], "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Add Point", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]},
+        {"name": "Measure", "kind": "tool_button", "verification": "official_documentation", "provenance": ["pcbnew-manual-10.0:Placement and drawing operations"]}
+      ]
+    }
+  ],
+  "coreWorkflows": [
+    {"name": "Schematic-to-board layout", "steps": ["Board Setup…", "Update PCB from Schematic…", "Place Footprints", "Route Single Track", "Add Filled Zone", "Design Rules Checker…", "3D Viewer"], "verification": "documentation_inferred", "provenance": ["pcbnew-manual-10.0:Creating a PCB", "pcbnew-manual-10.0:Routing Tracks", "pcbnew-manual-10.0:Design Rules Checking"]}
+  ],
+  "liveScanGaps": ["Toolbar glyphs need tooltip and visual scans because named accessibility buttons were not exposed", "Scan context menus for tracks, zones, footprints, pads, and graphics", "Scan Board Setup, DRC, footprint chooser, routing settings, and fabrication dialogs", "Verify project-dependent enabled states with a disposable board", "Verify positive control IDs across a second run before treating them as stable"]
+}

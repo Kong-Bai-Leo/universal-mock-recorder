@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_index",
+  "mapId": "kicad-10.0.6-en-us",
+  "generatedAt": "2026-08-30T00:00:00Z",
+  "liveScanAt": "2026-08-30",
+  "application": {
+    "name": "KiCad",
+    "version": "10.0.6",
+    "language": "en-US",
+    "platform": "Windows",
+    "packageIdentifier": "KiCad.KiCad",
+    "installScope": "current_user",
+    "installPathPattern": "%LOCALAPPDATA%\\Programs\\KiCad\\10.0"
+  },
+  "installationEvidence": {
+    "packageVersionObserved": "10.0.6",
+    "cliVersionObserved": "10.0.6",
+    "verification": "installed_cli_and_live_gui_observed",
+    "observedExecutables": ["kicad.exe", "eeschema.exe", "pcbnew.exe", "kicad-cli.exe"],
+    "guiLaunched": true,
+    "liveObservedSurfaces": ["kicad.exe", "eeschema.exe", "pcbnew.exe"],
+    "liveObservation": "live-observation.json"
+  },
+  "locationModel": "Resolve by executable/window role, menu ancestry, current visible English label, commandId, sibling order, hotkey, current state, and screenshot geometry. commandId values are native KiCad/wxWidgets menu command identifiers, not Windows Automation IDs. Runtime negative control IDs and pixel coordinates are never durable selectors.",
+  "sections": [
+    {"id": "manager", "name": "KiCad Project Manager", "map": "manager/ui-map.json", "liveObservation": "live-observation.json#surfaces.manager", "verification": "official_docs_plus_live_ui"},
+    {"id": "schematic-editor", "name": "Schematic Editor", "map": "schematic-editor/ui-map.json", "liveObservation": "live-observation.json#surfaces.schematicEditor", "verification": "official_docs_plus_live_ui"},
+    {"id": "pcb-editor", "name": "PCB Editor", "map": "pcb-editor/ui-map.json", "liveObservation": "live-observation.json#surfaces.pcbEditor", "verification": "official_docs_plus_live_ui"}
+  ],
+  "verificationPolicy": {
+    "installed_cli_observed_no_gui": "Observed from winget and kicad-cli without starting a graphical application.",
+    "official_documentation": "Name, purpose, or placement is stated by the official KiCad 10.0 English manual.",
+    "official_action_reference": "Action name and optional default hotkey appear in the official action reference; exact menu or toolbar placement may still require a live scan.",
+    "live_observed": "Observed in the running KiCad 10.0.6 English UI using the accessibility tree and visual inspection.",
+    "documentation_inferred": "Grouped from official documentation for semantic lookup; exact label, order, and nesting require a live scan.",
+    "needs_live_scan": "Not verified against the running 10.0.6 English UI. Do not treat hierarchy, order, bounds, or identifiers as authoritative."
+  },
+  "identifierPolicy": {
+    "automationIdsPresent": false,
+    "repositoryLocatorIdsAreAutomationIds": false,
+    "menuCommandIdsPresent": true,
+    "menuCommandIdsAreAutomationIds": false,
+    "warning": "The repository-local locatorId fields are semantic keys, and live commandId values are KiCad/wxWidgets menu identifiers. Neither is a Windows Automation ID."
+  },
+  "sources": [
+    {"id": "kicad-release-10.0.6", "title": "KiCad 10.0.6 Release", "url": "https://www.kicad.org/blog/2026/08/KiCad-10.0.6-Release/", "type": "official_release"},
+    {"id": "kicad-manager-manual-10.0", "title": "KiCad 10.0 English Reference Manual", "url": "https://docs.kicad.org/10.0/en/kicad/kicad.html", "type": "official_documentation", "documentedAgainst": "10.0.5"},
+    {"id": "eeschema-manual-10.0", "title": "Schematic Editor 10.0 English Reference Manual", "url": "https://docs.kicad.org/10.0/en/eeschema/eeschema.html", "type": "official_documentation", "documentedAgainst": "10.0.5"},
+    {"id": "pcbnew-manual-10.0", "title": "PCB Editor 10.0 English Reference Manual", "url": "https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html", "type": "official_documentation", "documentedAgainst": "10.0.5"}
+  ],
+  "coverage": {
+    "included": ["Project Manager launchers and common project operations", "Schematic Editor core menus, toolbars, panels, and placement workflow", "PCB Editor core menus, toolbars, panels, placement, routing, and inspection workflow"],
+    "liveObserved": ["Top-level menu labels", "menu command labels and numeric command IDs", "window titles and executables", "canvas accessibility names", "Manager launcher labels", "PCB appearance-layer labels"],
+    "remainingScenarioScans": ["Named toolbar controls not exposed by accessibility", "customized toolbars", "plugin actions", "context menus", "dialogs and modal child controls", "project-dependent enabled states", "first-run Welcome and library initialization flows"]
+  }
+}

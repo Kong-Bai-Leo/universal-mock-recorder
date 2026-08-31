@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_surface",
+  "mapId": "kicad-10.0.6-en-us-manager",
+  "surface": {
+    "name": "KiCad Project Manager",
+    "executable": "kicad.exe",
+    "verification": "official_docs_plus_live_ui",
+    "liveObservation": "../live-observation.json#surfaces.manager",
+    "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager", "local-install:kicad-cli-version"]
+  },
+  "regions": [
+    {"locatorId": "manager.menu-bar", "name": "Main menu bar", "kind": "menu_bar", "verification": "needs_live_scan", "provenance": ["kicad-manager-manual-10.0"]},
+    {"locatorId": "manager.project-toolbar", "name": "Project operations toolbar", "kind": "toolbar", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+    {"locatorId": "manager.project-tree", "name": "Project files tree", "kind": "tree", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+    {"locatorId": "manager.launcher", "name": "Application launcher", "kind": "launcher", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]}
+  ],
+  "menus": [
+    {
+      "locatorId": "manager.menu.file",
+      "name": "File",
+      "kind": "menu",
+      "verification": "documentation_inferred",
+      "provenance": ["kicad-manager-manual-10.0:Creating a new project", "kicad-manager-manual-10.0:Saving and loading project archives", "kicad-manager-manual-10.0:Actions reference"],
+      "items": [
+        {"name": "New Project…", "kind": "command", "hotkey": "Ctrl+N", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Creating a new project"]},
+        {"name": "Open Project…", "kind": "command", "hotkey": "Ctrl+O", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+        {"name": "Open Recent", "kind": "submenu", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Maintenance preferences"]},
+        {"name": "Clone Project from Repository…", "kind": "command", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Git integration"]},
+        {"name": "Import Non-KiCad Project", "kind": "submenu", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Importing a project from another EDA tool"]},
+        {"name": "Close Project", "kind": "command", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+        {"name": "Archive Project…", "kind": "command", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Saving and loading project archives"]},
+        {"name": "Unarchive Project…", "kind": "command", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Saving and loading project archives"]}
+      ]
+    },
+    {"locatorId": "manager.menu.edit", "name": "Edit", "kind": "menu", "items": [], "verification": "needs_live_scan", "provenance": ["kicad-manager-manual-10.0"]},
+    {"locatorId": "manager.menu.view", "name": "View", "kind": "menu", "items": [{"name": "Panels", "kind": "submenu", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Project backups and autosave"]}], "verification": "documentation_inferred", "provenance": ["kicad-manager-manual-10.0:Project backups and autosave"]},
+    {"locatorId": "manager.menu.tools", "name": "Tools", "kind": "menu", "items": [{"name": "Plugin and Content Manager", "kind": "command", "hotkey": "Ctrl+M", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]}], "verification": "documentation_inferred", "provenance": ["kicad-manager-manual-10.0:Plugin and Content Manager"]},
+    {"locatorId": "manager.menu.preferences", "name": "Preferences", "kind": "menu", "items": [{"name": "Preferences…", "kind": "command", "verification": "documentation_inferred", "provenance": ["kicad-manager-manual-10.0:KiCad preferences"]}], "verification": "needs_live_scan", "provenance": ["kicad-manager-manual-10.0:KiCad preferences"]},
+    {"locatorId": "manager.menu.help", "name": "Help", "kind": "menu", "items": [], "verification": "needs_live_scan", "provenance": ["kicad-manager-manual-10.0"]}
+  ],
+  "toolbars": [
+    {
+      "locatorId": "manager.toolbar.project-operations",
+      "name": "Project operations toolbar",
+      "kind": "toolbar",
+      "verification": "official_documentation",
+      "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"],
+      "controls": [
+        {"name": "New Project", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+        {"name": "Open Project", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+        {"name": "Archive Project", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+        {"name": "Unarchive Project", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+        {"name": "Refresh Project Tree", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+        {"name": "Browse Project Files", "kind": "button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]}
+      ]
+    }
+  ],
+  "launcher": {
+    "locatorId": "manager.launcher.tools",
+    "name": "Application launcher",
+    "kind": "launcher",
+    "verification": "official_documentation",
+    "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"],
+    "controls": [
+      {"name": "Schematic Editor", "kind": "launcher_button", "hotkey": "Ctrl+E", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "Symbol Editor", "kind": "launcher_button", "hotkey": "Ctrl+L", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "PCB Editor", "kind": "launcher_button", "hotkey": "Ctrl+P", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "Footprint Editor", "kind": "launcher_button", "hotkey": "Ctrl+F", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "Gerber Viewer", "kind": "launcher_button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+      {"name": "Image Converter", "kind": "launcher_button", "hotkey": "Ctrl+B", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "Calculator Tools", "kind": "launcher_button", "verification": "official_documentation", "provenance": ["kicad-manager-manual-10.0:Using the KiCad project manager"]},
+      {"name": "Drawing Sheet Editor", "kind": "launcher_button", "hotkey": "Ctrl+Y", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]},
+      {"name": "Plugin and Content Manager", "kind": "launcher_button", "hotkey": "Ctrl+M", "verification": "official_action_reference", "provenance": ["kicad-manager-manual-10.0:Actions reference"]}
+    ]
+  },
+  "liveScanGaps": ["Inspect first-run Welcome and library-table setup separately", "Verify project-dependent enabled states with a disposable project", "Scan context menus for project tree files and Git integration", "Scan modal dialogs", "Verify positive control IDs across a second run before treating them as stable"]
+}
