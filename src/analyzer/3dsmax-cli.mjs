@@ -11,6 +11,12 @@ import {
   saveAnalysisCheckpoint
 } from "./lib/analysis-checkpoint.mjs";
 import { optimizeScreenshots } from "./lib/image-optimizer.mjs";
+import { buildThreeDsMaxEvidenceCrop } from "./lib/threedsmax-evidence-crops.mjs";
+import { buildThreeDsMaxObjectContext } from "./lib/threedsmax-face-catalog.mjs";
+import { annotateThreeDsMaxContinuations } from "./lib/threedsmax-interactions.mjs";
+import { buildVisualFaceInput, mergeVisualFaceTracking, visualFaceContextScreenshots,
+  visualFacePriorityScreenshots, trackVisualFaces, visualFaceLimits } from "./lib/threedsmax-visual-faces.mjs";
+import { chunkThreeDsMaxActions, previousThreeDsMaxActionTail, selectPreviousThreeDsMaxContextImages } from "./lib/threedsmax-chunks.mjs";
 import { loadLocalEnv } from "./lib/local-env.mjs";
 import { renderMaxScript } from "./lib/maxscript-renderer.mjs";
 import { THREE_DSMAX_ANALYSIS_INSTRUCTIONS } from "./lib/threedsmax-prompt.mjs";
@@ -33,21 +39,23 @@ import {
   mergeThreeDsMaxAnalyses,
   validateThreeDsMaxAnalysis
 } from "./lib/threedsmax-workflow.mjs";
-import { buildCandidateActions, chunkActions, readJsonLines } from "./lib/trace.mjs";
+import { buildCandidateActions, readJsonLines } from "./lib/trace.mjs";
 
 let activeStage = "startup";
 const args = parseArgs(process.argv.slice(2));
 
-if (!args.recording || !args.config) {
-  console.error("用法: node src/analyzer/3dsmax-cli.mjs --recording <录制目录> --config <config.json> [--output <目录>]");
-  process.exitCode = 1;
-} else {
-  try {
-    await main(args);
-  } catch (error) {
-    const errorPath = await writeAnalysisError(args, error, activeStage).catch(() => null);
-    console.error(`${error?.message ?? error}${errorPath ? `\n错误详情已保存：${errorPath}` : ""}`);
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (!args.recording || !args.config) {
+    console.error("用法: node src/analyzer/3dsmax-cli.mjs --recording <录制目录> --config <config.json> [--output <目录>]");
     process.exitCode = 1;
+  } else {
+    try {
+      await main(args);
+    } catch (error) {
+      const errorPath = await writeAnalysisError(args, error, activeStage).catch(() => null);
+      console.error(`${error?.message ?? error}${errorPath ? `\n错误详情已保存：${errorPath}` : ""}`);
+      process.exitCode = 1;
+    }
   }
 }
 
@@ -64,9 +72,11 @@ async function main(options) {
     throw new Error(`录制文件属于 ${manifest.applicationProfile}，不能交给 3ds Max 分析器`);
 
   const events = await readJsonLines(path.join(recordingDirectory, "events.jsonl"));
-  const actions = annotateThreeDsMaxTransformContexts(buildCandidateActions(events));
+  const actions = annotateThreeDsMaxContinuations(annotateThreeDsMaxTransformContexts(buildCandidateActions(events)), events);
   const analysisOptions = config.analysis ?? {};
   const threeDsMaxOptions = analysisOptions.threeDsMax ?? {};
+  const faceOptions = threeDsMaxOptions.visualFaceTracking ?? {};
+  const trackFaces = faceOptions.enabled !== false;
   const knowledgeOptions = analysisOptions.threeDsMaxKnowledge ?? {};
   const knowledgeRoot = knowledgeOptions.root
     ? path.resolve(path.dirname(configPath), knowledgeOptions.root)
@@ -78,7 +88,7 @@ async function main(options) {
     analysisOptions.maxScreenshotsPerRequest ?? 18;
   const maxActions = threeDsMaxOptions.maxActionsPerRequest ??
     analysisOptions.maxActionsPerRequest ?? 200;
-  const chunks = chunkActions(actions, maxActions, {
+  const chunks = chunkThreeDsMaxActions(actions, maxActions, {
     maxCanvasEvidence: Math.max(2, maxScreenshots),
     minActionsPerChunk: threeDsMaxOptions.minActionsPerRequest ??
       analysisOptions.minActionsPerRequest ?? 0
@@ -88,7 +98,7 @@ async function main(options) {
   await fs.mkdir(outputDirectory, { recursive: true });
   const checkpointPath = path.join(outputDirectory, "analysis-checkpoint.json");
   const checkpointIdentity = createAnalysisCheckpointIdentity({
-    pipelineVersion: "3dsmax-2026-08-31.2",
+    pipelineVersion: "3dsmax-2026-09-03-bevel-approximation.1",
     provider: {
       model: config.provider?.model ?? null,
       reasoningEffort: config.provider?.reasoningEffort ?? null,
@@ -122,17 +132,26 @@ async function main(options) {
       for (let index = resumeChunkIndex; index < chunks.length; index += 1) {
         activeStage = `chunk_${index + 1}_of_${chunks.length}`;
         const chunk = chunks[index];
-        const knownObjects = buildKnownObjects(parts);
+        const rawActionTail = previousThreeDsMaxActionTail(chunks, index);
+        const knownObjects = buildThreeDsMaxObjectContext(parts);
+        const visualFaceState = mergeVisualFaceTracking(parts);
         const knowledgeRetrieval = retrieveThreeDsMaxKnowledge(knowledge, chunk, knowledgeOptions);
+        const contextNames = analysisOptions.includeScreenshots === false ? [] :
+          [...new Set([
+            ...(trackFaces ? visualFaceContextScreenshots(visualFaceState) : []),
+            ...selectPreviousThreeDsMaxContextImages(rawActionTail)
+          ])].slice(0, Math.min(4, Math.floor(maxScreenshots / 4)));
         const selectedScreenshotNames = analysisOptions.includeScreenshots === false
           ? []
-          : selectThreeDsMaxScreenshots(chunk, maxScreenshots, {
-            uploadAll: threeDsMaxOptions.uploadAllScreenshots === true
-          });
+          : [...new Set([...contextNames, ...selectThreeDsMaxScreenshots(chunk, maxScreenshots - contextNames.length, {
+            uploadAll: threeDsMaxOptions.uploadAllScreenshots === true,
+            priorityScreenshots: trackFaces ? visualFacePriorityScreenshots(chunk,
+              Math.min(visualFaceLimits(faceOptions).maxFrames, Math.floor(maxScreenshots / 3))) : []
+          })])];
         const sourceScreenshots = await existingScreenshotInputs(
           recordingDirectory,
           selectedScreenshotNames,
-          chunk
+          [...rawActionTail, ...chunk]
         );
         const screenshots = await optimizeScreenshots(
           sourceScreenshots,
@@ -144,9 +163,16 @@ async function main(options) {
             jpegQuality: threeDsMaxOptions.jpegQuality ?? analysisOptions.jpegQuality ?? 72
           }
         );
+        const uploadedScreenshotNames = new Set(screenshots.map((item) => item.logicalScreenshot));
         const payload = {
           format: "ThreeDsMaxRecordingAnalysisInput",
           version: "0.1",
+          evidencePolicyVersion: 2,
+          approximationPolicy: { bevel: "reference_geometry_ratio", maxConfidence: 0.45,
+            preferLabeledNumbers: true, requireStableViewAndFullBeforeAfter: true,
+            uncertaintyIsModelEstimateNotStatisticalInterval: true },
+          visualFaceInput: trackFaces ? buildVisualFaceInput(screenshots, [...rawActionTail, ...chunk],
+            visualFaceState, index + 1, faceOptions) : { enabled: false },
           application: {
             profile: manifest?.applicationProfile ?? "autodesk-3dsmax",
             name: manifest?.applicationName ?? "Autodesk 3ds Max",
@@ -160,11 +186,14 @@ async function main(options) {
           chunk: { index: index + 1, total: chunks.length },
           previousContext: {
             knownObjects,
+            rawActionTail: rawActionTail.map((action) => compactAction(action, uploadedScreenshotNames)),
+            pendingInteractions: (parts.at(-1)?.dragAssessments ?? []).filter((item) =>
+              item.category === "unresolved").slice(-8),
             recentOperations: parts.flatMap((part) => part.maxProgram.operations).slice(-16),
             previousWarnings: parts.flatMap((part) => part.maxProgram.warnings).slice(-10)
           },
           knowledge: knowledgeRetrieval.context,
-          actions: chunk.map((action) => compactAction(action, new Set(selectedScreenshotNames))),
+          actions: chunk.map((action) => compactAction(action, uploadedScreenshotNames)),
           screenshots: screenshots.map((item) => ({
             label: item.label,
             evidenceRole: item.evidenceRole,
@@ -177,6 +206,7 @@ async function main(options) {
           payload,
           screenshots,
           knownObjects,
+          visualFaceState,
           maxValidationRepairs: threeDsMaxOptions.maxValidationRepairs ??
             analysisOptions.maxValidationRepairs ?? 1
         });
@@ -186,6 +216,8 @@ async function main(options) {
           actionCount: chunk.length,
           uploadedScreenshots: screenshots.map((item) => path.basename(item.path)),
           knowledgeMatches: knowledgeRetrieval.matches,
+          visualFaceTracking: { frameCount: result.visualFaceTracking?.frames.length ?? 0,
+            updatedTrackCount: result.visualFaceTracking?.updates.length ?? 0, issueCount: result.visualFaceTracking?.issues.length ?? 0 },
           apiUsage: client.getUsageRecords().slice(usageRecordStart)
         });
         await saveAnalysisCheckpoint(checkpointPath, {
@@ -255,11 +287,18 @@ async function main(options) {
   await fs.rm(path.join(outputDirectory, "analysis-error.json"), { force: true });
   activeStage = "complete";
   console.log(`已生成 3ds Max MAXScript：${path.join(outputDirectory, "3dsmax-replay.ms")}`);
+  if (rendered.approximate) console.warn("MAXScript 包含明确标注的视觉估算参数，只用于近似形状还原，不是精确尺寸复现。");
+  if (trackFaces) {
+    const faces = analysis.visualFaceTracking;
+    console.log(`视觉面追踪：${faces?.frames.length ?? 0} 个已分析帧，${faces?.tracks.length ?? 0} 个视觉身份，` +
+      `${faces?.tracks.filter((t) => t.identity === "candidate").length ?? 0} 个候选；` +
+      `${faces?.issues.length ?? 0} 项覆盖/匹配提示，详见 semantic-trace.json。`);
+  }
   if (rendered.partial)
     console.warn(`MAXScript 只包含已确认操作；${rendered.skipped.length} 项后端不支持或证据不足。`);
 }
 
-async function analyzeChunk({ client, payload, screenshots, knownObjects, maxValidationRepairs }) {
+export async function analyzeChunk({ client, payload, screenshots, knownObjects, visualFaceState = mergeVisualFaceTracking([]), maxValidationRepairs }) {
   let result = await client.analyze({
     instructions: THREE_DSMAX_ANALYSIS_INSTRUCTIONS,
     payload,
@@ -272,16 +311,22 @@ async function analyzeChunk({ client, payload, screenshots, knownObjects, maxVal
     try {
       const validated = validateThreeDsMaxAnalysis(result, {
         knownObjectIds: knownObjects.map((object) => object.id),
+        geometryReferences: knownObjects.flatMap((object) => object.geometryReferences ?? []),
         validateReferences: true
       });
-      return assertThreeDsMaxEvidenceCoverage(validated, payload);
+      assertThreeDsMaxEvidenceCoverage(validated, payload);
+      validated.visualFaceTracking = trackVisualFaces(visualFaceState, validated.visualFaceFrames, payload, validated);
+      return validated;
     } catch (error) {
       // 有精确拖拽证据却仍丢失/读错变换时，不得生成看似可运行的部分脚本。
       // 这种脚本会把副本移到视野外，比明确失败更难察觉。
-      if (attempt >= maxValidationRepairs) throw error;
+      if (attempt >= maxValidationRepairs) {
+        error.lastAnalysisResult = result;
+        throw error;
+      }
       const repairFocus = buildRepairFocus(payload, screenshots, error.message);
       result = await client.analyze({
-        instructions: `${THREE_DSMAX_ANALYSIS_INSTRUCTIONS}\n\n上一轮结果未通过本地语义校验。必须以 previousResult 为基础输出完整修正结果，不得删除已有可靠操作。repair.focusActions 和本轮附图已专门缩小到失败事务附近：必须逐字读取同事务 Transform Type-In before/after，用 selected_object 绑定目标，再对 previousResult 做最小必要修正。`,
+        instructions: `${THREE_DSMAX_ANALYSIS_INSTRUCTIONS}\n\n上一轮结果未通过本地语义校验。以 previousResult 为基础输出完整修正结果，保留可靠操作。先重新判断工具、选择层级和数值含义，再读取同事务证据。若为子对象编辑或证据不可读，明确填写 dragAssessments 并标记不完整；禁止为了通过校验提高置信度或编造变换。`,
         payload: {
           ...payload,
           actions: repairFocus.actions,
@@ -304,7 +349,7 @@ async function analyzeChunk({ client, payload, screenshots, knownObjects, maxVal
 
 function buildRepairFocus(payload, screenshots, validationError) {
   const sourceEventIds = [...new Set(String(validationError ?? "").match(/evt-\d+/g) ?? [])];
-  if (sourceEventIds.length === 0) {
+  if (sourceEventIds.length === 0 || payload.visualFaceInput?.enabled) {
     return {
       sourceEventIds,
       actions: payload.actions,
@@ -345,26 +390,6 @@ function buildRepairFocus(payload, screenshots, validationError) {
   };
 }
 
-function buildKnownObjects(parts) {
-  const objects = new Map();
-  for (const part of parts) {
-    for (const object of part.maxProgram.initialObjects) objects.set(object.id, object);
-    for (const operation of part.maxProgram.operations) {
-      operation.resultObjectIds.forEach((id, index) => {
-        const source = objects.get(operation.targetObjectIds[index] ?? operation.targetObjectIds[0]);
-        objects.set(id, {
-          id,
-          name: operation.objectName,
-          className: operation.className ??
-            (operation.kind === "create_primitive" ? operation.className : source?.className ?? null),
-          confidence: operation.confidence
-        });
-      });
-    }
-  }
-  return [...objects.values()];
-}
-
 async function existingScreenshotInputs(recordingDirectory, names, actions) {
   const items = [];
   for (const name of names) {
@@ -383,18 +408,15 @@ async function existingScreenshotInputs(recordingDirectory, names, actions) {
       ? "before"
       : action?.screenshotSelection === name ? "selection" : "after");
     const evidenceKind = transformEvidence?.kind ?? null;
-    const numericStripCrop = evidenceKind === "transform_type_in"
-      ? buildTransformTypeInNumericStripCrop(transformEvidence)
-      : null;
-    const parameterPanelCrop = evidenceKind === "command_panel_parameters"
-      ? buildCommandPanelParameterCrop(transformEvidence)
-      : null;
-    const evidenceCrop = numericStripCrop ?? parameterPanelCrop;
-    const evidenceUpscale = numericStripCrop ? 3.2 : parameterPanelCrop ? 2.25 : null;
+    const fullFrameName = phase === "before" ? action?.screenshotBefore : action?.screenshotAfter;
+    const fullFramePath = fullFrameName ? path.join(recordingDirectory, fullFrameName) : null;
+    const fullFrameAvailable = fullFramePath ? await fs.access(fullFramePath).then(() => true, () => false) : false;
+    const cropPlan = buildThreeDsMaxEvidenceCrop(action, transformEvidence, fullFrameAvailable);
     items.push({
-      path: filePath,
+      logicalScreenshot: name,
+      path: cropPlan?.fromFullFrame ? fullFramePath : filePath,
       label: evidenceKind
-        ? `${name}（3ds Max 变换局部证据；区域=${evidenceKind}；阶段=${phase}；${numericStripCrop ? "图片已放大保留 Absolute/Offset 按钮以及左到右 X/Y/Z 字段；必须先判断模式和活动 Move/Rotate/Scale，再逐字抄录；" : ""}${parameterPanelCrop ? "图片已紧裁并放大 Parameters 标签和值；同一创建序列必须采用更晚最终态，禁止填常见默认值；" : ""}必须与同一动作的其它局部图和全图交叉验证）`
+        ? `${name}（3ds Max 局部证据；区域=${evidenceKind}；阶段=${phase}；${cropPlan?.fromFullFrame ? `从同阶段全图 ${fullFrameName} 重新裁取；` : "保留原局部图全部内容；"}必须视觉确认工具、对象/子对象层级、标签、模式和字段可读性；图片存在不代表数值有效）`
         : `${name}（3ds Max 操作${phase}；与同一 sourceEventIds 的其它图片比较最终场景变化）`,
       evidenceRole: evidenceKind
         ? `3dsmax_transform_${evidenceKind}_${phase}`
@@ -402,39 +424,10 @@ async function existingScreenshotInputs(recordingDirectory, names, actions) {
           ? `3dsmax_scene_change_${phase}`
           : `3dsmax_interaction_${phase}`,
       ...(evidenceKind ? { detail: "high" } : {}),
-      ...(evidenceCrop ? { crop: evidenceCrop, upscale: evidenceUpscale } : {})
+      ...(cropPlan ? { crop: cropPlan.crop, cropIsRegion: true, upscale: cropPlan.upscale } : {})
     });
   }
   return items;
-}
-
-function buildTransformTypeInNumericStripCrop(evidence) {
-  const width = Number(evidence?.pixelBounds?.[2]);
-  const height = Number(evidence?.pixelBounds?.[3]);
-  if (!Number.isFinite(width) || !Number.isFinite(height) || width < 100 || height < 30) return null;
-  // Recorder 的 transform_type_in 原图还包含时间轴和播放按钮。这一二次裁剪保留
-  // Absolute/Offset 按钮、X/Y/Z 标签与三个数值框，再放大上传。不能只裁数字：
-  // 同一组三个数在 Absolute 与 Offset 下语义完全不同。
-  return {
-    centerX: width * 0.41,
-    centerY: height * 0.53,
-    width: Math.max(180, Math.round(width * 0.60)),
-    height: Math.max(30, Math.round(height * 0.43))
-  };
-}
-
-function buildCommandPanelParameterCrop(evidence) {
-  const width = Number(evidence?.pixelBounds?.[2]);
-  const height = Number(evidence?.pixelBounds?.[3]);
-  if (!Number.isFinite(width) || !Number.isFinite(height) || width < 120 || height < 120) return null;
-  // command_panel_parameters 原图左侧通常仍带一条视口空白。裁去空白但保留 rollout
-  // 标题、字段标签、数值和布尔选项；高倍率上传后小数点不会再被 JPEG/缩放吞掉。
-  return {
-    centerX: width * 0.675,
-    centerY: height * 0.53,
-    width: Math.max(120, Math.round(width * 0.65)),
-    height: Math.max(120, Math.round(height * 0.76))
-  };
 }
 
 function compactAction(action, uploadedScreenshots = null) {
@@ -449,6 +442,10 @@ function compactAction(action, uploadedScreenshots = null) {
   }
   return {
     action: action.action,
+    startMs: action.startMs ?? null,
+    endMs: action.endMs ?? null,
+    screenshotBeforeTimestampMs: action.screenshotBeforeTimestampMs ?? null,
+    screenshotAfterTimestampMs: action.screenshotAfterTimestampMs ?? null,
     button: action.button ?? null,
     text: action.text ?? null,
     key: action.key ?? null,
@@ -456,6 +453,7 @@ function compactAction(action, uploadedScreenshots = null) {
     at: action.at ?? null,
     from: action.from ?? null,
     to: action.to ?? null,
+    interactiveContinuation: action.interactiveContinuation ?? null,
     target: compactTarget(action.target),
     window: action.window ? {
       title: action.window.title ?? null,
@@ -529,7 +527,8 @@ async function writeAnalysisError(options, error, stage) {
     version: "0.1",
     failedAt: new Date().toISOString(),
     stage,
-    error: serializeError(error)
+    error: serializeError(error),
+    lastAnalysisResult: error.lastAnalysisResult ?? null
   }, null, 2), "utf8");
   return errorPath;
 }

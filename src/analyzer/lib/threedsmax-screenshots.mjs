@@ -1,3 +1,5 @@
+import { interactiveSessionImageGroups } from "./threedsmax-interactions.mjs";
+
 export function selectThreeDsMaxScreenshots(actions, maximum, options = {}) {
   const all = listThreeDsMaxScreenshots(actions);
   if (options.uploadAll === true) return all;
@@ -5,6 +7,20 @@ export function selectThreeDsMaxScreenshots(actions, maximum, options = {}) {
   if (all.length <= maximum) return all;
 
   const priority = [];
+  priority.push(...(options.priorityScreenshots ?? []).filter((name) => all.includes(name)));
+  // Also preserve full sessions when visual-face tracking is disabled. Bounded
+  // within the existing image budget; no extra API request or blanket upload.
+  let sessionBudget = Math.min(8, Math.floor(maximum / 3));
+  for (const group of interactiveSessionImageGroups(actions)) {
+    if (group.screenshots.length > sessionBudget) continue;
+    priority.push(...group.screenshots);
+    sessionBudget -= group.screenshots.length;
+  }
+  // Numeric Bevel caddies can disappear on OK; preserve their pre-commit frame.
+  for (const action of actions.filter((item) => hasEvidence(item, "subobject_parameters"))) {
+    priority.push(...evidenceScreenshots(action, "subobject_parameters", ["before", "after"]));
+    priority.push(action.screenshotAfter);
+  }
   const creationParameterActions = findCreationParameterActions(actions);
   const numericTransformActions = actions.filter((item) =>
     hasEvidence(item, "viewport_transform_overlay") &&
@@ -13,13 +29,17 @@ export function selectThreeDsMaxScreenshots(actions, maximum, options = {}) {
     !isLikelySelectionRectangle(item) &&
     (!creationParameterActions.includes(item) || isCloneDrag(item)));
 
-  // 先为每次真实的 Move/Rotate/Scale 拖拽保留同事务 XYZ 前后对。
-  // 这两张图是方向和距离的数值真值，不能被 Pivot 或通用界面图挤掉。
+  // These are drag candidates, not proven object transforms. Keep panel state
+  // alongside XYZ so Bevel/sub-object edits cannot be mistaken for whole objects.
   for (const action of numericTransformActions) {
     priority.push(...evidenceScreenshots(action, "transform_type_in", ["before", "after"]));
     // Name and Color 局部图给出当前选中对象名。没有这张图，即使 XYZ 清晰，
     // 模型也可能因无法把数值绑到稳定 object ID 而省略整个操作。
     priority.push(...evidenceScreenshots(action, "selected_object", ["before"]));
+    priority.push(...evidenceScreenshots(action, "command_panel_parameters", ["after"]));
+  }
+  for (const action of evenlySelect(actions.filter((item) => hasEvidence(item, "subobject_operation_context")), 3)) {
+    priority.push(...evidenceScreenshots(action, "subobject_operation_context", ["before", "after"]));
   }
 
   // Shift 拖拽是克隆的唯一可靠边界。先保留同一动作的数值前后对、视口增量和工具状态，
@@ -91,9 +111,19 @@ export function selectThreeDsMaxScreenshots(actions, maximum, options = {}) {
     if (isHighValueUiAction(action))
       priority.push(action.screenshotBefore, action.screenshotSelection, action.screenshotAfter);
   }
-  const selected = [...new Set(priority.filter(Boolean))].slice(0, maximum);
+  const pairs = new Map();
+  for (const action of actions) {
+    const pair = evidenceScreenshots(action, "transform_type_in", ["before", "after"]);
+    if (pair.length === 2) for (const name of pair) pairs.set(name, pair);
+  }
+  const selected = [];
+  const append = (name) => {
+    const group = (pairs.get(name) ?? [name]).filter((file) => !selected.includes(file));
+    if (selected.length + group.length <= maximum) selected.push(...group);
+  };
+  for (const name of new Set(priority.filter(Boolean))) append(name);
   const remaining = all.filter((file) => !selected.includes(file));
-  selected.push(...evenlySelect(remaining, maximum - selected.length));
+  for (const name of evenlySelect(remaining, maximum - selected.length)) append(name);
   return selected.sort((left, right) => all.indexOf(left) - all.indexOf(right));
 }
 

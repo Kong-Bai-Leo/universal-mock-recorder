@@ -1,3 +1,7 @@
+import { POLY_EDIT_SCHEMA, validatePolyEdit } from "./threedsmax-poly-edit.mjs";
+import { VISUAL_FACE_FRAMES_SCHEMA, mergeVisualFaceTracking } from "./threedsmax-visual-faces.mjs";
+import { advanceGeometryReferences, assertBevelReference, annotateReplayAccuracy } from "./threedsmax-approximation.mjs";
+
 const nullableString = { type: ["string", "null"] };
 const nullableNumber = { type: ["number", "null"] };
 const confidence = { type: "number", minimum: 0, maximum: 1 };
@@ -62,7 +66,7 @@ const operationSchema = {
       type: "string",
       enum: [
         "create_primitive", "select_objects", "transform", "add_modifier",
-        "set_parameters", "set_pivot", "clone_objects", "delete_objects", "convert_to_poly", "other"
+        "set_parameters", "set_pivot", "clone_objects", "delete_objects", "convert_to_poly", "bevel_faces", "other"
       ]
     },
     targetObjectIds: stringArray,
@@ -72,6 +76,7 @@ const operationSchema = {
     parameters: { type: "array", items: parameterSchema },
     propertyTarget: { type: "string", enum: ["object", "latest_modifier", "none"] },
     transform: transformSchema,
+    polyEdit: { anyOf: [POLY_EDIT_SCHEMA, { type: "null" }] },
     selectionMode: { type: "string", enum: ["replace", "add", "remove", "clear", "none"] },
     sourceEventIds: stringArray,
     sourceScreenshots: stringArray,
@@ -80,7 +85,7 @@ const operationSchema = {
   required: [
     "id", "kind", "targetObjectIds", "resultObjectIds", "className", "objectName",
     "parameters", "propertyTarget", "transform", "selectionMode", "sourceEventIds",
-    "sourceScreenshots", "confidence"
+    "sourceScreenshots", "confidence", "polyEdit"
   ]
 };
 
@@ -98,11 +103,30 @@ const maxProgramSchema = {
   required: ["format", "initialObjects", "operations", "confidence", "warnings", "complete"]
 };
 
+const dragAssessmentSchema = {
+  type: "object", additionalProperties: false,
+  properties: {
+    sourceEventIds: stringArray,
+    category: { type: "string", enum: ["object_transform", "clone_transform", "subobject_edit", "primitive_creation", "selection", "navigation", "no_change", "unresolved"] },
+    selectionLevel: { type: "string", enum: ["object", "subobject", "multiple", "none", "unknown"] },
+    activeTool: nullableString,
+    coordinateMeaning: { type: "string", enum: ["position", "rotation", "scale", "cursor_world", "not_applicable", "unknown"] },
+    displayMode: { type: "string", enum: ["absolute", "offset", "not_applicable", "unknown"] },
+    numericReadability: { type: "string", enum: ["readable", "unreadable", "not_applicable"] },
+    persistentChange: { type: ["boolean", "null"] },
+    evidenceScreenshots: stringArray,
+    reason: { type: "string" }
+  },
+  required: ["sourceEventIds", "category", "selectionLevel", "activeTool", "coordinateMeaning", "displayMode", "numericReadability", "persistentChange", "evidenceScreenshots", "reason"]
+};
+
 export const THREE_DSMAX_ANALYSIS_SCHEMA = {
   type: "object",
   additionalProperties: false,
   properties: {
     summary: { type: "string" },
+    dragAssessments: { type: "array", items: dragAssessmentSchema },
+    visualFaceFrames: VISUAL_FACE_FRAMES_SCHEMA,
     maxProgram: maxProgramSchema,
     omitted: {
       type: "array",
@@ -119,7 +143,7 @@ export const THREE_DSMAX_ANALYSIS_SCHEMA = {
     },
     warnings: stringArray
   },
-  required: ["summary", "maxProgram", "omitted", "warnings"]
+  required: ["summary", "dragAssessments", "visualFaceFrames", "maxProgram", "omitted", "warnings"]
 };
 
 export function validateThreeDsMaxAnalysis(result, options = {}) {
@@ -131,6 +155,20 @@ export function validateThreeDsMaxAnalysis(result, options = {}) {
   assertStringArray(result.warnings, "warnings");
 
   const normalized = JSON.parse(JSON.stringify(result));
+  normalized.dragAssessments ??= []; // Backward-compatible loading of old saved plans.
+  normalized.visualFaceFrames ??= [];
+  if (!Array.isArray(normalized.dragAssessments)) throw new Error("dragAssessments 必须是数组");
+  for (const item of normalized.dragAssessments) {
+    if (!item || typeof item.reason !== "string" || !item.reason.trim()) throw new Error("dragAssessments 缺少判定依据");
+    assertStringArray(item.sourceEventIds, "dragAssessments.sourceEventIds");
+    assertStringArray(item.evidenceScreenshots, "dragAssessments.evidenceScreenshots");
+    if (item.sourceEventIds.length === 0) throw new Error("dragAssessments 缺少事件引用");
+    for (const [key, field] of Object.entries(dragAssessmentSchema.properties)) {
+      if (field.enum && !field.enum.includes(item[key])) throw new Error(`dragAssessments.${key} 无效`);
+    }
+    if (item.activeTool !== null && typeof item.activeTool !== "string") throw new Error("dragAssessments.activeTool 无效");
+    if (item.persistentChange !== null && typeof item.persistentChange !== "boolean") throw new Error("dragAssessments.persistentChange 无效");
+  }
   assertMaxProgram(normalized.maxProgram, options);
   normalized.omitted.forEach((item, index) => {
     const label = `omitted[${index}]`;
@@ -183,6 +221,9 @@ export function mergeThreeDsMaxAnalyses(parts, options = {}) {
       complete: validated.every((part) => part.maxProgram.complete)
     },
     omitted: validated.flatMap((part) => part.omitted),
+    dragAssessments: validated.flatMap((part) => part.dragAssessments),
+    visualFaceFrames: validated.flatMap((part) => part.visualFaceFrames),
+    visualFaceTracking: mergeVisualFaceTracking(validated),
     warnings: validated.flatMap((part) => part.warnings)
   };
   return validateThreeDsMaxAnalysis(merged, { ...options, validateReferences: true });
@@ -191,6 +232,8 @@ export function mergeThreeDsMaxAnalyses(parts, options = {}) {
 export function emptyThreeDsMaxAnalysis() {
   return {
     summary: "未检测到可复现的 3ds Max 场景操作",
+    dragAssessments: [],
+    visualFaceFrames: [],
     maxProgram: {
       format: "none",
       initialObjects: [],
@@ -222,12 +265,17 @@ function assertMaxProgram(program, options) {
     known.add(object.id);
   }
   const operationIds = new Set();
+  // Retired IDs remain reserved even though they are no longer referenceable.
+  const allocatedObjectIds = new Set(known);
+  let geometryReferences = [...(options.geometryReferences ?? [])];
   for (const [index, operation] of program.operations.entries()) {
+    operation.polyEdit ??= null;
     const label = `maxProgram.operations[${index}]`;
     assertOperation(operation, label);
     if (operationIds.has(operation.id)) throw new Error(`3ds Max 操作 ID 重复: ${operation.id}`);
     operationIds.add(operation.id);
     if (options.validateReferences !== false) {
+      assertBevelReference(operation, geometryReferences);
       for (const objectId of operation.targetObjectIds) {
         if (!known.has(objectId))
           throw new Error(`3ds Max 操作 ${operation.id} 引用了尚未定义的对象 ${objectId}`);
@@ -239,10 +287,14 @@ function assertMaxProgram(program, options) {
       }
     }
     for (const objectId of operation.resultObjectIds) {
-      if (known.has(objectId)) throw new Error(`3ds Max 对象 ID 重复: ${objectId}`);
+      if (allocatedObjectIds.has(objectId)) throw new Error(`3ds Max 对象 ID 重复: ${objectId}`);
       known.add(objectId);
+      allocatedObjectIds.add(objectId);
     }
+    if (operation.kind === "delete_objects") for (const objectId of operation.targetObjectIds) known.delete(objectId);
+    geometryReferences = advanceGeometryReferences(geometryReferences, operation);
   }
+  annotateReplayAccuracy(program);
 }
 
 function assertSceneObject(object, label) {
@@ -255,7 +307,7 @@ function assertSceneObject(object, label) {
 function assertOperation(operation, label) {
   const kinds = new Set([
     "create_primitive", "select_objects", "transform", "add_modifier",
-    "set_parameters", "set_pivot", "clone_objects", "delete_objects", "convert_to_poly", "other"
+    "set_parameters", "set_pivot", "clone_objects", "delete_objects", "convert_to_poly", "bevel_faces", "other"
   ]);
   if (!operation || typeof operation.id !== "string" || !operation.id.trim())
     throw new Error(`${label}.id 无效`);
@@ -274,6 +326,8 @@ function assertOperation(operation, label) {
   assertStringArray(operation.sourceEventIds, `${label}.sourceEventIds`);
   assertStringArray(operation.sourceScreenshots, `${label}.sourceScreenshots`);
   assertConfidence(operation.confidence, `${label}.confidence`);
+  if (operation.kind === "bevel_faces") validatePolyEdit(operation);
+  else if (operation.polyEdit !== null) throw new Error(`${label}.polyEdit 仅适用于 bevel_faces`);
 
   if (operation.kind === "create_primitive" &&
     (!operation.className || operation.targetObjectIds.length !== 0 || operation.resultObjectIds.length !== 1))

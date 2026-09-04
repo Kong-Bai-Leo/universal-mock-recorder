@@ -5,6 +5,24 @@
   "tabOrder": 1,
   "blankSceneObservedControls": ["Object Name and Color", "Modifier List", "Modifier Stack toolbar"],
   "dynamicSections": ["Modifier Stack", "Selection", "Modifier Parameters", "Sub-object Levels"],
+  "subObjectOperations": [
+    {
+      "name": "Bevel",
+      "path": ["Modify", "Editable Poly", "Polygon", "Edit Polygons", "Bevel"],
+      "backendKind": "bevel_faces",
+      "requiredParameters": ["Height", "Outline", "Bevel Type"],
+      "parameterPolicy": "Prefer labeled Height/Outline. A declared reference_geometry_ratio approximation can supply missing lengths with full before/final evidence and a verified known dimension. Never treat cursor XYZ or raw drag pixels as lengths.",
+      "interactiveStages": ["drag for Height", "release and move for Outline", "left-click to confirm"],
+      "bevelTypes": { "Group": 0, "Local Normal": 1, "By Polygon": 2 },
+      "selectionPolicy": "Face IDs are logical children with a topology revision, never separate scene nodes. Verify local geometry or use an unambiguous local-axis extreme plane.",
+      "warning": "Editable Poly polygon Bevel is not the Bevel modifier. Bottom XYZ is not Height/Outline. Edit Poly modifier editing is not yet supported by this backend.",
+      "evidenceStatus": "official_documentation; not an exhaustive live control scan",
+      "sources": [
+        "https://help.autodesk.com/cloudhelp/2027/ENU/MAXScript-Help/files/3ds-Max-Objects-and-Interfaces/Editable-Meshes-Splines-Patches/Editable_Poly/GUID-0196A023-116F-47F8-99E9-AF3CB52F302C.html",
+        "https://help.autodesk.com/cloudhelp/2027/ENU/MAXScript-Help/files/3ds-Max-Objects-and-Interfaces/Editable-Meshes-Splines-Patches/Editable_Poly/GUID-90843EC5-AE3A-43EB-9406-A3631DAEADEF.html"
+      ]
+    }
+  ],
   "interactionModel": {
     "requiresSelection": true,
     "semanticFields": ["selectedObject", "modifierClass", "modifierStackIndex", "subObjectLevel", "parameterName", "parameterValue"],

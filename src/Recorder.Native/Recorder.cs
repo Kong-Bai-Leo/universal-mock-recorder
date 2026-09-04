@@ -1145,6 +1145,14 @@ namespace UniversalMockRecorder
                 return;
             }
 
+            if (IsThreeDsMaxPolyOperationDialog(input.Window))
+            {
+                AddTransformRegionPair(evidence, input.Id, "subobject_parameters", before, after, input.Window,
+                    0.0, 0.0, 1.0, 1.0);
+                if (evidence.Count > 0) input.TransformEvidence = evidence;
+                return;
+            }
+
             if (string.Equals(input.Button, "right", StringComparison.OrdinalIgnoreCase))
             {
                 if (input.Window.Width <= 900 && input.Window.Height <= 1200)
@@ -1164,15 +1172,22 @@ namespace UniversalMockRecorder
             AddTransformRegionPair(evidence, input.Id, "selected_object", before, after, input.Window,
                 0.84, 0.055, 0.16, 0.36);
             AddTransformRegionPair(evidence, input.Id, "transform_type_in", before, after, input.Window,
-                0.685, 0.94, 0.19, 0.055);
+                0.55, 0.91, 0.40, 0.085);
             AddTransformRegionPair(evidence, input.Id, "command_panel_context", before, after, input.Window,
                 0.90, 0.05, 0.10, 0.30);
             AddTransformRegionPair(evidence, input.Id, "command_panel_parameters", before, after, input.Window,
-                0.90, 0.27, 0.10, 0.27);
+                0.84, 0.20, 0.16, 0.70);
             if (IsThreeDsMaxViewportTransformDrag(input))
             {
                 AddPointerCenteredTransformRegionPair(evidence, input, "viewport_transform_overlay", before, after,
                     0.40, 0.36, 0.65);
+            }
+            if (IsThreeDsMaxViewportLeftRelease(input))
+            {
+                // A polygon Bevel is often two-stage: release height, then click
+                // to commit outline. Capture that click too, even without UIA.
+                AddPointerCenteredTransformRegionPair(evidence, input, "subobject_operation_context", before, after,
+                    0.40, 0.40, 0.35);
             }
             if (evidence.Count > 0) input.TransformEvidence = evidence;
         }
@@ -1191,6 +1206,7 @@ namespace UniversalMockRecorder
                 return false;
             if (input.Window.Width <= 0 || input.Window.Height <= 0) return false;
             if (IsThreeDsMaxCloneOptionsWindow(input.Window)) return true;
+            if (IsThreeDsMaxPolyOperationDialog(input.Window)) return true;
             if (string.Equals(input.Button, "right", StringComparison.OrdinalIgnoreCase)) return true;
             if (!string.Equals(input.Button, "left", StringComparison.OrdinalIgnoreCase)) return false;
 
@@ -1203,7 +1219,14 @@ namespace UniversalMockRecorder
             var primitiveCreationStep = _threeDsMaxPrimitiveCaptureStepsRemaining > 0 &&
                 IsThreeDsMaxViewportLeftRelease(input);
             return topTransformToolbar || bottomTransformTypeIn || commandPanelInteraction || viewportDrag ||
-                primitiveCreationStep;
+                primitiveCreationStep || IsThreeDsMaxViewportLeftRelease(input);
+        }
+
+        private static bool IsThreeDsMaxPolyOperationDialog(WindowInfo window)
+        {
+            if (window == null || window.Width > 1000 || window.Height > 1200) return false;
+            var title = window.Title ?? "";
+            return title.IndexOf("Bevel", StringComparison.OrdinalIgnoreCase) >= 0;
         }
 
         private void UpdateThreeDsMaxPrimitiveCaptureStateBefore(RawInputEvent input)

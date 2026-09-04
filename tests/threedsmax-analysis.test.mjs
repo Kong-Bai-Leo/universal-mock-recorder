@@ -319,10 +319,10 @@ test("3ds Max Harness 区分视口拖拽增量与右下角数值输入", () => {
     transformEvidence: evidence
   });
 
-  assert.equal(viewport.interactionState, "viewport_transform_drag");
+  assert.equal(viewport.interactionState, "viewport_drag_candidate");
   assert.equal(
     viewport.coordinateDisplayInterpretation,
-    "paired_before_after_values_resolve_absolute_or_offset"
+    "classify_tool_and_object_or_subobject_level_before_reading_xyz"
   );
   assert.equal(typeIn.interactionState, "coordinate_display_edit");
   assert.match(typeIn.coordinateDisplayInterpretation, /absolute_or_offset/);
@@ -402,7 +402,7 @@ test("3ds Max Harness 区分中键导航与 Shift 左键克隆变换", () => {
 
   assert.equal(navigation.interactionState, "viewport_navigation");
   assert.equal(navigation.coordinateDisplayInterpretation, "ignore_for_scene_object_transform");
-  assert.equal(clone.interactionState, "viewport_clone_transform_drag");
+  assert.equal(clone.interactionState, "viewport_shift_drag_candidate");
   assert.deepEqual(clone.modifierState, ["SHIFT"]);
   assert.deepEqual(clone.dragTransaction.deltaPixels, [100, 100]);
   assert.equal(clone.dragTransaction.transformTypeInPair.beforeScreenshot, "xyz-before.jpg");
@@ -646,14 +646,14 @@ test("3ds Max 证据覆盖校验拒绝丢失 Shift 拖拽复制位移", () => {
   );
 });
 
-test("3ds Max 证据覆盖校验拒绝省略已上传的精确拖拽", () => {
+test("3ds Max 证据覆盖校验要求先分类，不把已上传图片当作精确数值", () => {
   const input = analysis([]);
   input.omitted = [{
     sourceEventIds: ["evt-move"],
     reason: "存在持久拖拽变化，但无法安全确定完整精确变换值。",
     confidence: 0.7
   }];
-  const payload = { actions: [{
+  const payload = { evidencePolicyVersion: 2, actions: [{
     action: "drag", button: "left", sourceEventIds: ["evt-move"],
     visualChange: { changed: true },
     transformHarness: {
@@ -664,10 +664,17 @@ test("3ds Max 证据覆盖校验拒绝省略已上传的精确拖拽", () => {
 
   assert.throws(
     () => assertThreeDsMaxEvidenceCoverage(input, payload),
-    /未生成对应变换/
+    /dragAssessments/
   );
   input.omitted[0].reason = "Transform Type-In after 为空字段，这是多选框选而非对象变换。";
+  input.dragAssessments = [{
+    sourceEventIds: ["evt-move"], category: "unresolved", selectionLevel: "unknown",
+    activeTool: null, coordinateMeaning: "unknown", displayMode: "unknown",
+    numericReadability: "unreadable", persistentChange: null, evidenceScreenshots: [],
+    reason: "模式按钮被遮挡，无法确定这组数值的含义"
+  }];
   assert.doesNotThrow(() => assertThreeDsMaxEvidenceCoverage(input, payload));
+  assert.equal(input.maxProgram.complete, false);
 });
 
 test("3ds Max 精确数值拖拽不允许以低置信猜测降级通过", () => {

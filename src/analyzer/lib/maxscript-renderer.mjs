@@ -1,4 +1,6 @@
 import { validateThreeDsMaxAnalysis } from "./threedsmax-workflow.mjs";
+import { renderPolyBevel } from "./threedsmax-poly-edit.mjs";
+import { FACE_CATALOG_MAXSCRIPT } from "./threedsmax-face-catalog.mjs";
 
 const PRIMITIVE_CLASSES = new Map([
   ["box", "Box"], ["cone", "Cone"], ["sphere", "Sphere"],
@@ -32,7 +34,9 @@ export function renderMaxScript(analysis, options = {}) {
   const program = normalized.maxProgram;
   const variableByObjectId = new Map();
   const latestModifierByObjectId = new Map();
-  const rendererState = { modifierCounter: 0 };
+  const rendererState = { modifierCounter: 0, topologyVersions: new Map(), geometryOwners: new Map() };
+  const usesFaceCatalog = program.operations.some((op) => ["convert_to_poly", "bevel_faces"].includes(op.kind));
+  rendererState.usesFaceCatalog = usesFaceCatalog;
   const skipped = [];
   const body = [];
 
@@ -43,6 +47,7 @@ export function renderMaxScript(analysis, options = {}) {
   body.push("");
   body.push("undo \"Universal Mock Recorder replay\" on");
   body.push("(");
+  if (usesFaceCatalog) body.push(...FACE_CATALOG_MAXSCRIPT);
   body.push("  disableSceneRedraw()");
   body.push("  try");
   body.push("  (");
@@ -50,9 +55,12 @@ export function renderMaxScript(analysis, options = {}) {
   for (const object of program.initialObjects) {
     const variable = objectVariable(variableByObjectId.size + 1);
     variableByObjectId.set(object.id, variable);
+    rendererState.topologyVersions.set(object.id, 0);
+    rendererState.geometryOwners.set(object.id, object.id);
     if (object.name) {
       body.push(`    local ${variable} = getNodeByName ${maxString(object.name)} exact:true`);
       body.push(`    if ${variable} == undefined do throw ${maxString(`Required scene object not found: ${object.name}`)}`);
+      if (usesFaceCatalog) body.push(`    if classOf ${variable}.baseObject == Editable_Poly do umrRecordFaces UMRFaceCatalogs ${variable} ${maxString(object.id)} 0`);
     } else {
       body.push(`    local ${variable} = undefined -- ${sanitizeComment(object.id)} has no reliable scene name`);
     }
@@ -93,6 +101,7 @@ export function renderMaxScript(analysis, options = {}) {
     script: body.join("\n"),
     skipped,
     partial: program.complete !== true || skipped.length > 0,
+    approximate: program.containsEstimates === true,
     renderedOperationCount: program.operations.length - skipped.length
   };
 }
@@ -106,6 +115,7 @@ function renderOperation(operation, context) {
       const objectId = operation.resultObjectIds[0];
       const variable = objectVariable(variableByObjectId.size + 1);
       variableByObjectId.set(objectId, variable);
+      rendererState.geometryOwners.set(objectId, objectId);
       body.push(`    local ${variable} = ${className}()`);
       if (operation.objectName) body.push(`    ${variable}.name = ${maxString(operation.objectName)}`);
       renderParameters(body, variable, operation.parameters);
@@ -175,7 +185,11 @@ function renderOperation(operation, context) {
         const result = objectVariable(variableByObjectId.size + 1);
         variableByObjectId.set(resultId, result);
         clonedVariables.push(result);
+        rendererState.topologyVersions.set(resultId, 0);
+        rendererState.geometryOwners.set(resultId, cloneType === "copy" ? resultId : rendererState.geometryOwners.get(sourceId) ?? sourceId);
         body.push(`    local ${result} = ${cloneCommand} ${source}`);
+        // A clone owns its own logical face namespace, even for an instance.
+        if (rendererState.usesFaceCatalog) body.push(`    if classOf ${result}.baseObject == Editable_Poly do umrRecordFaces UMRFaceCatalogs ${result} ${maxString(resultId)} 0`);
         if (operation.objectName && operation.resultObjectIds.length === 1)
           body.push(`    ${result}.name = ${maxString(operation.objectName)}`);
       });
@@ -184,11 +198,38 @@ function renderOperation(operation, context) {
     }
     case "delete_objects": {
       body.push(`    delete ${nodeArray(resolveTargets(operation, variableByObjectId))}`);
+      if (rendererState.usesFaceCatalog) body.push("    UMRFaceCatalogs = for entry in UMRFaceCatalogs where isValidNode entry[2] collect entry");
+      for (const objectId of operation.targetObjectIds) {
+        rendererState.topologyVersions.delete(objectId);
+        rendererState.geometryOwners.delete(objectId);
+      }
       break;
     }
     case "convert_to_poly": {
-      for (const variable of resolveTargets(operation, variableByObjectId))
+      for (const objectId of operation.targetObjectIds) {
+        const variable = requireObjectVariable(variableByObjectId, objectId);
         body.push(`    convertToPoly ${variable}`);
+        const revision = (rendererState.topologyVersions.get(objectId) ?? 0) + 1;
+        rendererState.topologyVersions.set(objectId, revision);
+        body.push(`    umrRecordFaces UMRFaceCatalogs ${variable} ${maxString(objectId)} ${revision}`);
+      }
+      break;
+    }
+    case "bevel_faces": {
+      const objectId = operation.targetObjectIds[0];
+      const revision = rendererState.topologyVersions.get(objectId) ?? 0;
+      const expected = operation.polyEdit.selection.topologyRevision;
+      if (expected !== null && expected !== revision) throw new Error(`stale face topology revision: expected ${expected}, current ${revision}`);
+      const variable = requireObjectVariable(variableByObjectId, objectId);
+      if (expected !== null) {
+        body.push(`    if (findItem (for entry in UMRFaceCatalogs where entry[1] == ${maxString(objectId)} collect entry[3]) ${expected}) == 0 do throw "Stale runtime face catalog revision"`);
+      }
+      body.push(...renderPolyBevel(operation, variable));
+      for (const [id, owner] of rendererState.geometryOwners) {
+        if (id === objectId || owner === rendererState.geometryOwners.get(objectId))
+          rendererState.topologyVersions.set(id, (rendererState.topologyVersions.get(id) ?? 0) + 1);
+      }
+      body.push(`    umrRefreshFaces UMRFaceCatalogs ${variable}`);
       break;
     }
     case "other":

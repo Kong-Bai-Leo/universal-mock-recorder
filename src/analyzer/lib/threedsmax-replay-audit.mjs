@@ -1,3 +1,6 @@
+import { validatePolyEdit } from "./threedsmax-poly-edit.mjs";
+import { annotateReplayAccuracy } from "./threedsmax-approximation.mjs";
+
 export function auditThreeDsMaxReplayCompleteness(input) {
   const analysis = JSON.parse(JSON.stringify(input));
   const warnings = new Set(analysis.maxProgram?.warnings ?? []);
@@ -18,13 +21,32 @@ export function auditThreeDsMaxReplayCompleteness(input) {
 
   if (incomplete) analysis.maxProgram.complete = false;
   analysis.maxProgram.warnings = [...warnings];
+  annotateReplayAccuracy(analysis.maxProgram);
   return analysis;
 }
 
 export function assertThreeDsMaxEvidenceCoverage(analysis, payload) {
   const actions = payload?.actions ?? [];
   assertQuickAlignCoverage(analysis, actions);
-  assertUploadedNumericDragCoverage(analysis, actions);
+  assertDragInterpretations(analysis, payload);
+  const suppliedActions = [...(payload?.previousContext?.rawActionTail ?? []), ...actions];
+  for (const operation of analysis?.maxProgram?.operations ?? []) {
+    if (operation.kind !== "bevel_faces") continue;
+    validatePolyEdit(operation);
+    const related = suppliedActions.filter((action) => intersects(operation.sourceEventIds, action.sourceEventIds ?? []));
+    const imageRoles = new Map();
+    for (const action of related) {
+      for (const name of [action.screenshotBefore, action.screenshotAfter, action.screenshotSelection].filter(Boolean)) imageRoles.set(name, "full_frame");
+      for (const item of action.transformEvidence ?? []) if (item.uploadedEvidence) imageRoles.set(item.screenshot, item.kind);
+    }
+    for (const role of ["selection", "parameters", "completion"]) {
+      if (operation.polyEdit.evidence[role].some((name) => !imageRoles.has(name)))
+        throw new Error(`${operation.id}: Bevel ${role} 引用了未上传或无关联事件的截图`);
+    }
+    if (operation.polyEdit.evidence.parameters.every((name) => imageRoles.get(name) === "transform_type_in"))
+      throw new Error(`${operation.id}: Bevel 的 Height/Outline 不能从整体 XYZ 字段读取`);
+    if (operation.polyEdit.approximation) assertApproximationImages(operation, suppliedActions, imageRoles);
+  }
   for (const operation of analysis?.maxProgram?.operations ?? []) {
     const relatedActions = actions.filter((action) => intersects(
       operation.sourceEventIds ?? [],
@@ -75,34 +97,92 @@ export function assertThreeDsMaxEvidenceCoverage(analysis, payload) {
       );
     }
   }
+  annotateReplayAccuracy(analysis.maxProgram);
   return analysis;
 }
 
-function assertUploadedNumericDragCoverage(analysis, actions) {
-  const operations = analysis?.maxProgram?.operations ?? [];
-  const omitted = analysis?.omitted ?? [];
-  const failures = [];
-  for (const action of actions) {
-    const state = action.transformHarness?.interactionState;
-    const pair = action.transformHarness?.dragTransaction?.transformTypeInPair;
-    if (!pair?.uploadedEvidence || ![
-      "viewport_transform_drag",
-      "viewport_clone_transform_drag"
-    ].includes(state) || action.visualChange?.changed !== true) continue;
-
-    const sourceIds = action.sourceEventIds ?? [];
-    if (operations.some((operation) => intersects(operation.sourceEventIds ?? [], sourceIds))) continue;
-    const omission = omitted.find((item) => intersects(item.sourceEventIds ?? [], sourceIds));
-    const reason = String(omission?.reason ?? "");
-    if (/\bblank\b|\bmultiple\b|\bselection\b|\bunchanged\b|空字段|多选|框选|选择框|未发生|未改变|数值相同/i.test(reason)) continue;
-
-    failures.push(sourceIds.join(",") || "未知");
+function assertApproximationImages(operation, actions, imageRoles) {
+  const evidence = operation.polyEdit.evidence;
+  // Crops alone cannot establish perspective, unchanged scale, or the complete
+  // two-stage edit. Require actual uploaded full frames from both ends.
+  const before = actions.filter((a) => evidence.selection.includes(a.screenshotBefore) && imageRoles.get(a.screenshotBefore) === "full_frame");
+  const after = actions.filter((a) => evidence.completion.includes(a.screenshotAfter) && imageRoles.get(a.screenshotAfter) === "full_frame");
+  const pair = before.flatMap((a) => after.map((b) => [a,b])).find(([a,b]) =>
+    a.screenshotBefore !== b.screenshotAfter && Number.isFinite(a.startMs) && Number.isFinite(b.endMs) && a.startMs < b.endMs &&
+    evidence.parameters.includes(a.screenshotBefore) && evidence.parameters.includes(b.screenshotAfter));
+  if (!pair) throw new Error(`${operation.id}: Bevel 视觉估算需要按时间配对的完整选面前图和完成后图，并同时作为比例依据`);
+  const [start, end] = pair;
+  if (start.window && end.window && ["width", "height", "x", "y", "processId"].some((key) => start.window[key] !== end.window[key]))
+    throw new Error(`${operation.id}: Bevel 视觉估算前后窗口或画布尺度发生变化，需要重新建立参照`);
+  if (actions.some((a) => a.startMs > start.startMs && a.startMs < end.endMs &&
+      (a.action === "scroll" || a.action === "drag" && ["middle", "right"].includes(a.button))))
+    throw new Error(`${operation.id}: Bevel 视觉估算前后存在视口导航，不能沿用旧的比例`);
+  for (const a of actions.filter((a) => intersects(a.sourceEventIds ?? [], operation.sourceEventIds) && a.interactiveContinuation)) {
+    const confirmation = actions.find((b) => intersects(b.sourceEventIds ?? [], a.interactiveContinuation.completionEventIds));
+    if (!confirmation || !intersects(confirmation.sourceEventIds ?? [], operation.sourceEventIds) ||
+        end.endMs < confirmation.endMs)
+      throw new Error(`${operation.id}: Bevel 视觉估算缺少松开后移动及最终确认阶段，不能将第一阶段预览当成完成`);
   }
-  if (failures.length > 0) throw new Error(
-    `以下拖拽事务已上传各自的 Transform Type-In before/after 数值对且画面发生持久变化，但未生成对应变换：${failures.join(" ；")}。` +
-    "必须在同一轮修复中逐项按当前工具读取每对图的 XYZ，不得以目标或数值无法确定为由省略；" +
-    "只有图中明确为空字段、多选/框选或数值未变时，才可在 omitted.reason 中具体说明后省略。"
-  );
+}
+
+function assertDragInterpretations(analysis, payload) {
+  const actions = payload?.actions ?? [];
+  const operations = analysis?.maxProgram?.operations ?? [];
+  const assessments = analysis.dragAssessments ?? [];
+  const currentIds = new Set(actions.flatMap((action) => action.sourceEventIds ?? []));
+  const contextIds = new Set((payload?.previousContext?.rawActionTail ?? []).flatMap((action) => action.sourceEventIds ?? []));
+  for (const assessment of assessments) {
+    if (assessment.sourceEventIds.some((id) => !currentIds.has(id) && !contextIds.has(id)))
+      throw new Error(`dragAssessments 引用了未提供的事件：${assessment.sourceEventIds.join(",")}`);
+  }
+  for (const action of actions) {
+    if (action.action !== "drag" || action.button !== "left") continue;
+    const sourceIds = action.sourceEventIds ?? [];
+    const matches = assessments.filter((item) => intersects(item.sourceEventIds, sourceIds));
+    if (matches.length === 0 && payload.evidencePolicyVersion !== 2) continue;
+    if (matches.length !== 1) throw new Error(`拖拽 ${sourceIds.join(",")} 必须有且仅有一项 dragAssessments，先判断工具及对象/子对象层级，不得强制猜测变换。`);
+    const assessment = matches[0];
+    const related = operations.filter((op) => intersects(op.sourceEventIds ?? [], sourceIds));
+    const transformOps = related.filter((op) => ["transform", "clone_objects", "set_pivot"].includes(op.kind));
+    const bevelOps = related.filter((op) => op.kind === "bevel_faces");
+    if (bevelOps.length && (assessment.category !== "subobject_edit" || assessment.selectionLevel !== "subobject" ||
+      !/bevel/i.test(assessment.activeTool ?? "") || assessment.persistentChange !== true))
+      throw new Error(`拖拽 ${sourceIds.join(",")} 的 Bevel 与工具、子对象层级或完成状态不一致`);
+    const uploaded = new Set([
+      action.screenshotBefore, action.screenshotAfter, action.screenshotSelection,
+      ...(action.transformEvidence ?? []).filter((item) => item.uploadedEvidence).map((item) => item.screenshot)
+    ].filter(Boolean));
+    if (assessment.evidenceScreenshots.some((name) => !uploaded.has(name)))
+      throw new Error(`拖拽 ${sourceIds.join(",")} 引用了不属于本动作或未上传的截图`);
+    const isTransform = ["object_transform", "clone_transform"].includes(assessment.category);
+    const toolMatches = ({ position: /\bmove\b/i, rotation: /\brotate\b/i, scale: /\bscale\b/i })[assessment.coordinateMeaning]
+      ?.test(assessment.activeTool ?? "");
+    const supportedTransform = isTransform && assessment.selectionLevel === "object" &&
+      ["position", "rotation", "scale"].includes(assessment.coordinateMeaning) &&
+      ["absolute", "offset"].includes(assessment.displayMode) &&
+      assessment.numericReadability === "readable" && toolMatches &&
+      assessment.evidenceScreenshots.length > 0;
+    if (transformOps.length > 0 && !supportedTransform)
+      throw new Error(`拖拽 ${sourceIds.join(",")} 的工具、选择层级或数值含义不支持整体变换；不得把子对象编辑/游标 XYZ 编译为 transform。`);
+    for (const op of transformOps) {
+      const expectedField = { position: "position", rotation: "rotationEulerDegrees", scale: "scalePercent" }[assessment.coordinateMeaning];
+      if (["position", "rotationEulerDegrees", "scalePercent"].some((field) => field !== expectedField && Array.isArray(op.transform?.[field])))
+        throw new Error(`拖拽 ${sourceIds.join(",")} 的 XYZ 数值含义与输出变换字段不一致`);
+      if (assessment.category === "clone_transform" && op.kind !== "clone_objects")
+        throw new Error(`拖拽 ${sourceIds.join(",")} 是复制，不能只变换原对象`);
+    }
+    if (supportedTransform && assessment.persistentChange === true &&
+      !transformOps.some((op) => hasTransformValue(op.transform)))
+      throw new Error(`拖拽 ${sourceIds.join(",")} 已明确识别可读的整体变换，但未生成对应变换。`);
+    if (assessment.category === "subobject_edit" && bevelOps.length === 0 || assessment.category === "unresolved" ||
+      isTransform && !supportedTransform) {
+      analysis.maxProgram.complete = false;
+      const warning = `拖拽 ${sourceIds.join(",")}：${assessment.reason}（未恢复的场景变化，非完整回放）`;
+      if (!analysis.maxProgram.warnings.includes(warning)) analysis.maxProgram.warnings.push(warning);
+    }
+    if (["selection", "navigation", "no_change"].includes(assessment.category) && assessment.persistentChange === true)
+      throw new Error(`拖拽 ${sourceIds.join(",")} 同时声明无几何贡献和持久场景变化，请复核前后图。`);
+  }
 }
 
 function assertQuickAlignCoverage(analysis, actions) {

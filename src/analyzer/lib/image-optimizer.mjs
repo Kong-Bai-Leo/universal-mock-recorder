@@ -54,7 +54,7 @@ export async function optimizeScreenshots(screenshots, outputDirectory, options 
       lossless: optimizedItem.lossless === true,
       jpegQuality: optimizedItem.jpegQuality
     };
-    if (Number.isFinite(item.crop?.centerX) && Number.isFinite(item.crop?.centerY)) {
+    if (item.cropIsRegion !== true && Number.isFinite(item.crop?.centerX) && Number.isFinite(item.crop?.centerY)) {
       imageMapping.clickInSource = {
         x: item.crop.centerX,
         y: item.crop.centerY

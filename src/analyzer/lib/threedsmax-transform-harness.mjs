@@ -25,11 +25,11 @@ export function buildThreeDsMaxTransformHarness(action) {
     interactionState = "viewport_navigation";
     coordinateDisplayInterpretation = "ignore_for_scene_object_transform";
   } else if (isCloneTransform) {
-    interactionState = "viewport_clone_transform_drag";
-    coordinateDisplayInterpretation = "paired_before_after_values_resolve_absolute_or_offset_for_new_clone";
+    interactionState = "viewport_shift_drag_candidate";
+    coordinateDisplayInterpretation = "confirm_clone_dialog_and_object_level_before_reading_transform";
   } else if (isViewportDrag) {
-    interactionState = "viewport_transform_drag";
-    coordinateDisplayInterpretation = "paired_before_after_values_resolve_absolute_or_offset";
+    interactionState = "viewport_drag_candidate";
+    coordinateDisplayInterpretation = "classify_tool_and_object_or_subobject_level_before_reading_xyz";
   } else if (isCoordinateDisplayInteraction) {
     interactionState = "coordinate_display_edit";
     coordinateDisplayInterpretation = "typed_value_absolute_or_offset_requires_toggle_state";
@@ -57,8 +57,12 @@ export function buildThreeDsMaxTransformHarness(action) {
     interactionMode: transformContext?.interactionMode ?? "unknown",
     dragTransaction,
     coordinateDisplayCapture: {
-      beforeTiming: action.action === "drag" ? "immediately_before_mouse_down" : "action_before",
-      afterTiming: action.action === "drag" ? "after_mouse_up_settled" : "action_after",
+      beforeTiming: "verify_capture_timestamps_not_phase_label",
+      afterTiming: "after_event_not_proof_of_settled_geometry",
+      beforeTimestampMs: action.screenshotBeforeTimestampMs ?? null,
+      afterTimestampMs: action.screenshotAfterTimestampMs ?? null,
+      inputStartMs: action.startMs ?? null,
+      inputEndMs: action.endMs ?? null,
       duringDragReadoutCaptured: false,
       semanticGate: "single_selected_object_and_confirmed_transform_tool_required",
       idleWithoutSelection: "cursor_absolute_world_coordinates",
@@ -68,12 +72,12 @@ export function buildThreeDsMaxTransformHarness(action) {
         rotate: "rotation_degrees",
         scale: "scale_percent"
       },
-      modeEvidence: "absolute_offset_button_is_visible_left_of_xyz_in_uploaded_crop"
+      modeEvidence: "must_visually_verify_toggle_and_labels_are_not_cropped"
     },
     evidenceKinds: [...new Set(evidence.map((item) => item.kind).filter(Boolean))],
     requiredVisualChecks: [
       "active_move_rotate_scale_tool",
-      "single_selected_object_or_subobject",
+      "object_vs_vertex_edge_polygon_element_selection_level",
       "absolute_or_offset_toggle",
       "xyz_field_labels_and_values",
       ...(isQuickAlignShortcut ? [
@@ -106,6 +110,8 @@ export function annotateThreeDsMaxTransformContexts(actions) {
         confidence: directTool.confidence,
         interactionMode: "object_transform"
       };
+    } else if (/\b(Bevel|Extrude|Inset|Chamfer|Editable Poly|Edit Polygons|Polygon|Vertex|Edge|Element)\b/i.test(targetText(action.target))) {
+      state = { activeTool: null, source: "subobject_control_candidate", confidence: 0.8, interactionMode: "subobject_edit_candidate" };
     } else if (isPrimitiveCreationTarget(action)) {
       state = {
         activeTool: null,
@@ -113,6 +119,11 @@ export function annotateThreeDsMaxTransformContexts(actions) {
         confidence: 0.96,
         interactionMode: "primitive_creation"
       };
+    } else if (["click", "double_click", "right_click"].includes(action.action) ||
+      action.action === "press_key" && /^(ESCAPE|ESC)$/i.test(action.key ?? "")) {
+      // A toolbar/panel click can change tools even with UIA disabled. Do not
+      // propagate an old W/E/R forever and present it as current visual truth.
+      state = { activeTool: null, source: "requires_visual_reconfirmation", confidence: 0, interactionMode: "unknown" };
     }
     action.threeDsMaxTransformContext = { ...state };
   }
@@ -149,10 +160,10 @@ function buildDragTransaction(action, evidence) {
         absoluteMode: "finalXYZ=afterXYZ; deltaXYZ=afterXYZ-beforeXYZ",
         offsetMode: "completed_drag_afterXYZ_may_reset_to_zero; do_not_treat_it_as_final_or_delta_without_an_in_drag_overlay_or_explicit_typed_value",
         modeResolution: "read_absolute_or_offset_toggle_visible_to_the_left_of_xyz_in_the_same_before_after_crops",
-        captureTiming: "the_pair_is_outside_the_live_drag: before_mouse_down_and_after_mouse_up_settled"
+        captureTiming: "phase_labels_are_not_timestamp_guarantees; verify_action_capture_timestamps"
       }
     } : null,
-    pixelUse: "direction_and_sanity_check_only_unless_no_labeled_numeric_evidence_exists"
+    pixelUse: "screen_direction_only; never_convert_to_3d_distance_without_calibrated_projection"
   };
 }
 
@@ -184,7 +195,7 @@ function transformShortcut(text) {
 function detectTransformTool(action) {
   if (action?.action === "type_text" && !hasBlockingModifier(action.modifiers)) {
     const shortcut = transformShortcut(action.text);
-    if (shortcut) return { tool: shortcut, source: `keyboard_${String(action.text).toUpperCase()}`, confidence: 1 };
+    if (shortcut) return { tool: shortcut, source: `keyboard_${String(action.text).toUpperCase()}`, confidence: 0.6 };
   }
   const searchable = targetText(action?.target);
   if (/Select\s+and\s+Move|\bSelectAndMove\b/i.test(searchable))
@@ -217,6 +228,7 @@ function hasBlockingModifier(modifiers) {
 }
 
 function finite(value) {
+  if (value === null || value === undefined || value === "") return null;
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
 }
