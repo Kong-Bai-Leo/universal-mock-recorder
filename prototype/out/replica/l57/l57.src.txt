@@ -1,0 +1,54 @@
+FILEDIA 0
+CMDDIA 0
+OSMODE 0
+MTEXTED .
+ATTDIA 0
+; ---- 文字样式: 视频 780s/900s 特性面板显示 引线文字 样式 = 瘦黑体 ----
+_.STYLE 瘦黑体 txt.shx,gbcbig.shx 0 1 0 _N _N _N
+; ---- 标注样式 工业 (视频 60% 帧 注释选项卡 / 917s 特性面板: 标注样式=工业) ----
+DIMTXSTY 瘦黑体
+DIMTXT 50
+DIMCLRT 3
+DIMASZ 5
+DIMLDRBLK .
+DIMSCALE 1
+_.-DIMSTYLE _S 工业 _Y
+
+_.ZOOM _W 500,150 1400,1000
+; ================= 引线 1: 视频 252.0-266.9s =================
+; 三点 + 文字宽度 0 + 注释文字 "asfas\"
+; 830s 特性面板: 箭头 = 实心方框, 箭头大小 = 10
+DIMASZ 10
+DIMLDRBLK _BOXFILLED
+_.QLEADER
+620,720
+620,497
+825,497
+0
+asfas\\
+X
+; ================= 引线 2: 视频 407.0-437.8s =================
+; 三点 + 文字宽度 0 + 注释文字 "这是个圆形"
+DIMASZ 5
+DIMLDRBLK .
+_.QLEADER
+823,808
+1090,810
+1190,890
+0
+这是个圆形
+X
+; ================= 引线 3: 视频 862.6-887.0s =================
+; 三点 + 文字宽度 0 + 三行注释文字
+_.QLEADER
+825,706
+850,636
+925,636
+0
+asfasf
+asfasfasf
+asdfgafsa
+X
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l57/l57.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/l57/l57.dxf 16

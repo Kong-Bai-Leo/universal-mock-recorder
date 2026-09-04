@@ -1,0 +1,39 @@
+FILEDIA 0
+OSMODE 0
+CMDECHO 1
+_.RECTANG 0,0
+100,60
+_.LINE 0,0
+60,-40
+
+_.ZOOM _E
+_.ZOOM 0.6x
+DIMTXT 3.5
+DIMASZ 3.5
+DIMEXE 1.25
+DIMEXO 0.625
+_.-DIMSTYLE _S DS1
+_.DIMLINEAR
+0,0
+50,0
+0,-15
+_.DIMCONTINUE
+100,0
+
+
+_.DIMANGULAR
+30,0
+30,-20
+45,-8
+_.QDIM
+0,0
+100,0
+
+0,-50
+_.-TEXT _J _BL 0,80
+5
+0
+DIA %%c50 ANG %%d45 PM %%p0.5
+_.ZOOM _E
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/ltest42/ltest42.dxf 16
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/ltest42/ltest42.dwg

@@ -1,0 +1,22 @@
+FILEDIA 0
+OSMODE 0
+_.RECTANG 0,0 100,100
+_.EXTRUDE _L
+
+100
+_.PLINE 25,0 25,55 _A _S 50,80 75,55 _L 75,0 _CL
+_.EXTRUDE _L
+
+100
+_.ZOOM _E
+_.SUBTRACT _ALL _R _L
+
+_L
+
+_.ROTATE3D _ALL
+
+_X 0,0,0
+90
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l123/arch_door.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l123/arch_door.dxf 16

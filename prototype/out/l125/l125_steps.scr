@@ -1,0 +1,58 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+_.ZOOM _W -40,-40 120,80
+_.XLINE _V 0,0
+
+_.XLINE _H 0,0
+
+_.OFFSET 35
+0,20
+10,20
+
+_.OFFSET 30
+20,0
+20,10
+
+_.OFFSET 50
+0,20
+10,20
+
+_.RECTANG 0,0 50,30
+_.FILLET _R 15
+_.FILLET 50,15 35,30
+_.PLINE 50,0 80,0 80,30 70,30 70,10 50,10 _CL
+_.PLINE 20,0 20,-20 50,-20 50,0 _CL
+_.ERASE
+0,60
+-20,0
+35,60
+-20,30
+50,60
+
+_.EXTRUDE
+0,15
+
+70
+_.EXTRUDE
+80,15
+
+50
+_.EXTRUDE
+35,-20
+
+20
+_.UNION
+0,15
+80,15
+
+_.UNION
+0,15
+35,-20
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l125/l125_steps.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l125/l125_steps.dxf 16
+

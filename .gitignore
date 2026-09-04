@@ -33,3 +33,10 @@ prototype/out/replica/_probe*/
 prototype/out/replica/_t*/
 prototype/out/replica/_wk/
 prototype/ErrorReports/
+
+# 回放日志与错误输出(逐课 log.txt / .err)不入库
+prototype/out/**/log.txt
+prototype/out/**/*.err
+prototype/out/**/probe_err.txt
+prototype/out/**/probe_out.txt
+prototype/out/**/probe_stdout.txt

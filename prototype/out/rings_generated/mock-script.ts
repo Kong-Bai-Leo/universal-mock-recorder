@@ -1,0 +1,1120 @@
+// 此文件由 Universal Mock Recorder 自动生成。
+// 脚本按语义识别Mock中的等价控件，不依赖录制时的绝对坐标。
+import { createMockAgent } from "@mock/runtime";
+
+export const workflow = {
+  "summary": "在 AutoCAD 中绘制奥运五环样式图形: 顶排三个圆用“两点(2P)”方式各以直径 20000 相切排列,底排两个圆用“相切,相切,半径(TTR)”方式与相邻顶圆相切、半径 10000。",
+  "steps": [
+    {
+      "id": "step-001",
+      "goal": "打开圆工具下拉菜单(准备画圆1)",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.dropdown",
+        "role": "button",
+        "textCandidates": [
+          "圆",
+          "Circle"
+        ],
+        "visualDescription": "功能区“默认”选项卡绘图面板中的圆工具按钮下拉箭头",
+        "expectedRegion": "ribbon.draw-panel",
+        "relativePositionFallback": [
+          0.0531,
+          0.1083
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "两点",
+          "三点",
+          "圆心, 半径"
+        ],
+        "visualDescription": "下拉菜单展开显示画圆方式列表",
+        "stateChange": "菜单展开"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "view",
+        "objectDescription": "圆工具下拉菜单展开,列出六种画圆方式",
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0163",
+        "act-0536",
+        "act-0537"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-002",
+      "goal": "选择“两点”画圆方式",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.two-point",
+        "role": "menu_item",
+        "textCandidates": [
+          "两点",
+          "2-Point",
+          "2P"
+        ],
+        "visualDescription": "圆下拉菜单中的“两点”项(图标为过直径两端点的圆)",
+        "expectedRegion": "ribbon.circle-dropdown-menu",
+        "relativePositionFallback": [
+          0.0742,
+          0.15
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第一个端点",
+          "_2p"
+        ],
+        "visualDescription": "命令行出现 _circle _2p 提示,光标变为拾取状态",
+        "stateChange": "CIRCLE 2P 命令激活"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0163",
+        "act-0536",
+        "act-0537"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-003",
+      "goal": "拾取圆1直径的第一个端点",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.free-point",
+        "role": "canvas_position",
+        "textCandidates": [],
+        "visualDescription": "画布空白区域中部偏左,作为首圆直径左端点",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.5844,
+          0.5111
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "橡皮筋圆预览随光标出现,动态输入框等待第二端点",
+        "stateChange": "第一端点已确定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0164",
+        "act-0538"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-004",
+      "goal": "沿正右方向输入直径距离 20000",
+      "action": "type_text",
+      "target": {
+        "semanticFunction": "dynamic-input.distance",
+        "role": "input",
+        "textCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "光标旁动态输入距离框(光标须位于第一端点正右方以确定方向)",
+        "expectedRegion": "canvas.dynamic-input",
+        "relativePositionFallback": null
+      },
+      "gesture": {
+        "fromRelative": [
+          0.5844,
+          0.5111
+        ],
+        "toRelative": [
+          0.6625,
+          0.5111
+        ],
+        "pathRelative": []
+      },
+      "value": "20000",
+      "expectedState": {
+        "visibleTextCandidates": [
+          "20000"
+        ],
+        "visualDescription": "动态输入框显示 20000",
+        "stateChange": "直径距离待确认"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0165",
+        "act-0539"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-005",
+      "goal": "确认直径,生成圆1",
+      "action": "press_key",
+      "target": null,
+      "gesture": null,
+      "value": "ENTER",
+      "expectedState": {
+        "visibleTextCandidates": [],
+        "visualDescription": "画布出现圆1,与前一圆相切(首圆除外)",
+        "stateChange": "圆1已创建"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create",
+        "objectDescription": "圆1: 直径 20000(半径 10000)的圆,顶排从左向右第 1 个,与左邻圆外切",
+        "beforeScreenshot": null,
+        "afterScreenshot": "slices/act-0539_after.jpg",
+        "changedRegionRelative": null,
+        "measurements": [
+          {
+            "name": "diameter",
+            "value": 20000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          },
+          {
+            "name": "radius",
+            "value": 10000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          }
+        ]
+      },
+      "sourceEventIds": [
+        "in-0165",
+        "act-0539"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-006",
+      "goal": "打开圆工具下拉菜单(准备画圆2)",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.dropdown",
+        "role": "button",
+        "textCandidates": [
+          "圆",
+          "Circle"
+        ],
+        "visualDescription": "功能区“默认”选项卡绘图面板中的圆工具按钮下拉箭头",
+        "expectedRegion": "ribbon.draw-panel",
+        "relativePositionFallback": [
+          0.0531,
+          0.1083
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "两点",
+          "三点",
+          "圆心, 半径"
+        ],
+        "visualDescription": "下拉菜单展开显示画圆方式列表",
+        "stateChange": "菜单展开"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "view",
+        "objectDescription": "圆工具下拉菜单展开,列出六种画圆方式",
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0166",
+        "act-0546",
+        "act-0547"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-007",
+      "goal": "选择“两点”画圆方式",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.two-point",
+        "role": "menu_item",
+        "textCandidates": [
+          "两点",
+          "2-Point",
+          "2P"
+        ],
+        "visualDescription": "圆下拉菜单中的“两点”项(图标为过直径两端点的圆)",
+        "expectedRegion": "ribbon.circle-dropdown-menu",
+        "relativePositionFallback": [
+          0.0742,
+          0.15
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第一个端点",
+          "_2p"
+        ],
+        "visualDescription": "命令行出现 _circle _2p 提示,光标变为拾取状态",
+        "stateChange": "CIRCLE 2P 命令激活"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0166",
+        "act-0546",
+        "act-0547"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-008",
+      "goal": "拾取圆2直径的第一个端点",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.osnap-quadrant",
+        "role": "canvas_position",
+        "textCandidates": [
+          "象限点",
+          "切点"
+        ],
+        "visualDescription": "圆1的最右点(对象捕捉标记),作为圆2直径左端点以保证相切",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.5398,
+          0.5361
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "橡皮筋圆预览随光标出现,动态输入框等待第二端点",
+        "stateChange": "第一端点已确定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0167",
+        "act-0548"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-009",
+      "goal": "沿正右方向输入直径距离 20000",
+      "action": "type_text",
+      "target": {
+        "semanticFunction": "dynamic-input.distance",
+        "role": "input",
+        "textCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "光标旁动态输入距离框(光标须位于第一端点正右方以确定方向)",
+        "expectedRegion": "canvas.dynamic-input",
+        "relativePositionFallback": null
+      },
+      "gesture": {
+        "fromRelative": [
+          0.5398,
+          0.5361
+        ],
+        "toRelative": [
+          0.618,
+          0.5361
+        ],
+        "pathRelative": []
+      },
+      "value": "20000",
+      "expectedState": {
+        "visibleTextCandidates": [
+          "20000"
+        ],
+        "visualDescription": "动态输入框显示 20000",
+        "stateChange": "直径距离待确认"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0168",
+        "act-0549"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-010",
+      "goal": "确认直径,生成圆2",
+      "action": "press_key",
+      "target": null,
+      "gesture": null,
+      "value": "ENTER",
+      "expectedState": {
+        "visibleTextCandidates": [],
+        "visualDescription": "画布出现圆2,与前一圆相切(首圆除外)",
+        "stateChange": "圆2已创建"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create",
+        "objectDescription": "圆2: 直径 20000(半径 10000)的圆,顶排从左向右第 2 个,与左邻圆外切",
+        "beforeScreenshot": null,
+        "afterScreenshot": "slices/act-0549_after.jpg",
+        "changedRegionRelative": null,
+        "measurements": [
+          {
+            "name": "diameter",
+            "value": 20000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          },
+          {
+            "name": "radius",
+            "value": 10000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          }
+        ]
+      },
+      "sourceEventIds": [
+        "in-0168",
+        "act-0549"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-011",
+      "goal": "打开圆工具下拉菜单(准备画圆3)",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.dropdown",
+        "role": "button",
+        "textCandidates": [
+          "圆",
+          "Circle"
+        ],
+        "visualDescription": "功能区“默认”选项卡绘图面板中的圆工具按钮下拉箭头",
+        "expectedRegion": "ribbon.draw-panel",
+        "relativePositionFallback": [
+          0.0531,
+          0.1083
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "两点",
+          "三点",
+          "圆心, 半径"
+        ],
+        "visualDescription": "下拉菜单展开显示画圆方式列表",
+        "stateChange": "菜单展开"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "view",
+        "objectDescription": "圆工具下拉菜单展开,列出六种画圆方式",
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0169",
+        "act-0560",
+        "act-0561"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-012",
+      "goal": "选择“两点”画圆方式",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.two-point",
+        "role": "menu_item",
+        "textCandidates": [
+          "两点",
+          "2-Point",
+          "2P"
+        ],
+        "visualDescription": "圆下拉菜单中的“两点”项(图标为过直径两端点的圆)",
+        "expectedRegion": "ribbon.circle-dropdown-menu",
+        "relativePositionFallback": [
+          0.0742,
+          0.15
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第一个端点",
+          "_2p"
+        ],
+        "visualDescription": "命令行出现 _circle _2p 提示,光标变为拾取状态",
+        "stateChange": "CIRCLE 2P 命令激活"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0169",
+        "act-0560",
+        "act-0561"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-013",
+      "goal": "拾取圆3直径的第一个端点",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.osnap-quadrant",
+        "role": "canvas_position",
+        "textCandidates": [
+          "象限点",
+          "切点"
+        ],
+        "visualDescription": "圆2的最右点(对象捕捉标记),作为圆3直径左端点",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.5359,
+          0.5264
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "橡皮筋圆预览随光标出现,动态输入框等待第二端点",
+        "stateChange": "第一端点已确定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0170",
+        "act-0567"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "step-014",
+      "goal": "沿正右方向输入直径距离 20000",
+      "action": "type_text",
+      "target": {
+        "semanticFunction": "dynamic-input.distance",
+        "role": "input",
+        "textCandidates": [
+          "指定圆直径的第二个端点"
+        ],
+        "visualDescription": "光标旁动态输入距离框(光标须位于第一端点正右方以确定方向)",
+        "expectedRegion": "canvas.dynamic-input",
+        "relativePositionFallback": null
+      },
+      "gesture": {
+        "fromRelative": [
+          0.5359,
+          0.5264
+        ],
+        "toRelative": [
+          0.6141,
+          0.5264
+        ],
+        "pathRelative": []
+      },
+      "value": "20000",
+      "expectedState": {
+        "visibleTextCandidates": [
+          "20000"
+        ],
+        "visualDescription": "动态输入框显示 20000",
+        "stateChange": "直径距离待确认"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0566"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-015",
+      "goal": "确认直径,生成圆3",
+      "action": "press_key",
+      "target": null,
+      "gesture": null,
+      "value": "ENTER",
+      "expectedState": {
+        "visibleTextCandidates": [],
+        "visualDescription": "画布出现圆3,与前一圆相切(首圆除外)",
+        "stateChange": "圆3已创建"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create",
+        "objectDescription": "圆3: 直径 20000(半径 10000)的圆,顶排从左向右第 3 个,与左邻圆外切",
+        "beforeScreenshot": null,
+        "afterScreenshot": "slices/act-0567_after.jpg",
+        "changedRegionRelative": null,
+        "measurements": [
+          {
+            "name": "diameter",
+            "value": 20000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          },
+          {
+            "name": "radius",
+            "value": 10000,
+            "unit": "drawing_unit",
+            "confidence": 0.95
+          }
+        ]
+      },
+      "sourceEventIds": [
+        "act-0566"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "step-016",
+      "goal": "打开圆工具下拉菜单(准备画底排圆4)",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.dropdown",
+        "role": "button",
+        "textCandidates": [
+          "圆",
+          "Circle"
+        ],
+        "visualDescription": "功能区“默认”选项卡绘图面板中的圆工具按钮下拉箭头",
+        "expectedRegion": "ribbon.draw-panel",
+        "relativePositionFallback": [
+          0.0531,
+          0.1083
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "相切,相切,半径"
+        ],
+        "visualDescription": "下拉菜单展开",
+        "stateChange": "菜单展开"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "view",
+        "objectDescription": "圆工具下拉菜单展开,列出六种画圆方式",
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0567"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-017",
+      "goal": "选择“相切,相切,半径”画圆方式",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.tan-tan-radius",
+        "role": "menu_item",
+        "textCandidates": [
+          "相切,相切,半径",
+          "相切、相切、半径",
+          "Tan, Tan, Radius"
+        ],
+        "visualDescription": "圆下拉菜单中的“相切,相切,半径”项",
+        "expectedRegion": "ribbon.circle-dropdown-menu",
+        "relativePositionFallback": [
+          0.0938,
+          0.1875
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定对象与圆的第一个切点",
+          "_ttr"
+        ],
+        "visualDescription": "命令行出现 _circle _ttr 提示",
+        "stateChange": "CIRCLE TTR 命令激活"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0567"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-018",
+      "goal": "在圆1上拾取第一个相切对象",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.tangent-object-1",
+        "role": "canvas_position",
+        "textCandidates": [],
+        "visualDescription": "圆1的右下弧段(递延切点标记出现)",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.4688,
+          0.5833
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定对象与圆的第二个切点"
+        ],
+        "visualDescription": "第一个相切对象高亮",
+        "stateChange": "第一切点已指定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0563",
+        "act-0564"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-019",
+      "goal": "在圆2上拾取第二个相切对象",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.tangent-object-2",
+        "role": "canvas_position",
+        "textCandidates": [],
+        "visualDescription": "圆2的左下弧段",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.5625,
+          0.5833
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆的半径"
+        ],
+        "visualDescription": "命令行提示输入半径,默认值 <10000.0000>",
+        "stateChange": "第二切点已指定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0565",
+        "act-0566"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-020",
+      "goal": "接受默认半径 10000,生成圆4",
+      "action": "press_key",
+      "target": null,
+      "gesture": null,
+      "value": "ENTER",
+      "expectedState": {
+        "visibleTextCandidates": [],
+        "visualDescription": "底排出现圆4,与上方两圆同时相切",
+        "stateChange": "圆4已创建"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create",
+        "objectDescription": "圆4: 半径 10000 的圆,位于圆1与圆2下方,与两者同时外切",
+        "beforeScreenshot": null,
+        "afterScreenshot": "slices/act-0568_after.jpg",
+        "changedRegionRelative": null,
+        "measurements": [
+          {
+            "name": "radius",
+            "value": 10000,
+            "unit": "drawing_unit",
+            "confidence": 0.9
+          }
+        ]
+      },
+      "sourceEventIds": [
+        "in-0171",
+        "act-0568"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-021",
+      "goal": "打开圆工具下拉菜单(准备画底排圆5)",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.dropdown",
+        "role": "button",
+        "textCandidates": [
+          "圆",
+          "Circle"
+        ],
+        "visualDescription": "功能区“默认”选项卡绘图面板中的圆工具按钮下拉箭头",
+        "expectedRegion": "ribbon.draw-panel",
+        "relativePositionFallback": [
+          0.0531,
+          0.1083
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "相切,相切,半径"
+        ],
+        "visualDescription": "下拉菜单展开",
+        "stateChange": "菜单展开"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "view",
+        "objectDescription": "圆工具下拉菜单展开,列出六种画圆方式",
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0172",
+        "act-0577"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-022",
+      "goal": "选择“相切,相切,半径”画圆方式",
+      "action": "click",
+      "target": {
+        "semanticFunction": "draw.circle.tan-tan-radius",
+        "role": "menu_item",
+        "textCandidates": [
+          "相切,相切,半径",
+          "相切、相切、半径",
+          "Tan, Tan, Radius"
+        ],
+        "visualDescription": "圆下拉菜单中的“相切,相切,半径”项",
+        "expectedRegion": "ribbon.circle-dropdown-menu",
+        "relativePositionFallback": [
+          0.0938,
+          0.1875
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定对象与圆的第一个切点",
+          "_ttr"
+        ],
+        "visualDescription": "命令行出现 _circle _ttr 提示",
+        "stateChange": "CIRCLE TTR 命令激活"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "in-0172",
+        "act-0577"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "step-023",
+      "goal": "在圆2上拾取第一个相切对象",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.tangent-object-1",
+        "role": "canvas_position",
+        "textCandidates": [],
+        "visualDescription": "圆2的右下弧段(递延切点标记出现)",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.5625,
+          0.5833
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定对象与圆的第二个切点"
+        ],
+        "visualDescription": "第一个相切对象高亮",
+        "stateChange": "第一切点已指定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0572"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-024",
+      "goal": "在圆3上拾取第二个相切对象",
+      "action": "click",
+      "target": {
+        "semanticFunction": "canvas.tangent-object-2",
+        "role": "canvas_position",
+        "textCandidates": [],
+        "visualDescription": "圆3的左下弧段",
+        "expectedRegion": "canvas",
+        "relativePositionFallback": [
+          0.6563,
+          0.5833
+        ]
+      },
+      "gesture": null,
+      "value": null,
+      "expectedState": {
+        "visibleTextCandidates": [
+          "指定圆的半径"
+        ],
+        "visualDescription": "命令行提示输入半径,默认值 <10000.0000>",
+        "stateChange": "第二切点已指定"
+      },
+      "canvasChange": {
+        "detected": false,
+        "changeType": "none",
+        "objectDescription": null,
+        "beforeScreenshot": null,
+        "afterScreenshot": null,
+        "changedRegionRelative": null,
+        "measurements": []
+      },
+      "sourceEventIds": [
+        "act-0574",
+        "act-0575"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "id": "step-025",
+      "goal": "接受默认半径 10000,生成圆5",
+      "action": "press_key",
+      "target": null,
+      "gesture": null,
+      "value": "ENTER",
+      "expectedState": {
+        "visibleTextCandidates": [],
+        "visualDescription": "底排出现圆5,与上方两圆同时相切",
+        "stateChange": "圆5已创建"
+      },
+      "canvasChange": {
+        "detected": true,
+        "changeType": "create",
+        "objectDescription": "圆5: 半径 10000 的圆,位于圆2与圆3下方,与两者同时外切",
+        "beforeScreenshot": null,
+        "afterScreenshot": "slices/act-0582_after.jpg",
+        "changedRegionRelative": null,
+        "measurements": [
+          {
+            "name": "radius",
+            "value": 10000,
+            "unit": "drawing_unit",
+            "confidence": 0.9
+          }
+        ]
+      },
+      "sourceEventIds": [
+        "in-0173",
+        "act-0582"
+      ],
+      "confidence": 0.85
+    }
+  ],
+  "omitted": [
+    {
+      "sourceEventIds": [
+        "in-0157",
+        "in-0158",
+        "in-0159",
+        "in-0161",
+        "in-0162",
+        "act-0515",
+        "act-0523",
+        "act-0526",
+        "act-0529",
+        "act-0532"
+      ],
+      "reason": "讲师先以直径 10000 试画并两次删除重画(命令行 736s/754s 出现 _erase),对最终图形无贡献",
+      "confidence": 0.85
+    },
+    {
+      "sourceEventIds": [
+        "in-0174",
+        "in-0175",
+        "in-0176",
+        "in-0177",
+        "in-0178",
+        "in-0179",
+        "in-0180",
+        "in-0181",
+        "in-0182",
+        "act-0596",
+        "act-0608",
+        "act-0622",
+        "act-0631"
+      ],
+      "reason": "819-885s 用 3P+切点捕捉与 TTR 追加的演示圆随后被删除(866s Delete、877s _erase),不属于最终五环",
+      "confidence": 0.8
+    },
+    {
+      "sourceEventIds": [
+        "act-0592",
+        "act-0593",
+        "act-0594",
+        "act-0595"
+      ],
+      "reason": "讲师荧光笔标注特效造成的画面变化,非软件操作",
+      "confidence": 0.9
+    }
+  ],
+  "warnings": [
+    "736-790s 讲师多次取消/删除重画,该区间单步事件归属为近似对应,不影响最终几何",
+    "顶排三圆的相切依赖第一端点捕捉到前圆最右点;若 Mock 不支持对象捕捉,可按圆心间距 20000 直接定位",
+    "2P 第二端点采用“方向+距离”输入,方向为正右,由拖动预览方向推断(置信度 0.8)",
+    "TTR 半径 10000 来自命令行默认值 <10000.0000> 回车接受,未显式输入"
+  ]
+} as const;
+
+export default async function runMockWorkflow() {
+  const agent = await createMockAgent();
+  await agent.run(workflow, {
+    locateOrder: ["semantic", "accessibility", "text", "visual", "relative_position"],
+    verifyAfterEachStep: true,
+    retryCandidates: true,
+    recoverWithEscapeOrUndo: true
+  });
+}

@@ -1,0 +1,42 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+DELOBJ 0
+ISOLINES 16
+_.ZOOM _W -150,-200 460,200
+_.CIRCLE 100,0,100 100
+_.CIRCLE 100,0,240 30
+_.LOFT _ALL
+
+_C
+_.CIRCLE 100,0,0 100
+_.EXTRUDE
+200,0
+
+100
+_.SPHERE 100,0,240 30
+_.UNION _ALL
+
+_.BOX 200,-25,50 300,25,70
+_.CYLINDER 350,0,0 50 75
+_.CYLINDER 350,0,35 30 40
+_.BOX 325,-60,35 375,60,75
+_.UNION
+0,0
+250,-25
+
+_.UNION
+0,0
+400,0
+
+_.SUBTRACT
+0,0
+
+350,30
+350,-60
+
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l126/l126_steps.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l126/l126_steps.dxf 16
+

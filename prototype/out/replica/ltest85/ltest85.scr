@@ -1,0 +1,18 @@
+FILEDIA 0
+OSMODE 0
+PICKBOX 8
+APERTURE 50
+_.LINE 0,0 @138.49<0 @82.44<120 @97.27<180 _C
+_.ZOOM _W -60,-60 200,140
+_.DIMLINEAR 0,0 138.49,0 70,-30
+_.DIMALIGNED 138.49,0 97.27,71.3951 150,50
+_.DIMANGULAR
+117.88,35.70
+48.6,71.3951
+110,90
+_.DIMANGULAR
+69.2,0
+0,35.7
+30,20
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/ltest85/ltest85.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/replica/ltest85/ltest85.dxf 16

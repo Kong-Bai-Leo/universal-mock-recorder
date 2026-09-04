@@ -1,0 +1,77 @@
+FILEDIA 0
+OSMODE 0
+DELOBJ 0
+PICKBOX 8
+APERTURE 50
+_.ZOOM _W -90,-40 90,130
+_.XLINE _V 0,0
+
+_.OFFSET 25
+0,50
+10,50
+
+_.XLINE _H 0,0
+
+_.OFFSET 55
+50,0
+50,10
+
+_.MIRROR
+25,50
+
+0,0 0,10 _N
+_.CIRCLE 0,55 25
+_.TRIM
+
+_F
+0,20
+0,40
+
+
+_.ERASE
+0,120
+80,0
+80,55
+25,120
+-25,120
+
+_.LINE 25,55 25,0
+
+_.LINE -25,55 -25,0
+
+_.LINE -25,0 25,0
+
+_.PEDIT _M
+_W
+-30,-5
+30,85
+
+_Y
+_J
+0.0
+
+_.RECTANG -50,0 _D 100 100 10,10
+_.EXTRUDE _L
+
+100
+_.EXTRUDE
+0,80
+
+100
+_.SUBTRACT
+50,50
+
+_L
+
+_.DIMLINEAR -50,0 -25,0 -40,-20
+_.DIMCONTINUE 25,0 50,0
+
+
+_.DIMLINEAR -50,100 50,100 0,125
+_.DIMLINEAR 50,0 50,100 75,50
+_.DIMRADIUS
+0,80
+15,95
+_.ZOOM _E
+_.SAVEAS 2018 C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l123/arch_door_steps.dwg
+_.DXFOUT C:/Users/aaron/orca/universal-mock-recorder/prototype/out/l123/arch_door_steps.dxf 16
