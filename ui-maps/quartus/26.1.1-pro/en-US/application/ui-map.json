@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.application",
+  "nodes": [
+    {
+      "locatorId": "quartus.application",
+      "parentId": null,
+      "canonicalName": "Quartus Prime Pro Edition",
+      "visibleLabel": "Quartus Prime Pro Edition",
+      "aliases": [],
+      "role": "application",
+      "purpose": "Quartus Prime 26.1.1 Pro 英文主界面。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.main-menu",
+      "parentId": "quartus.application",
+      "canonicalName": "Main menu bar",
+      "visibleLabel": null,
+      "aliases": [
+        "主菜单",
+        "menu bar",
+        "menu"
+      ],
+      "role": "menu_bar",
+      "purpose": "主菜单集合。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.home",
+      "parentId": "quartus.application",
+      "canonicalName": "Home",
+      "visibleLabel": "Home",
+      "aliases": [
+        "首页"
+      ],
+      "role": "page",
+      "purpose": "首页与工程入口。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.home.new-project-wizard",
+      "parentId": "quartus.home",
+      "canonicalName": "New Project Wizard",
+      "visibleLabel": "New Project Wizard...",
+      "aliases": [
+        "新建工程向导",
+        "新建项目",
+        "new project",
+        "新建工程",
+        "向导"
+      ],
+      "role": "link",
+      "purpose": "新建工程 向导的可见link；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ],
+      "opensMap": "file/new-project-wizard/ui-map.json"
+    },
+    {
+      "locatorId": "quartus.home.open-project",
+      "parentId": "quartus.home",
+      "canonicalName": "Open Project",
+      "visibleLabel": "Open Project...",
+      "aliases": [
+        "打开工程",
+        "home open project"
+      ],
+      "role": "link",
+      "purpose": "打开工程的可见link；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.home.open-example-design",
+      "parentId": "quartus.home",
+      "canonicalName": "Open Example Design",
+      "visibleLabel": "Open Example Design...",
+      "aliases": [
+        "打开示例设计",
+        "home open example design",
+        "打开示例工程"
+      ],
+      "role": "link",
+      "purpose": "打开示例工程的可见link；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.project-navigator",
+      "parentId": "quartus.application",
+      "canonicalName": "Project Navigator",
+      "visibleLabel": "Project Navigator",
+      "aliases": [
+        "工程导航器",
+        "项目导航器",
+        "工程导航"
+      ],
+      "role": "panel",
+      "purpose": "工程导航的可见panel；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.tasks",
+      "parentId": "quartus.application",
+      "canonicalName": "Tasks",
+      "visibleLabel": "Tasks",
+      "aliases": [
+        "任务",
+        "tasks"
+      ],
+      "role": "panel",
+      "purpose": "任务的可见panel；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.ip-catalog",
+      "parentId": "quartus.application",
+      "canonicalName": "IP Catalog",
+      "visibleLabel": "IP Catalog",
+      "aliases": [
+        "IP目录",
+        "ip catalog",
+        "IP库"
+      ],
+      "role": "panel",
+      "purpose": "IP目录 IP库的可见panel；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.messages",
+      "parentId": "quartus.application",
+      "canonicalName": "Messages",
+      "visibleLabel": "Messages",
+      "aliases": [
+        "消息窗口",
+        "Messages",
+        "报告消息",
+        "消息"
+      ],
+      "role": "panel",
+      "purpose": "消息的可见panel；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.project-navigator.hierarchy",
+      "parentId": "quartus.application.project-navigator",
+      "canonicalName": "Hierarchy",
+      "visibleLabel": "Hierarchy",
+      "aliases": [
+        "层次",
+        "hierarchy",
+        "层级"
+      ],
+      "role": "tab",
+      "purpose": "层级的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.project-navigator.files",
+      "parentId": "quartus.application.project-navigator",
+      "canonicalName": "Files",
+      "visibleLabel": "Files",
+      "aliases": [
+        "文件",
+        "files",
+        "文件列表"
+      ],
+      "role": "tab",
+      "purpose": "文件列表的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.project-navigator.design-units",
+      "parentId": "quartus.application.project-navigator",
+      "canonicalName": "Design Units",
+      "visibleLabel": "Design Units",
+      "aliases": [
+        "设计单元"
+      ],
+      "role": "tab",
+      "purpose": "设计单元的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    },
+    {
+      "locatorId": "quartus.application.project-navigator.ip-components",
+      "parentId": "quartus.application.project-navigator",
+      "canonicalName": "IP Components",
+      "visibleLabel": "IP Components",
+      "aliases": [
+        "IP组件"
+      ],
+      "role": "tab",
+      "purpose": "IP组件的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.home"
+      ]
+    }
+  ]
+}

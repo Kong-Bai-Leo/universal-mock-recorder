@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.processing",
+  "nodes": [
+    {
+      "locatorId": "quartus.processing",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Processing",
+      "visibleLabel": "Processing",
+      "aliases": [
+        "处理",
+        "processing",
+        "编译"
+      ],
+      "role": "menu",
+      "purpose": "处理 编译菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.stop-processing",
+      "parentId": "quartus.processing",
+      "canonicalName": "Stop Processing",
+      "visibleLabel": "Stop Processing",
+      "aliases": [
+        "停止处理"
+      ],
+      "role": "menu_item",
+      "purpose": "停止处理的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.quit-monitoring",
+      "parentId": "quartus.processing",
+      "canonicalName": "Quit Monitoring",
+      "visibleLabel": "Quit Monitoring",
+      "aliases": [
+        "退出监视"
+      ],
+      "role": "menu_item",
+      "purpose": "退出监视的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.start-compilation",
+      "parentId": "quartus.processing",
+      "canonicalName": "Start Compilation",
+      "visibleLabel": "Start Compilation",
+      "aliases": [
+        "开始编译",
+        "start compilation"
+      ],
+      "role": "menu_item",
+      "purpose": "开始编译的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.start-optimization-mode-compilation",
+      "parentId": "quartus.processing",
+      "canonicalName": "Start Optimization Mode Compilation",
+      "visibleLabel": "Start Optimization Mode Compilation",
+      "aliases": [
+        "优化模式编译"
+      ],
+      "role": "submenu",
+      "purpose": "优化模式编译的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.start",
+      "parentId": "quartus.processing",
+      "canonicalName": "Start",
+      "visibleLabel": "Start",
+      "aliases": [
+        "启动",
+        "start",
+        "启动子流程"
+      ],
+      "role": "submenu",
+      "purpose": "启动子流程的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.update-memory-initialization-file",
+      "parentId": "quartus.processing",
+      "canonicalName": "Update Memory Initialization File",
+      "visibleLabel": "Update Memory Initialization File",
+      "aliases": [
+        "更新存储器初始化文件"
+      ],
+      "role": "menu_item",
+      "purpose": "更新存储器初始化文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.start-pre-synthesis-ibis",
+      "parentId": "quartus.processing",
+      "canonicalName": "Start Pre-Synthesis IBIS",
+      "visibleLabel": "Start Pre-Synthesis IBIS",
+      "aliases": [
+        "启动综合前IBIS"
+      ],
+      "role": "menu_item",
+      "purpose": "启动综合前IBIS的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.start-setup-noc-accurate-simulation",
+      "parentId": "quartus.processing",
+      "canonicalName": "Start Setup NoC accurate simulation",
+      "visibleLabel": "Start Setup NoC accurate simulation",
+      "aliases": [
+        "NoC精确仿真设置"
+      ],
+      "role": "menu_item",
+      "purpose": "NoC精确仿真设置的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.compilation-report",
+      "parentId": "quartus.processing",
+      "canonicalName": "Compilation Report",
+      "visibleLabel": "Compilation Report",
+      "aliases": [
+        "编译报告"
+      ],
+      "role": "menu_item",
+      "purpose": "编译报告的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.processing.compilation-dashboard",
+      "parentId": "quartus.processing",
+      "canonicalName": "Compilation Dashboard",
+      "visibleLabel": "Compilation Dashboard",
+      "aliases": [
+        "编译仪表盘",
+        "compilation dashboard",
+        "编译仪表板"
+      ],
+      "role": "menu_item",
+      "purpose": "编译仪表板的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.processing-menu"
+      ]
+    }
+  ]
+}

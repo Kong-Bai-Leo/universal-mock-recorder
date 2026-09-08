@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "quartus-workflow/1",
+  "summary": "Synthetic test fixture, not a real recording or validated device installation.",
+  "complete": true,
+  "warnings": ["Device availability and physical board compatibility are not verified by this synthetic fixture."],
+  "project": {
+    "name": "recorder_demo", "revision": "recorder_demo", "family": "Agilex 5", "device": "A5ED013BB23AE6S", "top": "recorder_demo",
+    "evidence": {"sourceEventIds": ["synthetic-e1"], "screenshotFiles": ["synthetic-before.png", "synthetic-after.png"], "precision": "exact"}
+  },
+  "files": [{
+    "path": "recorder_demo.v", "language": "verilog", "content": "module recorder_demo(input wire a, input wire b, output wire y);\n  assign y = a & b;\nendmodule\n",
+    "evidence": {"sourceEventIds": ["synthetic-e1"], "screenshotFiles": ["synthetic-after.png"], "precision": "exact"}
+  }],
+  "assignments": [{"name": "SEED", "value": "1", "target": null,
+    "evidence": {"sourceEventIds": ["synthetic-e1"], "screenshotFiles": ["synthetic-after.png"], "precision": "exact"}}],
+  "clocks": [],
+  "operations": [{"id": "synthetic-op1", "kind": "create_project", "summary": "Synthetic isolated project construction", "sourceEventIds": ["synthetic-e1"], "beforeScreenshot": "synthetic-before.png", "afterScreenshot": "synthetic-after.png", "status": "applied"}],
+  "unresolved": [],
+  "resolutions": [],
+  "state": {"phase": "idle", "pendingInput": null}
+}

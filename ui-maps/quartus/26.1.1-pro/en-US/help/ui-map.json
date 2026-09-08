@@ -1,0 +1,373 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.help",
+  "nodes": [
+    {
+      "locatorId": "quartus.help",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Help",
+      "visibleLabel": "Help",
+      "aliases": [
+        "帮助",
+        "help"
+      ],
+      "role": "menu",
+      "purpose": "帮助菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.help-topics",
+      "parentId": "quartus.help",
+      "canonicalName": "Help Topics",
+      "visibleLabel": "Help Topics",
+      "aliases": [
+        "帮助主题"
+      ],
+      "role": "menu_item",
+      "purpose": "帮助主题的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.message-list",
+      "parentId": "quartus.help",
+      "canonicalName": "Message List",
+      "visibleLabel": "Message List",
+      "aliases": [
+        "消息列表"
+      ],
+      "role": "menu_item",
+      "purpose": "消息列表的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.devices-and-adapters",
+      "parentId": "quartus.help",
+      "canonicalName": "Devices and Adapters",
+      "visibleLabel": "Devices and Adapters",
+      "aliases": [
+        "器件与适配器"
+      ],
+      "role": "menu_item",
+      "purpose": "器件与适配器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.eda-interfaces",
+      "parentId": "quartus.help",
+      "canonicalName": "EDA Interfaces",
+      "visibleLabel": "EDA Interfaces",
+      "aliases": [
+        "EDA接口"
+      ],
+      "role": "menu_item",
+      "purpose": "EDA接口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.command-line-and-tcl-api",
+      "parentId": "quartus.help",
+      "canonicalName": "Command Line and Tcl API",
+      "visibleLabel": "Command Line and Tcl API",
+      "aliases": [
+        "命令行与Tcl接口"
+      ],
+      "role": "menu_item",
+      "purpose": "命令行与Tcl接口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.pdf-tutorials",
+      "parentId": "quartus.help",
+      "canonicalName": "PDF Tutorials",
+      "visibleLabel": "PDF Tutorials",
+      "aliases": [
+        "PDF教程"
+      ],
+      "role": "menu_item",
+      "purpose": "PDF教程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.home",
+      "parentId": "quartus.help",
+      "canonicalName": "Home",
+      "visibleLabel": "Home",
+      "aliases": [
+        "首页"
+      ],
+      "role": "menu_item",
+      "purpose": "首页的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.what-s-new",
+      "parentId": "quartus.help",
+      "canonicalName": "What's New",
+      "visibleLabel": "What's New",
+      "aliases": [
+        "更新说明"
+      ],
+      "role": "menu_item",
+      "purpose": "更新说明的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.readme-file",
+      "parentId": "quartus.help",
+      "canonicalName": "Readme File",
+      "visibleLabel": "Readme File",
+      "aliases": [
+        "自述文件"
+      ],
+      "role": "menu_item",
+      "purpose": "自述文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.release-notes",
+      "parentId": "quartus.help",
+      "canonicalName": "Release Notes",
+      "visibleLabel": "Release Notes",
+      "aliases": [
+        "发行说明"
+      ],
+      "role": "menu_item",
+      "purpose": "发行说明的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.contacting-altera",
+      "parentId": "quartus.help",
+      "canonicalName": "Contacting Altera",
+      "visibleLabel": "Contacting Altera",
+      "aliases": [
+        "联系Altera"
+      ],
+      "role": "menu_item",
+      "purpose": "联系Altera的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.feedback",
+      "parentId": "quartus.help",
+      "canonicalName": "Feedback",
+      "visibleLabel": "Feedback",
+      "aliases": [
+        "反馈"
+      ],
+      "role": "menu_item",
+      "purpose": "反馈的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.on-the-web",
+      "parentId": "quartus.help",
+      "canonicalName": "On the Web",
+      "visibleLabel": "On the Web",
+      "aliases": [
+        "网络资源"
+      ],
+      "role": "menu_item",
+      "purpose": "网络资源的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.help.about-quartus-prime",
+      "parentId": "quartus.help",
+      "canonicalName": "About Quartus Prime",
+      "visibleLabel": "About Quartus Prime",
+      "aliases": [
+        "关于Quartus",
+        "版本信息"
+      ],
+      "role": "menu_item",
+      "purpose": "关于Quartus 版本信息的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.help-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.about",
+      "parentId": "quartus.application",
+      "canonicalName": "About Quartus Prime",
+      "visibleLabel": "About Quartus Prime",
+      "aliases": [
+        "关于Quartus",
+        "版本信息"
+      ],
+      "role": "dialog",
+      "purpose": "查看已安装版本与补丁信息。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.about"
+      ]
+    },
+    {
+      "locatorId": "quartus.about.ok",
+      "parentId": "quartus.about",
+      "canonicalName": "OK",
+      "visibleLabel": "OK",
+      "aliases": [
+        "确定"
+      ],
+      "role": "button",
+      "purpose": "确定的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.about"
+      ]
+    },
+    {
+      "locatorId": "quartus.about.help",
+      "parentId": "quartus.about",
+      "canonicalName": "Help",
+      "visibleLabel": "Help",
+      "aliases": [
+        "帮助",
+        "help"
+      ],
+      "role": "button",
+      "purpose": "帮助的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.about"
+      ]
+    }
+  ]
+}

@@ -62,6 +62,7 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
       payload: { value: 2 },
       outputName: "custom_audit",
       outputDescription: "custom schema",
+      maxOutputTokens: 16000,
       outputSchema: {
         type: "object",
         additionalProperties: false,
@@ -86,6 +87,8 @@ test("通过 OpenAI Responses 端点获得 JSON", async () => {
     assert.match(requests[0].body.input[0].content[2].image_url, /^data:image\/jpeg;base64,/);
     assert.equal(requests[0].body.input[0].content[2].detail, "low");
     assert.equal(requests[1].body.text.format.name, "custom_audit");
+    assert.equal(requests[0].body.max_output_tokens, undefined);
+    assert.equal(requests[1].body.max_output_tokens, 16000);
     assert.deepEqual(Object.keys(requests[1].body.text.format.schema.properties), ["summary"]);
     const usage = summarizeUsageRecords(client.getUsageRecords());
     assert.equal(usage.requestCount, 2);

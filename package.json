@@ -13,6 +13,10 @@
     "test:validator": "powershell -ExecutionPolicy Bypass -File scripts/test-validator.ps1",
     "map:autocad": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/build-autocad-knowledge-base.ps1",
     "test:autocad-map": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/test-autocad-knowledge-base.ps1",
-    "test:3dsmax-map": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-3dsmax-ui-map.ps1"
+    "test:3dsmax-map": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-3dsmax-ui-map.ps1",
+    "analyze:quartus": "node src/analyzer/quartus-cli.mjs",
+    "build:quartus-project": "node src/analyzer/quartus-build.mjs",
+    "build:recorder:quartus": "powershell -ExecutionPolicy Bypass -File scripts/build-quartus-recorder.ps1",
+    "test:quartus": "node --test tests/quartus-*.test.mjs"
   }
 }

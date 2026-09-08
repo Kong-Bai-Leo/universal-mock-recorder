@@ -34,7 +34,8 @@ export class GptClient {
     outputName = "mock_workflow",
     outputDescription = "可由 Mock Runtime 执行并逐步验证的软件操作工作流",
     reasoningEffort = this.reasoningEffort,
-    verbosity = this.verbosity
+    verbosity = this.verbosity,
+    maxOutputTokens
   }) {
     this.#validate();
     const apiKey = process.env.OPENAI_API_KEY;
@@ -45,7 +46,8 @@ export class GptClient {
       name: outputName,
       description: outputDescription,
       reasoningEffort,
-      verbosity
+      verbosity,
+      maxOutputTokens
     });
   }
 
@@ -83,6 +85,11 @@ export class GptClient {
     };
     if (outputFormat.reasoningEffort)
       body.reasoning = { effort: outputFormat.reasoningEffort };
+    if (outputFormat.maxOutputTokens !== undefined) {
+      if (!Number.isInteger(outputFormat.maxOutputTokens) || outputFormat.maxOutputTokens < 1)
+        throw new Error("maxOutputTokens 必须是正整数");
+      body.max_output_tokens = outputFormat.maxOutputTokens;
+    }
     const response = await this.#post("/responses", apiKey, body);
     const usage = normalizeResponseUsage(response, this.model);
     if (usage) this.usageRecords.push(usage);

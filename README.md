@@ -274,3 +274,9 @@ node --test tests\*.test.mjs
 ```
 
 正式产品还需要补充持续视频编码、安装包、可视化 GPT 设置页、录制回放预览和实际 Mock Runtime。
+
+## Quartus recorder
+
+Quartus follows the visual recording → model API with UI Map → structured JSON → controlled Tcl → native project route. See [usage and supported scope](src/Recorder.Quartus/README.md) and [verification status](docs/quartus-recorder-status-2026-09-07.md).
+
+Build with `npm run build:recorder:quartus`; run offline regressions with `npm run test:quartus`. Real recordings, API requests, credentials and screenshots remain local and are not included in this repository.

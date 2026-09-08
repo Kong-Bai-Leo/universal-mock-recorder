@@ -7,3 +7,10 @@ generated/
 bin/validator/
 .cv-poc-deps/
 cv-poc-runtime/
+
+# Local Quartus evidence, configuration and packages
+.env.*
+.equile-local/
+dist/
+bin/quartus-recorder/recordings/
+ui-maps/quartus/**/screenshots/

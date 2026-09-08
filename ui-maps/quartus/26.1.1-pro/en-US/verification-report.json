@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0",
+  "verifiedAt": "2026-09-07T23:05:33.889Z",
+  "result": "passed",
+  "checks": [
+    "SchemaVersion/application/version/edition/language",
+    "Section map schema and section roots",
+    "Static semantic/evidence/reference invariants",
+    "Parent hierarchy and split-button child ownership",
+    "Source and evidence ref integrity"
+  ],
+  "structureAndProvenance": {
+    "passed": true,
+    "details": [
+      "UI Map 结构校验通过",
+      "引用关系通过",
+      "文档节点与动态证据边界通过"
+    ],
+    "provenance": {
+      "index": "ui-maps\\quartus\\26.1.1-pro\\en-US\\ui-index.json",
+      "sourceCount": 14,
+      "evidenceCount": 24
+    }
+  },
+  "uiCoverage": {
+    "tested": "untested",
+    "note": "本脚本只做结构与证据完整性校验，不涉及真实 UI 行为覆盖"
+  },
+  "behavior": {
+    "tested": "untested",
+    "note": "未运行 Quartus 实机回放、AI 分析或截图识别流程"
+  },
+  "counts": {
+    "sectionFiles": 18,
+    "totalSemanticNodes": 287,
+    "evidenceImages": 24,
+    "officialSources": 14,
+    "liveVisualNodes": 271,
+    "unknownIdentityNodes": 0,
+    "documentedOnlyNodes": 16
+  },
+  "evidenceVerification": {
+    "requested": true,
+    "imagesChecked": 24
+  },
+  "limits": [
+    "仅离线校验",
+    "仅报告可审计结构、来源与证据完整性"
+  ]
+}
