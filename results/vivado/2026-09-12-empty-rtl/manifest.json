@@ -1,0 +1,21 @@
+{
+  "format": "recorder-published-run-results-1",
+  "publishedDate": "2026-09-12",
+  "application": "Vivado 2024.2",
+  "scope": "Empty RTL project configuration; native calls, save/reopen and independent source comparison passed. No HDL, synthesis, implementation or bitstream run.",
+  "analysisRunId": "eaaa5de226f5adc7ef65c06d",
+  "hashAlgorithm": "SHA-256",
+  "hashScope": "Raw file bytes; this manifest excludes itself. Hashes prove file integrity only, not native equivalence.",
+  "files": [
+    {"path": ".gitattributes", "bytes": 101, "sha256": "036b38f7a5f84702c2da86007b323b9da74c067a41085aa3a0ba5b5248ceda7d"},
+    {"path": "independent-source-truth.json", "bytes": 802, "sha256": "ec27f17b5d85613c868e13c870e1d547fed3d08950fa66cc58aeb54a9249e083"},
+    {"path": "native-verification.json", "bytes": 1673, "sha256": "d441d03fed258153f3a074732e4598910253cf0b63c72887010def1113c0e489"},
+    {"path": "README.md", "bytes": 3262, "sha256": "00f58110136707d2c9cb7196f46cb2d90ab10bad97f2aa7028f499beb6c02c65"},
+    {"path": "replay-plan.json", "bytes": 8531, "sha256": "805ad1687792d8ce94ee8f274a8de3a56529b6b394ad5535665aea3d7ced1ba0"},
+    {"path": "run-report.md", "bytes": 6951, "sha256": "17e8a36af18b257f7e9864e776de5a56dae8ccdf7f099bb4eba077dfb2ddb3b4"},
+    {"path": "vivado-validation.tcl", "bytes": 2075, "sha256": "64293f6e96e1afa30ffd5efb0b8379c11c2e16b3636dca4cbef04197e14153fd"},
+    {"path": "native/calls.log", "bytes": 83, "sha256": "2d077dc5a0eadf546a14d8adba7c8dfd655b4e6146e1582e99d58e0fb2ca5793"},
+    {"path": "native/verification-status.txt", "bytes": 74, "sha256": "63dbd33d2a38e8d1d3773c24689d59799c981a6b584e46b0bb327698609b731a"},
+    {"path": "native/project/VivadoSmoke_20260912_A.xpr", "bytes": 11162, "sha256": "1f1d733ee85fac5e092d4ba69ed6ade88ea08a3b68ffa87bd2498da6ac244157"}
+  ]
+}

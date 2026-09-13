@@ -1,0 +1,2 @@
+NATIVE_CALLS_AND_REOPEN_PASS
+Source-recording comparison still required

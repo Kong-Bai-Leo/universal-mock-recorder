@@ -1,0 +1,285 @@
+{
+  "format": "VivadoNativeInterfacePlan",
+  "version": "vivado-native-plan-1",
+  "application": {
+    "name": "Vivado",
+    "version": "2024.2"
+  },
+  "program": {
+    "version": "vivado-native-plan-1",
+    "complete": true,
+    "summary": "Blank start observed; New Project wizard remains pending on Project Name with visible name VivadoSmoke_20260912_A. No persistent change committed.; New Project wizard remains pending on Add Constraints. RTL project has no visible sources or constraints; target language is pending as VHDL. No project exists yet.; Created VivadoSmoke_20260912_A for xc7vx485tffg1157-1 with VHDL target and Mixed simulator language; no sources or constraints.",
+    "initialScene": {
+      "kind": "blank",
+      "evidenceIds": [
+        "evt-00000002"
+      ]
+    },
+    "operations": [
+      {
+        "id": "chunk-3-op-1",
+        "sourceEventIds": [
+          "evt-00000002",
+          "evt-00000003",
+          "evt-00000005",
+          "evt-00000006",
+          "evt-00000008",
+          "evt-00000009",
+          "evt-00000010",
+          "evt-00000011",
+          "evt-00000013",
+          "evt-00000014",
+          "evt-00000015",
+          "evt-00000016",
+          "evt-00000018",
+          "evt-00000019",
+          "evt-00000021",
+          "evt-00000022",
+          "evt-00000024",
+          "evt-00000025",
+          "evt-00000026",
+          "evt-00000027",
+          "evt-00000028",
+          "evt-00000029",
+          "evt-00000031",
+          "evt-00000032",
+          "evt-00000034"
+        ],
+        "timestampMs": 1390328776256,
+        "stage": "committed",
+        "knowledgeIds": [
+          "vivado-new-project",
+          "vivado-project-summary"
+        ],
+        "apiCall": {
+          "command": "create_project",
+          "interfaceId": "vivado-tcl-create-project",
+          "receiverId": "",
+          "resultId": "project-vivadosmoke-20260912-a",
+          "arguments": {
+            "name": "VivadoSmoke_20260912_A",
+            "part": "xc7vx485tffg1157-1"
+          }
+        }
+      },
+      {
+        "id": "chunk-3-op-2",
+        "sourceEventIds": [
+          "evt-00000018",
+          "evt-00000019",
+          "evt-00000034"
+        ],
+        "timestampMs": 1390328801311,
+        "stage": "committed",
+        "knowledgeIds": [],
+        "apiCall": {
+          "command": "set_property",
+          "interfaceId": "vivado-tcl-set-property",
+          "receiverId": "project-vivadosmoke-20260912-a",
+          "resultId": "",
+          "arguments": {
+            "name": "target_language",
+            "value": "VHDL"
+          }
+        }
+      },
+      {
+        "id": "chunk-3-op-3",
+        "sourceEventIds": [
+          "evt-00000034"
+        ],
+        "timestampMs": 1390328801311,
+        "stage": "committed",
+        "knowledgeIds": [],
+        "apiCall": {
+          "command": "set_property",
+          "interfaceId": "vivado-tcl-set-property",
+          "receiverId": "project-vivadosmoke-20260912-a",
+          "resultId": "",
+          "arguments": {
+            "name": "simulator_language",
+            "value": "Mixed"
+          }
+        }
+      }
+    ],
+    "artifacts": [],
+    "decisions": [
+      {
+        "sourceEventIds": [
+          "evt-00000001",
+          "evt-00000004",
+          "evt-00000007",
+          "evt-00000012"
+        ],
+        "disposition": "navigation",
+        "reason": "Pointer movement only."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000002",
+          "evt-00000003"
+        ],
+        "disposition": "navigation",
+        "reason": "Opened the New Project wizard; no project was created."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000005",
+          "evt-00000006"
+        ],
+        "disposition": "deferred",
+        "reason": "Advanced to the Project Name page; wizard remains pending before Finish."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000008",
+          "evt-00000009",
+          "evt-00000010",
+          "evt-00000011"
+        ],
+        "disposition": "deferred",
+        "reason": "Selected and edited the pending project name field. The visible value is VivadoSmoke_20260912_A, but it is not committed until Finish."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000013",
+          "evt-00000014",
+          "evt-00000015",
+          "evt-00000016"
+        ],
+        "disposition": "navigation",
+        "reason": "Advanced from Project Name through Project Type to Add Sources; Finish was not used."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000017"
+        ],
+        "disposition": "navigation",
+        "reason": "Pointer movement had no persistent effect."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000018",
+          "evt-00000019"
+        ],
+        "disposition": "navigation",
+        "reason": "Opened the target-language menu without changing the selection."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000020"
+        ],
+        "disposition": "navigation",
+        "reason": "Pointer movement had no persistent effect."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000021",
+          "evt-00000022"
+        ],
+        "disposition": "deferred",
+        "reason": "Selected VHDL as a pending wizard setting; it can be represented only after project creation."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000023"
+        ],
+        "disposition": "navigation",
+        "reason": "Pointer movement had no persistent effect."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000024",
+          "evt-00000025"
+        ],
+        "disposition": "navigation",
+        "reason": "Advanced to Add Constraints with empty source and constraint lists; the wizard remains unfinished."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000026",
+          "evt-00000027"
+        ],
+        "disposition": "modeled",
+        "reason": "Advanced from empty constraints to device selection."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000028",
+          "evt-00000029"
+        ],
+        "disposition": "modeled",
+        "reason": "Committed the selected part to the project summary."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000030",
+          "evt-00000033"
+        ],
+        "disposition": "navigation",
+        "reason": "Pointer movement caused no persistent change."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000031",
+          "evt-00000032"
+        ],
+        "disposition": "modeled",
+        "reason": "Finish initiated project creation; the later workspace confirms completion."
+      },
+      {
+        "sourceEventIds": [
+          "evt-00000034",
+          "evt-00000035"
+        ],
+        "disposition": "navigation",
+        "reason": "Observed the completed project; the click caused no visible persistent change."
+      }
+    ],
+    "unresolved": [],
+    "finalScene": {
+      "kind": "observed",
+      "projectIds": [
+        "project-vivadosmoke-20260912-a"
+      ],
+      "evidenceIds": [
+        "evt-00000034",
+        "evt-00000035"
+      ]
+    },
+    "commandState": {
+      "command": "create_project",
+      "stage": "committed",
+      "pendingEventIds": [],
+      "selectionIds": []
+    }
+  },
+  "expectedState": {
+    "objects": [
+      {
+        "id": "project-vivadosmoke-20260912-a",
+        "type": "project",
+        "name": "VivadoSmoke_20260912_A",
+        "part": "xc7vx485tffg1157-1",
+        "properties": {
+          "target_language": "VHDL",
+          "simulator_language": "Mixed"
+        },
+        "files": []
+      }
+    ],
+    "artifacts": []
+  },
+  "consumerContract": {
+    "primary": "Execute the model-supplied apiCall choices in commit order. Bind logical IDs to returned native handles; never evaluate arbitrary command text.",
+    "destination": "A new isolated directory assigned by executor; reject any existing project path, never force-overwrite.",
+    "dependencies": "Only exact HDL artifacts explicitly reconstructed from evidence. Never read unseen native source files to fill gaps.",
+    "executionMode": "A Tcl script, preferably batch. GUI interactive wait_on_runs is not a completion guarantee.",
+    "verification": "Check properties, exact file contents, run terminal status, and separately compare recording source truth. Successful calls alone do not prove equivalence."
+  },
+  "nativeVerification": {
+    "status": "not_run",
+    "sourceRecordingCompared": false
+  }
+}
