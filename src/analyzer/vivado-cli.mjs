@@ -5,7 +5,8 @@ import { fileURLToPath } from "node:url";
 import { isDeepStrictEqual } from "node:util";
 import { prepareVivadoEvidence, VIVADO_BUDGET, digest } from "./lib/vivado-evidence.mjs";
 import { VIVADO_SCHEMA, VIVADO_INSTRUCTIONS, validateVivadoProgram, mergeVivadoChunks, vivadoChunkPosition, vivadoPreviousContext } from "./lib/vivado-program.mjs";
-import {loadVivadoKnowledge, retrieveVivadoKnowledge} from "./lib/vivado-knowledge.mjs";
+import {loadVivadoKnowledge, retrieveVivadoKnowledge,vivadoStateKnowledge,vivadoKnowledgeIds} from "./lib/vivado-knowledge.mjs";
+import {VIVADO_STATE_RULES} from "./lib/vivado-state-harness.mjs";
 import { renderVivado } from "./lib/vivado-renderer.mjs";
 import { buildVivadoReplayPlan } from "./lib/vivado-replay-plan.mjs";
 import { loadLocalEnv } from "./lib/local-env.mjs";
@@ -51,7 +52,7 @@ async function usageAudit(run, visited=new Set()) {
 
 // Reused responses stay in their original run. Follow only recorded, hashed
 // provenance inside this recording, never copy or silently rewrite paid output.
-async function savedCandidates(run, base, visited=new Set()) {
+export async function savedCandidates(run, base, visited=new Set()) {
   run=await fs.realpath(run);
   if(path.dirname(run)!==base||visited.has(run))throw new Error("Invalid/cyclic saved response provenance");
   visited=new Set([...visited,run]);
@@ -79,7 +80,13 @@ async function savedCandidates(run, base, visited=new Set()) {
   return candidates;
 }
 
-function repairRule(){return "Correct only the failed chunk from its original evidence, without repeating committed operations or weakening validation. For chunk.index > 1 initialScene.kind must be continuation, even when the wizard has not created a project yet. create_project is session-scoped and MUST have receiverId as the empty string, not an invented session ID. Other receiverIds and commandState.selectionIds must reference existing logical native objects, never event IDs or UI control IDs. Before project creation selectionIds is empty. pendingEventIds holds pending input evidence. knowledgeIds may contain only IDs explicitly present in the supplied knowledge controls; omit unmatched IDs, never invent them. Keep exact observed parameters and legitimate dependencies.";}
+export function vivadoSourceTransactionRules(){return {
+  addFilesReceiver:"add_files receiverId MUST be the existing project logical ID, not a fileset ID. arguments.fileset selects sources_1/sim_1; resultId is empty.",
+  pendingEditor:"Treat a newly created source and its immediately following editor session as one source-content transaction. A generated module template is not necessarily the final content. When a nonfinal chunk ends with that source still open for editing, especially Select All before a replacement, defer artifact/add_files; retain the filename, creation evidence and pending editor state in summary and commandState. Do not label the pending creation as navigation or drop its evidence.",
+  commitEditor:"Commit the full exact visible source at an observed save, editor close, or compile boundary. The completed transaction may reference earlier deferred creation events. Selection alone is not a save. Do not infer clipboard contents. If the source stays unchanged, close/compile can commit the visible template; never invent functional HDL.",
+  revisions:"Only one committed artifact version per filename is supported. An already emitted source subsequently edited must be unresolved, not silently ignored, overwritten or represented with a duplicate artifact ID. Multi-build source revisions require backend support."
+};}
+function repairRule(){return "Correct only the failed chunk from its original evidence, without repeating committed operations or weakening validation. For chunk.index > 1 initialScene.kind must be continuation, even when the wizard has not created a project yet. create_project is session-scoped and MUST have receiverId as the empty string, not an invented session ID. Other receiverIds and commandState.selectionIds must reference existing logical native objects, never event IDs or UI control IDs. Before project creation selectionIds is empty. pendingEventIds holds pending input evidence. knowledgeIds may contain only supplied control IDs, nativeApiCatalog interface IDs, or registered official source IDs; omit unmatched IDs, never invent them. Keep exact observed parameters and legitimate dependencies. "+Object.values(vivadoSourceTransactionRules()).join(' ');}
 
 // A compiler/harness revision must not silently invalidate evidence or re-upload
 // already paid, valid chunks. Explicit migration verifies each original request
@@ -102,7 +109,7 @@ export async function recoverSavedCheckpoint(sourceRun, out, report, evidence, k
     for(const candidate of candidates) {
       const {prefix,request,parsed,response}=candidate;
       if(request.payload?.chunk?.index!==i+1)continue;
-      const expected={chunk:vivadoChunkPosition(i+1,evidence.chunks.length),inputs:chunk.events,nativeApiCatalog:knowledge.commands,
+      const expected={chunk:vivadoChunkPosition(i+1,evidence.chunks.length),inputs:chunk.events,nativeApiCatalog:knowledge.commands,stateRules:VIVADO_STATE_RULES,stateKnowledge:vivadoStateKnowledge(knowledge),
         knowledge:retrieveVivadoKnowledge(knowledge,{texts:chunk.events.flatMap(e=>[e.target?.name,e.window?.title,e.text].filter(Boolean))}),
         sourceScope:{captureDeployment:evidence.manifest.captureDeployment,screenshotScope:evidence.manifest.screenshotScope,screenshotOrigin:[evidence.manifest.screenshotOriginX,evidence.manifest.screenshotOriginY],uiAutomationTargets:evidence.manifest.uiAutomationTargets},
         allowedEvidenceIds:eventIds,previousContext:vivadoPreviousContext(completed,prior)};
@@ -114,7 +121,7 @@ export async function recoverSavedCheckpoint(sourceRun, out, report, evidence, k
       const valid=matches.filter(m=>same(m.parsed,checkpoint.completed[i]));
       if(valid.length!==1)throw new Error("Ambiguous/missing valid checkpoint provenance");
       completed.push(valid[0].parsed);
-      validateVivadoProgram(mergeVivadoChunks(completed),{eventIds,currentInputIds:eventIds,knowledgeIds:knowledge.controls.map(c=>c.id)});
+      validateVivadoProgram(mergeVivadoChunks(completed),{eventIds,currentInputIds:eventIds,knowledgeIds:vivadoKnowledgeIds(knowledge)});
       provenance.push({chunk:i+1,responseId:valid[0].response.id,prefix:valid[0].prefix,requestDigest:digest(valid[0].request),responseDigest:digest(valid[0].response)});
     } else if(oldStatus.failurePhase==="chunk_validation"&&oldStatus.chunk===i+1&&matches.length===1) {
       repairFeedback={validationError:oldStatus.message,previousInvalidResult:matches[0].parsed,
@@ -137,7 +144,7 @@ export async function runVivadoAnalysis(options, deps={}) {
   provider.maxRetries=0; provider.maxRequestBytes=VIVADO_BUDGET.maxRequestBytes;
   const evidence=await prepareVivadoEvidence(recording);
   const knowledge=await loadVivadoKnowledge(root);
-  const codeFiles=["vivado-cli.mjs","lib/vivado-evidence.mjs","lib/vivado-program.mjs","lib/vivado-replay-plan.mjs","lib/vivado-renderer.mjs","lib/vivado-knowledge.mjs","lib/gpt-client.mjs"];
+  const codeFiles=["vivado-cli.mjs","lib/vivado-evidence.mjs","lib/vivado-program.mjs","lib/vivado-state-harness.mjs","lib/vivado-replay-plan.mjs","lib/vivado-renderer.mjs","lib/vivado-knowledge.mjs","lib/gpt-client.mjs"];
   const identity=digest({source:evidence.sourceDigest,images:evidence.images.map(i=>({label:i.label,digest:i.digest})),knowledge,provider,budget:VIVADO_BUDGET,code:await Promise.all(codeFiles.map(async p=>digest(await fs.readFile(path.join(root,"src/analyzer",p)))))});
   const out=path.join(recording,"generated-vivado"), run=path.join(out,identity.slice(0,24));
   await fs.mkdir(run,{recursive:true});
@@ -169,7 +176,7 @@ export async function runVivadoAnalysis(options, deps={}) {
     checkpoint??={identity,completed:[]};
     if (checkpoint.identity!==identity || !Array.isArray(checkpoint.completed) || checkpoint.completed.length>evidence.chunks.length) throw new Error("Invalid checkpoint");
     const completed=checkpoint.completed;
-    const validationFor = i => ({eventIds:evidence.chunks.slice(0,i+1).flatMap(c=>c.inputIds),currentInputIds:evidence.chunks.slice(0,i+1).flatMap(c=>c.inputIds),knowledgeIds:knowledge.controls.map(c=>c.id)});
+    const validationFor = i => ({eventIds:evidence.chunks.slice(0,i+1).flatMap(c=>c.inputIds),currentInputIds:evidence.chunks.slice(0,i+1).flatMap(c=>c.inputIds),events:evidence.chunks.slice(0,i+1).flatMap(c=>c.events),knowledgeIds:vivadoKnowledgeIds(knowledge)});
     let catalog={objects:[],artifacts:[]};
     for(let i=0;i<completed.length;i++) catalog=validateVivadoProgram(mergeVivadoChunks(completed.slice(0,i+1)),validationFor(i));
     if(options.retryFailed&&!checkpoint.repairFeedback&&previousStatus?.failurePhase==="chunk_validation"&&previousStatus.chunk===completed.length+1){
@@ -184,7 +191,8 @@ export async function runVivadoAnalysis(options, deps={}) {
       const chunk=evidence.chunks[i];
       activeChunk=i+1;
       const payload={application:report.application,chunk:vivadoChunkPosition(i+1,evidence.chunks.length),
-        interfaceBindingRules:{initialScene:i===0?"Establish blank/unknown/existing from evidence":"MUST use continuation; this is not a new recording, even if the wizard is still pending",createProjectReceiverId:"Must be the empty string. No invented session ID.",selectionIds:"Only existing native object logical IDs. Never event IDs or UI IDs; empty before project creation.",knowledgeIds:"Only supplied knowledge control IDs; unmatched may be empty, never invented."},
+        sourceTransactionRules:vivadoSourceTransactionRules(),stateRules:VIVADO_STATE_RULES,stateKnowledge:vivadoStateKnowledge(knowledge),
+        interfaceBindingRules:{initialScene:i===0?"Establish blank/unknown/existing from evidence":"MUST use continuation; this is not a new recording, even if the wizard is still pending",createProjectReceiverId:"Must be the empty string. No invented session ID.",selectionIds:"Only existing native object logical IDs. Never event IDs or UI IDs; empty before project creation.",knowledgeIds:"Only supplied control IDs, nativeApiCatalog interface IDs, or registered official source IDs; unmatched may be empty, never invented."},
         sourceScope:{captureDeployment:evidence.manifest.captureDeployment,screenshotScope:evidence.manifest.screenshotScope,screenshotOrigin:[evidence.manifest.screenshotOriginX,evidence.manifest.screenshotOriginY],uiAutomationTargets:evidence.manifest.uiAutomationTargets},
         inputs:chunk.events,nativeApiCatalog:knowledge.commands,knowledge:retrieveVivadoKnowledge(knowledge,{texts:chunk.events.flatMap(e=>[e.target?.name,e.window?.title,e.text].filter(Boolean))}),previousContext:vivadoPreviousContext(completed,catalog),
         allowedEvidenceIds:validationFor(i).eventIds,
@@ -253,6 +261,7 @@ export async function compileSavedVivadoAnalysis(options) {
     same(request.provider,candidates[0].request.provider);same(request.schema,VIVADO_SCHEMA);same(request.instructions,VIVADO_INSTRUCTIONS);
     same(request.payload.chunk,vivadoChunkPosition(i+1,evidence.chunks.length));
     same(request.payload.inputs,chunk.events);same(request.payload.nativeApiCatalog,knowledge.commands);
+    same(request.payload.stateRules,VIVADO_STATE_RULES);same(request.payload.stateKnowledge,vivadoStateKnowledge(knowledge));
     same(request.images,chunk.images.map(x=>({label:x.label,sha256:x.digest,bytes:x.bytes})));
     same(request.payload.sourceScope,{captureDeployment:evidence.manifest.captureDeployment,screenshotScope:evidence.manifest.screenshotScope,screenshotOrigin:[evidence.manifest.screenshotOriginX,evidence.manifest.screenshotOriginY],uiAutomationTargets:evidence.manifest.uiAutomationTargets});
     same(request.payload.knowledge,retrieveVivadoKnowledge(knowledge,{texts:chunk.events.flatMap(e=>[e.target?.name,e.window?.title,e.text].filter(Boolean))}));
@@ -262,11 +271,11 @@ export async function compileSavedVivadoAnalysis(options) {
     const withoutReportOperationLabels=context=>context;
     same(withoutReportOperationLabels(request.payload.previousContext),withoutReportOperationLabels(vivadoPreviousContext(chunks,prior)));
     chunks.push(parsed);
-    validateVivadoProgram(mergeVivadoChunks(chunks),{eventIds,currentInputIds:eventIds,knowledgeIds:knowledge.controls.map(c=>c.id)});
+    validateVivadoProgram(mergeVivadoChunks(chunks),{eventIds,currentInputIds:eventIds,knowledgeIds:vivadoKnowledgeIds(knowledge)});
     provenance.push({chunk:i+1,prefix,responseId:response.id,requestDigest:digest(request),responseDigest:digest(response),parsedDigest:digest(parsed),operationIds:parsed.operations.map((o,j)=>({original:o.id,compiled:`chunk-${i+1}-op-${j+1}`}))});
   }
   const program=mergeVivadoChunks(chunks),eventIds=evidence.chunks.flatMap(c=>c.inputIds);
-  const validation={eventIds,currentInputIds:eventIds,knowledgeIds:knowledge.controls.map(c=>c.id)};
+  const validation={eventIds,currentInputIds:eventIds,events:evidence.events,knowledgeIds:vivadoKnowledgeIds(knowledge)};
   buildVivadoReplayPlan(program,validation);
   const destination=await fs.mkdtemp(path.join(out,"offline-compile-"));
   const files=await writeReplayFiles(destination,program,validation);

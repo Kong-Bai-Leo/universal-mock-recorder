@@ -7,29 +7,51 @@ import {VIVADO_API_VERSION,validateVivadoProgram,mergeVivadoChunks} from '../src
 import {renderVivado,tclLiteral} from '../src/analyzer/lib/vivado-renderer.mjs';
 import {buildVivadoReplayPlan} from '../src/analyzer/lib/vivado-replay-plan.mjs';
 import {prepareVivadoEvidence,groupVivadoEvents} from '../src/analyzer/lib/vivado-evidence.mjs';
-import {runVivadoAnalysis,recoverSavedCheckpoint} from '../src/analyzer/vivado-cli.mjs';
+import {runVivadoAnalysis,recoverSavedCheckpoint,vivadoSourceTransactionRules} from '../src/analyzer/vivado-cli.mjs';
 import {loadVivadoKnowledge} from '../src/analyzer/lib/vivado-knowledge.mjs';
+import {topTransaction} from './fixtures/vivado.mjs';
 const evidence={eventIds:['evt-001'],currentInputIds:['evt-001']};
 const call=(command,receiverId,resultId,args)=>({id:'op-'+command,sourceEventIds:['evt-001'],timestampMs:1,stage:'committed',knowledgeIds:[],apiCall:{command,interfaceId:'vivado-tcl-'+command.replaceAll('_','-'),receiverId,resultId,arguments:args}});
-export function fixture(){return {version:VIVADO_API_VERSION,complete:true,summary:'Observed blank RTL project',initialScene:{kind:'blank',evidenceIds:['evt-001']},
+export function fixture(){return {version:VIVADO_API_VERSION,topTransactions:[],complete:true,summary:'Observed blank RTL project',initialScene:{kind:'blank',evidenceIds:['evt-001']},
  operations:[call('create_project','','project-1',{name:'Smoke',part:'xc7a35tcpg236-1'}),call('set_property','project-1','',{name:'target_language',value:'VHDL'})],
  artifacts:[],decisions:[{sourceEventIds:['evt-001'],disposition:'modeled',reason:'project created'}],unresolved:[],finalScene:{kind:'observed',projectIds:['project-1'],evidenceIds:['evt-001']},commandState:{command:'',stage:'idle',pendingEventIds:[],selectionIds:[]}};}
 test('explicit calls build internal JSON without claiming execution',()=>{const p=buildVivadoReplayPlan(fixture(),evidence);assert.equal(p.nativeVerification.status,'not_run');assert.equal(p.expectedState.objects[0].properties.target_language,'VHDL');});
+
+test('source harness distinguishes pending templates, saved content and unsupported revisions',()=>{
+ const rules=vivadoSourceTransactionRules();
+ assert.match(rules.addFilesReceiver,/existing project logical ID/);
+ assert.match(rules.pendingEditor,/defer artifact\/add_files/);
+ assert.match(rules.commitEditor,/observed save/);
+ assert.match(rules.revisions,/must be unresolved/);
+});
 test('reject missing or mismatched native call',()=>{const p=fixture();delete p.operations[0].apiCall;assert.throws(()=>validateVivadoProgram(p,evidence));const q=fixture();q.operations[0].apiCall.interfaceId='invented';assert.throws(()=>validateVivadoProgram(q,evidence));});
 test('reject ghost objects and top property on project',()=>{const p=fixture();p.operations[1].apiCall.receiverId='future';assert.throws(()=>validateVivadoProgram(p,evidence),/not created/);const q=fixture();q.operations[1].apiCall.arguments={name:'top',value:'top'};assert.throws(()=>validateVivadoProgram(q,evidence),/fileset/);});
 test('reject arbitrary paths, properties, commands and HDL paths',()=>{for(const value of ['../data','a;exit','NUL','a[exec]']){const p=fixture();p.operations[0].apiCall.arguments.name=value;assert.throws(()=>validateVivadoProgram(p,evidence));}const p=fixture();p.operations[1].apiCall.arguments.name='STEPS.SYNTH_DESIGN.TCL.PRE';assert.throws(()=>validateVivadoProgram(p,evidence));});
 test('pending is separate from coverage but prevents final execution',()=>{const p=fixture();p.commandState.pendingEventIds=['evt-001'];validateVivadoProgram(p,evidence);assert.throws(()=>buildVivadoReplayPlan(p,evidence),/unfinished/);p.complete=false;assert.throws(()=>validateVivadoProgram(p,evidence),/conflict/);});
 test('evidence and decision coverage cannot disappear',()=>{const p=fixture();p.decisions=[];assert.throws(()=>validateVivadoProgram(p,evidence),/coverage/);const q=fixture();q.operations[0].sourceEventIds=['unknown'];assert.throws(()=>validateVivadoProgram(q,evidence),/evidence/);});
 test('chunk-local operation labels namespace without renaming project',()=>{const p=fixture(),q=fixture();p.operations.pop();q.initialScene.kind='continuation';q.operations.shift();q.operations[0].id=p.operations[0].id;const m=mergeVivadoChunks([p,q]);assert.equal(m.operations[1].apiCall.receiverId,'project-1');validateVivadoProgram(m,evidence);});
-test('HDL content is required, identity stable, fileset top works',()=>{const p=fixture();p.artifacts=[{id:'source-1',name:'top.v',content:'module top(input a, output y); assign y=a; endmodule\n',precision:'exact',sourceEventIds:['evt-001']}];p.operations.push(call('add_files','project-1','',{fileset:'sources_1',artifactIds:['source-1']}),call('get_filesets','project-1','fileset-1',{name:'sources_1'}),{...call('set_property','fileset-1','',{name:'top',value:'top'}),id:'op-top'});validateVivadoProgram(p,{...evidence,final:true});p.artifacts[0].precision='unknown';assert.throws(()=>validateVivadoProgram(p,evidence),/unreadable/);});
+test('HDL content is required, identity stable, fileset top works',()=>{const p=fixture();p.artifacts=[{id:'source-1',name:'top.v',content:'module top(input a, output y); assign y=a; endmodule\n',precision:'exact',sourceEventIds:['evt-001']}];p.operations.push(call('add_files','project-1','',{fileset:'sources_1',artifactIds:['source-1']}),call('get_filesets','project-1','fileset-1',{name:'sources_1'}),{...call('set_property','fileset-1','',{name:'top',value:'top'}),id:'op-top'});p.topTransactions=[topTransaction()];validateVivadoProgram(p,{...evidence,final:true});p.artifacts[0].precision='unknown';assert.throws(()=>validateVivadoProgram(p,evidence),/unreadable/);});
 test('run completion needs launch, source content and bounded wait',()=>{const p=fixture();p.operations.push(call('get_runs','project-1','run-1',{name:'synth_1'}),call('wait_on_runs','run-1','',{timeoutMinutes:5,expectedStatus:'synth_design Complete!'}));assert.throws(()=>validateVivadoProgram(p,evidence),/launched/);p.operations[3]=call('launch_runs','run-1','',{jobs:2});assert.throws(()=>validateVivadoProgram(p,evidence),/without captured source/);});
 test('implementation requires design sources and completed synthesis; bitstream is unsupported',()=>{const p=fixture();p.artifacts=[{id:'source-1',name:'top.v',content:'module top; endmodule\n',precision:'exact',sourceEventIds:['evt-001']}];p.operations.push(call('add_files','project-1','',{fileset:'sim_1',artifactIds:['source-1']}),call('get_runs','project-1','run-1',{name:'impl_1'}),call('launch_runs','run-1','',{jobs:1}));assert.throws(()=>validateVivadoProgram(p,evidence),/sources_1/);p.operations[2].apiCall.arguments.fileset='sources_1';assert.throws(()=>validateVivadoProgram(p,evidence),/completed synthesis/);p.operations.pop();p.operations.push(call('wait_on_runs','run-1','',{timeoutMinutes:5,expectedStatus:'write_bitstream Complete!'}));assert.throws(()=>validateVivadoProgram(p,evidence),/invalid native call/);});
 test('Tcl backend quotes substitution and rejects overwrite',()=>{const s=renderVivado(fixture(),evidence);assert.match(s,/open_project \$savedProject/);assert.match(s,/WRONLY CREAT EXCL/);assert.doesNotMatch(s,/-force/);assert.equal(tclLiteral('$x[exit]"\\\n'),'"\\$x\\[exit\\]\\"\\\\\\n"');});
 test('pointer gestures stay together and incomplete ones rejected',()=>{assert.throws(()=>groupVivadoEvents([{eventType:'mouse_up'}]));assert.equal(groupVivadoEvents([{eventType:'mouse_down'},{eventType:'mouse_move'},{eventType:'mouse_up'}]).length,1);});
+test('native wait failures retain run status, refresh state and original log location',()=>{
+ const p=fixture();
+ p.artifacts=[{id:'source-1',name:'top.v',content:'module top(input a, output y); assign y=a; endmodule\n',precision:'exact',sourceEventIds:['evt-001']}];
+ p.operations.push(call('add_files','project-1','',{fileset:'sources_1',artifactIds:['source-1']}),call('get_runs','project-1','run-1',{name:'synth_1'}),call('launch_runs','run-1','',{jobs:2}),call('wait_on_runs','run-1','',{timeoutMinutes:5,expectedStatus:'synth_design Complete!'}));
+ const s=renderVivado(p,evidence);
+ assert.ok(s.includes('set waitFailed [catch {wait_on_runs $obj(run-1) -timeout 5} waitError]'));
+ assert.ok(s.includes('verify_replay_run $obj(run-1) "synth_design Complete!" $audit $waitFailed $waitError'));
+ assert.match(s,/get_property DIRECTORY \$run\] runme\.log/);
+ assert.match(s,/RUN_STATUS/);
+ assert.ok(s.includes('$waitFailed || $progress ne "100%" || $status ne $expected || $stale'));
+ assert.ok(s.indexOf('verify_replay_run $obj(run-1)')<s.indexOf('NATIVE_CALLS_AND_REOPEN_PASS'));
+ assert.doesNotMatch(s,/reset_run|reset_runs|general\.maxThreads/);
+});
 async function withRecording(fn){const root=await fs.mkdtemp(path.join(os.tmpdir(),'vivado-test-'));try{await fs.mkdir(path.join(root,'screenshots'));await fs.writeFile(path.join(root,'manifest.json'),JSON.stringify({applicationProfile:'vivado',captureDeployment:'same-windows-session'}));await fs.writeFile(path.join(root,'screenshots/frame.jpg'),Buffer.from([255,216,255,217]));await fs.writeFile(path.join(root,'events.jsonl'),JSON.stringify({id:'evt-001',timestampMs:1,eventType:'key_down',key:'ENTER',window:{processName:'vivado'},screenshot:'screenshots/frame.jpg'}));await fs.writeFile(path.join(root,'config.json'),JSON.stringify({provider:{model:'test',imageDetail:'high'}}));return await fn(root);}finally{const real=await fs.realpath(root);assert.equal(path.dirname(real),await fs.realpath(os.tmpdir()));assert.ok(path.basename(real).startsWith('vivado-test-'));await fs.rm(real,{recursive:true});}}
 test('evidence rejects outer RDP and pause intervals',()=>withRecording(async root=>{const p=await prepareVivadoEvidence(root);assert.equal(p.events.length,1);await fs.writeFile(path.join(root,'manifest.json'),JSON.stringify({applicationProfile:'vivado',captureDeployment:'outside-rdp'}));await assert.rejects(prepareVivadoEvidence(root),/VM/);}));
 test('prepare never calls API; success always delivers one Tcl and reuses checkpoint',()=>withRecording(async recording=>{
- let calls=0;const client={analyze:async()=>{calls++;return fixture();},getUsageRecords:()=>[]};
+ let calls=0;const client={analyze:async({payload})=>{assert.deepEqual(payload.sourceTransactionRules,vivadoSourceTransactionRules());calls++;return fixture();},getUsageRecords:()=>[]};
  const opts={recording,config:path.join(recording,'config.json')};
  const prepared=await runVivadoAnalysis(opts,{client});assert.equal(prepared.status,'prepared_no_upload');assert.equal(calls,0);
  const report=JSON.parse(await fs.readFile(prepared.report,'utf8'));assert.equal(report.primaryOutput,'vivado-replay.tcl');
@@ -49,6 +71,7 @@ test('explicit same-run retry receives original validation error without automat
  const client={getUsageRecords:()=>[],analyze:async({payload})=>{
   calls++;const p=fixture();if(calls===1)p.commandState.selectionIds=['evt-001'];
   else {assert.match(payload.repairFeedback.validationError,/unknown selection/);assert.deepEqual(payload.repairFeedback.previousInvalidResult.commandState.selectionIds,['evt-001']);}
+  if(calls>1){assert.match(payload.repairFeedback.rule,/add_files receiverId MUST be the existing project logical ID/);assert.match(payload.repairFeedback.rule,/nativeApiCatalog interface IDs/);assert.match(payload.repairFeedback.rule,/registered official source IDs/);}
   await client.onResponse({id:'fake-retry-'+calls,status:'completed',output:[{type:'message',role:'assistant',content:[{type:'output_text',text:JSON.stringify(p)}]}]});return p;
  }};
  await runVivadoAnalysis(opts,{client});await assert.rejects(runVivadoAnalysis({...opts,analyze:true},{client}),/unknown selection/);assert.equal(calls,1);
@@ -95,6 +118,7 @@ test('explicit recovery reuses verified paid chunks and gives failed chunk feedb
  const opts={recording,config:path.join(recording,'config.json')};let calls=0;
  const client={getUsageRecords:()=>[],analyze:async({payload})=>{
   assert.ok(payload.interfaceBindingRules);assert.match(payload.interfaceBindingRules.createProjectReceiverId,/empty string/);
+  assert.match(payload.interfaceBindingRules.knowledgeIds,/nativeApiCatalog interface IDs/);assert.match(payload.interfaceBindingRules.knowledgeIds,/registered official source IDs/);
   calls++;const p=fixture();p.initialScene={kind:calls===1?'blank':'continuation',evidenceIds:[payload.inputs[0].id]};p.operations=[];
   p.finalScene={kind:'unknown',projectIds:[],evidenceIds:[payload.inputs.at(-1).id]};
   p.decisions=[{sourceEventIds:payload.inputs.map(e=>e.id),disposition:'deferred',reason:'wizard pending'}];

@@ -1,5 +1,5 @@
 {
-  "version": "vivado-2024.2-foundation-1",
+  "version": "vivado-2024.2-state-2",
   "application": "Vivado",
   "scope": "Bounded native-call candidates. Schema restricts executable arguments; native verification is tracked separately.",
   "commands": [
@@ -66,7 +66,9 @@
       "relatedControlIds": [
         "vivado-settings",
         "vivado-settings-target-language",
-        "vivado-settings-top"
+        "vivado-settings-top",
+        "vivado-sources-set-as-top",
+        "vivado-sources-top-icon"
       ],
       "description": "修改明确对象的属性；属性名区分大小写。",
       "parameters": [

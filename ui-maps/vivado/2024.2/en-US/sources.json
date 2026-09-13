@@ -1,5 +1,7 @@
 {
   "sources": [
+    {"id":"amd-ug893-sources-popup","title":"UG893 — Sources Window Popup Menu Commands","url":"https://docs.amd.com/r/2024.2-English/ug893-vivado-ide/Sources-Window-Popup-Menu-Commands","version":"2024.2","accessedAt":"2026-09-13","status":"official_document_read"},
+    {"id":"amd-ug893-hierarchy-icons","title":"UG893 — Hierarchy View Icons","url":"https://docs.amd.com/r/2024.2-English/ug893-vivado-ide/Hierarchy-View-Icons","version":"2024.2","accessedAt":"2026-09-13","status":"official_document_read"},
     {
       "id": "amd-ug893-home",
       "title": "UG893 — Using the Getting Started Page",

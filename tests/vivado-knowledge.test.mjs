@@ -4,15 +4,23 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
 import {fileURLToPath} from "node:url";
-import {loadVivadoKnowledge, validateVivadoKnowledge, retrieveVivadoKnowledge} from "../src/analyzer/lib/vivado-knowledge.mjs";
+import {loadVivadoKnowledge, validateVivadoKnowledge, retrieveVivadoKnowledge,vivadoStateKnowledge,vivadoKnowledgeIds} from "../src/analyzer/lib/vivado-knowledge.mjs";
+import {projectFixture} from './fixtures/vivado.mjs';
+import {validateVivadoProgram} from '../src/analyzer/lib/vivado-program.mjs';
 
 const root = fileURLToPath(new URL("../",import.meta.url));
 const original = await loadVivadoKnowledge(root);
 const copy = () => structuredClone(original);
+test('knowledge citations include documented commands and sources without accepting invented IDs',()=>{
+ const ids=vivadoKnowledgeIds(original),p=projectFixture();p.operations[0].knowledgeIds=['vivado-tcl-create-project','amd-create-project'];
+ validateVivadoProgram(p,{eventIds:['evt-001'],knowledgeIds:ids});
+ p.operations[0].knowledgeIds.push('amd-fabricated-source');assert.throws(()=>validateVivadoProgram(p,{eventIds:['evt-001'],knowledgeIds:ids}),/unknown knowledge ID/);
+ assert.ok(ids.includes('amd-get-runs'));assert.ok(ids.includes('vivado-sources-top-icon'));
+});
 
 test("Vivado map is internally consistent without claiming complete coverage or replay", () => {
   const result = validateVivadoKnowledge(original);
-  assert.equal(result.controls,200);
+  assert.equal(result.controls,203);
   assert.equal(result.commands,7);
   assert.equal(result.coverageStatus,"partial");
   assert.equal(result.replayBackend,"bounded_native_plan_offline_tested");
@@ -83,7 +91,7 @@ test("reject duplicate IDs, broken parent links and cycles", () => {
 
 test("reject fabricated sources, observations, command links and static pixel coordinates", () => {
   let k=copy(); k.controls[0].sourceIds=["fake"]; assert.throws(()=>validateVivadoKnowledge(k),/source/);
-  k=copy(); k.controls[0].observationIds=[]; assert.throws(()=>validateVivadoKnowledge(k),/observation required/);
+  k=copy(); k.controls.find(c=>c.observationStatus==='observed').observationIds=[]; assert.throws(()=>validateVivadoKnowledge(k),/observation required/);
   k=copy(); k.commands[0].relatedControlIds=["fake"]; assert.throws(()=>validateVivadoKnowledge(k),/related control/);
   k=copy(); k.controls[0].bounds=[1,2,3,4]; assert.throws(()=>validateVivadoKnowledge(k),/live observations/);
 });
@@ -100,4 +108,14 @@ test("loader refuses paths outside the versioned map root", async () => {
     assert.ok(path.basename(resolved).startsWith("vivado-map-unit-"));
     await fs.rm(resolved,{recursive:true,force:true});
   }
+});
+
+test('UIA-free state bundle contains documented top menu/icon without claiming a click',()=>{
+ const bundle=vivadoStateKnowledge(original);
+ assert.equal(bundle.controls.length,3);
+ assert.ok(bundle.controls.some(c=>c.id==='vivado-sources-set-as-top'&&c.parentId==='vivado-sources-context-menu'));
+ assert.ok(bundle.controls.some(c=>c.id==='vivado-sources-top-icon'));
+ assert.ok(bundle.controls.every(c=>c.matchStatus==='candidate_only'&&c.observationStatus==='documented_not_scanned'));
+ assert.ok(bundle.commands.some(c=>c.canonicalName==='set_property'));
+ assert.equal(bundle.sources.length>0,true);
 });

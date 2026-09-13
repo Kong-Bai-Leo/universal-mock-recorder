@@ -5,6 +5,12 @@ const mapPath = "ui-maps/vivado/2024.2/en-US";
 const norm = value => String(value ?? "").normalize("NFKC").toLowerCase().replace(/[._\s-]+/g, " ").trim();
 const requireThat = (ok, message) => { if (!ok) throw new Error(`Vivado knowledge: ${message}`); };
 
+// A knowledge citation can name a control, native command, or official source.
+// These are documentation identities only, never native execution handles.
+export function vivadoKnowledgeIds(knowledge) {
+  return [...new Set([...knowledge.controls,...knowledge.commands,...knowledge.sources].map(item=>item.id))];
+}
+
 // All paths come from a versioned local index, not model-selected arbitrary files.
 async function readInside(base, relative) {
   requireThat(typeof relative === "string" && !relative.includes("\\") && !relative.includes(":") &&
@@ -81,6 +87,12 @@ export async function loadVivadoKnowledge(root) {
   const knowledge = {index, controls, commands:commandDoc.commands, sources:sourceDoc.sources, observations:observationDoc.observations};
   validateVivadoKnowledge(knowledge);
   return knowledge;
+}
+
+// Small documented state bundle also works with UIA disabled. It is not a
+// claim that any of these controls was clicked in the current recording.
+export function vivadoStateKnowledge(knowledge) {
+  return retrieveVivadoKnowledge(knowledge,{controlIds:['vivado-sources-context-menu','vivado-sources-set-as-top','vivado-sources-top-icon'],maxControls:3,maxCommands:3});
 }
 
 // Retrieval offers evidence candidates, never an automatic UI match or permission to execute.

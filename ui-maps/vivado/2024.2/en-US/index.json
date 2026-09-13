@@ -2,9 +2,10 @@
   "application": "Vivado",
   "version": "2024.2",
   "language": "en-US",
-  "catalogVersion": "vivado-2024.2-foundation-1",
+  "catalogVersion": "vivado-2024.2-state-2",
   "coverageStatus": "partial",
   "sections": [
+    {"id":"sources-state","path":"sources-state/ui-map.json"},
     {
       "id": "home",
       "path": "home/ui-map.json"
