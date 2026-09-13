@@ -1,0 +1,21 @@
+{
+  "status": "partial_scan",
+  "hierarchy": "passed_offline_unique_ids_and_parent_validation",
+  "runtimeReplay": "fixed_compiler_synthetic_baseline_and_variation_saved_reopened_passed",
+  "recordingEndToEnd": "one_synthetic_recording_three_real_vlm_chunks_offline_id_namespace_recovery_native_replay_source_truth_comparison_passed",
+  "delayedCaptureFix": "vm_sample_26_events_committed_cells_and_final_distribution_report_observed",
+  "realApiRequestAttempts": 5,
+  "successfulModelResponses": 3,
+  "apiFailureStages": ["local_network_permission_EACCES", "TLS_bad_record_mac"],
+  "providerUsageAvailable": true,
+  "unknownUsageAttempts": 2,
+  "sourceRecordingCompared": true,
+  "sourceRecordingComparisonScope": "one_small_synthetic_table_and_distribution_recording_20260912-084653-a8b952",
+  "analysisStatisticsVerification": "visible_report_results_compared_to_pre_api_independent_truth_for_one_real_recording_plus_two_compiler_fixtures",
+  "unverified": [
+    "toolbar icon meanings",
+    "remaining menus/dialogs",
+    "bivariate launcher",
+    "distribution report menu; bivariate menu observed"
+  ]
+}

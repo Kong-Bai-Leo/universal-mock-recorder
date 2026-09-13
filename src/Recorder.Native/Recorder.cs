@@ -17,7 +17,53 @@ namespace UniversalMockRecorder
 {
     internal static class RecorderProfile
     {
-#if QUARTUS
+#if VIVADO
+        public const string ApplicationId = "vivado";
+        public const string ApplicationName = "AMD Vivado";
+        public const string ApplicationVersion = "2024.2";
+        public const string Language = "en-US";
+        public const string WindowTitle = "Vivado 操作录制器";
+        public const string Header = "在 Vivado 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "vivado";
+        public const string UiMapRoot = "ui-maps/vivado/2024.2/en-US";
+        public const string ReplayFormat = "vivado-tcl";
+        public const string GenerateOptionText = "仅本地保存；正式分析另行确认上传";
+        public const string AnalysisScriptFile = "analyze-vivado-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\replay-plan.json";
+        public const string ReplayFile = "vivado-replay.tcl";
+        public const string ReplayDescription = "可在 Vivado 中直接运行的单文件 Tcl 脚本";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#elif JMP
+        public const string ApplicationId = "jmp";
+        public const string ApplicationName = "JMP Trial";
+        public const string ApplicationVersion = "19.1.5";
+        public const string Language = "en-US";
+        public const string WindowTitle = "JMP 操作录制器";
+        public const string Header = "在 JMP 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "jmp";
+        public const string UiMapRoot = "ui-maps/jmp/19.1/en-US";
+        public const string ReplayFormat = "jmp-jsl";
+        public const string GenerateOptionText = "仅本地保存；正式分析另行确认上传";
+        public const string AnalysisScriptFile = "analyze-jmp-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\replay-plan.json";
+        public const string ReplayFile = "jmp-replay.jsl";
+        public const string ReplayDescription = "可在 JMP 中直接运行的单文件 JSL 脚本";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#elif QUARTUS
         public const string ApplicationId = "quartus";
         public const string ApplicationName = "Quartus Prime";
         public const string ApplicationVersion = "26.1.1 Pro";
@@ -136,7 +182,10 @@ namespace UniversalMockRecorder
 
         public static bool MatchesTargetProcess(string processName)
         {
-#if KICAD
+#if VIVADO
+            return string.Equals(processName, "vivado", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "vvgl", StringComparison.OrdinalIgnoreCase);
+#elif KICAD
             return string.Equals(processName, "kicad", StringComparison.OrdinalIgnoreCase) ||
                 string.Equals(processName, "eeschema", StringComparison.OrdinalIgnoreCase) ||
                 string.Equals(processName, "pcbnew", StringComparison.OrdinalIgnoreCase);
@@ -161,7 +210,13 @@ namespace UniversalMockRecorder
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#if JMP
+            Application.Run(new JmpRecorderForm());
+#elif VIVADO
+            Application.Run(new VivadoRecorderForm());
+#else
             Application.Run(new RecorderForm());
+#endif
         }
 
         [DllImport("user32.dll")]
@@ -407,7 +462,7 @@ namespace UniversalMockRecorder
             else
             {
                 _startButton.Enabled = true;
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                 _retryButton.Enabled = !string.IsNullOrEmpty(_currentRecordingDirectory);
 #endif
                 _statusLabel.Text = "录制完成，共保存事件 " + eventCount + " 条。" +
@@ -867,7 +922,7 @@ namespace UniversalMockRecorder
         private long _latestPscadInputMs;
 #endif
         private Point _lastMovePoint;
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
         private WindowInfo _kiCadPointerDownWindow;
         private UiTarget _kiCadPointerDownTarget;
         private string _kiCadPointerDownButton;
@@ -900,6 +955,15 @@ namespace UniversalMockRecorder
 
         public bool IsRecording { get { return _recording; } }
         public long EventCount { get { return Interlocked.Read(ref _eventCount); } }
+
+#if JMP || VIVADO
+        public bool IsPaused { get { return _privacyPaused; } }
+        public void TogglePause()
+        {
+            _privacyPaused = !_privacyPaused;
+            Enqueue(new RawInputEvent { Id = NextId(), EventType = _privacyPaused ? "privacy_pause" : "privacy_resume", TimestampMs = UtcNowMs() });
+        }
+#endif
 
         public void Start()
         {
@@ -963,7 +1027,7 @@ namespace UniversalMockRecorder
                 if (eventType != null)
                 {
                     var now = UtcNowMs();
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                     var eventWindow = ReadWindowAtPoint(input.Point.X, input.Point.Y);
                     var eventButton = MouseButton(message.ToInt32());
                     var continuingGesture = _kiCadPointerDownWindow != null &&
@@ -992,7 +1056,7 @@ namespace UniversalMockRecorder
                         WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0,
                         Modifiers = GetModifiers().ToArray()
                     };
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                     rawInput.Window = eventWindow;
                     rawInput.Target = continuingGesture ? _kiCadPointerDownTarget :
                         (_captureUiAutomationTargets && eventType != "mouse_move" ? ReadTargetAt(rawInput.X, rawInput.Y) : null);
@@ -1034,7 +1098,11 @@ namespace UniversalMockRecorder
 
                 if (input.VirtualKeyCode == (uint)Keys.F12 && modifiers.Contains("CTRL") && modifiers.Contains("SHIFT"))
                 {
+#if JMP || VIVADO
+                    TogglePause();
+#else
                     _privacyPaused = !_privacyPaused;
+#endif
                     return CallNextHookEx(_keyboardHook, code, message, data);
                 }
 
@@ -1043,7 +1111,7 @@ namespace UniversalMockRecorder
                     if (IsModifierKey(input.VirtualKeyCode))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                     var eventWindow = ReadForegroundWindow();
                     if (eventWindow == null || !RecorderProfile.MatchesTargetProcess(eventWindow.ProcessName))
                         return CallNextHookEx(_keyboardHook, code, message, data);
@@ -1061,7 +1129,7 @@ namespace UniversalMockRecorder
                         Modifiers = modifiers.ToArray(),
                         Target = focusedTarget
                     };
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                     rawInput.Window = eventWindow;
                     var pointer = Cursor.Position;
                     rawInput.X = pointer.X;
@@ -1108,7 +1176,14 @@ namespace UniversalMockRecorder
             {
                 try
                 {
-#if !KICAD && !PSCAD && !QUARTUS
+#if JMP || VIVADO
+                    if (input.EventType == "privacy_pause" || input.EventType == "privacy_resume")
+                    {
+                        WriteEvent(input);
+                        continue;
+                    }
+#endif
+#if !KICAD && !PSCAD && !QUARTUS && !JMP && !VIVADO
                     input.Window = input.EventType.StartsWith("mouse_")
                         ? ReadWindowAtPoint(input.X, input.Y)
                         : ReadForegroundWindow();
@@ -1120,7 +1195,7 @@ namespace UniversalMockRecorder
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
-#if !KICAD && !PSCAD && !QUARTUS
+#if !KICAD && !PSCAD && !QUARTUS && !JMP && !VIVADO
                         input.Target = _captureUiAutomationTargets ? ReadTargetAt(input.X, input.Y) : null;
 #endif
                         if (input.Window != null && input.Window.Width > 0 && input.Window.Height > 0)
@@ -1136,7 +1211,7 @@ namespace UniversalMockRecorder
                         input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
                         input.ScreenshotBeforeTimestampMs = input.SnapshotTimestampMs;
                         Thread.Sleep(160);
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                         if (CanCaptureKiCadAfter(input))
 #endif
                         using (var after = CaptureScreenBitmap())
@@ -1155,13 +1230,13 @@ namespace UniversalMockRecorder
                         input.ScreenshotTimestampMs = input.SnapshotTimestampMs;
                     }
                     else if (ShouldCaptureScreenshot(input)
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                         && CanCaptureKiCadAfter(input)
 #endif
                         )
                     {
                         Thread.Sleep(120);
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
                         if (CanCaptureKiCadAfter(input))
 #endif
                         using (var after = CaptureScreenBitmap())
@@ -1230,6 +1305,9 @@ namespace UniversalMockRecorder
                         }
                     }
 
+#if JMP || VIVADO
+                    CaptureJmpDelayedObservation(input);
+#endif
                     WriteEvent(input);
                     UpdateThreeDsMaxPrimitiveCaptureStateAfter(input);
                     Interlocked.Increment(ref _eventCount);
@@ -1250,6 +1328,27 @@ namespace UniversalMockRecorder
                 }
             }
         }
+
+#if JMP || VIVADO
+        // Applications can create a report after the ordinary 120/160 ms after-frame.
+        // Preserve that frame and add a later observation only while the same
+        // input remains the most recent one. This is not proof of completion.
+        private void CaptureJmpDelayedObservation(RawInputEvent input)
+        {
+            if (input.EventType != "key_down" && input.EventType != "mouse_up" &&
+                input.EventType != "mouse_wheel") return;
+            if (_queue.Count != 0 || !_recording || _privacyPaused) return;
+            var sequence = Interlocked.Read(ref _eventSequence);
+            Thread.Sleep(800);
+            if (_queue.Count != 0 || Interlocked.Read(ref _eventSequence) != sequence ||
+                !_recording || _privacyPaused || !CanCaptureKiCadAfter(input)) return;
+            using (var observed = CaptureScreenBitmap())
+            {
+                input.ScreenshotSettledAfter = SaveScreenshot(input.Id + "-settled-after", observed);
+                input.ScreenshotSettledAfterTimestampMs = UtcNowMs();
+            }
+        }
+#endif
 
         private void WriteEvent(RawInputEvent input)
         {
@@ -1274,7 +1373,12 @@ namespace UniversalMockRecorder
                 "  \"applicationVersion\": \"" + RecorderProfile.ApplicationVersion + "\",\n" +
                 "  \"language\": \"" + RecorderProfile.Language + "\",\n" +
                 "  \"targetProcess\": \"" + RecorderProfile.TargetProcess + "\",\n" +
-#if QUARTUS
+#if JMP || VIVADO
+                "  \"captureDeployment\": \"same-windows-session\",\n" +
+                "  \"screenshotScope\": \"virtual-desktop\",\n" +
+                "  \"screenshotOriginX\": " + SystemInformation.VirtualScreen.Left + ",\n" +
+                "  \"screenshotOriginY\": " + SystemInformation.VirtualScreen.Top + ",\n" +
+#elif QUARTUS
                 "  \"targetProcesses\": [\"quartus\"],\n" +
                 "  \"uiMapLanguage\": \"en-US\",\n" +
                 "  \"screenshotScope\": \"virtual-desktop\",\n" +
@@ -1616,7 +1720,7 @@ namespace UniversalMockRecorder
         private static bool ShouldCaptureKeyTransition(RawInputEvent input)
         {
             if (input == null || input.EventType != "key_down") return false;
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
             // Single-letter shortcuts act at the cursor; UIA may not expose the canvas.
             // Capture every non-redacted key so both tool activation and field edits have evidence.
             return input.Key != "REDACTED";
@@ -1629,7 +1733,7 @@ namespace UniversalMockRecorder
 #endif
         }
 
-#if KICAD || PSCAD || QUARTUS
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
         private bool CanCaptureKiCadAfter(RawInputEvent input)
         {
             if (_privacyPaused) return false;
@@ -2187,6 +2291,10 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
             [DataMember(Name = "screenshotSelection", EmitDefaultValue = false)] public string ScreenshotSelection;
             [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
+#if JMP || VIVADO
+            [DataMember(Name = "screenshotSettledAfter", EmitDefaultValue = false)] public string ScreenshotSettledAfter;
+            [DataMember(Name = "screenshotSettledAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotSettledAfterTimestampMs;
+#endif
             [DataMember(Name = "visualCommandContext", EmitDefaultValue = false)] public string VisualCommandContext;
             [DataMember(Name = "visualChange", EmitDefaultValue = false)] public VisualChangeInfo VisualChange;
             [DataMember(Name = "transformEvidence", EmitDefaultValue = false)] public List<ScreenshotRegionEvidence> TransformEvidence;

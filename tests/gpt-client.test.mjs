@@ -173,3 +173,78 @@ test("TLS bad record mac 被识别为可重试的连接完整性错误", () => {
   assert.equal(isTlsIntegrityError(wrapped), true);
   assert.equal(isRetryable(wrapped), true);
 });
+
+test("failed streaming response preserves provider error and usage without retry", async () => {
+  let calls=0;const failures=[];
+  const server=http.createServer(async(request,response)=>{
+    calls++;for await(const _ of request){}
+    response.writeHead(200,{"content-type":"text/event-stream"});
+    response.end("data: "+JSON.stringify({type:"response.failed",response:{id:"failed-synthetic",status:"failed",error:{code:"server_error",message:"synthetic overload"},usage:{input_tokens:120,output_tokens:3,total_tokens:123}}})+"\n\n");
+  });
+  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
+  const previous=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY="synthetic-key";
+  try {
+    const client=new GptClient({model:"synthetic",maxRetries:0,onFailure:f=>failures.push(f)});
+    client.baseUrl=`http://127.0.0.1:${server.address().port}/v1`;
+    await assert.rejects(client.analyze({instructions:"test",payload:{}}),e=>e.code==="server_error"&&e.status===500);
+    assert.equal(calls,1);assert.equal(failures.length,1);
+    assert.equal(failures[0].response.id,"failed-synthetic");
+    assert.equal(client.getUsageRecords()[0].totalTokens,123);
+    assert.doesNotMatch(JSON.stringify(failures),/synthetic-key|authorization/);
+  } finally {
+    if(previous===undefined)delete process.env.OPENAI_API_KEY;else process.env.OPENAI_API_KEY=previous;
+    await new Promise(resolve=>server.close(resolve));
+  }
+});
+
+test("schema rejection preserves error body and missing usage is not fabricated", async () => {
+  const failures=[];let calls=0;
+  const server=http.createServer(async(request,response)=>{
+    calls++;for await(const _ of request){}
+    response.writeHead(400,{"content-type":"application/json","x-request-id":"req_synthetic"});
+    response.end(JSON.stringify({error:{code:"invalid_json_schema",message:"missing type"}}));
+  });
+  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
+  const previous=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY="synthetic-key";
+  try {
+    const client=new GptClient({model:"synthetic",maxRetries:0,onFailure:f=>failures.push(f)});
+    client.baseUrl=`http://127.0.0.1:${server.address().port}/v1`;
+    await assert.rejects(client.analyze({instructions:"test",payload:{}}),e=>e.code==="invalid_json_schema"&&e.requestId==="req_synthetic");
+    assert.equal(calls,1);assert.equal(failures[0].response.error.code,"invalid_json_schema");
+    assert.deepEqual(client.getUsageRecords(),[]);
+  } finally {
+    if(previous===undefined)delete process.env.OPENAI_API_KEY;else process.env.OPENAI_API_KEY=previous;
+    await new Promise(resolve=>server.close(resolve));
+  }
+});
+
+for (const scenario of [
+  { name: "text done without terminal completion", contentType: "text/event-stream", body:
+    "data: " + JSON.stringify({type:"response.output_text.done",text:'{"summary":"partial"}'}) + "\n\n", code: "response_stream_unfinished" },
+  { name: "standalone stream error after text", contentType: "text/event-stream", body:
+    "data: " + JSON.stringify({type:"response.output_text.done",text:'{"summary":"partial"}'}) + "\n\n" +
+    "data: " + JSON.stringify({type:"error",code:"server_error",message:"synthetic terminal failure"}) + "\n\n", code: "server_error" },
+  { name: "nested overload error on a successful HTTP stream", contentType: "text/event-stream", body:
+    "data: " + JSON.stringify({type:"error",error:{type:"service_unavailable_error",code:"server_is_overloaded",message:"synthetic overload",param:null},sequence_number:2}) + "\n\n", code:"server_is_overloaded" },
+  { name: "non-stream incomplete response containing valid partial JSON", contentType: "application/json", body:
+    JSON.stringify({id:"resp_incomplete",status:"incomplete",incomplete_details:{reason:"max_output_tokens"},output_text:'{"summary":"partial"}',usage:{input_tokens:8,output_tokens:4,total_tokens:12}}), code:"response_incomplete" }
+]) test(scenario.name + " cannot become a successful analysis", async () => {
+  let calls=0; const failures=[], successes=[];
+  const server=http.createServer(async (request,response)=>{
+    calls++; for await (const _ of request) {}
+    response.writeHead(200,{"content-type":scenario.contentType,"x-request-id":"req_terminal_test"});
+    response.end(scenario.body);
+  });
+  await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
+  const previous=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY="synthetic-key";
+  try {
+    const client=new GptClient({model:"synthetic",maxRetries:0,onFailure:f=>failures.push(f),onResponse:r=>successes.push(r)});
+    client.baseUrl=`http://127.0.0.1:${server.address().port}/v1`;
+    await assert.rejects(client.analyze({instructions:"test",payload:{}}),e=>e.code===scenario.code&&e.requestId==="req_terminal_test");
+    assert.equal(calls,1); assert.equal(successes.length,0); assert.equal(failures.length,1);
+    if(scenario.code==="response_incomplete") assert.equal(client.getUsageRecords()[0].totalTokens,12);
+  } finally {
+    if(previous===undefined)delete process.env.OPENAI_API_KEY;else process.env.OPENAI_API_KEY=previous;
+    await new Promise(resolve=>server.close(resolve));
+  }
+});

@@ -14,3 +14,9 @@ cv-poc-runtime/
 dist/
 bin/quartus-recorder/recordings/
 ui-maps/quartus/**/screenshots/
+
+# JMP/Vivado private recordings and UI scan images
+bin/jmp-recorder/recordings/
+bin/vivado-recorder/recordings/
+ui-maps/jmp/**/screenshots/
+ui-maps/vivado/**/screenshots/

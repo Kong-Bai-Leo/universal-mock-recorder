@@ -1,0 +1,298 @@
+{
+  "controls": [
+    {
+      "id": "jmp.file",
+      "label": "File",
+      "parentId": null,
+      "kind": "menu",
+      "description": "文件与本地保存入口",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.new",
+      "label": "New (updated)",
+      "parentId": "jmp.file",
+      "kind": "submenu",
+      "description": "新建不同类型文档",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.open",
+      "label": "Open...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "打开已有文件；首版不从未知外部数据重建",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.quick-open",
+      "label": "Quick Open",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "快速打开",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.import-multiple",
+      "label": "Import Multiple Files...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "批量导入，首版不支持",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.connect",
+      "label": "Connect To (updated)",
+      "parentId": "jmp.file",
+      "kind": "submenu",
+      "description": "外部连接，首版不支持",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.close",
+      "label": "Close",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "关闭当前文档",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.save",
+      "label": "Save",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "保存当前原生文档",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.save-as",
+      "label": "Save As...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "另存；输出后端使用独立目录",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.revert",
+      "label": "Revert",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "恢复保存状态，首版不支持",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.export",
+      "label": "Export...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "导出",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.publish",
+      "label": "Publish",
+      "parentId": "jmp.file",
+      "kind": "submenu",
+      "description": "发布，非本次范围",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.internet-open",
+      "label": "Internet Open",
+      "parentId": "jmp.file",
+      "kind": "submenu",
+      "description": "网络打开，非本次范围",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.preferences",
+      "label": "Preferences",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "首选项，非本次修改范围",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.print",
+      "label": "Print...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "打印",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.print-preview",
+      "label": "Print Preview",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "打印预览",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.page-setup",
+      "label": "Page Setup...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "页面设置",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.recent",
+      "label": "Recent Files",
+      "parentId": "jmp.file",
+      "kind": "submenu",
+      "description": "最近文件",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.save-session",
+      "label": "Save Session Script...",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "保存会话脚本；不得作为采集增强暗中读取",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.exit",
+      "label": "Exit JMP",
+      "parentId": "jmp.file",
+      "kind": "menu_item",
+      "description": "退出软件",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.file.new-table",
+      "label": "New Data Table",
+      "parentId": "jmp.file.new",
+      "kind": "button",
+      "description": "新建表；实机默认含 Column 1、0 行。模型须明确记录默认列。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    }
+  ]
+}

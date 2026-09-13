@@ -1,0 +1,888 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "section": "project",
+  "scope": "Partial visible controls; unopened descendants are not covered",
+  "controls": [
+    {
+      "id": "vivado-project-workspace",
+      "parentId": null,
+      "label": "Project Manager",
+      "type": "workspace",
+      "description": "打开工程后的工作区",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menubar",
+      "parentId": "vivado-project-workspace",
+      "label": "Menu Bar",
+      "type": "menubar",
+      "description": "工程菜单与 Home 状态区分",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-file",
+      "parentId": "vivado-project-menubar",
+      "label": "File",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-edit",
+      "parentId": "vivado-project-menubar",
+      "label": "Edit",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-flow",
+      "parentId": "vivado-project-menubar",
+      "label": "Flow",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-tools",
+      "parentId": "vivado-project-menubar",
+      "label": "Tools",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-reports",
+      "parentId": "vivado-project-menubar",
+      "label": "Reports",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-window",
+      "parentId": "vivado-project-menubar",
+      "label": "Window",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-layout",
+      "parentId": "vivado-project-menubar",
+      "label": "Layout",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-view",
+      "parentId": "vivado-project-menubar",
+      "label": "View",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-menu-help",
+      "parentId": "vivado-project-menubar",
+      "label": "Help",
+      "type": "menu",
+      "description": "菜单内容尚未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-navigator",
+      "parentId": "vivado-project-workspace",
+      "label": "Flow Navigator",
+      "type": "panel",
+      "description": "按设计阶段分组的入口",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-0",
+      "parentId": "vivado-flow-navigator",
+      "label": "PROJECT MANAGER",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-1",
+      "parentId": "vivado-flow-navigator",
+      "label": "IP INTEGRATOR",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-2",
+      "parentId": "vivado-flow-navigator",
+      "label": "SIMULATION",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-3",
+      "parentId": "vivado-flow-navigator",
+      "label": "RTL ANALYSIS",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-4",
+      "parentId": "vivado-flow-navigator",
+      "label": "SYNTHESIS",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-5",
+      "parentId": "vivado-flow-navigator",
+      "label": "IMPLEMENTATION",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-flow-group-6",
+      "parentId": "vivado-flow-navigator",
+      "label": "PROGRAM AND DEBUG",
+      "type": "group",
+      "description": "可折叠阶段分组",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings",
+      "parentId": "vivado-flow-group-0",
+      "label": "Settings",
+      "type": "button",
+      "description": "工程及工具设置；已打开 General",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "opened_general"
+    },
+    {
+      "id": "vivado-add-project-sources",
+      "parentId": "vivado-flow-group-0",
+      "label": "Add Sources",
+      "type": "button",
+      "description": "当前工程的添加源入口；不等于新工程向导",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-language-templates",
+      "parentId": "vivado-flow-group-0",
+      "label": "Language Templates",
+      "type": "button",
+      "description": "语言模板",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-ip-catalog",
+      "parentId": "vivado-flow-group-0",
+      "label": "IP Catalog",
+      "type": "button",
+      "description": "IP 目录",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-bd-action-0",
+      "parentId": "vivado-flow-group-1",
+      "label": "Create Block Design",
+      "type": "button",
+      "description": "Block Design 入口；尚未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-bd-action-1",
+      "parentId": "vivado-flow-group-1",
+      "label": "Open Block Design",
+      "type": "button",
+      "description": "Block Design 入口；尚未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-bd-action-2",
+      "parentId": "vivado-flow-group-1",
+      "label": "Generate Block Design",
+      "type": "button",
+      "description": "Block Design 入口；尚未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-run-simulation",
+      "parentId": "vivado-flow-group-2",
+      "label": "Run Simulation",
+      "type": "button",
+      "description": "仿真入口；尚未展开",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-run-linter",
+      "parentId": "vivado-flow-group-3",
+      "label": "Run Linter",
+      "type": "button",
+      "description": "RTL 检查入口",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-open-elaborated",
+      "parentId": "vivado-flow-group-3",
+      "label": "Open Elaborated Design",
+      "type": "expander_button",
+      "description": "带展开箭头的分析入口，子项未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-run-synthesis",
+      "parentId": "vivado-flow-group-4",
+      "label": "Run Synthesis",
+      "type": "button",
+      "description": "启动综合；不等于综合已成功",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-open-synthesized",
+      "parentId": "vivado-flow-group-4",
+      "label": "Open Synthesized Design",
+      "type": "expander_button",
+      "description": "打开综合设计；当前禁用",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-run-implementation",
+      "parentId": "vivado-flow-group-5",
+      "label": "Run Implementation",
+      "type": "button",
+      "description": "启动实现；不等于实现已成功",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-open-implemented",
+      "parentId": "vivado-flow-group-5",
+      "label": "Open Implemented Design",
+      "type": "expander_button",
+      "description": "打开实现设计；当前禁用",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-generate-bitstream",
+      "parentId": "vivado-flow-group-6",
+      "label": "Generate Bitstream",
+      "type": "button",
+      "description": "生成配置文件；当前未执行",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-open-hardware",
+      "parentId": "vivado-flow-group-6",
+      "label": "Open Hardware Manager",
+      "type": "expander_button",
+      "description": "硬件管理；不代表授权连接或烧录设备",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-panel",
+      "parentId": "vivado-project-workspace",
+      "label": "Sources",
+      "type": "panel",
+      "description": "工程文件与层级",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-group-0",
+      "parentId": "vivado-sources-panel",
+      "label": "Design Sources",
+      "type": "tree_item",
+      "description": "文件集视图；实体名称和归属需按当前工程解析",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-group-1",
+      "parentId": "vivado-sources-panel",
+      "label": "Constraints",
+      "type": "tree_item",
+      "description": "文件集视图；实体名称和归属需按当前工程解析",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-group-2",
+      "parentId": "vivado-sources-panel",
+      "label": "Simulation Sources",
+      "type": "tree_item",
+      "description": "文件集视图；实体名称和归属需按当前工程解析",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-group-3",
+      "parentId": "vivado-sources-panel",
+      "label": "Utility Sources",
+      "type": "tree_item",
+      "description": "文件集视图；实体名称和归属需按当前工程解析",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-tab-0",
+      "parentId": "vivado-sources-panel",
+      "label": "Hierarchy",
+      "type": "tab",
+      "description": "Sources 视图标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-tab-1",
+      "parentId": "vivado-sources-panel",
+      "label": "Libraries",
+      "type": "tab",
+      "description": "Sources 视图标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-sources-tab-2",
+      "parentId": "vivado-sources-panel",
+      "label": "Compile Order",
+      "type": "tab",
+      "description": "Sources 视图标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-properties-panel",
+      "parentId": "vivado-project-workspace",
+      "label": "Properties",
+      "type": "panel",
+      "description": "选中对象属性；当前无选中对象",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-project-summary-panel",
+      "parentId": "vivado-project-workspace",
+      "label": "Project Summary",
+      "type": "panel",
+      "description": "工程及各运行阶段摘要",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-summary-tab-0",
+      "parentId": "vivado-project-summary-panel",
+      "label": "Overview",
+      "type": "tab",
+      "description": "工程摘要标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-summary-tab-1",
+      "parentId": "vivado-project-summary-panel",
+      "label": "Dashboard",
+      "type": "tab",
+      "description": "工程摘要标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-bottom-panel",
+      "parentId": "vivado-project-workspace",
+      "label": "Results and Console",
+      "type": "panel",
+      "description": "底部日志、命令、运行区域",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-result-tab-0",
+      "parentId": "vivado-bottom-panel",
+      "label": "Tcl Console",
+      "type": "tab",
+      "description": "原生结果标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-result-tab-1",
+      "parentId": "vivado-bottom-panel",
+      "label": "Messages",
+      "type": "tab",
+      "description": "原生结果标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-result-tab-2",
+      "parentId": "vivado-bottom-panel",
+      "label": "Log",
+      "type": "tab",
+      "description": "原生结果标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-result-tab-3",
+      "parentId": "vivado-bottom-panel",
+      "label": "Reports",
+      "type": "tab",
+      "description": "原生结果标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-result-tab-4",
+      "parentId": "vivado-bottom-panel",
+      "label": "Design Runs",
+      "type": "tab",
+      "description": "原生结果标签",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-design-runs-table",
+      "parentId": "vivado-result-tab-4",
+      "label": "Design Runs",
+      "type": "table",
+      "description": "运行名、约束、状态、时序和利用率；此时 synth_1/impl_1 均 Not started",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-layout-dropdown",
+      "parentId": "vivado-project-workspace",
+      "label": "Default Layout",
+      "type": "combobox",
+      "description": "工作区布局选择",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-project-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    }
+  ]
+}

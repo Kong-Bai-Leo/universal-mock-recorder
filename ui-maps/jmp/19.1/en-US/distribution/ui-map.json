@@ -1,0 +1,28 @@
+{
+  "observationId": "distribution-launcher-20260912",
+  "observedVersion": "19.1.5 Trial",
+  "sourceIds": ["jmp19-distribution-launch"],
+  "note": "Observed controls are not all supported by the first replay backend. No AutomationIDs inferred from screen positions.",
+  "controls": [
+    {"id":"jmp.distribution.launcher","parentId":"jmp.analyze.distribution","label":"Distribution","kind":"dialog","description":"设置列角色后启动单变量分布分析。","core":true,"verification":"observed"},
+    {"id":"jmp.distribution.columns","parentId":"jmp.distribution.launcher","label":"Select Columns","kind":"panel","description":"可用列列表及其建模类型图标。","verification":"observed"},
+    {"id":"jmp.distribution.column-menu","parentId":"jmp.distribution.columns","label":"Select Columns red triangle","kind":"menu_button","description":"列列表选项入口；子菜单未扫描。","verification":"observed"},
+    {"id":"jmp.distribution.column-list","parentId":"jmp.distribution.columns","label":"Columns","kind":"list","description":"选中需要分配角色的列；显示当前可用列数量。","core":true,"verification":"observed"},
+    {"id":"jmp.distribution.histograms-only","parentId":"jmp.distribution.columns","label":"Histograms Only","kind":"checkbox","description":"仅显示直方图；首版回放未支持此非默认选项。","verification":"observed"},
+    {"id":"jmp.distribution.roles","parentId":"jmp.distribution.launcher","label":"Cast Selected Columns into Roles","kind":"panel","description":"将选中列分配给对应分析角色。","core":true,"verification":"observed"},
+    {"id":"jmp.distribution.y","parentId":"jmp.distribution.roles","label":"Y, Columns","kind":"button","description":"将选中列指定为需要分析的响应变量。","core":true,"verification":"observed_and_exercised"},
+    {"id":"jmp.distribution.y-list","parentId":"jmp.distribution.roles","label":"Y, Columns role list","kind":"list","description":"显示已分配的分析列；无变量时提示 required。","core":true,"verification":"observed"},
+    {"id":"jmp.distribution.weight","parentId":"jmp.distribution.roles","label":"Weight","kind":"button","description":"可选数值权重角色；首版回放未支持。","verification":"observed"},
+    {"id":"jmp.distribution.weight-list","parentId":"jmp.distribution.roles","label":"Weight role list","kind":"list","description":"已分配的数值权重列。","verification":"observed"},
+    {"id":"jmp.distribution.freq","parentId":"jmp.distribution.roles","label":"Freq","kind":"button","description":"指定每行频数的可选数值列；首版回放未支持。","verification":"observed"},
+    {"id":"jmp.distribution.freq-list","parentId":"jmp.distribution.roles","label":"Freq role list","kind":"list","description":"已分配的频数列。","verification":"observed"},
+    {"id":"jmp.distribution.by","parentId":"jmp.distribution.roles","label":"By","kind":"button","description":"按列值分组生成报告；首版回放未支持。","verification":"observed"},
+    {"id":"jmp.distribution.by-list","parentId":"jmp.distribution.roles","label":"By role list","kind":"list","description":"已分配的分组列。","verification":"observed"},
+    {"id":"jmp.distribution.actions","parentId":"jmp.distribution.launcher","label":"Action","kind":"panel","description":"启动、取消及辅助操作区域。","verification":"observed"},
+    {"id":"jmp.distribution.ok","parentId":"jmp.distribution.actions","label":"OK","kind":"button","description":"提交当前角色并生成分布报告；必须检查随后报告是否真正出现。","core":true,"verification":"observed_and_exercised"},
+    {"id":"jmp.distribution.cancel","parentId":"jmp.distribution.actions","label":"Cancel","kind":"button","description":"取消本次启动对话框。","verification":"observed"},
+    {"id":"jmp.distribution.remove","parentId":"jmp.distribution.actions","label":"Remove","kind":"button","description":"移除选中的角色分配，不是删除数据表中的列。","verification":"observed"},
+    {"id":"jmp.distribution.recall","parentId":"jmp.distribution.actions","label":"Recall","kind":"button","description":"回填之前的分析设置；不能将已有设置当作本次键入。","verification":"observed"},
+    {"id":"jmp.distribution.help","parentId":"jmp.distribution.actions","label":"Help","kind":"button","description":"打开该平台帮助。","verification":"observed"}
+  ]
+}
