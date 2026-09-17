@@ -1,0 +1,36 @@
+{
+  "id": "capture-tcl-selection-save",
+  "description": "Selection and save candidates; context and result checks remain mandatory.",
+  "interfaces": [
+    {
+      "id": "capture-tcl-get-selected-objects",
+      "canonicalName": "GetSelectedObjects",
+      "interfaceKind": "capture_embedded_tcl",
+      "exampleSyntax": "GetSelectedObjects",
+      "parameters": [],
+      "uiEntryPoint": "unknown_not_scanned",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Selection made in the intended schematic page", "Caller checks selection count and object type before editing"],
+      "unknowns": ["Return collection/cardinality behavior in 24.1", "Stable object identity across page, save or transaction boundaries"],
+      "sourceIds": ["cadence-community-capture-wire-example"],
+      "evidenceLevel": "cadence_community_user_example",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    },
+    {
+      "id": "capture-tcl-menu-save",
+      "canonicalName": "Menu File::Save",
+      "interfaceKind": "capture_embedded_tcl_ui_command",
+      "exampleSyntax": "Menu \"File::Save\"",
+      "parameters": [],
+      "uiEntryPoint": "File::Save command name in a Tcl example; actual UI control not scanned",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Correct editable design/page is active", "Output path and write permission are known", "Post-save file and reopened design are verified"],
+      "unknowns": ["Whether this 24.1 VM accepts the command", "Which active document is saved when multiple designs are open", "Failure/confirmation behavior and file update timing"],
+      "sourceIds": ["cadence-community-capture-save-reply"],
+      "evidenceLevel": "cadence_community_technical_reply",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    }
+  ]
+}

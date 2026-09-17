@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "application": "OrCAD X Capture",
+  "version": "24.1",
+  "language": "en-US",
+  "packageKind": "partial_observed_ui_and_interface_candidates",
+  "coverageStatus": "partial_ui_observed",
+  "runtimeStatus": "single_wire_real_recording_native_replay_and_reopen_passed",
+  "observationStatus": "capture_24_1_p001_schematic_and_dsn_db_observed",
+  "interfaceFiles": [
+    {"id": "capture-tcl-execution", "path": "interfaces/execution.json"},
+    {"id": "capture-tcl-editing", "path": "interfaces/editing.json"},
+    {"id": "capture-tcl-selection-save", "path": "interfaces/selection-save.json"}
+  ],
+  "sourceFile": "sources.json",
+  "uiMapFile": "ui-map.json",
+  "liveObservationFile": "live-observation.json",
+  "notCovered": [
+    "Only selected menus, new-project fields, the schematic workspace and command window are observed; other menus, toolbars, icons and nested submenus remain unscanned",
+    "Native smoke checks are not end-to-end model-generated replay verification; interface catalog entries retain their original documentation provenance",
+    "The GUI-created wire/alias and separately opened Dbo-created DSN have bounded database readbacks; general coordinate units, page origin, grid, full visual rendering and connectivity remain unverified",
+    "One real recorded wire passed model analysis, compiled Tcl file execution, independent endpoint comparison and same-process save/close/reopen; complex circuits and independent-process replay remain unverified",
+    "PCB Editor, PCB Presto, System Capture and SKILL are outside this package"
+  ]
+}

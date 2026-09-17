@@ -17,7 +17,30 @@ namespace UniversalMockRecorder
 {
     internal static class RecorderProfile
     {
-#if THREEDSMAX
+#if ORCAD
+        public const string ApplicationId = "orcad-x-capture";
+        public const string ApplicationName = "OrCAD X Capture";
+        public const string ApplicationVersion = "24.1 P001";
+        public const string Language = "system-default";
+        public const string WindowTitle = "OrCAD X Capture 操作录制器";
+        public const string Header = "在 OrCAD X Capture 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "Capture";
+        public const string UiMapRoot = "";
+        public const string ReplayFormat = "none";
+        public const string GenerateOptionText = "仅本地保存录制；分析与回放尚未实现";
+        public const string AnalysisScriptFile = "";
+        public const string StructuredProgramFile = "";
+        public const string ReplayFile = "";
+        public const string ReplayDescription = "尚未实现回放";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = false;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = false;
+#elif THREEDSMAX
         public const string ApplicationId = "autodesk-3dsmax";
         public const string ApplicationName = "Autodesk 3ds Max";
         public const string ApplicationVersion = "2027";
@@ -64,6 +87,11 @@ namespace UniversalMockRecorder
         public static readonly bool RequiresMockScript = true;
         public static readonly bool RequiresReplayFile = false;
 #endif
+
+        public static bool MatchesTargetProcess(string processName)
+        {
+            return string.Equals(processName, TargetProcess, StringComparison.OrdinalIgnoreCase);
+        }
     }
 
     internal static class Program
@@ -81,7 +109,11 @@ namespace UniversalMockRecorder
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#if ORCAD
+            Application.Run(new OrcadRecorderForm());
+#else
             Application.Run(new RecorderForm());
+#endif
         }
 
         [DllImport("user32.dll")]
@@ -744,6 +776,11 @@ namespace UniversalMockRecorder
         private long _eventCount;
         private long _lastMoveMs;
         private Point _lastMovePoint;
+#if ORCAD
+        private WindowInfo _kiCadPointerDownWindow;
+        private UiTarget _kiCadPointerDownTarget;
+        private string _kiCadPointerDownButton;
+#endif
         private Bitmap _pendingMouseBeforeSnapshot;
         private string _pendingMouseBeforeScreenshot;
         private long _pendingMouseBeforeTimestampMs;
@@ -767,6 +804,15 @@ namespace UniversalMockRecorder
 
         public bool IsRecording { get { return _recording; } }
         public long EventCount { get { return Interlocked.Read(ref _eventCount); } }
+
+#if ORCAD
+        public bool IsPaused { get { return _privacyPaused; } }
+        public void TogglePause()
+        {
+            _privacyPaused = !_privacyPaused;
+            Enqueue(new RawInputEvent { Id = NextId(), EventType = _privacyPaused ? "privacy_pause" : "privacy_resume", TimestampMs = UtcNowMs() });
+        }
+#endif
 
         public void Start()
         {
@@ -827,6 +873,16 @@ namespace UniversalMockRecorder
                 if (eventType != null)
                 {
                     var now = UtcNowMs();
+#if ORCAD
+                    var eventWindow = ReadWindowAtPoint(input.Point.X, input.Point.Y);
+                    var eventButton = MouseButton(message.ToInt32());
+                    var continuingGesture = _kiCadPointerDownWindow != null &&
+                        (eventType == "mouse_move" ||
+                            (eventType == "mouse_up" && eventButton == _kiCadPointerDownButton));
+                    if (continuingGesture) eventWindow = _kiCadPointerDownWindow;
+                    if (eventWindow == null || !RecorderProfile.MatchesTargetProcess(eventWindow.ProcessName))
+                        return CallNextHookEx(_mouseHook, code, message, data);
+#endif
                     if (eventType == "mouse_move")
                     {
                         if (now - _lastMoveMs < 50 || Distance(_lastMovePoint, input.Point) < 4)
@@ -846,6 +902,24 @@ namespace UniversalMockRecorder
                         WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0,
                         Modifiers = GetModifiers().ToArray()
                     };
+#if ORCAD
+                    rawInput.Window = eventWindow;
+                    rawInput.Target = continuingGesture ? _kiCadPointerDownTarget :
+                        (_captureUiAutomationTargets && eventType != "mouse_move" ? ReadTargetAt(rawInput.X, rawInput.Y) : null);
+                    SetRelativePosition(rawInput);
+                    if (eventType == "mouse_down")
+                    {
+                        _kiCadPointerDownWindow = eventWindow;
+                        _kiCadPointerDownTarget = rawInput.Target;
+                        _kiCadPointerDownButton = eventButton;
+                    }
+                    else if (eventType == "mouse_up")
+                    {
+                        _kiCadPointerDownWindow = null;
+                        _kiCadPointerDownTarget = null;
+                        _kiCadPointerDownButton = null;
+                    }
+#endif
                     if (eventType == "mouse_down")
                     {
                         try
@@ -870,7 +944,11 @@ namespace UniversalMockRecorder
 
                 if (input.VirtualKeyCode == (uint)Keys.F12 && modifiers.Contains("CTRL") && modifiers.Contains("SHIFT"))
                 {
+#if ORCAD
+                    TogglePause();
+#else
                     _privacyPaused = !_privacyPaused;
+#endif
                     return CallNextHookEx(_keyboardHook, code, message, data);
                 }
 
@@ -879,6 +957,11 @@ namespace UniversalMockRecorder
                     if (IsModifierKey(input.VirtualKeyCode))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 
+#if ORCAD
+                    var eventWindow = ReadForegroundWindow();
+                    if (eventWindow == null || !RecorderProfile.MatchesTargetProcess(eventWindow.ProcessName))
+                        return CallNextHookEx(_keyboardHook, code, message, data);
+#endif
                     UiTarget focusedTarget = null;
                     bool isPassword;
                     if (_captureUiAutomationTargets)
@@ -895,6 +978,13 @@ namespace UniversalMockRecorder
                         Modifiers = modifiers.ToArray(),
                         Target = focusedTarget
                     };
+#if ORCAD
+                    rawInput.Window = eventWindow;
+                    var pointer = Cursor.Position;
+                    rawInput.X = pointer.X;
+                    rawInput.Y = pointer.Y;
+                    SetRelativePosition(rawInput);
+#endif
                     if (ShouldCaptureKeyTransition(rawInput))
                     {
                         try
@@ -929,20 +1019,28 @@ namespace UniversalMockRecorder
             {
                 try
                 {
+#if ORCAD
+                    if (input.EventType == "privacy_pause" || input.EventType == "privacy_resume")
+                    {
+                        WriteEvent(input);
+                        continue;
+                    }
+#endif
+#if !ORCAD
                     input.Window = input.EventType.StartsWith("mouse_")
                         ? ReadWindowAtPoint(input.X, input.Y)
                         : ReadForegroundWindow();
+#endif
                     if (input.Window != null && input.Window.ProcessId == Process.GetCurrentProcess().Id) continue;
                     if (RecorderProfile.FilterToTargetProcess &&
-                        (input.Window == null || !string.Equals(
-                            input.Window.ProcessName,
-                            RecorderProfile.TargetProcess,
-                            StringComparison.OrdinalIgnoreCase)))
+                        (input.Window == null || !RecorderProfile.MatchesTargetProcess(input.Window.ProcessName)))
                         continue;
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
+#if !ORCAD
                         input.Target = _captureUiAutomationTargets ? ReadTargetAt(input.X, input.Y) : null;
+#endif
                         if (input.Window != null && input.Window.Width > 0 && input.Window.Height > 0)
                         {
                             input.RelativeX = Math.Round((double)(input.X - input.Window.X) / input.Window.Width, 6);
@@ -956,6 +1054,9 @@ namespace UniversalMockRecorder
                         input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
                         input.ScreenshotBeforeTimestampMs = input.SnapshotTimestampMs;
                         Thread.Sleep(160);
+#if ORCAD
+                        if (CanCaptureKiCadAfter())
+#endif
                         using (var after = CaptureScreenBitmap())
                         {
                             input.ScreenshotAfter = SaveScreenshot(input.Id + "-after", after);
@@ -971,9 +1072,16 @@ namespace UniversalMockRecorder
                         input.Screenshot = SaveScreenshot(input.Id, input.Snapshot);
                         input.ScreenshotTimestampMs = input.SnapshotTimestampMs;
                     }
-                    else if (ShouldCaptureScreenshot(input))
+                    else if (ShouldCaptureScreenshot(input)
+#if ORCAD
+                        && CanCaptureKiCadAfter()
+#endif
+                        )
                     {
                         Thread.Sleep(120);
+#if ORCAD
+                        if (CanCaptureKiCadAfter())
+#endif
                         using (var after = CaptureScreenBitmap())
                         {
                             input.Screenshot = SaveScreenshot(input.Id, after);
@@ -1040,6 +1148,9 @@ namespace UniversalMockRecorder
                         }
                     }
 
+#if ORCAD
+                    CaptureJmpDelayedObservation(input);
+#endif
                     WriteEvent(input);
                     UpdateThreeDsMaxPrimitiveCaptureStateAfter(input);
                     Interlocked.Increment(ref _eventCount);
@@ -1060,6 +1171,27 @@ namespace UniversalMockRecorder
                 }
             }
         }
+
+#if ORCAD
+        // Applications can create a report after the ordinary 120/160 ms after-frame.
+        // Preserve that frame and add a later observation only while the same
+        // input remains the most recent one. This is not proof of completion.
+        private void CaptureJmpDelayedObservation(RawInputEvent input)
+        {
+            if (input.EventType != "key_down" && input.EventType != "mouse_up" &&
+                input.EventType != "mouse_wheel") return;
+            if (_queue.Count != 0 || !_recording || _privacyPaused) return;
+            var sequence = Interlocked.Read(ref _eventSequence);
+            Thread.Sleep(800);
+            if (_queue.Count != 0 || Interlocked.Read(ref _eventSequence) != sequence ||
+                !_recording || _privacyPaused || !CanCaptureKiCadAfter()) return;
+            using (var observed = CaptureScreenBitmap())
+            {
+                input.ScreenshotSettledAfter = SaveScreenshot(input.Id + "-settled-after", observed);
+                input.ScreenshotSettledAfterTimestampMs = UtcNowMs();
+            }
+        }
+#endif
 
         private void WriteEvent(RawInputEvent input)
         {
@@ -1084,6 +1216,12 @@ namespace UniversalMockRecorder
                 "  \"applicationVersion\": \"" + RecorderProfile.ApplicationVersion + "\",\n" +
                 "  \"language\": \"" + RecorderProfile.Language + "\",\n" +
                 "  \"targetProcess\": \"" + RecorderProfile.TargetProcess + "\",\n" +
+#if ORCAD
+                "  \"captureDeployment\": \"same-windows-session\",\n" +
+                "  \"screenshotScope\": \"virtual-desktop\",\n" +
+                "  \"screenshotOriginX\": " + SystemInformation.VirtualScreen.Left + ",\n" +
+                "  \"screenshotOriginY\": " + SystemInformation.VirtualScreen.Top + ",\n" +
+#endif
                 "  \"uiMapRoot\": \"" + RecorderProfile.UiMapRoot + "\",\n" +
                 "  \"preferredReplayFormat\": \"" + RecorderProfile.ReplayFormat + "\",\n" +
                 "  \"uiAutomationTargets\": " + (_captureUiAutomationTargets ? "true" : "false") + ",\n" +
@@ -1381,12 +1519,34 @@ namespace UniversalMockRecorder
         private static bool ShouldCaptureKeyTransition(RawInputEvent input)
         {
             if (input == null || input.EventType != "key_down") return false;
+#if ORCAD
+            // Single-letter shortcuts act at the cursor; UIA may not expose the canvas.
+            // Capture every non-redacted key so both tool activation and field edits have evidence.
+            return input.Key != "REDACTED";
+#else
             if (input.Key == "ENTER" || input.Key == "RETURN" || input.Key == "ESCAPE" || input.Key == "DELETE" ||
                 input.Key == "BACK" || input.Key == "BACKSPACE") return true;
             if (RecorderProfile.CaptureThreeDsMaxTransformRegions &&
                 (input.Key == "W" || input.Key == "E" || input.Key == "R")) return true;
             return input.Modifiers != null && input.Modifiers.Length > 0;
+#endif
         }
+
+#if ORCAD
+        private bool CanCaptureKiCadAfter()
+        {
+            if (_privacyPaused) return false;
+            var window = ReadForegroundWindow();
+            return window != null && RecorderProfile.MatchesTargetProcess(window.ProcessName);
+        }
+
+        private static void SetRelativePosition(RawInputEvent input)
+        {
+            if (input.Window == null || input.Window.Width <= 0 || input.Window.Height <= 0) return;
+            input.RelativeX = Math.Round((double)(input.X - input.Window.X) / input.Window.Width, 6);
+            input.RelativeY = Math.Round((double)(input.Y - input.Window.Y) / input.Window.Height, 6);
+        }
+#endif
 
         private static bool IsLikelyCanvasTarget(UiTarget target, WindowInfo window, int pointX = 0, int pointY = 0)
         {
@@ -1898,6 +2058,10 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
             [DataMember(Name = "screenshotSelection", EmitDefaultValue = false)] public string ScreenshotSelection;
             [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
+#if ORCAD
+            [DataMember(Name = "screenshotSettledAfter", EmitDefaultValue = false)] public string ScreenshotSettledAfter;
+            [DataMember(Name = "screenshotSettledAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotSettledAfterTimestampMs;
+#endif
             [DataMember(Name = "visualCommandContext", EmitDefaultValue = false)] public string VisualCommandContext;
             [DataMember(Name = "visualChange", EmitDefaultValue = false)] public VisualChangeInfo VisualChange;
             [DataMember(Name = "transformEvidence", EmitDefaultValue = false)] public List<ScreenshotRegionEvidence> TransformEvidence;

@@ -20,6 +20,10 @@ export class GptClient {
     this.forceTls12OnIntegrityError = provider.forceTls12OnIntegrityError !== false;
     this.uploadChunkBytes = Math.max(16 * 1024, provider.uploadChunkBytes ?? 64 * 1024);
     this.usageRecords = [];
+    // Optional adapter-specific audit/budget hooks; existing adapters keep their behavior.
+    this.onResponse = provider.onResponse ?? null;
+    this.onFailure = provider.onFailure ?? null;
+    this.maxRequestBytes = provider.maxRequestBytes ?? null;
   }
 
   getUsageRecords() {
@@ -34,7 +38,8 @@ export class GptClient {
     outputName = "mock_workflow",
     outputDescription = "可由 Mock Runtime 执行并逐步验证的软件操作工作流",
     reasoningEffort = this.reasoningEffort,
-    verbosity = this.verbosity
+    verbosity = this.verbosity,
+    maxOutputTokens
   }) {
     this.#validate();
     const apiKey = process.env.OPENAI_API_KEY;
@@ -45,7 +50,8 @@ export class GptClient {
       name: outputName,
       description: outputDescription,
       reasoningEffort,
-      verbosity
+      verbosity,
+      maxOutputTokens
     });
   }
 
@@ -83,9 +89,15 @@ export class GptClient {
     };
     if (outputFormat.reasoningEffort)
       body.reasoning = { effort: outputFormat.reasoningEffort };
+    if (outputFormat.maxOutputTokens !== undefined) {
+      if (!Number.isInteger(outputFormat.maxOutputTokens) || outputFormat.maxOutputTokens < 1)
+        throw new Error("maxOutputTokens 必须是正整数");
+      body.max_output_tokens = outputFormat.maxOutputTokens;
+    }
     const response = await this.#post("/responses", apiKey, body);
     const usage = normalizeResponseUsage(response, this.model);
     if (usage) this.usageRecords.push(usage);
+    if (this.onResponse) await this.onResponse(response);
     const outputText = response.output_text ?? response.output
       ?.flatMap((item) => item.content ?? [])
       .find((item) => item.type === "output_text")?.text;
@@ -94,6 +106,10 @@ export class GptClient {
 
   async #post(endpoint, apiKey, body) {
     const serializedBody = JSON.stringify(body);
+    if (this.maxRequestBytes !== null &&
+        (!Number.isSafeInteger(this.maxRequestBytes) || this.maxRequestBytes < 1 ||
+          Buffer.byteLength(serializedBody) > this.maxRequestBytes))
+      throw new Error("请求超过此分析器的字节预算；未上传，请重新准备证据。");
     let lastError;
     let lastClientRequestId = null;
     let attemptsMade = 0;
@@ -120,12 +136,28 @@ export class GptClient {
           error.retryAfterMs = parseRetryAfter(response.headers["retry-after"]);
           error.requestId = response.headers["x-request-id"] ?? null;
           error.clientRequestId = clientRequestId;
+          error.code = null;
+          try { error.providerResponse = JSON.parse(response.text); error.code = error.providerResponse?.error?.code ?? null; }
+          catch { error.providerResponse = { unparsedBody: response.text }; }
           throw error;
         }
-        return parseApiResponse(response);
+        try { return parseApiResponse(response); }
+        catch (error) {
+          error.requestId ??= response.headers["x-request-id"] ?? null;
+          throw error;
+        }
       } catch (error) {
         if (!error.clientRequestId) error.clientRequestId = clientRequestId;
         lastError = error;
+        const failedUsage = normalizeResponseUsage(error.providerResponse, this.model);
+        if (failedUsage) this.usageRecords.push(failedUsage);
+        // Capture provider failures before retry/throw. An incomplete response can
+        // contain billable usage even though no valid workflow was returned.
+        if (this.onFailure) await this.onFailure({
+          clientRequestId, requestId: error.requestId ?? null,
+          status: error.status ?? null, code: error.code ?? null,
+          message: error.message, response: error.providerResponse ?? null
+        });
         if (attempt >= this.maxRetries || !isRetryable(error)) break;
         if (this.forceTls12OnIntegrityError && isTlsIntegrityError(error))
           forceTls12 = true;
@@ -137,11 +169,12 @@ export class GptClient {
     const requestIdText = lastError?.requestId ? `；OpenAI request id=${lastError.requestId}` : "";
     const clientRequestIdText = `；client request id=${lastError?.clientRequestId ?? lastClientRequestId}`;
     const wrapped = new Error(
-      `OpenAI API 连接失败（请求约 ${requestSizeMb} MB，共尝试 ${attemptsMade} 次）：${lastError?.message ?? lastError}`
+      `OpenAI API 请求失败（请求约 ${requestSizeMb} MB，共尝试 ${attemptsMade} 次）：${lastError?.message ?? lastError}`
       + requestIdText + clientRequestIdText
     );
     wrapped.cause = lastError;
     wrapped.status = lastError?.status;
+    wrapped.code = lastError?.code ?? null;
     wrapped.requestId = lastError?.requestId ?? null;
     wrapped.clientRequestId = lastError?.clientRequestId ?? lastClientRequestId;
     wrapped.requestSizeMb = Number(requestSizeMb);
@@ -274,14 +307,20 @@ async function writeRequestBody(request, body, chunkBytes) {
 
 function parseApiResponse(response) {
   const contentType = String(response.headers["content-type"] ?? "").toLowerCase();
-  if (contentType.includes("text/event-stream"))
-    return parseResponsesEventStream(response.text);
-  return JSON.parse(response.text);
+  const result = contentType.includes("text/event-stream")
+    ? parseResponsesEventStream(response.text) : JSON.parse(response.text);
+  if (result.error || (result.status && result.status !== "completed")) {
+    const error = new Error(`OpenAI 响应未成功完成：${result.error?.message ?? result.incomplete_details?.reason ?? result.status}`);
+    error.code = result.error?.code ?? `response_${result.status ?? "failed"}`;
+    error.status = error.code === "server_error" ? 500 : null;
+    error.providerResponse = result;
+    throw error;
+  }
+  return result;
 }
 
 function parseResponsesEventStream(text) {
   let completedResponse = null;
-  let completedText = null;
   for (const block of text.split(/\r?\n\r?\n/)) {
     const data = block.split(/\r?\n/)
       .filter((line) => line.startsWith("data:"))
@@ -295,22 +334,23 @@ function parseResponsesEventStream(text) {
     } catch (error) {
       throw new Error(`OpenAI 流式响应包含无效 JSON：${error.message}`);
     }
-    if (event.type === "response.output_text.done" && typeof event.text === "string")
-      completedText = event.text;
     if (event.type === "response.completed" && event.response)
       completedResponse = event.response;
-    if (event.type === "response.failed" || event.type === "response.incomplete") {
-      const details = event.response?.error?.message ?? event.error?.message ??
+    if (["response.failed", "response.incomplete", "error"].includes(event.type)) {
+      const details = event.response?.error?.message ?? event.error?.message ?? event.message ??
         event.response?.incomplete_details?.reason ?? event.type;
       const error = new Error(`OpenAI 流式响应失败：${details}`);
-      error.code = event.response?.error?.code ?? event.error?.code ?? null;
+      error.code = event.response?.error?.code ?? event.error?.code ?? event.code ?? event.type.replace(".", "_");
       error.status = error.code === "server_error" ? 500 : null;
+      error.providerResponse = event.response ?? event;
       throw error;
     }
   }
   if (completedResponse) return completedResponse;
-  if (completedText !== null) return { output_text: completedText };
-  throw new Error("OpenAI 流式响应在完成事件之前结束");
+  // A text part ending is not the response succeeding (nor a usage receipt).
+  const error = new Error("OpenAI 流式响应在完成事件之前结束");
+  error.code = "response_stream_unfinished";
+  throw error;
 }
 
 function delay(milliseconds) {

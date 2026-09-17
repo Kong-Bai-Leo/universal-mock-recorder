@@ -1,0 +1,14 @@
+{
+  "id":"capture-new-project-dialog",
+  "parentId":"dialog-new-project",
+  "observationId":"capture-new-project-20260916",
+  "nodes":[
+    {"id":"new-project-name","parentId":"dialog-new-project","role":"text_input","label":"Name","purpose":"项目名称，不是现有工程路径。"},
+    {"id":"new-project-location","parentId":"dialog-new-project","role":"text_input","label":"Location","purpose":"新项目保存目录。"},
+    {"id":"new-project-browse","parentId":"dialog-new-project","role":"button","label":"...","purpose":"选择 Location 目录。","behaviorStatus":"label_only"},
+    {"id":"new-project-pspice","parentId":"dialog-new-project","role":"checkbox","label":"Enable PSpice Simulation","behaviorStatus":"observed_unchecked_not_tested"},
+    {"id":"new-project-ok","parentId":"dialog-new-project","role":"button","label":"OK","behaviorStatus":"observed_project_created"},
+    {"id":"new-project-cancel","parentId":"dialog-new-project","role":"button","label":"Cancel","behaviorStatus":"observed_cancelled"},
+    {"id":"new-project-help","parentId":"dialog-new-project","role":"button","label":"Help","behaviorStatus":"label_only"}
+  ]
+}

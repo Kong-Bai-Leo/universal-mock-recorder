@@ -2,8 +2,11 @@
 config.json
 bin/recorder/recordings/
 bin/3dsmax-recorder/recordings/
+bin/orcad-recorder/recordings/
+ui-maps/orcad-capture/**/screenshots/
 generated/
 *.exe
 bin/validator/
 .cv-poc-deps/
 cv-poc-runtime/
+.equile-local/

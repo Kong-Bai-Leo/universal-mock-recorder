@@ -1,0 +1,45 @@
+{
+  "id": "capture-tcl-editing",
+  "description": "Bounded schematic edit candidates from a community example; exact coordinates require 24.1 calibration.",
+  "interfaces": [
+    {
+      "id": "capture-tcl-place-wire",
+      "canonicalName": "PlaceWire",
+      "interfaceKind": "capture_embedded_tcl",
+      "exampleSyntax": "PlaceWire <x1> <y1> <x2> <y2>",
+      "parameters": [
+        {"name": "x1", "role": "start x", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true},
+        {"name": "y1", "role": "start y", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true},
+        {"name": "x2", "role": "end x", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true},
+        {"name": "y2", "role": "end y", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true}
+      ],
+      "uiEntryPoint": "unknown_not_scanned",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Correct editable schematic page is active", "Coordinate origin, granularity and grid are verified for that page"],
+      "unknowns": ["24.1 coordinate units, origin and snap behavior", "Return value and failure conditions", "Whether wire endpoints attach to intended existing objects"],
+      "sourceIds": ["cadence-community-capture-wire-example"],
+      "evidenceLevel": "cadence_community_user_example",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    },
+    {
+      "id": "capture-tcl-place-net-alias",
+      "canonicalName": "PlaceNetAlias",
+      "interfaceKind": "capture_embedded_tcl",
+      "exampleSyntax": "PlaceNetAlias <x> <y> <name>",
+      "parameters": [
+        {"name": "x", "role": "alias anchor x", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true},
+        {"name": "y", "role": "alias anchor y", "type": "number", "unit": "unknown_page_coordinate_unit", "required": true},
+        {"name": "name", "role": "net alias text", "type": "string", "unit": "not_applicable", "required": true}
+      ],
+      "uiEntryPoint": "unknown_not_scanned",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Correct editable schematic page is active", "Target wire identity and alias attachment point are unambiguous"],
+      "unknowns": ["24.1 coordinate units, origin and snap behavior", "Allowed name characters and quoting", "Whether the alias is electrically attached at the requested point"],
+      "sourceIds": ["cadence-community-capture-wire-example"],
+      "evidenceLevel": "cadence_community_user_example",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    }
+  ]
+}

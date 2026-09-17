@@ -1,0 +1,47 @@
+{
+  "schemaVersion":"1.0",
+  "observedOn":"2026-09-16",
+  "environmentAlias":"VM2",
+  "application":"OrCAD X Capture",
+  "about":{"product":"Capture","version":"24.1 P001","build":"4234998","buildDate":"9/4/2024","platform":"Windows SPB 64-bit Edition"},
+  "language":"en-US",
+  "captureMethod":"visual inspection through remote desktop; no target UI Automation tree collected",
+  "imageEvidenceLocation":"conversation tool screenshots; no persistent screenshot files are claimed by this map",
+  "coordinateSpace":{"kind":"remote_desktop_image","width":2560,"height":1440,"note":"Bounds are approximate observed rectangles, not reusable click targets or schematic coordinates."},
+  "observations":[
+    {"id":"capture-about-20260916","facts":["About confirms 24.1 P001; Start Page says 23.1-2023-P001 and must not override About.","This product is Capture; no CIS, PSpice simulation or PCB entitlement is inferred."]},
+    {"id":"capture-new-project-20260916","uiIds":["start-new","dialog-new-project","new-project-name","new-project-location","new-project-pspice","new-project-ok","new-project-cancel","new-project-help"],"bounds":[{"uiId":"dialog-new-project","x":1030,"y":607,"width":501,"height":187}],"facts":["New opens Name/Location/Enable PSpice Simulation dialog.","A uniquely named isolated GUI project RecorderCapture_20260916_1037 at C:\\Users\\user\\Documents\\RecorderCapture_20260916_1037 opened SCHEMATIC1 : PAGE1 with PSpice unchecked.","capNewProject is a native command, not a Tcl proc; without arguments it opened this dialog and is not proven a noninteractive project constructor."]},
+    {"id":"capture-place-20260916","uiIds":["menu-place"],"bounds":[{"uiId":"menu-place","x":211,"y":44,"width":205,"height":796}],"facts":["All first-level visible Place entries were transcribed; nested submenu contents were not opened.","Wire was selected through this menu; a horizontal wire was created on the isolated page."]},
+    {"id":"capture-tcl-20260916","uiIds":["command-window-tab","capture-tcl-prompt"],"bounds":[{"uiId":"command-window-tab","x":0,"y":1230,"width":2270,"height":113}],"facts":["info patchlevel returned 8.6.5.","info commands confirmed PlaceWire, PlaceNetAlias, DboSession_CreateDesign and capNewProject.","info args capNewProject reported that capNewProject is not a procedure.","PlaceWire 1.7 3.0 3.7 3.0 returned 0 and created a second horizontal wire below the UI-created one.","PlaceNetAlias 1.7 3.0 RECORDER_TEST returned 0 and the net alias was visible.","GetActivePage reported GetPhysicalGranularity=100.0 and GetDocUnitsPerInch=100.0.","After selecting that test wire, GetStartPoint(status) and GetEndPoint(status) with DboTclHelper_sGetCPointX/Y read START 170 300 and END 370 300.","Menu File::Save returned 1 and the GUI title asterisk disappeared; the project was not reopened."],"verificationLimit":"The active GUI page has local database readback and a save-action observation only. Save/reopen equivalence, AI inference and generated replay are not verified."},
+    {"id":"capture-page-dbo-readback-20260916","facts":["On original GUI PAGE1, GetName through CString returned PAGE1.","NewWiresIter(status)/NextWire(status) ran to NULL and delete_DboPageWiresIter cleaned the iterator; wire IDs were 17 and 21.","Seven status-parameter counts were PartInstCount=0, WireCount=2, BusEntryCount=0, PortCount=0, GlobalCount=0, OffPageConnectorCount=0, CommentGraphicCount=0.","On test wire ID 21, NewAliasesIter/NextAlias/GetName via CString read RECORDER_TEST.","Alias GetOwner returned a DboWire base wrapper whose GetId matched wire GetId=21; wrapper pointer strings were not used for identity.","Alias GetLocation(status) via DboTclHelper_sGetCPointX/Y read internal point (170,300), matching PlaceNetAlias 1.7 3.0."],"verificationLimit":"This reads one alias name, location and owner wire ID, not electrical net connectivity or save/reopen equivalence."},
+    {"id":"capture-standalone-dsn-dbo-probe-20260916","facts":["file exists first confirmed C:/Users/user/Documents/RecorderCapture_20260916_1037/RecorderDboProbe_1100.dsn absent.","Using DboState, the session pointer ::DboSession_s_pDboSession, and DboSession -this, CreateDesign(status,CString path,CString RECORDER_ROOT) returned a design.","GetRootSchematic(status), NewPage(status,CString REPLAY_PAGE), and NewWireScalar(status,CPoint 170 300,CPoint 370 300) were executed on the new design/page.","The new page GetWireCount(status) returned 1.","SaveDesign(design) returned a status with Failed=0 and file exists for the independent DSN returned 1.","GUI File > Open > Design opened that independent DSN as a non-PSpice design with tree RECORDER_ROOT / REPLAY_PAGE.","On the opened design, GetActivePage had name REPLAY_PAGE and GetWireCount(status)=1; wire ID 1 endpoints read back as (170,300) to (370,300).","At 772% GUI view, the wire was not visible; the cause, including any page-template issue, is not established."],"verificationLimit":"Same-session GUI open and database readback are verified, not independent-process reopen or visual rendering. No OPJ, Dbo net alias write, single-file recording replay or model-generated replay was verified."}
+  ],
+  "compilerSmokeTest": {
+    "id": "capture-compiled-wire-alias-20260916",
+    "sampleKind": "synthetic_fixture_not_model_output",
+    "projectName": "RecorderReplay_20260916_1123",
+    "pageName": "PAGE1",
+    "input": "Unmodified renderOrcadTcl(createOrcadFixture()) output; transferred as compressed text in three parts and decoded inside Capture Tcl",
+    "transportCheck": {"asciiBytes": 5898, "lineEndings": "CRLF", "crc32": 2702565299, "matchedBeforeExecution": true},
+    "execution": {"catchCode": 0, "message": "", "allGeneratedAssertionsPassed": true, "visualWireAndAliasObserved": true, "viewScalePercent": 110},
+    "readback": {"wireId": 17, "startInternal": [170,300], "endInternal": [370,300], "aliasName": "RECORDER_TEST", "aliasOwnerId": 17, "aliasAnchorInternal": [170,300]},
+    "rerunGuard": {"catchCode": 1, "message": "Wire count mismatch", "wireAndAliasReadbackUnchanged": true},
+    "verificationLimit": "One synthetic wire/alias sample only. Not a real recording or model-recognition test, not launch/source-from-file verification, not save/reopen verification. Interface catalog provenance remains separate."
+  },
+  "realRecordingVerification": {
+    "id": "capture-real-wire-20260917",
+    "sampleKind": "real_recording_model_output_compiled_without_response_edits",
+    "recordingId": "20260916-183127-2af750",
+    "projectName": "RecorderModelReplay_20260917_0401",
+    "pageName": "PAGE1",
+    "modelRequest": {"attempt": 3, "images": 8, "inputEvents": 8, "imageDetail": "high", "sourceObjectReadbackIncluded": false},
+    "scriptSha256": "e376b0139af64be82ee34254ef837c8484f00d27299a9fc20ab9e1358014f1b0",
+    "transportCheck": {"bytes": 4871, "crc32": 1674608710, "matchedBeforeExecution": true},
+    "execution": {"method": "Capture Tcl source file", "catchCode": 0, "allGeneratedAssertionsPassed": true},
+    "comparison": {"sourceInternalEndpoints": [200,300,400,300], "replayInternalEndpoints": [200,300,400,300], "wireCount": 1, "aliasCount": 0, "geometryMatch": true, "sourceUnchanged": true},
+    "persistence": {"savedViaGui": true, "projectClosedAndReopened": true, "sameProcess": true, "readbackInternalEndpoints": [200,300,400,300], "wireCount": 1, "aliasCount": 0},
+    "rerunGuard": {"catchCode": 1, "message": "Wire count mismatch", "readbackUnchanged": true},
+    "verificationLimit": "One isolated wire, not a functional circuit, component, net connectivity, simulation, complex workflow, other version or independent-process test. Recorder capture and analysis CLI remain separate."
+  },
+  "unknowns":["full licence entitlements","general physical coordinate unit, origin and grid beyond the observed 100.0 values and one wire/alias","standalone OPJ construction and reliable Dbo page UI visibility/activation","complete UI coverage","electrical net connectivity","independent-process reopen and complex recording replay equivalence"]
+}

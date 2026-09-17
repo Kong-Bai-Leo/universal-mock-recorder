@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "cadence-capture-tcl-product-blog",
+      "title": "OrCAD X Tcl Scripts: Automate to Accelerate Turnarounds",
+      "url": "https://resources.pcb.cadence.com/blog/2024-orcad-x-tcl-scripts-automate-to-accelerate-turnarounds",
+      "provenance": "cadence_product_material",
+      "scope": "Capture Tcl availability at product level; not an API signature reference",
+      "targetVmVerified": false
+    },
+    {
+      "id": "cadence-community-capture-wire-example",
+      "title": "Connecting multiple signals to component: Capture Tcl wire and net alias example",
+      "url": "https://community.cadence.com/cadence_technology_forums/pcb-design/f/allegro-x-scripting-tcl/57474/connecting-multiple-signals-to-component/1391469",
+      "provenance": "cadence_community_user_example",
+      "scope": "User-supplied Tcl using source, GetSelectedObjects, PlaceWire and PlaceNetAlias; not a complete official API specification",
+      "targetVmVerified": false
+    },
+    {
+      "id": "cadence-community-capture-launch-reply",
+      "title": "Run TCL script from Windows terminal to OrCAD Capture terminal",
+      "url": "https://community.cadence.com/cadence_technology_forums/pcb-design/f/allegro-x-capture-cis/59521/run-tcl-script-from-windows-terminal-to-orcad-capture-terminal/1405247",
+      "provenance": "cadence_community_technical_reply",
+      "exampleVersion": "22.1",
+      "scope": "Candidate capture -product launch form; reported reliability concerns with an already open Capture session",
+      "targetVmVerified": false
+    },
+    {
+      "id": "cadence-community-capture-save-reply",
+      "title": "How to select a project and save it with Tcl Command",
+      "url": "https://community.cadence.com/cadence_technology_forums/pcb-design/f/allegro-x-scripting-tcl/63440/how-to-select-a-project-and-save-it-with-tcl-command",
+      "provenance": "cadence_community_technical_reply",
+      "scope": "Candidate Menu File::Save usage; discussion includes 24.1 and project activation caveats",
+      "targetVmVerified": false
+    }
+  ]
+}

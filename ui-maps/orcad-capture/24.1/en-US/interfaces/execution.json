@@ -1,0 +1,40 @@
+{
+  "id": "capture-tcl-execution",
+  "description": "Candidate ways to execute Capture Tcl; not observed in target VM.",
+  "interfaces": [
+    {
+      "id": "capture-tcl-source-file",
+      "canonicalName": "source",
+      "interfaceKind": "capture_embedded_tcl",
+      "exampleSyntax": "source {<path-to-script.tcl>}",
+      "parameters": [
+        {"name": "scriptPath", "role": "existing local Tcl file", "type": "path", "unit": "not_applicable", "required": true}
+      ],
+      "uiEntryPoint": "Capture command window",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Editable Capture session and correct active design/page must be established independently"],
+      "unknowns": ["Availability and window placement of the command window in this 24.1 VM", "Behavior when an existing Capture session or modal dialog is active"],
+      "sourceIds": ["cadence-community-capture-wire-example"],
+      "evidenceLevel": "cadence_community_user_example",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    },
+    {
+      "id": "capture-tcl-launch-with-file",
+      "canonicalName": "capture -product with Tcl file",
+      "interfaceKind": "capture_process_launch_candidate",
+      "exampleSyntax": "capture -product=\"OrCAD Capture\" <path-to-script.tcl>",
+      "parameters": [
+        {"name": "scriptPath", "role": "existing local Tcl file", "type": "path", "unit": "not_applicable", "required": true}
+      ],
+      "uiEntryPoint": "unknown_not_ui_control",
+      "uiHierarchy": "unknown_not_scanned",
+      "preconditions": ["Installed Capture executable and usable product entitlement", "Must be tested in an isolated process; do not assume an already open session accepts the script"],
+      "unknowns": ["Source launch example names SPB 22.1; applicability to target 24.1 is not verified", "Exact executable path and quoting rules in the VM", "24.1 license and process-launch behavior", "Whether launch returns a usable editable design context"],
+      "sourceIds": ["cadence-community-capture-launch-reply"],
+      "evidenceLevel": "cadence_community_technical_reply",
+      "targetVmVerified": false,
+      "implementationStatus": "catalog_only"
+    }
+  ]
+}
