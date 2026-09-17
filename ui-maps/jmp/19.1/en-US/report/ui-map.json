@@ -1,0 +1,497 @@
+{
+  "controls": [
+    {
+      "id": "jmp.report",
+      "label": "Analysis report",
+      "parentId": null,
+      "kind": "window",
+      "description": "报告有自己的表绑定和实例身份，红三角不是全局 Analyze 菜单。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.menu",
+      "label": "Report red triangle",
+      "parentId": "jmp.report",
+      "kind": "menu",
+      "description": "每个报告标题旁的红三角菜单；必须保留所属报告身份。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.fit-line",
+      "label": "Fit Line",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "仅 Bivariate 报告的拟合选项；不创建新表。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script",
+      "label": "Save Script",
+      "parentId": "jmp.report.menu",
+      "kind": "submenu",
+      "description": "把所属报告的分析配置保存为脚本。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.table",
+      "label": "To Data Table...",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存到该报告绑定的表；不是复制数据表。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-0",
+      "label": "Show Points",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-1",
+      "label": "Points Jittered",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-2",
+      "label": "Histogram Borders",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-3",
+      "label": "Summary Statistics",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-4",
+      "label": "Fit Mean",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-5",
+      "label": "Fit Polynomial",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-6",
+      "label": "Fit Special...",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-7",
+      "label": "Flexible",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-8",
+      "label": "Fit Orthogonal",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-9",
+      "label": "Fit Passing Bablok",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-10",
+      "label": "Robust",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-11",
+      "label": "Density Ellipse",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-12",
+      "label": "Nonpar Density",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-13",
+      "label": "Group By...",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-14",
+      "label": "Local Data Filter",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-15",
+      "label": "Redo",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.bivariate-item-16",
+      "label": "Platform Preferences",
+      "parentId": "jmp.report.menu",
+      "kind": "menu_item",
+      "description": "已观察 Bivariate 菜单；首版不支持该选项的生成。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-0",
+      "label": "To Journal",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Journal；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-1",
+      "label": "To Script Window",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Script Window；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-2",
+      "label": "To Notebook",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Notebook；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-3",
+      "label": "To Log",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Log；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-4",
+      "label": "To Workflow",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Workflow；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-5",
+      "label": "To Report",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Report；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    },
+    {
+      "id": "jmp.report.save-script.dest-6",
+      "label": "To Clipboard",
+      "parentId": "jmp.report.save-script",
+      "kind": "menu_item",
+      "description": "保存/输出当前报告的分析脚本至 To Clipboard；首版不回放该输出操作。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5",
+      "observedIn": [
+        "Bivariate"
+      ]
+    }
+  ]
+}

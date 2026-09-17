@@ -1,0 +1,1671 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.new-project-wizard",
+  "nodes": [
+    {
+      "locatorId": "quartus.new-project-wizard",
+      "parentId": "quartus.application",
+      "canonicalName": "New Project Wizard",
+      "visibleLabel": "New Project Wizard",
+      "aliases": [
+        "新建工程向导",
+        "新建项目",
+        "new project",
+        "新建工程",
+        "向导"
+      ],
+      "role": "dialog",
+      "purpose": "分步骤定义工程；点击 Finish 才请求创建。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "Introduction",
+      "visibleLabel": "Introduction",
+      "aliases": [
+        "介绍"
+      ],
+      "role": "page",
+      "purpose": "介绍的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.don-t-show-me-this-introduction-again",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "Don't show me this introduction again",
+      "visibleLabel": "Don't show me this introduction again",
+      "aliases": [],
+      "role": "checkbox",
+      "purpose": "Don't show me this introduction again的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.help",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "Help",
+      "visibleLabel": "Help",
+      "aliases": [
+        "帮助",
+        "help"
+      ],
+      "role": "button",
+      "purpose": "帮助的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.back",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "< Back",
+      "visibleLabel": "< Back",
+      "aliases": [
+        "上一步"
+      ],
+      "role": "button",
+      "purpose": "上一步的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.next",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "Next >",
+      "visibleLabel": "Next >",
+      "aliases": [
+        "下一步"
+      ],
+      "role": "button",
+      "purpose": "下一步的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.finish",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "Finish",
+      "visibleLabel": "Finish",
+      "aliases": [
+        "完成"
+      ],
+      "role": "button",
+      "purpose": "完成的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.introduction.cancel",
+      "parentId": "quartus.new-project-wizard.introduction",
+      "canonicalName": "Cancel",
+      "visibleLabel": "Cancel",
+      "aliases": [
+        "取消"
+      ],
+      "role": "button",
+      "purpose": "取消的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-introduction"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "Directory, Name, Top-Level Entity",
+      "visibleLabel": "Directory, Name, Top-Level Entity",
+      "aliases": [
+        "目录",
+        "工程名称",
+        "顶层实体"
+      ],
+      "role": "page",
+      "purpose": "目录 工程名称 顶层实体的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.empty-project",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "Empty Project",
+      "visibleLabel": "Empty Project",
+      "aliases": [
+        "空工程"
+      ],
+      "role": "radio",
+      "purpose": "空工程的可见radio；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.example-design",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "Example Design",
+      "visibleLabel": "Example Design",
+      "aliases": [
+        "示例设计"
+      ],
+      "role": "radio",
+      "purpose": "示例设计的可见radio；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-working-directory-for-this-project",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "What is the working directory for this project?",
+      "visibleLabel": "What is the working directory for this project?",
+      "aliases": [
+        "工作目录",
+        "工程路径"
+      ],
+      "role": "field",
+      "purpose": "工作目录 工程路径的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": "project_directory",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-this-project",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "What is the name of this project?",
+      "visibleLabel": "What is the name of this project?",
+      "aliases": [
+        "工程名称",
+        "项目名称"
+      ],
+      "role": "field",
+      "purpose": "工程名称 项目名称的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": "project_name",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-the-top-level-design-entity-for-this-project-this-name-is-case-sensitive-and-must-exactly-match-the-entity-name-in-the-design-file",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "What is the name of the top-level design entity for this project? This name is case sensitive and must exactly match the entity name in the design file.",
+      "visibleLabel": "What is the name of the top-level design entity for this project? This name is case sensitive and must exactly match the entity name in the design file.",
+      "aliases": [
+        "顶层实体",
+        "顶层模块",
+        "top",
+        "level",
+        "entity"
+      ],
+      "role": "field",
+      "purpose": "顶层实体 顶层模块 top level entity的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": "top_level_entity",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.this-project-uses-a-partition-database-qdb-file-for-the-root-partition",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "This project uses a Partition Database (.qdb) file for the root partition",
+      "visibleLabel": "This project uses a Partition Database (.qdb) file for the root partition",
+      "aliases": [],
+      "role": "checkbox",
+      "purpose": "This project uses a Partition Database (.qdb) file for the root partition的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.use-existing-project-settings",
+      "parentId": "quartus.new-project-wizard.project-identity",
+      "canonicalName": "Use Existing Project Settings",
+      "visibleLabel": "Use Existing Project Settings...",
+      "aliases": [
+        "使用已有工程设置"
+      ],
+      "role": "button",
+      "purpose": "使用已有工程设置的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "Family, Device & Board Settings",
+      "visibleLabel": "Family, Device & Board Settings",
+      "aliases": [
+        "器件系列",
+        "器件",
+        "开发板设置"
+      ],
+      "role": "page",
+      "purpose": "器件系列 器件 开发板设置的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Page table",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "table",
+      "purpose": "本页的数据表；列名和行名用于区分数值与参数角色。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device",
+      "parentId": "quartus.new-project-wizard.device",
+      "canonicalName": "Device",
+      "visibleLabel": "Device",
+      "aliases": [
+        "器件",
+        "device",
+        "器件设置"
+      ],
+      "role": "tab",
+      "purpose": "器件的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.board",
+      "parentId": "quartus.new-project-wizard.device",
+      "canonicalName": "Board",
+      "visibleLabel": "Board",
+      "aliases": [
+        "开发板"
+      ],
+      "role": "tab",
+      "purpose": "开发板的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.family",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Family",
+      "visibleLabel": "Family:",
+      "aliases": [
+        "器件系列"
+      ],
+      "role": "combobox",
+      "purpose": "器件系列的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": "device_family",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.device",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Device",
+      "visibleLabel": "Device:",
+      "aliases": [
+        "器件",
+        "device",
+        "器件设置"
+      ],
+      "role": "combobox",
+      "purpose": "器件的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": "device_filter",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.package",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Package",
+      "visibleLabel": "Package:",
+      "aliases": [
+        "封装"
+      ],
+      "role": "combobox",
+      "purpose": "封装的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.pin-count",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Pin count",
+      "visibleLabel": "Pin count:",
+      "aliases": [
+        "引脚数量"
+      ],
+      "role": "combobox",
+      "purpose": "引脚数量的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.core-speed-grade",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Core speed grade",
+      "visibleLabel": "Core speed grade:",
+      "aliases": [
+        "核心速度等级"
+      ],
+      "role": "combobox",
+      "purpose": "核心速度等级的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.show-advanced-devices",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Show advanced devices",
+      "visibleLabel": "Show advanced devices",
+      "aliases": [],
+      "role": "checkbox",
+      "purpose": "Show advanced devices的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.specific-device-selected-in-available-devices-list",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Specific device selected in 'Available devices' list",
+      "visibleLabel": "Specific device selected in 'Available devices' list",
+      "aliases": [],
+      "role": "radio",
+      "purpose": "Specific device selected in 'Available devices' list的可见radio；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.filter",
+      "parentId": "quartus.new-project-wizard.device.device",
+      "canonicalName": "Filter",
+      "visibleLabel": "Filter:",
+      "aliases": [],
+      "role": "combobox",
+      "purpose": "Filter的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.name",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "Name",
+      "visibleLabel": "Name",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Name的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.core-voltage",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "Core Voltage",
+      "visibleLabel": "Core Voltage",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Core Voltage的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": "V"
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.alms",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "ALMs",
+      "visibleLabel": "ALMs",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "ALMs的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.total-i-os",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "Total I/Os",
+      "visibleLabel": "Total I/Os",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Total I/Os的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.gpios",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "GPIOs",
+      "visibleLabel": "GPIOs",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "GPIOs的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.memory-bits",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "Memory Bits",
+      "visibleLabel": "Memory Bits",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Memory Bits的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.device.device.table.dsp-blocks",
+      "parentId": "quartus.new-project-wizard.device.device.table",
+      "canonicalName": "DSP Blocks",
+      "visibleLabel": "DSP Blocks",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "DSP Blocks的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-device"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "Add Files",
+      "visibleLabel": "Add Files",
+      "aliases": [
+        "添加源文件"
+      ],
+      "role": "page",
+      "purpose": "添加源文件的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Page table",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "table",
+      "purpose": "本页的数据表；列名和行名用于区分数值与参数角色。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.file-name",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "File name",
+      "visibleLabel": "File name:",
+      "aliases": [
+        "源文件路径"
+      ],
+      "role": "field",
+      "purpose": "源文件路径的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": "source_file_path",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.file",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "File",
+      "visibleLabel": "File",
+      "aliases": [
+        "文件",
+        "file menu",
+        "文件菜单"
+      ],
+      "role": "radio",
+      "purpose": "文件的可见radio；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.directory",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Directory",
+      "visibleLabel": "Directory",
+      "aliases": [],
+      "role": "radio",
+      "purpose": "Directory的可见radio；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.add",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Add",
+      "visibleLabel": "Add",
+      "aliases": [
+        "添加"
+      ],
+      "role": "button",
+      "purpose": "添加的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.add-all",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Add All",
+      "visibleLabel": "Add All",
+      "aliases": [
+        "全部添加"
+      ],
+      "role": "button",
+      "purpose": "全部添加的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.remove",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Remove",
+      "visibleLabel": "Remove",
+      "aliases": [
+        "移除"
+      ],
+      "role": "button",
+      "purpose": "移除的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.up",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Up",
+      "visibleLabel": "Up",
+      "aliases": [
+        "上移"
+      ],
+      "role": "button",
+      "purpose": "上移的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.down",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Down",
+      "visibleLabel": "Down",
+      "aliases": [
+        "下移"
+      ],
+      "role": "button",
+      "purpose": "下移的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.change-directory",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Change Directory",
+      "visibleLabel": "Change Directory",
+      "aliases": [
+        "更改目录"
+      ],
+      "role": "button",
+      "purpose": "更改目录的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.properties",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "Properties",
+      "visibleLabel": "Properties",
+      "aliases": [
+        "属性",
+        "properties"
+      ],
+      "role": "button",
+      "purpose": "属性的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.file-name",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "File Name",
+      "visibleLabel": "File Name",
+      "aliases": [
+        "源文件路径"
+      ],
+      "role": "table_column",
+      "purpose": "File Name的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.type",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "Type",
+      "visibleLabel": "Type",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Type的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.library",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "Library",
+      "visibleLabel": "Library",
+      "aliases": [
+        "库"
+      ],
+      "role": "table_column",
+      "purpose": "库的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.entity",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "Entity",
+      "visibleLabel": "Entity",
+      "aliases": [
+        "实体"
+      ],
+      "role": "table_column",
+      "purpose": "实体的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.design-entry-synthesis-tool",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "Design Entry/Synthesis Tool",
+      "visibleLabel": "Design Entry/Synthesis Tool",
+      "aliases": [],
+      "role": "table_column",
+      "purpose": "Design Entry/Synthesis Tool的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.table.hdl-version",
+      "parentId": "quartus.new-project-wizard.add-files.table",
+      "canonicalName": "HDL Version",
+      "visibleLabel": "HDL Version",
+      "aliases": [
+        "HDL版本"
+      ],
+      "role": "table_column",
+      "purpose": "HDL版本的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.add-readme-markdown-template-file-to-the-project",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "add README Markdown template file to the project.",
+      "visibleLabel": "add README Markdown template file to the project.",
+      "aliases": [],
+      "role": "checkbox",
+      "purpose": "add README Markdown template file to the project.的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.add-files.user-libraries",
+      "parentId": "quartus.new-project-wizard.add-files",
+      "canonicalName": "User Libraries",
+      "visibleLabel": "User Libraries...",
+      "aliases": [
+        "用户库"
+      ],
+      "role": "button",
+      "purpose": "用户库的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-add-files"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "EDA Tool Settings",
+      "visibleLabel": "EDA Tool Settings",
+      "aliases": [
+        "EDA工具设置",
+        "仿真工具"
+      ],
+      "role": "page",
+      "purpose": "EDA工具设置 仿真工具的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table",
+      "parentId": "quartus.new-project-wizard.eda",
+      "canonicalName": "Page table",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "table",
+      "purpose": "本页的数据表；列名和行名用于区分数值与参数角色。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.tool-type",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Tool Type",
+      "visibleLabel": "Tool Type",
+      "aliases": [
+        "工具类型"
+      ],
+      "role": "table_column",
+      "purpose": "工具类型的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.tool-name",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Tool Name",
+      "visibleLabel": "Tool Name",
+      "aliases": [
+        "工具名称"
+      ],
+      "role": "table_column",
+      "purpose": "工具名称的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.format-s",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Format(s)",
+      "visibleLabel": "Format(s)",
+      "aliases": [
+        "文件格式"
+      ],
+      "role": "table_column",
+      "purpose": "文件格式的可见table_column；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.design-entry-synt",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Design Entry/Synt",
+      "visibleLabel": "Design Entry/Synt...",
+      "aliases": [],
+      "role": "table_row",
+      "purpose": "Design Entry/Synt的可见table_row；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.simulation",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Simulation",
+      "visibleLabel": "Simulation",
+      "aliases": [],
+      "role": "table_row",
+      "purpose": "Simulation的可见table_row；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.board-level",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Board-Level",
+      "visibleLabel": "Board-Level",
+      "aliases": [],
+      "role": "table_row",
+      "purpose": "Board-Level的可见table_row；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.eda.table.signal-integrity",
+      "parentId": "quartus.new-project-wizard.eda.table",
+      "canonicalName": "Signal Integrity",
+      "visibleLabel": "Signal Integrity",
+      "aliases": [],
+      "role": "cell",
+      "purpose": "Signal Integrity的可见cell；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-eda"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary",
+      "parentId": "quartus.new-project-wizard",
+      "canonicalName": "Summary",
+      "visibleLabel": "Summary",
+      "aliases": [
+        "汇总",
+        "摘要"
+      ],
+      "role": "page",
+      "purpose": "汇总 摘要的可见page；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.project-directory",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Project directory",
+      "visibleLabel": "Project directory:",
+      "aliases": [],
+      "role": "summary_field",
+      "purpose": "Project directory的可见summary_field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.project-name",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Project name",
+      "visibleLabel": "Project name:",
+      "aliases": [],
+      "role": "summary_field",
+      "purpose": "Project name的可见summary_field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.top-level-design-entity",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Top-level design entity",
+      "visibleLabel": "Top-level design entity:",
+      "aliases": [],
+      "role": "summary_field",
+      "purpose": "Top-level design entity的可见summary_field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.number-of-files-added",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Number of files added",
+      "visibleLabel": "Number of files added:",
+      "aliases": [],
+      "role": "summary_field",
+      "purpose": "Number of files added的可见summary_field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.number-of-user-libraries-added",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Number of user libraries added",
+      "visibleLabel": "Number of user libraries added:",
+      "aliases": [],
+      "role": "summary_field",
+      "purpose": "Number of user libraries added的可见summary_field；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.device-assignments",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Device assignments",
+      "visibleLabel": "Device assignments:",
+      "aliases": [],
+      "role": "summary_group",
+      "purpose": "Device assignments的可见summary_group；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.eda-tools",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "EDA tools",
+      "visibleLabel": "EDA tools:",
+      "aliases": [],
+      "role": "summary_group",
+      "purpose": "EDA tools的可见summary_group；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.operating-conditions",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Operating conditions",
+      "visibleLabel": "Operating conditions:",
+      "aliases": [],
+      "role": "summary_group",
+      "purpose": "Operating conditions的可见summary_group；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.finish",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Finish",
+      "visibleLabel": "Finish",
+      "aliases": [
+        "完成"
+      ],
+      "role": "button",
+      "purpose": "完成的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.summary.cancel",
+      "parentId": "quartus.new-project-wizard.summary",
+      "canonicalName": "Cancel",
+      "visibleLabel": "Cancel",
+      "aliases": [
+        "取消"
+      ],
+      "role": "button",
+      "purpose": "取消的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-summary"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-working-directory-for-this-project.browse",
+      "parentId": "quartus.new-project-wizard.project-identity.what-is-the-working-directory-for-this-project",
+      "canonicalName": "Browse project_directory",
+      "visibleLabel": "...",
+      "aliases": [
+        "浏览"
+      ],
+      "role": "button",
+      "purpose": "选择此字段对应的路径或名称。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-this-project.browse",
+      "parentId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-this-project",
+      "canonicalName": "Browse project_name",
+      "visibleLabel": "...",
+      "aliases": [
+        "浏览"
+      ],
+      "role": "button",
+      "purpose": "选择此字段对应的路径或名称。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ]
+    },
+    {
+      "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-the-top-level-design-entity-for-this-project-this-name-is-case-sensitive-and-must-exactly-match-the-entity-name-in-the-design-file.browse",
+      "parentId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-the-top-level-design-entity-for-this-project-this-name-is-case-sensitive-and-must-exactly-match-the-entity-name-in-the-design-file",
+      "canonicalName": "Browse top_level_entity",
+      "visibleLabel": "...",
+      "aliases": [
+        "浏览"
+      ],
+      "role": "button",
+      "purpose": "选择此字段对应的路径或名称。",
+      "stage": "project-creation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.wizard-project-identity"
+      ]
+    }
+  ],
+  "observedPageOrder": [
+    "quartus.new-project-wizard.introduction",
+    "quartus.new-project-wizard.project-identity",
+    "quartus.new-project-wizard.device",
+    "quartus.new-project-wizard.add-files",
+    "quartus.new-project-wizard.eda",
+    "quartus.new-project-wizard.summary"
+  ],
+  "workflowNotes": [
+    "本次选择 Empty Project；器件页紧接工程名称页并在 Add Files 之前。",
+    "填写的临时探测名称不构成默认值或用户工程状态；向导在 Finish 前取消。"
+  ]
+}

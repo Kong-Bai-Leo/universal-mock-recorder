@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.assignments",
+  "nodes": [
+    {
+      "locatorId": "quartus.assignments",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Assignments",
+      "visibleLabel": "Assignments",
+      "aliases": [
+        "分配",
+        "assignments",
+        "约束"
+      ],
+      "role": "menu",
+      "purpose": "分配 约束菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.device",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Device",
+      "visibleLabel": "Device...",
+      "aliases": [
+        "器件",
+        "device",
+        "器件设置"
+      ],
+      "role": "menu_item",
+      "purpose": "器件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.settings",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Settings",
+      "visibleLabel": "Settings...",
+      "aliases": [
+        "设置"
+      ],
+      "role": "menu_item",
+      "purpose": "设置的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.assignment-editor",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Assignment Editor",
+      "visibleLabel": "Assignment Editor",
+      "aliases": [
+        "分配编辑器"
+      ],
+      "role": "menu_item",
+      "purpose": "分配编辑器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.pin-planner",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Pin Planner",
+      "visibleLabel": "Pin Planner",
+      "aliases": [
+        "引脚规划",
+        "pin planner",
+        "I/O分配",
+        "引脚分配"
+      ],
+      "role": "menu_item",
+      "purpose": "引脚规划 引脚分配的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.remove-assignments",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Remove Assignments",
+      "visibleLabel": "Remove Assignments...",
+      "aliases": [
+        "移除分配"
+      ],
+      "role": "menu_item",
+      "purpose": "移除分配的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.back-annotate-assignments",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Back-Annotate Assignments",
+      "visibleLabel": "Back-Annotate Assignments...",
+      "aliases": [
+        "反标分配"
+      ],
+      "role": "menu_item",
+      "purpose": "反标分配的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.import-assignments",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Import Assignments",
+      "visibleLabel": "Import Assignments...",
+      "aliases": [
+        "导入分配"
+      ],
+      "role": "menu_item",
+      "purpose": "导入分配的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.export-assignments",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Export Assignments",
+      "visibleLabel": "Export Assignments...",
+      "aliases": [
+        "导出分配"
+      ],
+      "role": "menu_item",
+      "purpose": "导出分配的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.logic-lock-regions-window",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Logic Lock Regions Window",
+      "visibleLabel": "Logic Lock Regions Window",
+      "aliases": [
+        "逻辑锁定区域"
+      ],
+      "role": "menu_item",
+      "purpose": "逻辑锁定区域的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.assignments.design-partitions-window",
+      "parentId": "quartus.assignments",
+      "canonicalName": "Design Partitions Window",
+      "visibleLabel": "Design Partitions Window",
+      "aliases": [
+        "设计分区窗口"
+      ],
+      "role": "menu_item",
+      "purpose": "设计分区窗口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.assignments-menu"
+      ]
+    }
+  ]
+}

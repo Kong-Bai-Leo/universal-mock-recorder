@@ -1,0 +1,21 @@
+{
+  "status": "passed_for_recorded_empty_rtl_project",
+  "observedDate": "2026-09-12",
+  "application": "Vivado 2024.2",
+  "machine": "VM2",
+  "method": "Operator observation through Computer Use of native script execution, save/reopen, Project Summary, and separate read-only Tcl query. This is an observation report, not a machine-exported native log.",
+  "planSha256": "805AD1687792D8CE94EE8F274A8DE3A56529B6B394AD5535665AEA3D7CED1BA0",
+  "scriptSha256": "64293F6E96E1AFA30FFD5EFB0B8379C11C2E16B3636DCA4CBEF04197E14153FD",
+  "replayProject": "C:/Users/user/AppData/Roaming/Xilinx/Vivado/VivadoReplay-72e8b43a-7823-4362-bdd4-60a9326ed13c/project/VivadoSmoke_20260912_A.xpr",
+  "nativeScriptExecutions": 1,
+  "nativeCallsAndReopen": "pass",
+  "sourceRecordingCompared": true,
+  "independentSourceTruth": "independent-source-truth.json",
+  "comparisonBasis": "Source truth recorded before API and not uploaded. Listed source properties equal replay GUI and independent native readback. Destination differs intentionally for isolation.",
+  "nativeReadback": "SOURCE_COMPARISON VivadoSmoke_20260912_A xc7vx485tffg1157-1 VHDL Mixed design_sources 0 constraints 0 top {} synthesis {Not started} implementation {Not started}",
+  "matched": ["projectName", "part", "targetLanguage", "simulatorLanguage", "designSourceCount", "constraintFileCount", "emptyTop", "synthesisNotStarted", "implementationNotStarted"],
+  "notTested": ["HDL reconstruction", "synthesis execution", "implementation execution", "simulation", "bitstream", "IP/block design", "hardware", "full UI coverage"],
+  "vmClockIncorrect": true,
+  "sourceProjectPreserved": true,
+  "rawModelResponsesEdited": false
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.window",
+  "nodes": [
+    {
+      "locatorId": "quartus.window",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Window",
+      "visibleLabel": "Window",
+      "aliases": [
+        "窗口",
+        "window"
+      ],
+      "role": "menu",
+      "purpose": "窗口菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.window.detach-window",
+      "parentId": "quartus.window",
+      "canonicalName": "Detach Window",
+      "visibleLabel": "Detach Window",
+      "aliases": [
+        "分离窗口",
+        "detach"
+      ],
+      "role": "menu_item",
+      "purpose": "分离窗口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.window.close-all",
+      "parentId": "quartus.window",
+      "canonicalName": "Close All",
+      "visibleLabel": "Close All",
+      "aliases": [
+        "关闭全部",
+        "close all",
+        "关闭全部窗口"
+      ],
+      "role": "menu_item",
+      "purpose": "关闭全部窗口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.window.cascade",
+      "parentId": "quartus.window",
+      "canonicalName": "Cascade",
+      "visibleLabel": "Cascade",
+      "aliases": [
+        "层叠",
+        "cascade",
+        "层叠窗口"
+      ],
+      "role": "menu_item",
+      "purpose": "层叠窗口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ],
+      "shortcut": "Shift+F5"
+    },
+    {
+      "locatorId": "quartus.window.tile",
+      "parentId": "quartus.window",
+      "canonicalName": "Tile",
+      "visibleLabel": "Tile",
+      "aliases": [
+        "平铺",
+        "tile",
+        "平铺窗口"
+      ],
+      "role": "menu_item",
+      "purpose": "平铺窗口的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ],
+      "shortcut": "Shift+F4"
+    },
+    {
+      "locatorId": "quartus.window.document-entry",
+      "parentId": "quartus.window",
+      "canonicalName": "Document window entry",
+      "visibleLabel": null,
+      "aliases": [
+        "文档窗口条目"
+      ],
+      "role": "menu_item",
+      "purpose": "列出当前打开的文档窗口；序号、名称和选中状态以当前截图为准。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "dynamic_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.window-menu"
+      ]
+    }
+  ]
+}

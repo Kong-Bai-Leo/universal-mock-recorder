@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.connections",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.connections",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "System connections",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "concept",
+      "purpose": "组件接口连接概念；不能由线条位置推断接口身份。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.connections.hosts-agents",
+      "parentId": "quartus.platform-designer.connections",
+      "canonicalName": "Host and agent connections",
+      "visibleLabel": null,
+      "aliases": [
+        "连线",
+        "接口连接",
+        "主从连接"
+      ],
+      "role": "concept",
+      "purpose": "内存映射主机与代理接口连接可在 Address Map 表中定义。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": [],
+      "relatedMap": "platform-designer/address/ui-map.json"
+    }
+  ]
+}

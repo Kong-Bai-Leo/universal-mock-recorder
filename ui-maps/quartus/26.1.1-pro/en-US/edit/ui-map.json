@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.edit",
+  "nodes": [
+    {
+      "locatorId": "quartus.edit",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Edit",
+      "visibleLabel": "Edit",
+      "aliases": [
+        "编辑",
+        "edit"
+      ],
+      "role": "menu",
+      "purpose": "编辑菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.undo",
+      "parentId": "quartus.edit",
+      "canonicalName": "Undo",
+      "visibleLabel": "Undo",
+      "aliases": [
+        "撤销",
+        "undo"
+      ],
+      "role": "menu_item",
+      "purpose": "撤销的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.redo",
+      "parentId": "quartus.edit",
+      "canonicalName": "Redo",
+      "visibleLabel": "Redo",
+      "aliases": [
+        "重做",
+        "redo"
+      ],
+      "role": "menu_item",
+      "purpose": "重做的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.cut",
+      "parentId": "quartus.edit",
+      "canonicalName": "Cut",
+      "visibleLabel": "Cut",
+      "aliases": [
+        "剪切",
+        "cut"
+      ],
+      "role": "menu_item",
+      "purpose": "剪切的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.copy",
+      "parentId": "quartus.edit",
+      "canonicalName": "Copy",
+      "visibleLabel": "Copy",
+      "aliases": [
+        "复制",
+        "copy"
+      ],
+      "role": "menu_item",
+      "purpose": "复制的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.paste",
+      "parentId": "quartus.edit",
+      "canonicalName": "Paste",
+      "visibleLabel": "Paste",
+      "aliases": [
+        "粘贴",
+        "paste"
+      ],
+      "role": "menu_item",
+      "purpose": "粘贴的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.delete",
+      "parentId": "quartus.edit",
+      "canonicalName": "Delete",
+      "visibleLabel": "Delete",
+      "aliases": [
+        "删除",
+        "delete"
+      ],
+      "role": "menu_item",
+      "purpose": "删除的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.select-all",
+      "parentId": "quartus.edit",
+      "canonicalName": "Select All",
+      "visibleLabel": "Select All",
+      "aliases": [
+        "全选",
+        "select all"
+      ],
+      "role": "menu_item",
+      "purpose": "全选的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.find",
+      "parentId": "quartus.edit",
+      "canonicalName": "Find",
+      "visibleLabel": "Find...",
+      "aliases": [
+        "查找",
+        "find"
+      ],
+      "role": "menu_item",
+      "purpose": "查找的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.find-next",
+      "parentId": "quartus.edit",
+      "canonicalName": "Find Next",
+      "visibleLabel": "Find Next",
+      "aliases": [
+        "查找下一个",
+        "find next"
+      ],
+      "role": "menu_item",
+      "purpose": "查找下一个的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.find-previous",
+      "parentId": "quartus.edit",
+      "canonicalName": "Find Previous",
+      "visibleLabel": "Find Previous",
+      "aliases": [
+        "查找上一个",
+        "find previous"
+      ],
+      "role": "menu_item",
+      "purpose": "查找上一个的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.replace",
+      "parentId": "quartus.edit",
+      "canonicalName": "Replace",
+      "visibleLabel": "Replace...",
+      "aliases": [
+        "替换",
+        "replace"
+      ],
+      "role": "menu_item",
+      "purpose": "替换的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.go-to",
+      "parentId": "quartus.edit",
+      "canonicalName": "Go To",
+      "visibleLabel": "Go To...",
+      "aliases": [
+        "转到",
+        "go to",
+        "跳转"
+      ],
+      "role": "menu_item",
+      "purpose": "跳转的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.edit.properties",
+      "parentId": "quartus.edit",
+      "canonicalName": "Properties",
+      "visibleLabel": "Properties",
+      "aliases": [
+        "属性",
+        "properties"
+      ],
+      "role": "menu_item",
+      "purpose": "属性的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.edit-menu"
+      ]
+    }
+  ]
+}

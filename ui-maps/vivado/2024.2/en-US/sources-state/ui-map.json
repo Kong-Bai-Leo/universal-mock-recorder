@@ -1,0 +1,11 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "section": "sources-state",
+  "scope": "Documented top-module state semantics; not a complete live scan",
+  "controls": [
+    {"id":"vivado-sources-context-menu","parentId":"vivado-sources-panel","label":"Sources Context Menu","type":"context_menu","description":"来源树节点的右键菜单；菜单对象与选择高亮不等于已提交顶层变更。","observationStatus":"documented_not_scanned","semanticStatus":"documented","sourceIds":["amd-ug893-sources-popup"],"observationIds":[],"automationId":null,"aliases":[],"executionStatus":"not_exercised"},
+    {"id":"vivado-sources-set-as-top","parentId":"vivado-sources-context-menu","label":"Set as Top","type":"menu_item","description":"将选中的模块指定为综合/仿真层次的顶层。对应文件集的 top 属性。完成需要后续可见顶层标识；树中上下位置、缩进、菜单关闭不是完成或取消依据。","observationStatus":"documented_not_scanned","semanticStatus":"documented","sourceIds":["amd-ug893-sources-popup"],"observationIds":[],"automationId":null,"aliases":["Set Top"],"executionStatus":"not_exercised"},
+    {"id":"vivado-sources-top-icon","parentId":"vivado-sources-panel","label":"Top module icon","type":"state_indicator","description":"模块旁的顶层专用图标，不是第一行、缩进或选择高亮。状态判断可结合明确的 Project Summary Top module name；无法辨认时保留未知，不根据树顺序猜测。","observationStatus":"documented_not_scanned","semanticStatus":"documented","sourceIds":["amd-ug893-hierarchy-icons","amd-ug893-sources-popup"],"observationIds":[],"automationId":null,"aliases":[],"executionStatus":"not_exercised"}
+  ]
+}

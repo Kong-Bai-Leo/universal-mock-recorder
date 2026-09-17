@@ -1,0 +1,610 @@
+{
+  "generatedAt": "2026-09-07T23:05:33.123Z",
+  "scope": "Deterministic local retrieval only; no screenshots uploaded and no model invoked",
+  "examples": [
+    {
+      "query": "新建工程 顶层实体",
+      "sectionId": "new-project-wizard",
+      "serializedBytes": 4735,
+      "context": {
+        "metadata": {
+          "mapId": "quartus-26.1.1-pro-en-us",
+          "application": {
+            "name": "Quartus Prime",
+            "version": "26.1.1",
+            "edition": "Pro",
+            "language": "en-US"
+          },
+          "schemaVersion": "1.0"
+        },
+        "entries": [
+          {
+            "locatorId": "quartus.new-project-wizard",
+            "sectionId": "new-project-wizard",
+            "parentId": "quartus.application",
+            "canonicalName": "New Project Wizard",
+            "visibleLabel": "New Project Wizard",
+            "aliases": [
+              "新建工程向导",
+              "新建项目",
+              "new project",
+              "新建工程",
+              "向导"
+            ],
+            "role": "dialog",
+            "purpose": "分步骤定义工程；点击 Finish 才请求创建。",
+            "stage": "project-creation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.wizard-introduction"
+            ],
+            "ancestorIds": [
+              "quartus.application"
+            ],
+            "matchScore": 2
+          },
+          {
+            "locatorId": "quartus.application",
+            "sectionId": "application",
+            "parentId": null,
+            "canonicalName": "Quartus Prime Pro Edition",
+            "visibleLabel": "Quartus Prime Pro Edition",
+            "aliases": [],
+            "role": "application",
+            "purpose": "Quartus Prime 26.1.1 Pro 英文主界面。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.home"
+            ],
+            "ancestorIds": [],
+            "matchScore": 0
+          },
+          {
+            "locatorId": "quartus.new-project-wizard.project-identity",
+            "sectionId": "new-project-wizard",
+            "parentId": "quartus.new-project-wizard",
+            "canonicalName": "Directory, Name, Top-Level Entity",
+            "visibleLabel": "Directory, Name, Top-Level Entity",
+            "aliases": [
+              "目录",
+              "工程名称",
+              "顶层实体"
+            ],
+            "role": "page",
+            "purpose": "目录 工程名称 顶层实体的可见page；具体结果仍需操作前后证据确认。",
+            "stage": "project-creation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.wizard-project-identity"
+            ],
+            "ancestorIds": [
+              "quartus.new-project-wizard",
+              "quartus.application"
+            ],
+            "matchScore": 2
+          },
+          {
+            "locatorId": "quartus.new-project-wizard.project-identity.what-is-the-name-of-the-top-level-design-entity-for-this-project-this-name-is-case-sensitive-and-must-exactly-match-the-entity-name-in-the-design-file",
+            "sectionId": "new-project-wizard",
+            "parentId": "quartus.new-project-wizard.project-identity",
+            "canonicalName": "What is the name of the top-level design entity for this project? This name is case sensitive and must exactly match the entity name in the design file.",
+            "visibleLabel": "What is the name of the top-level design entity for this project? This name is case sensitive and must exactly match the entity name in the design file.",
+            "aliases": [
+              "顶层实体",
+              "顶层模块",
+              "top",
+              "level",
+              "entity"
+            ],
+            "role": "field",
+            "purpose": "顶层实体 顶层模块 top level entity的可见field；具体结果仍需操作前后证据确认。",
+            "stage": "project-creation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": "top_level_entity",
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.wizard-project-identity"
+            ],
+            "ancestorIds": [
+              "quartus.new-project-wizard.project-identity",
+              "quartus.new-project-wizard",
+              "quartus.application"
+            ],
+            "matchScore": 2
+          }
+        ],
+        "identifierPolicy": "reference is a semantic repository ID, not AutomationId/runtime ID. No live bounds or runtime IDs are treated as current truth.",
+        "retrieval": {
+          "applicable": true,
+          "sectionContext": "new-project-wizard",
+          "sectionContextKnown": true,
+          "tokens": [
+            "新建工程",
+            "顶层实体"
+          ],
+          "matched": true,
+          "fallbackUsed": false,
+          "unmatchedTokens": [],
+          "ambiguity": 1,
+          "ambiguityReasons": [
+            "多候选项分值接近，返回不确定候选集合"
+          ],
+          "hierarchyBudgetUsed": 4,
+          "limit": 12,
+          "truncation": {
+            "requestedLimit": 12,
+            "dropped": false
+          },
+          "warning": null,
+          "maxContextBytes": 65536
+        },
+        "sourceDetails": [],
+        "evidenceDetails": [
+          {
+            "id": "qev.wizard-introduction",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-introduction.jpg",
+            "recordedAt": "2026-09-07T22:42:48.193Z",
+            "sha256": "a0020707ea0e6fc865f3bbb68300a1e1602e2f2f670c05cfdd07d4ba5b6f036a",
+            "width": 2560,
+            "height": 1440
+          },
+          {
+            "id": "qev.home",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/home.jpg",
+            "recordedAt": "2026-09-07T22:39:06.036Z",
+            "sha256": "cfa1d1199ad20ca724e442da57d74d3e521359452e661e9ba59267e2d88e12f1",
+            "width": 2560,
+            "height": 1440
+          },
+          {
+            "id": "qev.wizard-project-identity",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-project-identity.jpg",
+            "recordedAt": "2026-09-07T22:43:10.609Z",
+            "sha256": "75e8e65012d0a4297e0a77b68fbb4fdfb04bf6ad9afb6ee1cae2af7fc1f43770",
+            "width": 2560,
+            "height": 1440
+          }
+        ]
+      }
+    },
+    {
+      "query": "引脚分配 Pin Planner",
+      "sectionId": "assignments",
+      "serializedBytes": 3848,
+      "context": {
+        "metadata": {
+          "mapId": "quartus-26.1.1-pro-en-us",
+          "application": {
+            "name": "Quartus Prime",
+            "version": "26.1.1",
+            "edition": "Pro",
+            "language": "en-US"
+          },
+          "schemaVersion": "1.0"
+        },
+        "entries": [
+          {
+            "locatorId": "quartus.assignments.pin-planner",
+            "sectionId": "assignments",
+            "parentId": "quartus.assignments",
+            "canonicalName": "Pin Planner",
+            "visibleLabel": "Pin Planner",
+            "aliases": [
+              "引脚规划",
+              "pin planner",
+              "I/O分配",
+              "引脚分配"
+            ],
+            "role": "menu_item",
+            "purpose": "引脚规划 引脚分配的可见menu_item；具体结果仍需操作前后证据确认。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.assignments-menu"
+            ],
+            "ancestorIds": [
+              "quartus.assignments",
+              "quartus.main-menu",
+              "quartus.application"
+            ],
+            "matchScore": 7
+          },
+          {
+            "locatorId": "quartus.assignments",
+            "sectionId": "assignments",
+            "parentId": "quartus.main-menu",
+            "canonicalName": "Assignments",
+            "visibleLabel": "Assignments",
+            "aliases": [
+              "分配",
+              "assignments",
+              "约束"
+            ],
+            "role": "menu",
+            "purpose": "分配 约束菜单。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [
+              "help-index-25.1.1"
+            ],
+            "evidenceRefs": [
+              "qev.assignments-menu"
+            ],
+            "ancestorIds": [
+              "quartus.main-menu",
+              "quartus.application"
+            ],
+            "matchScore": 0
+          },
+          {
+            "locatorId": "quartus.main-menu",
+            "sectionId": "application",
+            "parentId": "quartus.application",
+            "canonicalName": "Main menu bar",
+            "visibleLabel": null,
+            "aliases": [
+              "主菜单",
+              "menu bar",
+              "menu"
+            ],
+            "role": "menu_bar",
+            "purpose": "主菜单集合。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "semantic_group",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.home"
+            ],
+            "ancestorIds": [
+              "quartus.application"
+            ],
+            "matchScore": 0
+          },
+          {
+            "locatorId": "quartus.application",
+            "sectionId": "application",
+            "parentId": null,
+            "canonicalName": "Quartus Prime Pro Edition",
+            "visibleLabel": "Quartus Prime Pro Edition",
+            "aliases": [],
+            "role": "application",
+            "purpose": "Quartus Prime 26.1.1 Pro 英文主界面。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.home"
+            ],
+            "ancestorIds": [],
+            "matchScore": 0
+          }
+        ],
+        "identifierPolicy": "reference is a semantic repository ID, not AutomationId/runtime ID. No live bounds or runtime IDs are treated as current truth.",
+        "retrieval": {
+          "applicable": true,
+          "sectionContext": "assignments",
+          "sectionContextKnown": true,
+          "tokens": [
+            "引脚分配",
+            "pin",
+            "planner"
+          ],
+          "matched": true,
+          "fallbackUsed": false,
+          "unmatchedTokens": [],
+          "ambiguity": 0,
+          "ambiguityReasons": [],
+          "hierarchyBudgetUsed": 4,
+          "limit": 12,
+          "truncation": {
+            "requestedLimit": 12,
+            "dropped": false
+          },
+          "warning": null,
+          "maxContextBytes": 65536
+        },
+        "sourceDetails": [
+          {
+            "id": "help-index-25.1.1",
+            "title": "Quartus® Prime Pro Edition Help",
+            "url": "https://resources.altera.com/quartushelp/25.1.1/index.htm",
+            "version": "25.1.1",
+            "readStatus": "read",
+            "readScope": "目录、概要或指定页面；不表示整本手册全文已读"
+          }
+        ],
+        "evidenceDetails": [
+          {
+            "id": "qev.assignments-menu",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/assignments-menu.jpg",
+            "recordedAt": "2026-09-07T22:41:08.793Z",
+            "sha256": "6616531ba363dc9f4b6f067906061101f71e8ea9193b2b05ad23f35c0d853ec6",
+            "width": 2560,
+            "height": 1440
+          },
+          {
+            "id": "qev.home",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/home.jpg",
+            "recordedAt": "2026-09-07T22:39:06.036Z",
+            "sha256": "cfa1d1199ad20ca724e442da57d74d3e521359452e661e9ba59267e2d88e12f1",
+            "width": 2560,
+            "height": 1440
+          }
+        ]
+      }
+    },
+    {
+      "query": "Platform Designer 时钟 复位",
+      "sectionId": "platform-designer-clocks",
+      "serializedBytes": 4852,
+      "context": {
+        "metadata": {
+          "mapId": "quartus-26.1.1-pro-en-us",
+          "application": {
+            "name": "Quartus Prime",
+            "version": "26.1.1",
+            "edition": "Pro",
+            "language": "en-US"
+          },
+          "schemaVersion": "1.0"
+        },
+        "entries": [
+          {
+            "locatorId": "quartus.platform-designer.clocks",
+            "sectionId": "platform-designer-clocks",
+            "parentId": "quartus.platform-designer",
+            "canonicalName": "Clocks and resets",
+            "visibleLabel": null,
+            "aliases": [],
+            "role": "concept",
+            "purpose": "时钟域与复位域知识分区；不能从频率数字推断所属IP或已生效。",
+            "stage": "system-design",
+            "verification": "official_documentation_only",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "semantic_group",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [
+              "platform-designer-current"
+            ],
+            "evidenceRefs": [],
+            "ancestorIds": [
+              "quartus.platform-designer",
+              "quartus.application"
+            ],
+            "matchScore": 10
+          },
+          {
+            "locatorId": "quartus.platform-designer",
+            "sectionId": "platform-designer",
+            "parentId": "quartus.application",
+            "canonicalName": "Platform Designer",
+            "visibleLabel": "Platform Designer",
+            "aliases": [
+              "平台设计器启动",
+              "platform designer startup",
+              "系统集成",
+              "平台设计器"
+            ],
+            "role": "application",
+            "purpose": "IP 系统集成工具；本次仅扫描启动窗口。",
+            "stage": "system-design",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [
+              "platform-designer-current"
+            ],
+            "evidenceRefs": [
+              "qev.pd-open-system"
+            ],
+            "ancestorIds": [
+              "quartus.application"
+            ],
+            "matchScore": 0
+          },
+          {
+            "locatorId": "quartus.application",
+            "sectionId": "application",
+            "parentId": null,
+            "canonicalName": "Quartus Prime Pro Edition",
+            "visibleLabel": "Quartus Prime Pro Edition",
+            "aliases": [],
+            "role": "application",
+            "purpose": "Quartus Prime 26.1.1 Pro 英文主界面。",
+            "stage": "application-navigation",
+            "verification": "live_visual_observed",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "observed_exact",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [],
+            "evidenceRefs": [
+              "qev.home"
+            ],
+            "ancestorIds": [],
+            "matchScore": 0
+          },
+          {
+            "locatorId": "quartus.platform-designer.clocks.clock-domains",
+            "sectionId": "platform-designer-clocks",
+            "parentId": "quartus.platform-designer.clocks",
+            "canonicalName": "Clock domains",
+            "visibleLabel": null,
+            "aliases": [
+              "时钟域",
+              "时钟"
+            ],
+            "role": "concept",
+            "purpose": "官方目录列出查看时钟域的主题；未打开对应控件。",
+            "stage": "system-design",
+            "verification": "official_documentation_only",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "semantic_group",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [
+              "platform-designer-current"
+            ],
+            "evidenceRefs": [],
+            "ancestorIds": [
+              "quartus.platform-designer.clocks",
+              "quartus.platform-designer",
+              "quartus.application"
+            ],
+            "matchScore": 9
+          },
+          {
+            "locatorId": "quartus.platform-designer.clocks.reset-domains",
+            "sectionId": "platform-designer-clocks",
+            "parentId": "quartus.platform-designer.clocks",
+            "canonicalName": "Reset domains",
+            "visibleLabel": null,
+            "aliases": [
+              "复位域",
+              "复位"
+            ],
+            "role": "concept",
+            "purpose": "官方目录列出查看复位域的主题；未打开对应控件。",
+            "stage": "system-design",
+            "verification": "official_documentation_only",
+            "behaviorVerification": "not_executed",
+            "labelFidelity": "semantic_group",
+            "parameterRole": null,
+            "unit": null,
+            "opensMap": null,
+            "relatedMap": null,
+            "sourceRefs": [
+              "platform-designer-current"
+            ],
+            "evidenceRefs": [],
+            "ancestorIds": [
+              "quartus.platform-designer.clocks",
+              "quartus.platform-designer",
+              "quartus.application"
+            ],
+            "matchScore": 9
+          }
+        ],
+        "identifierPolicy": "reference is a semantic repository ID, not AutomationId/runtime ID. No live bounds or runtime IDs are treated as current truth.",
+        "retrieval": {
+          "applicable": true,
+          "sectionContext": "platform-designer-clocks",
+          "sectionContextKnown": true,
+          "tokens": [
+            "platform",
+            "designer",
+            "时钟",
+            "复位"
+          ],
+          "matched": true,
+          "fallbackUsed": false,
+          "unmatchedTokens": [
+            "platform",
+            "designer"
+          ],
+          "ambiguity": 0,
+          "ambiguityReasons": [],
+          "hierarchyBudgetUsed": 5,
+          "limit": 12,
+          "truncation": {
+            "requestedLimit": 12,
+            "dropped": false
+          },
+          "warning": null,
+          "maxContextBytes": 65536
+        },
+        "sourceDetails": [
+          {
+            "id": "platform-designer-current",
+            "title": "Quartus® Prime Pro Edition User Guide: Platform Designer",
+            "url": "https://docs.altera.com/r/docs/683609/current",
+            "version": "26.1",
+            "readStatus": "read",
+            "readScope": "26.1官方目录与概要，核对编辑/参数/连接/时钟复位等主题名称"
+          }
+        ],
+        "evidenceDetails": [
+          {
+            "id": "qev.pd-open-system",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-open-system.jpg",
+            "recordedAt": "2026-09-07T22:48:31.846Z",
+            "sha256": "7b7c13825012926a1ff862df759cda198199c47dd3b17cf1c1600dcc3a16abe7",
+            "width": 2560,
+            "height": 1440
+          },
+          {
+            "id": "qev.home",
+            "file": ".equile-local/quartus-uimap-2026-09-07/evidence/home.jpg",
+            "recordedAt": "2026-09-07T22:39:06.036Z",
+            "sha256": "cfa1d1199ad20ca724e442da57d74d3e521359452e661e9ba59267e2d88e12f1",
+            "width": 2560,
+            "height": 1440
+          }
+        ]
+      }
+    }
+  ]
+}

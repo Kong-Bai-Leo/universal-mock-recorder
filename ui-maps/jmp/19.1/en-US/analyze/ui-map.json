@@ -1,0 +1,200 @@
+{
+  "controls": [
+    {
+      "id": "jmp.analyze",
+      "label": "Analyze",
+      "parentId": null,
+      "kind": "menu",
+      "description": "统计分析入口",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.distribution",
+      "label": "Distribution",
+      "parentId": "jmp.analyze",
+      "kind": "menu_item",
+      "description": "分布分析；首版支持无缺失的连续数值列",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.fit-y-by-x",
+      "label": "Fit Y by X",
+      "parentId": "jmp.analyze",
+      "kind": "menu_item",
+      "description": "Y Response 与 X Factor 决定分析类型；两列连续数值才是 Bivariate",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.tabulate",
+      "label": "Tabulate",
+      "parentId": "jmp.analyze",
+      "kind": "menu_item",
+      "description": "制表",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.text-explorer",
+      "label": "Text Explorer",
+      "parentId": "jmp.analyze",
+      "kind": "menu_item",
+      "description": "文本分析",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.fit-model",
+      "label": "Fit Model",
+      "parentId": "jmp.analyze",
+      "kind": "menu_item",
+      "description": "模型拟合；首版不支持",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.predictive",
+      "label": "Predictive Modeling",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "预测建模",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.specialized",
+      "label": "Specialized Modeling",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "专用建模",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.screening",
+      "label": "Screening",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "筛选分析",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.multivariate",
+      "label": "Multivariate Methods",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "多变量方法",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.clustering",
+      "label": "Clustering",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "聚类",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.quality",
+      "label": "Quality and Process",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "质量与过程分析",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.reliability",
+      "label": "Reliability and Survival",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "可靠性与生存分析",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.analyze.consumer",
+      "label": "Consumer Research",
+      "parentId": "jmp.analyze",
+      "kind": "submenu",
+      "description": "消费者研究",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    }
+  ]
+}

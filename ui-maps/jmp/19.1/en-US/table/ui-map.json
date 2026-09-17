@@ -1,0 +1,788 @@
+{
+  "controls": [
+    {
+      "id": "jmp.table",
+      "label": "Data Table",
+      "parentId": null,
+      "kind": "window",
+      "description": "每张表独立身份，报告与表通过语义引用关联",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.grid",
+      "label": "Data grid",
+      "parentId": "jmp.table",
+      "kind": "grid",
+      "description": "单元格值必须对应行号和列身份；空数值单元格是缺失而非0",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.scripts",
+      "label": "Scripts",
+      "parentId": "jmp.table",
+      "kind": "panel",
+      "description": "表内脚本列表；红三角是此面板菜单，不是分析报告菜单",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.columns",
+      "label": "Columns",
+      "parentId": "jmp.table",
+      "kind": "panel",
+      "description": "列列表及数据/建模类型图标",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.rows",
+      "label": "Rows",
+      "parentId": "jmp.table",
+      "kind": "panel",
+      "description": "All rows / Selected / Excluded / Hidden / Labeled 状态；排除和隐藏不同",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-info",
+      "label": "Column Info",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "dialog",
+      "description": "从 Cols > Column Info 打开；按该表当前选中列编辑，不能把对话框当全局设置。",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.data-type",
+      "label": "Data Type",
+      "parentId": "jmp.table.column-info",
+      "kind": "combobox",
+      "description": "Numeric / Character 等存储类型，与建模类型不同",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.modeling-type",
+      "label": "Modeling Type",
+      "parentId": "jmp.table.column-info",
+      "kind": "combobox",
+      "description": "Continuous / Nominal / Ordinal 决定分析语义",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-edit",
+      "label": "Edit",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-tables",
+      "label": "Tables",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-rows",
+      "label": "Rows",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-cols",
+      "label": "Cols",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-doe",
+      "label": "DOE",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-graph",
+      "label": "Graph",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-tools",
+      "label": "Tools",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-view",
+      "label": "View",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-window",
+      "label": "Window",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.menu-help",
+      "label": "Help",
+      "parentId": "jmp.table",
+      "kind": "menu",
+      "description": "菜单已观察，内部未完整扫描",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-name",
+      "label": "Column Name",
+      "parentId": "jmp.table.column-info",
+      "kind": "textbox",
+      "description": "当前列名称，不是表名",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-lock",
+      "label": "Lock",
+      "parentId": "jmp.table.column-info",
+      "kind": "checkbox",
+      "description": "锁定列",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-format",
+      "label": "Format",
+      "parentId": "jmp.table.column-info",
+      "kind": "combobox",
+      "description": "显示格式；不等于底层数值或建模类型",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-width",
+      "label": "Width",
+      "parentId": "jmp.table.column-info",
+      "kind": "numberbox",
+      "description": "显示宽度，不是数据值",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.thousands",
+      "label": "Use thousands separator (,)",
+      "parentId": "jmp.table.column-info",
+      "kind": "checkbox",
+      "description": "数值显示千分位",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.initialize",
+      "label": "Initialize Data",
+      "parentId": "jmp.table.column-info",
+      "kind": "combobox",
+      "description": "Missing/Empty 初始化，不能填成0",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.number-rows",
+      "label": "Number of rows",
+      "parentId": "jmp.table.column-info",
+      "kind": "numberbox",
+      "description": "初始化行数，不是单元格值",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.column-properties",
+      "label": "Column Properties",
+      "parentId": "jmp.table.column-info",
+      "kind": "submenu",
+      "description": "列属性选择，首版未支持属性生成",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.info-ok",
+      "label": "OK",
+      "parentId": "jmp.table.column-info",
+      "kind": "button",
+      "description": "提交并关闭该列信息",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.info-cancel",
+      "label": "Cancel",
+      "parentId": "jmp.table.column-info",
+      "kind": "button",
+      "description": "取消未应用的改动",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.info-apply",
+      "label": "Apply",
+      "parentId": "jmp.table.column-info",
+      "kind": "button",
+      "description": "提交但保持对话框",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.info-help",
+      "label": "Help",
+      "parentId": "jmp.table.column-info",
+      "kind": "button",
+      "description": "帮助",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.data-type-numeric",
+      "label": "Numeric",
+      "parentId": "jmp.table.data-type",
+      "kind": "option",
+      "description": "列存储类型：Numeric",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.data-type-character",
+      "label": "Character",
+      "parentId": "jmp.table.data-type",
+      "kind": "option",
+      "description": "列存储类型：Character",
+      "aliases": [],
+      "core": true,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.data-type-row-state",
+      "label": "Row State",
+      "parentId": "jmp.table.data-type",
+      "kind": "option",
+      "description": "列存储类型：Row State",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.table.data-type-expression",
+      "label": "Expression",
+      "parentId": "jmp.table.data-type",
+      "kind": "option",
+      "description": "列存储类型：Expression",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-0",
+      "label": "New Columns...",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-1",
+      "label": "Column Selection",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-2",
+      "label": "Reorder Columns",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-3",
+      "label": "Columns Manager",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-4",
+      "label": "Standardize Attributes...",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-5",
+      "label": "Preselect Role",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-6",
+      "label": "Formula...",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-7",
+      "label": "Label/Unlabel",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-8",
+      "label": "Scroll Lock/Unlock",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-9",
+      "label": "Hide/Unhide",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-10",
+      "label": "Exclude/Unexclude",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-11",
+      "label": "Use for Marker",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-12",
+      "label": "Recode...",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-13",
+      "label": "Utilities",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-14",
+      "label": "Column Names",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-15",
+      "label": "Clear Cell Colors",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-16",
+      "label": "Reset Display Width",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-17",
+      "label": "Group Columns",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-18",
+      "label": "Ungroup Columns",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-19",
+      "label": "Expand All Column Groups",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-20",
+      "label": "Collapse All Column Groups",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    },
+    {
+      "id": "jmp.cols.item-21",
+      "label": "Delete Columns",
+      "parentId": "jmp.table.menu-cols",
+      "kind": "menu_item",
+      "description": "已观察菜单项；可用状态依列选择变化，内部选项/生成未支持。",
+      "aliases": [],
+      "core": false,
+      "verification": "observed",
+      "sourceIds": [
+        "jmp19-help"
+      ],
+      "observedVersion": "19.1.5"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "application": "JMP",
+  "version": "19.1",
+  "observedVersion": "19.1.5 Trial",
+  "language": "en-US",
+  "sections": [
+    {
+      "file": "file/ui-map.json"
+    },
+    {
+      "file": "analyze/ui-map.json"
+    },
+    {
+      "file": "distribution/ui-map.json"
+    },
+    {
+      "file": "table/ui-map.json"
+    },
+    {
+      "file": "report/ui-map.json"
+    }
+  ],
+  "coverage": "first_workflow_partial",
+  "notScanned": [
+    "most submenus",
+    "DOE",
+    "Graph Builder",
+    "specialized models",
+    "icon-only toolbar tooltips",
+    "Pro-only features"
+  ]
+}

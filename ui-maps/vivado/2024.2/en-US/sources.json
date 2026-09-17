@@ -1,0 +1,70 @@
+{
+  "sources": [
+    {"id":"amd-ug893-sources-popup","title":"UG893 — Sources Window Popup Menu Commands","url":"https://docs.amd.com/r/2024.2-English/ug893-vivado-ide/Sources-Window-Popup-Menu-Commands","version":"2024.2","accessedAt":"2026-09-13","status":"official_document_read"},
+    {"id":"amd-ug893-hierarchy-icons","title":"UG893 — Hierarchy View Icons","url":"https://docs.amd.com/r/2024.2-English/ug893-vivado-ide/Hierarchy-View-Icons","version":"2024.2","accessedAt":"2026-09-13","status":"official_document_read"},
+    {
+      "id": "amd-ug893-home",
+      "title": "UG893 — Using the Getting Started Page",
+      "url": "https://docs.amd.com/r/2024.2-English/ug893-vivado-ide/Using-the-Getting-Started-Page?contentId=VMU4lNVAzcXi5UsetwcWGA",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-create-project",
+      "title": "UG835 — create_project",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/create_project?contentId=UFkUeYKxtMHXckZT2zv7cw",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-add-files",
+      "title": "UG835 — add_files",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/add_files?contentId=bvkjLhrS9QYrojBB2mrpPA",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-set-property",
+      "title": "UG835 — set_property",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/set_property",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-launch-runs",
+      "title": "UG835 — launch_runs",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/launch_runs?contentId=_8ekag8Q3s4J5qodFTVL7g",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-wait-on-runs",
+      "title": "UG835 — wait_on_runs",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/wait_on_runs",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-get-runs",
+      "title": "UG835 — get_runs",
+      "url": "https://docs.amd.com/r/2024.2-English/ug835-vivado-tcl-commands/get_runs?contentId=HXT_2UG_V3pQkl13tNr~MQ",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "official_document_read"
+    },
+    {
+      "id": "amd-native-get-filesets",
+      "title": "Vivado 2024.2 installed help get_filesets",
+      "version": "2024.2",
+      "accessedAt": "2026-09-12",
+      "status": "installed_official_help_observed",
+      "evidence": "VM2 Tcl Console: pattern argument, current-project scope, sources_1 example and zero-match warning. Online 2024.2 page was inaccessible; not claimed read."
+    }
+  ]
+}

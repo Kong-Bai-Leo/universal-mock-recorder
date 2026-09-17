@@ -178,9 +178,11 @@ export function buildCandidateActions(events, options = {}) {
   }
 
   flushText();
-  annotateVisualModificationContexts(actions);
-  annotateCadInputEvidence(actions);
-  annotatePersistentCanvasBaselines(actions);
+  if (options.annotateCad !== false) {
+    annotateVisualModificationContexts(actions);
+    annotateCadInputEvidence(actions);
+    annotatePersistentCanvasBaselines(actions);
+  }
   return actions;
 }
 

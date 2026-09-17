@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.clocks",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.clocks",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "Clocks and resets",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "concept",
+      "purpose": "时钟域与复位域知识分区；不能从频率数字推断所属IP或已生效。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.clocks.clock-domains",
+      "parentId": "quartus.platform-designer.clocks",
+      "canonicalName": "Clock domains",
+      "visibleLabel": null,
+      "aliases": [
+        "时钟域",
+        "时钟"
+      ],
+      "role": "concept",
+      "purpose": "官方目录列出查看时钟域的主题；未打开对应控件。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.clocks.reset-domains",
+      "parentId": "quartus.platform-designer.clocks",
+      "canonicalName": "Reset domains",
+      "visibleLabel": null,
+      "aliases": [
+        "复位域",
+        "复位"
+      ],
+      "role": "concept",
+      "purpose": "官方目录列出查看复位域的主题；未打开对应控件。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    }
+  ]
+}

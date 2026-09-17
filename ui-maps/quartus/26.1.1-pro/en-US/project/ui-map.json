@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.project",
+  "nodes": [
+    {
+      "locatorId": "quartus.project",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Project",
+      "visibleLabel": "Project",
+      "aliases": [
+        "项目",
+        "project",
+        "工程"
+      ],
+      "role": "menu",
+      "purpose": "工程 项目菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.add-current-file-to-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Add Current File to Project",
+      "visibleLabel": "Add Current File to Project",
+      "aliases": [
+        "添加当前文件到工程"
+      ],
+      "role": "menu_item",
+      "purpose": "添加当前文件到工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.add-remove-files-in-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Add/Remove Files in Project",
+      "visibleLabel": "Add/Remove Files in Project...",
+      "aliases": [
+        "增删工程文件"
+      ],
+      "role": "menu_item",
+      "purpose": "增删工程文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.revisions",
+      "parentId": "quartus.project",
+      "canonicalName": "Revisions",
+      "visibleLabel": "Revisions...",
+      "aliases": [
+        "修订版管理"
+      ],
+      "role": "menu_item",
+      "purpose": "修订版管理的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.copy-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Copy Project",
+      "visibleLabel": "Copy Project...",
+      "aliases": [
+        "复制工程"
+      ],
+      "role": "menu_item",
+      "purpose": "复制工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.clean-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Clean Project",
+      "visibleLabel": "Clean Project...",
+      "aliases": [
+        "清理工程"
+      ],
+      "role": "menu_item",
+      "purpose": "清理工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.archive-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Archive Project",
+      "visibleLabel": "Archive Project...",
+      "aliases": [
+        "归档工程"
+      ],
+      "role": "menu_item",
+      "purpose": "归档工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.restore-archived-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Restore Archived Project",
+      "visibleLabel": "Restore Archived Project...",
+      "aliases": [
+        "恢复归档工程"
+      ],
+      "role": "menu_item",
+      "purpose": "恢复归档工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.export-design-partition",
+      "parentId": "quartus.project",
+      "canonicalName": "Export Design Partition",
+      "visibleLabel": "Export Design Partition...",
+      "aliases": [
+        "导出设计分区"
+      ],
+      "role": "menu_item",
+      "purpose": "导出设计分区的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.generate-tcl-file-for-project",
+      "parentId": "quartus.project",
+      "canonicalName": "Generate Tcl File for Project",
+      "visibleLabel": "Generate Tcl File for Project...",
+      "aliases": [
+        "生成工程Tcl文件"
+      ],
+      "role": "menu_item",
+      "purpose": "生成工程Tcl文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.upgrade-ip-components",
+      "parentId": "quartus.project",
+      "canonicalName": "Upgrade IP Components",
+      "visibleLabel": "Upgrade IP Components...",
+      "aliases": [
+        "升级IP组件"
+      ],
+      "role": "menu_item",
+      "purpose": "升级IP组件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.organize-quartus-prime-settings-file",
+      "parentId": "quartus.project",
+      "canonicalName": "Organize Quartus Prime Settings File",
+      "visibleLabel": "Organize Quartus Prime Settings File",
+      "aliases": [
+        "整理工程设置文件"
+      ],
+      "role": "menu_item",
+      "purpose": "整理工程设置文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.set-as-top-level-entity",
+      "parentId": "quartus.project",
+      "canonicalName": "Set as Top-Level Entity",
+      "visibleLabel": "Set as Top-Level Entity",
+      "aliases": [
+        "设为顶层实体"
+      ],
+      "role": "menu_item",
+      "purpose": "设为顶层实体的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.project.hierarchy",
+      "parentId": "quartus.project",
+      "canonicalName": "Hierarchy",
+      "visibleLabel": "Hierarchy",
+      "aliases": [
+        "层次",
+        "hierarchy",
+        "层级"
+      ],
+      "role": "submenu",
+      "purpose": "层级的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.project-menu"
+      ]
+    }
+  ]
+}

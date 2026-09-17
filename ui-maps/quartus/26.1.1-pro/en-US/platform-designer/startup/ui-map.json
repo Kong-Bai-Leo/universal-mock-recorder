@@ -1,0 +1,948 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.startup",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.startup",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "Startup dialogs",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "group",
+      "purpose": "启动阶段的独立窗口与对话框。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.whats-new",
+      "parentId": "quartus.platform-designer.startup",
+      "canonicalName": "What's New!",
+      "visibleLabel": "What's New!",
+      "aliases": [
+        "更新公告",
+        "what's new"
+      ],
+      "role": "dialog",
+      "purpose": "版本更新说明；历史版本列表不代表当前安装版本。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-whats-new"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.whats-new.close",
+      "parentId": "quartus.platform-designer.startup.whats-new",
+      "canonicalName": "Close",
+      "visibleLabel": "Close",
+      "aliases": [
+        "关闭",
+        "close"
+      ],
+      "role": "button",
+      "purpose": "关闭的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-whats-new"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.whats-new.don-t-show-again",
+      "parentId": "quartus.platform-designer.startup.whats-new",
+      "canonicalName": "Don't show again",
+      "visibleLabel": "Don't show again",
+      "aliases": [
+        "不再显示",
+        "don't show again"
+      ],
+      "role": "checkbox",
+      "purpose": "Don't show again的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-whats-new"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system",
+      "parentId": "quartus.platform-designer.startup",
+      "canonicalName": "Open System",
+      "visibleLabel": "Open System",
+      "aliases": [
+        "打开系统",
+        "open system"
+      ],
+      "role": "dialog",
+      "purpose": "选择工程与系统、IP 变体或 BSP 设置文件。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system",
+      "parentId": "quartus.platform-designer.startup.open-system",
+      "canonicalName": "System",
+      "visibleLabel": "System",
+      "aliases": [
+        "系统"
+      ],
+      "role": "tab",
+      "purpose": "系统的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.quartus-project",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Quartus project",
+      "visibleLabel": "Quartus project:",
+      "aliases": [
+        "Quartus工程"
+      ],
+      "role": "field",
+      "purpose": "Quartus工程的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "quartus_project",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.revision",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Revision",
+      "visibleLabel": "Revision",
+      "aliases": [
+        "修订版"
+      ],
+      "role": "combobox",
+      "purpose": "修订版的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "revision",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.board",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Board",
+      "visibleLabel": "Board",
+      "aliases": [
+        "开发板"
+      ],
+      "role": "combobox",
+      "purpose": "开发板的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "board",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.device-family",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Device family",
+      "visibleLabel": "Device family",
+      "aliases": [
+        "器件系列"
+      ],
+      "role": "combobox",
+      "purpose": "器件系列的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "device_family",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.retrieve-values",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Retrieve Values",
+      "visibleLabel": "Retrieve Values",
+      "aliases": [
+        "读取参数值"
+      ],
+      "role": "button",
+      "purpose": "读取参数值的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.device-part",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Device part",
+      "visibleLabel": "Device part",
+      "aliases": [
+        "器件型号"
+      ],
+      "role": "combobox",
+      "purpose": "器件型号的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "device_part",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.platform-designer-system",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Platform Designer system",
+      "visibleLabel": "Platform Designer system",
+      "aliases": [
+        "Platform",
+        "Designer系统文件"
+      ],
+      "role": "field",
+      "purpose": "Platform Designer系统文件的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": "platform_designer_system",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.open",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Open",
+      "visibleLabel": "Open",
+      "aliases": [
+        "打开",
+        "open"
+      ],
+      "role": "button",
+      "purpose": "打开的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.system.exit",
+      "parentId": "quartus.platform-designer.startup.open-system.system",
+      "canonicalName": "Exit",
+      "visibleLabel": "Exit",
+      "aliases": [
+        "退出",
+        "exit"
+      ],
+      "role": "button",
+      "purpose": "退出的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "parentId": "quartus.platform-designer.startup.open-system",
+      "canonicalName": "IP Variant",
+      "visibleLabel": "IP Variant",
+      "aliases": [
+        "IP 变体",
+        "ip variant",
+        "IP变体"
+      ],
+      "role": "tab",
+      "purpose": "IP变体的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.quartus-project",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Quartus project",
+      "visibleLabel": "Quartus project:",
+      "aliases": [
+        "Quartus工程"
+      ],
+      "role": "field",
+      "purpose": "Quartus工程的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "quartus_project",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.revision",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Revision",
+      "visibleLabel": "Revision",
+      "aliases": [
+        "修订版"
+      ],
+      "role": "combobox",
+      "purpose": "修订版的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "revision",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.board",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Board",
+      "visibleLabel": "Board",
+      "aliases": [
+        "开发板"
+      ],
+      "role": "combobox",
+      "purpose": "开发板的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "board",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.device-family",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Device family",
+      "visibleLabel": "Device family",
+      "aliases": [
+        "器件系列"
+      ],
+      "role": "combobox",
+      "purpose": "器件系列的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "device_family",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.device-part",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Device part",
+      "visibleLabel": "Device part",
+      "aliases": [
+        "器件型号"
+      ],
+      "role": "combobox",
+      "purpose": "器件型号的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "device_part",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.ip-variant",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "IP variant",
+      "visibleLabel": "IP variant:",
+      "aliases": [
+        "IP 变体",
+        "ip variant",
+        "IP变体",
+        "IP变体文件"
+      ],
+      "role": "field",
+      "purpose": "IP变体文件的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "ip_variant",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.component-type",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Component type",
+      "visibleLabel": "Component type:",
+      "aliases": [
+        "组件类型"
+      ],
+      "role": "field",
+      "purpose": "组件类型的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": "component_type",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.select",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Select",
+      "visibleLabel": "Select...",
+      "aliases": [
+        "选择"
+      ],
+      "role": "button",
+      "purpose": "选择的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.open",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Open",
+      "visibleLabel": "Open",
+      "aliases": [
+        "打开",
+        "open"
+      ],
+      "role": "button",
+      "purpose": "打开的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.ip-variant.exit",
+      "parentId": "quartus.platform-designer.startup.open-system.ip-variant",
+      "canonicalName": "Exit",
+      "visibleLabel": "Exit",
+      "aliases": [
+        "退出",
+        "exit"
+      ],
+      "role": "button",
+      "purpose": "退出的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-ip-variant"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "parentId": "quartus.platform-designer.startup.open-system",
+      "canonicalName": "BSP Editor",
+      "visibleLabel": "BSP Editor",
+      "aliases": [
+        "BSP 编辑器",
+        "bsp editor",
+        "BSP板级支持包编辑器"
+      ],
+      "role": "tab",
+      "purpose": "BSP板级支持包编辑器的可见tab；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.bsp-setting-file",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "BSP setting file",
+      "visibleLabel": "BSP setting file",
+      "aliases": [
+        "BSP设置文件"
+      ],
+      "role": "field",
+      "purpose": "BSP设置文件的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "bsp_setting_file",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.system-file-qsys-ip",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "System file (.qsys, .ip)",
+      "visibleLabel": "System file (.qsys, .ip)",
+      "aliases": [
+        "系统文件"
+      ],
+      "role": "field",
+      "purpose": "系统文件的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "system_file_qsys_ip",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.quartus-project",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Quartus project",
+      "visibleLabel": "Quartus project:",
+      "aliases": [
+        "Quartus工程"
+      ],
+      "role": "field",
+      "purpose": "Quartus工程的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "quartus_project",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.revision",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Revision",
+      "visibleLabel": "Revision",
+      "aliases": [
+        "修订版"
+      ],
+      "role": "combobox",
+      "purpose": "修订版的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "revision",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.cpu-name",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "CPU name",
+      "visibleLabel": "CPU name",
+      "aliases": [
+        "CPU名称"
+      ],
+      "role": "combobox",
+      "purpose": "CPU名称的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "cpu_name",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.operating-system",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Operating system",
+      "visibleLabel": "Operating system",
+      "aliases": [
+        "操作系统"
+      ],
+      "role": "combobox",
+      "purpose": "操作系统的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "operating_system",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.version",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Version",
+      "visibleLabel": "Version",
+      "aliases": [
+        "版本"
+      ],
+      "role": "combobox",
+      "purpose": "版本的可见combobox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "version",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.use-default-locations",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Use default locations",
+      "visibleLabel": "Use default locations",
+      "aliases": [
+        "使用默认路径"
+      ],
+      "role": "checkbox",
+      "purpose": "使用默认路径的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.bsp-target-directory",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "BSP target directory",
+      "visibleLabel": "BSP target directory",
+      "aliases": [
+        "BSP目标目录"
+      ],
+      "role": "field",
+      "purpose": "BSP目标目录的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "bsp_target_directory",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.enable-additional-tcl-script",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Enable Additional Tcl script",
+      "visibleLabel": "Enable Additional Tcl script",
+      "aliases": [
+        "启用附加Tcl脚本"
+      ],
+      "role": "checkbox",
+      "purpose": "启用附加Tcl脚本的可见checkbox；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.additional-tcl-script",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Additional Tcl script",
+      "visibleLabel": "Additional Tcl script",
+      "aliases": [
+        "附加Tcl脚本"
+      ],
+      "role": "field",
+      "purpose": "附加Tcl脚本的可见field；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_partial",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": "additional_tcl_script",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.open",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Open",
+      "visibleLabel": "Open",
+      "aliases": [
+        "打开",
+        "open"
+      ],
+      "role": "button",
+      "purpose": "打开的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.open-system.bsp-editor.exit",
+      "parentId": "quartus.platform-designer.startup.open-system.bsp-editor",
+      "canonicalName": "Exit",
+      "visibleLabel": "Exit",
+      "aliases": [
+        "退出",
+        "exit"
+      ],
+      "role": "button",
+      "purpose": "退出的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-bsp-editor"
+      ],
+      "parameterRole": null,
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.exit",
+      "parentId": "quartus.platform-designer.startup",
+      "canonicalName": "Exit Platform Designer",
+      "visibleLabel": "Exit Platform Designer",
+      "aliases": [
+        "退出确认",
+        "exit confirmation"
+      ],
+      "role": "dialog",
+      "purpose": "退出启动流程的确认窗口。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-exit-confirmation"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.exit.ok",
+      "parentId": "quartus.platform-designer.startup.exit",
+      "canonicalName": "OK",
+      "visibleLabel": "OK",
+      "aliases": [
+        "确定"
+      ],
+      "role": "button",
+      "purpose": "确定的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-exit-confirmation"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.startup.exit.cancel",
+      "parentId": "quartus.platform-designer.startup.exit",
+      "canonicalName": "Cancel",
+      "visibleLabel": "Cancel",
+      "aliases": [
+        "取消"
+      ],
+      "role": "button",
+      "purpose": "取消的可见button；具体结果仍需操作前后证据确认。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.pd-exit-confirmation"
+      ]
+    }
+  ]
+}

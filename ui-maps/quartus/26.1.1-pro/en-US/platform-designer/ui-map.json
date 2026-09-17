@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer",
+      "parentId": "quartus.application",
+      "canonicalName": "Platform Designer",
+      "visibleLabel": "Platform Designer",
+      "aliases": [
+        "平台设计器启动",
+        "platform designer startup",
+        "系统集成",
+        "平台设计器"
+      ],
+      "role": "application",
+      "purpose": "IP 系统集成工具；本次仅扫描启动窗口。",
+      "stage": "system-design",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": [
+        "qev.pd-open-system"
+      ]
+    },
+    {
+      "locatorId": "quartus.platform-designer.generate-hdl",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "Generate HDL",
+      "visibleLabel": "Generate HDL",
+      "aliases": [
+        "生成HDL"
+      ],
+      "role": "button",
+      "purpose": "打开系统生成选项窗口；按钮存在不代表生成完成。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "documented_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-generation-26.1"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.generation",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "Generation",
+      "visibleLabel": "Generation",
+      "aliases": [],
+      "role": "dialog",
+      "purpose": "设置综合、仿真和测试平台产物选项。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "documented_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-generation-26.1"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.generation.generate",
+      "parentId": "quartus.platform-designer.generation",
+      "canonicalName": "Generate",
+      "visibleLabel": "Generate",
+      "aliases": [
+        "生成"
+      ],
+      "role": "button",
+      "purpose": "请求执行系统生成；须通过生成报告和产物确认结果。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "documented_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-generation-26.1"
+      ],
+      "evidenceRefs": []
+    }
+  ]
+}

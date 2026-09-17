@@ -1,0 +1,760 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "section": "settings",
+  "scope": "Partial visible controls; unopened descendants are not covered",
+  "controls": [
+    {
+      "id": "vivado-settings-dialog",
+      "parentId": "vivado-settings",
+      "label": "Settings",
+      "type": "dialog",
+      "description": "设置页",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-search",
+      "parentId": "vivado-settings-dialog",
+      "label": "Search",
+      "type": "textbox",
+      "description": "设置检索",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-group",
+      "parentId": "vivado-settings-dialog",
+      "label": "Project Settings",
+      "type": "group",
+      "description": "作用于当前工程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-0",
+      "parentId": "vivado-settings-project-group",
+      "label": "General",
+      "type": "tree_item",
+      "description": "已观察 General 内容",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-1",
+      "parentId": "vivado-settings-project-group",
+      "label": "Simulation",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-2",
+      "parentId": "vivado-settings-project-group",
+      "label": "Elaboration",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-3",
+      "parentId": "vivado-settings-project-group",
+      "label": "Synthesis",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-4",
+      "parentId": "vivado-settings-project-group",
+      "label": "Implementation",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-5",
+      "parentId": "vivado-settings-project-group",
+      "label": "Bitstream",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-project-6",
+      "parentId": "vivado-settings-project-group",
+      "label": "IP",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-group",
+      "parentId": "vivado-settings-dialog",
+      "label": "Tool Settings",
+      "type": "group",
+      "description": "工具级设置；不是当前工程参数",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-0",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Project",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-1",
+      "parentId": "vivado-settings-tool-group",
+      "label": "IP Defaults",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-2",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Vivado Store",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-3",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Source File",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-4",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Display",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-5",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Help",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-6",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Text Editor",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-7",
+      "parentId": "vivado-settings-tool-group",
+      "label": "3rd Party Simulators",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-8",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Colors",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-9",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Selection Rules",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-10",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Shortcuts",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-11",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Strategies",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-tool-12",
+      "parentId": "vivado-settings-tool-group",
+      "label": "Window Behavior",
+      "type": "tree_item",
+      "description": "类别已观察，内容未扫描",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-device",
+      "parentId": "vivado-settings-project-0",
+      "label": "Project device",
+      "type": "textbox",
+      "description": "当前工程器件；带省略号选择入口",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-device-browse",
+      "parentId": "vivado-settings-device",
+      "label": "Browse",
+      "type": "icon_button",
+      "description": "选择器件；未打开",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-target-language",
+      "parentId": "vivado-settings-project-0",
+      "label": "Target language",
+      "type": "combobox",
+      "description": "目标语言",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-library",
+      "parentId": "vivado-settings-project-0",
+      "label": "Default library",
+      "type": "textbox",
+      "description": "默认库名",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-library-clear",
+      "parentId": "vivado-settings-library",
+      "label": "Clear",
+      "type": "icon_button",
+      "description": "字段末端 X；行为待验证",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-top",
+      "parentId": "vivado-settings-project-0",
+      "label": "Top module name",
+      "type": "textbox",
+      "description": "顶层模块名；当前空",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-top-browse",
+      "parentId": "vivado-settings-top",
+      "label": "Browse",
+      "type": "icon_button",
+      "description": "顶层模块选择；未打开",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-options",
+      "parentId": "vivado-settings-project-0",
+      "label": "Language Options",
+      "type": "group",
+      "description": "语言参数",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-0",
+      "parentId": "vivado-settings-language-options",
+      "label": "VHDL Options",
+      "type": "textbox",
+      "description": "选项摘要",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-browse-0",
+      "parentId": "vivado-settings-language-0",
+      "label": "More",
+      "type": "icon_button",
+      "description": "省略号；打开对应参数页，未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-1",
+      "parentId": "vivado-settings-language-options",
+      "label": "Verilog options",
+      "type": "textbox",
+      "description": "选项摘要",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-browse-1",
+      "parentId": "vivado-settings-language-1",
+      "label": "More",
+      "type": "icon_button",
+      "description": "省略号；打开对应参数页，未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-2",
+      "parentId": "vivado-settings-language-options",
+      "label": "Generics/Parameters",
+      "type": "textbox",
+      "description": "选项摘要",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-language-browse-2",
+      "parentId": "vivado-settings-language-2",
+      "label": "More",
+      "type": "icon_button",
+      "description": "省略号；打开对应参数页，未验证",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-loop",
+      "parentId": "vivado-settings-language-options",
+      "label": "Loop count",
+      "type": "spinbox",
+      "description": "循环计数；当前显示 1000；精度/含义待官方核实",
+      "observationStatus": "observed",
+      "semanticStatus": "unverified",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-vitis",
+      "parentId": "vivado-settings-project-0",
+      "label": "Project is an extensible Vitis platform",
+      "type": "checkbox",
+      "description": "Vitis 平台标记",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-migrate",
+      "parentId": "vivado-settings-project-0",
+      "label": "Migrate the output products to .gen directory structure",
+      "type": "checkbox",
+      "description": "当前禁用；不能当作用户已设置",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-action-0",
+      "parentId": "vivado-settings-dialog",
+      "label": "OK",
+      "type": "button",
+      "description": "设置对话框操作",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-action-1",
+      "parentId": "vivado-settings-dialog",
+      "label": "Cancel",
+      "type": "button",
+      "description": "设置对话框操作",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "cancel_exercised"
+    },
+    {
+      "id": "vivado-settings-action-2",
+      "parentId": "vivado-settings-dialog",
+      "label": "Apply",
+      "type": "button",
+      "description": "设置对话框操作",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-action-3",
+      "parentId": "vivado-settings-dialog",
+      "label": "Restore...",
+      "type": "button",
+      "description": "设置对话框操作",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-help",
+      "parentId": "vivado-settings-dialog",
+      "label": "Help",
+      "type": "icon_button",
+      "description": "左下问号；未打开",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-settings-close",
+      "parentId": "vivado-settings-dialog",
+      "label": "Close",
+      "type": "icon_button",
+      "description": "右上关闭",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-settings-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    }
+  ]
+}
