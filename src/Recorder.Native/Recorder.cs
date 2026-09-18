@@ -41,6 +41,29 @@ namespace UniversalMockRecorder
         public static readonly bool FilterToTargetProcess = true;
         public static readonly bool RequiresMockScript = false;
         public static readonly bool RequiresReplayFile = false;
+#elif VIVADO
+        public const string ApplicationId = "vivado";
+        public const string ApplicationName = "AMD Vivado";
+        public const string ApplicationVersion = "2024.2";
+        public const string Language = "en-US";
+        public const string WindowTitle = "Vivado 操作录制器";
+        public const string Header = "在 Vivado 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "vivado";
+        public const string UiMapRoot = "ui-maps/vivado/2024.2/en-US";
+        public const string ReplayFormat = "vivado-tcl";
+        public const string GenerateOptionText = "仅本地保存；正式分析另行确认上传";
+        public const string AnalysisScriptFile = "analyze-vivado-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\replay-plan.json";
+        public const string ReplayFile = "vivado-replay.tcl";
+        public const string ReplayDescription = "可在 Vivado 中直接运行的单文件 Tcl 脚本";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
 #elif JMP
         public const string ApplicationId = "jmp";
         public const string ApplicationName = "JMP";
@@ -86,6 +109,75 @@ namespace UniversalMockRecorder
         public static readonly bool CaptureThreeDsMaxTransformRegions = false;
         public static readonly bool FilterToTargetProcess = true;
         public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#elif QUARTUS
+        public const string ApplicationId = "quartus";
+        public const string ApplicationName = "Quartus Prime";
+        public const string ApplicationVersion = "26.1.1 Pro";
+        public const string Language = "en-US";
+        public const string WindowTitle = "Quartus 操作录制器";
+        public const string Header = "记录 Quartus 的工程、设计与设置操作";
+        public const string StopButtonText = "停止录制";
+        public const string TargetProcess = "quartus";
+        public const string UiMapRoot = "ui-maps/quartus/26.1.1-pro/en-US";
+        public const string ReplayFormat = "quartus-project";
+        public const string GenerateOptionText = "停止后调用 AI 分析（上传事件和选取的截图；默认仅保存在本机）";
+        public const string AnalysisScriptFile = "analyze-quartus-recording.ps1";
+        public const string StructuredProgramFile = "quartus-workflow.json";
+        public const string ReplayFile = "project-bundle\\build.tcl";
+        public const string ReplayDescription = "Quartus 工程构建文件（需检查构建报告）";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = false;
+#elif PSCAD
+        public const string ApplicationId = "pscad";
+        public const string ApplicationName = "PSCAD";
+        public const string ApplicationVersion = "5.1 Free (2026/05/05.0)";
+        public const string Language = "en-US";
+        public const string WindowTitle = "PSCAD 操作录制器";
+        public const string Header = "记录 PSCAD 的元件、连线、参数与仿真操作";
+        public const string StopButtonText = "停止录制";
+        public const string TargetProcess = "PscadFree";
+        public const string UiMapRoot = "ui-maps/pscad/5.1-free-2026.05.05.0/en-US";
+        public const string ReplayFormat = "pscad-project-file";
+        public const string GenerateOptionText = "停止后调用 AI 分析（上传事件和选取的截图；默认仅保存在本机）";
+        public const string AnalysisScriptFile = "analyze-pscad-recording.ps1";
+        public const string StructuredProgramFile = "pscad-workflow.json";
+        public const string ReplayFile = "pscad-project.py";
+        public const string ReplayDescription = "PSCAD 项目生成器（生成后在 PSCAD 打开）";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#elif KICAD
+        public const string ApplicationId = "kicad";
+        public const string ApplicationName = "KiCad";
+        public const string ApplicationVersion = "10.0.6";
+        public const string Language = "system-default";
+        public const string WindowTitle = "KiCad 操作录制器 - Windows 11";
+        public const string Header = "记录 KiCad 项目管理器、原理图与 PCB 编辑器的操作";
+        public const string StopButtonText = "停止并生成";
+        public const string TargetProcess = "kicad";
+        public const string UiMapRoot = "ui-maps/kicad/10.0.6/en-US";
+        public const string ReplayFormat = "kicad-native-python";
+        public const string GenerateOptionText = "停止后调用 AI 生成 KiCad 重建脚本（上传事件/截图，原生重建另加最多 2 次请求）";
+        public const string AnalysisScriptFile = "analyze-kicad-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\kicad-design.json";
+        public const string ReplayFile = "kicad-replay.cmd";
+        public const string ReplayDescription = "KiCad 重建脚本（双击生成独立文件与校验报告，支持近似布局）";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = true;
         public static readonly bool RequiresReplayFile = true;
 #elif THREEDSMAX
         public const string ApplicationId = "autodesk-3dsmax";
@@ -137,7 +229,14 @@ namespace UniversalMockRecorder
 
         public static bool MatchesTargetProcess(string processName)
         {
-#if STATA
+#if VIVADO
+            return string.Equals(processName, "vivado", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "vvgl", StringComparison.OrdinalIgnoreCase);
+#elif KICAD
+            return string.Equals(processName, "kicad", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "eeschema", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "pcbnew", StringComparison.OrdinalIgnoreCase);
+#elif STATA
             return string.Equals(processName, "StataMP-64", StringComparison.OrdinalIgnoreCase) ||
                 string.Equals(processName, "StataSE-64", StringComparison.OrdinalIgnoreCase) ||
                 string.Equals(processName, "StataBE-64", StringComparison.OrdinalIgnoreCase);
@@ -168,6 +267,8 @@ namespace UniversalMockRecorder
             Application.Run(new JmpRecorderForm());
 #elif STATA
             Application.Run(new StataRecorderForm());
+#elif VIVADO
+            Application.Run(new VivadoRecorderForm());
 #else
             Application.Run(new RecorderForm());
 #endif
@@ -196,6 +297,9 @@ namespace UniversalMockRecorder
         private string _currentRecordingDirectory;
         private bool _analysisRunning;
         private long _lastEventCount;
+#if PSCAD || QUARTUS
+        private int _pscadCheckpointTicks;
+#endif
 
         public RecorderForm()
         {
@@ -226,7 +330,7 @@ namespace UniversalMockRecorder
                 Top = 112,
                 Width = 560,
                 Height = 24,
-                Checked = RecorderProfile.SupportsAnalysis,
+                Checked = RecorderProfile.SupportsAnalysis && RecorderProfile.ApplicationId != "pscad" && RecorderProfile.ApplicationId != "quartus",
                 Visible = RecorderProfile.SupportsAnalysis
             };
             _autoCadActionRecorderCheckBox = new CheckBox
@@ -248,6 +352,11 @@ namespace UniversalMockRecorder
                 Height = 24,
                 Checked = true
             };
+#if PSCAD || QUARTUS
+            _captureUiAutomationCheckBox.Checked = false;
+            _captureUiAutomationCheckBox.Visible = false;
+            Controls.Add(new Label { Text = "通过截图、鼠标位置和键盘事件分析操作过程", Left = 24, Top = 168, Width = 560, Height = 24 });
+#endif
             _statusLabel = new Label { Text = "尚未开始", Left = 24, Top = 202, Width = 550, Height = 22 };
             _pathLabel = new Label { Text = "", Left = 24, Top = 230, Width = 550, Height = 42, AutoEllipsis = true };
 
@@ -272,6 +381,9 @@ namespace UniversalMockRecorder
                 if (_engine != null && _engine.IsRecording)
                 {
                     _statusLabel.Text = "正在录制，已保存事件 " + _engine.EventCount + " 条。Ctrl+Shift+F12 可暂停隐私输入。";
+#if PSCAD || QUARTUS
+                    if (++_pscadCheckpointTicks % 4 == 0) _engine.CaptureStateCheckpoint();
+#endif
                 }
             };
             _timer.Start();
@@ -300,6 +412,9 @@ namespace UniversalMockRecorder
                 {
                     var eventsPath = Path.Combine(directory, "events.jsonl");
                     var completedPath = Path.Combine(directory, "generated", "semantic-trace.json");
+#if KICAD
+                    completedPath = Path.Combine(directory, "generated", "_internal", "semantic-trace.json");
+#endif
                     var checkpointPath = Path.Combine(directory, "generated", "analysis-checkpoint.json");
                     if (!File.Exists(eventsPath)) continue;
                     long count = 0;
@@ -310,7 +425,15 @@ namespace UniversalMockRecorder
                     _currentRecordingDirectory = directory;
                     _lastEventCount = count;
                     _retryButton.Enabled = true;
-                    _statusLabel.Text = File.Exists(completedPath) && !File.Exists(checkpointPath)
+                    _statusLabel.Text = File.Exists(completedPath) &&
+#if KICAD
+                        !File.Exists(Path.Combine(directory, "generated", "_internal", "analysis-error.json")) &&
+                        File.Exists(Path.Combine(directory, "generated", RecorderProfile.StructuredProgramFile)) &&
+                        File.Exists(Path.Combine(directory, "generated", "_internal", "mock-script.ts")) &&
+                        File.Exists(Path.Combine(directory, "generated", RecorderProfile.ReplayFile))
+#else
+                        !File.Exists(checkpointPath)
+#endif
                         ? "已加载最近一次录制，可以点击“重新生成”使用最新分析逻辑。"
                         : "检测到上次录制尚未生成脚本，可以点击“重新生成”。";
                     _pathLabel.Text = "录制位置：" + directory;
@@ -394,6 +517,9 @@ namespace UniversalMockRecorder
             else
             {
                 _startButton.Enabled = true;
+#if KICAD || PSCAD || QUARTUS || JMP || VIVADO
+                _retryButton.Enabled = !string.IsNullOrEmpty(_currentRecordingDirectory);
+#endif
                 _statusLabel.Text = "录制完成，共保存事件 " + eventCount + " 条。" +
                     (string.IsNullOrEmpty(actionRecorderWarning) ? "" : " Action Recorder 未完整保存，请查看 action-recorder.json。");
                 _pathLabel.Text = "录制位置：" + _currentRecordingDirectory;
@@ -450,10 +576,22 @@ namespace UniversalMockRecorder
                             var replayMessage = File.Exists(replayPath)
                                 ? "\r\n\r\n" + RecorderProfile.ReplayDescription + "：\r\n" + replayPath
                                 : "\r\n\r\n本次没有足够的精确信息生成 " + RecorderProfile.ReplayFormat + "。";
+#if KICAD
+                            _pathLabel.Text = "运行入口：" + replayPath;
+#else
                             _pathLabel.Text = "结构化操作：" + cadProgramPath;
+#endif
                             MessageBox.Show(
                                 this,
+#if KICAD
+                                "KiCad 重建脚本已生成。双击 kicad-replay.cmd 运行；AI 说明见 ai-explanation.md，结果放在 results 文件夹。" + replayMessage,
+#elif PSCAD
+                                "AI 已根据截图和鼠标／键盘事件完成分析。请检查 pscad-project-plan.json：ready 时可在 PSCAD 打开其中列出的 .pscx；blocked 时需补足证据或操作支持。模型尚未在软件中验收，仿真尚未运行。\r\n" + cadProgramPath + replayMessage,
+#elif QUARTUS
+                                "AI 分析结果已保存。请检查构建报告；证据不足或操作未支持时会阻止构建。分析完成不代表工程已在 Quartus 编译或还原验证。\r\n" + cadProgramPath,
+#else
                                 "AI 分析和 Mock 脚本已生成：\r\n" + cadProgramPath + replayMessage,
+#endif
                                 "生成完成",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
@@ -533,6 +671,9 @@ namespace UniversalMockRecorder
             }
 
             var generatedScript = Path.Combine(recordingDirectory, "generated", "mock-script.ts");
+#if KICAD
+            generatedScript = Path.Combine(recordingDirectory, "generated", "_internal", "mock-script.ts");
+#endif
             if (RecorderProfile.RequiresMockScript && !File.Exists(generatedScript))
                 throw new InvalidOperationException("分析器已结束，但没有找到生成的 mock-script.ts。");
             var cadProgram = Path.Combine(recordingDirectory, "generated", RecorderProfile.StructuredProgramFile);
@@ -841,8 +982,11 @@ namespace UniversalMockRecorder
         private long _eventSequence;
         private long _eventCount;
         private long _lastMoveMs;
+#if PSCAD || QUARTUS
+        private long _latestPscadInputMs;
+#endif
         private Point _lastMovePoint;
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
         private WindowInfo _kiCadPointerDownWindow;
         private UiTarget _kiCadPointerDownTarget;
         private string _kiCadPointerDownButton;
@@ -863,7 +1007,12 @@ namespace UniversalMockRecorder
         {
             _outputDirectory = outputDirectory;
             _screenshotDirectory = Path.Combine(outputDirectory, "screenshots");
+#if PSCAD || QUARTUS
+            // Visual/input-only profiles never query application controls, including callers outside the form.
+            _captureUiAutomationTargets = false;
+#else
             _captureUiAutomationTargets = captureUiAutomationTargets;
+#endif
 #if JMP || STATA
             _configuredLanguage = configuredLanguage;
 #endif
@@ -1008,7 +1157,7 @@ namespace UniversalMockRecorder
         }
 #endif
 
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
         public bool IsPaused { get { return _privacyPaused; } }
         public void TogglePause()
         {
@@ -1058,6 +1207,9 @@ namespace UniversalMockRecorder
         public void Stop()
         {
             if (!_recording && _worker == null) return;
+#if PSCAD || QUARTUS
+            CaptureStateCheckpoint();
+#endif
 #if JMP || STATA
             if (_targetWatchdog != null) { _targetWatchdog.Dispose(); _targetWatchdog = null; }
             lock (_targetLifecycleLock)
@@ -1099,7 +1251,7 @@ namespace UniversalMockRecorder
                 if (eventType != null)
                 {
                     var now = UtcNowMs();
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
                     var eventWindow = ReadWindowAtPoint(input.Point.X, input.Point.Y);
                     var eventButton = MouseButton(message.ToInt32());
                     var continuingGesture = _kiCadPointerDownWindow != null &&
@@ -1142,7 +1294,7 @@ namespace UniversalMockRecorder
                         WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0,
                         Modifiers = GetModifiers().ToArray()
                     };
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
                     rawInput.Window = eventWindow;
                     rawInput.Target = continuingGesture ? _kiCadPointerDownTarget :
                         (_captureUiAutomationTargets && eventType != "mouse_move" ? ReadTargetAt(rawInput.X, rawInput.Y) : null);
@@ -1184,7 +1336,7 @@ namespace UniversalMockRecorder
 
                 if (input.VirtualKeyCode == (uint)Keys.F12 && modifiers.Contains("CTRL") && modifiers.Contains("SHIFT"))
                 {
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
                     TogglePause();
 #else
                     _privacyPaused = !_privacyPaused;
@@ -1197,17 +1349,14 @@ namespace UniversalMockRecorder
                     if (IsModifierKey(input.VirtualKeyCode))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
                     var eventWindow = ReadForegroundWindow();
                     if (!MatchesCapturedTarget(eventWindow))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 #endif
-                    UiTarget focusedTarget = null;
+                    UiTarget focusedTarget;
                     bool isPassword;
-                    if (_captureUiAutomationTargets)
-                        ReadFocusedContext(out focusedTarget, out isPassword);
-                    else
-                        ReadFocusedPasswordState(out isPassword);
+                    ReadKeyboardCaptureContext(out focusedTarget, out isPassword);
                     var rawInput = new RawInputEvent
                     {
                         Id = NextId(),
@@ -1218,7 +1367,7 @@ namespace UniversalMockRecorder
                         Modifiers = modifiers.ToArray(),
                         Target = focusedTarget
                     };
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
                     rawInput.Window = eventWindow;
                     var pointer = Cursor.Position;
                     rawInput.X = pointer.X;
@@ -1242,6 +1391,12 @@ namespace UniversalMockRecorder
 
         private void Enqueue(RawInputEvent input)
         {
+#if PSCAD || QUARTUS
+            var desktop = SystemInformation.VirtualScreen;
+            input.ScreenshotDesktopBounds = new[] { desktop.X, desktop.Y, desktop.Width, desktop.Height };
+            if (input.EventType != "mouse_move" && input.EventType != "state_observation")
+                Interlocked.Exchange(ref _latestPscadInputMs, input.TimestampMs);
+#endif
             try
             {
                 if (!_queue.IsAddingCompleted) _queue.Add(input);
@@ -1259,7 +1414,7 @@ namespace UniversalMockRecorder
             {
                 try
                 {
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
                     if (input.EventType == "privacy_pause" || input.EventType == "privacy_resume"
 #if JMP || STATA
                         || input.EventType == "target_lost"
@@ -1270,7 +1425,7 @@ namespace UniversalMockRecorder
                         continue;
                     }
 #endif
-#if !JMP && !STATA && !ORCAD
+#if !KICAD && !PSCAD && !QUARTUS && !JMP && !STATA && !VIVADO && !ORCAD
                     input.Window = input.EventType.StartsWith("mouse_")
                         ? ReadWindowAtPoint(input.X, input.Y)
                         : ReadForegroundWindow();
@@ -1282,7 +1437,7 @@ namespace UniversalMockRecorder
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
-#if !JMP && !STATA && !ORCAD
+#if !KICAD && !PSCAD && !QUARTUS && !JMP && !STATA && !VIVADO && !ORCAD
                         input.Target = _captureUiAutomationTargets ? ReadTargetAt(input.X, input.Y) : null;
 #endif
                         if (input.Window != null && input.Window.Width > 0 && input.Window.Height > 0)
@@ -1298,8 +1453,8 @@ namespace UniversalMockRecorder
                         input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
                         input.ScreenshotBeforeTimestampMs = input.SnapshotTimestampMs;
                         Thread.Sleep(160);
-#if JMP || STATA || ORCAD
-                        if (CanCaptureKiCadAfter())
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
+                        if (CanCaptureKiCadAfter(input))
 #endif
                         using (var after = CaptureScreenBitmap())
                         {
@@ -1317,14 +1472,14 @@ namespace UniversalMockRecorder
                         input.ScreenshotTimestampMs = input.SnapshotTimestampMs;
                     }
                     else if (ShouldCaptureScreenshot(input)
-#if JMP || STATA || ORCAD
-                        && CanCaptureKiCadAfter()
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
+                        && CanCaptureKiCadAfter(input)
 #endif
                         )
                     {
                         Thread.Sleep(120);
-#if JMP || STATA || ORCAD
-                        if (CanCaptureKiCadAfter())
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
+                        if (CanCaptureKiCadAfter(input))
 #endif
                         using (var after = CaptureScreenBitmap())
                         {
@@ -1392,7 +1547,7 @@ namespace UniversalMockRecorder
                         }
                     }
 
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
                     CaptureJmpDelayedObservation(input);
 #endif
                     WriteEvent(input);
@@ -1416,7 +1571,7 @@ namespace UniversalMockRecorder
             }
         }
 
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
         // Applications can create a report after the ordinary 120/160 ms after-frame.
         // Preserve that frame and add a later observation only while the same
         // input remains the most recent one. This is not proof of completion.
@@ -1428,7 +1583,7 @@ namespace UniversalMockRecorder
             var sequence = Interlocked.Read(ref _eventSequence);
             Thread.Sleep(800);
             if (_queue.Count != 0 || Interlocked.Read(ref _eventSequence) != sequence ||
-                !_recording || _privacyPaused || !CanCaptureKiCadAfter()) return;
+                !_recording || _privacyPaused || !CanCaptureKiCadAfter(input)) return;
             using (var observed = CaptureScreenBitmap())
             {
                 input.ScreenshotSettledAfter = SaveScreenshot(input.Id + "-settled-after", observed);
@@ -1476,11 +1631,33 @@ namespace UniversalMockRecorder
                 "  \"language\": \"" + RecorderProfile.Language + "\",\n" +
                 "  \"targetProcess\": \"" + RecorderProfile.TargetProcess + "\",\n" +
 #endif
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
                 "  \"captureDeployment\": \"same-windows-session\",\n" +
                 "  \"screenshotScope\": \"virtual-desktop\",\n" +
                 "  \"screenshotOriginX\": " + SystemInformation.VirtualScreen.Left + ",\n" +
                 "  \"screenshotOriginY\": " + SystemInformation.VirtualScreen.Top + ",\n" +
+#elif QUARTUS
+                "  \"targetProcesses\": [\"quartus\"],\n" +
+                "  \"uiMapLanguage\": \"en-US\",\n" +
+                "  \"screenshotScope\": \"virtual-desktop\",\n" +
+                "  \"captureLocation\": \"same-windows-session-as-quartus\",\n" +
+                "  \"captureMode\": \"visual-input\",\n" +
+                "  \"softwareInternalApi\": false,\n" +
+                "  \"passwordFieldProbe\": false,\n" +
+                "  \"versionQualification\": \"profile-target-not-binary-inspection\",\n" +
+#elif PSCAD
+                "  \"targetProcesses\": [\"PscadFree\"],\n" +
+                "  \"uiMapLanguage\": \"en-US\",\n" +
+                "  \"screenshotScope\": \"virtual-desktop\",\n" +
+                "  \"captureLocation\": \"same-windows-session-as-pscad\",\n" +
+                "  \"captureMode\": \"visual-input\",\n" +
+                "  \"softwareInternalApi\": false,\n" +
+                "  \"passwordFieldProbe\": false,\n" +
+                "  \"versionQualification\": \"profile-target-not-binary-inspection\",\n" +
+#elif KICAD
+                "  \"targetProcesses\": [\"kicad\", \"eeschema\", \"pcbnew\"],\n" +
+                "  \"uiMapLanguage\": \"en-US\",\n" +
+                "  \"screenshotScope\": \"virtual-desktop\",\n" +
 #endif
 #if JMP || STATA
                 "  \"uiMapRoot\": " + JsonString(_targetCapture.UiMapRoot) + ",\n" +
@@ -1532,9 +1709,31 @@ namespace UniversalMockRecorder
         private string SaveScreenshot(string eventId, Bitmap bitmap)
         {
             var relativePath = Path.Combine("screenshots", eventId + ".jpg");
+#if PSCAD || QUARTUS
+            SaveHighQualityJpeg(bitmap, Path.Combine(_outputDirectory, relativePath), 90L);
+#else
             bitmap.Save(Path.Combine(_outputDirectory, relativePath), ImageFormat.Jpeg);
+#endif
             return relativePath.Replace('\\', '/');
         }
+
+#if PSCAD || QUARTUS
+        public void CaptureStateCheckpoint()
+        {
+            if (!_recording || _privacyPaused || _queue.Count > 0) return;
+            var window = ReadForegroundWindow();
+            if (window == null || !RecorderProfile.MatchesTargetProcess(window.ProcessName)) return;
+            try
+            {
+                var input = new RawInputEvent { Id = NextId(), EventType = "state_observation",
+                    TimestampMs = UtcNowMs(), Window = window };
+                input.Snapshot = CaptureScreenBitmap();
+                input.SnapshotTimestampMs = UtcNowMs();
+                Enqueue(input);
+            }
+            catch { }
+        }
+#endif
 
         private void CaptureThreeDsMaxTransformEvidence(RawInputEvent input, Bitmap before, Bitmap after)
         {
@@ -1787,7 +1986,7 @@ namespace UniversalMockRecorder
         private static bool ShouldCaptureKeyTransition(RawInputEvent input)
         {
             if (input == null || input.EventType != "key_down") return false;
-#if JMP || STATA || ORCAD
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
             // Single-letter shortcuts act at the cursor; UIA may not expose the canvas.
             // Capture every non-redacted key so both tool activation and field edits have evidence.
             return input.Key != "REDACTED";
@@ -1800,11 +1999,22 @@ namespace UniversalMockRecorder
 #endif
         }
 
-#if JMP || STATA || ORCAD
-        private bool CanCaptureKiCadAfter()
+#if KICAD || PSCAD || QUARTUS || JMP || STATA || VIVADO || ORCAD
+        private bool CanCaptureKiCadAfter(RawInputEvent input)
         {
             if (_privacyPaused) return false;
             var window = ReadForegroundWindow();
+#if PSCAD || QUARTUS
+            // A delayed worker image must not be attributed to an earlier edit or dialog.
+            if (input.Window == null || window == null ||
+#if QUARTUS
+                input.Window.Handle != window.Handle ||
+#endif
+                input.Window.ProcessId != window.ProcessId || input.Window.Title != window.Title ||
+                input.Window.X != window.X || input.Window.Y != window.Y ||
+                input.Window.Width != window.Width || input.Window.Height != window.Height ||
+                Interlocked.Read(ref _latestPscadInputMs) > input.TimestampMs) return false;
+#endif
             return MatchesCapturedTarget(window);
         }
 
@@ -2159,6 +2369,21 @@ namespace UniversalMockRecorder
             return result;
         }
 
+        private void ReadKeyboardCaptureContext(out UiTarget target, out bool isPassword)
+        {
+            target = null;
+#if PSCAD || QUARTUS
+            // No control-tree query, including a UIA password probe. Privacy pause
+            // remains available via Ctrl+Shift+F12 before sensitive input.
+            isPassword = false;
+#else
+            if (_captureUiAutomationTargets)
+                ReadFocusedContext(out target, out isPassword);
+            else
+                ReadFocusedPasswordState(out isPassword);
+#endif
+        }
+
         private static void ReadFocusedContext(out UiTarget target, out bool isPassword)
         {
             target = null;
@@ -2213,6 +2438,9 @@ namespace UniversalMockRecorder
             try { processName = Process.GetProcessById((int)processId).ProcessName; } catch { }
             return new WindowInfo
             {
+#if QUARTUS
+                Handle = handle.ToInt64().ToString("X"),
+#endif
                 Title = text.ToString(),
                 ProcessName = processName,
                 ProcessId = (int)processId,
@@ -2304,6 +2532,9 @@ namespace UniversalMockRecorder
         [DataContract]
         private sealed class RawInputEvent
         {
+#if PSCAD || QUARTUS
+            [DataMember(Name = "screenshotDesktopBounds")] public int[] ScreenshotDesktopBounds;
+#endif
             [DataMember(Name = "id", EmitDefaultValue = false)] public string Id;
             [DataMember(Name = "eventType", EmitDefaultValue = false)] public string EventType;
             [DataMember(Name = "timestampMs")] public long TimestampMs;
@@ -2326,7 +2557,7 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
             [DataMember(Name = "screenshotSelection", EmitDefaultValue = false)] public string ScreenshotSelection;
             [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
-#if JMP || STATA || ORCAD
+#if JMP || STATA || VIVADO || ORCAD
             [DataMember(Name = "screenshotSettledAfter", EmitDefaultValue = false)] public string ScreenshotSettledAfter;
             [DataMember(Name = "screenshotSettledAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotSettledAfterTimestampMs;
 #endif
@@ -2354,6 +2585,9 @@ namespace UniversalMockRecorder
         [DataContract]
         private sealed class WindowInfo
         {
+#if QUARTUS
+            [DataMember(Name = "handle", EmitDefaultValue = false)] public string Handle;
+#endif
             [DataMember(Name = "title", EmitDefaultValue = false)] public string Title;
             [DataMember(Name = "processName", EmitDefaultValue = false)] public string ProcessName;
             [DataMember(Name = "processId")] public int ProcessId;

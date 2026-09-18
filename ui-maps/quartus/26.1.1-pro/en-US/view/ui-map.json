@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.view",
+  "nodes": [
+    {
+      "locatorId": "quartus.view",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "View",
+      "visibleLabel": "View",
+      "aliases": [
+        "视图",
+        "view"
+      ],
+      "role": "menu",
+      "purpose": "视图菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.view.project-navigator",
+      "parentId": "quartus.view",
+      "canonicalName": "Project Navigator",
+      "visibleLabel": "Project Navigator",
+      "aliases": [
+        "工程导航器",
+        "项目导航器",
+        "工程导航"
+      ],
+      "role": "menu_item",
+      "purpose": "工程导航的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+0"
+    },
+    {
+      "locatorId": "quartus.view.node-finder",
+      "parentId": "quartus.view",
+      "canonicalName": "Node Finder",
+      "visibleLabel": "Node Finder",
+      "aliases": [
+        "节点查找器"
+      ],
+      "role": "menu_item",
+      "purpose": "节点查找器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+1"
+    },
+    {
+      "locatorId": "quartus.view.console",
+      "parentId": "quartus.view",
+      "canonicalName": "Console",
+      "visibleLabel": "Console",
+      "aliases": [
+        "控制台"
+      ],
+      "role": "menu_item",
+      "purpose": "控制台的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+2"
+    },
+    {
+      "locatorId": "quartus.view.messages",
+      "parentId": "quartus.view",
+      "canonicalName": "Messages",
+      "visibleLabel": "Messages",
+      "aliases": [
+        "消息窗口",
+        "Messages",
+        "报告消息",
+        "消息"
+      ],
+      "role": "menu_item",
+      "purpose": "消息的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+3"
+    },
+    {
+      "locatorId": "quartus.view.tasks",
+      "parentId": "quartus.view",
+      "canonicalName": "Tasks",
+      "visibleLabel": "Tasks",
+      "aliases": [
+        "任务",
+        "tasks"
+      ],
+      "role": "menu_item",
+      "purpose": "任务的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+6"
+    },
+    {
+      "locatorId": "quartus.view.ip-catalog",
+      "parentId": "quartus.view",
+      "canonicalName": "IP Catalog",
+      "visibleLabel": "IP Catalog",
+      "aliases": [
+        "IP目录",
+        "ip catalog",
+        "IP库"
+      ],
+      "role": "menu_item",
+      "purpose": "IP目录 IP库的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.view-menu"
+      ],
+      "shortcut": "Alt+7"
+    }
+  ]
+}

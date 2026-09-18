@@ -51,7 +51,7 @@ test('Stata accepts only official MP, SE and BE executable names', () => {
 });
 
 test('Stata shares input transitions, settled observation, UIA toggle and privacy pause', () => {
-  assert.match(native, /#if (?:KICAD \|\| )?(?:TWINBUILDER \|\| )?JMP \|\| STATA \|\| (?:VIVADO \|\| )?ORCAD/);
+  assert.match(native, /#if (?:KICAD \|\| )?(?:PSCAD \|\| )?(?:QUARTUS \|\| )?(?:TWINBUILDER \|\| )?JMP \|\| STATA \|\| (?:VIVADO \|\| )?ORCAD/);
   assert.match(native, /#if JMP \|\| STATA \|\| (?:VIVADO \|\| )?ORCAD[\s\S]*?ScreenshotSettledAfter/);
   assert.match(native, /#if (?:TWINBUILDER \|\| )?JMP \|\| STATA \|\| (?:VIVADO \|\| )?ORCAD[\s\S]*?TogglePause/);
   assert.match(stataForm, /UI Automation（可关闭）/);

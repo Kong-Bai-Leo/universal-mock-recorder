@@ -11,6 +11,14 @@
 任务 MD，并通过 OpenAI Computer Use 控制用户明确选中的 Windows 窗口。可先用真实 AutoCAD
 验证录制流程，未来也可以把目标窗口换成 Mock 软件。
 
+## 新增 JMP / Vivado 单文件回放（2026-09-12）
+
+- [JMP 19.1 录制器](src/Recorder.Jmp/README.md)：默认生成一个 `jmp-replay.jsl`，在 JMP 脚本编辑器中打开，再选择 Edit > Run Script。
+- [Vivado 2024.2 录制器](src/Recorder.Vivado/README.md)：默认生成一个 `vivado-replay.tcl`，在 Vivado 中关闭当前工程后选择 Tools > Run Tcl Script。
+- 两款入口都在目标软件所在 Windows 会话录制；先本地准备，再经确认调用 API。每轮最多 2 次请求，无自动失败重试；不是下方 CAD/Max 的重试策略。完整响应可经证据校验离线重新编译，不必为纯生成逻辑变更重新付费。
+- 最终运行只需要对应脚本和目标软件，不依赖 JSON、另一个 AI、录制器、Node.js 或 API 密钥；JSON 保留在 `_internal` 审计。未知依赖/遗漏仍拒绝发布，生成不会自动执行软件或宣称结果等价。
+- 当前范围和未测项见 [JMP](docs/jmp-support-matrix.md)、[Vivado](docs/vivado-support-matrix.md)；只有有限真实样本通过，不代表整个软件功能已覆盖。新默认单文件版本尚未部署至 VM 或重新实机运行。
+
 ## 当前能力
 
 - 全局鼠标移动、左右键、中键、滚轮记录
@@ -274,3 +282,9 @@ node --test tests\*.test.mjs
 ```
 
 正式产品还需要补充持续视频编码、安装包、可视化 GPT 设置页、录制回放预览和实际 Mock Runtime。
+
+## Quartus recorder
+
+Quartus follows the visual recording → model API with UI Map → structured JSON → controlled Tcl → native project route. See [usage and supported scope](src/Recorder.Quartus/README.md) and [verification status](docs/quartus-recorder-status-2026-09-07.md).
+
+Build with `npm run build:recorder:quartus`; run offline regressions with `npm run test:quartus`. Real recordings, API requests, credentials and screenshots remain local and are not included in this repository.

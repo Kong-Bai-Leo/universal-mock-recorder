@@ -1,0 +1,1433 @@
+{
+  "schemaVersion": "1.0",
+  "application": {
+    "name": "Quartus Prime",
+    "version": "26.1.1",
+    "edition": "Pro",
+    "language": "en-US"
+  },
+  "observedAt": "2026-09-07T22:39:06.033Z",
+  "captureMode": "remote_desktop_visual",
+  "behaviorVerification": "not_executed",
+  "evidence": [
+    {
+      "id": "qev.home",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/home.jpg",
+      "sha256": "cfa1d1199ad20ca724e442da57d74d3e521359452e661e9ba59267e2d88e12f1",
+      "recordedAt": "2026-09-07T22:39:06.036Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/home.png"
+    },
+    {
+      "id": "qev.help-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/help-menu.jpg",
+      "sha256": "5247c7e1362130c2610787f62bdbc7d6d65d6e27611c1008f6224bb82b8c7cae",
+      "recordedAt": "2026-09-07T22:39:15.731Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/help-menu.png"
+    },
+    {
+      "id": "qev.about",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/about.jpg",
+      "sha256": "6100505e590a8130784bdbf6c494ac264ef3dc4ce3f6625311e9e7b9da3c4c7e",
+      "recordedAt": "2026-09-07T22:39:34.488Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/about.png"
+    },
+    {
+      "id": "qev.file-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/file-menu.jpg",
+      "sha256": "81a12bd382b89793822665058970cfda976d16158544f8d2e8258ae207be075f",
+      "recordedAt": "2026-09-07T22:40:01.829Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/file-menu.png"
+    },
+    {
+      "id": "qev.edit-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/edit-menu.jpg",
+      "sha256": "53b341da7a5cf1b2db56c71f84671bf9a670e9a06eb07b205d180710a6537a80",
+      "recordedAt": "2026-09-07T22:40:30.751Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/edit-menu.png"
+    },
+    {
+      "id": "qev.view-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/view-menu.jpg",
+      "sha256": "e2087b5b9cc13d6a0aecbe8387b75767b563be65f366297a17abfb052860ecc9",
+      "recordedAt": "2026-09-07T22:40:40.064Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/view-menu.png"
+    },
+    {
+      "id": "qev.project-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/project-menu.jpg",
+      "sha256": "1afd23f234fe62ec17f49ff5690eb05db6f089409020b39e6e09dbee775ced6b",
+      "recordedAt": "2026-09-07T22:40:51.328Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/project-menu.png"
+    },
+    {
+      "id": "qev.assignments-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/assignments-menu.jpg",
+      "sha256": "6616531ba363dc9f4b6f067906061101f71e8ea9193b2b05ad23f35c0d853ec6",
+      "recordedAt": "2026-09-07T22:41:08.793Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/assignments-menu.png"
+    },
+    {
+      "id": "qev.processing-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/processing-menu.jpg",
+      "sha256": "ad84aa7c51cfd0cc33fb8e18a71dfa27e672b9557dbd366879c8eb3930f4dfc9",
+      "recordedAt": "2026-09-07T22:41:32.198Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/processing-menu.png"
+    },
+    {
+      "id": "qev.tools-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/tools-menu.jpg",
+      "sha256": "5d505e530332ecba7e8faa0185c7fc8ec2d13618a6842a5aa1c7ff0b766702e4",
+      "recordedAt": "2026-09-07T22:41:52.648Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/tools-menu.png"
+    },
+    {
+      "id": "qev.window-menu",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/window-menu.jpg",
+      "sha256": "996f520203e2ac188fca3d54994ca1785df918d8bae137ae3293f45ad6589c24",
+      "recordedAt": "2026-09-07T22:42:14.956Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/window-menu.png"
+    },
+    {
+      "id": "qev.wizard-introduction",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-introduction.jpg",
+      "sha256": "a0020707ea0e6fc865f3bbb68300a1e1602e2f2f670c05cfdd07d4ba5b6f036a",
+      "recordedAt": "2026-09-07T22:42:48.193Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-introduction.png"
+    },
+    {
+      "id": "qev.wizard-project-identity",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-project-identity.jpg",
+      "sha256": "75e8e65012d0a4297e0a77b68fbb4fdfb04bf6ad9afb6ee1cae2af7fc1f43770",
+      "recordedAt": "2026-09-07T22:43:10.609Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-project-identity.png"
+    },
+    {
+      "id": "qev.wizard-device",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-device.jpg",
+      "sha256": "37142c90241608c0edc7187fb4a63d52a1f6346dc43fc33a16ba22b33d9d3be8",
+      "recordedAt": "2026-09-07T22:43:54.842Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-device.png"
+    },
+    {
+      "id": "qev.wizard-add-files",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-add-files.jpg",
+      "sha256": "beebe2dd9f1a32563dc8759acfa4ac40a851f7e85c232508a879098c7c8431dd",
+      "recordedAt": "2026-09-07T22:44:10.907Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-add-files.png"
+    },
+    {
+      "id": "qev.wizard-eda",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-eda.jpg",
+      "sha256": "2a17e4f9551ef73ba4b4974eab824dbe821e72c1722922874abcee39d9491c83",
+      "recordedAt": "2026-09-07T22:44:25.843Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-eda.png"
+    },
+    {
+      "id": "qev.wizard-summary",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-summary.jpg",
+      "sha256": "cbfeff76ae7a5c820cc83b9665302a7fb388ccf750f748a7e974b29aef21a7cb",
+      "recordedAt": "2026-09-07T22:44:46.848Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-summary.png"
+    },
+    {
+      "id": "qev.wizard-cancelled",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-cancelled.jpg",
+      "sha256": "a5dcc2f017e4c60c355a54bea1b0cdf0cba2b17b78f5ff88817cd9f9c5cd3fa7",
+      "recordedAt": "2026-09-07T22:44:56.250Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/wizard-cancelled.png"
+    },
+    {
+      "id": "qev.pd-whats-new",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-whats-new.jpg",
+      "sha256": "259fab618dbdb8ef027c2422a02f73b346861c510c3ded2e55a67479e823db36",
+      "recordedAt": "2026-09-07T22:48:09.251Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-whats-new.png"
+    },
+    {
+      "id": "qev.pd-open-system",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-open-system.jpg",
+      "sha256": "7b7c13825012926a1ff862df759cda198199c47dd3b17cf1c1600dcc3a16abe7",
+      "recordedAt": "2026-09-07T22:48:31.846Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-open-system.png"
+    },
+    {
+      "id": "qev.pd-ip-variant",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-ip-variant.jpg",
+      "sha256": "23d11ecfa1db24c618188919107af1295792207f38971faaedcd19077a96d6b7",
+      "recordedAt": "2026-09-07T22:48:41.430Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-ip-variant.png"
+    },
+    {
+      "id": "qev.pd-bsp-editor",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-bsp-editor.jpg",
+      "sha256": "579e263728c21956e6b14f31f1feffd531194ed4832dc9464babce9373358e20",
+      "recordedAt": "2026-09-07T22:48:50.929Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-bsp-editor.png"
+    },
+    {
+      "id": "qev.pd-exit-confirmation",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-exit-confirmation.jpg",
+      "sha256": "a034cd8dd25572380ff3f2372cc4e291ccd19c0986ba238680bed90249c83c2c",
+      "recordedAt": "2026-09-07T22:48:59.430Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/pd-exit-confirmation.png"
+    },
+    {
+      "id": "qev.scan-finished",
+      "file": ".equile-local/quartus-uimap-2026-09-07/evidence/scan-finished.jpg",
+      "sha256": "ef2b17a17179e3a27c47f1af71d49dd04ca38b02ada67b7afb0d3c07b4716979",
+      "recordedAt": "2026-09-07T22:54:36.455Z",
+      "width": 2560,
+      "height": 1440,
+      "mimeType": "image/jpeg",
+      "originalCaptureFile": ".equile-local/quartus-uimap-2026-09-07/evidence/scan-finished.png"
+    }
+  ],
+  "observations": [
+    {
+      "id": "home",
+      "evidenceId": "qev.home",
+      "controls": [
+        {
+          "label": "File",
+          "role": "menu"
+        },
+        {
+          "label": "Edit",
+          "role": "menu"
+        },
+        {
+          "label": "View",
+          "role": "menu"
+        },
+        {
+          "label": "Project",
+          "role": "menu"
+        },
+        {
+          "label": "Assignments",
+          "role": "menu"
+        },
+        {
+          "label": "Processing",
+          "role": "menu"
+        },
+        {
+          "label": "Tools",
+          "role": "menu"
+        },
+        {
+          "label": "Window",
+          "role": "menu"
+        },
+        {
+          "label": "Help",
+          "role": "menu"
+        },
+        {
+          "label": "New Project Wizard...",
+          "role": "link"
+        },
+        {
+          "label": "Open Project...",
+          "role": "link"
+        },
+        {
+          "label": "Open Example Design...",
+          "role": "link"
+        },
+        {
+          "label": "Project Navigator",
+          "role": "panel"
+        },
+        {
+          "label": "Tasks",
+          "role": "panel"
+        },
+        {
+          "label": "IP Catalog",
+          "role": "panel"
+        },
+        {
+          "label": "Messages",
+          "role": "panel"
+        },
+        {
+          "label": "Hierarchy",
+          "role": "tab"
+        },
+        {
+          "label": "Files",
+          "role": "tab"
+        },
+        {
+          "label": "Design Units",
+          "role": "tab"
+        },
+        {
+          "label": "IP Components",
+          "role": "tab"
+        }
+      ],
+      "notes": "Remote window maximized; English home page, no loaded project. Toolbar icons require individual tooltip identification.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "help-menu",
+      "evidenceId": "qev.help-menu",
+      "controls": [
+        {
+          "label": "Help Topics",
+          "role": "menu_item"
+        },
+        {
+          "label": "Message List",
+          "role": "menu_item"
+        },
+        {
+          "label": "Devices and Adapters",
+          "role": "menu_item"
+        },
+        {
+          "label": "EDA Interfaces",
+          "role": "menu_item"
+        },
+        {
+          "label": "Command Line and Tcl API",
+          "role": "menu_item"
+        },
+        {
+          "label": "PDF Tutorials",
+          "role": "menu_item"
+        },
+        {
+          "label": "Home",
+          "role": "menu_item"
+        },
+        {
+          "label": "What's New",
+          "role": "menu_item"
+        },
+        {
+          "label": "Readme File",
+          "role": "menu_item"
+        },
+        {
+          "label": "Release Notes",
+          "role": "menu_item"
+        },
+        {
+          "label": "Contacting Altera",
+          "role": "menu_item"
+        },
+        {
+          "label": "Feedback",
+          "role": "menu_item"
+        },
+        {
+          "label": "On the Web",
+          "role": "menu_item"
+        },
+        {
+          "label": "About Quartus Prime",
+          "role": "menu_item"
+        }
+      ],
+      "notes": "",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "about",
+      "evidenceId": "qev.about",
+      "controls": [
+        {
+          "label": "About Quartus Prime",
+          "role": "dialog"
+        },
+        {
+          "label": "Quartus Prime Version 26.1.1 Build 130 08/06/2026 SC Pro Edition",
+          "role": "text"
+        },
+        {
+          "label": "Patches Installed: None",
+          "role": "text"
+        },
+        {
+          "label": "OK",
+          "role": "button"
+        },
+        {
+          "label": "Help",
+          "role": "button"
+        }
+      ],
+      "notes": "",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "file-menu",
+      "evidenceId": "qev.file-menu",
+      "controls": [
+        {
+          "label": "New...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Open...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Close",
+          "role": "menu_item"
+        },
+        {
+          "label": "New Project Wizard...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Open Project...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Open Example Design...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Save Project",
+          "role": "menu_item"
+        },
+        {
+          "label": "Close Project",
+          "role": "menu_item"
+        },
+        {
+          "label": "Save",
+          "role": "menu_item"
+        },
+        {
+          "label": "Save As...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Save All",
+          "role": "menu_item"
+        },
+        {
+          "label": "File Properties...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Create / Update",
+          "role": "menu_item"
+        },
+        {
+          "label": "Export...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Convert Programming Files...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Programming File Generator...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Page Setup...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Print Preview",
+          "role": "menu_item"
+        },
+        {
+          "label": "Print...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Recent Files",
+          "role": "menu_item"
+        },
+        {
+          "label": "Recent Projects",
+          "role": "menu_item"
+        },
+        {
+          "label": "Exit",
+          "role": "menu_item"
+        }
+      ],
+      "notes": "No project: Save Project, Close Project, Save, Save As, Save All, File Properties, Export and recent lists are gray. New Ctrl+N; Open Ctrl+O; Close Ctrl+F4; Open Project Ctrl+J; Save Ctrl+S; Save All Ctrl+Shift+S; Print Ctrl+P; Exit Alt+F4.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "edit-menu",
+      "evidenceId": "qev.edit-menu",
+      "controls": [
+        {
+          "label": "Undo",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Redo",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Cut",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Copy",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Paste",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Delete",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Select All",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Find...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Find Next",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Find Previous",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Replace...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Go To...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Properties",
+          "role": "menu_item",
+          "enabled": false
+        }
+      ],
+      "notes": "All entries gray on Home; shortcuts visibly Ctrl+Z, Ctrl+Y, Ctrl+X, Ctrl+C, Ctrl+V, Del, Ctrl+A, Ctrl+F, F3, Shift+F3, Ctrl+H, Ctrl+G.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "view-menu",
+      "evidenceId": "qev.view-menu",
+      "controls": [
+        {
+          "label": "Project Navigator",
+          "shortcut": "Alt+0",
+          "role": "menu_item"
+        },
+        {
+          "label": "Node Finder",
+          "shortcut": "Alt+1",
+          "role": "menu_item"
+        },
+        {
+          "label": "Console",
+          "shortcut": "Alt+2",
+          "role": "menu_item"
+        },
+        {
+          "label": "Messages",
+          "shortcut": "Alt+3",
+          "role": "menu_item"
+        },
+        {
+          "label": "Tasks",
+          "shortcut": "Alt+6",
+          "role": "menu_item"
+        },
+        {
+          "label": "IP Catalog",
+          "shortcut": "Alt+7",
+          "role": "menu_item"
+        }
+      ],
+      "notes": "",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "project-menu",
+      "evidenceId": "qev.project-menu",
+      "controls": [
+        {
+          "label": "Add Current File to Project",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Add/Remove Files in Project...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Revisions...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Copy Project...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Clean Project...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Archive Project...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Restore Archived Project...",
+          "role": "menu_item",
+          "enabled": true
+        },
+        {
+          "label": "Export Design Partition...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Generate Tcl File for Project...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Upgrade IP Components...",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Organize Quartus Prime Settings File",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Set as Top-Level Entity",
+          "role": "menu_item",
+          "enabled": false
+        },
+        {
+          "label": "Hierarchy",
+          "role": "submenu",
+          "enabled": true
+        }
+      ],
+      "notes": "Set as Top-Level Entity shortcut Ctrl+Shift+J; most actions disabled without project.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "assignments-menu",
+      "evidenceId": "qev.assignments-menu",
+      "controls": [
+        {
+          "label": "Device...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Settings...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Assignment Editor",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Pin Planner",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Remove Assignments...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Back-Annotate Assignments...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Import Assignments...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Export Assignments...",
+          "enabled": false,
+          "role": "menu_item"
+        },
+        {
+          "label": "Logic Lock Regions Window",
+          "enabled": true,
+          "role": "menu_item"
+        },
+        {
+          "label": "Design Partitions Window",
+          "enabled": true,
+          "role": "menu_item"
+        }
+      ],
+      "notes": "Settings Ctrl+Shift+E; Assignment Editor Ctrl+Shift+A; Pin Planner Ctrl+Shift+N; Logic Lock Alt+L; Design Partitions Alt+D.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "processing-menu",
+      "evidenceId": "qev.processing-menu",
+      "controls": [
+        {
+          "label": "Stop Processing",
+          "role": "menu_item"
+        },
+        {
+          "label": "Quit Monitoring",
+          "role": "menu_item"
+        },
+        {
+          "label": "Start Compilation",
+          "role": "menu_item"
+        },
+        {
+          "label": "Start Optimization Mode Compilation",
+          "role": "submenu"
+        },
+        {
+          "label": "Start",
+          "role": "submenu"
+        },
+        {
+          "label": "Update Memory Initialization File",
+          "role": "menu_item"
+        },
+        {
+          "label": "Start Pre-Synthesis IBIS",
+          "role": "menu_item"
+        },
+        {
+          "label": "Start Setup NoC accurate simulation",
+          "role": "menu_item"
+        },
+        {
+          "label": "Compilation Report",
+          "role": "menu_item"
+        },
+        {
+          "label": "Compilation Dashboard",
+          "role": "menu_item"
+        }
+      ],
+      "notes": "Stop Processing Ctrl+Shift+C, Start Compilation Ctrl+L, Compilation Report Ctrl+R, Compilation Dashboard Ctrl+Shift+R; primary compile/report commands gray.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "tools-menu",
+      "evidenceId": "qev.tools-menu",
+      "controls": [
+        {
+          "label": "Generate Simulator Setup Script for IP...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Launch Simulation Library Compiler",
+          "role": "menu_item"
+        },
+        {
+          "label": "Launch Design Space Explorer II",
+          "role": "menu_item"
+        },
+        {
+          "label": "Run Simulation",
+          "role": "submenu"
+        },
+        {
+          "label": "Timing Analyzer",
+          "role": "menu_item"
+        },
+        {
+          "label": "Chip Planner",
+          "role": "menu_item"
+        },
+        {
+          "label": "Design Partition Planner",
+          "role": "menu_item"
+        },
+        {
+          "label": "Interface Planner",
+          "role": "menu_item"
+        },
+        {
+          "label": "Netlist Viewers",
+          "role": "submenu"
+        },
+        {
+          "label": "Signal Tap Logic Analyzer",
+          "role": "menu_item"
+        },
+        {
+          "label": "In-System Memory Content Editor",
+          "role": "menu_item"
+        },
+        {
+          "label": "Logic Analyzer Interface Editor",
+          "role": "menu_item"
+        },
+        {
+          "label": "In-System Sources and Probes Editor",
+          "role": "menu_item"
+        },
+        {
+          "label": "Programmer",
+          "role": "menu_item"
+        },
+        {
+          "label": "JTAG Chain Debugger",
+          "role": "menu_item"
+        },
+        {
+          "label": "Fault Injection Debugger",
+          "role": "menu_item"
+        },
+        {
+          "label": "Configuration Debugger",
+          "role": "menu_item"
+        },
+        {
+          "label": "Signing and Encryption Assistant",
+          "role": "menu_item"
+        },
+        {
+          "label": "System Debugging Tools",
+          "role": "submenu"
+        },
+        {
+          "label": "Service Configuration Manager (SCM)",
+          "role": "menu_item"
+        },
+        {
+          "label": "Power and Thermal Analyzer",
+          "role": "menu_item"
+        },
+        {
+          "label": "IP Catalog",
+          "role": "menu_item"
+        },
+        {
+          "label": "Platform Designer",
+          "role": "menu_item"
+        },
+        {
+          "label": "Visual Designer Studio",
+          "role": "menu_item"
+        },
+        {
+          "label": "Example Design Manager",
+          "role": "menu_item"
+        },
+        {
+          "label": "Tcl Scripts...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Customize...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Options...",
+          "role": "menu_item"
+        },
+        {
+          "label": "License Setup...",
+          "role": "menu_item"
+        },
+        {
+          "label": "Install Devices...",
+          "role": "menu_item"
+        }
+      ],
+      "notes": "Menu presence only; no execution of scripting, programming, simulation, installation, licensing or security-related entries.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "window-menu",
+      "evidenceId": "qev.window-menu",
+      "controls": [
+        {
+          "label": "Detach Window",
+          "role": "menu_item"
+        },
+        {
+          "label": "Close All",
+          "role": "menu_item"
+        },
+        {
+          "label": "Cascade",
+          "shortcut": "Shift+F5",
+          "role": "menu_item"
+        },
+        {
+          "label": "Tile",
+          "shortcut": "Shift+F4",
+          "role": "menu_item"
+        },
+        {
+          "label": "1 Home",
+          "role": "menu_item",
+          "checked": true
+        }
+      ],
+      "notes": "",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-introduction",
+      "evidenceId": "qev.wizard-introduction",
+      "controls": [
+        {
+          "label": "New Project Wizard",
+          "role": "dialog"
+        },
+        {
+          "label": "Introduction",
+          "role": "page"
+        },
+        {
+          "label": "Don't show me this introduction again",
+          "role": "checkbox"
+        },
+        {
+          "label": "Help",
+          "role": "button"
+        },
+        {
+          "label": "< Back",
+          "role": "button",
+          "enabled": false
+        },
+        {
+          "label": "Next >",
+          "role": "button"
+        },
+        {
+          "label": "Finish",
+          "role": "button",
+          "enabled": false
+        },
+        {
+          "label": "Cancel",
+          "role": "button"
+        }
+      ],
+      "notes": "Intro describes project name/directory, top-level design entity, files/libraries, target family/device and EDA settings.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-project-identity",
+      "evidenceId": "qev.wizard-project-identity",
+      "controls": [
+        {
+          "label": "Directory, Name, Top-Level Entity",
+          "role": "page"
+        },
+        {
+          "label": "Empty Project",
+          "role": "radio",
+          "checked": true
+        },
+        {
+          "label": "Example Design",
+          "role": "radio"
+        },
+        {
+          "label": "What is the working directory for this project?",
+          "role": "field",
+          "parameterRole": "project_directory"
+        },
+        {
+          "label": "What is the name of this project?",
+          "role": "field",
+          "parameterRole": "project_name"
+        },
+        {
+          "label": "What is the name of the top-level design entity for this project? This name is case sensitive and must exactly match the entity name in the design file.",
+          "role": "field",
+          "parameterRole": "top_level_entity"
+        },
+        {
+          "label": "This project uses a Partition Database (.qdb) file for the root partition",
+          "role": "checkbox"
+        },
+        {
+          "label": "Use Existing Project Settings...",
+          "role": "button"
+        }
+      ],
+      "notes": "Empty project default; three browse buttons belong separately to directory/name/top-level fields. No project created.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-device",
+      "evidenceId": "qev.wizard-device",
+      "controls": [
+        {
+          "label": "Family, Device & Board Settings",
+          "role": "page"
+        },
+        {
+          "label": "Device",
+          "role": "tab"
+        },
+        {
+          "label": "Board",
+          "role": "tab"
+        },
+        {
+          "label": "Family:",
+          "role": "combobox",
+          "parameterRole": "device_family"
+        },
+        {
+          "label": "Device:",
+          "role": "combobox",
+          "parameterRole": "device_filter"
+        },
+        {
+          "label": "Package:",
+          "role": "combobox"
+        },
+        {
+          "label": "Pin count:",
+          "role": "combobox"
+        },
+        {
+          "label": "Core speed grade:",
+          "role": "combobox"
+        },
+        {
+          "label": "Show advanced devices",
+          "role": "checkbox"
+        },
+        {
+          "label": "Specific device selected in 'Available devices' list",
+          "role": "radio"
+        },
+        {
+          "label": "Filter:",
+          "role": "combobox"
+        },
+        {
+          "label": "Name",
+          "role": "table_column"
+        },
+        {
+          "label": "Core Voltage",
+          "role": "table_column",
+          "unit": "V"
+        },
+        {
+          "label": "ALMs",
+          "role": "table_column"
+        },
+        {
+          "label": "Total I/Os",
+          "role": "table_column"
+        },
+        {
+          "label": "GPIOs",
+          "role": "table_column"
+        },
+        {
+          "label": "Memory Bits",
+          "role": "table_column"
+        },
+        {
+          "label": "DSP Blocks",
+          "role": "table_column"
+        }
+      ],
+      "notes": "Directly followed project identity page in this installation. Observed family Agilex 5 (E-Series/D-series), 1055 available devices; this is not license or compilation proof. Temporary name only, Finish never invoked.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-add-files",
+      "evidenceId": "qev.wizard-add-files",
+      "controls": [
+        {
+          "label": "Add Files",
+          "role": "page"
+        },
+        {
+          "label": "File name:",
+          "role": "field",
+          "parameterRole": "source_file_path"
+        },
+        {
+          "label": "File",
+          "role": "radio"
+        },
+        {
+          "label": "Directory",
+          "role": "radio"
+        },
+        {
+          "label": "Add",
+          "role": "button"
+        },
+        {
+          "label": "Add All",
+          "role": "button"
+        },
+        {
+          "label": "Remove",
+          "role": "button"
+        },
+        {
+          "label": "Up",
+          "role": "button"
+        },
+        {
+          "label": "Down",
+          "role": "button"
+        },
+        {
+          "label": "Change Directory",
+          "role": "button"
+        },
+        {
+          "label": "Properties",
+          "role": "button"
+        },
+        {
+          "label": "File Name",
+          "role": "table_column"
+        },
+        {
+          "label": "Type",
+          "role": "table_column"
+        },
+        {
+          "label": "Library",
+          "role": "table_column"
+        },
+        {
+          "label": "Entity",
+          "role": "table_column"
+        },
+        {
+          "label": "Design Entry/Synthesis Tool",
+          "role": "table_column"
+        },
+        {
+          "label": "HDL Version",
+          "role": "table_column"
+        },
+        {
+          "label": "add README Markdown template file to the project.",
+          "role": "checkbox"
+        },
+        {
+          "label": "User Libraries...",
+          "role": "button"
+        }
+      ],
+      "notes": "No files added. Add All is separate from selecting one source; paths, libraries and HDL version are dependencies, not recoverable from clicking alone.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-eda",
+      "evidenceId": "qev.wizard-eda",
+      "controls": [
+        {
+          "label": "EDA Tool Settings",
+          "role": "page"
+        },
+        {
+          "label": "Tool Type",
+          "role": "table_column"
+        },
+        {
+          "label": "Tool Name",
+          "role": "table_column"
+        },
+        {
+          "label": "Format(s)",
+          "role": "table_column"
+        },
+        {
+          "label": "Design Entry/Synt...",
+          "role": "table_row",
+          "labelFidelity": "truncated"
+        },
+        {
+          "label": "Simulation",
+          "role": "table_row"
+        },
+        {
+          "label": "Board-Level",
+          "role": "table_row"
+        },
+        {
+          "label": "Signal Integrity",
+          "role": "cell"
+        }
+      ],
+      "notes": "No EDA tool choice changed; Simulation currently <None>, not evidence a simulator is installed.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-summary",
+      "evidenceId": "qev.wizard-summary",
+      "controls": [
+        {
+          "label": "Summary",
+          "role": "page"
+        },
+        {
+          "label": "Project directory:",
+          "role": "summary_field"
+        },
+        {
+          "label": "Project name:",
+          "role": "summary_field"
+        },
+        {
+          "label": "Top-level design entity:",
+          "role": "summary_field"
+        },
+        {
+          "label": "Number of files added:",
+          "role": "summary_field"
+        },
+        {
+          "label": "Number of user libraries added:",
+          "role": "summary_field"
+        },
+        {
+          "label": "Device assignments:",
+          "role": "summary_group"
+        },
+        {
+          "label": "EDA tools:",
+          "role": "summary_group"
+        },
+        {
+          "label": "Operating conditions:",
+          "role": "summary_group"
+        },
+        {
+          "label": "Finish",
+          "role": "button"
+        },
+        {
+          "label": "Cancel",
+          "role": "button"
+        }
+      ],
+      "notes": "Summary explicitly says project is created when Finish is clicked. Probe has 0 files/0 libraries; Finish will NOT be clicked.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "wizard-cancelled",
+      "evidenceId": "qev.wizard-cancelled",
+      "controls": [],
+      "notes": "Wizard cancelled before Finish; Quartus returns to Home with no project.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "pd-whats-new",
+      "evidenceId": "qev.pd-whats-new",
+      "controls": [
+        "What's New!",
+        "Close",
+        "Don't show again"
+      ],
+      "notes": "Platform Designer startup overlay; release history text is not active version evidence.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "pd-open-system",
+      "evidenceId": "qev.pd-open-system",
+      "controls": [
+        "Open System",
+        "System",
+        "IP Variant",
+        "BSP Editor",
+        "Quartus project:",
+        "Revision",
+        "Board",
+        "Device family",
+        "Retrieve Values",
+        "Device part",
+        "Platform Designer system",
+        "Open",
+        "Exit"
+      ],
+      "notes": "Open is disabled; warning: Quartus Project is not specified. Create or specify a Quartus Project. Editor behind modal is occluded and has not been inspected.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "pd-ip-variant",
+      "evidenceId": "qev.pd-ip-variant",
+      "controls": [
+        "Open System",
+        "IP Variant",
+        "Quartus project:",
+        "Revision",
+        "Board",
+        "Device family",
+        "Device part",
+        "IP variant:",
+        "Component type:",
+        "Select...",
+        "Open",
+        "Exit"
+      ],
+      "notes": "IP Variant tab selected. File not specified warning; no variant opened.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "pd-bsp-editor",
+      "evidenceId": "qev.pd-bsp-editor",
+      "controls": [
+        "Open System",
+        "BSP Editor",
+        "BSP setting file",
+        "System file (.qsys, .ip)",
+        "Quartus project:",
+        "Revision",
+        "CPU name",
+        "Operating system",
+        "Version",
+        "Use default locations",
+        "BSP target directory",
+        "Enable Additional Tcl script",
+        "Additional Tcl script",
+        "Open",
+        "Exit"
+      ],
+      "notes": "BSP startup tab only, not the editor. Disabled labels may require fresh zoom for punctuation. No BSP file specified or opened.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "pd-exit-confirmation",
+      "evidenceId": "qev.pd-exit-confirmation",
+      "controls": [
+        "Exit Platform Designer",
+        "OK",
+        "Cancel"
+      ],
+      "notes": "Exit confirmation after startup browsing; no project/system edited.",
+      "projectState": "no_project_open"
+    },
+    {
+      "id": "scan-finished",
+      "evidenceId": "qev.scan-finished",
+      "controls": [],
+      "notes": "Platform Designer exited; original Quartus Home remains with no project. No compilation, programming, source import, or project save was performed.",
+      "projectState": "no_project_open"
+    }
+  ],
+  "evidencePathBase": "workspace",
+  "scope": "Main menus, empty-project wizard, Platform Designer startup only",
+  "navigationObserved": true,
+  "businessActionsExecuted": false,
+  "observedBuild": "26.1.1 Build 130 08/06/2026 SC Pro Edition"
+}

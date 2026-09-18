@@ -9,10 +9,22 @@ generated/
 bin/validator/
 .cv-poc-deps/
 cv-poc-runtime/
+
+# Local Quartus evidence, configuration and packages
+.env.*
 .equile-local/
+dist/
+bin/quartus-recorder/recordings/
+ui-maps/quartus/**/screenshots/
+
+# JMP/Vivado private recordings and UI scan images
 bin/jmp-recorder/recordings/
-bin/stata-recorder/recordings/
+bin/vivado-recorder/recordings/
 ui-maps/jmp/**/screenshots/
+ui-maps/vivado/**/screenshots/
+
+# JMP Pro 18 / Stata 18 local evidence
+bin/stata-recorder/recordings/
 ui-maps/stata/**/screenshots/
 dist/jmp-*/
 dist/jmp18-*.json

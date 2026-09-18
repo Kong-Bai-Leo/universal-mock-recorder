@@ -1,0 +1,3 @@
+# Preserve original artifact bytes so published SHA-256 values remain valid.
+* -text
+native/** -text

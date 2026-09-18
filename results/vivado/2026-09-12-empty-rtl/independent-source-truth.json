@@ -1,0 +1,19 @@
+{
+  "purpose": "Independent operator observation before VLM analysis; not uploaded as model evidence",
+  "observedAtLocalDate": "2026-09-12",
+  "vmClockIncorrect": true,
+  "application": "Vivado 2024.2",
+  "initialState": "Home, no open project",
+  "projectName": "VivadoSmoke_20260912_A",
+  "projectPath": "C:/Users/user/VivadoSmoke_20260912_A/VivadoSmoke_20260912_A.xpr",
+  "projectType": "RTL",
+  "part": "xc7vx485tffg1157-1",
+  "targetLanguage": "VHDL",
+  "simulatorLanguage": "Mixed",
+  "designSourceCount": 0,
+  "constraintFileCount": 0,
+  "top": "Not defined",
+  "synthesis": "Not started",
+  "implementation": "Not started",
+  "basis": "Operator followed New Project wizard, selected VHDL, left Sources/Constraints empty, confirmed Summary and final Project Summary before stopping recorder"
+}

@@ -1,0 +1,369 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "section": "home",
+  "controls": [
+    {
+      "id": "vivado-home",
+      "parentId": null,
+      "label": "Getting Started",
+      "type": "page",
+      "description": "未打开工程时的起始页",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-home-menu",
+      "parentId": "vivado-home",
+      "label": "Menu Bar",
+      "type": "menubar",
+      "description": "首页菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-menu-file",
+      "parentId": "vivado-home-menu",
+      "label": "File",
+      "type": "menu",
+      "description": "Vivado File 菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-menu-flow",
+      "parentId": "vivado-home-menu",
+      "label": "Flow",
+      "type": "menu",
+      "description": "Vivado Flow 菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-menu-tools",
+      "parentId": "vivado-home-menu",
+      "label": "Tools",
+      "type": "menu",
+      "description": "Vivado Tools 菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-menu-window",
+      "parentId": "vivado-home-menu",
+      "label": "Window",
+      "type": "menu",
+      "description": "Vivado Window 菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-menu-help",
+      "parentId": "vivado-home-menu",
+      "label": "Help",
+      "type": "menu",
+      "description": "Vivado Help 菜单",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-quick-access",
+      "parentId": "vivado-home-menu",
+      "label": "Quick Access",
+      "type": "search",
+      "description": "查找菜单命令；不是工程数据",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-quick-start",
+      "parentId": "vivado-home",
+      "label": "Quick Start",
+      "type": "panel",
+      "description": "新建和打开工程入口",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-create-project",
+      "parentId": "vivado-quick-start",
+      "label": "Create Project",
+      "type": "link",
+      "description": "打开多页新建工程向导；打开向导不等于已创建工程",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "isolated_empty_project_created"
+    },
+    {
+      "id": "vivado-open-project",
+      "parentId": "vivado-quick-start",
+      "label": "Open Project",
+      "type": "link",
+      "description": "打开现有 .xpr；需要独立源文件依赖",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-open-example",
+      "parentId": "vivado-quick-start",
+      "label": "Open Example Project",
+      "type": "link",
+      "description": "打开示例工程向导；示例内容不是录制证据",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-tasks",
+      "parentId": "vivado-home",
+      "label": "Tasks",
+      "type": "panel",
+      "description": "IP、硬件与组件入口",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-manage-ip",
+      "parentId": "vivado-tasks",
+      "label": "Manage IP",
+      "type": "link",
+      "description": "管理IP工程与定制IP",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-hardware-manager",
+      "parentId": "vivado-tasks",
+      "label": "Open Hardware Manager",
+      "type": "link",
+      "description": "进入硬件管理；连接和编程硬件不属于当前授权范围",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-vivado-store",
+      "parentId": "vivado-tasks",
+      "label": "Vivado Store",
+      "type": "link",
+      "description": "工具/板卡/示例资源；本轮不安装",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-learning",
+      "parentId": "vivado-home",
+      "label": "Learning Center",
+      "type": "panel",
+      "description": "学习与文档入口",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-documentation",
+      "parentId": "vivado-learning",
+      "label": "Documentation and Tutorials",
+      "type": "link",
+      "description": "打开官方文档和教程",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-videos",
+      "parentId": "vivado-learning",
+      "label": "Quick Take Videos",
+      "type": "link",
+      "description": "学习视频入口",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-whats-new",
+      "parentId": "vivado-learning",
+      "label": "What's New in 2024.2",
+      "type": "link",
+      "description": "本版本发布变化",
+      "observationStatus": "observed",
+      "semanticStatus": "documentation_checked",
+      "sourceIds": [
+        "amd-ug893-home"
+      ],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-tcl-console",
+      "parentId": "vivado-home",
+      "label": "Tcl Console",
+      "type": "tab",
+      "description": "应用内Tcl命令与日志；不等于Windows终端",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "sourceIds": [],
+      "observationIds": [
+        "obs-home-20260912"
+      ],
+      "automationId": null,
+      "aliases": [],
+      "executionStatus": "not_exercised"
+    }
+  ]
+}

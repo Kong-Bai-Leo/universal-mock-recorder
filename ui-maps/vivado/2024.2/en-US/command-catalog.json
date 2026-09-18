@@ -1,0 +1,191 @@
+{
+  "version": "vivado-2024.2-state-2",
+  "application": "Vivado",
+  "scope": "Bounded native-call candidates. Schema restricts executable arguments; native verification is tracked separately.",
+  "commands": [
+    {
+      "id": "vivado-tcl-create-project",
+      "canonicalName": "create_project",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-create-project"
+      ],
+      "relatedControlIds": [
+        "vivado-create-project",
+        "vivado-wizard-finish"
+      ],
+      "description": "创建工程对象和工程目录。",
+      "parameters": [
+        "name",
+        "dir",
+        "part"
+      ],
+      "preconditions": [
+        "指定新建且不存在的隔离目录",
+        "明确目标器件，不从其他录制复制默认值"
+      ],
+      "completion": "确认工程对象/路径/器件；不能推导综合成功",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "gui_generated_command_observed",
+      "companionCommandIds": []
+    },
+    {
+      "id": "vivado-tcl-add-files",
+      "canonicalName": "add_files",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-add-files"
+      ],
+      "relatedControlIds": [
+        "vivado-source-button-0",
+        "vivado-source-menu-0",
+        "vivado-constraints-button-0",
+        "vivado-add-project-sources"
+      ],
+      "description": "向指定文件集登记源文件；文件名不是内容。",
+      "parameters": [
+        "fileset",
+        "files"
+      ],
+      "preconditions": [
+        "依赖内容可用且经授权；维护原始内容哈希",
+        "区分设计源、仿真源、约束；检查 include 和生成文件"
+      ],
+      "completion": "核对实际文件列表、类型和文件集",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "documented_not_exercised",
+      "companionCommandIds": []
+    },
+    {
+      "id": "vivado-tcl-set-property",
+      "canonicalName": "set_property",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-set-property"
+      ],
+      "relatedControlIds": [
+        "vivado-settings",
+        "vivado-settings-target-language",
+        "vivado-settings-top",
+        "vivado-sources-set-as-top",
+        "vivado-sources-top-icon"
+      ],
+      "description": "修改明确对象的属性；属性名区分大小写。",
+      "parameters": [
+        "name",
+        "value",
+        "objects"
+      ],
+      "preconditions": [
+        "对象已合法创建或唯一解析",
+        "属性按对象类型白名单；拒绝 Tcl hooks 和任意命令文本"
+      ],
+      "completion": "回读目标属性；不以空返回当作已核对",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "documented_not_exercised",
+      "companionCommandIds": []
+    },
+    {
+      "id": "vivado-tcl-get-runs",
+      "canonicalName": "get_runs",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-get-runs"
+      ],
+      "relatedControlIds": [
+        "vivado-design-runs-table"
+      ],
+      "description": "取得工程中匹配的运行对象。",
+      "parameters": [
+        "patterns"
+      ],
+      "preconditions": [
+        "按当前工程限定范围，名称可匹配多个结果，必须核对数量"
+      ],
+      "completion": "解析实际运行对象，不把 AI 的逻辑 ID 当原生句柄",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "documented_not_exercised",
+      "companionCommandIds": []
+    },
+    {
+      "id": "vivado-tcl-launch-runs",
+      "canonicalName": "launch_runs",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-launch-runs"
+      ],
+      "relatedControlIds": [
+        "vivado-run-synthesis",
+        "vivado-run-implementation"
+      ],
+      "description": "启动指定运行；返回不表示运行完成。",
+      "parameters": [
+        "runs",
+        "jobs",
+        "to_step"
+      ],
+      "preconditions": [
+        "源文件、顶层、器件和约束依赖完整",
+        "控制 jobs 和执行范围；不连接硬件、不运行远端命令或用户 hook"
+      ],
+      "completion": "后续等待并核对目标步骤与结果",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "documented_not_exercised",
+      "companionCommandIds": [
+        "vivado-tcl-get-runs",
+        "vivado-tcl-wait-on-runs"
+      ]
+    },
+    {
+      "id": "vivado-tcl-wait-on-runs",
+      "canonicalName": "wait_on_runs",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-wait-on-runs"
+      ],
+      "relatedControlIds": [
+        "vivado-design-runs-table"
+      ],
+      "description": "等待已启动运行；结束也可能是失败或超时。GUI 交互模式下会忽略此等待，执行器必须选择正确模式。",
+      "parameters": [
+        "runs",
+        "timeout_minutes",
+        "exit_condition"
+      ],
+      "preconditions": [
+        "已启动对应运行",
+        "有界超时；不得无限等待"
+      ],
+      "completion": "仍需检查 PROGRESS、STATUS、目标步骤及所需产物；时序达标另验",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "documented_not_exercised",
+      "companionCommandIds": [
+        "vivado-tcl-get-runs"
+      ]
+    },
+    {
+      "id": "vivado-tcl-get-filesets",
+      "canonicalName": "get_filesets",
+      "interfaceKind": "native_tcl",
+      "sourceIds": [
+        "amd-native-get-filesets"
+      ],
+      "relatedControlIds": [
+        "vivado-sources-panel",
+        "vivado-settings-top"
+      ],
+      "description": "按当前工程中的文件集名称解析对象；必须核对唯一匹配，top 属于文件集而非 project。",
+      "parameters": [
+        "name"
+      ],
+      "preconditions": [
+        "工程已创建",
+        "用明确文件集名称，不使用不受控匹配"
+      ],
+      "completion": "返回文件集对象；不存在时不能编造绑定",
+      "replayStatus": "implemented_offline_not_native_verified",
+      "observationStatus": "installed_help_observed",
+      "companionCommandIds": []
+    }
+  ]
+}

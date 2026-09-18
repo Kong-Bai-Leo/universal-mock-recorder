@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.address",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.address",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "Address Map",
+      "visibleLabel": "Address Map",
+      "aliases": [
+        "地址映射",
+        "address map",
+        "memory map"
+      ],
+      "role": "tab",
+      "purpose": "设置主机到代理接口的地址映射。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "documented_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.address.host",
+      "parentId": "quartus.platform-designer.address",
+      "canonicalName": "Host",
+      "visibleLabel": null,
+      "aliases": [
+        "主机",
+        "主接口",
+        "master"
+      ],
+      "role": "table_axis",
+      "purpose": "文档中位于表格上方的访问发起端。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": [],
+      "parameterRole": "host",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.address.agent",
+      "parentId": "quartus.platform-designer.address",
+      "canonicalName": "Agent",
+      "visibleLabel": null,
+      "aliases": [
+        "代理",
+        "从接口",
+        "slave"
+      ],
+      "role": "table_axis",
+      "purpose": "文档中位于表格左侧的访问目标。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": [],
+      "parameterRole": "agent",
+      "unit": null
+    },
+    {
+      "locatorId": "quartus.platform-designer.address.base-address",
+      "parentId": "quartus.platform-designer.address",
+      "canonicalName": "Base address",
+      "visibleLabel": null,
+      "aliases": [
+        "基地址",
+        "地址起点"
+      ],
+      "role": "cell",
+      "purpose": "单元格中输入该连接的基地址；文档要求按目标地址跨度对齐。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": [],
+      "parameterRole": "base_address",
+      "unit": null
+    }
+  ]
+}

@@ -53,6 +53,15 @@
       "maxMenus": 8,
       "maxMenuItems": 40,
       "maxToolbarControls": 20
+    },
+    "quartus": {
+      "maxActionsPerRequest": 60,
+      "maxScreenshotsPerRequest": 16,
+      "maxKnowledgeEntries": 16,
+      "maxRequestsPerRun": 4,
+      "maxOutputTokens": 12000,
+      "maxContextBytes": 131072,
+      "maxValidationRepairs": 1
     }
   },
   "output": {

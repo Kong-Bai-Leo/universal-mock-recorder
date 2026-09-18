@@ -1,0 +1,68 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "verificationDate": "2026-09-13",
+  "status": "native_replay_and_independent_comparison_pass",
+  "script": "vivado-replay.tcl",
+  "scriptSha256": "4340e8adba01d35605eacbdbbabd31140e1611398b148716f8846cb2c6c0f67c",
+  "fullyReanalysed": false,
+  "analysisScope": {
+    "freshChunks": [
+      12,
+      13,
+      14
+    ],
+    "earlierChunks": "1-11 provenance-checked old model context",
+    "additionalApiRequestsThisNativeRound": 0
+  },
+  "checks": {
+    "exactSourceContents": true,
+    "projectProperties": true,
+    "explicitTopSequence": [
+      "parity_leaf",
+      "parity_top"
+    ],
+    "synthesis": {
+      "status": "synth_design Complete!",
+      "progress": "100%",
+      "needsRefresh": false
+    },
+    "implementation": {
+      "status": "route_design Complete!",
+      "progress": "100%",
+      "needsRefresh": false
+    },
+    "saveReopen": true,
+    "netlist": {
+      "LUT4": 1,
+      "LUT4_INIT": "16'h9669",
+      "IBUF": 4,
+      "OBUF": 1,
+      "nets": 10,
+      "ports": 5
+    },
+    "route": {
+      "routable": 5,
+      "fullyRouted": 5,
+      "errors": 0
+    },
+    "executedScriptHashMatches": true
+  },
+  "firstAttempt": {
+    "status": "failed",
+    "cause": "native out of memory",
+    "recovery": "normal restart of task Vivado and fresh isolated replay; no design/resource/security setting changes"
+  },
+  "offlineTests": {
+    "pass": 117,
+    "fail": 0
+  },
+  "limitations": [
+    "One recorded two-source unconstrained RTL sample only",
+    "No all-session fresh reanalysis",
+    "No XDC, timing closure, simulation, bitstream or hardware verification",
+    "DRC/timing/power warnings remain",
+    "VM recorder package not updated",
+    "Resource exhaustion can recur"
+  ]
+}

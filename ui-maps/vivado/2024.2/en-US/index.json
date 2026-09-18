@@ -1,0 +1,42 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "language": "en-US",
+  "catalogVersion": "vivado-2024.2-state-2",
+  "coverageStatus": "partial",
+  "sections": [
+    {"id":"sources-state","path":"sources-state/ui-map.json"},
+    {
+      "id": "home",
+      "path": "home/ui-map.json"
+    },
+    {
+      "id": "help",
+      "path": "help/ui-map.json"
+    },
+    {
+      "id": "new-project",
+      "path": "new-project/ui-map.json"
+    },
+    {
+      "id": "project",
+      "path": "project/ui-map.json"
+    },
+    {
+      "id": "settings",
+      "path": "settings/ui-map.json"
+    }
+  ],
+  "sourceFile": "sources.json",
+  "commandFile": "command-catalog.json",
+  "observationFile": "live-observation.json",
+  "notCovered": [
+    "Other menus and nested flyouts",
+    "Most icon-only project toolbars require tooltip verification",
+    "Source creation/editor contents and source-file dialogs",
+    "IP Integrator / IP customization / board library",
+    "Simulation, synthesis, implementation and bitstream execution",
+    "Hardware access and licensing entitlement"
+  ],
+  "replayBackend": "bounded_native_plan_offline_tested"
+}

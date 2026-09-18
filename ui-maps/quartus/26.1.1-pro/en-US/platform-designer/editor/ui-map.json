@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.editor",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.editor",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "System editor",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "concept",
+      "purpose": "系统编辑器概念；具体编辑区域未实机扫描。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.editor.system-view",
+      "parentId": "quartus.platform-designer.editor",
+      "canonicalName": "System View",
+      "visibleLabel": "System View",
+      "aliases": [
+        "系统视图"
+      ],
+      "role": "tab",
+      "purpose": "文档中的系统视图；可能显示 Base/End 地址或 mixed，不能视作单个固定地址。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "documented_label",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "pd-address-26.1"
+      ],
+      "evidenceRefs": []
+    }
+  ]
+}

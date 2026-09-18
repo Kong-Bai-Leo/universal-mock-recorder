@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.platform-designer.parameters",
+  "nodes": [
+    {
+      "locatorId": "quartus.platform-designer.parameters",
+      "parentId": "quartus.platform-designer",
+      "canonicalName": "IP parameters",
+      "visibleLabel": null,
+      "aliases": [],
+      "role": "concept",
+      "purpose": "IP实例参数概念；具体IP的字段、单位和默认值尚未扫描。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "locatorId": "quartus.platform-designer.parameters.modifying-ip-parameters",
+      "parentId": "quartus.platform-designer.parameters",
+      "canonicalName": "Modifying IP parameters",
+      "visibleLabel": null,
+      "aliases": [
+        "参数设置",
+        "修改参数"
+      ],
+      "role": "concept",
+      "purpose": "官方目录列出修改IP参数这一主题；精确控件和取值规则待对应IP帮助与实机证据。",
+      "stage": "system-design",
+      "verification": "official_documentation_only",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "semantic_group",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "platform-designer-current"
+      ],
+      "evidenceRefs": []
+    }
+  ]
+}

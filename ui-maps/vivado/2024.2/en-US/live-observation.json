@@ -1,0 +1,254 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "observedAt": "2026-09-12",
+  "captureMethod": "manual_visual_observation_via_same_task_RDP",
+  "coordinateSpace": {
+    "width": 2560,
+    "height": 1440,
+    "units": "pixels",
+    "scope": "observed RDP desktop only; not reusable click coordinates"
+  },
+  "evidenceStorage": "Screenshots displayed in this task's computer-use tool history; no screenshot files exported",
+  "licenseStatus": "not_verified",
+  "nativeProcessIdentity": "not_verified",
+  "clockCaveat": "VM taskbar displayed 1/21/2014; observedAt uses task date. No clock/licensing settings changed.",
+  "observations": [
+    {
+      "id": "obs-home-20260912",
+      "surface": "Getting Started",
+      "facts": [
+        "No project open",
+        "Quick Start, Tasks, Learning Center"
+      ],
+      "regions": [
+        {
+          "controlId": "vivado-home",
+          "bounds": [
+            0,
+            54,
+            2560,
+            1300
+          ]
+        },
+        {
+          "controlId": "vivado-quick-start",
+          "bounds": [
+            26,
+            179,
+            2504,
+            177
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-help-20260912",
+      "surface": "Help menu",
+      "facts": [
+        "13 top-level menu entries observed",
+        "About: Vivado v2024.2 (64-bit), SW Build 5239630; IP Build 5239520; SharedData Build 5239561"
+      ],
+      "regions": []
+    },
+    {
+      "id": "obs-wizard-intro-20260912",
+      "surface": "New Project / intro",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-name-20260912",
+      "surface": "New Project / name",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-type-20260912",
+      "surface": "New Project / type",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-sources-20260912",
+      "surface": "New Project / sources",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-sources-menu-20260912",
+      "surface": "New Project / sources-menu",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-constraints-20260912",
+      "surface": "New Project / constraints",
+      "facts": [],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-part-20260912",
+      "surface": "New Project / part",
+      "facts": [
+        "Observed selected xc7vx485tffg1157-1; not proof of license entitlement"
+      ],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-wizard-summary-20260912",
+      "surface": "New Project / summary",
+      "facts": [
+        "RTL project; no sources; no constraints"
+      ],
+      "regions": [
+        {
+          "controlId": "vivado-new-project",
+          "bounds": [
+            737,
+            350,
+            1085,
+            693
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-project-20260912",
+      "surface": "Project Manager",
+      "facts": [
+        "Isolated vivado_uimap_probe_20260912 created under C:/Users/user",
+        "Target xc7vx485tffg1157-1; target language Verilog; simulator language Mixed",
+        "Top module not defined; synth_1 and impl_1 Not started",
+        "Tcl Console shows create_project with matching name, directory and part; no source content inspected"
+      ],
+      "regions": [
+        {
+          "controlId": "vivado-flow-navigator",
+          "bounds": [
+            0,
+            83,
+            240,
+            1297
+          ]
+        },
+        {
+          "controlId": "vivado-sources-panel",
+          "bounds": [
+            251,
+            120,
+            509,
+            524
+          ]
+        },
+        {
+          "controlId": "vivado-project-summary-panel",
+          "bounds": [
+            773,
+            120,
+            1777,
+            996
+          ]
+        },
+        {
+          "controlId": "vivado-bottom-panel",
+          "bounds": [
+            251,
+            1128,
+            2299,
+            252
+          ]
+        }
+      ]
+    },
+    {
+      "id": "obs-settings-20260912",
+      "surface": "Settings / General",
+      "facts": [
+        "Project Settings and Tool Settings separated",
+        "No settings changed; Cancel used"
+      ],
+      "regions": [
+        {
+          "controlId": "vivado-settings-dialog",
+          "bounds": [
+            847,
+            310,
+            866,
+            773
+          ]
+        }
+      ]
+    }
+  ]
+}

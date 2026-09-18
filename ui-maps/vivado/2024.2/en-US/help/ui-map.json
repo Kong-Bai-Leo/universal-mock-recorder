@@ -1,0 +1,202 @@
+{
+  "application": "Vivado",
+  "version": "2024.2",
+  "section": "help",
+  "controls": [
+    {
+      "id": "vivado-help-1",
+      "parentId": "vivado-menu-help",
+      "label": "Documentation and Tutorials...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-2",
+      "parentId": "vivado-menu-help",
+      "label": "Quick Take Videos...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-3",
+      "parentId": "vivado-menu-help",
+      "label": "What's new in 2024.2",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-4",
+      "parentId": "vivado-menu-help",
+      "label": "Design Hubs",
+      "type": "submenu",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-5",
+      "parentId": "vivado-menu-help",
+      "label": "Quick Help...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-6",
+      "parentId": "vivado-menu-help",
+      "label": "Leave Feedback...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-7",
+      "parentId": "vivado-menu-help",
+      "label": "Search Answer Records...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-8",
+      "parentId": "vivado-menu-help",
+      "label": "Get Technical Support...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-9",
+      "parentId": "vivado-menu-help",
+      "label": "Add Design Tools or Devices...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-10",
+      "parentId": "vivado-menu-help",
+      "label": "Manage License...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-11",
+      "parentId": "vivado-menu-help",
+      "label": "Obtain a License Key...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-12",
+      "parentId": "vivado-menu-help",
+      "label": "Vivado on the Web...",
+      "type": "menuitem",
+      "description": "帮助菜单入口；未执行其后续流程",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "not_exercised"
+    },
+    {
+      "id": "vivado-help-13",
+      "parentId": "vivado-menu-help",
+      "label": "About Vivado...",
+      "type": "menuitem",
+      "description": "读取安装版本与构建号",
+      "observationStatus": "observed",
+      "semanticStatus": "visible_label_only",
+      "observationIds": [
+        "obs-help-20260912"
+      ],
+      "sourceIds": [],
+      "automationId": null,
+      "executionStatus": "opened_and_version_read"
+    }
+  ]
+}

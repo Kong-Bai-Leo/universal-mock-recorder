@@ -7,6 +7,14 @@
     "test": "node --test tests/*.test.mjs",
     "analyze": "node src/analyzer/cli.mjs",
     "analyze:3dsmax": "node src/analyzer/3dsmax-cli.mjs",
+    "analyze:jmp": "node src/analyzer/jmp-cli.mjs",
+    "test:jmp": "node --test tests/jmp.test.mjs",
+    "build:recorder:jmp": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-jmp-recorder.ps1",
+    "package:jmp": "node scripts/package-jmp-recorder.mjs --with-node",
+    "analyze:vivado": "node src/analyzer/vivado-cli.mjs",
+    "test:vivado": "node --test tests/vivado.test.mjs tests/vivado-knowledge.test.mjs",
+    "build:recorder:vivado": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-vivado-recorder.ps1",
+    "package:vivado": "node scripts/package-vivado-recorder.mjs --with-node",
     "build:recorder": "powershell -ExecutionPolicy Bypass -File scripts/build-recorder.ps1",
     "build:recorder:3dsmax": "powershell -ExecutionPolicy Bypass -File scripts/build-3dsmax-recorder.ps1",
     "build:validator": "powershell -ExecutionPolicy Bypass -File scripts/build-validator.ps1",
@@ -14,9 +22,9 @@
     "map:autocad": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/build-autocad-knowledge-base.ps1",
     "test:autocad-map": "pwsh -NoProfile -ExecutionPolicy Bypass -File scripts/test-autocad-knowledge-base.ps1",
     "test:3dsmax-map": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-3dsmax-ui-map.ps1",
-    "analyze:jmp": "node src/analyzer/jmp-cli.mjs",
-    "test:jmp": "node --test tests/jmp.test.mjs",
-    "build:recorder:jmp": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-jmp-recorder.ps1",
-    "package:jmp": "node scripts/package-jmp-recorder.mjs --with-node"
+    "analyze:quartus": "node src/analyzer/quartus-cli.mjs",
+    "build:quartus-project": "node src/analyzer/quartus-build.mjs",
+    "build:recorder:quartus": "powershell -ExecutionPolicy Bypass -File scripts/build-quartus-recorder.ps1",
+    "test:quartus": "node --test tests/quartus-*.test.mjs"
   }
 }

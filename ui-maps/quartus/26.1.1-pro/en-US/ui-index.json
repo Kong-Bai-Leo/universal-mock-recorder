@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "application_index",
+  "mapId": "quartus-26.1.1-pro-en-us",
+  "generatedAt": "2026-09-07T23:01:24.983Z",
+  "application": {
+    "name": "Quartus Prime",
+    "version": "26.1.1",
+    "edition": "Pro",
+    "language": "en-US"
+  },
+  "sources": "sources.json",
+  "liveObservation": "live-observation.json",
+  "verificationReport": "verification-report.json",
+  "sections": [
+    {
+      "id": "application",
+      "map": "application/ui-map.json",
+      "rootLocatorId": "quartus.application"
+    },
+    {
+      "id": "file",
+      "map": "file/ui-map.json",
+      "rootLocatorId": "quartus.file"
+    },
+    {
+      "id": "edit",
+      "map": "edit/ui-map.json",
+      "rootLocatorId": "quartus.edit"
+    },
+    {
+      "id": "view",
+      "map": "view/ui-map.json",
+      "rootLocatorId": "quartus.view"
+    },
+    {
+      "id": "project",
+      "map": "project/ui-map.json",
+      "rootLocatorId": "quartus.project"
+    },
+    {
+      "id": "assignments",
+      "map": "assignments/ui-map.json",
+      "rootLocatorId": "quartus.assignments"
+    },
+    {
+      "id": "processing",
+      "map": "processing/ui-map.json",
+      "rootLocatorId": "quartus.processing"
+    },
+    {
+      "id": "tools",
+      "map": "tools/ui-map.json",
+      "rootLocatorId": "quartus.tools"
+    },
+    {
+      "id": "window",
+      "map": "window/ui-map.json",
+      "rootLocatorId": "quartus.window"
+    },
+    {
+      "id": "help",
+      "map": "help/ui-map.json",
+      "rootLocatorId": "quartus.help"
+    },
+    {
+      "id": "new-project-wizard",
+      "map": "file/new-project-wizard/ui-map.json",
+      "rootLocatorId": "quartus.new-project-wizard"
+    },
+    {
+      "id": "platform-designer",
+      "map": "platform-designer/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer"
+    },
+    {
+      "id": "platform-designer-startup",
+      "map": "platform-designer/startup/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.startup"
+    },
+    {
+      "id": "platform-designer-editor",
+      "map": "platform-designer/editor/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.editor"
+    },
+    {
+      "id": "platform-designer-parameters",
+      "map": "platform-designer/parameters/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.parameters"
+    },
+    {
+      "id": "platform-designer-connections",
+      "map": "platform-designer/connections/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.connections"
+    },
+    {
+      "id": "platform-designer-address",
+      "map": "platform-designer/address/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.address"
+    },
+    {
+      "id": "platform-designer-clocks",
+      "map": "platform-designer/clocks/ui-map.json",
+      "rootLocatorId": "quartus.platform-designer.clocks"
+    }
+  ],
+  "limitations": [
+    "现场范围仅主菜单、首页、About、空工程向导、Platform Designer启动窗口。嵌套子菜单未展开。",
+    "所有behaviorVerification均为not_executed：界面浏览不代表编译、生成或还原成功。",
+    "工程相关设置、Pin Planner编辑区、具体IP参数、时钟复位与连接编辑、许可证和硬件功能未现场验证。",
+    "文档来源跨版本；保留来源版本和readScope，目录条目仅支持功能主题。",
+    "控件坐标、勾选状态、当前值只属于历史观察；后续AI必须以新截图及操作阶段重新识别。",
+    "UI Map仅为本地知识库；运行时API分析、JSON生成与工程构建尚未接入。"
+  ]
+}

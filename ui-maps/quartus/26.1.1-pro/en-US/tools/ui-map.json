@@ -1,0 +1,640 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.tools",
+  "nodes": [
+    {
+      "locatorId": "quartus.tools",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "Tools",
+      "visibleLabel": "Tools",
+      "aliases": [
+        "工具",
+        "tools"
+      ],
+      "role": "menu",
+      "purpose": "工具菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.generate-simulator-setup-script-for-ip",
+      "parentId": "quartus.tools",
+      "canonicalName": "Generate Simulator Setup Script for IP",
+      "visibleLabel": "Generate Simulator Setup Script for IP...",
+      "aliases": [
+        "生成IP仿真设置脚本"
+      ],
+      "role": "menu_item",
+      "purpose": "生成IP仿真设置脚本的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.launch-simulation-library-compiler",
+      "parentId": "quartus.tools",
+      "canonicalName": "Launch Simulation Library Compiler",
+      "visibleLabel": "Launch Simulation Library Compiler",
+      "aliases": [
+        "仿真库编译器"
+      ],
+      "role": "menu_item",
+      "purpose": "仿真库编译器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.launch-design-space-explorer-ii",
+      "parentId": "quartus.tools",
+      "canonicalName": "Launch Design Space Explorer II",
+      "visibleLabel": "Launch Design Space Explorer II",
+      "aliases": [
+        "设计空间探索工具"
+      ],
+      "role": "menu_item",
+      "purpose": "设计空间探索工具的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.run-simulation",
+      "parentId": "quartus.tools",
+      "canonicalName": "Run Simulation",
+      "visibleLabel": "Run Simulation",
+      "aliases": [
+        "运行仿真"
+      ],
+      "role": "submenu",
+      "purpose": "运行仿真的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.timing-analyzer",
+      "parentId": "quartus.tools",
+      "canonicalName": "Timing Analyzer",
+      "visibleLabel": "Timing Analyzer",
+      "aliases": [
+        "时序分析器"
+      ],
+      "role": "menu_item",
+      "purpose": "时序分析器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.chip-planner",
+      "parentId": "quartus.tools",
+      "canonicalName": "Chip Planner",
+      "visibleLabel": "Chip Planner",
+      "aliases": [
+        "芯片规划器"
+      ],
+      "role": "menu_item",
+      "purpose": "芯片规划器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.design-partition-planner",
+      "parentId": "quartus.tools",
+      "canonicalName": "Design Partition Planner",
+      "visibleLabel": "Design Partition Planner",
+      "aliases": [
+        "设计分区规划器"
+      ],
+      "role": "menu_item",
+      "purpose": "设计分区规划器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.interface-planner",
+      "parentId": "quartus.tools",
+      "canonicalName": "Interface Planner",
+      "visibleLabel": "Interface Planner",
+      "aliases": [
+        "接口规划",
+        "interface planner",
+        "接口规划器"
+      ],
+      "role": "menu_item",
+      "purpose": "接口规划器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.netlist-viewers",
+      "parentId": "quartus.tools",
+      "canonicalName": "Netlist Viewers",
+      "visibleLabel": "Netlist Viewers",
+      "aliases": [
+        "网表查看器"
+      ],
+      "role": "submenu",
+      "purpose": "网表查看器的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.signal-tap-logic-analyzer",
+      "parentId": "quartus.tools",
+      "canonicalName": "Signal Tap Logic Analyzer",
+      "visibleLabel": "Signal Tap Logic Analyzer",
+      "aliases": [
+        "Signal",
+        "Tap逻辑分析器"
+      ],
+      "role": "menu_item",
+      "purpose": "Signal Tap逻辑分析器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.in-system-memory-content-editor",
+      "parentId": "quartus.tools",
+      "canonicalName": "In-System Memory Content Editor",
+      "visibleLabel": "In-System Memory Content Editor",
+      "aliases": [
+        "系统内存储器编辑器"
+      ],
+      "role": "menu_item",
+      "purpose": "系统内存储器编辑器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.logic-analyzer-interface-editor",
+      "parentId": "quartus.tools",
+      "canonicalName": "Logic Analyzer Interface Editor",
+      "visibleLabel": "Logic Analyzer Interface Editor",
+      "aliases": [
+        "逻辑分析器接口编辑器"
+      ],
+      "role": "menu_item",
+      "purpose": "逻辑分析器接口编辑器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.in-system-sources-and-probes-editor",
+      "parentId": "quartus.tools",
+      "canonicalName": "In-System Sources and Probes Editor",
+      "visibleLabel": "In-System Sources and Probes Editor",
+      "aliases": [
+        "系统内源与探针编辑器"
+      ],
+      "role": "menu_item",
+      "purpose": "系统内源与探针编辑器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.programmer",
+      "parentId": "quartus.tools",
+      "canonicalName": "Programmer",
+      "visibleLabel": "Programmer",
+      "aliases": [
+        "烧录器",
+        "编程器"
+      ],
+      "role": "menu_item",
+      "purpose": "烧录器 编程器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.jtag-chain-debugger",
+      "parentId": "quartus.tools",
+      "canonicalName": "JTAG Chain Debugger",
+      "visibleLabel": "JTAG Chain Debugger",
+      "aliases": [
+        "JTAG链调试器"
+      ],
+      "role": "menu_item",
+      "purpose": "JTAG链调试器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.fault-injection-debugger",
+      "parentId": "quartus.tools",
+      "canonicalName": "Fault Injection Debugger",
+      "visibleLabel": "Fault Injection Debugger",
+      "aliases": [
+        "故障注入调试器"
+      ],
+      "role": "menu_item",
+      "purpose": "故障注入调试器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.configuration-debugger",
+      "parentId": "quartus.tools",
+      "canonicalName": "Configuration Debugger",
+      "visibleLabel": "Configuration Debugger",
+      "aliases": [
+        "配置调试器"
+      ],
+      "role": "menu_item",
+      "purpose": "配置调试器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.signing-and-encryption-assistant",
+      "parentId": "quartus.tools",
+      "canonicalName": "Signing and Encryption Assistant",
+      "visibleLabel": "Signing and Encryption Assistant",
+      "aliases": [
+        "签名与加密助手"
+      ],
+      "role": "menu_item",
+      "purpose": "签名与加密助手的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.system-debugging-tools",
+      "parentId": "quartus.tools",
+      "canonicalName": "System Debugging Tools",
+      "visibleLabel": "System Debugging Tools",
+      "aliases": [
+        "系统调试工具"
+      ],
+      "role": "submenu",
+      "purpose": "系统调试工具的可见submenu；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.service-configuration-manager-scm",
+      "parentId": "quartus.tools",
+      "canonicalName": "Service Configuration Manager (SCM)",
+      "visibleLabel": "Service Configuration Manager (SCM)",
+      "aliases": [
+        "服务配置管理器"
+      ],
+      "role": "menu_item",
+      "purpose": "服务配置管理器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.power-and-thermal-analyzer",
+      "parentId": "quartus.tools",
+      "canonicalName": "Power and Thermal Analyzer",
+      "visibleLabel": "Power and Thermal Analyzer",
+      "aliases": [
+        "功耗热分析器"
+      ],
+      "role": "menu_item",
+      "purpose": "功耗热分析器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.ip-catalog",
+      "parentId": "quartus.tools",
+      "canonicalName": "IP Catalog",
+      "visibleLabel": "IP Catalog",
+      "aliases": [
+        "IP目录",
+        "ip catalog",
+        "IP库"
+      ],
+      "role": "menu_item",
+      "purpose": "IP目录 IP库的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.platform-designer",
+      "parentId": "quartus.tools",
+      "canonicalName": "Platform Designer",
+      "visibleLabel": "Platform Designer",
+      "aliases": [
+        "平台设计器启动",
+        "platform designer startup",
+        "系统集成",
+        "平台设计器"
+      ],
+      "role": "menu_item",
+      "purpose": "系统集成 平台设计器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ],
+      "opensMap": "platform-designer/ui-map.json"
+    },
+    {
+      "locatorId": "quartus.tools.visual-designer-studio",
+      "parentId": "quartus.tools",
+      "canonicalName": "Visual Designer Studio",
+      "visibleLabel": "Visual Designer Studio",
+      "aliases": [
+        "可视化设计工作室"
+      ],
+      "role": "menu_item",
+      "purpose": "可视化设计工作室的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.example-design-manager",
+      "parentId": "quartus.tools",
+      "canonicalName": "Example Design Manager",
+      "visibleLabel": "Example Design Manager",
+      "aliases": [
+        "示例设计管理器"
+      ],
+      "role": "menu_item",
+      "purpose": "示例设计管理器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.tcl-scripts",
+      "parentId": "quartus.tools",
+      "canonicalName": "Tcl Scripts",
+      "visibleLabel": "Tcl Scripts...",
+      "aliases": [
+        "Tcl脚本"
+      ],
+      "role": "menu_item",
+      "purpose": "Tcl脚本的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.customize",
+      "parentId": "quartus.tools",
+      "canonicalName": "Customize",
+      "visibleLabel": "Customize...",
+      "aliases": [
+        "自定义"
+      ],
+      "role": "menu_item",
+      "purpose": "自定义的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.options",
+      "parentId": "quartus.tools",
+      "canonicalName": "Options",
+      "visibleLabel": "Options...",
+      "aliases": [
+        "选项"
+      ],
+      "role": "menu_item",
+      "purpose": "选项的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.license-setup",
+      "parentId": "quartus.tools",
+      "canonicalName": "License Setup",
+      "visibleLabel": "License Setup...",
+      "aliases": [
+        "许可证设置"
+      ],
+      "role": "menu_item",
+      "purpose": "许可证设置的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.tools.install-devices",
+      "parentId": "quartus.tools",
+      "canonicalName": "Install Devices",
+      "visibleLabel": "Install Devices...",
+      "aliases": [
+        "安装器件"
+      ],
+      "role": "menu_item",
+      "purpose": "安装器件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.tools-menu"
+      ]
+    }
+  ]
+}

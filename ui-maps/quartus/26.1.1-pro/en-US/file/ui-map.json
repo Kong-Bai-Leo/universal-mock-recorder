@@ -1,0 +1,483 @@
+{
+  "schemaVersion": "1.0",
+  "mapType": "semantic_ui_section",
+  "mapId": "quartus.file",
+  "nodes": [
+    {
+      "locatorId": "quartus.file",
+      "parentId": "quartus.main-menu",
+      "canonicalName": "File",
+      "visibleLabel": "File",
+      "aliases": [
+        "文件",
+        "file menu",
+        "文件菜单"
+      ],
+      "role": "menu",
+      "purpose": "文件菜单。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [
+        "help-index-25.1.1"
+      ],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.new",
+      "parentId": "quartus.file",
+      "canonicalName": "New",
+      "visibleLabel": "New...",
+      "aliases": [],
+      "role": "menu_item",
+      "purpose": "New的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.open",
+      "parentId": "quartus.file",
+      "canonicalName": "Open",
+      "visibleLabel": "Open...",
+      "aliases": [
+        "打开",
+        "open"
+      ],
+      "role": "menu_item",
+      "purpose": "打开的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.close",
+      "parentId": "quartus.file",
+      "canonicalName": "Close",
+      "visibleLabel": "Close",
+      "aliases": [
+        "关闭",
+        "close"
+      ],
+      "role": "menu_item",
+      "purpose": "关闭的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.new-project-wizard",
+      "parentId": "quartus.file",
+      "canonicalName": "New Project Wizard",
+      "visibleLabel": "New Project Wizard...",
+      "aliases": [
+        "新建工程向导",
+        "新建项目",
+        "new project",
+        "新建工程",
+        "向导"
+      ],
+      "role": "menu_item",
+      "purpose": "新建工程 向导的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ],
+      "opensMap": "file/new-project-wizard/ui-map.json"
+    },
+    {
+      "locatorId": "quartus.file.open-project",
+      "parentId": "quartus.file",
+      "canonicalName": "Open Project",
+      "visibleLabel": "Open Project...",
+      "aliases": [
+        "打开工程",
+        "home open project"
+      ],
+      "role": "menu_item",
+      "purpose": "打开工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.open-example-design",
+      "parentId": "quartus.file",
+      "canonicalName": "Open Example Design",
+      "visibleLabel": "Open Example Design...",
+      "aliases": [
+        "打开示例设计",
+        "home open example design",
+        "打开示例工程"
+      ],
+      "role": "menu_item",
+      "purpose": "打开示例工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.save-project",
+      "parentId": "quartus.file",
+      "canonicalName": "Save Project",
+      "visibleLabel": "Save Project",
+      "aliases": [
+        "保存工程"
+      ],
+      "role": "menu_item",
+      "purpose": "保存工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.close-project",
+      "parentId": "quartus.file",
+      "canonicalName": "Close Project",
+      "visibleLabel": "Close Project",
+      "aliases": [
+        "关闭工程"
+      ],
+      "role": "menu_item",
+      "purpose": "关闭工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.save",
+      "parentId": "quartus.file",
+      "canonicalName": "Save",
+      "visibleLabel": "Save",
+      "aliases": [
+        "保存",
+        "save"
+      ],
+      "role": "menu_item",
+      "purpose": "保存的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.save-as",
+      "parentId": "quartus.file",
+      "canonicalName": "Save As",
+      "visibleLabel": "Save As...",
+      "aliases": [
+        "另存为",
+        "另存"
+      ],
+      "role": "menu_item",
+      "purpose": "另存为的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.save-all",
+      "parentId": "quartus.file",
+      "canonicalName": "Save All",
+      "visibleLabel": "Save All",
+      "aliases": [
+        "全部保存"
+      ],
+      "role": "menu_item",
+      "purpose": "全部保存的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.file-properties",
+      "parentId": "quartus.file",
+      "canonicalName": "File Properties",
+      "visibleLabel": "File Properties...",
+      "aliases": [
+        "文件属性"
+      ],
+      "role": "menu_item",
+      "purpose": "文件属性的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.create-update",
+      "parentId": "quartus.file",
+      "canonicalName": "Create / Update",
+      "visibleLabel": "Create / Update",
+      "aliases": [
+        "创建",
+        "更新"
+      ],
+      "role": "menu_item",
+      "purpose": "创建 更新的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.export",
+      "parentId": "quartus.file",
+      "canonicalName": "Export",
+      "visibleLabel": "Export...",
+      "aliases": [
+        "导出"
+      ],
+      "role": "menu_item",
+      "purpose": "导出的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.convert-programming-files",
+      "parentId": "quartus.file",
+      "canonicalName": "Convert Programming Files",
+      "visibleLabel": "Convert Programming Files...",
+      "aliases": [
+        "转换编程文件"
+      ],
+      "role": "menu_item",
+      "purpose": "转换编程文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.programming-file-generator",
+      "parentId": "quartus.file",
+      "canonicalName": "Programming File Generator",
+      "visibleLabel": "Programming File Generator...",
+      "aliases": [
+        "编程文件生成器"
+      ],
+      "role": "menu_item",
+      "purpose": "编程文件生成器的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.page-setup",
+      "parentId": "quartus.file",
+      "canonicalName": "Page Setup",
+      "visibleLabel": "Page Setup...",
+      "aliases": [
+        "页面设置"
+      ],
+      "role": "menu_item",
+      "purpose": "页面设置的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.print-preview",
+      "parentId": "quartus.file",
+      "canonicalName": "Print Preview",
+      "visibleLabel": "Print Preview",
+      "aliases": [
+        "打印预览"
+      ],
+      "role": "menu_item",
+      "purpose": "打印预览的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.print",
+      "parentId": "quartus.file",
+      "canonicalName": "Print",
+      "visibleLabel": "Print...",
+      "aliases": [
+        "打印"
+      ],
+      "role": "menu_item",
+      "purpose": "打印的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.recent-files",
+      "parentId": "quartus.file",
+      "canonicalName": "Recent Files",
+      "visibleLabel": "Recent Files",
+      "aliases": [
+        "最近文件"
+      ],
+      "role": "menu_item",
+      "purpose": "最近文件的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.recent-projects",
+      "parentId": "quartus.file",
+      "canonicalName": "Recent Projects",
+      "visibleLabel": "Recent Projects",
+      "aliases": [
+        "最近工程"
+      ],
+      "role": "menu_item",
+      "purpose": "最近工程的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    },
+    {
+      "locatorId": "quartus.file.exit",
+      "parentId": "quartus.file",
+      "canonicalName": "Exit",
+      "visibleLabel": "Exit",
+      "aliases": [
+        "退出",
+        "exit"
+      ],
+      "role": "menu_item",
+      "purpose": "退出的可见menu_item；具体结果仍需操作前后证据确认。",
+      "stage": "application-navigation",
+      "verification": "live_visual_observed",
+      "behaviorVerification": "not_executed",
+      "labelFidelity": "observed_exact",
+      "nativeIdentifier": null,
+      "sourceRefs": [],
+      "evidenceRefs": [
+        "qev.file-menu"
+      ]
+    }
+  ]
+}
