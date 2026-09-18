@@ -1,0 +1,30 @@
+{
+  "accessed": "2026-09-11",
+  "sources": [
+    {
+      "id": "jmp19-distribution-launch",
+      "title": "JMP 19 Basic Analysis: Distribution launch window",
+      "url": "https://www.jmp.com/content/dam/jmp/documents/en/support/jmp19/basic-analysis.pdf",
+      "accessed": "2026-09-12",
+      "scope": "Distribution launcher role meanings; all visible launcher controls separately observed in Trial 19.1.5"
+    },
+    {
+      "id": "jmp19-help",
+      "title": "JMP 19.1 Help",
+      "url": "https://www.jmp.com/support/help/en/19.1/",
+      "scope": "Table creation/editing, analysis, JSL and saving; installed patch 19.1.5 verified separately"
+    },
+    {
+      "id": "jmp19-user-guide",
+      "title": "Using JMP 19",
+      "url": "https://www.jmp.com/content/dam/jmp/documents/en/support/jmp19/using-jmp.pdf",
+      "scope": "Fit Y by X roles, report red triangle Fit Line, Save Script To Data Table"
+    },
+    {
+      "id": "jsl-distribution",
+      "title": "JMP Scripting Index: Distribution",
+      "url": "https://jsl.jmp.com/All%20Categories/Objects/Distribution.html",
+      "scope": "Official Distribution API; not a guarantee of every option on Trial"
+    }
+  ]
+}

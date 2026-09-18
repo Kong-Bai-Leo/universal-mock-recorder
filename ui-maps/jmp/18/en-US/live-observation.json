@@ -1,0 +1,21 @@
+{
+  "date":"2026-09-17",
+  "machine":"old VM / VM2",
+  "resolution":[2560,1440],
+  "application":"JMP Pro 18.0.0 (746439)",
+  "language":"en-US",
+  "operatingSystem":"Windows Server 2022 Datacenter",
+  "transport":"Computer Use on existing RDP; recorder must run inside VM",
+  "evidence":"Live Computer Use screenshots in this task; no persistent image bytes exported from the Computer Use tool",
+  "observations":[
+    {"id":"jmp18-analyze-20260917","surface":"table > Analyze","bounds":[65,81,257,357],"map":"analyze/ui-map.json","note":"Distribution opened on task-owned empty table; other entries observed, submenus not expanded"},
+    {"id":"jmp18-distribution-launch-20260917","surface":"Analyze > Distribution","windowBounds":[76,69,490,250],"map":"distribution/ui-map.json","note":"Column 1 selected in available list; Y still required; no analysis executed. Cancelled."},
+    {"id":"jmp18-new-menu-20260917","surface":"File > New","bounds":[278,95,247,244],"note":"Data Table/JSL Script/Python Script/Journal/Database Query/Project/Application/Dashboard/Add-In/Workflow visible. Data Table exercised."},
+    {"id":"jmp18-empty-table-20260917","surface":"new Untitled data table","windowBounds":[38,31,718,496],"map":"table/ui-map.json","note":"Default Column 1, All rows 0; Columns/Rows/scripts/grid visible"},
+    {"id":"jmp18-column-info-20260917","surface":"Column 1 header double click","windowBounds":[76,69,535,299],"map":"table/ui-map.json","note":"Default Numeric, Continuous, Best width12, Missing/Empty, row count0; no values changed"},
+    {"id":"jmp18-about-20260917","surface":"Help > About JMP","windowBounds":[1020,478,520,438],"result":"18.0.0 (746439), Pro; third-party modification marker visible; license authenticity not verified; no licensing changes"},
+    {"id":"jmp18-help-20260917","surface":"Home > Help","bounds":[166,94,280,352],"map":"help/ui-map.json","note":"About opened and closed; other entries only observed"},
+    {"id":"jmp18-home-file-20260917","surface":"Home > File","bounds":[0,94,279,507],"map":"file/ui-map.json","note":"Home empty; Close/Save/Save As/Revert/Export/Print group disabled"}
+  ],
+  "note":"Bounds describe these observations only and must never be reused as fixed replay selectors. UIA IDs cannot be read through this RDP viewer and are not invented."
+}

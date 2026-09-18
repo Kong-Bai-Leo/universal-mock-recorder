@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Automation;
 using System.Windows.Forms;
@@ -40,6 +41,52 @@ namespace UniversalMockRecorder
         public static readonly bool FilterToTargetProcess = true;
         public static readonly bool RequiresMockScript = false;
         public static readonly bool RequiresReplayFile = false;
+#elif JMP
+        public const string ApplicationId = "jmp";
+        public const string ApplicationName = "JMP";
+        public const string ApplicationVersion = "unknown";
+        public const string Language = "en-US";
+        public const string WindowTitle = "JMP 操作录制器";
+        public const string Header = "在 JMP 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "jmp";
+        public const string UiMapRoot = "";
+        public const string ReplayFormat = "jmp-jsl";
+        public const string GenerateOptionText = "仅本地保存；正式分析另行确认上传";
+        public const string AnalysisScriptFile = "analyze-jmp-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\replay-plan.json";
+        public const string ReplayFile = "jmp-replay.jsl";
+        public const string ReplayDescription = "可在 JMP 中直接运行的单文件 JSL 脚本";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
+#elif STATA
+        public const string ApplicationId = "stata";
+        public const string ApplicationName = "Stata";
+        public const string ApplicationVersion = "unknown";
+        public const string Language = "en-US";
+        public const string WindowTitle = "Stata 操作录制器";
+        public const string Header = "在 Stata 所在的 Windows 会话中录制";
+        public const string StopButtonText = "停止并保存";
+        public const string TargetProcess = "StataMP-64";
+        public const string UiMapRoot = "";
+        public const string ReplayFormat = "stata-do";
+        public const string GenerateOptionText = "仅本地保存；正式分析另行确认上传";
+        public const string AnalysisScriptFile = "analyze-stata-recording.ps1";
+        public const string StructuredProgramFile = "_internal\\replay-plan.json";
+        public const string ReplayFile = "stata-replay.do";
+        public const string ReplayDescription = "可在 Stata 中运行的单文件 do 脚本";
+        public static readonly bool SupportsAutoCadActionRecorder = false;
+        public static readonly bool SupportsAnalysis = true;
+        public static readonly bool EnableCadCommandHeuristics = false;
+        public static readonly bool CaptureThreeDsMaxTransformRegions = false;
+        public static readonly bool FilterToTargetProcess = true;
+        public static readonly bool RequiresMockScript = false;
+        public static readonly bool RequiresReplayFile = true;
 #elif THREEDSMAX
         public const string ApplicationId = "autodesk-3dsmax";
         public const string ApplicationName = "Autodesk 3ds Max";
@@ -90,7 +137,13 @@ namespace UniversalMockRecorder
 
         public static bool MatchesTargetProcess(string processName)
         {
+#if STATA
+            return string.Equals(processName, "StataMP-64", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "StataSE-64", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(processName, "StataBE-64", StringComparison.OrdinalIgnoreCase);
+#else
             return string.Equals(processName, TargetProcess, StringComparison.OrdinalIgnoreCase);
+#endif
         }
     }
 
@@ -111,6 +164,10 @@ namespace UniversalMockRecorder
             Application.SetCompatibleTextRenderingDefault(false);
 #if ORCAD
             Application.Run(new OrcadRecorderForm());
+#elif JMP
+            Application.Run(new JmpRecorderForm());
+#elif STATA
+            Application.Run(new StataRecorderForm());
 #else
             Application.Run(new RecorderForm());
 #endif
@@ -765,6 +822,15 @@ namespace UniversalMockRecorder
         private readonly string _outputDirectory;
         private readonly string _screenshotDirectory;
         private readonly bool _captureUiAutomationTargets;
+#if JMP || STATA
+        private readonly string _configuredLanguage;
+        private TargetCapture _targetCapture;
+        private readonly object _targetLifecycleLock = new object();
+        private System.Threading.Timer _targetWatchdog;
+        private bool _targetLost;
+        private string _targetLostAtUtc;
+        private string _manifestCreatedAtUtc;
+#endif
         private readonly BlockingCollection<RawInputEvent> _queue = new BlockingCollection<RawInputEvent>();
         private readonly LowLevelMouseProc _mouseProc;
         private readonly LowLevelKeyboardProc _keyboardProc;
@@ -776,7 +842,7 @@ namespace UniversalMockRecorder
         private long _eventCount;
         private long _lastMoveMs;
         private Point _lastMovePoint;
-#if ORCAD
+#if JMP || STATA || ORCAD
         private WindowInfo _kiCadPointerDownWindow;
         private UiTarget _kiCadPointerDownTarget;
         private string _kiCadPointerDownButton;
@@ -793,11 +859,14 @@ namespace UniversalMockRecorder
         private volatile bool _privacyPaused;
         private volatile bool _recording;
 
-        public RecorderEngine(string outputDirectory, bool captureUiAutomationTargets = true)
+        public RecorderEngine(string outputDirectory, bool captureUiAutomationTargets = true, string configuredLanguage = null)
         {
             _outputDirectory = outputDirectory;
             _screenshotDirectory = Path.Combine(outputDirectory, "screenshots");
             _captureUiAutomationTargets = captureUiAutomationTargets;
+#if JMP || STATA
+            _configuredLanguage = configuredLanguage;
+#endif
             _mouseProc = MouseHookCallback;
             _keyboardProc = KeyboardHookCallback;
         }
@@ -805,10 +874,147 @@ namespace UniversalMockRecorder
         public bool IsRecording { get { return _recording; } }
         public long EventCount { get { return Interlocked.Read(ref _eventCount); } }
 
-#if ORCAD
+        private bool MatchesCapturedTarget(WindowInfo window)
+        {
+            if (window == null || !RecorderProfile.MatchesTargetProcess(window.ProcessName)) return false;
+#if JMP || STATA
+            return _targetCapture != null && window.ProcessId == _targetCapture.ProcessId;
+#else
+            return true;
+#endif
+        }
+
+#if JMP || STATA
+        private sealed class TargetCapture
+        {
+            public int ProcessId;
+            public int SessionId;
+            public long StartedAtUtcTicks;
+            public string ProcessName;
+            public string ApplicationVersion;
+            public string VersionSource;
+            public string ProductVersion;
+            public string FileVersion;
+            public string ProductName;
+            public string ApplicationEdition;
+            public string UiMapRoot;
+        }
+
+        private static TargetCapture ResolveTargetCapture()
+        {
+            var currentSession = Process.GetCurrentProcess().SessionId;
+            var candidates = new List<Process>();
+            foreach (var process in Process.GetProcesses())
+            {
+                try
+                {
+                    if (process.SessionId == currentSession &&
+                        RecorderProfile.MatchesTargetProcess(process.ProcessName) &&
+                        process.MainWindowHandle != IntPtr.Zero)
+                        candidates.Add(process);
+                    else process.Dispose();
+                }
+                catch { process.Dispose(); }
+            }
+            try
+            {
+                if (candidates.Count != 1)
+                    throw new InvalidOperationException("当前 Windows 会话中必须恰有一个可见的 " + RecorderProfile.ApplicationName +
+                        " 目标实例；检测到 " + candidates.Count + " 个。请关闭多余实例后重试。不会猜测版本或混录不同实例。");
+                var target = candidates[0];
+                var capture = new TargetCapture {
+                    ProcessId = target.Id, SessionId = currentSession, ProcessName = target.ProcessName,
+                    StartedAtUtcTicks = target.StartTime.ToUniversalTime().Ticks,
+                    ApplicationVersion = "unknown", VersionSource = "unknown", ApplicationEdition = "unknown", UiMapRoot = ""
+                };
+                try
+                {
+                    var versionInfo = FileVersionInfo.GetVersionInfo(target.MainModule.FileName);
+                    capture.ProductVersion = versionInfo.ProductVersion;
+                    capture.FileVersion = versionInfo.FileVersion;
+                    capture.ProductName = versionInfo.ProductName;
+                    var productVersion = NumericVersion(capture.ProductVersion);
+                    var fileVersion = NumericVersion(capture.FileVersion);
+                    if (productVersion != null) {
+                        capture.ApplicationVersion = productVersion;
+                        capture.VersionSource = "ProductVersion";
+                    } else if (fileVersion != null) {
+                        capture.ApplicationVersion = fileVersion;
+                        capture.VersionSource = "FileVersion";
+                    }
+                }
+                catch { /* File metadata unavailable: preserve unknown rather than guessing. */ }
+#if JMP
+                var editionEvidence = (capture.ProductName ?? "") + " " + (target.MainWindowTitle ?? "");
+                var saysPro = Regex.IsMatch(editionEvidence, @"\bPro\b", RegexOptions.IgnoreCase);
+                var saysTrial = Regex.IsMatch(editionEvidence, @"\bTrial\b", RegexOptions.IgnoreCase);
+                if (saysPro && !saysTrial) capture.ApplicationEdition = "Pro";
+                else if (saysTrial && !saysPro) capture.ApplicationEdition = "Trial";
+                if (Regex.IsMatch(capture.ApplicationVersion, @"^18\.0(?:\.|$)")) capture.UiMapRoot = "ui-maps/jmp/18/en-US";
+                else if (Regex.IsMatch(capture.ApplicationVersion, @"^19\.1(?:\.|$)")) capture.UiMapRoot = "ui-maps/jmp/19.1/en-US";
+#else
+                if (string.Equals(capture.ProcessName, "StataMP-64", StringComparison.OrdinalIgnoreCase)) capture.ApplicationEdition = "MP";
+                else if (string.Equals(capture.ProcessName, "StataSE-64", StringComparison.OrdinalIgnoreCase)) capture.ApplicationEdition = "SE";
+                else if (string.Equals(capture.ProcessName, "StataBE-64", StringComparison.OrdinalIgnoreCase)) capture.ApplicationEdition = "BE";
+#endif
+                return capture;
+            }
+            finally { foreach (var candidate in candidates) candidate.Dispose(); }
+        }
+
+        private static string NumericVersion(string value)
+        {
+            if (string.IsNullOrWhiteSpace(value)) return null;
+            var match = Regex.Match(value, @"^\s*(\d+(?:\.\d+)*)(?=$|[^\d.])");
+            return match.Success ? match.Groups[1].Value : null;
+        }
+
+        private static string JsonString(string value)
+        {
+            if (value == null) value = "";
+            var escaped = new StringBuilder("\"");
+            foreach (var ch in value)
+            {
+                if (ch == '\\') escaped.Append("\\\\");
+                else if (ch == '"') escaped.Append("\\\"");
+                else if (ch < 0x20) escaped.Append("\\u").Append(((int)ch).ToString("x4"));
+                else escaped.Append(ch);
+            }
+            return escaped.Append('"').ToString();
+        }
+
+        private void CheckTargetAlive()
+        {
+            lock (_targetLifecycleLock)
+            {
+                if (!_recording || _targetCapture == null || _targetLost) return;
+                bool alive = false;
+                try
+                {
+                    using (var target = Process.GetProcessById(_targetCapture.ProcessId))
+                        alive = !target.HasExited && target.SessionId == _targetCapture.SessionId &&
+                            string.Equals(target.ProcessName, _targetCapture.ProcessName, StringComparison.OrdinalIgnoreCase) &&
+                            target.StartTime.ToUniversalTime().Ticks == _targetCapture.StartedAtUtcTicks;
+                }
+                catch { /* Exit, PID reuse, or inaccessible identity: stop trusting the target. */ }
+                if (alive) return;
+                _targetLost = true;
+                _targetLostAtUtc = DateTimeOffset.UtcNow.ToString("o");
+                _privacyPaused = true;
+                Enqueue(new RawInputEvent { Id = NextId(), EventType = "target_lost", TimestampMs = UtcNowMs(),
+                    Error = "Frozen target process exited, changed identity, or became inaccessible." });
+                WriteManifest();
+            }
+        }
+#endif
+
+#if JMP || STATA || ORCAD
         public bool IsPaused { get { return _privacyPaused; } }
         public void TogglePause()
         {
+#if JMP || STATA
+            if (_targetLost) return;
+#endif
             _privacyPaused = !_privacyPaused;
             Enqueue(new RawInputEvent { Id = NextId(), EventType = _privacyPaused ? "privacy_pause" : "privacy_resume", TimestampMs = UtcNowMs() });
         }
@@ -817,6 +1023,14 @@ namespace UniversalMockRecorder
         public void Start()
         {
             if (_recording) return;
+#if JMP || STATA
+            if (!string.Equals(_configuredLanguage, "en-US", StringComparison.Ordinal))
+                throw new InvalidOperationException("请先在录制入口确认目标应用界面为英文 (en-US)。");
+            _targetCapture = ResolveTargetCapture();
+            _targetLost = false;
+            _targetLostAtUtc = null;
+            _manifestCreatedAtUtc = DateTimeOffset.UtcNow.ToString("o");
+#endif
             Directory.CreateDirectory(_screenshotDirectory);
             _writer = new StreamWriter(Path.Combine(_outputDirectory, "events.jsonl"), false, new UTF8Encoding(false));
             _writer.AutoFlush = true;
@@ -836,12 +1050,24 @@ namespace UniversalMockRecorder
                 throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error(), "无法安装全局输入监听器");
             }
             _recording = true;
+#if JMP || STATA
+            _targetWatchdog = new System.Threading.Timer(delegate { CheckTargetAlive(); }, null, 1000, 1000);
+#endif
         }
 
         public void Stop()
         {
             if (!_recording && _worker == null) return;
+#if JMP || STATA
+            if (_targetWatchdog != null) { _targetWatchdog.Dispose(); _targetWatchdog = null; }
+            lock (_targetLifecycleLock)
+            {
+                CheckTargetAlive();
+                _recording = false;
+            }
+#else
             _recording = false;
+#endif
             if (_mouseHook != IntPtr.Zero) UnhookWindowsHookEx(_mouseHook);
             if (_keyboardHook != IntPtr.Zero) UnhookWindowsHookEx(_keyboardHook);
             _mouseHook = IntPtr.Zero;
@@ -873,14 +1099,28 @@ namespace UniversalMockRecorder
                 if (eventType != null)
                 {
                     var now = UtcNowMs();
-#if ORCAD
+#if JMP || STATA || ORCAD
                     var eventWindow = ReadWindowAtPoint(input.Point.X, input.Point.Y);
                     var eventButton = MouseButton(message.ToInt32());
                     var continuingGesture = _kiCadPointerDownWindow != null &&
                         (eventType == "mouse_move" ||
                             (eventType == "mouse_up" && eventButton == _kiCadPointerDownButton));
+#if JMP || STATA
+                    // A drag leaving the frozen target must not inherit its window identity.
+                    if (continuingGesture && !MatchesCapturedTarget(eventWindow))
+                    {
+                        if (eventType == "mouse_up")
+                        {
+                            _kiCadPointerDownWindow = null;
+                            _kiCadPointerDownTarget = null;
+                            _kiCadPointerDownButton = null;
+                        }
+                        return CallNextHookEx(_mouseHook, code, message, data);
+                    }
+#else
                     if (continuingGesture) eventWindow = _kiCadPointerDownWindow;
-                    if (eventWindow == null || !RecorderProfile.MatchesTargetProcess(eventWindow.ProcessName))
+#endif
+                    if (!MatchesCapturedTarget(eventWindow))
                         return CallNextHookEx(_mouseHook, code, message, data);
 #endif
                     if (eventType == "mouse_move")
@@ -902,7 +1142,7 @@ namespace UniversalMockRecorder
                         WheelDelta = message.ToInt32() == WmMouseWheel ? (short)((input.MouseData >> 16) & 0xffff) : 0,
                         Modifiers = GetModifiers().ToArray()
                     };
-#if ORCAD
+#if JMP || STATA || ORCAD
                     rawInput.Window = eventWindow;
                     rawInput.Target = continuingGesture ? _kiCadPointerDownTarget :
                         (_captureUiAutomationTargets && eventType != "mouse_move" ? ReadTargetAt(rawInput.X, rawInput.Y) : null);
@@ -944,7 +1184,7 @@ namespace UniversalMockRecorder
 
                 if (input.VirtualKeyCode == (uint)Keys.F12 && modifiers.Contains("CTRL") && modifiers.Contains("SHIFT"))
                 {
-#if ORCAD
+#if JMP || STATA || ORCAD
                     TogglePause();
 #else
                     _privacyPaused = !_privacyPaused;
@@ -957,9 +1197,9 @@ namespace UniversalMockRecorder
                     if (IsModifierKey(input.VirtualKeyCode))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 
-#if ORCAD
+#if JMP || STATA || ORCAD
                     var eventWindow = ReadForegroundWindow();
-                    if (eventWindow == null || !RecorderProfile.MatchesTargetProcess(eventWindow.ProcessName))
+                    if (!MatchesCapturedTarget(eventWindow))
                         return CallNextHookEx(_keyboardHook, code, message, data);
 #endif
                     UiTarget focusedTarget = null;
@@ -978,7 +1218,7 @@ namespace UniversalMockRecorder
                         Modifiers = modifiers.ToArray(),
                         Target = focusedTarget
                     };
-#if ORCAD
+#if JMP || STATA || ORCAD
                     rawInput.Window = eventWindow;
                     var pointer = Cursor.Position;
                     rawInput.X = pointer.X;
@@ -1019,26 +1259,30 @@ namespace UniversalMockRecorder
             {
                 try
                 {
-#if ORCAD
-                    if (input.EventType == "privacy_pause" || input.EventType == "privacy_resume")
+#if JMP || STATA || ORCAD
+                    if (input.EventType == "privacy_pause" || input.EventType == "privacy_resume"
+#if JMP || STATA
+                        || input.EventType == "target_lost"
+#endif
+                        )
                     {
                         WriteEvent(input);
                         continue;
                     }
 #endif
-#if !ORCAD
+#if !JMP && !STATA && !ORCAD
                     input.Window = input.EventType.StartsWith("mouse_")
                         ? ReadWindowAtPoint(input.X, input.Y)
                         : ReadForegroundWindow();
 #endif
                     if (input.Window != null && input.Window.ProcessId == Process.GetCurrentProcess().Id) continue;
                     if (RecorderProfile.FilterToTargetProcess &&
-                        (input.Window == null || !RecorderProfile.MatchesTargetProcess(input.Window.ProcessName)))
+                        !MatchesCapturedTarget(input.Window))
                         continue;
 
                     if (input.EventType.StartsWith("mouse_"))
                     {
-#if !ORCAD
+#if !JMP && !STATA && !ORCAD
                         input.Target = _captureUiAutomationTargets ? ReadTargetAt(input.X, input.Y) : null;
 #endif
                         if (input.Window != null && input.Window.Width > 0 && input.Window.Height > 0)
@@ -1054,7 +1298,7 @@ namespace UniversalMockRecorder
                         input.ScreenshotBefore = SaveScreenshot(input.Id + "-before", input.Snapshot);
                         input.ScreenshotBeforeTimestampMs = input.SnapshotTimestampMs;
                         Thread.Sleep(160);
-#if ORCAD
+#if JMP || STATA || ORCAD
                         if (CanCaptureKiCadAfter())
 #endif
                         using (var after = CaptureScreenBitmap())
@@ -1073,13 +1317,13 @@ namespace UniversalMockRecorder
                         input.ScreenshotTimestampMs = input.SnapshotTimestampMs;
                     }
                     else if (ShouldCaptureScreenshot(input)
-#if ORCAD
+#if JMP || STATA || ORCAD
                         && CanCaptureKiCadAfter()
 #endif
                         )
                     {
                         Thread.Sleep(120);
-#if ORCAD
+#if JMP || STATA || ORCAD
                         if (CanCaptureKiCadAfter())
 #endif
                         using (var after = CaptureScreenBitmap())
@@ -1148,7 +1392,7 @@ namespace UniversalMockRecorder
                         }
                     }
 
-#if ORCAD
+#if JMP || STATA || ORCAD
                     CaptureJmpDelayedObservation(input);
 #endif
                     WriteEvent(input);
@@ -1172,7 +1416,7 @@ namespace UniversalMockRecorder
             }
         }
 
-#if ORCAD
+#if JMP || STATA || ORCAD
         // Applications can create a report after the ordinary 120/160 ms after-frame.
         // Preserve that frame and add a later observation only while the same
         // input remains the most recent one. This is not proof of completion.
@@ -1213,16 +1457,36 @@ namespace UniversalMockRecorder
                 "  \"platform\": \"windows\",\n" +
                 "  \"applicationProfile\": \"" + RecorderProfile.ApplicationId + "\",\n" +
                 "  \"applicationName\": \"" + RecorderProfile.ApplicationName + "\",\n" +
+#if JMP || STATA
+                "  \"applicationVersion\": " + JsonString(_targetCapture.ApplicationVersion) + ",\n" +
+                "  \"applicationEdition\": " + JsonString(_targetCapture.ApplicationEdition) + ",\n" +
+                "  \"versionSource\": " + JsonString(_targetCapture.VersionSource) + ",\n" +
+                "  \"productVersion\": " + JsonString(_targetCapture.ProductVersion) + ",\n" +
+                "  \"fileVersion\": " + JsonString(_targetCapture.FileVersion) + ",\n" +
+                "  \"productName\": " + JsonString(_targetCapture.ProductName) + ",\n" +
+                "  \"language\": " + JsonString(_configuredLanguage) + ",\n" +
+                "  \"languageSource\": \"configured\",\n" +
+                "  \"targetProcess\": " + JsonString(_targetCapture.ProcessName) + ",\n" +
+                "  \"targetProcessId\": " + _targetCapture.ProcessId + ",\n" +
+                "  \"targetSessionId\": " + _targetCapture.SessionId + ",\n" +
+                "  \"targetLost\": " + (_targetLost ? "true" : "false") + ",\n" +
+                "  \"targetLostAtUtc\": " + JsonString(_targetLostAtUtc) + ",\n" +
+#else
                 "  \"applicationVersion\": \"" + RecorderProfile.ApplicationVersion + "\",\n" +
                 "  \"language\": \"" + RecorderProfile.Language + "\",\n" +
                 "  \"targetProcess\": \"" + RecorderProfile.TargetProcess + "\",\n" +
-#if ORCAD
+#endif
+#if JMP || STATA || ORCAD
                 "  \"captureDeployment\": \"same-windows-session\",\n" +
                 "  \"screenshotScope\": \"virtual-desktop\",\n" +
                 "  \"screenshotOriginX\": " + SystemInformation.VirtualScreen.Left + ",\n" +
                 "  \"screenshotOriginY\": " + SystemInformation.VirtualScreen.Top + ",\n" +
 #endif
+#if JMP || STATA
+                "  \"uiMapRoot\": " + JsonString(_targetCapture.UiMapRoot) + ",\n" +
+#else
                 "  \"uiMapRoot\": \"" + RecorderProfile.UiMapRoot + "\",\n" +
+#endif
                 "  \"preferredReplayFormat\": \"" + RecorderProfile.ReplayFormat + "\",\n" +
                 "  \"uiAutomationTargets\": " + (_captureUiAutomationTargets ? "true" : "false") + ",\n" +
                 "  \"capabilities\": [\"input_events\", \"before_after_screenshots\", \"visual_change_diff\"" +
@@ -1231,7 +1495,11 @@ namespace UniversalMockRecorder
                     ? ", \"3dsmax_transform_region_evidence\", \"3dsmax_drag_transactions\", \"3dsmax_parameter_region_evidence\""
                     : "") +
                 (_captureUiAutomationTargets ? ", \"ui_automation_targets\"" : "") + "],\n" +
+#if JMP || STATA
+                "  \"createdAt\": " + JsonString(_manifestCreatedAtUtc) + "\n" +
+#else
                 "  \"createdAt\": \"" + DateTimeOffset.UtcNow.ToString("o") + "\"\n" +
+#endif
                 "}\n",
                 new UTF8Encoding(false));
         }
@@ -1519,7 +1787,7 @@ namespace UniversalMockRecorder
         private static bool ShouldCaptureKeyTransition(RawInputEvent input)
         {
             if (input == null || input.EventType != "key_down") return false;
-#if ORCAD
+#if JMP || STATA || ORCAD
             // Single-letter shortcuts act at the cursor; UIA may not expose the canvas.
             // Capture every non-redacted key so both tool activation and field edits have evidence.
             return input.Key != "REDACTED";
@@ -1532,12 +1800,12 @@ namespace UniversalMockRecorder
 #endif
         }
 
-#if ORCAD
+#if JMP || STATA || ORCAD
         private bool CanCaptureKiCadAfter()
         {
             if (_privacyPaused) return false;
             var window = ReadForegroundWindow();
-            return window != null && RecorderProfile.MatchesTargetProcess(window.ProcessName);
+            return MatchesCapturedTarget(window);
         }
 
         private static void SetRelativePosition(RawInputEvent input)
@@ -2058,7 +2326,7 @@ namespace UniversalMockRecorder
             [DataMember(Name = "screenshotAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotAfterTimestampMs;
             [DataMember(Name = "screenshotSelection", EmitDefaultValue = false)] public string ScreenshotSelection;
             [DataMember(Name = "screenshotSelectionTimestampMs", EmitDefaultValue = false)] public long ScreenshotSelectionTimestampMs;
-#if ORCAD
+#if JMP || STATA || ORCAD
             [DataMember(Name = "screenshotSettledAfter", EmitDefaultValue = false)] public string ScreenshotSettledAfter;
             [DataMember(Name = "screenshotSettledAfterTimestampMs", EmitDefaultValue = false)] public long ScreenshotSettledAfterTimestampMs;
 #endif

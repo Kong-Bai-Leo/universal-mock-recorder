@@ -1,0 +1,161 @@
+{
+  "section": "data",
+  "verification": "live_partial_scan",
+  "scope": "Visible controls in a blank Stata/MP 18.0 English session; presence is not native replay support.",
+  "controls": [
+    {
+      "id": "stata.main.data.describe",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Describe data",
+      "aliases": [],
+      "function": "Open the Describe data submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.editor",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Data Editor",
+      "aliases": [],
+      "function": "Open the Data Editor submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.create-change",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Create or change data",
+      "aliases": [],
+      "function": "Open the Create or change data submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.variables-manager",
+      "parentId": "stata.main.data",
+      "kind": "menuitem",
+      "label": "Variables Manager",
+      "aliases": [],
+      "function": "Visible Variables Manager entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.frames-manager",
+      "parentId": "stata.main.data",
+      "kind": "menuitem",
+      "label": "Frames Manager",
+      "aliases": [],
+      "function": "Visible Frames Manager entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.utilities",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Data utilities",
+      "aliases": [],
+      "function": "Open the Data utilities submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.sort",
+      "parentId": "stata.main.data",
+      "kind": "menuitem",
+      "label": "Sort",
+      "aliases": [],
+      "function": "Visible Sort entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.combine",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Combine datasets",
+      "aliases": [],
+      "function": "Open the Combine datasets submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.mata",
+      "parentId": "stata.main.data",
+      "kind": "menuitem",
+      "label": "Matrices, Mata language",
+      "aliases": [],
+      "function": "Visible Matrices, Mata language entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.ado-matrices",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Matrices, ado language",
+      "aliases": [],
+      "function": "Open the Matrices, ado language submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.icd",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "ICD codes",
+      "aliases": [],
+      "function": "Open the ICD codes submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.other",
+      "parentId": "stata.main.data",
+      "kind": "submenu",
+      "label": "Other utilities",
+      "aliases": [],
+      "function": "Open the Other utilities submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data.editor.edit",
+      "parentId": "stata.main.data.editor",
+      "kind": "menuitem",
+      "label": "Data Editor (Edit)",
+      "aliases": [],
+      "function": "Open the editable data grid",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.data.editor.browse",
+      "parentId": "stata.main.data.editor",
+      "kind": "menuitem",
+      "label": "Data Editor (Browse)",
+      "aliases": [],
+      "function": "Open a read-only grid view; other application commands may still change data",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    }
+  ]
+}

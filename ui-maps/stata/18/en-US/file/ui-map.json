@@ -1,0 +1,183 @@
+{
+  "section": "file",
+  "verification": "live_partial_scan",
+  "scope": "Visible controls in a blank Stata/MP 18.0 English session; presence is not native replay support.",
+  "controls": [
+    {
+      "id": "stata.main.file.open",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Open...",
+      "aliases": [],
+      "function": "Visible Open... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.open-subset",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Open data subset...",
+      "aliases": [],
+      "function": "Visible Open data subset... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.save",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Save",
+      "aliases": [],
+      "function": "Visible Save entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.save-as",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Save as...",
+      "aliases": [],
+      "function": "Visible Save as... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.frameset",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Frameset",
+      "aliases": [],
+      "function": "Open the Frameset submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.view",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "View...",
+      "aliases": [],
+      "function": "Visible View... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.do",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Do...",
+      "aliases": [],
+      "function": "Select a native Stata do-file to execute; inspect the file before execution.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.filename",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Filename...",
+      "aliases": [],
+      "function": "Visible Filename... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.working-directory",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Change working directory...",
+      "aliases": [],
+      "function": "Visible Change working directory... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.log",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Log",
+      "aliases": [],
+      "function": "Open the Log submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.import",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Import",
+      "aliases": [],
+      "function": "Open the Import submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.export",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Export",
+      "aliases": [],
+      "function": "Open the Export submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.print",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Print",
+      "aliases": [],
+      "function": "Open the Print submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.examples",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Example datasets...",
+      "aliases": [],
+      "function": "Visible Example datasets... entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.recent",
+      "parentId": "stata.main.file",
+      "kind": "submenu",
+      "label": "Recent files",
+      "aliases": [],
+      "function": "Open the Recent files submenu; descendants unverified unless separately mapped.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.file.exit",
+      "parentId": "stata.main.file",
+      "kind": "menuitem",
+      "label": "Exit",
+      "aliases": [],
+      "function": "Visible Exit entry; execution not tested.",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    }
+  ]
+}

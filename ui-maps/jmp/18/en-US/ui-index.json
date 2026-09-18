@@ -1,0 +1,10 @@
+{
+  "application": "JMP",
+  "version": "18",
+  "observedVersion": "18.0.0 (746439) Pro",
+  "language": "en-US",
+  "sections": [{"file":"file/ui-map.json"},{"file":"help/ui-map.json"},{"file":"table/ui-map.json"},{"file":"analyze/ui-map.json"},{"file":"distribution/ui-map.json"}],
+  "coverage": "first_workflow_scan_in_progress",
+  "notScanned": ["data table dialogs other than Column Info and Modeling Type", "analysis dialogs other than Distribution launcher", "report menus", "most submenus", "Pro-only modeling", "icon-only toolbar tooltips"],
+  "note": "Observed in old VM on 2026-09-17; not copied from the 19.1 map. No assertion of official installation integrity or license authenticity."
+}

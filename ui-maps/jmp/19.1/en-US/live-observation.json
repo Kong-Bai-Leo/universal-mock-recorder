@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-11",
+  "machine": "VM3",
+  "remoteWindowTitle": "35.192.246.87 - 远程桌面连接",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "application": "JMP Trial 19.1.5",
+  "transport": "Computer Use on RDP viewer; recorder must deploy INSIDE VM",
+  "observations": [
+    {
+      "id": "home-file",
+      "state": "Home window, File menu open",
+      "confirmed": [
+        "jmp.file",
+        "jmp.file.new",
+        "jmp.file.open",
+        "jmp.file.quick-open",
+        "jmp.file.import-multiple",
+        "jmp.file.connect",
+        "jmp.file.close",
+        "jmp.file.save",
+        "jmp.file.save-as",
+        "jmp.file.revert",
+        "jmp.file.export",
+        "jmp.file.publish",
+        "jmp.file.internet-open",
+        "jmp.file.preferences",
+        "jmp.file.print",
+        "jmp.file.print-preview",
+        "jmp.file.page-setup",
+        "jmp.file.recent",
+        "jmp.file.save-session",
+        "jmp.file.exit",
+        "jmp.file.new-table"
+      ],
+      "evidence": "conversation Computer Use screenshot; no persistent image file saved"
+    },
+    {
+      "id": "home-analyze",
+      "state": "Home window, Analyze menu open",
+      "confirmed": [
+        "jmp.analyze",
+        "jmp.analyze.distribution",
+        "jmp.analyze.fit-y-by-x",
+        "jmp.analyze.tabulate",
+        "jmp.analyze.text-explorer",
+        "jmp.analyze.fit-model",
+        "jmp.analyze.predictive",
+        "jmp.analyze.specialized",
+        "jmp.analyze.screening",
+        "jmp.analyze.multivariate",
+        "jmp.analyze.clustering",
+        "jmp.analyze.quality",
+        "jmp.analyze.reliability",
+        "jmp.analyze.consumer"
+      ],
+      "evidence": "conversation Computer Use screenshot"
+    },
+    {
+      "id": "new-table",
+      "state": "Untitled empty data table; Column 1; All rows 0",
+      "windowBounds": [
+        38,
+        31,
+        764,
+        510
+      ],
+      "evidence": "conversation Computer Use screenshot"
+    },
+    {
+      "surface": "Cols / Column Info",
+      "observedVersion": "19.1.5",
+      "windowBounds": [
+        76,
+        69,
+        582,
+        313
+      ],
+      "evidence": "Computer Use screenshot in current conversation; no persistent screenshot saved",
+      "fields": [
+        "Column Name",
+        "Lock",
+        "Data Type",
+        "Modeling Type",
+        "Format",
+        "Width",
+        "Use thousands separator (,)",
+        "Initialize Data",
+        "Number of rows",
+        "Column Properties",
+        "OK",
+        "Cancel",
+        "Apply",
+        "Help"
+      ],
+      "dataTypeOptions": [
+        "Numeric",
+        "Character",
+        "Row State",
+        "Expression"
+      ],
+      "note": "Column1 default Numeric, Continuous, Missing/Empty, Number of rows 0. Cols menu contains disabled context-dependent items."
+    }
+  ],
+  "additionalObservations": [
+    {
+      "id": "distribution-launcher-20260912",
+      "date": "2026-09-12",
+      "surface": "Analyze > Distribution launch dialog",
+      "observedVersion": "19.1.5 Trial",
+      "windowBounds": [1018,228,574,270],
+      "evidence": "Computer Use live screenshots; VM recorder event 32/33 before/after screenshots retained only in ignored local recording",
+      "map": "distribution/ui-map.json",
+      "exercised": ["jmp.distribution.y", "jmp.distribution.ok"],
+      "note": "Select Columns, role panels, lists, Histograms Only, action buttons and the unopened columns red triangle were visible. Report appeared later than the ordinary after-frame. No coordinates are runtime selectors."
+    },
+    {
+      "surface": "Bivariate report red triangle / Save Script submenu",
+      "observedVersion": "19.1.5",
+      "confirmed": ["jmp.report", "jmp.report.menu", "jmp.report.fit-line", "jmp.report.save-script", "jmp.report.save-script.table"],
+      "evidence": "Computer Use screenshot in current conversation; visible entries recorded in report/ui-map.json",
+      "note": "Observed on a task-owned synthetic table. Other report platforms may have different menus."
+    },
+    {
+      "surface": "JSL editor Edit / Run Script",
+      "observedShortcut": "Ctrl+R",
+      "evidence": "Computer Use menu screenshot and two successful fixed-compiler executions",
+      "note": "Opening a .jsl file opens the editor; execution is a separate action."
+    }
+  ],
+  "note": "Coordinates describe only these observations, never reusable click targets. UIA IDs not available through RDP viewer; no fabricated AutomationIDs."
+}

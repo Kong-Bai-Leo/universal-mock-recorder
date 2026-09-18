@@ -1,0 +1,19 @@
+{
+  "observationId":"jmp18-help-20260917",
+  "controls":[
+    {"id":"jmp.help","parentId":null,"label":"Help","kind":"menu","description":"Help and application identity.","verification":"observed"},
+    {"id":"jmp.help.search","parentId":"jmp.help","label":"Search JMP","kind":"menu_item","description":"Search JMP; not exercised.","verification":"observed"},
+    {"id":"jmp.help.online","parentId":"jmp.help","label":"JMP Online Help","kind":"menu_item","description":"Online help entry; not exercised.","verification":"observed"},
+    {"id":"jmp.help.tool","parentId":"jmp.help","label":"Help Tool","kind":"menu_item","description":"Context help; not exercised.","verification":"observed"},
+    {"id":"jmp.help.quick-start","parentId":"jmp.help","label":"Quick Start","kind":"menu_item","description":"Getting-started help; not exercised.","verification":"observed"},
+    {"id":"jmp.help.capabilities","parentId":"jmp.help","label":"JMP Capabilities","kind":"menu_item","description":"Capabilities browser; not exercised.","verification":"observed"},
+    {"id":"jmp.help.learn","parentId":"jmp.help","label":"Learn JMP","kind":"menu_item","description":"Learning resources; not exercised.","verification":"observed"},
+    {"id":"jmp.help.community","parentId":"jmp.help","label":"JMP User Community","kind":"menu_item","description":"Community site; not exercised.","verification":"observed"},
+    {"id":"jmp.help.whats-new","parentId":"jmp.help","label":"New in JMP","kind":"menu_item","description":"Release changes; not exercised.","verification":"observed"},
+    {"id":"jmp.help.sample-folder","parentId":"jmp.help","label":"Sample Data Folder","kind":"menu_item","description":"Bundled sample data; not used to supply AI answers.","verification":"observed"},
+    {"id":"jmp.help.sample-index","parentId":"jmp.help","label":"Sample Index","kind":"menu_item","description":"Bundled sample index; not exercised.","verification":"observed"},
+    {"id":"jmp.help.scripting-index","parentId":"jmp.help","label":"Scripting Index","kind":"menu_item","description":"Installed scripting reference; not exercised yet.","verification":"observed"},
+    {"id":"jmp.help.my-jmp","parentId":"jmp.help","label":"My JMP","kind":"menu_item","description":"Account entry; not opened.","verification":"observed"},
+    {"id":"jmp.help.about","parentId":"jmp.help","label":"About JMP","kind":"menu_item","description":"Observed JMP Pro 18.0.0 (746439). Opening is not proof of official authorization or executable integrity.","verification":"observed_and_exercised"}
+  ]
+}

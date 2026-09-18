@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-17",
+  "application": "Stata/MP 18.0 en-US",
+  "scope": "Partial live scan on old VM, using an initially empty dataset and blank Do-file Editor",
+  "sectionCount": 7,
+  "controlCount": 259,
+  "hierarchy": "Checked by tests/stata-ui-map.test.mjs; unique semantic IDs, existing parents, acyclic chains, coordinates only in observation",
+  "liveObserved": ["Main panes", "File and Data first levels", "Data Editor Edit/Browse submenu and empty Edit window", "Statistics first level", "Summaries/descriptive and linear model children", "summarize Main tab", "regress Model tab", "Window first level and New Do-file Editor entry", "Blank Do-file Editor shell and File first level", "Do-file Editor Tools disabled entries, Open submenu and primary Open-dialog controls"],
+  "commandsSubmitted": 0,
+  "dataEntered": false,
+  "recording": "not_run",
+  "paidApiAnalysis": "not_run",
+  "nativeReplay": "not_run",
+  "independentSourceComparison": "not_run",
+  "fullUiCoverage": false,
+  "limitations": ["See ui-index.json notScanned", "Six analysis-dialog icons and one Do-file Editor dropdown are visually recorded with unknown functions", "Do-file Editor execution entries observed disabled; no script entered or run", "Presence and tooltip/manual meanings do not establish replay support"]
+}

@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "id": "old-vm-2026-09-17",
+  "application": "Stata/MP",
+  "version": "18.0",
+  "language": "en-US",
+  "date": "2026-09-17",
+  "environment": "User-designated old VM; new VM untouched",
+  "method": "Computer Use read-only navigation through an existing remote desktop session; no native object API or UI Automation IDs obtained",
+  "frame": {
+    "width": 2560,
+    "height": 1440,
+    "coordinateSpace": "old VM desktop screenshot pixels",
+    "reuseAsReplayCoordinates": false
+  },
+  "privacy": "No startup license identifiers, user names, network addresses, screenshots or dataset content stored in this map.",
+  "observations": [
+    {
+      "id": "main",
+      "windowTitle": "Stata/MP 18.0",
+      "bounds": [
+        1010,
+        52,
+        2137,
+        759
+      ],
+      "state": "Initially empty History, Variables and data. Blank Command input.",
+      "regions": [
+        [
+          "stata.main.history",
+          [
+            1014,
+            138,
+            1275,
+            735
+          ]
+        ],
+        [
+          "stata.main.results",
+          [
+            1280,
+            139,
+            1866,
+            647
+          ]
+        ],
+        [
+          "stata.main.variables",
+          [
+            1875,
+            138,
+            2132,
+            445
+          ]
+        ],
+        [
+          "stata.main.properties",
+          [
+            1875,
+            448,
+            2132,
+            735
+          ]
+        ],
+        [
+          "stata.main.command",
+          [
+            1280,
+            674,
+            1866,
+            735
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "file-menu",
+      "controlId": "stata.main.file",
+      "bounds": [
+        1010,
+        105,
+        1226,
+        487
+      ],
+      "state": "File menu expanded; Save and Save as disabled with blank data. No item executed."
+    },
+    {
+      "id": "data-menu",
+      "controlId": "stata.main.data",
+      "bounds": [
+        1086,
+        105,
+        1285,
+        390
+      ],
+      "state": "Data menu expanded; Data Editor submenu expanded at [1285,131,1459,179]. Edit entry opened the empty editor."
+    },
+    {
+      "id": "data-editor",
+      "windowTitle": "Data Editor (Edit) - [Untitled]",
+      "controlId": "stata.data-editor",
+      "bounds": [
+        58,
+        51,
+        1323,
+        763
+      ],
+      "state": "Vars 0, Obs 0, Filter Off, Mode Edit; cursor location var1[1]; no values entered.",
+      "regions": [
+        [
+          "stata.data-editor.grid",
+          [
+            62,
+            163,
+            862,
+            735
+          ]
+        ],
+        [
+          "stata.data-editor.location",
+          [
+            60,
+            134,
+            300,
+            157
+          ]
+        ],
+        [
+          "stata.data-editor.input",
+          [
+            307,
+            134,
+            1319,
+            157
+          ]
+        ],
+        [
+          "stata.data-editor.variables",
+          [
+            869,
+            163,
+            1319,
+            444
+          ]
+        ],
+        [
+          "stata.data-editor.properties",
+          [
+            869,
+            447,
+            1319,
+            736
+          ]
+        ],
+        [
+          "stata.data-editor.toolbar",
+          [
+            60,
+            106,
+            298,
+            132
+          ]
+        ]
+      ],
+      "actions": "Opened Data menu, then closed editor without changing data."
+    },
+    {
+      "id": "statistics",
+      "controlId": "stata.main.statistics",
+      "bounds": [
+        1192,
+        105,
+        1449,
+        933
+      ],
+      "state": "All first-level Statistics entries visually read; most descendants unexpanded."
+    },
+    {
+      "id": "summaries",
+      "controlId": "stata.main.statistics.summaries",
+      "bounds": [
+        1449,
+        106,
+        1812,
+        358
+      ],
+      "state": "Expanded; Summary and descriptive statistics descendants read at [1811,108,2062,611]. Summary statistics opened summarize dialog."
+    },
+    {
+      "id": "summary-dialog",
+      "controlId": "stata.summary",
+      "windowTitle": "summarize - Summary statistics",
+      "bounds": [
+        1395,
+        233,
+        1833,
+        632
+      ],
+      "state": "Main tab; empty Variables; Standard display selected, separator 5; no command submitted.",
+      "regions": [
+        [
+          "stata.summary.variables",
+          [
+            1413,
+            325,
+            1791,
+            347
+          ]
+        ],
+        [
+          "stata.summary.variables-picker",
+          [
+            1794,
+            325,
+            1813,
+            347
+          ]
+        ],
+        [
+          "stata.summary.ok",
+          [
+            1578,
+            605,
+            1657,
+            627
+          ]
+        ],
+        [
+          "stata.summary.cancel",
+          [
+            1664,
+            605,
+            1742,
+            627
+          ]
+        ],
+        [
+          "stata.summary.submit",
+          [
+            1749,
+            605,
+            1827,
+            627
+          ]
+        ]
+      ],
+      "actions": "Canceled without submission."
+    },
+    {
+      "id": "linear-menu",
+      "controlId": "stata.main.statistics.linear",
+      "bounds": [
+        1449,
+        131,
+        1700,
+        787
+      ],
+      "state": "All visible first-level children read; Linear regression opened regress dialog."
+    },
+    {
+      "id": "regression-dialog",
+      "controlId": "stata.regression",
+      "windowTitle": "regress - Linear regression",
+      "bounds": [
+        1420,
+        258,
+        1938,
+        717
+      ],
+      "state": "Model tab, empty dependent and independent variables, constant checkboxes unchecked; no command submitted.",
+      "regions": [
+        [
+          "stata.regression.y",
+          [
+            1438,
+            350,
+            1536,
+            372
+          ]
+        ],
+        [
+          "stata.regression.y-picker",
+          [
+            1539,
+            350,
+            1558,
+            372
+          ]
+        ],
+        [
+          "stata.regression.x",
+          [
+            1578,
+            350,
+            1896,
+            372
+          ]
+        ],
+        [
+          "stata.regression.x-picker",
+          [
+            1899,
+            350,
+            1918,
+            372
+          ]
+        ],
+        [
+          "stata.regression.ok",
+          [
+            1684,
+            691,
+            1762,
+            711
+          ]
+        ],
+        [
+          "stata.regression.cancel",
+          [
+            1769,
+            691,
+            1847,
+            711
+          ]
+        ],
+        [
+          "stata.regression.submit",
+          [
+            1854,
+            691,
+            1932,
+            711
+          ]
+        ]
+      ],
+      "actions": "Cancel clicked; no data or regression results created."
+    },
+    {
+      "id": "window-menu",
+      "controlId": "stata.main.window",
+      "bounds": [1298, 105, 1462, 329],
+      "state": "Ordered visible entries: Command Ctrl+1, Results Ctrl+2, History Ctrl+3, Variables Ctrl+4, Properties Ctrl+5, Graph submenu, Viewer submenu, Data Editor Ctrl+8, Do-file Editor submenu, Variables Manager.",
+      "regions": [["stata.main.window.do-file-editor", [1462, 283, 1660, 309]]],
+      "actions": "Do-file Editor submenu opened; New Do-file Editor Ctrl+9 clicked. Other entries not executed."
+    },
+    {
+      "id": "do-file-editor",
+      "windowTitle": "Do-file Editor - Untitled",
+      "controlId": "stata.do-file-editor",
+      "bounds": [157, 34, 943, 877],
+      "state": "Blank Untitled tab with close x; visible File/Edit/View/Language/Project/Tools menus, line 1 gutter, bottom Line 1 Col 1 / CAP NUM OVR and unknown bottom-left dropdown. Toolbar icons visually present but functions not verified.",
+      "regions": [["stata.do-file-editor.text", [210, 149, 938, 845]]],
+      "actions": "Opened File and Tools menus. No script entered, command submitted or data changed."
+    },
+    {
+      "id": "do-file-editor-file-menu",
+      "controlId": "stata.do-file-editor.file",
+      "bounds": [160, 88, 340, 414],
+      "state": "Ordered first-level entries: New submenu, Open submenu, Close Ctrl+W, Close project disabled, Save Ctrl+S, Save as Ctrl+Shift+S, Save all, Save project disabled, Print Ctrl+P, Print preview, Print setup, Recent files submenu, Recent projects submenu, Exit.",
+      "actions": "Open submenu subsequently expanded; New/Recent descendants not expanded."
+    },
+    {
+      "id": "do-file-editor-tools-menu",
+      "controlId": "stata.do-file-editor.tools",
+      "bounds": [402, 88, 661, 248],
+      "state": "All entries disabled in blank editor: Execute (do) Ctrl+D, Execute (do) from top, Execute (do) to bottom Ctrl+Shift+D, Execute (do) line Ctrl+Shift+E, Execute quietly (run) Ctrl+R, Execute (include) Ctrl+Alt+D, Show file in Viewer.",
+      "actions": "Menu inspection only; no script execution attempted."
+    },
+    {
+      "id": "do-file-editor-open-menu",
+      "controlId": "stata.do-file-editor.file.open",
+      "bounds": [340, 111, 474, 158],
+      "state": "Open Ctrl+O and Project... entries visible.",
+      "actions": "Open entry clicked to inspect chooser; Project not executed."
+    },
+    {
+      "id": "do-file-editor-open-dialog",
+      "controlId": "stata.do-file-editor.open-dialog",
+      "bounds": [225, 204, 1412, 918],
+      "state": "Open chooser, empty File name, Do Files (*.do;*.ado) selected; Open and Cancel buttons.",
+      "regions": [["stata.do-file-editor.open-dialog.filename", [414, 849, 1193, 873]], ["stata.do-file-editor.open-dialog.type", [1205, 849, 1393, 873]], ["stata.do-file-editor.open-dialog.open", [1206, 879, 1292, 904]], ["stata.do-file-editor.open-dialog.cancel", [1306, 879, 1392, 904]]],
+      "actions": "Canceled without choosing or opening any file. Folder names and filesystem navigation widgets not retained."
+    }
+  ],
+  "limitations": [
+    "Menu/dialog observation only, not capture/API/native replay validation.",
+    "Bounds are session-specific, approximate visual regions, not automation selectors.",
+    "Toolbar icon functions cross-referenced against official guide; uninspected icon functions explicitly unknown.",
+    "Only Main/Model tabs inspected. No actual data/statistical output created.",
+    "Do-file Editor Tools entries observed disabled, actual execution not verified; toolbar functions and remaining File descendants unscanned; no script entered or run."
+  ]
+}

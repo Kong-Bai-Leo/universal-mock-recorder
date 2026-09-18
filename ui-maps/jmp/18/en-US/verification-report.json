@@ -1,0 +1,35 @@
+{
+  "application": "JMP Pro",
+  "version": "18.0.0 (746439)",
+  "language": "en-US",
+  "date": "2026-09-17",
+  "scope": "First bounded table/Distribution workflow, partial scan only",
+  "mapStructure": {
+    "sectionCount": 5,
+    "controlCount": 111,
+    "uniqueControlIds": 111,
+    "missingParentReferences": [],
+    "passed": true
+  },
+  "liveInspection": {
+    "homeFileNew": true,
+    "helpAbout": true,
+    "emptyDataTable": true,
+    "columnInfoAndModelingType": true,
+    "analyzeMenu": true,
+    "distributionLauncher": true,
+    "analysisReport": false,
+    "saveReopen": false,
+    "allMenusAndIconsCovered": false
+  },
+  "recording": "not_run",
+  "paidAnalysis": "not_run",
+  "nativeScriptReplay": "not_run",
+  "independentSourceComparison": "not_run",
+  "notAcceptanceEvidence": ["older JMP 19.1 results", "synthetic model responses", "offline renderer tests"],
+  "notes": [
+    "Controls include panels, dialogs and list roles, not 111 independently exercised buttons.",
+    "Observation bounds are dynamic context, never fixed replay coordinates.",
+    "Observed installation authenticity/licensing has not been certified; no licensing changes made."
+  ]
+}

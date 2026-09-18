@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "stata-ui-map-1",
+  "application": "Stata/MP",
+  "version": "18.0",
+  "language": "en-US",
+  "verification": "live_partial_scan",
+  "observation": "live-observation.json",
+  "sections": ["main/ui-map.json", "file/ui-map.json", "data/ui-map.json", "data-editor/ui-map.json", "statistics/ui-map.json", "analysis-dialogs/ui-map.json", "do-file-editor/ui-map.json"],
+  "coverage": "Main panes, File and Data first levels, empty Data Editor, Statistics first level and summaries/linear submenus, summarize and regress initial dialogs; Window first level and New Do-file Editor entry, blank Do-file Editor shell, File first level and Open submenu, disabled Tools execution entries, primary do-file Open-dialog controls. Presence does not prove replay support.",
+  "notScanned": ["All other menu descendants", "Main toolbar tooltips and split arrows", "Data Editor context menus, dropdown arrows, variable property edit dialogs and non-Data menu contents", "Analysis dialog tabs other than Main/Model, variable pickers and icon tooltips", "Do-file Editor toolbar functions, File New/Recent descendants, other menu descendants and actual execution behavior", "Data Save/Open dialogs and secondary shell navigation widgets in do-file Open dialog", "Populated data and actual analysis results"],
+  "nativeReplayVerification": "not_run",
+  "realRecordingVerification": "not_run"
+}

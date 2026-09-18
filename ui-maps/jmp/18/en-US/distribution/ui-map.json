@@ -1,0 +1,186 @@
+{
+  "observedVersion": "18.0.0 (746439) Pro",
+  "observationId": "jmp18-distribution-launch-20260917",
+  "controls": [
+    {
+      "id": "jmp.distribution.launcher",
+      "parentId": "jmp.analyze.distribution",
+      "label": "Distribution",
+      "kind": "dialog",
+      "description": "Assign roles for the active table's distribution.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.columns",
+      "parentId": "jmp.distribution.launcher",
+      "label": "Select Columns",
+      "kind": "panel",
+      "description": "List of available columns.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.column-menu",
+      "parentId": "jmp.distribution.columns",
+      "label": "Columns red triangle",
+      "kind": "menu_button",
+      "description": "Column-list menu, not the analysis report menu; submenu unscanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.column-list",
+      "parentId": "jmp.distribution.columns",
+      "label": "Columns",
+      "kind": "list",
+      "description": "One available Column 1 in this observation.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.histograms-only",
+      "parentId": "jmp.distribution.columns",
+      "label": "Histograms Only",
+      "kind": "checkbox",
+      "description": "Non-default report reduction; replay unsupported.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.roles",
+      "parentId": "jmp.distribution.launcher",
+      "label": "Cast Selected Columns into Roles",
+      "kind": "panel",
+      "description": "Role allocation area.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.y",
+      "parentId": "jmp.distribution.roles",
+      "label": "Y, Columns",
+      "kind": "button",
+      "description": "Assign selected response columns.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.y-list",
+      "parentId": "jmp.distribution.roles",
+      "label": "Y, Columns role list",
+      "kind": "list",
+      "description": "Required variables; currently none assigned.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.weight",
+      "parentId": "jmp.distribution.roles",
+      "label": "Weight",
+      "kind": "button",
+      "description": "Optional numeric weights, not ordinary Y; replay unsupported.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.weight-list",
+      "parentId": "jmp.distribution.roles",
+      "label": "Weight role list",
+      "kind": "list",
+      "description": "Optional numeric weight role.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.freq",
+      "parentId": "jmp.distribution.roles",
+      "label": "Freq",
+      "kind": "button",
+      "description": "Optional numeric frequencies; replay unsupported.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.freq-list",
+      "parentId": "jmp.distribution.roles",
+      "label": "Freq role list",
+      "kind": "list",
+      "description": "Optional numeric frequency role.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.by",
+      "parentId": "jmp.distribution.roles",
+      "label": "By",
+      "kind": "button",
+      "description": "Grouping role; replay unsupported.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.by-list",
+      "parentId": "jmp.distribution.roles",
+      "label": "By role list",
+      "kind": "list",
+      "description": "Optional grouping assignment.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.actions",
+      "parentId": "jmp.distribution.launcher",
+      "label": "Action",
+      "kind": "panel",
+      "description": "Confirmation and helper buttons.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.ok",
+      "parentId": "jmp.distribution.actions",
+      "label": "OK",
+      "kind": "button",
+      "description": "Commit roles; a later report must establish completion.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.cancel",
+      "parentId": "jmp.distribution.actions",
+      "label": "Cancel",
+      "kind": "button",
+      "description": "Cancel launch without creating report.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.remove",
+      "parentId": "jmp.distribution.actions",
+      "label": "Remove",
+      "kind": "button",
+      "description": "Remove role assignment, not table data.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.recall",
+      "parentId": "jmp.distribution.actions",
+      "label": "Recall",
+      "kind": "button",
+      "description": "Recall settings; do not treat them as new typing.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.distribution.help",
+      "parentId": "jmp.distribution.actions",
+      "label": "Help",
+      "kind": "button",
+      "description": "Platform help.",
+      "core": false,
+      "verification": "observed"
+    }
+  ]
+}

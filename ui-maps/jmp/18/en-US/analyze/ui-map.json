@@ -1,0 +1,141 @@
+{
+  "observedVersion": "18.0.0 (746439) Pro",
+  "observationId": "jmp18-analyze-20260917",
+  "controls": [
+    {
+      "id": "jmp.analyze",
+      "parentId": null,
+      "label": "Analyze",
+      "kind": "menu",
+      "description": "Analysis platforms for the active table.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.distribution",
+      "parentId": "jmp.analyze",
+      "label": "Distribution",
+      "kind": "menu_item",
+      "description": "Univariate distributions; assign Y columns before confirmation.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.fit-y-by-x",
+      "parentId": "jmp.analyze",
+      "label": "Fit Y by X",
+      "kind": "menu_item",
+      "description": "Bivariate roles Y Response and X Factor; role order is meaningful.",
+      "core": true,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.tabulate",
+      "parentId": "jmp.analyze",
+      "label": "Tabulate",
+      "kind": "menu_item",
+      "description": "Tables; replay out of scope.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.text-explorer",
+      "parentId": "jmp.analyze",
+      "label": "Text Explorer",
+      "kind": "menu_item",
+      "description": "Text analysis; replay out of scope.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.fit-model",
+      "parentId": "jmp.analyze",
+      "label": "Fit Model",
+      "kind": "menu_item",
+      "description": "Model specification; replay out of scope.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.predictive",
+      "parentId": "jmp.analyze",
+      "label": "Predictive Modeling",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.specialized",
+      "parentId": "jmp.analyze",
+      "label": "Specialized Modeling",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.screening",
+      "parentId": "jmp.analyze",
+      "label": "Screening",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.multivariate",
+      "parentId": "jmp.analyze",
+      "label": "Multivariate Methods",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.clustering",
+      "parentId": "jmp.analyze",
+      "label": "Clustering",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.quality",
+      "parentId": "jmp.analyze",
+      "label": "Quality and Process (updated)",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.reliability",
+      "parentId": "jmp.analyze",
+      "label": "Reliability and Survival",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.consumer",
+      "parentId": "jmp.analyze",
+      "label": "Consumer Research",
+      "kind": "submenu",
+      "description": "Submenu not scanned.",
+      "core": false,
+      "verification": "observed"
+    },
+    {
+      "id": "jmp.analyze.genetics",
+      "parentId": "jmp.analyze",
+      "label": "Genetics (updated)",
+      "kind": "submenu",
+      "description": "Observed Pro menu; not exercised or supported by the replay backend.",
+      "core": false,
+      "verification": "observed"
+    }
+  ]
+}

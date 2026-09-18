@@ -10,3 +10,13 @@ bin/validator/
 .cv-poc-deps/
 cv-poc-runtime/
 .equile-local/
+bin/jmp-recorder/recordings/
+bin/stata-recorder/recordings/
+ui-maps/jmp/**/screenshots/
+ui-maps/stata/**/screenshots/
+dist/jmp-*/
+dist/jmp18-*.json
+dist/20260917-151021-b446a0/
+dist/stata-*/
+dist/stata18-*.json
+dist/20260918-034557-105f30/

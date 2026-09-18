@@ -1,0 +1,194 @@
+{
+  "section": "main",
+  "verification": "live_partial_scan",
+  "scope": "Visible controls in a blank Stata/MP 18.0 English session; presence is not native replay support.",
+  "controls": [
+    {
+      "id": "stata.main",
+      "parentId": "",
+      "kind": "window",
+      "label": "Stata/MP",
+      "aliases": [],
+      "function": "Main application workspace",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.file",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "File",
+      "aliases": [],
+      "function": "Open File menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.edit",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Edit",
+      "aliases": [],
+      "function": "Open Edit menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.data",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Data",
+      "aliases": [],
+      "function": "Open Data menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.graphics",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Graphics",
+      "aliases": [],
+      "function": "Open Graphics menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.statistics",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Statistics",
+      "aliases": [],
+      "function": "Open Statistics menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.user",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "User",
+      "aliases": [],
+      "function": "Open User menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.window",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Window",
+      "aliases": [],
+      "function": "Open Window menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.help",
+      "parentId": "stata.main",
+      "kind": "menu",
+      "label": "Help",
+      "aliases": [],
+      "function": "Open Help menu",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.history",
+      "parentId": "stata.main",
+      "kind": "pane",
+      "label": "History",
+      "aliases": [],
+      "function": "Previously submitted commands",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.results",
+      "parentId": "stata.main",
+      "kind": "pane",
+      "label": "Results",
+      "aliases": [],
+      "function": "Application output; initial startup may contain private license information",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.variables",
+      "parentId": "stata.main",
+      "kind": "pane",
+      "label": "Variables",
+      "aliases": [],
+      "function": "In-memory variable inventory",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.properties",
+      "parentId": "stata.main",
+      "kind": "pane",
+      "label": "Properties",
+      "aliases": [],
+      "function": "Variable metadata and current data/frame properties",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.command",
+      "parentId": "stata.main",
+      "kind": "pane",
+      "label": "Command",
+      "aliases": [],
+      "function": "Stata application command input",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": true
+    },
+    {
+      "id": "stata.main.history.filter",
+      "parentId": "stata.main.history",
+      "kind": "textbox",
+      "label": "Filter commands here",
+      "aliases": [],
+      "function": "Filter displayed history, not data",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.variables.filter",
+      "parentId": "stata.main.variables",
+      "kind": "textbox",
+      "label": "Filter variables here",
+      "aliases": [],
+      "function": "Filter displayed variable inventory, not observations",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    },
+    {
+      "id": "stata.main.status",
+      "parentId": "stata.main",
+      "kind": "statusbar",
+      "label": "Working directory",
+      "aliases": [],
+      "function": "Current Stata working directory; relative replay output is created here",
+      "source": "live-observation.json#old-vm-2026-09-17",
+      "verification": "live_observed_not_executed",
+      "core": false
+    }
+  ]
+}
